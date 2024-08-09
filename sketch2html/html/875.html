@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Entertainment Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff5733;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background-color: #ffffff;
+            border: 2px solid #ff5733;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-quote {
+            font-size: 1.2em;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .client-name {
+            font-weight: bold;
+            text-align: right;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What Our Fans Are Saying</h1>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"Best night out ever! Highly recommend to everyone!"</p>
+            <p class="client-name">- Chris Brown</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"The atmosphere was electric, and the talent was phenomenal!"</p>
+            <p class="client-name">- Jamie Lee</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"An unforgettable experience! The performances were out of this world!"</p>
+            <p class="client-name">- Alex Johnson</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-quote">"I can't believe how much fun I had! Definitely coming back!"</p>
+            <p class="client-name">- Maria Gomez</p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+        .article {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .article h2 {
+            font-size: 3em;  /* Changed to much larger size */
+            margin: 0;
+        }
+        .article p {
+            margin: 2px 0 0 0; /* Changed to much smaller size */
+            font-size: 0.8em;   /* Changed to much smaller size */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 2em; /* Changed to much larger size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My News Portfolio</h1>
+    <nav>
+        <a href="#featured">Featured</a>
+        <a href="#recent">Recent</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="main-content">
+
+        <section id="featured">
+            <h2>Featured Articles</h2>
+            <div class="article">
+                <h2>Breaking News Title</h2>
+                <p>A brief description of the breaking news...</p>
+            </div>
+            <div class="article">
+                <h2>Insightful Analysis</h2>
+                <p>A brief description of the insightful analysis...</p>
+            </div>
+        </section>
+
+        <section id="recent">
+            <h2>Recent News</h2>
+            <div class="article">
+                <h2>Latest News Title</h2>
+                <p>A brief description of the latest news...</p>
+            </div>
+            <div class="article">
+                <h2>Another Recent Article</h2>
+                <p>A brief description of another recent article...</p>
+            </div>
+        </section>
+
+    </div>
+
+    <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Entertainment</a></li>
+        </ul>
+    </aside>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 My News Portfolio</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        h1 {
+            text-align: center;
+            color: #004d00;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #004d00;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: #005e00;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #004d00;
+            background-color: #e9f5e9;
+        }
+    </style>
+    <script>
+        function toggleAnswer(index) {
+            const answer = document.getElementById('answer-' + index);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(4)">How do I get pre-approved for a mortgage?</div>
+            <div class="faq-answer" id="answer-4">
+                You can get pre-approved by contacting a lender and providing necessary financial information for assessment.
+            </div>
+        </div>
+
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(2)">How can I schedule a property viewing?</div>
+            <div class="faq-answer" id="answer-2">
+                You can schedule a viewing by contacting us directly through our website or via phone.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(1)">What services do you provide?</div>
+            <div class="faq-answer" id="answer-1">
+                We offer a range of services including property listings, consultations, and assistance with transactions.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(3)">What are the fees involved in buying a property?</div>
+            <div class="faq-answer" id="answer-3">
+                Fees may include agent commissions, closing costs, and other miscellaneous charges.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(5)">Do you assist with rental properties?</div>
+            <div class="faq-answer" id="answer-5">
+                Yes, we provide services for both buying and renting properties.
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

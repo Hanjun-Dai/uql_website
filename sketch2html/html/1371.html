@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Playful Style</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #ff6347;
+            font-size: 3em;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq-item {
+            border: 2px dashed #ff6347;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+        .faq-item:hover {
+            transform: scale(1.02);
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #4b0082;
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+            color: #555;
+        }
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ð Frequently Asked Questions ð</h1>
+    <div class="faq-container">
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="question">ð° How do I track my order?</div>
+            <div class="answer">You'll receive an email with a tracking link once your order is shipped!</div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="question">ð¤ What is our return policy?</div>
+            <div class="answer">You can return any item within 30 days. Just keep it in its original condition!</div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="question">ð¦ Do you offer international shipping?</div>
+            <div class="answer">Yes! We ship worldwide. Check our shipping page for details.</div>
+        </div>
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="question">ð Is my personal information safe?</div>
+            <div class="answer">Absolutely! We use state-of-the-art security to protect your information.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(faqItem) {
+            const answer = faqItem.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+</html>

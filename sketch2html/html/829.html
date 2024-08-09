@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Categories</h1>
+</header>
+
+<div class="container">
+    <div class="category-card">
+        <img src="images/vegetables.jpg" alt="Vegetables">
+        <div class="card-content">
+            <div class="card-title">Vegetables</div>
+        </div>
+    </div>
+    <div class="category-card">
+        <img src="images/dairy.jpg" alt="Dairy Products">
+        <div class="card-content">
+            <div class="card-title">Dairy</div>
+        </div>
+    </div>
+    <div class="category-card">
+        <img src="images/bakery.jpg" alt="Bakery">
+        <div class="card-content">
+            <div class="card-title">Bakery</div>
+        </div>
+    </div>
+    <div class="category-card">
+        <img src="images/meats.jpg" alt="Meats">
+        <div class="card-content">
+            <div class="card-title">Meats</div>
+        </div>
+    </div>
+    <div class="category-card">
+        <img src="images/fruits.jpg" alt="Fruits">
+        <div class="card-content">
+            <div class="card-title">Fruits</div>
+        </div>
+    </div>
+    <div class="category-card">
+        <img src="images/beverages.jpg" alt="Beverages">
+        <div class="card-content">
+            <div class="card-title">Beverages</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Food Website
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Vintage Lifestyle</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4eae0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #c59d7d;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #b3694a;
+            margin: 0;
+        }
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .testimonial {
+            background: #fffaf3;
+            border: 1px solid #c59d7d;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .testimonial::before {
+            content: open-quote;
+            font-size: 3em;
+            color: #b3694a;
+            position: absolute;
+            top: -20px;
+            left: 10px;
+        }
+        .testimonial::after {
+            content: close-quote;
+            font-size: 3em;
+            color: #b3694a;
+            position: absolute;
+            bottom: -20px;
+            right: 10px;
+        }
+        .author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #7a5c47;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Customers Say</h1>
+</header>
+
+<footer>
+    <p>&copy; 2023 Vintage Lifestyle. All rights reserved.</p>
+</footer>
+
+<div class="testimonial-container">
+    <div class="testimonial">
+        <p>"I love the vintage aesthetic and practical advice offered here. It's my go-to place!"</p>
+        <div class="author">- Sarah K.</div>
+    </div>
+    <div class="testimonial">
+        <p>"Fantastic content! It brings back the simple joys of life."</p>
+        <div class="author">- Lisa M.</div>
+    </div>
+    <div class="testimonial">
+        <p>"A treasure trove of tips and inspiration. I highly recommend it!"</p>
+        <div class="author">- Jacob W.</div>
+    </div>
+    <div class="testimonial">
+        <p>"Every visit to this site feels like a step back in timeâso charming!"</p>
+        <div class="author">- Mark H.</div>
+    </div>
+    <div class="testimonial">
+        <p>"This lifestyle website has transformed my daily routine into something enjoyable and fulfilling!"</p>
+        <div class="author">- Emily R.</div>
+    </div>
+</div>
+
+</body>
+</html>

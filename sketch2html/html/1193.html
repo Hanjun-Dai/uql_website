@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f2f7;  /* Changed background color */
+            color: #222;  /* Changed text color */
+        }
+        header {
+            background: #007bff;  /* Changed header background color */
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background: #0056b3;  /* Changed nav background color */
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .main {
+            flex: 3;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Darker shadow */
+        }
+        .sidebar {
+            flex: 1;
+            margin-left: 20px;
+            background: #f8d7da;  /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Darker shadow */
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #dc3545;  /* Changed article headline color */
+        }
+        .footer {
+            background: #0056b3;  /* Changed footer background color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health News Today</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Health Tips</a>
+    <a href="#">Research</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<div class="container">
+
+    <div class="main">
+        <div class="article">
+            <h2>New Breakthrough in Cancer Research</h2>
+            <p>Scientists have discovered a new method that could change the treatment of cancer...</p>
+        </div>
+        <div class="article">
+            <h2>10 Superfoods for a Healthier Life</h2>
+            <p>Incorporate these nutrient-dense foods into your diet for better health...</p>
+        </div>
+        <div class="article">
+            <h2>Understanding Mental Health: A Guide</h2>
+            <p>Mental health is just as important as physical health. Here’s what you need to know...</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Latest Updates</h3>
+        <ul>
+            <li><a href="#">Exercise Boosts Brain Function</a></li>
+            <li><a href="#">Nutrition Myths Debunked</a></li>
+            <li><a href="#">Meditation and Mindfulness</a></li>
+        </ul>
+        <h3>Subscribe</h3>
+        <p>Get the latest health news delivered to your inbox.</p>
+        <input type="email" placeholder="Your Email" style="width: 100%; padding: 5px; margin-top: 10px;">
+        <button style="width: 100%; margin-top: 10px; padding: 5px; background: #dc3545; color: white; border: none; border-radius: 5px;">Subscribe</button>  <!-- Changed button color -->
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Health News Today. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

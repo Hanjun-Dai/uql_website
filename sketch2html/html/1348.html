@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007acc;
+            color: #ffffff;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #efefef;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .question:hover {
+            background: #d5e8f6;
+        }
+        .answer {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: none; /* Hidden by default */
+            background: #ffffff;
+            margin-bottom: 10px;
+        }
+        .icon {
+            float: right;
+            transition: transform 0.3s;
+        }
+        .active .icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <div class="question" onclick="toggleAnswer(this)">
+        <span>Do you offer travel insurance?</span>
+        <span class="icon">➟</span>
+    </div>
+    <div class="answer">Yes, we offer various travel insurance plans for your peace of mind.</div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+        <span>What is the cancellation policy?</span>
+        <span class="icon">➟</span>
+    </div>
+    <div class="answer">Cancellations can be made up to 24 hours before departure for a full refund.</div>
+    
+    <div class="question" onclick="toggleAnswer(this)">
+        <span>How can I book my trip?</span>
+        <span class="icon">➟</span>
+    </div>
+    <div class="answer">You can book your trip through our website or mobile app.</div>
+
+    <div class="question" onclick="toggleAnswer(this)">
+        <span>What are the top travel destinations?</span>
+        <span class="icon">➟</span>
+    </div>
+    <div class="answer">Popular destinations include Paris, New York, Tokyo, and Bali.</div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        element.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

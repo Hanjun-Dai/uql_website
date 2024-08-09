@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #005bb5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #00408d;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 2;
+            margin-right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .article p {
+            color: #666;
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0073e6;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports News Today</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Football</a>
+    <a href="#">Basketball</a>
+    <a href="#">Tennis</a>
+    <a href="#">News</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Latest News</h3>
+        <ul>
+            <li><a href="#">Player Interviews</a></li>
+            <li><a href="#">Match Highlights</a></li>
+            <li><a href="#">Injury Updates</a></li>
+            <li><a href="#">Transfer Rumors</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="article">
+            <h2>Player of the Month Announced</h2>
+            <p>Congratulations to John Doe for his outstanding performance!</p>
+        </div>
+        <div class="article">
+            <h2>Upcoming Championships</h2>
+            <p>Don’t miss the annual championship starting next week.</p>
+        </div>
+        <div class="article">
+            <h2>Big Game Tonight!</h2>
+            <p>Catch the thrilling match between Team A and Team B at 7 PM!</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports News Today. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

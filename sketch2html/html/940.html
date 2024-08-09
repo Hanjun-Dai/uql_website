@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #004080;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #00509e;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        .article-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .article-title {
+            color: #004080;
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .article-meta {
+            color: #888888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel News</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Cultural Insights</a>
+    <a href="#">Travel Tips</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h3>Featured Links</h3>
+        <ul>
+            <li><a href="#">Traveler's Guide</a></li>
+            <li><a href="#">Booking Tips</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Packing Essentials</a></li>
+            <li><a href="#">Travel Blogs</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="article-card">
+            <h2 class="article-title">Traveling on a Budget</h2>
+            <p class="article-meta">September 15, 2023 | by Emily Davis</p>
+            <p>Learn how to save money while exploring new places...</p>
+        </div>
+
+        <div class="article-card">
+            <h2 class="article-title">Exploring the Wonders of Bali</h2>
+            <p class="article-meta">October 1, 2023 | by Jane Doe</p>
+            <p>Discover the beautiful landscapes and vibrant culture of Bali...</p>
+        </div>
+
+        <div class="article-card">
+            <h2 class="article-title">Top 10 Destinations for 2023</h2>
+            <p class="article-meta">September 25, 2023 | by John Smith</p>
+            <p>Check out the list of must-visit places around the globe this year...</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

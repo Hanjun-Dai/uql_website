@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f1f2;  /* Changed background color */
+        }
+
+        .container {
+            width: 1024px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Increased shadow opacity */
+            overflow: hidden;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #6c757d;  /* Changed header background */
+            color: #fff;  /* Changed header text color */
+        }
+
+        .product-image {
+            float: left;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;  /* Changed image border color */
+            border-radius: 4px;
+        }
+
+        .product-details {
+            float: right;
+            width: 50%;
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #0056b3;  /* Changed product title color */
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #495057;  /* Changed product description color */
+        }
+
+        .product-price {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #dc3545;  /* Changed product price color */
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #007BFF;  /* Changed buy button background */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background: #0056b3;  /* Changed hover color for buy button */
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #d1e7dd;  /* Changed footer background */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Product Page</h1>
+        </div>
+        <div class="product-image">
+            <img src="https://via.placeholder.com/400" alt="Product Image">
+        </div>
+        <div class="product-details">
+            <h2 class="product-title">Product Name</h2>
+            <p class="product-description">Brief description of the product that highlights key features and benefits.</p>
+            <p class="product-price">$49.99</p>
+            <a href="#" class="buy-button">Buy Now</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Company Name</p>
+    </footer>
+
+</body>
+
+</html>

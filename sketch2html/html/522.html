@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Tech Category Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f5e6;
+            margin: 0;
+            padding: 20px;
+            color: #444; /* Changed body text color */
+        }
+        h1 {
+            text-align: center;
+            color: #5a4a3a; /* Changed h1 color */
+            font-size: 2.5em;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        .category-header {
+            background: url('rustic-wood-background.jpg') no-repeat center;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .category-item {
+            background: #e8d8b3; /* Changed background color */
+            border: 1px solid #c2b59d; /* Changed border color */
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            width: calc(33.333% - 20px);
+            text-align: center;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .category-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        .category-title {
+            font-size: 1.5em;
+            color: #6d5f46; /* Changed category title color */
+            margin: 10px 0;
+        }
+        .category-description {
+            font-size: 0.9em;
+            color: #666; /* Changed category description color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="category-header">
+            <h1>Technology Categories</h1>
+        </div>
+
+        <div class="category-list">
+            <div class="category-item">
+                <img src="smartphones.jpg" alt="Smartphones">
+                <div class="category-title">Smartphones</div>
+                <div class="category-description">Latest models & trends</div>
+            </div>
+            <div class="category-item">
+                <img src="laptops.jpg" alt="Laptops">
+                <div class="category-title">Laptops</div>
+                <div class="category-description">Top reviews & guides</div>
+            </div>
+            <div class="category-item">
+                <img src="gadgets.jpg" alt="Gadgets">
+                <div class="category-title">Gadgets</div>
+                <div class="category-description">Innovative devices</div>
+            </div>
+            <div class="category-item">
+                <img src="accessories.jpg" alt="Accessories">
+                <div class="category-title">Accessories</div>
+                <div class="category-description">Enhance your tech</div>
+            </div>
+            <div class="category-item">
+                <img src="wearables.jpg" alt="Wearables">
+                <div class="category-title">Wearables</div>
+                <div class="category-description">Smart health tech</div>
+            </div>
+            <div class="category-item">
+                <img src="home_automation.jpg" alt="Home Automation">
+                <div class="category-title">Home Automation</div>
+                <div class="category-description">Smart home solutions</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #4b0082; /* Changed header background */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        nav {
+            width: 20%;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            padding: 20px;
+        }
+
+        nav h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #ff5722; /* Changed nav header color */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+            color: #4a4a4a; /* Changed nav list item color */
+        }
+
+        main {
+            width: 60%;
+            padding: 20px;
+        }
+
+        main h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #3f51b5; /* Changed main header color */
+        }
+
+        .thread {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            transition: box-shadow 0.3s;
+        }
+
+        .thread:hover {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow on hover */
+        }
+
+        .thread-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #009688; /* Changed thread title color */
+        }
+
+        .thread-info {
+            font-size: 14px;
+            color: #888; /* Changed thread info color */
+        }
+
+        aside {
+            width: 20%;
+            padding: 20px;
+            background: #fff;
+            border-left: 1px solid #ddd;
+        }
+
+        aside h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #673ab7; /* Changed aside header color */
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+            color: #795548; /* Changed aside list item color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Forum</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <h2>Categories</h2>
+        <ul>
+            <li>Trending</li>
+            <li>Styling Tips</li>
+            <li>Fashion News</li>
+            <li>DIY Fashion</li>
+            <li>Buying Guides</li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Recent Threads</h1>
+        
+        <div class="thread">
+            <div class="thread-title">How to style a maxi dress?</div>
+            <div class="thread-info">Posted by user1 | 10 replies | Last post: 2 hours ago</div>
+        </div>
+
+        <div class="thread">
+            <div class="thread-title">Best brands for streetwear</div>
+            <div class="thread-info">Posted by user2 | 5 replies | Last post: 1 day ago</div>
+        </div>
+
+        <div class="thread">
+            <div class="thread-title">Fashion trends for Fall 2023</div>
+            <div class="thread-info">Posted by user3 | 8 replies | Last post: 3 days ago</div>
+        </div>
+    </main>
+
+    <aside>
+        <h2>Popular Topics</h2>
+        <ul>
+            <li>Summer Accessories</li>
+            <li>Red Carpet Looks</li>
+            <li>Eco-Friendly Brands</li>
+            <li>Fashion Icons</li>
+            <li>Makeup Tips</li>
+        </ul>
+    </aside>
+</div>
+
+</body>
+</html>

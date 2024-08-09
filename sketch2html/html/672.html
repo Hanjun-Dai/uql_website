@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Entertainment Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .faq {
+            margin: 20px 0;
+            border-bottom: 1px solid #e9ecef;
+            padding: 10px 0;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq h2 {
+            font-size: 1.5em;
+            margin: 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .faq h2:hover {
+            color: #007bff;
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+            line-height: 1.5;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq">
+            <h2 onclick="toggleAnswer(this)">Can I cancel my subscription anytime?</h2>
+            <p class="answer">Yes, you can cancel your subscription at any time through your account settings.</p>
+        </div>
+        <div class="faq">
+            <h2 onclick="toggleAnswer(this)">Is there a subscription fee?</h2>
+            <p class="answer">Basic access is free, but premium content requires a subscription.</p>
+        </div>
+        <div class="faq">
+            <h2 onclick="toggleAnswer(this)">What types of entertainment can I find here?</h2>
+            <p class="answer">You can find movies, music, games, and much more!</p>
+        </div>
+        <div class="faq">
+            <h2 onclick="toggleAnswer(this)">How do I create an account?</h2>
+            <p class="answer">Click on 'Sign Up' and fill out the required information.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

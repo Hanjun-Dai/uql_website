@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Food Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0a74da;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .product-showcase {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: white;
+        }
+        .product {
+            text-align: center;
+            width: 200px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #0a74da;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Food Corp</h1>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="product-showcase">
+    <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>$10.00</p>
+    </div>
+    <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h2>Product 2</h2>
+        <p>$15.00</p>
+    </div>
+    <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h2>Product 3</h2>
+        <p>$20.00</p>
+    </div>
+</section>
+
+<div class="hero">
+    <h1>Fresh & Delicious Food</h1>
+</div>
+
+<footer>
+    <p>&copy; 2023 Food Corp. All Rights Reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
+</footer>
+
+</body>
+</html>

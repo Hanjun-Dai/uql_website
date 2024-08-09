@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .article {
+            background: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Entertainment Daily</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Music</a>
+            <a href="#">Celebrities</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Trending</h2>
+            <ul>
+                <li><a href="#">Star Wars: New Trailers Released</a></li>
+                <li><a href="#">Oscars: Biggest Snubs of the Year</a></li>
+                <li><a href="#">New Albums Dropping This Month</a></li>
+            </ul>
+            <h2>Subscribe</h2>
+            <p>Join our newsletter for the latest updates!</p>
+            <input type="email" placeholder="Your email">
+            <button>Subscribe</button>
+        </aside>
+
+        <div class="main-content">
+            <div class="article">
+                <h2>Top 10 TV Shows to Watch</h2>
+                <p>Our picks for the best TV shows to binge right now.</p>
+            </div>
+            <div class="article">
+                <h2>Latest Movie Releases</h2>
+                <p>Check out the latest movies that have hit the theaters!</p>
+            </div>
+            <div class="article">
+                <h2>Celebrity Gossip Roundup</h2>
+                <p>Find out who’s dating who in Hollywood this week!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Entertainment Daily. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

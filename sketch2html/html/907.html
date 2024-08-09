@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #444; /* Slightly modified text color */
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #00796b; /* Changed header color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1 1 calc(30% - 20px);
+            background: #fff;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Darker box shadow */
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+        }
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #d32f2f; /* Changed header color for service */
+        }
+        .service p {
+            padding: 0 10px;
+            color: #757575; /* Lighter paragraph text color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #00796b; /* Changed footer color */
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="services">
+            <div class="service">
+                <img src="images/buying.jpg" alt="Home Buying">
+                <h2>Home Buying</h2>
+                <p>Your dream home awaits!</p>
+            </div>
+            <div class="service">
+                <img src="images/selling.jpg" alt="Home Selling">
+                <h2>Home Selling</h2>
+                <p>Get the best value for your property.</p>
+            </div>
+            <div class="service">
+                <img src="images/renting.jpg" alt="Property Renting">
+                <h2>Property Renting</h2>
+                <p>Find the ideal rental property.</p>
+            </div>
+            <div class="service">
+                <img src="images/investment.jpg" alt="Real Estate Investment">
+                <h2>Real Estate Investment</h2>
+                <p>Grow your wealth through property.</p>
+            </div>
+            <div class="service">
+                <img src="images/property-management.jpg" alt="Property Management">
+                <h2>Property Management</h2>
+                <p>Let us handle your property.</p>
+            </div>
+            <div class="service">
+                <img src="images/consultation.jpg" alt="Consultation">
+                <h2>Consultation</h2>
+                <p>Expert advice for your needs.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Real Estate Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

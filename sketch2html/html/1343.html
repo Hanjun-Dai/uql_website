@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 1.5rem;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .news-card:hover {
+            transform: scale(1.02);
+        }
+
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #777;
+        }
+
+        .news-content {
+            padding: 1rem;
+        }
+
+        .news-title {
+            font-size: 1.2rem;
+            margin: 0 0 10px;
+        }
+
+        .news-date {
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Real Estate News</h1>
+        <nav>
+            <a href="#latest">Latest News</a>
+            <a href="#trends">Market Trends</a>
+            <a href="#guides">Buying Guides</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="news-grid">
+
+            <div class="news-card">
+                <div class="news-image">Image</div>
+                <div class="news-content">
+                    <h2 class="news-title">Interest Rates Update</h2>
+                    <p class="news-date">October 8, 2023</p>
+                    <p>Latest news on mortgage interest rates...</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">Image</div>
+                <div class="news-content">
+                    <h2 class="news-title">Home Renovation Tips</h2>
+                    <p class="news-date">October 5, 2023</p>
+                    <p>How to increase your home value with renovations...</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">Image</div>
+                <div class="news-content">
+                    <h2 class="news-title">New Home Sales Surge</h2>
+                    <p class="news-date">October 12, 2023</p>
+                    <p>Details about new home sales trends and statistics...</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-image">Image</div>
+                <div class="news-content">
+                    <h2 class="news-title">Top Neighborhoods to Buy</h2>
+                    <p class="news-date">October 10, 2023</p>
+                    <p>Discover the best neighborhoods for homebuyers...</p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        Â© 2023 Real Estate Company | All rights reserved
+    </footer>
+
+</body>
+</html>

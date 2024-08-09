@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Education Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0044cc;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .portfolio-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .portfolio-item {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .portfolio-item .item-image {
+            flex: 0 0 150px;
+            margin-right: 20px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .portfolio-item .item-info {
+            flex: 1;
+        }
+        .items-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .portfolio-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Portfolio</h1>
+    <p>Your gateway to professional learning</p>
+</header>
+
+<div class="container">
+    <div class="portfolio-footer">
+        <p>Contact: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>&copy; 2023 Your Name. All Rights Reserved.</p>
+    </div>
+    
+    <h2 class="portfolio-title">My Projects</h2>
+    <div class="items-grid">
+        <div class="portfolio-item">
+            <div class="item-image">
+                <img src="project2-thumbnail.jpg" alt="Project 2">
+            </div>
+            <div class="item-info">
+                <h3>Project Title 2</h3>
+                <p>Brief description of the project highlighting innovative techniques used.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="item-image">
+                <img src="project1-thumbnail.jpg" alt="Project 1">
+            </div>
+            <div class="item-info">
+                <h3>Project Title 1</h3>
+                <p>Brief description of the project emphasizing key skills and outcomes.</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="item-image">
+                <img src="project3-thumbnail.jpg" alt="Project 3">
+            </div>
+            <div class="item-info">
+                <h3>Project Title 3</h3>
+                <p>Concise overview of the project's goals and achievements.</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as necessary -->
+    </div>
+</div>
+
+</body>
+</html>

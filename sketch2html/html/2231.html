@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Fashion Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 1024px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .image-section {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            background: #eaeaea;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-section {
+            flex: 1.5;
+            padding: 20px;
+        }
+
+        .title {
+            font-size: 40px; /* Increased font size */
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 32px; /* Increased font size */
+            color: #e91e63;
+            margin: 5px 0 15px 0;
+        }
+
+        .description {
+            font-size: 12px; /* Decreased font size */
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 18px; /* Increased font size */
+        }
+
+        .button:hover {
+            background-color: #d81b60;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 50px; /* Increased icon size */
+            height: 50px; /* Increased icon size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+        <div class="info-section">
+            <h1 class="title">Elegant Dress</h1>
+            <p class="price">$99.99</p>
+            <p class="description">A beautiful elegant dress perfect for any occasion.</p>
+            <button class="button">Add to Cart</button>
+            <div class="social-icons">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

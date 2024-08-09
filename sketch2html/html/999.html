@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f3f4; /* Changed body background color */
+        }
+        header {
+            background: #d35400; /* Changed header background color */
+            color: #ecf0f1; /* Changed header text color */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ecf0f1; /* Changed nav link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .featured-post {
+            background: #ffffff; /* Kept as is */
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .recent-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .post {
+            background: #ffffff; /* Kept as is */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #d35400; /* Changed footer background color */
+            color: #ecf0f1; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Delights</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="featured-post">
+        <h2>Featured Recipe: Spaghetti Carbonara</h2>
+        <img src="featured-dish.jpg" alt="Spaghetti Carbonara" style="width: 100%; border-radius: 5px;">
+        <p>Unlock the taste of Italy with this simple yet delicious spaghetti carbonara recipe. Perfect for dinner!</p>
+    </div>
+
+    <h2>Recent Posts</h2>
+    <div class="recent-posts">
+        <div class="post">
+            <h3>Avocado Toast</h3>
+            <img src="avocado-toast.jpg" alt="Avocado Toast" style="width: 100%; border-radius: 5px;">
+            <p>A quick and easy breakfast option that is both healthy and tasty.</p>
+        </div>
+        <div class="post">
+            <h3>Chocolate Cake</h3>
+            <img src="chocolate-cake.jpg" alt="Chocolate Cake" style="width: 100%; border-radius: 5px;">
+            <p>Indulge in this rich and moist chocolate cake that's perfect for any occasion.</p>
+        </div>
+        <div class="post">
+            <h3>Caesar Salad</h3>
+            <img src="caesar-salad.jpg" alt="Caesar Salad" style="width: 100%; border-radius: 5px;">
+            <p>A classic salad that can be served as a side or a main dish.</p>
+        </div>
+        <div class="post">
+            <h3>Beef Tacos</h3>
+            <img src="beef-tacos.jpg" alt="Beef Tacos" style="width: 100%; border-radius: 5px;">
+            <p>Enjoy vibrant flavors with these easy-to-make beef tacos!</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Foodie Delights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

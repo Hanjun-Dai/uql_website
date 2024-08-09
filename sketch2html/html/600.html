@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Category Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #495057;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #6c757d;
+            border-radius: 5px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .category-card h3 {
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            margin: 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Hub</h1>
+</header>
+
+<nav>
+    <a href="#trucks">Trucks</a>
+    <a href="#motorcycles">Motorcycles</a>
+    <a href="#parts">Parts & Accessories</a>
+    <a href="#services">Services</a>
+    <a href="#cars">Cars</a>
+</nav>
+
+<div class="container">
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Trucks">
+        <h3>Trucks</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Cars">
+        <h3>Cars</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Parts">
+        <h3>Parts & Accessories</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Motorcycles">
+        <h3>Motorcycles</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Finance">
+        <h3>Finance</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/200" alt="Services">
+        <h3>Services</h3>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Automotive Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

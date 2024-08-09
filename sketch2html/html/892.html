@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic News Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #e2f0d9; /* Changed to a light green */
+            color: #2e2e2e; /* Darker shade of gray */
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #6B4226; /* Changed to a darker brown */
+            color: #ffffff; /* Remains white */
+        }
+        h1 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffdead; /* Light beige for links */
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .article {
+            background-color: #ffffff;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slightly darker shadow */
+            overflow: hidden;
+            width: calc(33% - 20px);
+            transition: transform 0.3s;
+        }
+        .article:hover {
+            transform: scale(1.05);
+            border: 2px solid #ff6347; /* Added border on hover with tomato color */
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 15px;
+        }
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            font-size: 1.5em;
+            color: #4682b4; /* Blue color for article headings */
+        }
+        .content p {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #444; /* Darker gray for paragraph text */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f5deb3; /* Wheat color for footer */
+            color: #333333; /* Dark gray for footer text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="article">
+        <img src="https://via.placeholder.com/300x200" alt="News Image 1">
+        <div class="content">
+            <h2>Latest Updates</h2>
+            <p>Short description of the news article goes here...</p>
+        </div>
+    </div>
+    <div class="article">
+        <img src="https://via.placeholder.com/300x200" alt="News Image 2">
+        <div class="content">
+            <h2>Business Insights</h2>
+            <p>Brief insight into recent trends and changes...</p>
+        </div>
+    </div>
+    <div class="article">
+        <img src="https://via.placeholder.com/300x200" alt="News Image 3">
+        <div class="content">
+            <h2>Market Overview</h2>
+            <p>Concise overview of market performance...</p>
+        </div>
+    </div>
+    
+    <!-- Add more articles as needed -->
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Business Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

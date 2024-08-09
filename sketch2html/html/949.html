@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History News - Professional Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            max-width: 1024px;
+            margin: auto;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            padding: 15px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .article {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .article p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History News</h1>
+    <p>Your source for the latest history updates.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">Events</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Latest Articles</h3>
+        <ul>
+            <li><a href="#">The Importance of Preserving History</a></li>
+            <li><a href="#">Great Civilizations: A Journey</a></li>
+            <li><a href="#">Women in History: Unsung Heroes</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>100 Years of Modern History</h2>
+            <p>A look back at significant events in the past century that shaped our world...</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article">
+            <h2>Excavation Reveals Ancient City</h2>
+            <p>Discoveries made in the recent excavation shed light on...</p>
+            <a href="#">Read more</a>
+        </div>
+
+        <div class="article">
+            <h2>Mysterious Artifact Unearthed</h2>
+            <p>Archaeologists have uncovered an artifact that could change our understanding of...</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 History News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

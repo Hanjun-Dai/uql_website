@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Category Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff8dc; /* cornsilk */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6f4c3e; /* coffee */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 2px solid #cd853f; /* peru */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            background-color: #deb887; /* burlywood */
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        .footer {
+            background-color: #6f4c3e; /* coffee */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Goods Collection</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="images/item1.jpg" alt="Item 1">
+        <div class="card-title">Handcrafted Furniture</div>
+    </div>
+    <div class="card">
+        <img src="images/item2.jpg" alt="Item 2">
+        <div class="card-title">Natural Candles</div>
+    </div>
+    <div class="card">
+        <img src="images/item3.jpg" alt="Item 3">
+        <div class="card-title">Rustic Pottery</div>
+    </div>
+    <div class="card">
+        <img src="images/item4.jpg" alt="Item 4">
+        <div class="card-title">Vintage Decor</div>
+    </div>
+    <div class="card">
+        <img src="images/item5.jpg" alt="Item 5">
+        <div class="card-title">Woven Baskets</div>
+    </div>
+    <div class="card">
+        <img src="images/item6.jpg" alt="Item 6">
+        <div class="card-title">Organic Tea Blends</div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>Â© 2023 Rustic Goods</p>
+</footer>
+
+</body>
+</html>

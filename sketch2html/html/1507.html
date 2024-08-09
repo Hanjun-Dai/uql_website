@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .blog-post img {
+            width: 100%;
+            height: auto;
+        }
+        .blog-post h2 {
+            margin: 15px;
+            font-size: 24px;
+        }
+        .blog-post p {
+            margin: 15px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Insights</h1>
+    <p>Your daily dose of style!</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>About Us</h3>
+        <p>We are passionate about fashion and aim to inspire contemporary style.</p>
+        
+        <h3>Categories</h3>
+        <ul>
+            <li>Trends</li>
+            <li>Styling Tips</li>
+            <li>Lifestyle</li>
+            <li>Events</li>
+        </ul>
+        
+        <h3>Contact</h3>
+        <p>Reach out at: contact@fashioninsights.com</p>
+    </aside>
+
+    <div class="main-content">
+        <div class="blog-post">
+            <img src="fashion3.jpg" alt="Fashion 3">
+            <h2>Seasonal Must-Haves</h2>
+            <p>Discover the essential pieces you need in your wardrobe this season.</p>
+        </div>
+        <div class="blog-post">
+            <img src="fashion1.jpg" alt="Fashion 1">
+            <h2>Trends of 2023</h2>
+            <p>Explore the latest styles and trends that are defining the fashion landscape this year!</p>
+        </div>
+        <div class="blog-post">
+            <img src="fashion2.jpg" alt="Fashion 2">
+            <h2>How to Accessorize</h2>
+            <p>Learn the art of accessorizing to elevate your outfits effortlessly.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Fashion Insights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

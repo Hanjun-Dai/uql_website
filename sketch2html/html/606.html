@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Finance Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-image: url('hero-image.jpg'); /* Placeholder for hero image */
+            background-size: cover;
+            position: relative;
+        }
+
+        .hero h1 {
+            position: absolute;
+            color: white;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 0;
+            background-color: white;
+        }
+
+        .service {
+            text-align: center;
+            width: 30%;
+            padding: 1rem;
+        }
+
+        .service img {
+            width: 70px;
+            height: 70px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Guru</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a> <!-- Randomly shuffled -->
+        <a href="#">About</a> <!-- Randomly shuffled -->
+        <a href="#">Services</a>
+    </nav>
+</header>
+
+<section class="services"> <!-- Moved section to the top after header -->
+    <div class="service">
+        <img src="icon-savings.png" alt="Savings Icon"> <!-- Randomly shuffled -->
+        <h3>Save Smartly</h3>
+    </div>
+    <div class="service">
+        <img src="icon-wealth.png" alt="Wealth Management Icon"> <!-- Randomly shuffled -->
+        <h3>Grow Wealth</h3>
+    </div>
+    <div class="service">
+        <img src="icon-investment.png" alt="Investment Icon"> <!-- Randomly shuffled -->
+        <h3>Invest Wisely</h3>
+    </div>
+</section>
+
+<section class="hero"> <!-- Moved hero section to the bottom -->
+    <h1>Your Financial Journey Starts Here</h1>
+</section>
+
+<footer>
+    <p>&copy; 2023 Finance Guru. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

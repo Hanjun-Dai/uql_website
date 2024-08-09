@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Finance Fun</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 5em; /* Increased font size */
+            margin: 0;
+            animation: bounce 1s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .content {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .member {
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #e7ffe7;
+            width: 180px;
+            margin: 10px;
+            transition: transform 0.2s;
+        }
+
+        .member h3 {
+            font-size: 1.2em; /* Slightly smaller font size */
+        }
+
+        .member p {
+            font-size: 0.8em; /* Slightly smaller font size */
+        }
+
+        .member:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 1.5em; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+
+        <div class="content">
+            <p style="font-size: 1.8em;">Welcome to Finance Fun!</p> <!-- Increased font size -->
+            <p style="font-size: 0.9em;">Your go-to place for making finance enjoyable and easy!</p> <!-- Slightly smaller font size -->
+        </div>
+
+        <section class="team">
+            <div class="member">
+                <h3>Jane Doe</h3>
+                <p>Chief Fun Officer</p>
+            </div>
+            <div class="member">
+                <h3>John Smith</h3>
+                <p>Finance Wizard</p>
+            </div>
+            <div class="member">
+                <h3>Lisa White</h3>
+                <p>Money Maven</p>
+            </div>
+            <div class="member">
+                <h3>Tom Brown</h3>
+                <p>Budget Buddy</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Finance Fun. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

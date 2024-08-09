@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Paradise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Add a suitable image URL */
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .features, .testimonials {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .feature, .testimonial {
+            background: #fff;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            padding: 15px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .features, .testimonials {
+                flex-direction: column;
+                align-items: center;
+            }
+            .feature, .testimonial {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Paradise</h1>
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>Welcome to Parenting Paradise</div>
+</section>
+
+<div class="container">
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial">
+            <p>"This site changed my parenting journey!"</p>
+            <strong>- Amy</strong>
+        </div>
+        <div class="testimonial">
+            <p>"I found the support I needed."</p>
+            <strong>- John</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Fantastic resources for new parents."</p>
+            <strong>- Sarah</strong>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <h2>Expert Advice</h2>
+            <p>Get tips from professionals.</p>
+        </div>
+        <div class="feature">
+            <h2>Community Support</h2>
+            <p>Join our parenting community.</p>
+        </div>
+        <div class="feature">
+            <h2>Resources</h2>
+            <p>Access a wealth of resources.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Paradise</p>
+</footer>
+
+</body>
+</html>

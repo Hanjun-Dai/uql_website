@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Resource Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #5A67D8; /* Changed from #4A90E2 */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .resource-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .resource-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #E53E3E; /* Changed from #4A90E2 */
+        }
+        .resource-card p {
+            font-size: 0.9em;
+            color: #4A5568; /* Changed from #666 */
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #5A67D8; /* Changed from #4A90E2 */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arts Resource Hub</h1>
+        <p>Your go-to source for arts resources</p>
+    </header>
+    <div class="container">
+        <div class="resources">
+            <div class="resource-card">
+                <h3>Resource 1</h3>
+                <p>Brief description or tagline for Resource 1.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Resource 2</h3>
+                <p>Brief description or tagline for Resource 2.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Resource 3</h3>
+                <p>Brief description or tagline for Resource 3.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Resource 4</h3>
+                <p>Brief description or tagline for Resource 4.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Resource 5</h3>
+                <p>Brief description or tagline for Resource 5.</p>
+            </div>
+            <div class="resource-card">
+                <h3>Resource 6</h3>
+                <p>Brief description or tagline for Resource 6.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Â© 2023 Arts Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

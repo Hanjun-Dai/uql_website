@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007BFF;
+            transition: color 0.2s;
+        }
+
+        .question:hover {
+            color: #0056b3;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(3)">What is your return policy?</div>
+            <div class="answer" id="answer3">Our return policy allows returns within 30 days of purchase.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(1)">What services do you offer?</div>
+            <div class="answer" id="answer1">We offer a variety of services tailored to your needs.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(5)">What payment methods do you accept?</div>
+            <div class="answer" id="answer5">We accept major credit cards, PayPal, and bank transfers.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(2)">How can I contact customer support?</div>
+            <div class="answer" id="answer2">You can contact us via email or phone.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(4)">Do you offer discounts for bulk orders?</div>
+            <div class="answer" id="answer4">Yes, we offer discounts for bulk purchases. Please contact us for details.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(num) {
+            const answer = document.getElementById('answer' + num);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

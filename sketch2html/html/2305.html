@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Politics Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f44336; /* Changed header color */
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #3f51b5; /* Changed link color */
+            font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .forum-section {
+            width: 100%;
+            max-width: 800px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .forum-header {
+            background-color: #2196F3; /* Changed forum header color */
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            text-align: center;
+        }
+
+        .forum-post {
+            border-bottom: 1px solid #f0f0f0;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .forum-post:last-child {
+            border-bottom: none;
+        }
+
+        .post-content {
+            flex-grow: 1;
+        }
+
+        .post-title {
+            font-size: 1.2em;
+            color: #4A148C; /* Changed post title color */
+            margin: 0;
+        }
+
+        .post-meta {
+            color: #757575; /* Changed post meta color */
+            font-size: 0.9em;
+        }
+
+        .post-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post-actions button {
+            background-color: #00bcd4; /* Changed button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+
+        .post-actions button:hover {
+            background-color: #0097a7; /* Changed button hover color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #cfd8dc; /* Changed footer color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .create-post-btn {
+            background-color: #673ab7; /* Changed create post button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 15px;
+            cursor: pointer;
+            margin: 20px;
+            font-size: 1.2em;
+        }
+
+        .create-post-btn:hover {
+            background-color: #512da8; /* Changed create post button hover color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Playful Politics Forum
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#topics">Topics</a>
+        <a href="#members">Members</a>
+        <a href="#about">About</a>
+    </nav>
+    <main>
+        <div class="forum-section">
+            <div class="forum-header">Recent Discussions</div>
+            <div class="forum-post">
+                <div class="post-content">
+                    <h3 class="post-title">What is your opinion on the new tax laws?</h3>
+                    <p class="post-meta">Posted by User123 | 2 hours ago</p>
+                </div>
+                <div class="post-actions">
+                    <button>Reply</button>
+                    <button>Vote</button>
+                </div>
+            </div>
+            <div class="forum-post">
+                <div class="post-content">
+                    <h3 class="post-title">Is healthcare a right or a privilege?</h3>
+                    <p class="post-meta">Posted by User456 | 3 hours ago</p>
+                </div>
+                <div class="post-actions">
+                    <button>Reply</button>
+                    <button>Vote</button>
+                </div>
+            </div>
+            <div class="forum-post">
+                <div class="post-content">
+                    <h3 class="post-title">Climate change policies debate</h3>
+                    <p class="post-meta">Posted by User789 | 4 hours ago</p>
+                </div>
+                <div class="post-actions">
+                    <button>Reply</button>
+                    <button>Vote</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="create-post-btn">Create New Post</button>
+    </footer>
+</body>
+</html>

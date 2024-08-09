@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6e6e6; /* Changed background color */
+        }
+        header {
+            background: #00509e; /* Changed header background */
+            color: #ffffff; /* Changed header text color */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            color: #ffffff; /* Maintained color for nav links */
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            width: 70%;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            background: #f9f9f9; /* Changed sidebar background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .post h2 {
+            margin: 0;
+            color: #333333; /* Changed post title color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #00509e; /* Changed footer background */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Politics Today</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <article class="post">
+                <h2>Latest Political News</h2>
+                <p>Summary of latest developments in the political landscape.</p>
+            </article>
+            <article class="post">
+                <h2>Election Updates</h2>
+                <p>Insights on the upcoming elections and candidate profiles.</p>
+            </article>
+            <article class="post">
+                <h2>Policy Changes</h2>
+                <p>Discussion on recent policy decisions and their impacts.</p>
+            </article>
+        </main>
+
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Elections</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Opinions</a></li>
+            </ul>
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="#">Update on Climate Agreement</a></li>
+                <li><a href="#">Impact of New Tax Law</a></li>
+                <li><a href="#">Voter Registration Drive</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Politics Today. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #324b89;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+        }
+        .answer {
+            display: none;
+            margin: 5px 0 10px;
+            padding: 10px;
+            background-color: #e8f2ff;
+        }
+        .expand-button {
+            background: none;
+            border: none;
+            color: #007BFF;
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <p class="question">Are pets allowed on your trips? <button class="expand-button" onclick="toggleAnswer(this)">Show Answer</button></p>
+        <p class="answer">Pets are allowed on some trips; please check individual trip details.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What is your cancellation policy? <button class="expand-button" onclick="toggleAnswer(this)">Show Answer</button></p>
+        <p class="answer">You can cancel up to 24 hours before your trip for a full refund.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="question">How can I contact customer service? <button class="expand-button" onclick="toggleAnswer(this)">Show Answer</button></p>
+        <p class="answer">You can call us at 1-800-TRAVEL or email support@travelwebsite.com.</p>
+    </div>
+    
+    <div class="faq-item">
+        <p class="question">Do you offer travel insurance? <button class="expand-button" onclick="toggleAnswer(this)">Show Answer</button></p>
+        <p class="answer">Yes, we offer travel insurance options during checkout.</p>
+    </div>
+
+    <div class="faq-item">
+        <p class="question">What payment methods do you accept? <button class="expand-button" onclick="toggleAnswer(this)">Show Answer</button></p>
+        <p class="answer">We accept all major credit cards and PayPal.</p>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(button) {
+        const answer = button.parentNode.nextElementSibling;
+        if (answer.style.display === "none" || answer.style.display === "") {
+            answer.style.display = "block";
+            button.textContent = "Hide Answer";
+        } else {
+            answer.style.display = "none";
+            button.textContent = "Show Answer";
+        }
+    }
+</script>
+
+</body>
+</html>

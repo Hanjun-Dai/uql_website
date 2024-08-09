@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            max-width: 1024px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .resource-card h3 {
+            margin: 0 0 10px;
+            font-size: 2.5em; /* Increased */
+        }
+
+        .resource-card a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.2em; /* Increased */
+        }
+
+        .resource-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.1em; /* Increased */
+            color: #777;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 3em;">Game Resources</h1> <!-- Increased -->
+    </header>
+
+    <div class="container">
+        <div class="resource-card">
+            <h3>Game Guides</h3>
+            <a href="#">Explore Guides</a>
+        </div>
+        <div class="resource-card">
+            <h3 style="font-size: 0.9em;">Mods & Add-ons</h3> <!-- Decreased -->
+            <a href="#">Browse Mods</a>
+        </div>
+        <div class="resource-card">
+            <h3>Community Forums</h3>
+            <a href="#" style="font-size: 1.5em;">Join Discussion</a> <!-- Increased -->
+        </div>
+        <div class="resource-card">
+            <h3 style="font-size: 0.8em;">News & Updates</h3> <!-- Decreased -->
+            <a href="#" style="font-size: 1.1em;">Read Latest News</a> <!-- Increased -->
+        </div>
+        <div class="resource-card">
+            <h3>Support</h3>
+            <a href="#">Get Help</a>
+        </div>
+    </div>
+
+    <footer>
+        <p style="font-size: 0.7em;">&copy; 2023 Game Website. All rights reserved.</p> <!-- Decreased -->
+    </footer>
+</body>
+
+</html>

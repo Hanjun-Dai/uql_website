@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007BFF;
+            transition: color 0.2s;
+        }
+        .faq-question:hover {
+            color: #0056b3;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="faq-question">Is it better to buy or rent?</div>
+            <div class="faq-answer">It depends on your financial situation and lifestyle. Buying often builds equity while renting offers flexibility.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What are closing costs?</div>
+            <div class="faq-answer">Closing costs are fees associated with finalizing a home purchase, typically ranging from 2% to 5% of the home's purchase price.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What should I look for in a neighborhood?</div>
+            <div class="faq-answer">Consider factors such as schools, amenities, safety, and your commute when choosing a neighborhood.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I know how much I can afford?</div>
+            <div class="faq-answer">Determine your budget by evaluating your income, debts, and savings. Consider getting pre-approved for a mortgage.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">What is the process of buying a home?</div>
+            <div class="faq-answer">The process generally involves finding an agent, searching for properties, making an offer, and closing the deal.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

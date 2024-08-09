@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 30%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            width: 65%;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .post {
+            margin: 20px 0;
+        }
+
+        .post h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .post p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Technology</a>
+        <a href="#">Health</a>
+        <a href="#">Sports</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>About Us</h3>
+        <p>Brief description of the news blog...</p>
+
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Sports</a></li>
+        </ul>
+    </aside>
+    
+    <div class="main-content">
+        <div class="post">
+            <h2>Latest Update in Current Events</h2>
+            <p>Key points of the news article...</p>
+        </div>
+        <div class="post">
+            <h2>Another News Headline</h2>
+            <p>Brief overview of the news article...</p>
+        </div>
+        <div class="post">
+            <h2>Headline of the News Article</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 News Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

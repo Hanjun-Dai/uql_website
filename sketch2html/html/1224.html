@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Fun Zone</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #87ceeb;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #fff;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .category-card {
+            background: #90ee90;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+            background: #98fb98;
+        }
+        .category-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Fun Zone!</h1>
+</header>
+
+<div class="category-grid">
+    <div class="category-card">
+        <div class="category-icon">ð§ª</div>
+        <h2>Physics</h2>
+    </div>
+    <div class="category-card">
+        <div class="category-icon">ð­</div>
+        <h2>Astronomy</h2>
+    </div>
+    <div class="category-card">
+        <div class="category-icon">ð§¬</div>
+        <h2>Biology</h2>
+    </div>
+    <div class="category-card">
+        <div class="category-icon">âï¸</div>
+        <h2>Chemistry</h2>
+    </div>
+    <div class="category-card">
+        <div class="category-icon">ð»</div>
+        <h2>Computer Science</h2>
+    </div>
+    <div class="category-card">
+        <div class="category-icon">ð</div>
+        <h2>Earth Science</h2>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science Fun Zone</p>
+</footer>
+
+</body>
+</html>

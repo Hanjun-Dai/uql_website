@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            text-align: center;
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        .price {
+            font-size: 1.8em;
+            color: #e76e1b;
+        }
+        .description {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #555;
+        }
+        .button {
+            padding: 15px 30px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .button:hover {
+            background: #218838;
+        }
+        .related-products {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .related-product {
+            width: 30%;
+            margin: 1%;
+            text-align: center;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .related-product img {
+            width: 100%;
+            height: auto;
+        }
+        .related-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Artistic Creations</h1>
+        <p>Handcrafted by Local Artists</p>
+    </div>
+
+    <h3>Related Products</h3>
+    <div class="related-products">
+        <div class="related-product">
+            <img src="related-art1.jpg" alt="Related Art 1">
+            <div class="related-title">Modern Canvas</div>
+        </div>
+        <div class="related-product">
+            <img src="related-art2.jpg" alt="Related Art 2">
+            <div class="related-title">Abstract Sculpture</div>
+        </div>
+        <div class="related-product">
+            <img src="related-art3.jpg" alt="Related Art 3">
+            <div class="related-title">Colorful Mural</div>
+        </div>
+    </div>
+
+    <img src="art-product.jpg" alt="Artistic Creation" class="product-image">
+    
+    <div class="product-info">
+        <h2 class="product-title">Beautiful Art Piece</h2>
+        <p class="price">$150.00</p>
+        <p class="description">A stunning blend of colors and textures.</p>
+        <button class="button">Add to Cart</button>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e7f4; /* Changed */
+            margin: 0;
+            padding: 0;
+            color: #444; /* Changed */
+        }
+        header {
+            background: #6a94d9; /* Changed */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .service-card {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            margin: 15px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            background: #e3f2fd; /* Changed */
+            border-bottom: 3px solid #6a94d9; /* Changed */
+            padding: 30px 0;
+        }
+        .service-icon img {
+            width: 60px;
+            height: 60px;
+        }
+        .service-content {
+            padding: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #6a94d9; /* Changed */
+        }
+        .button {
+            background: #6a94d9; /* Changed */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #4f7da2; /* Changed */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Our Parenting Services</h1>
+        <p>Empowering parents, nurturing families</p>
+    </header>
+    
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="icon1.png" alt="Service 1">
+            </div>
+            <div class="service-content">
+                <h2>Consultation</h2>
+                <p>Personalized guidance for all parenting challenges.</p>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="icon2.png" alt="Service 2">
+            </div>
+            <div class="service-content">
+                <h2>Workshops</h2>
+                <p>Interactive sessions to enhance parenting skills.</p>
+                <a href="#" class="button">Join Now</a>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="icon3.png" alt="Service 3">
+            </div>
+            <div class="service-content">
+                <h2>Community Support</h2>
+                <p>Connect with other parents for shared experiences.</p>
+                <a href="#" class="button">Get Involved</a>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">
+                <img src="icon4.png" alt="Service 4">
+            </div>
+            <div class="service-content">
+                <h2>Resources</h2>
+                <p>Access articles and guides on parenting topics.</p>
+                <a href="#" class="button">Explore</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

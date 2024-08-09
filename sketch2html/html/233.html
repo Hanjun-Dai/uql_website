@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Rustic Entertainment</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f5ef;
+            color: #3e3e3e;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #8b5b29;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #8b5b29;
+            border-radius: 10px;
+            background: #fff0e6;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .faq {
+            margin-bottom: 20px;
+        }
+
+        .faq h2 {
+            font-size: 1.5em;
+            color: #7c4d00;
+            cursor: pointer;
+            border-bottom: 1px solid #8b5b29;
+            padding: 10px 0;
+        }
+
+        .faq p {
+            display: none;
+            font-size: 1em;
+            line-height: 1.5;
+            padding: 10px 0;
+        }
+
+        .faq.active p {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px; /* Reduced margin for footer */
+            font-size: 0.9em;
+            padding-top: 20px; /* Added padding for visual separation */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+    <div class="container">
+        <div class="faq">
+            <h2>How do I buy tickets?</h2>
+            <p>Tickets can be purchased through our website or at the venue box office.</p>
+        </div>
+        <div class="faq">
+            <h2>How can I contact customer service?</h2>
+            <p>You can reach our support team via the 'Contact Us' section on our website.</p>
+        </div>
+        <div class="faq">
+            <h2>What is Rustic Entertainment?</h2>
+            <p>Rustic Entertainment offers a blend of traditional and modern entertainment options.</p>
+        </div>
+        <div class="faq">
+            <h2>What is your refund policy?</h2>
+            <p>Refunds are available within 48 hours of purchase unless stated otherwise.</p>
+        </div>
+        <div class="faq">
+            <h2>What types of events do you host?</h2>
+            <p>We host a variety of events including concerts, theater productions, and community gatherings.</p>
+        </div>
+        <div class="faq">
+            <h2>Where are your events held?</h2>
+            <p>Our events take place in various rustic venues, primarily in the countryside.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Rustic Entertainment | All Rights Reserved
+    </footer>
+
+    <script>
+        // Simple JavaScript to toggle FAQ answers
+        document.querySelectorAll('.faq h2').forEach(item => {
+            item.addEventListener('click', event => {
+                const faq = item.parentNode;
+                faq.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

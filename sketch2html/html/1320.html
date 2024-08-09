@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Game Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: #4CAF50;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 5px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq-item">
+            <div class="faq-answer">You can contact support via our support page or by emailing us.</div>
+            <div class="faq-question">How can I contact support?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-answer">Yes, most of our games feature a multiplayer mode.</div>
+            <div class="faq-question">Is there a multiplayer mode?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-answer">Our games support PC, Xbox, PlayStation, and Nintendo Switch.</div>
+            <div class="faq-question">What platforms are supported?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-answer">Refunds are available within 14 days of purchase under certain conditions.</div>
+            <div class="faq-question">What is the refund policy?</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-answer">You can download games directly from our website or through designated stores.</div>
+            <div class="faq-question">How do I download the games?</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+        }
+
+        header {
+            background: url('header-background.jpg') no-repeat center center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f8c292;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e77c2e;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #f8c292;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            color: #e77c2e;
+            margin: 0;
+        }
+
+        .card-description {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8c292;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Lifestyle News
+    </header>
+
+    <footer>
+        Â© 2023 Lifestyle News | All rights reserved
+    </footer>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Fashion</a>
+        <a href="#">Travel</a>
+        <a href="#">Food</a>
+        <a href="#">Wellness</a>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <img src="lifestyle2.jpg" alt="Lifestyle Image 2">
+            <div class="card-content">
+                <h2 class="card-title">Travel Diaries</h2>
+                <p class="card-description">Discover beautiful destinations around the globe.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="lifestyle1.jpg" alt="Lifestyle Image 1">
+            <div class="card-content">
+                <h2 class="card-title">Trends in Fashion</h2>
+                <p class="card-description">Explore the latest in fashion trends for this season.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="lifestyle3.jpg" alt="Lifestyle Image 3">
+            <div class="card-content">
+                <h2 class="card-title">Healthy Recipes</h2>
+                <p class="card-description">Delicious recipes for a healthier lifestyle.</p>
+            </div>
+        </div>
+        <!-- Repeat for more cards -->
+    </div>
+</body>
+
+</html>

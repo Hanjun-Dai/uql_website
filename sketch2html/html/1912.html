@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        article {
+            background-color: #ffffff;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #343a40;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .sidebar h3 {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+            margin: 0 0 10px 0;
+            border-radius: 5px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 10px;
+            background-color: #ffffff;
+            margin: 0 0 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Foodie Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">Tips</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>The Best Chocolate Cake</li>
+                <li>Meal Prep for Busy Weeks</li>
+                <li>Homemade Pizza Guide</li>
+            </ul>
+            <h3>Categories</h3>
+            <ul>
+                <li>Vegetarian</li>
+                <li>Non-Vegetarian</li>
+                <li>Desserts</li>
+                <li>Quick Meals</li>
+                <li>Healthy Eating</li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
+            <article>
+                <h2>Five Essential Kitchen Tools</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <article>
+                <h2>Exploring Vegan Recipes</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <article>
+                <h2>The Art of Cooking Pasta</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Foodie Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

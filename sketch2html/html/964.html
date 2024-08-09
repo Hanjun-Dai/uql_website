@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .service {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 calc(33% - 20px); /* 3 items per row */
+            min-width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service img {
+            width: 100%;
+            border-bottom: 4px solid #ff4081;
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin: 10px;
+            color: #333;
+        }
+        .service-description {
+            padding: 0 10px 10px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Services</h1>
+    <nav>
+        <a href="#music">Music</a>
+        <a href="#tv-shows">TV Shows</a>
+        <a href="#events">Events</a>
+        <a href="#movies">Movies</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="service" id="events">
+        <img src="events.jpg" alt="Events">
+        <div class="service-title">Events</div>
+        <div class="service-description">Stay updated on upcoming entertainment events.</div>
+    </div>
+    <div class="service" id="music">
+        <img src="music.jpg" alt="Music">
+        <div class="service-title">Music</div>
+        <div class="service-description">Listen to the hottest tracks and albums.</div>
+    </div>
+    <div class="service" id="movies">
+        <img src="movies.jpg" alt="Movies">
+        <div class="service-title">Movies</div>
+        <div class="service-description">Explore the latest films and classics.</div>
+    </div>
+    <div class="service" id="tv-shows">
+        <img src="tv-shows.jpg" alt="TV Shows">
+        <div class="service-title">TV Shows</div>
+        <div class="service-description">Binge-watch your favorite series.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Rustic Real Estate</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;  /* Light beige background */
+            color: #5b3a29;  /* Dark brown text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #7d4b2b;  /* Dark wood color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em;  /* Changed to larger size */
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #faf3e0;  /* Light cream background */
+            border: 1px solid #a16a4d;  /* Light wood-like border */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            transition: background-color 0.3s;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item:hover {
+            background-color: #e9d4b7;  /* Light hover effect */
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2em;  /* Changed to larger size */
+        }
+
+        .answer {
+            display: none;
+            padding-top: 10px;
+            font-style: italic;
+            font-size: 0.8em;  /* Changed to smaller size */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="question">What services do you offer?</div>
+        <div class="answer">We help with buying, selling, and renting properties.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">How can I contact your agents?</div>
+        <div class="answer">You can reach us via our contact page or call us directly.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Do you offer home staging?</div>
+        <div class="answer">Yes, we provide home staging services to prepare your home for sale.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What are your commission rates?</div>
+        <div class="answer">Our commission rates vary based on services, please inquire for details.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Where are you located?</div>
+        <div class="answer">Our office is in downtown, easily accessible to all clients.</div>
+    </div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

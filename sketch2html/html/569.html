@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Rustic Travel</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f0e3;
+            color: #4d3b1c;
+            margin: 0;
+            padding: 0;
+            max-width: 1024px;
+            margin: auto;
+        }
+        header {
+            background-image: url('rustic-header.jpg'); /* Replace with a rustic-themed image */
+            background-size: cover;
+            text-align: center;
+            padding: 50px 0;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .testimonial-container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .testimonial {
+            background: #fff;
+            border: 2px solid #ac8a52;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px); /* Responsive width */
+            max-width: 300px; /* Limit max width */
+            position: relative;
+        }
+        .testimonial img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            top: -30px;
+            left: 20px;
+            border: 3px solid #ac8a52;
+        }
+        .testimonial p {
+            font-style: italic;
+            margin: 30px 0 10px;
+        }
+        .testimonial .author {
+            font-weight: bold;
+            text-align: right;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4d3b1c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Travelers Say</h1>
+</header>
+
+<footer>
+    <p>&copy; 2023 Rustic Travel. All rights reserved.</p>
+</footer>
+
+<div class="testimonial-container">
+    <div class="testimonial">
+        <img src="traveler2.jpg" alt="Traveler 2"> <!-- Replace with traveler image -->
+        <p>"Every moment was filled with beauty and joy."</p>
+        <div class="author">- Michael R.</div>
+    </div>
+    <div class="testimonial">
+        <img src="traveler1.jpg" alt="Traveler 1"> <!-- Replace with traveler image -->
+        <p>"This trip was a life-changing adventure!"</p>
+        <div class="author">- Sarah J.</div>
+    </div>
+    <div class="testimonial">
+        <img src="traveler3.jpg" alt="Traveler 3"> <!-- Replace with traveler image -->
+        <p>"The best experience of my life, highly recommend!"</p>
+        <div class="author">- Emily T.</div>
+    </div>
+</div>
+
+</body>
+</html>

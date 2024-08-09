@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .featured {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .dish {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            text-align: center;
+            width: 300px;
+            overflow: hidden;
+        }
+
+        .dish img {
+            width: 100%;
+        }
+
+        .dish h3 {
+            padding: 10px;
+            font-size: 24px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Paradise</h1>
+    <nav>
+        <a href="#" style="color: white; margin: 0 10px;">Contact</a>
+        <a href="#" style="color: white; margin: 0 10px;">Home</a>
+        <a href="#" style="color: white; margin: 0 10px;">Menu</a>
+    </nav>
+</header>
+
+<section class="featured">
+    <div class="dish">
+        <img src="dish2.jpg" alt="Featured Dish 2">
+        <h3>Grilled Salmon</h3>
+    </div>
+    <div class="dish">
+        <img src="dish3.jpg" alt="Featured Dish 3">
+        <h3>Caesar Salad</h3>
+    </div>
+    <div class="dish">
+        <img src="dish1.jpg" alt="Featured Dish 1">
+        <h3>Pasta Primavera</h3>
+    </div>
+    <div class="dish">
+        <img src="dish4.jpg" alt="Featured Dish 4">
+        <h3>Chocolate Cake</h3>
+    </div>
+</section>
+
+<section class="hero">
+    <h1>Delicious Moments Await!</h1>
+</section>
+
+<footer>
+    <p>&copy; 2023 Foodie Paradise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+
+        header {
+            background-color: #00796b; /* Changed header background color */
+            color: #ffffff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #004d40; /* Changed nav background color */
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #003d33; /* Changed hover background color */
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #f0f4c3; /* Changed sidebar background color */
+            padding: 20px;
+            border-left: 2px solid #ccc; /* Changed border color */
+        }
+
+        .post {
+            margin-bottom: 20px;
+        }
+
+        .post h2 {
+            color: #455a64; /* Changed post heading color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #00796b; /* Changed footer background color */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Education Blog</h1>
+        <p>Your resource for the latest in education</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="post">
+                <h2>Blog Post Title 1</h2>
+                <p>Excerpt from the blog post...</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="post">
+                <h2>Blog Post Title 2</h2>
+                <p>Excerpt from the blog post...</p>
+                <a href="#">Read more</a>
+            </div>
+
+            <div class="post">
+                <h2>Blog Post Title 3</h2>
+                <p>Excerpt from the blog post...</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">Online Courses</a></li>
+                <li><a href="#">Educational Tools</a></li>
+                <li><a href="#">Study Guides</a></li>
+                <li><a href="#">Discussion Forums</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Education Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

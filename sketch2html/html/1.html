@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page - News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .resource-title {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .resource-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+        }
+        .resource-card:hover {
+            border-color: #007bff;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Resource Page</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#latest">Latest News</a>
+    <a href="#features">Features</a>
+</nav>
+
+<div class="container">
+    <h2 class="resource-title">Useful Resources</h2>
+    <div class="resources-grid">
+        <div class="resource-card">
+            <h3>News Archives</h3>
+            <p><a href="#">Browse</a></p>
+        </div>
+        <div class="resource-card">
+            <h3>Research Reports</h3>
+            <p><a href="#">Access</a></p>
+        </div>
+        <div class="resource-card">
+            <h3>FAQs</h3>
+            <p><a href="#">Read More</a></p>
+        </div>
+        <div class="resource-card">
+            <h3>Media Kits</h3>
+            <p><a href="#">Download</a></p>
+        </div>
+        <div class="resource-card">
+            <h3>Press Releases</h3>
+            <p><a href="#">View</a></p>
+        </div>
+        <div class="resource-card">
+            <h3>Contact Information</h3>
+            <p><a href="#">Get in Touch</a></p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 News Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Category Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Changed background color */
+            color: #444; /* Changed default text color */
+        }
+
+        header {
+            background-color: #ff5722; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .article-card {
+            background: #ffffff; /* Unchanged */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Changed shadow color */
+            margin: 10px;
+            overflow: hidden;
+            width: calc(33% - 20px);
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            background: #9e9e9e; /* Changed article image background color */
+        }
+
+        .article-content {
+            padding: 15px;
+        }
+
+        .article-title {
+            font-size: 1.5em;
+            margin: 0;
+            color: #2196f3; /* Changed article title color */
+        }
+
+        .article-description {
+            color: #777; /* Changed article description color */
+            margin: 10px 0;
+        }
+
+        .article-date {
+            font-size: 0.9em;
+            color: #999; /* Kept date color unchanged */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff5722; /* Changed footer background color */
+            color: white; /* Kept footer text color unchanged */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Latest News</h1>
+        <p>Your source for the biggest updates</p>
+    </header>
+
+    <div class="container">
+        <div class="article-card" style="background-image: url('image1.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 1</h2>
+                <p class="article-description">Brief description of news article one.</p>
+                <p class="article-date">Published on: 2023-10-01</p>
+            </div>
+        </div>
+
+        <div class="article-card" style="background-image: url('image2.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 2</h2>
+                <p class="article-description">Brief description of news article two.</p>
+                <p class="article-date">Published on: 2023-10-02</p>
+            </div>
+        </div>
+
+        <div class="article-card" style="background-image: url('image3.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 3</h2>
+                <p class="article-description">Brief description of news article three.</p>
+                <p class="article-date">Published on: 2023-10-03</p>
+            </div>
+        </div>
+        
+        <div class="article-card" style="background-image: url('image4.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 4</h2>
+                <p class="article-description">Brief description of news article four.</p>
+                <p class="article-date">Published on: 2023-10-04</p>
+            </div>
+        </div>
+
+        <div class="article-card" style="background-image: url('image5.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 5</h2>
+                <p class="article-description">Brief description of news article five.</p>
+                <p class="article-date">Published on: 2023-10-05</p>
+            </div>
+        </div>
+
+        <div class="article-card" style="background-image: url('image6.jpg');">
+            <div class="article-image"></div>
+            <div class="article-content">
+                <h2 class="article-title">Headline 6</h2>
+                <p class="article-description">Brief description of news article six.</p>
+                <p class="article-date">Published on: 2023-10-06</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

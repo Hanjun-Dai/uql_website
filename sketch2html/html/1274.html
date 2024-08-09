@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+
+        .product-image {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-info {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .product-title {
+            font-size: 36px; /* changed from 24px to 36px */
+            margin: 0;
+        }
+
+        .product-price {
+            font-size: 24px; /* changed from 20px to 24px */
+            color: #e63946;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-size: 14px; /* changed from 16px to 14px */
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .add-to-cart {
+            background-color: #45a29e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 22px; /* changed from 18px to 22px */
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #66fcf1;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .product-info {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 class="product-title">Sport XYZ Running Shoes</h1>
+            <p class="product-price">$79.99</p>
+            <p class="product-description">Experience comfort and performance with our latest Sport XYZ running shoes, designed for both daily training and competition.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

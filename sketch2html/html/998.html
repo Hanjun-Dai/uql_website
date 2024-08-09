@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Category Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #8B4513; /* SaddleBrown */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .category {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .game-card {
+            background: #FFF5EE; /* Seashell */
+            border: 2px solid #CD853F; /* Peru */
+            border-radius: 5px;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #CD853F;
+        }
+        .game-card h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .game-card p {
+            padding: 0 10px;
+            color: #8B4513; /* SaddleBrown */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8B4513; /* SaddleBrown */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rustic Games</h1>
+    </header>
+
+    <div class="container">
+        <div class="category">
+            <div class="game-card">
+                <img src="game3.jpg" alt="Game Title 3">
+                <h2>Game Title 3</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game1.jpg" alt="Game Title 1">
+                <h2>Game Title 1</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game5.jpg" alt="Game Title 5">
+                <h2>Game Title 5</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game7.jpg" alt="Game Title 7">
+                <h2>Game Title 7</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game2.jpg" alt="Game Title 2">
+                <h2>Game Title 2</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game6.jpg" alt="Game Title 6">
+                <h2>Game Title 6</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game4.jpg" alt="Game Title 4">
+                <h2>Game Title 4</h2>
+                <p>Short description.</p>
+            </div>
+            <div class="game-card">
+                <img src="game8.jpg" alt="Game Title 8">
+                <h2>Game Title 8</h2>
+                <p>Short description.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rustic Games. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

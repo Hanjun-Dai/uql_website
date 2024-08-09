@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Real Estate Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 18px; /* Changed */
+        }
+        header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            font-size: 36px; /* Changed */
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px; /* Changed */
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px; /* Changed */
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .property-listings {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .property-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: calc(33.33% - 20px);
+            background-color: #f9f9f9;
+            font-size: 16px; /* Changed */
+        }
+        .property-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .property-card .info {
+            padding: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Changed */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Dream Home</h1>
+    <p>Your perfect place awaits!</p>
+</header>
+
+<nav>
+    <a href="#buy">Buy</a>
+    <a href="#rent">Rent</a>
+    <a href="#sell">Sell</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+    <h2 style="font-size: 30px;">Featured Properties</h2> <!-- Changed -->
+    <div class="property-listings">
+        <div class="property-card">
+            <img src="property1.jpg" alt="Property 1">
+            <div class="info">
+                <h3 style="font-size: 22px;">Luxury Apartment</h3> <!-- Changed -->
+                <p style="font-size: 18px;">3 Beds | 2 Baths | 1,500 sqft</p> <!-- Changed -->
+                <p style="font-size: 18px;">$500,000</p> <!-- Changed -->
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="property2.jpg" alt="Property 2">
+            <div class="info">
+                <h3 style="font-size: 22px;">Modern Condo</h3> <!-- Changed -->
+                <p style="font-size: 18px;">2 Beds | 2 Baths | 1,200 sqft</p> <!-- Changed -->
+                <p style="font-size: 18px;">$350,000</p> <!-- Changed -->
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 3">
+            <div class="info">
+                <h3 style="font-size: 22px;">Cozy Cottage</h3> <!-- Changed -->
+                <p style="font-size: 18px;">1 Bed | 1 Bath | 800 sqft</p> <!-- Changed -->
+                <p style="font-size: 18px;">$200,000</p> <!-- Changed -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Real Estate Company | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

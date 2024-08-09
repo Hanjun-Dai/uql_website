@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            flex: 0 0 45%; /* Adjust to control card width */
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Financial Services</h1>
+        <nav>
+            <a href="#tax">Tax Advisory</a>
+            <a href="#investment">Investment</a>
+            <a href="#consulting">Consulting</a>
+            <a href="#trust">Trust Services</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="services" id="trust">
+            <div class="service-card" id="investment">
+                <h2>Investment</h2>
+                <p>Tailored investment strategies to achieve your financial goals.</p>
+            </div>
+            <div class="service-card" id="tax">
+                <h2>Tax Advisory</h2>
+                <p>Comprehensive tax planning to maximize your savings.</p>
+            </div>
+            <div class="service-card">
+                <h2>Consulting</h2>
+                <p>Expert financial consulting to optimize your investments.</p>
+            </div>
+            <div class="service-card" id="trust">
+                <h2>Trust Services</h2>
+                <p>Secure and manage your wealth through our trust services.</p>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Finance Corporation. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

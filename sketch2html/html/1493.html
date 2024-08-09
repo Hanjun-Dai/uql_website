@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background-color: #ff4081;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .news-card {
+            background-color: white;
+            border: 2px solid #ff4081;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 280px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        .news-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff4081;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        ð® Game Zone News ð®
+    </header>
+
+    <div class="container">
+        <div class="news-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Latest+Game+3" alt="Latest Game 3">
+            <h3>Top 10 Indie Games</h3>
+            <p>Check out the list of must-play indie games!</p>
+        </div>
+        <div class="news-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Latest+Game+1" alt="Latest Game 1">
+            <h3>Epic Adventure Released!</h3>
+            <p>Get ready for an epic journey in the new RPG game!</p>
+        </div>
+        <div class="news-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Latest+Game+4" alt="Latest Game 4">
+            <h3>Game Con 2023 Highlights</h3>
+            <p>Discover what's trending at this year's convention!</p>
+        </div>
+        <div class="news-card">
+            <img src="https://via.placeholder.com/250x150.png?text=Latest+Game+2" alt="Latest Game 2">
+            <h3>Battle Royale: Season 5</h3>
+            <p>New skins and a fresh map await you!</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Game Zone. All Rights Reserved.
+    </footer>
+</body>
+</html>

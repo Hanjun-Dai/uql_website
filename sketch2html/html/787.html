@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Automotive Portfolio</h1>
+        </header>
+
+        <section class="portfolio">
+            <div class="portfolio-item">
+                <img src="car5.jpg" alt="Car Model 5">
+                <div class="overlay">Car Model 5</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="car3.jpg" alt="Car Model 3">
+                <div class="overlay">Car Model 3</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="car1.jpg" alt="Car Model 1">
+                <div class="overlay">Car Model 1</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="car4.jpg" alt="Car Model 4">
+                <div class="overlay">Car Model 4</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="car6.jpg" alt="Car Model 6">
+                <div class="overlay">Car Model 6</div>
+            </div>
+            <div class="portfolio-item">
+                <img src="car2.jpg" alt="Car Model 2">
+                <div class="overlay">Car Model 2</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Automotive Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Business Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7;
+        }
+        header {
+            background: linear-gradient(90deg, #4A90E2, #9013FE);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero-image {
+            background: url('https://via.placeholder.com/1024x400') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .hero-text h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .hero-text p {
+            font-size: 1.2em;
+        }
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #FFC107;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+        .feature {
+            text-align: center;
+            width: 30%;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature i {
+            font-size: 2.5em;
+            color: #4A90E2;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h1>Business Name</h1>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Innovative Solutions</h3>
+        <p>We provide innovative solutions tailored to your needs.</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-thumbs-up"></i>
+        <h3>Customer Satisfaction</h3>
+        <p>Our clients are our top priority, and we deliver results.</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-briefcase"></i>
+        <h3>Our Services</h3>
+        <p>We offer a range of services to help your business thrive.</p>
+    </div>
+</section>
+
+<div class="hero-image">
+    <div class="hero-text">
+        <h2>Your Success, Our Commitment</h2>
+        <p>Join us in making your vision come to life.</p>
+        <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Business Name - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

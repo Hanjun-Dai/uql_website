@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #323232;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            transition: border 0.3s;
+        }
+        nav a:hover {
+            border: 1px solid white;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: calc(30% - 30px);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+        .card-content p {
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            background-color: #323232;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports News Daily</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Teams</a>
+        <a href="#">Players</a>
+        <a href="#">Events</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Player C retires">
+        <div class="card-content">
+            <h3>Player C Announces Retirement</h3>
+            <p>A legendary career comes to a close.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Upcoming championship">
+        <div class="card-content">
+            <h3>Championship Countdown</h3>
+            <p>Only one week left until the championship starts!</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Breaking news on player transfers">
+        <div class="card-content">
+            <h3>Transfer News: Exciting Moves</h3>
+            <p>Upcoming transfers to shake up the league.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Team D's New Coach">
+        <div class="card-content">
+            <h3>Team D's New Coach</h3>
+            <p>The club appoints a fresh face for next season.</p>
+        </div>
+    </div>    
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Team A wins the match">
+        <div class="card-content">
+            <h3>Team A Triumphant</h3>
+            <p>A thrilling victory for Team A in the finals.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x150" alt="Player B injured">
+        <div class="card-content">
+            <h3>Injury Update on Player B</h3>
+            <p>Player B's condition remains uncertain after last night’s match.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports News Daily. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

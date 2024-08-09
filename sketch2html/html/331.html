@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4a90e2;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .resource {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource:hover {
+            transform: scale(1.05);
+        }
+        .resource img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .resource h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5em;
+        }
+        .resource p {
+            color: #666;
+            font-size: 0.9em;
+            margin: 0 0 15px;
+        }
+        .resource a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e94e77;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .resource a:hover {
+            background-color: #d4436b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4a90e2;
+            color: #ffffff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lifestyle Resources</h1>
+</header>
+
+<div class="container">
+    <div class="resource">
+        <img src="resource-image3.jpg" alt="Resource 3">
+        <h3>Mental Wellness</h3>
+        <p>Resources and tips for mental health and wellbeing.</p>
+        <a href="#mental-wellness">Learn More</a>
+    </div>
+    <div class="resource">
+        <img src="resource-image4.jpg" alt="Resource 4">
+        <h3>Travel Tips</h3>
+        <p>Explore our essential travel tips for your next adventure.</p>
+        <a href="#travel-tips">Read Tips</a>
+    </div>
+    <div class="resource">
+        <img src="resource-image1.jpg" alt="Resource 1">
+        <h3>Healthy Recipes</h3>
+        <p>Explore our collection of delicious and healthy recipes.</p>
+        <a href="#healthy-recipes">View Recipes</a>
+    </div>
+    <div class="resource">
+        <img src="resource-image2.jpg" alt="Resource 2">
+        <h3>Fitness Guides</h3>
+        <p>Find the best fitness guides to improve your health.</p>
+        <a href="#fitness-guides">Browse Guides</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Lifestyle Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

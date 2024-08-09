@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d9e3e0; /* Changed background color */
+        }
+        header {
+            background-color: #008CBA; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555; /* Changed nav background color */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2; /* Changed nav link text color */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #777; /* Changed hover color */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px 0;
+        }
+        .portfolio-item {
+            background: #ffffff; /* Kept background color, but you could change it */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #444; /* Changed footer background color */
+            color: #ffffff; /* Changed footer text color */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffcc00; /* Changed footer link color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Portfolio</h1>
+    <p>Your resource for parenting tips and advice</p>
+</header>
+
+<nav>
+    <div class="container">
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="container">
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-item">
+            <img src="image1.jpg" alt="Portfolio Item 1">
+            <h3>Tips for New Parents</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="image2.jpg" alt="Portfolio Item 2">
+            <h3>Healthy Meal Ideas for Kids</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="image3.jpg" alt="Portfolio Item 3">
+            <h3>Fun Learning Activities</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="image4.jpg" alt="Portfolio Item 4">
+            <h3>Traveling with Children</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="image5.jpg" alt="Portfolio Item 5">
+            <h3>Parenting Hacks</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="image6.jpg" alt="Portfolio Item 6">
+            <h3>Managing Screen Time</h3>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Website | <a href="#contact">Contact Us</a></p>
+</footer>
+
+</body>
+</html>

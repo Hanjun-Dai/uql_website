@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            border-bottom: 5px solid #fff;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff69b4;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3 1 60%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .sidebar {
+            flex: 1 1 20%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .topic {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .topic:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff69b4;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fashion Forum
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest Trends</a>
+        <a href="#">Outfit Ideas</a>
+        <a href="#">Style Tips</a>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <h2>Recent Discussions</h2>
+            <div class="topic">
+                <h4>Best Summer Outfits?</h4>
+                <p>Share your favorite summer outfits!</p>
+            </div>
+            <div class="topic">
+                <h4>Fashion Advice Needed</h4>
+                <p>Looking for tips on how to style a blazer!</p>
+            </div>
+            <div class="topic">
+                <h4>Accessorize It!</h4>
+                <p>What accessories are currently trending?</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Popular Topics</h3>
+            <ul>
+                <li>DIY Fashion</li>
+                <li>Fashion Events</li>
+                <li>Fashion Icons</li>
+                <li>Seasonal Trends</li>
+                <li>Street Style</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Fashion Forum | Designed with &#10084;&#65039;
+    </div>
+</body>
+</html>

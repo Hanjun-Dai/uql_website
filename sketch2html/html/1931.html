@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Automotive Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #f4f0e6;
+            color: #444; /* Changed body text color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1000px;
+            margin: auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background-color: #6b4f4f; /* Changed header background color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-bottom: 3px solid #6b4f4f; /* Changed the border color */
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #5a5a5a; /* Changed title text color */
+        }
+        .price {
+            font-size: 24px;
+            color: #b30000; /* Kept the original price color */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #f54d4d; /* Changed button background color */
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #a43535; /* Changed hover background color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #383838; /* Changed footer background color */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Vintage Car Gallery
+        </header>
+        <img src="vintage-car.jpg" alt="Vintage Car" class="product-image">
+        <div class="product-info">
+            <h1 class="product-title">Classic 1967 Mustang</h1>
+            <p class="price">$39,995</p>
+            <div class="action-buttons">
+                <a href="#" class="button">Buy Now</a>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Vintage Automotive. All Rights Reserved.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background color */
+        }
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        header {
+            background: #e94e77; /* Changed header background color */
+            color: #f5f5f5; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .product-image {
+            width: 100%;
+            height: 400px;
+            background: url('https://example.com/product-image.jpg') center/cover no-repeat;
+        }
+        .product-details {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #0078d7; /* Changed product price color */
+            margin: 10px 0;
+        }
+        .description {
+            font-size: 16px;
+            color: #333; /* Changed description text color */
+            margin: 10px 0;
+        }
+        .call-to-action {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .button {
+            background: #4CAF50; /* Changed button background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #388E3C; /* Changed button hover background */
+        }
+        footer {
+            background: #444; /* Changed footer background color */
+            color: #f1f1f1; /* Changed footer text color */
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>New Release</h1>
+        </header>
+        <div class="product-image"></div>
+        <div class="product-details">
+            <h2 class="product-title">Amazing Product Title</h2>
+            <p class="product-price">$99.99</p>
+            <p class="description">Short description of the product highlighting key features.</p>
+            <div class="call-to-action">
+                <a href="#" class="button">Buy Now</a>
+                <a href="#" class="button">Learn More</a>
+            </div>
+        </div>
+        <footer>
+            Â© 2023 News Website. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

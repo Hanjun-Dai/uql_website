@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Oops!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e8f0f2; /* Changed background color */
+            color: #444; /* Changed text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            position: relative;
+        }
+        .container {
+            background: #ffffff; /* Remained white */
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 80%;
+            max-width: 400px;
+        }
+        h1 {
+            font-size: 72px;
+            margin: 0;
+            color: #e67e22; /* Changed heading color */
+        }
+        p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #555; /* Changed paragraph text color */
+        }
+        .artistic-background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff6a6a, #ffd600); /* Changed gradient colors */
+            z-index: -1;
+            border-radius: 12px;
+            filter: blur(35px);
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: #9b59b6; /* Changed button background color */
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #8e44ad; /* Changed button hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="artistic-background"></div>
+    <div class="container">
+        <h1>404</h1>
+        <p>Page Not Found</p>
+        <a href="/" class="btn">Go Home</a>
+    </div>
+</body>
+</html>

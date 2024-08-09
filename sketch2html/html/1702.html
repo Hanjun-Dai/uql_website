@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Hub</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Discover Your Next Favorite</h1>
+    </div>
+    
+    <header>
+        <h1>Entertainment Hub</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Movies</a>
+            <a href="#">TV Shows</a>
+            <a href="#">Music</a>
+            <a href="#">Celebrities</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Featured</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="thumbnail3.jpg" alt="Featured 3" style="width:100%; border-radius:5px;">
+                <h3>Title 3</h3>
+            </div>
+            <div class="card">
+                <img src="thumbnail1.jpg" alt="Featured 1" style="width:100%; border-radius:5px;">
+                <h3>Title 1</h3>
+            </div>
+            <div class="card">
+                <img src="thumbnail4.jpg" alt="Featured 4" style="width:100%; border-radius:5px;">
+                <h3>Title 4</h3>
+            </div>
+            <div class="card">
+                <img src="thumbnail2.jpg" alt="Featured 2" style="width:100%; border-radius:5px;">
+                <h3>Title 2</h3>
+            </div>
+            <!-- Add more card sections as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Entertainment Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

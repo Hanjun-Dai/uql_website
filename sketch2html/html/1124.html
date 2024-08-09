@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding-top: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #4b9cd3;
+        }
+        .faq {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-item h2 {
+            font-size: 1.4em;
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #6c757d;
+        }
+        .faq-item h2:hover {
+            color: #4b9cd3;
+        }
+        .faq-item p {
+            display: none;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+        <div class="faq-item">
+            <h2>3. When should I start potty training?</h2>
+            <p>Most children are ready between 2 to 3 years old. Look for signs like staying dry for longer periods.</p>
+        </div>
+        <div class="faq-item">
+            <h2>1. What are the best parenting resources?</h2>
+            <p>Check our recommendations under the Resources section for books, websites, and online communities.</p>
+        </div>
+        <div class="faq-item">
+            <h2>5. How can I balance work and family time?</h2>
+            <p>Set clear boundaries for work hours and prioritize family activities on your calendar.</p>
+        </div>
+        <div class="faq-item">
+            <h2>4. What are some tips for a healthy diet for my kids?</h2>
+            <p>Incorporate fruits and vegetables and involve your kids in meal planning to encourage healthy eating.</p>
+        </div>
+        <div class="faq-item">
+            <h2>2. How to handle toddler tantrums?</h2>
+            <p>Understanding triggers and setting clear boundaries can help manage tantrums effectively.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item h2');
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const content = item.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

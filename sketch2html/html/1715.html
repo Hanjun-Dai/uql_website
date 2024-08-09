@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background: #3f51b5;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .main {
+            flex: 3;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        article h2 {
+            color: #3f51b5;
+        }
+        article p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #3f51b5;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Blog</h1>
+    <nav>
+        <a href="#" style="color: #ffffff; margin: 0 10px;">Home</a>
+        <a href="#" style="color: #ffffff; margin: 0 10px;">Contact</a>
+        <a href="#" style="color: #ffffff; margin: 0 10px;">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">10 Tips for Better Engagement</a></li>
+            <li><a href="#">How to Use Gamification in Class</a></li>
+            <li><a href="#">Benefits of Collaborative Learning</a></li>
+        </ul>
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Teaching</a></li>
+            <li><a href="#">Learning</a></li>
+        </ul>
+    </div>
+    
+    <div class="main">
+        <article>
+            <h2>The Future of Education Technology</h2>
+            <p>A look at emerging technologies that are shaping the future of education.</p>
+        </article>
+        <article>
+            <h2>Exploring New Learning Strategies</h2>
+            <p>Discover innovative methods to enhance student engagement and learning outcomes.</p>
+        </article>
+        <article>
+            <h2>Effective Online Teaching Tips</h2>
+            <p>Tips for educators to adapt and thrive in the online learning environment.</p>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Education Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

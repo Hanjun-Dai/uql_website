@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7e9ee; /* Changed background color */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4A4A4A; /* Changed heading color */
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background-color: #ffffff; /* No change here, keeping it clean */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            position: relative;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+        }
+        .category-image {
+            width: 100%;
+            height: auto;
+        }
+        .category-content {
+            padding: 15px;
+            background-color: #f9f9f9; /* Added a subtle background color */
+        }
+        .category-title {
+            font-size: 18px;
+            color: #333333; /* Changed title color */
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Art Categories</h1>
+    <div class="grid">
+        <div class="category-card">
+            <img src="images/painting.jpg" alt="Painting" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Painting</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/sculpture.jpg" alt="Sculpture" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Sculpture</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/photography.jpg" alt="Photography" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Photography</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/digital-art.jpg" alt="Digital Art" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Digital Art</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/crafts.jpg" alt="Crafts" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Crafts</h2>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/installation-art.jpg" alt="Installation Art" class="category-image">
+            <div class="category-content">
+                <h2 class="category-title">Installation Art</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

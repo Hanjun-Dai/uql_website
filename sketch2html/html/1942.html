@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog-header {
+            padding: 15px;
+            border-bottom: 2px solid #ddd;
+            text-align: center;
+        }
+        .blog-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #222;
+        }
+        .post {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post h3 {
+            margin: 0 0 10px;
+            color: #0044cc;
+        }
+        .post p {
+            margin: 10px 0;
+        }
+        .read-more {
+            text-align: right;
+        }
+        .read-more a {
+            color: #0044cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Politics Today</h1>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="post">
+            <h3>Title of the Second Article</h3>
+            <p>This is a brief excerpt from the article content. It gives an overview of the main points discussed.</p>
+            <div class="read-more"><a href="#">Read More...</a></div>
+        </div>
+
+        <div class="blog-header">
+            <h2>Latest Articles</h2>
+        </div>
+
+        <div class="post">
+            <h3>Title of the Third Article</h3>
+            <p>This is a brief excerpt from the article content. It gives an overview of the main points discussed.</p>
+            <div class="read-more"><a href="#">Read More...</a></div>
+        </div>
+
+        <div class="post">
+            <h3>Title of the First Article</h3>
+            <p>This is a brief excerpt from the article content. It gives an overview of the main points discussed.</p>
+            <div class="read-more"><a href="#">Read More...</a></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Politics Today. All rights reserved.</p>
+    </footer>
+</body>
+</html>

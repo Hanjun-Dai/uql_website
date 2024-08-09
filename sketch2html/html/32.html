@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005f73; /* Changed to a teal color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background-color: #ffffff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            border-bottom: 1px solid #dddddd;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            font-size: 20px;
+            color: #e76f51; /* Changed to a coral color */
+            font-weight: bold;
+        }
+        .post-meta {
+            color: #6c757d; /* Changed to a muted gray */
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            font-size: 18px;
+            border-bottom: 2px solid #005f73; /* Changed to match header color */
+            padding-bottom: 10px;
+            color: #005f73; /* Changed to match header color */
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #005f73; /* Changed to match header color */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    News Forum
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <div class="post">
+            <div class="post-title">Latest Update on Global Events</div>
+            <div class="post-meta">Posted by Admin on October 23, 2023</div>
+            <p>Join the discussion!</p>
+        </div>
+        <div class="post">
+            <div class="post-title">Breaking News: Market Crash</div>
+            <div class="post-meta">Posted by JohnDoe on October 23, 2023</div>
+            <p>What are your thoughts?</p>
+        </div>
+        <div class="post">
+            <div class="post-title">Tech Innovations in 2023</div>
+            <div class="post-meta">Posted by JaneSmith on October 22, 2023</div>
+            <p>Let's share insights!</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </aside>
+</div>
+
+</body>
+</html>

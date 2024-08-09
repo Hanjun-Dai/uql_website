@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Vintage Style</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f3e3;
+            color: #4B3D2A;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4B3D2A;
+            color: #f9f3e3;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 4px solid #d1c4a2;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #d1c4a2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #d1c4a2;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .faq-item:hover {
+            background-color: #f0e1b6;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+
+        .answer {
+            margin-top: 10px;
+            font-size: 0.9em;
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="faq-item">
+            <div class="question">Do you ship internationally?</div>
+            <div class="answer">Yes, we ship to select countries worldwide.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How can I contact customer service?</div>
+            <div class="answer">You can reach us via email at support@example.com or by calling (123) 456-7890.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is your return policy?</div>
+            <div class="answer">We accept returns within 30 days of purchase with a valid receipt.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Can I change my order after it's been placed?</div>
+            <div class="answer">Changes can be made within 24 hours of placing an order.</div>
+        </div>
+
+    </div>
+
+    <script>
+        // Script to toggle answer visibility
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

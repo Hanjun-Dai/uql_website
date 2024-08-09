@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #444; /* Changed text color */
+        }
+        header {
+            background-color: #f44336; /* Changed header background color */
+            color: #ffffff; /* Kept header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffffff; /* Kept link color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .resource-card {
+            background-color: #ffffff; /* Kept resource card background color */
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+        .resource-card img {
+            width: 100%;
+            height: 150px; /* Adjust height based on your images */
+            object-fit: cover;
+        }
+        .resource-card h2 {
+            padding: 15px;
+            font-size: 1.5em;
+            margin: 0;
+            color: #f57f20; /* Changed card title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1976d2; /* Changed footer background color */
+            color: #ffffff; /* Kept footer text color */
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Resources</h1>
+    <nav>
+        <a href="#trends">Trends</a>
+        <a href="#styling">Styling Tips</a>
+        <a href="#influencers">Influencers</a>
+        <a href="#lookbooks">Lookbooks</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="resource-card">
+            <img src="trends.jpg" alt="Latest Trends">
+            <h2>Latest Trends</h2>
+        </div>
+        <div class="resource-card">
+            <img src="styling.jpg" alt="Styling Tips">
+            <h2>Styling Tips</h2>
+        </div>
+        <div class="resource-card">
+            <img src="influencer.jpg" alt="Fashion Influencers">
+            <h2>Fashion Influencers</h2>
+        </div>
+        <div class="resource-card">
+            <img src="lookbook.jpg" alt="Lookbooks">
+            <h2>Lookbooks</h2>
+        </div>
+        <!-- Add more resource cards as needed -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Fashion Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+        }
+        .services {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .service-card {
+            background: #e0e0e0;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Services</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="service-card" id="music">
+            <h2>Music</h2>
+            <p>Discover new artists and trending tracks.</p>
+        </div>
+        <div class="service-card" id="movies">
+            <h2>Movies</h2>
+            <p>Explore the latest releases and classic favorites.</p>
+        </div>
+        <div class="service-card" id="events">
+            <h2>Events</h2>
+            <p>Stay updated on upcoming concerts and festivals.</p>
+        </div>
+    </div>
+    <div class="hero"></div>
+</div>
+
+<nav>
+    <a href="#movies">Movies</a>
+    <a href="#music">Music</a>
+    <a href="#events">Events</a>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Entertainment Co.</p>
+</footer>
+
+</body>
+</html>

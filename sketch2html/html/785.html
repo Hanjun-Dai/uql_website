@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Arts Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e8f0f2; /* Changed the background color */
+            margin: 0;
+            padding: 20px;
+            color: #444; /* Changed the text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Darkened the shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #34495e; /* Changed the header color */
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc; /* Softened border color */
+            padding-bottom: 10px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: 700;
+            cursor: pointer;
+            color: #8e44ad; /* Changed question color */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding-left: 10px;
+            color: #666; /* Changed answer color */
+        }
+
+        .question:hover {
+            text-decoration: underline;
+            color: #c0392b; /* Changed hover color */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question">What is the purpose of this arts website?</div>
+            <div class="answer">Our website aims to promote various art forms and connect artists with audiences.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How can I submit my artwork?</div>
+            <div class="answer">You can submit your artwork through our submission form available on the 'Submit Art' page.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Do I need to register to view content?</div>
+            <div class="answer">No, registration is not required to view content on our site. However, it is required for submissions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How often is new content published?</div>
+            <div class="answer">We update our site with new content weekly, including artist features and exhibitions.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Can I collaborate with other artists?</div>
+            <div class="answer">Absolutely! We encourage collaboration and provide resources for networking.</div>
+        </div>
+
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

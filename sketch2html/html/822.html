@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Arts Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #e6f7ff; /* Changed background color */
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #D35400; /* Changed header color */
+            font-size: 2.5em;
+        }
+        .faq-item {
+            border: 2px solid #d9d9d9; /* Changed border color */
+            border-radius: 8px;
+            margin: 15px 0;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: #f9e79f; /* Changed hover background color */
+        }
+        .question {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .question-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .answer {
+            margin: 10px 0;
+            display: none;
+            color: #34495E; /* Changed answer text color */
+        }
+        .faq-item.active .answer {
+            display: block;
+        }
+        .toggle-button {
+            cursor: pointer;
+            color: #8E44AD; /* Changed toggle button color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question">
+                <img src="icon-question.svg" alt="Question Icon" class="question-icon">
+                <span class="toggle-button">What kind of art do you feature?</span>
+            </div>
+            <div class="answer">We showcase all forms, from painting to digital art!</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <img src="icon-question.svg" alt="Question Icon" class="question-icon">
+                <span class="toggle-button">How can I submit my artwork?</span>
+            </div>
+            <div class="answer">Submit via our 'Submit Art' page with your works!</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <img src="icon-question.svg" alt="Question Icon" class="question-icon">
+                <span class="toggle-button">Do you offer workshops?</span>
+            </div>
+            <div class="answer">Absolutely! Check out our 'Workshops' section.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">
+                <img src="icon-question.svg" alt="Question Icon" class="question-icon">
+                <span class="toggle-button">Can I collaborate with other artists?</span>
+            </div>
+            <div class="answer">Yes! Join our community forums to connect with others.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.toggle-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

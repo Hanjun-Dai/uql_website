@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Science Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .faq {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+        .question {
+            color: #4CAF50;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            color: #333;
+        }
+        .question:hover {
+            color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq">
+            <div class="question">How can I contact the team?</div>
+            <div class="answer">You can reach us via the Contact page linked in the footer.</div>
+        </div>
+        <h2>FAQ</h2>
+        <div class="faq">
+            <div class="question">What is the purpose of this website?</div>
+            <div class="answer">This website aims to provide comprehensive information on various scientific topics.</div>
+        </div>
+        <div class="faq">
+            <div class="question">Is the content peer-reviewed?</div>
+            <div class="answer">Yes, we strive to ensure that all content is thoroughly reviewed by experts in the field.</div>
+        </div>
+        <div class="faq">
+            <div class="question">How can I contribute to the website?</div>
+            <div class="answer">You can submit articles or suggestions through our Contact page.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>

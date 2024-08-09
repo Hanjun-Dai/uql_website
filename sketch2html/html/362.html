@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Product Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f4e8;
+            margin: 0;
+            padding: 0;
+            color: #4a3c3c;
+        }
+        header {
+            background-color: #c6b89d;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #a88c7c;
+        }
+        h1 {
+            font-size: 3.5em;  /* Changed from 2.5em to 3.5em */
+            margin: 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #a88c7c;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+        }
+        .product-details {
+            text-align: center;
+            padding: 20px;
+        }
+        .price {
+            font-size: 2.5em;  /* Changed from 1.5em to 2.5em */
+            color: #9b6b4c;
+        }
+        .description {
+            font-size: 0.8em;  /* Changed from 1.1em to 0.8em */
+            margin: 10px 0;
+        }
+        .purchase-btn {
+            background-color: #debd99;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5em;  /* Changed from 1.2em to 1.5em */
+            color: #4a3c3c;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .purchase-btn:hover {
+            background-color: #c6b89d;
+            color: white;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 1.2em;  /* Changed from 0.9em to 1.2em */
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vintage Parenting Shop</h1>
+    </header>
+    <div class="container">
+        <img src="https://via.placeholder.com/300.png?text=Product+Image" alt="Product" class="product-image">
+        <div class="product-details">
+            <h2>Beautiful Wooden Toy</h2>
+            <p class="price">$29.99</p>
+            <p class="description">Handcrafted wooden toy, perfect for children.</p>
+            <button class="purchase-btn">Add to Cart</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Vintage Parenting Shop</p>
+    </footer>
+</body>
+</html>

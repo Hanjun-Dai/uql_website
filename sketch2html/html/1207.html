@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e7ff; /* Changed background color */
+        }
+        header {
+            background: #4b7bec; /* Changed header background color */
+            color: white;
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav a {
+            color: #fff; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fffa65; /* Changed hero text color */
+            font-size: 2.5em;
+        }
+        .properties {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .property {
+            background: white;
+            border: 1px solid #ccc; /* Changed property border color */
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Altered shadow effect */
+            overflow: hidden;
+        }
+        .property img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .property-info {
+            padding: 15px;
+        }
+        .about {
+            text-align: center;
+            padding: 50px 10%;
+            background-color: #f9c2ff; /* Added background color to about section */
+        }
+        .about h2 {
+            color: #3f729b; /* Changed about heading color */
+        }
+        footer {
+            background: #4b7bec; /* Changed footer background color */
+            color: #fff; /* Changed footer text color */
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Co.</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Properties</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    Your Dream Home Awaits
+</div>
+
+<section class="properties">
+    <div class="property">
+        <img src="property1.jpg" alt="Property 1">
+        <div class="property-info">
+            <h2>Beautiful Family Home</h2>
+            <p>$350,000</p>
+        </div>
+    </div>
+    <div class="property">
+        <img src="property2.jpg" alt="Property 2">
+        <div class="property-info">
+            <h2>Luxury Apartment</h2>
+            <p>$500,000</p>
+        </div>
+    </div>
+    <div class="property">
+        <img src="property3.jpg" alt="Property 3">
+        <div class="property-info">
+            <h2>Cozy Cottage</h2>
+            <p>$250,000</p>
+        </div>
+    </div>
+    <!-- Add more properties as needed -->
+</section>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>Committed to finding your dream home.</p>
+</section>
+
+<footer>
+    &copy; 2023 Real Estate Co. | All Rights Reserved
+</footer>
+
+</body>
+</html>

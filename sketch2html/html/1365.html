@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Arts Category</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1e6;
+            color: #5a4e4d;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #7f674c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: #fdfdfd;
+            border: 2px solid #bca99e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            background: url('https://via.placeholder.com/300x200') center/cover no-repeat;
+        }
+
+        .card-title {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            background: #fff3e0;
+            border-top: 2px solid #7f674c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #7f674c;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Art Categories</h1>
+</header>
+
+<div class="container">
+    <div class="category-grid">
+        <div class="category-card">
+            <div class="card-image" style="background-image: url('https://via.placeholder.com/300x200/dbd2cb/ffffff?text=Crafts')"></div>
+            <div class="card-title">Crafts</div>
+        </div>
+        <div class="category-card">
+            <div class="card-image" style="background-image: url('https://via.placeholder.com/300x200/8d8d7a/ffffff?text=Sculpture')"></div>
+            <div class="card-title">Sculpture</div>
+        </div>
+        <div class="category-card">
+            <div class="card-image" style="background-image: url('https://via.placeholder.com/300x200/7f674c/ffffff?text=Painting')"></div>
+            <div class="card-title">Painting</div>
+        </div>
+        <div class="category-card">
+            <div class="card-image" style="background-image: url('https://via.placeholder.com/300x200/a9c1a3/ffffff?text=Photography')"></div>
+            <div class="card-title">Photography</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Rustic Arts Website</p>
+</footer>
+
+</body>
+
+</html>

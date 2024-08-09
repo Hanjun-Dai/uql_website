@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e3f2fd; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff5722; /* Changed header color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Made shadow darker */
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #3f51b5; /* Changed title color */
+        }
+        .card-description {
+            font-size: 14px;
+            color: #795548; /* Changed description text color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #424242; /* Changed footer color */
+            color: #ffffff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">Advice</a>
+        <a href="#">Community</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Latest Articles</h2>
+    <div class="news-grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Article Image">
+            <div class="card-content">
+                <h3 class="card-title">5 Tips for New Parents</h3>
+                <p class="card-description">Discover essential tips that every new parent should know.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Article Image">
+            <div class="card-content">
+                <h3 class="card-title">Healthy Meals for Kids</h3>
+                <p class="card-description">Quick and healthy meal options that kids will love.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Article Image">
+            <div class="card-content">
+                <h3 class="card-title">Understanding Toddler Behavior</h3>
+                <p class="card-description">A guide to managing and understanding your toddler's behavior.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300" alt="Article Image">
+            <div class="card-content">
+                <h3 class="card-title">Creating a Learning Environment at Home</h3>
+                <p class="card-description">Tips for setting up a conducive learning space for your child.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting News | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

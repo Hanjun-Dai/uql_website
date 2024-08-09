@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Science Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .product-image {
+            flex: 1;
+            padding: 10px;
+        }
+        .product-details {
+            flex: 2;
+            padding: 10px;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        .product-price {
+            font-size: 20px;
+            color: #28a745;
+            margin: 10px 0;
+        }
+        .product-description {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .buy-button {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .buy-button:hover {
+            background: #005d99;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007acc;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Product Page</h1>
+</header>
+
+<div class="container">
+    <div class="product">
+        <div class="product-details">
+            <h2 class="product-title">Quantum Physics Book</h2>
+            <p class="product-price">$29.99</p>
+            <p class="product-description">
+                Explore the fundamentals of quantum physics with this comprehensive guide.
+            </p>
+            <button class="buy-button">Add to Cart</button>
+        </div>
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Science Store | All Rights Reserved
+</footer>
+
+</body>
+</html>

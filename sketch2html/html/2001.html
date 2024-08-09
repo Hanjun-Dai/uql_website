@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - History Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px 0;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #f0f8ff;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(event)">How often is the content updated?</div>
+        <div class="faq-answer">Content is updated weekly to include the latest research and information.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(event)">What is the purpose of this website?</div>
+        <div class="faq-answer">This website aims to provide comprehensive information about historical events and figures.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(event)">Is there a mobile version of the site?</div>
+        <div class="faq-answer">Yes, our website is fully responsive and can be accessed on mobile devices.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(event)">Can I contribute to the content?</div>
+        <div class="faq-answer">Yes! We welcome contributions from history enthusiasts. Please reach out through our contact page.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(event) {
+        const answer = event.target.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

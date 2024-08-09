@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .card {
+            background: #e3f2fd;
+            flex: 1 1 calc(33% - 20px);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #1976d2;
+        }
+        .card p {
+            font-size: 1em;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Education Resources</h1>
+            <p>Your gateway to knowledge and learning.</p>
+        </header>
+        <div class="grid">
+            <div class="card">
+                <h2>Community Forum</h2>
+                <p>Engage with peers and educators.</p>
+            </div>
+            <div class="card">
+                <h2>Tutorials</h2>
+                <p>Access videos and tutorials for various subjects.</p>
+            </div>
+            <div class="card">
+                <h2>Online Courses</h2>
+                <p>Enroll in courses from top universities.</p>
+            </div>
+            <div class="card">
+                <h2>Webinars</h2>
+                <p>Join live sessions with experts.</p>
+            </div>
+            <div class="card">
+                <h2>Study Materials</h2>
+                <p>Download e-books, notes, and guides.</p>
+            </div>
+            <div class="card">
+                <h2>Scholarship Info</h2>
+                <p>Find scholarships and financial aid information.</p>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Education Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

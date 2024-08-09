@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Category</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            border-bottom: 2px solid #333;
+        }
+        .category h2 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 24px;
+            color: #333;
+        }
+        .category i {
+            font-size: 50px;
+            display: block;
+            text-align: center;
+            color: #666;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entertainment Hub</h1>
+    </header>
+    <div class="container">
+        <div class="category">
+            <img src="https://via.placeholder.com/300x150?text=Music" alt="Music">
+            <i class="fas fa-music"></i>
+            <h2>Music</h2>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/300x150?text=Games" alt="Games">
+            <i class="fas fa-gamepad"></i>
+            <h2>Games</h2>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/300x150?text=TV+Shows" alt="TV Shows">
+            <i class="fas fa-tv"></i>
+            <h2>TV Shows</h2>
+        </div>
+        <div class="category">
+            <img src="https://via.placeholder.com/300x150?text=Movies" alt="Movies">
+            <i class="fas fa-film"></i>
+            <h2>Movies</h2>
+        </div>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Entertainment Hub
+    </footer>
+</body>
+</html>

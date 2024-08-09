@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background-color: white;
+            border: 2px solid #007bff;
+            width: 300px;
+            margin: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-img {
+            height: 200px;
+            background-color: #ddd;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .portfolio-content {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .portfolio-content h2 {
+            font-size: 1.5em;
+            color: #007bff;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Portfolio</h1>
+</header>
+
+<div class="portfolio-container">
+    <div class="portfolio-item">
+        <div class="portfolio-content">
+            <h2>Project Title 2</h2>
+            <a href="#" class="btn">View More</a>
+        </div>
+        <div class="portfolio-img" style="background-image: url('path/to/your/image2.jpg');"></div>
+    </div>
+
+    <div class="portfolio-item">
+        <div class="portfolio-img" style="background-image: url('path/to/your/image4.jpg');"></div>
+        <div class="portfolio-content">
+            <h2>Project Title 4</h2>
+            <a href="#" class="btn">View More</a>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <div class="portfolio-content">
+            <h2>Project Title 1</h2>
+            <a href="#" class="btn">View More</a>
+        </div>
+        <div class="portfolio-img" style="background-image: url('path/to/your/image1.jpg');"></div>
+    </div>
+
+    <div class="portfolio-item">
+        <div class="portfolio-img" style="background-image: url('path/to/your/image3.jpg');"></div>
+        <div class="portfolio-content">
+            <h2>Project Title 3</h2>
+            <a href="#" class="btn">View More</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

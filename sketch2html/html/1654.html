@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Changed background color */
+        }
+        header {
+            background-color: #3F51B5; /* Changed header color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background-color: #ffffff; /* Unchanged */
+            border: 1px solid #958D96; /* Changed border color */
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .category-title {
+            font-size: 20px; /* Increased font size */
+            margin: 10px 0;
+            color: #E91E63; /* Changed category title color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Categories</h1>
+</header>
+
+<div class="container">
+    <div class="category-grid">
+        <div class="category-card">
+            <div class="category-title">Mathematics</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Science</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Literature</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">History</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Languages</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Art</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Computer Science</div>
+        </div>
+        <div class="category-card">
+            <div class="category-title">Physical Education</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

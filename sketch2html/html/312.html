@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        header {
+            background: #e94e77; /* Changed color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #e94e77; /* Changed color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .news-card {
+            background: white;
+            border: 1px solid #e1e1e1;
+            border-radius: 8px;
+            margin: 15px;
+            width: 300px;
+            transition: transform 0.2s;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+
+        .news-image {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .news-content {
+            padding: 15px;
+        }
+
+        .news-title {
+            font-size: 18px;
+            margin: 0 0 10px;
+            color: #e94e77; /* Changed color */
+        }
+
+        .news-description {
+            font-size: 14px;
+            color: #888; /* Changed color */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e94e77; /* Changed color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Arts News Today
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Exhibitions</a>
+        <a href="#">Events</a>
+        <a href="#">Artists</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="news-card">
+            <img class="news-image" src="https://via.placeholder.com/300x200" alt="Art Event 1">
+            <div class="news-content">
+                <h3 class="news-title">Art Exhibition Opening</h3>
+                <p class="news-description">Join us for the opening night of our latest exhibition featuring contemporary artists.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img class="news-image" src="https://via.placeholder.com/300x200" alt="Art Event 2">
+            <div class="news-content">
+                <h3 class="news-title">Live Painting Event</h3>
+                <p class="news-description">Watch talented artists create masterpieces live, followed by a Q&A session.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img class="news-image" src="https://via.placeholder.com/300x200" alt="Art Event 3">
+            <div class="news-content">
+                <h3 class="news-title">Art Workshops</h3>
+                <p class="news-description">Sign up for our upcoming workshops to learn various art techniques from professionals.</p>
+            </div>
+        </div>
+        <div class="news-card">
+            <img class="news-image" src="https://via.placeholder.com/300x200" alt="Art Event 4">
+            <div class="news-content">
+                <h3 class="news-title">Artist Feature: John Doe</h3>
+                <p class="news-description">Discover the inspiring journey of renowned artist John Doe in this exclusive interview.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Arts News. All Rights Reserved.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Food Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5ff; /* Changed background to a light blue */
+            color: #444; /* Changed text color slightly */
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #fefefe; /* Changed to off-white */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly heavier shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #4a8c2a; /* Changed to a warm green */
+        }
+        .faq-section {
+            margin: 20px 0;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc; /* Changed to a lighter gray */
+            padding: 10px 0;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            color: #3a5e8f; /* Changed to a blue color */
+        }
+        .question:hover {
+            color: #c65d1d; /* Changed hover color to a darker orange */
+        }
+        .answer {
+            display: none;
+            padding: 10px 15px;
+            margin-top: 5px;
+            background-color: #e6f7ff; /* Changing answer background to light blue */
+            border-left: 5px solid #4a8c2a; /* Changed border color to match the new header color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-section">
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">What types of food do you offer?</div>
+                <div class="answer">We offer a variety of cuisines including Italian, Chinese, Indian, and more.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">How can I place an order?</div>
+                <div class="answer">Orders can be placed through our website or mobile app.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">What are the delivery options?</div>
+                <div class="answer">We offer home delivery and curbside pickup services.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">Do you offer vegetarian or vegan options?</div>
+                <div class="answer">Yes, we have a wide range of vegetarian and vegan dishes.</div>
+            </div>
+            <div class="faq-item">
+                <div class="question" onclick="toggleAnswer(this)">Where can I find your menu?</div>
+                <div class="answer">Our menu can be found on our website under the 'Menu' section.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

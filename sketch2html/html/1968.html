@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #6f42c1;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        .forum {
+            flex: 3;
+            margin-right: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+
+        .forum h2 {
+            margin-top: 0;
+        }
+
+        .topic {
+            padding: 10px;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topic:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+        }
+
+        .category {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .category .icon {
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Forum</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#tips">Cooking Tips</a>
+        <a href="#about">About Us</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <div class="category"><i class="fa fa-utensils icon"></i><span>Recipes</span></div>
+        <div class="category"><i class="fa fa-carrot icon"></i><span>Healthy Living</span></div>
+        <div class="category"><i class="fa fa-glass-cheers icon"></i><span>Drinks</span></div>
+        <div class="category"><i class="fa fa-cutlery icon"></i><span>Cooking Tips</span></div>
+        <div class="category"><i class="fa fa-birthday-cake icon"></i><span>Desserts</span></div>
+    </aside>
+
+    <div class="forum">
+        <h2>Latest Topics</h2>
+        <div class="topic">
+            <span><strong>Best Pasta Recipes</strong></span>
+            <span>10 Replies</span>
+        </div>
+        <div class="topic">
+            <span><strong>Healthy Smoothie Ideas</strong></span>
+            <span>5 Replies</span>
+        </div>
+        <div class="topic">
+            <span><strong>Vegetarian BBQ Tips</strong></span>
+            <span>8 Replies</span>
+        </div>
+        <div class="topic">
+            <span><strong>Quick Dessert Recipes</strong></span>
+            <span>2 Replies</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

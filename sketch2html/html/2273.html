@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Arts Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #f5f5dc;
+            color: #4b3d2b;
+        }
+        header {
+            background-image: url('rustic-wood-background.jpg');
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('art-hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .marketplace, .spotlight {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .marketplace div, .spotlight div {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b3d2b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Arts</h1>
+    <p>Celebrating the beauty of handcrafted creativity</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#marketplace">Marketplace</a>
+    <a href="#artists">Artists</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="marketplace" id="marketplace">
+    <div>
+        <h3>Latest Arrivals</h3>
+        <p>Discover the newest additions to our collection.</p>
+    </div>
+    <div>
+        <h3>Seasonal Specials</h3>
+        <p>Check out our limited edition artworks.</p>
+    </div>
+    <div>
+        <h3>Featured Art</h3>
+        <p>Explore handmade creations and unique pieces.</p>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Welcome to Rustic Arts</h2>
+</div>
+
+<div class="spotlight" id="artists">
+    <div>
+        <h3>Join our Community</h3>
+        <p>Connect with fellow art lovers.</p>
+    </div>
+    <div>
+        <h3>Workshops</h3>
+        <p>Join a workshop to learn the art.</p>
+    </div>
+    <div>
+        <h3>Artist Spotlight</h3>
+        <p>Highlighting talented artisans and their stories.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Rustic Arts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

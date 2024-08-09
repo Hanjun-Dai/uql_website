@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f7ef; /* Changed background color */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50; /* Changed header color */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cddc39; /* Changed border color */
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15); /* Slightly increased shadow */
+        }
+        input:focus, textarea:focus {
+            border-color: #ff5722; /* Changed focus border color */
+            outline: none;
+        }
+        button {
+            background-color: #2196F3; /* Changed button color */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1976D2; /* Changed button hover color */
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: #34495e; /* Changed text color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p>📍 Address</p>
+            <p>📞 Phone: (123) 456-7890</p>
+            <p>✉️ Email: contact@lifestyle.com</p>
+        </div>
+    </div>
+
+</body>
+</html>

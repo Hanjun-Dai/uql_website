@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .forum {
+            flex: 2; /* Changed to flex: 2 for a slightly different layout */
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .forum h2 {
+            margin-top: 0;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .sidebar {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .sidebar h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Food Forum</h1>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Popular Topics</h3>
+        <ul>
+            <li><a href="#">Cooking Tips</a></li>
+            <li><a href="#">Food Photography</a></li>
+            <li><a href="#">Seasonal Recipes</a></li>
+            <li><a href="#">Baking Basics</a></li>
+        </ul>
+    </aside>
+
+    <div class="forum">
+        <h2>Latest Discussions</h2>
+        <div class="post">
+            <h3><a href="#">Best Pasta Recipes?</a></h3>
+            <p>Started by <strong>User1</strong> on Oct 1</p>
+        </div>
+        <div class="post">
+            <h3><a href="#">Healthy Smoothies for Breakfast</a></h3>
+            <p>Started by <strong>User2</strong> on Sep 30</p>
+        </div>
+        <div class="post">
+            <h3><a href="#">Vegan Dessert Ideas</a></h3>
+            <p>Started by <strong>User3</strong> on Sep 29</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Food Forum. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h3 {
+            margin: 10px;
+            font-size: 1.5em;
+            text-align: center;
+            color: #333;
+        }
+
+        .card p {
+            margin: 10px;
+            color: #777;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/cultural-history.jpg" alt="Cultural History">
+            <h3>Cultural History</h3>
+            <p>Explore the dynamics of different cultures.</p>
+        </div>
+        <div class="card">
+            <img src="images/world-war.jpg" alt="World Wars">
+            <h3>World Wars</h3>
+            <p>A deep dive into the global conflicts.</p>
+        </div>
+        <div class="card">
+            <img src="images/ancient-history.jpg" alt="Ancient History">
+            <h3>Ancient History</h3>
+            <p>Explore the origins of civilization.</p>
+        </div>
+        <div class="card">
+            <img src="images/modern-history.jpg" alt="Modern History">
+            <h3>Modern History</h3>
+            <p>Learn about events shaping the contemporary world.</p>
+        </div>
+        <div class="card">
+            <img src="images/american-history.jpg" alt="American History">
+            <h3>American History</h3>
+            <p>Trace the evolution of the United States.</p>
+        </div>
+        <div class="card">
+            <img src="images/medieval-history.jpg" alt="Medieval History">
+            <h3>Medieval History</h3>
+            <p>Discover the age of knights and castles.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2023 History Website. All rights reserved.
+    </div>
+
+</body>
+</html>

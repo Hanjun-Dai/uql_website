@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background-color: #0056b3; /* Changed header background color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #ffc107; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .portfolio {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .portfolio-item {
+            background-color: #ffffff;
+            border: 1px solid #d1d1d1; /* Made border slightly darker */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Darkened shadow */
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-image {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .portfolio-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #343a40; /* Changed title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40; /* Kept footer background the same */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Portfolio</h1>
+    <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="portfolio" id="projects">
+    <div class="portfolio-item">
+        <img src="car1.jpg" alt="Project Car 1" class="portfolio-image">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Project Car 1</h2>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="car2.jpg" alt="Project Car 2" class="portfolio-image">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Project Car 2</h2>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="car3.jpg" alt="Project Car 3" class="portfolio-image">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Project Car 3</h2>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="car4.jpg" alt="Project Car 4" class="portfolio-image">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Project Car 4</h2>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="car5.jpg" alt="Project Car 5" class="portfolio-image">
+        <div class="portfolio-content">
+            <h2 class="portfolio-title">Project Car 5</h2>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Automotive Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

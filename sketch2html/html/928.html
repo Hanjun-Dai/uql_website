@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #e4e4e4; /* Changed background color */
+        }
+
+        header {
+            background: #007acc; /* Changed header color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #999; /* Darker border color */
+            padding-bottom: 20px;
+        }
+
+        .article img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .article h2 {
+            margin: 10px 0;
+            color: #333; /* Changed heading color */
+        }
+
+        .sidebar {
+            flex: 1;
+            margin-left: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            margin-top: 0;
+            color: #007acc; /* Changed sidebar header color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #444; /* Changed footer color */
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment News</h1>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="Article Image">
+            <h2>Latest Blockbuster is Hitting Theaters!</h2>
+            <p>Don't miss the thrilling experience of our latest blockbuster...</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="Article Image">
+            <h2>Celebrity Spotlight: An Interview With The Stars</h2>
+            <p>Exclusive insights from your favorite stars...</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="Article Image">
+            <h2>Top 10 Must-Watch TV Shows This Month</h2>
+            <p>Here’s what you should be watching...</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Trending Now</h3>
+        <ul>
+            <li><a href="#">Movie trailers you need to see</a></li>
+            <li><a href="#">Upcoming Music Festivals</a></li>
+            <li><a href="#">Award Winners Announced</a></li>
+            <li><a href="#">Behind the Scenes of Popular Shows</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment News. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

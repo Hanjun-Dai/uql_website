@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background: #6f4c3e; /* Changed header background color */
+            color: #fff; /* Changed header text color */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            background: #3d2a2a; /* Changed nav background color */
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffa500; /* Changed nav link color */
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background: #8f6b4f;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .news-card {
+            background: #fefbd8; /* Changed news card background color */
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(48% - 20px);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-img {
+            max-width: 100%;
+            height: auto;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #4a3a3a; /* Changed news title color */
+        }
+        .news-date {
+            font-size: 0.9em;
+            color: #7c7c7c; /* Changed news date color */
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #6f4c3e; /* Changed footer background color */
+            color: #fff; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Rustic Automotive News
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#latest">Latest News</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#features">Features</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="news-card">
+        <img src="car1.jpg" alt="Car News 1" class="news-img">
+        <div class="news-content">
+            <h2 class="news-title">New Car Release 2024</h2>
+            <p class="news-date">October 12, 2023</p>
+            <p>This year's new models hit the roads!</p>
+        </div>
+    </div>
+    
+    <div class="news-card">
+        <img src="car2.jpg" alt="Car News 2" class="news-img">
+        <div class="news-content">
+            <h2 class="news-title">Top Classic Cars of the Year</h2>
+            <p class="news-date">October 10, 2023</p>
+            <p>Discover the classics that made a comeback.</p>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <img src="car3.jpg" alt="Car News 3" class="news-img">
+        <div class="news-content">
+            <h2 class="news-title">Electric Cars - The Future</h2>
+            <p class="news-date">October 8, 2023</p>
+            <p>How electric is changing the automotive landscape.</p>
+        </div>
+    </div>
+
+    <div class="news-card">
+        <img src="car4.jpg" alt="Car News 4" class="news-img">
+        <div class="news-content">
+            <h2 class="news-title">Car Maintenance Tips</h2>
+            <p class="news-date">October 5, 2023</p>
+            <p>Keep your car running smoothly with these tips.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Rustic Automotive News
+</footer>
+
+</body>
+</html>

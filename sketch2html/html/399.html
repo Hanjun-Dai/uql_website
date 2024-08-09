@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .category-card {
+            background-color: white;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .category-card h3 {
+            margin: 0.5rem 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .category-card p {
+            color: #777;
+            font-size: 0.9rem;
+            margin: 0;
+            padding: 0 0.5rem 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entertainment Categories</h1>
+    </header>
+
+    <div class="container">
+        <div class="category-card">
+            <img src="images/games.jpg" alt="Games">
+            <h3>Games</h3>
+            <p>New games and updates</p>
+        </div>
+        <div class="category-card">
+            <img src="images/music.jpg" alt="Music">
+            <h3>Music</h3>
+            <p>Trending songs and artists</p>
+        </div>
+        <div class="category-card">
+            <img src="images/events.jpg" alt="Events">
+            <h3>Events</h3>
+            <p>Upcoming events and festivals</p>
+        </div>
+        <div class="category-card">
+            <img src="images/movies.jpg" alt="Movies">
+            <h3>Movies</h3>
+            <p>Latest releases and box office hits</p>
+        </div>
+        <div class="category-card">
+            <img src="images/celebrity.jpg" alt="Celebrity News">
+            <h3>Celebrity</h3>
+            <p>Gossip and latest updates</p>
+        </div>
+        <div class="category-card">
+            <img src="images/shows.jpg" alt="Shows">
+            <h3>Shows</h3>
+            <p>Popular TV shows and streaming</p>
+        </div>
+        <div class="category-card">
+            <img src="images/sports.jpg" alt="Sports">
+            <h3>Sports</h3>
+            <p>Latest sports news and highlights</p>
+        </div>
+        <div class="category-card">
+            <img src="images/reviews.jpg" alt="Reviews">
+            <h3>Reviews</h3>
+            <p>Insights on latest entertainment</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Entertainment Company</p>
+    </footer>
+</body>
+</html>

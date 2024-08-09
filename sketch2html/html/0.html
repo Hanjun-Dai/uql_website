@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Resource Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to a separate CSS file -->
+    <style>
+        body {
+            background-color: #e0f7fa; /* Changed background color */
+            font-family: 'Arial', sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+        }
+        header {
+            text-align: center; 
+            margin-bottom: 30px; 
+        }
+        h1 {
+            font-size: 2.5em; 
+            color: #2c3e50; /* Changed header color */
+        }
+        .resource-container {
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 20px; 
+        }
+        .resource-card {
+            background: #fff; 
+            border: 1px solid #abc; /* Changed border color */
+            border-radius: 8px; 
+            padding: 15px; 
+            text-align: center; 
+            width: 220px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Changed shadow color */
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+        .resource-card img {
+            max-width: 100%; 
+            border-radius: 5px; 
+        }
+        .resource-card h2 {
+            font-size: 1.5em; 
+            color: #2980b9; /* Changed card title color */
+            margin: 10px 0; 
+        }
+        .resource-card p {
+            color: #555; /* Changed paragraph text color */
+            font-size: 0.9em; 
+            margin: 5px 0;
+        }
+        .footer {
+            text-align: center; 
+            margin-top: 30px; 
+            font-size: 0.8em; 
+            color: #666; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Art Resources</h1>
+</header>
+
+<div class="resource-container">
+    <div class="resource-card">
+        <img src="images/resource1.jpg" alt="Resource 1 Image">
+        <h2>Local Exhibitions</h2>
+        <p>Discover local art exhibitions.</p>
+    </div>
+    <div class="resource-card">
+        <img src="images/resource2.jpg" alt="Resource 2 Image">
+        <h2>Artist Workshops</h2>
+        <p>Participate in hands-on workshops.</p>
+    </div>
+    <div class="resource-card">
+        <img src="images/resource3.jpg" alt="Resource 3 Image">
+        <h2>Online Galleries</h2>
+        <p>Explore curated online art galleries.</p>
+    </div>
+    <div class="resource-card">
+        <img src="images/resource4.jpg" alt="Resource 4 Image">
+        <h2>Art Supplies</h2>
+        <p>Find quality art supplies.</p>
+    </div>
+    <div class="resource-card">
+        <img src="images/resource5.jpg" alt="Resource 5 Image">
+        <h2>Art Blogs</h2>
+        <p>Read insightful articles from artists.</p>
+    </div>
+    <div class="resource-card">
+        <img src="images/resource6.jpg" alt="Resource 6 Image">
+        <h2>Network Events</h2>
+        <p>Join events for art networking.</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Arts Website | All Rights Reserved
+</div>
+
+</body>
+</html>

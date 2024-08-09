@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lora', serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 18px;
+            color: #777;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .card a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #e91e63;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .card a:hover {
+            background-color: #d81b60;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Fashion Resources</h1>
+        <p>Your guide to exploring the latest in fashion.</p>
+    </header>
+  
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Events" alt="Fashion Events">
+            <h2>Events</h2>
+            <a href="#">See What's Happening</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Lookbooks" alt="Lookbooks">
+            <h2>Lookbooks</h2>
+            <a href="#">Browse Now</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Fashion+Blogs" alt="Fashion Blogs">
+            <h2>Fashion Blogs</h2>
+            <a href="#">Read More</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Trend+Reports" alt="Trend Reports">
+            <h2>Trend Reports</h2>
+            <a href="#">Explore</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Style+Guides" alt="Style Guides">
+            <h2>Style Guides</h2>
+            <a href="#">Discover</a>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200.png?text=Styling+Tips" alt="Styling Tips">
+            <h2>Styling Tips</h2>
+            <a href="#">Get Inspired</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

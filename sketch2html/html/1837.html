@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .post {
+            border-bottom: 1px solid #f4f4f4;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .post h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .post p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Chronicles of Time</h1>
+        <p>A Journey Through History</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>The Renaissance: A Cultural Rebirth</li>
+                <li>Famous Battles of History</li>
+                <li>Women in History</li>
+            </ul>
+
+            <h3>Categories</h3>
+            <ul>
+                <li>Ancient History</li>
+                <li>Medieval History</li>
+                <li>Modern History</li>
+                <li>Cultures</li>
+                <li>Personalities</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <div class="post">
+                <img src="history-post-3.jpg" alt="History Post 3">
+                <h2>The World Wars: A Global Conflict</h2>
+                <p>An analysis of the two greatest wars in modern history.</p>
+            </div>
+            <div class="post">
+                <img src="featured-history.jpg" alt="Featured History Post">
+                <h2>The Rise and Fall of Empires</h2>
+                <p>Explore the intriguing tales of the world's greatest empires.</p>
+            </div>
+            <div class="post">
+                <img src="history-post-2.jpg" alt="History Post 2">
+                <h2>The Age of Exploration</h2>
+                <p>Uncover the adventures of explorers who changed the world.</p>
+            </div>
+            <div class="post">
+                <img src="history-post-1.jpg" alt="History Post 1">
+                <h2>Ancient Civilizations: A Brief Overview</h2>
+                <p>Discover the wonders of ancient societies and their legacies.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

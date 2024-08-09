@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Artistic Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(90deg, #232526, #414345);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .navbar {
+            background-color: #555;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 60%;
+            margin-right: 20px;
+        }
+        .sidebar {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+        }
+        .article h2, .sidebar h2 {
+            color: #E63946;
+        }
+        .footer {
+            background-color: #232526;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Political Insights</h1>
+        <p>Your source for the latest in politics</p>
+    </div>
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#opinion">Opinion</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <div class="sidebar">
+            <h2>Popular Articles</h2>
+            <ul>
+                <li><a href="#article1">Understanding Voter Behavior</a></li>
+                <li><a href="#article2">The Role of Media in Politics</a></li>
+                <li><a href="#article3">Debates: Impact on Public Opinion</a></li>
+                <li><a href="#article4">Campaign Strategies: A Deep Dive</a></li>
+                <li><a href="#article5">Youth Involvement in Politics</a></li>
+            </ul>
+        </div>
+
+        <div class="article">
+            <h2>Latest Election Updates</h2>
+            <p><img src="https://via.placeholder.com/600x300" alt="Election banner" style="width:100%; border-radius: 8px;"></p>
+            <p>Brief updates about the latest developments in the elections...</p>
+            <a href="#readmore" style="color: #E63946; text-decoration: none;">Read more...</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Political Insights. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Games Portfolio</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #e6f2f0; /* Light teal background for vintage feel */
+            color: #3a5b29; /* Dark green text color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6a4b8c; /* Purple header */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #5c7f3e; /* Darker green on hover */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project {
+            background-color: #c0e1f8; /* Light blue project background */
+            border: 1px solid #8cb59f; /* Light green border */
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05); /* Scale effect on hover */
+        }
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6a4b8c; /* Same purple footer */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage Games Portfolio</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="project">
+        <img src="game1.jpg" alt="Game 1">
+        <h2>Game Title 1</h2>
+        <p>Short description here.</p>
+    </div>
+    <div class="project">
+        <img src="game2.jpg" alt="Game 2">
+        <h2>Game Title 2</h2>
+        <p>Short description here.</p>
+    </div>
+    <div class="project">
+        <img src="game3.jpg" alt="Game 3">
+        <h2>Game Title 3</h2>
+        <p>Short description here.</p>
+    </div>
+    <div class="project">
+        <img src="game4.jpg" alt="Game 4">
+        <h2>Game Title 4</h2>
+        <p>Short description here.</p>
+    </div>
+    <div class="project">
+        <img src="game5.jpg" alt="Game 5">
+        <h2>Game Title 5</h2>
+        <p>Short description here.</p>
+    </div>
+    <div class="project">
+        <img src="game6.jpg" alt="Game 6">
+        <h2>Game Title 6</h2>
+        <p>Short description here.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Vintage Games Website</p>
+</footer>
+
+</body>
+</html>

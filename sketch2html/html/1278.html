@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background-color: #007bff; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fefefe; /* Changed card background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Changed shadow color */
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 2px solid #28a745; /* Changed image border color */
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 0;
+            color: #6f42c1; /* Changed title color */
+        }
+        .card-description {
+            color: #666; /* Changed description color */
+            margin-top: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resources</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="path/to/image1.jpg" alt="Resource Image 1">
+            <div class="card-content">
+                <h2 class="card-title">Resource Title 1</h2>
+                <p class="card-description">Brief description or details about resource 1.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="path/to/image2.jpg" alt="Resource Image 2">
+            <div class="card-content">
+                <h2 class="card-title">Resource Title 2</h2>
+                <p class="card-description">Brief description or details about resource 2.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="path/to/image3.jpg" alt="Resource Image 3">
+            <div class="card-content">
+                <h2 class="card-title">Resource Title 3</h2>
+                <p class="card-description">Brief description or details about resource 3.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="path/to/image4.jpg" alt="Resource Image 4">
+            <div class="card-content">
+                <h2 class="card-title">Resource Title 4</h2>
+                <p class="card-description">Brief description or details about resource 4.</p>
+            </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+    </div>
+
+    <footer>
+        &copy; 2023 News Website | All Rights Reserved
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        .faq-item:hover {
+            background: #f1f1f1;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="question">How can I contact support?</div>
+        <div class="answer">You can contact support via... (additional details can be revealed).</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What is your refund policy?</div>
+        <div class="answer">You can request a refund within... (additional details can be revealed).</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What services do you offer?</div>
+        <div class="answer">We offer a range of services including... (additional details can be revealed).</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Do you offer international shipping?</div>
+        <div class="answer">Yes, we ship to various countries... (additional details can be revealed).</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Where can I find pricing information?</div>
+        <div class="answer">Pricing details are available on our... (additional details can be revealed).</div>
+    </div>
+</div>
+
+<script>
+    // JavaScript to toggle the visibility of answers
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.querySelector('.answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

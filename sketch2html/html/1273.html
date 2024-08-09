@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Service Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #eef6f9;
+            color: #333;
+        }
+        
+        header {
+            background: #009688;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px; /* Increased font size */
+        }
+        
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-icon {
+            text-align: center;
+            padding: 20px;
+            background: #00bcd4;
+            color: white;
+            font-size: 80px; /* Increased font size */
+        }
+
+        .service-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .service-title {
+            font-size: 42px; /* Increased font size */
+            margin: 10px 0;
+        }
+
+        .service-description {
+            font-size: 10px; /* Decreased font size */
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #009688;
+            color: white;
+            font-size: 16px; /* Increased font size */
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Health Services</h1>
+        <p>Your wellness is our priority</p>
+    </header>
+    
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">ð¥</div>
+            <div class="service-content">
+                <h2 class="service-title">General Checkup</h2>
+                <p class="service-description">Regular health check to keep you fit.</p>
+            </div>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">ð§ââï¸</div>
+            <div class="service-content">
+                <h2 class="service-title">Wellness Programs</h2>
+                <p class="service-description">Personalized plans for a balanced life.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">ð</div>
+            <div class="service-content">
+                <h2 class="service-title">Vaccination</h2>
+                <p class="service-description">Stay protected with our vaccination services.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">ð</div>
+            <div class="service-content">
+                <h2 class="service-title">Nutrition Counseling</h2>
+                <p class="service-description">Eat right for a healthier life.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Services. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

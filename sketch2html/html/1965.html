@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(30% - 20px);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+        .card-description {
+            font-size: 0.9em;
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health & Wellness</h1>
+        <p>Your guide to a healthier life</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="image4.jpg" alt="Preventive Care">
+            <div class="card-content">
+                <h2 class="card-title">Preventive Care</h2>
+                <p class="card-description">Stay ahead of potential health issues.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image1.jpg" alt="Nutrition">
+            <div class="card-content">
+                <h2 class="card-title">Nutrition</h2>
+                <p class="card-description">Discover balanced diets and meal plans.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image3.jpg" alt="Mental Health">
+            <div class="card-content">
+                <h2 class="card-title">Mental Health</h2>
+                <p class="card-description">Explore ways to improve your wellbeing.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image2.jpg" alt="Fitness">
+            <div class="card-content">
+                <h2 class="card-title">Fitness</h2>
+                <p class="card-description">Learn new workouts and exercise tips.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image6.jpg" alt="Holistic Healing">
+            <div class="card-content">
+                <h2 class="card-title">Holistic Healing</h2>
+                <p class="card-description">Explore alternative treatments and wellness.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="image5.jpg" alt="Sleep Health">
+            <div class="card-content">
+                <h2 class="card-title">Sleep Health</h2>
+                <p class="card-description">Tips for better sleep quality.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Website | All rights reserved.</p>
+    </footer>
+</body>
+</html>

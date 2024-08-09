@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1024px;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            flex: 1 1 calc(30% - 30px);
+            min-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        .service-img {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #555;
+        }
+
+        .service-description {
+            padding: 0 15px 15px;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Fashion Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="services">
+            <div class="service-item">
+                <div class="service-img" style="background-image: url('images/styling_advice.jpg');"></div>
+                <div class="service-title">Styling Advice</div>
+                <div class="service-description">Expert tips to elevate your style.</div>
+            </div>
+            <div class="service-item">
+                <div class="service-img" style="background-image: url('images/wardrobe_refresh.jpg');"></div>
+                <div class="service-title">Wardrobe Refresh</div>
+                <div class="service-description">Revitalize your wardrobe with key pieces.</div>
+            </div>
+            <div class="service-item">
+                <div class="service-img" style="background-image: url('images/custom_design.jpg');"></div>
+                <div class="service-title">Custom Design</div>
+                <div class="service-description">Bespoke creations tailored for you.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Fashion Website. All rights reserved.
+    </footer>
+</body>
+</html>

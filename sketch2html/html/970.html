@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Travel Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: url('header-background.jpg') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 960px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .mission {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Discover Your Adventure
+    </header>
+
+    <div class="container">
+        <div class="gallery">
+            <img src="destination4.jpg" alt="Beautiful Destination 4">
+            <img src="destination1.jpg" alt="Beautiful Destination 1">
+            <img src="destination6.jpg" alt="Beautiful Destination 6">
+            <img src="destination5.jpg" alt="Beautiful Destination 5">
+            <img src="destination2.jpg" alt="Beautiful Destination 2">
+            <img src="destination3.jpg" alt="Beautiful Destination 3">
+        </div>
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>To inspire wanderlust and create unforgettable travel experiences.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Travel Website | Contact Us: info@travelwebsite.com
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-card {
+            background: white;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .card-title {
+            background: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.5em;
+        }
+        .card-image {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background: #e0f7fa;
+        }
+        .card-image img {
+            max-width: 80%;
+        }
+        .card-description {
+            padding: 15px;
+            text-align: center;
+        }
+        .button {
+            background: #FF9800;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+        }
+        .button:hover {
+            background: #ff5722;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px 0;
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Fun Zone!</h1>
+</header>
+
+<div class="container">
+    <div class="product-card">
+        <div class="card-description">
+            <p>Maximize your investments!</p>
+            <h2>$19.99/mo</h2>
+            <button class="button">Join Today!</button>
+        </div>
+        <div class="card-title">Investment Guru</div>
+        <div class="card-image">
+            <img src="investment-guru.png" alt="Investment Guru">
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="card-description">
+            <p>Your personal finance assistant!</p>
+            <h2>Free Trial</h2>
+            <button class="button">Try Now!</button>
+        </div>
+        <div class="card-title">Budget Buddy App</div>
+        <div class="card-image">
+            <img src="budget-buddy.png" alt="Budget Buddy App">
+        </div>
+    </div>
+
+    <div class="product-card">
+        <div class="card-description">
+            <p>Save more, earn more!</p>
+            <h2>$9.99/mo</h2>
+            <button class="button">Get Started!</button>
+        </div>
+        <div class="card-title">Super Saver Plan</div>
+        <div class="card-image">
+            <img src="super-saver.png" alt="Super Saver Plan">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 Finance Fun Zone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

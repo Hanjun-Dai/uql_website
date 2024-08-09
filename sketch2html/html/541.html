@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .product-details {
+            text-align: center;
+        }
+        .product-title {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .product-price {
+            font-size: 24px;
+            color: #e74c3c;
+            margin: 10px 0;
+        }
+        .product-description {
+            font-size: 16px;
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        .add-to-cart:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Elegant Lifestyle Product</h1>
+        <div class="product">
+            <div class="product-details">
+                <div class="product-price">$129.99</div>
+                <div class="product-description">
+                    A stylish handbag perfect for any occasion. Made with high-quality materials.
+                </div>
+                <div class="product-title">Stylish Handbag</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <img src="product-image.jpg" alt="Product Image" class="product-image">
+        </div>
+    </div>
+</body>
+</html>

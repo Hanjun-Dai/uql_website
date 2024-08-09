@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Finance Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff; /* Changed background color */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #FF5733; /* Changed header color */
+        }
+
+        .faq-section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 10px;
+            background-color: #d3d3d3; /* Changed question background color */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .question:hover {
+            background-color: #c1c1c1; /* Changed hover background color */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border-left: 4px solid #FF5733; /* Changed answer border color */
+            background-color: #fbfbfb;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-section">
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">What is a budget?</div>
+        <div class="answer">A budget is a plan that helps you manage your income and expenses.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">How can I improve my credit score?</div>
+        <div class="answer">Pay your bills on time, reduce your debt, and check your credit report regularly.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">What is the difference between saving and investing?</div>
+        <div class="answer">Saving is setting aside money for future use, while investing is using your money to generate returns.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">What is compound interest?</div>
+        <div class="answer">Compound interest is interest calculated on the initial principal, which also includes all the accumulated interest from previous periods.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">How do I create an investment portfolio?</div>
+        <div class="answer">You should assess your risk tolerance, consider diversification, and set clear financial goals.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>

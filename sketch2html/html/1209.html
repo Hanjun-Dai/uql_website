@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Categories</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e1f7d5; /* Changed background color */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #d35400; /* Changed heading color */
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .category {
+            background: #ffffff;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            text-align: center;
+            width: 180px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #3498db; /* Changed icon text color */
+        }
+        .button {
+            background-color: #e67e22; /* Changed button background color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #d35400; /* Changed button hover color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Explore Our Tech Categories!</h1>
+        <div class="categories">
+            <div class="category">
+                <div class="icon">💻</div>
+                <h2>Computers</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="category">
+                <div class="icon">📱</div>
+                <h2>Mobile</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="category">
+                <div class="icon">📱</div>
+                <h2>Gadgets</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="category">
+                <div class="icon">🛠️</div> <!-- Changed icon -->
+                <h2>Software</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="category">
+                <div class="icon">🌐</div>
+                <h2>Internet</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+            <div class="category">
+                <div class="icon">🎮</div> <!-- Changed icon -->
+                <h2>Gaming</h2>
+                <a href="#" class="button">Discover</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

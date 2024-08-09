@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Sports Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('https://example.com/rustic-wood-background.jpg') no-repeat center center/cover;
+            padding: 20px;
+            text-align: center;
+            color: #ffeb3b; /* Changed header text color */
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+
+        nav a {
+            color: #ff5722; /* Changed link color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            border: 2px solid #795548; /* Changed border color */
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-item h3 {
+            background: #6d4c41; /* Changed h3 background color */
+            color: #ffffff; /* Ensured contrasting text color */
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background: #1976d2; /* Changed footer background color */
+            color: #ffffff; /* Ensured footer text color is white */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main class="portfolio">
+    <div class="portfolio-item">
+        <img src="https://example.com/sport-image1.jpg" alt="Sport 1">
+        <h3>Sport Event 1</h3>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://example.com/sport-image2.jpg" alt="Sport 2">
+        <h3>Sport Event 2</h3>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://example.com/sport-image3.jpg" alt="Sport 3">
+        <h3>Sport Event 3</h3>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://example.com/sport-image4.jpg" alt="Sport 4">
+        <h3>Sport Event 4</h3>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://example.com/sport-image5.jpg" alt="Sport 5">
+        <h3>Sport Event 5</h3>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Rustic Sports Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

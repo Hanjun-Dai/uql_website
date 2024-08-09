@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Automotive Homepage</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff; /* Changed color */
+        }
+        header {
+            background-color: #4caf50; /* Changed color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ff9800; /* Changed color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ffcc80; /* Changed color */
+        }
+        .hero {
+            background-image: url('car-hero.jpg');
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #ffe0b2; /* Changed color */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #4caf50; /* Changed color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: static;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Playful Cars
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>Rev Up Your Ride!</div>
+</div>
+
+<div class="content">
+    <div class="card">
+        <img src="car1.jpg" alt="Car Model 1">
+        <h2>Sporty Models</h2>
+        <p>Experience the thrill.</p>
+    </div>
+    <div class="card">
+        <img src="car2.jpg" alt="Car Model 2">
+        <h2>Family Friendly</h2>
+        <p>Comfort for everyone.</p>
+    </div>
+    <div class="card">
+        <img src="car3.jpg" alt="Car Model 3">
+        <h2>Eco-Friendly</h2>
+        <p>Drive green.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Playful Cars. All rights reserved.
+</footer>
+
+</body>
+</html>

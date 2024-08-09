@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Category</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1000px;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .category {
+            background-color: #ffcc00;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .category:hover {
+            transform: scale(1.05);
+        }
+
+        .category img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .category h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Sports Fun Zone!
+</header>
+
+<div class="category-container">
+    <div class="category">
+        <img src="football.png" alt="Football">
+        <h3>Football</h3>
+    </div>
+
+    <div class="category">
+        <img src="basketball.png" alt="Basketball">
+        <h3>Basketball</h3>
+    </div>
+
+    <div class="category">
+        <img src="swimming.png" alt="Swimming">
+        <h3>Swimming</h3>
+    </div>
+
+    <div class="category">
+        <img src="tennis.png" alt="Tennis">
+        <h3>Tennis</h3>
+    </div>
+
+    <div class="category">
+        <img src="soccer.png" alt="Soccer">
+        <h3>Soccer</h3>
+    </div>
+
+    <div class="category">
+        <img src="baseball.png" alt="Baseball">
+        <h3>Baseball</h3>
+    </div>
+</div>
+
+<footer>
+    Â© 2023 Sports Fun Zone. All Rights Reserved.
+</footer>
+
+</body>
+</html>

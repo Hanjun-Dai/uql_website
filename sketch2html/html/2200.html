@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #009688;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1024px;
+            margin: auto;
+        }
+        .main-content {
+            flex: 3;
+            background: #ffffff;
+            margin-right: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: #e0e0e0;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #009688;
+            color: #ffffff;
+            margin-top: 20px;
+        }
+        h2 { 
+            color: #009688; 
+        }
+        article {
+            margin-bottom: 20px;
+        }
+        .date {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health and Wellness Blog</h1>
+    <nav>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">10 Foods to Boost Immunity</a></li>
+            <li><a href="#">Yoga for Beginners</a></li>
+            <li><a href="#">Understanding Cholesterol</a></li>
+        </ul>
+
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Wellness</a></li>
+            <li><a href="#">Mental Health</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <article>
+            <h2>The Importance of Hydration</h2>
+            <p class="date">Published on September 29, 2023</p>
+            <p>Learn why staying hydrated is essential for your wellbeing and productivity.</p>
+            <a href="#">Read More...</a>
+        </article>
+        <article>
+            <h2>Nutrition Tips for Busy People</h2>
+            <p class="date">Published on September 28, 2023</p>
+            <p>Quick meal planning ideas to keep you healthy on a tight schedule.</p>
+            <a href="#">Read More...</a>
+        </article>
+        <article>
+            <h2>5 Tips for a Healthier Lifestyle</h2>
+            <p class="date">Published on October 1, 2023</p>
+            <p>Discover simple strategies to enhance your daily routine and improve your health.</p>
+            <a href="#">Read More...</a>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Health Blog. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

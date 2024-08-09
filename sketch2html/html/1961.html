@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background: #2c3e50;
+            border-radius: 5px;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            margin: 10px;
+            flex: 1;
+            max-width: 30%;
+            text-align: center;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #35424a;
+            color: white;
+            position: relative;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Live Your Best Life</h1>
+        <p>Discover tips and inspiration for a vibrant lifestyle</p>
+    </div>
+    <header>
+        <h1>Lifestyle Hub</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="card">
+            <img src="image2.jpg" alt="Travel Adventures">
+            <h3>Travel Adventures</h3>
+            <p>Uncover amazing destinations around the world.</p>
+        </div>
+        <div class="card">
+            <img src="image1.jpg" alt="Healthy Living">
+            <h3>Healthy Living</h3>
+            <p>Explore health tips and delicious recipes.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Fashion Trends">
+            <h3>Fashion Trends</h3>
+            <p>Stay updated with the latest fashion styles.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Lifestyle Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

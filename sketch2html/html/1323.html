@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Science Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4a78b5;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .contact-info {
+            float: right;
+            width: 50%;
+            padding: 20px;
+            background-color: #e9f3ff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            float: left;
+            width: 45%;
+            padding: 20px;
+            background: #e0fcd3;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4a78b5;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #3a5ca9;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            background-color: #4a78b5;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <div class="container">
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p><strong>Email:</strong> contact@sciencewebsite.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Address:</strong> 123 Science Lane, Knowledge City, ST 45678</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Science Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Entertainment</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #292e49, #536976); /* Changed background color */
+            color: #f0f0f0; /* Changed body font color */
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .header {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(34, 34, 34, 0.7); /* Changed overlay color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title {
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Slightly darker shadow */
+            color: #ffda44; /* Changed title color */
+        }
+        .content {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.2); /* Changed card background color */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Changed border color */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(30% - 40px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Increased shadow intensity */
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #ff7f50; /* Changed card heading color */
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            opacity: 0.9; /* Increased opacity */
+            color: #ffffff; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://source.unsplash.com/1024x400/?entertainment,movies" alt="Entertainment">
+        <div class="overlay">
+            <div class="title">About Us</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?film" alt="Film">
+            <h3>Our Mission</h3>
+            <p>To deliver the latest trends and insights in entertainment.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?music" alt="Music">
+            <h3>Our Vision</h3>
+            <p>Connecting artists and fans through unforgettable experiences.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?theatre" alt="Theatre">
+            <h3>Join Us</h3>
+            <p>Explore new ideas and engage with our community.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2023 Entertainment. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>

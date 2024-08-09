@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .resource-category {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .resource-category:hover {
+            transform: scale(1.02);
+        }
+        .resource-title {
+            font-size: 1.2em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lifestyle Resource Center</h1>
+</header>
+
+<nav>
+    <a href="#finance">Finance</a>
+    <a href="#travel">Travel</a>
+    <a href="#health">Health</a>
+    <a href="#wellness">Wellness</a>
+</nav>
+
+<div class="container">
+    <div id="finance" class="resource-category">
+        <h2 class="resource-title">Finance Resources</h2>
+        <p>Get advice on budgeting, saving, and investing.</p>
+    </div>
+    <div id="health" class="resource-category">
+        <h2 class="resource-title">Health Resources</h2>
+        <p>Discover tips and articles on maintaining a healthy lifestyle.</p>
+    </div>
+    <div id="travel" class="resource-category">
+        <h2 class="resource-title">Travel Resources</h2>
+        <p>Explore travel guides and tips for your next adventure.</p>
+    </div>
+    <div id="wellness" class="resource-category">
+        <h2 class="resource-title">Wellness Resources</h2>
+        <p>Find guidance on mental and emotional well-being.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Lifestyle Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

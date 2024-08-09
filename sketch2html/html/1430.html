@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Categories</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking to an external CSS file for styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .category-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-card .content {
+            padding: 15px;
+            text-align: center;
+        }
+        .category-card h3 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+        }
+        .category-card p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Our Properties</h1>
+</header>
+
+<div class="container">
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="images/houses.jpg" alt="Houses">
+            <div class="content">
+                <h3>Houses</h3>
+                <p>Cozy family homes</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/luxury.jpg" alt="Luxury">
+            <div class="content">
+                <h3>Luxury</h3>
+                <p>Exclusive properties</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/commercial.jpg" alt="Commercial">
+            <div class="content">
+                <h3>Commercial</h3>
+                <p>Business opportunities</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/apartments.jpg" alt="Apartments">
+            <div class="content">
+                <h3>Apartments</h3>
+                <p>Modern living spaces</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/vacation.jpg" alt="Vacation Homes">
+            <div class="content">
+                <h3>Vacation Homes</h3>
+                <p>Your getaway spot</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="images/land.jpg" alt="Land">
+            <div class="content">
+                <h3>Land</h3>
+                <p>Invest in your future</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

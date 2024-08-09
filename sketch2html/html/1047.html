@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Entertainment Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .faq-container {
+            width: 60%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff6f61;
+        }
+        .question {
+            background: #f1f1f1;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .question:hover {
+            background: #ffe5d0;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            background: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            border-radius: 5px;
+        }
+        .question.active .answer {
+            display: block;
+        }
+        .toggle-icon {
+            float: right;
+            transition: transform 0.2s;
+        }
+        .question.active .toggle-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <div class="question">
+            <span>How can I contact support?</span>
+            <span class="toggle-icon">ð½</span>
+            <div class="answer">Reach us through the contact page or via email.</div>
+        </div>
+
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="question">
+            <span>Can I cancel my subscription?</span>
+            <span class="toggle-icon">ð½</span>
+            <div class="answer">Yes, you can cancel anytime from your account settings.</div>
+        </div>
+        
+        <div class="question">
+            <span>What devices are supported?</span>
+            <span class="toggle-icon">ð½</span>
+            <div class="answer">You can access us on smartphones, tablets, and smart TVs.</div>
+        </div>
+
+        <div class="question">
+            <span>What is Entertainment Hub?</span>
+            <span class="toggle-icon">ð½</span>
+            <div class="answer">A platform for all the latest movies, music, and shows.</div>
+        </div>
+
+        <div class="question">
+            <span>How can I subscribe?</span>
+            <span class="toggle-icon">ð½</span>
+            <div class="answer">Visit our subscriptions page and choose your preferred plan.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

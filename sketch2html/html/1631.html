@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Tech Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed body background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #005fa3; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        nav {
+            background-color: #0066cc; /* Changed nav background color */
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #ffcc00; /* Changed nav link color */
+            padding: 15px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        nav a:hover {
+            background-color: #003366; /* Changed hover background color */
+        }
+        .sidebar {
+            width: 25%;
+            float: left;
+            background-color: #f2f2f2; /* Changed sidebar background color */
+            padding: 15px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            width: 70%;
+            float: left;
+            background-color: #ffffff;
+            padding: 15px;
+            margin-left: 5%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            clear: both;
+            background-color: #005fa3; /* Changed footer background color */
+            color: #ffffff; /* Changed footer text color */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .thread {
+            border-bottom: 1px solid #c0c0c0; /* Changed thread border color */
+            padding: 10px 0;
+        }
+        .thread:last-child {
+            border: none;
+        }
+        .thread-title {
+            font-weight: bold;
+            color: #cc0033; /* Changed thread title color */
+        }
+        .thread-info {
+            color: #666; /* Changed thread info text color */
+            font-size: 12px;
+        }
+        .button {
+            background-color: #cc0033; /* Changed button background color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Corporate Tech Forum</h1>
+        <p>Your hub for technology discussions</p>
+    </header>
+    <div class="container">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Posts</a>
+            <a href="#">Topics</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </nav>
+        <div class="sidebar">
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="#">Latest Tech Trends</a></li>
+                <li><a href="#">Gadgets Reviews</a></li>
+                <li><a href="#">Software Updates</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h2>Recent Threads</h2>
+            <div class="thread">
+                <span class="thread-title">Thread Title 1</span>
+                <p class="thread-info">Posted by User1 | 20 Comments | 02/22/2023</p>
+            </div>
+            <div class="thread">
+                <span class="thread-title">Thread Title 2</span>
+                <p class="thread-info">Posted by User2 | 15 Comments | 02/20/2023</p>
+            </div>
+            <div class="thread">
+                <span class="thread-title">Thread Title 3</span>
+                <p class="thread-info">Posted by User3 | 10 Comments | 02/18/2023</p>
+            </div>
+            <a href="#" class="button">Start New Thread</a>
+        </div>
+    </div>
+    <footer>
+        <p>Â© 2023 Corporate Tech Forum. All rights reserved.</p>
+    </footer>
+</body>
+</html>

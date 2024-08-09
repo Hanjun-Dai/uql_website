@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Games Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: linear-gradient(to bottom, #ffcc00, #66ff99); /* Changed */
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #6699ff; /* Changed */
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffcc00; /* Changed */
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center / cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff6600; /* Changed */
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .games {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .game-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            margin: 10px;
+            text-align: center;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            width: 100%;
+            border-bottom: 5px solid #66ccff; /* Changed */
+        }
+        .game-card h3 {
+            margin: 10px 0;
+            color: #ff3366; /* Changed */
+        }
+        footer {
+            background-color: #3333ff; /* Changed */
+            color: #fff;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>FunGames</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Games</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    Welcome to a World of Play!
+</div>
+
+<section class="games">
+    <div class="game-card">
+        <img src="https://example.com/game1.jpg" alt="Game 1">
+        <h3>Adventure Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="https://example.com/game2.jpg" alt="Game 2">
+        <h3>Puzzle Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="https://example.com/game3.jpg" alt="Game 3">
+        <h3>Racing Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="https://example.com/game4.jpg" alt="Game 4">
+        <h3>Arcade Game</h3>
+    </div>
+</section>
+
+<footer>
+    &copy; 2023 FunGames. All rights reserved.
+</footer>
+
+</body>
+</html>

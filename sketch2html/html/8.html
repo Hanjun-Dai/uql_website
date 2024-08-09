@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2E3A4D;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2E3A4D;
+            color: white;
+            position: relative;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background: white;
+            border: 2px solid #2E3A4D;
+            border-radius: 8px;
+            width: 250px;
+            margin: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Politics Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<footer>
+    <p>&copy; 2023 Politics Portfolio | Follow us on 
+        <a href="#" style="color: #ffffff;"><i class="fab fa-twitter"></i></a>
+        <a href="#" style="color: #ffffff;"><i class="fab fa-facebook"></i></a>
+        <a href="#" style="color: #ffffff;"><i class="fab fa-linkedin"></i></a>
+    </p>
+</footer>
+
+<section class="portfolio">
+    <div class="portfolio-item">
+        <img src="https://via.placeholder.com/250x150" alt="Project 1">
+        <div class="overlay">Project 1</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://via.placeholder.com/250x150" alt="Project 3">
+        <div class="overlay">Project 3</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://via.placeholder.com/250x150" alt="Project 2">
+        <div class="overlay">Project 2</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="https://via.placeholder.com/250x150" alt="Project 4">
+        <div class="overlay">Project 4</div>
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Games Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            font-size: 16px; /* Changed from default */
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 42px; /* Increased size */
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            font-size: 22px; /* Increased size */
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+            color: #555;
+            font-size: 14px; /* Decreased size */
+        }
+        .faq-item:hover {
+            background: #f9f9f9;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <h2 class="question">What platforms are supported?</h2>
+            <p class="answer">We support PC, PlayStation, Xbox, and Nintendo Switch.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">How do I reset my password?</h2>
+            <p class="answer">Click on 'Forgot Password' on the login page and follow the instructions.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">Can I play offline?</h2>
+            <p class="answer">Yes, many of our games offer offline modes.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">How do I contact support?</h2>
+            <p class="answer">You can reach us via the 'Contact Us' page or email support@gameswebsite.com.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">Are there in-game purchases?</h2>
+            <p class="answer">Some games offer in-game purchases, while others do not.</p>
+        </div>
+    </div>
+</body>
+</html>

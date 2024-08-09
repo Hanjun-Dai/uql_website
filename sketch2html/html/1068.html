@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004d00;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #007f00;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #005700;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .main-content {
+            flex: 1; /* Changed flex to 1 to accommodate sidebar swapping */
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 3; /* Changed flex to 3 to accommodate sidebar swapping */
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #004d00;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h2 {
+            color: #004d00;
+        }
+        .blog-post {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .blog-post h3 {
+            margin: 0;
+            color: #007f00;
+        }
+        .blog-post p {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Insights</h1>
+    <p>Your go-to source for financial knowledge</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Blog</a>
+    <a href="#">Resources</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Retirement</a></li>
+            <li><a href="#">Investing</a></li>
+            <li><a href="#">Budgeting</a></li>
+            <li><a href="#">Credit</a></li>
+        </ul>
+        <h2>Recent Comments</h2>
+        <ul>
+            <li><strong>John:</strong> Great tips on saving!</li>
+            <li><strong>Alice:</strong> Very informative article.</li>
+            <li><strong>Bob:</strong> Thanks for the insights!</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Latest Posts</h2>
+        <div class="blog-post">
+            <h3>The Importance of Saving for Retirement</h3>
+            <p>Discover why starting your retirement savings early can lead to financial freedom.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Investment Strategies for 2023</h3>
+            <p>Explore various investment approaches to bolster your portfolio this year.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Understanding Credit Scores</h3>
+            <p>Learn how credit scores impact your financial life and tips to improve yours.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Finance Insights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

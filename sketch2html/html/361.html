@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Politics Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3b5998; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            width: 70%;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Darker shadow */
+            padding: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #bbb; /* Changed border color */
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #2c3e50; /* Changed question color */
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #444; /* Changed answer text color */
+        }
+        .answer.visible {
+            display: block;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            background-color: #34495e; /* Changed footer background color */
+            color: #ecf0f1; /* Footer text color remains the same */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="container">
+        <div class="faq-item">
+            <div class="question">What is this website about?</div>
+            <div class="answer">Our website provides insights on political events, policies, and analysis.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How can I get involved?</div>
+            <div class="answer">You can participate by joining our forums or engaging in our polls.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Where can I find the latest news?</div>
+            <div class="answer">Check our news section updated daily with the latest reports.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Who are the contributors?</div>
+            <div class="answer">Our team consists of experienced analysts and political journalists.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How can I contact support?</div>
+            <div class="answer">You can reach us via the contact form on our website.</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Politics Website
+    </footer>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+        questions.forEach((question) => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('visible');
+            });
+        });
+    </script>
+</body>
+</html>

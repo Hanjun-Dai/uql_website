@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50; /* Changed header background */
+            color: #ecf0f1; /* Changed header text color */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e; /* Changed nav background */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff; /* Changed link color */
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 10px;
+        }
+        .sidebar {
+            width: 20%;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .content {
+            width: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background: #f9f9f9; /* Changed card background */
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            padding: 15px;
+            width: calc(50% - 10px);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #2c3e50; /* Changed footer background */
+            color: #ecf0f1; /* Changed footer text color */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Catalog</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Cars</a>
+    <a href="#">Trucks</a>
+    <a href="#">SUVs</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Filters</h3>
+        <ul>
+            <li><a href="#">Sedans</a></li>
+            <li><a href="#">SUVs</a></li>
+            <li><a href="#">Trucks</a></li>
+            <li><a href="#">Electric</a></li>
+            <li><a href="#">Luxury</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <div class="card">
+            <img src="car1.jpg" alt="Car Model 1">
+            <h4>Car Model 1</h4>
+            <p>Price: $25,000</p>
+        </div>
+        <div class="card">
+            <img src="car2.jpg" alt="Car Model 2">
+            <h4>Car Model 2</h4>
+            <p>Price: $30,000</p>
+        </div>
+        <div class="card">
+            <img src="car3.jpg" alt="Car Model 3">
+            <h4>Car Model 3</h4>
+            <p>Price: $22,000</p>
+        </div>
+        <div class="card">
+            <img src="car4.jpg" alt="Car Model 4">
+            <h4>Car Model 4</h4>
+            <p>Price: $27,000</p>
+        </div>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2023 Automotive Website</p>
+</footer>
+
+</body>
+</html>

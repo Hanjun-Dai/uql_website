@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e8f0f2;  /* Changed from #f4f4f4 */
+            color: #444;  /* Changed from #333 */
+        }
+
+        header {
+            background: #3F51B5;  /* Changed from #4CAF50 */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  /* Increased shadow opacity */
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .resource-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background: #F1F8E9;  /* Changed from #e9f5e9 */
+            border: 1px solid #3F51B5;  /* Changed from #4CAF50 */
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            flex: 0 0 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);  /* Increased shadow opacity */
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  /* Changed hover shadow */
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: #D32F2F;  /* Changed h2 color */
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #555;  /* Changed p color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3F51B5;  /* Changed from #4CAF50 */
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Health Resource Center</h1>
+    </header>
+
+    <div class="container">
+        <h1>Explore Our Resources</h1>
+        <div class="resource-cards">
+            <div class="card">
+                <h2>Nutrition</h2>
+                <p>Guides on balanced diets and healthy eating habits.</p>
+            </div>
+            <div class="card">
+                <h2>Exercise</h2>
+                <p>Tips and routines for maintaining physical fitness.</p>
+            </div>
+            <div class="card">
+                <h2>Mental Health</h2>
+                <p>Resources for improving mental well-being.</p>
+            </div>
+            <div class="card">
+                <h2>Prevention</h2>
+                <p>Information on vaccinations and health screenings.</p>
+            </div>
+            <div class="card">
+                <h2>First Aid</h2>
+                <p>Essential first aid techniques and tips.</p>
+            </div>
+            <div class="card">
+                <h2>Wellness</h2>
+                <p>Insights into holistic health and wellness practices.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Website. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

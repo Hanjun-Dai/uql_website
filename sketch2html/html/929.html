@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Game Forum</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 60px; /* Increased padding */
+            border-bottom: 4px solid #ff9900;
+        }
+        h1 {
+            font-size: 5em; /* Increased font size */
+            margin: 0;
+        }
+        nav {
+            margin: 40px 0; /* Increased margin */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            padding: 20px 10px; /* Increased padding */
+            border: 2px solid #ff9900;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 2em; /* Increased font size */
+        }
+        nav a:hover {
+            background-color: #ff9900;
+            color: white;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #e7f3ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .sidebar h2 {
+            font-size: 3em; /* Increased font size */
+        }
+        .content {
+            flex: 1;
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .post {
+            border-bottom: 1px dashed #ccc;
+            padding: 10px 0;
+        }
+        .post h3 {
+            margin: 0;
+            font-size: 2.5em; /* Increased font size */
+        }
+        .post p {
+            font-size: 0.6em; /* Decreased font size */
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px 0; /* Increased padding */
+            background-color: #ffcc00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.5em; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Forum</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Multiplayer</a></li>
+            <li><a href="#">Indie Games</a></li>
+        </ul>
+    </aside>
+
+    <main class="content">
+        <h2>Latest Posts</h2>
+        <div class="post">
+            <h3>Did you try the new level?</h3>
+            <p>Posted by Player123 on 2023-10-01</p>
+        </div>
+        <div class="post">
+            <h3>Best strategies for dungeon crawling</h3>
+            <p>Posted by GamerGuy on 2023-09-30</p>
+        </div>
+        <div class="post">
+            <h3>Looking for squad mates!</h3>
+            <p>Posted by TeamPlayer on 2023-09-29</p>
+        </div>
+        <div class="post">
+            <h3>Funniest moments during gameplay</h3>
+            <p>Posted by LOLmaster on 2023-09-28</p>
+        </div>
+    </main>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Playful Game Forum. Fun times ahead!</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Category</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+            font-size: 18px; /* Increased from default size */
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 40px 0; /* Increased padding */
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 40px 0; /* Increased padding */
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px; /* Increased margin */
+            flex: 1 1 30%;
+            max-width: calc(33% - 40px); /* Adjusted for increased margins */
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: 250px; /* Increased height */
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px; /* Increased padding */
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 2.5em; /* Increased from 1.2em */
+            margin: 0 0 20px; /* Increased margin */
+        }
+
+        .card-excerpt {
+            font-size: 1.5em; /* Increased from 0.9em */
+            color: #666;
+            margin-bottom: 30px; /* Increased margin */
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0; /* Increased padding */
+            background-color: #004d99;
+            color: white;
+            position: relative;
+            font-size: 1.5em; /* Increased from default size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Politics Today</h1>
+        <p>Your source for the latest in politics</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 1">
+            <div class="card-content">
+                <h3 class="card-title">Election Updates</h3>
+                <p class="card-excerpt">Get the latest news on upcoming elections and candidate profiles.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 2">
+            <div class="card-content">
+                <h3 class="card-title">Policy Changes</h3>
+                <p class="card-excerpt">Stay informed about the changes in policies that affect you.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 3">
+            <div class="card-content">
+                <h3 class="card-title">International Relations</h3>
+                <p class="card-excerpt">Explore the global impact of current political movements.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 4">
+            <div class="card-content">
+                <h3 class="card-title">Political Analysis</h3>
+                <p class="card-excerpt">In-depth analysis of political strategies and outcomes.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 5">
+            <div class="card-content">
+                <h3 class="card-title">Opinion Pieces</h3>
+                <p class="card-excerpt">Read diverse opinions from experts and citizens alike.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x200" alt="Politics Image 6">
+            <div class="card-content">
+                <h3 class="card-title">Civic Engagement</h3>
+                <p class="card-excerpt">Learn how to get involved in local politics.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Politics Today. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

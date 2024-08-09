@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background color */
+            color: #444; /* Changed text color */
+        }
+        header {
+            background: url('https://via.placeholder.com/1024x300') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            padding-top: 100px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Changed shadow color */
+        }
+        .tagline {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8); /* Changed shadow color */
+        }
+        .cta {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #28a745; /* Changed button background color */
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #218838; /* Changed hover color */
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+        .feature {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Changed shadow intensity */
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .feature img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222; /* Changed footer background color */
+            color: #f4f4f4; /* Changed footer text color */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find Your Dream Home</h1>
+        <div class="tagline">Luxury Living Awaits You</div>
+        <button class="cta">Start Searching</button>
+    </header>
+    <section>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Luxury Home">
+            <h2 style="color: #007bff;">Luxury Homes</h2> <!-- Changed heading color -->
+            <p style="color: #555;">Explore exquisite properties that redefine luxury.</p> <!-- Changed paragraph color -->
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Modern Apartments">
+            <h2 style="color: #007bff;">Modern Apartments</h2> <!-- Changed heading color -->
+            <p style="color: #555;">Contemporary living in the heart of the city.</p> <!-- Changed paragraph color -->
+        </div>
+        <div class="feature">
+            <img src="https://via.placeholder.com/300" alt="Cozy Villas">
+            <h2 style="color: #007bff;">Cozy Villas</h2> <!-- Changed heading color -->
+            <p style="color: #555;">Your private oasis awaits.</p> <!-- Changed paragraph color -->
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Real Estate Co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

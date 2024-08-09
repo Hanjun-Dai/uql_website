@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #444;
+        }
+
+        .card p {
+            padding: 0 10px;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Insights</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="images/activity.jpg" alt="Fun Activities">
+        <h2>Fun Activities</h2>
+        <p>Engaging games and activities for your kids.</p>
+    </div>
+    <div class="card">
+        <img src="images/stories.jpg" alt="Parenting Stories">
+        <h2>Parenting Stories</h2>
+        <p>Real stories from real parents.</p>
+    </div>
+    <div class="card">
+        <img src="images/tips.jpg" alt="Parenting Tips">
+        <h2>Parenting Tips</h2>
+        <p>Short and effective advice for everyday challenges.</p>
+    </div>
+    <div class="card">
+        <img src="images/community.jpg" alt="Community Support">
+        <h2>Community Support</h2>
+        <p>Connect with other parents and share experiences.</p>
+    </div>
+    <div class="card">
+        <img src="images/health.jpg" alt="Health & Nutrition">
+        <h2>Health & Nutrition</h2>
+        <p>Guidelines for a balanced diet for children.</p>
+    </div>
+    <div class="card">
+        <img src="images/education.jpg" alt="Education Resources">
+        <h2>Education Resources</h2>
+        <p>Tools and resources for your child's learning.</p>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 Parenting Insights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website - Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #003060;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .category-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .category-card h3 {
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore the World</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Travel Tips</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="category-card">
+        <img src="deserts.jpg" alt="Deserts">
+        <h3>Deserts</h3>
+    </div>
+    <div class="category-card">
+        <img src="forests.jpg" alt="Forests">
+        <h3>Forests</h3>
+    </div>
+    <div class="category-card">
+        <img src="beach.jpg" alt="Beaches">
+        <h3>Beaches</h3>
+    </div>
+    <div class="category-card">
+        <img src="islands.jpg" alt="Islands">
+        <h3>Islands</h3>
+    </div>
+    <div class="category-card">
+        <img src="mountains.jpg" alt="Mountains">
+        <h3>Mountains</h3>
+    </div>
+    <div class="category-card">
+        <img src="cities.jpg" alt="Cities">
+        <h3>Cities</h3>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Explore the World. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

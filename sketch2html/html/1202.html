@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Health Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #2c3e50; /* Changed color for better contrast */
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #FF6347; /* Changed primary color */
+        }
+        .faq-item {
+            border: 1px solid #dcdcdc; /* Slightly darker border */
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+        .faq-item h2 {
+            padding: 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 0;
+            color: #8A2BE2; /* Changed color for FAQ titles */
+        }
+        .faq-item p {
+            padding: 15px;
+            margin: 0;
+            display: none; /* Initially hide answers */
+        }
+        .faq-item.active p {
+            display: block; /* Show answer when active */
+            color: #4CAF50; /* Changed color for answers */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+            <h2>What is your service?</h2>
+            <p>We provide comprehensive health information and support.</p>
+        </div>
+        
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+            <h2>How can I contact you?</h2>
+            <p>You can reach us via the contact form on our website.</p>
+        </div>
+        
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+            <h2>What are your operating hours?</h2>
+            <p>We are available 24/7 for your health inquiries.</p>
+        </div>
+        
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+            <h2>Do you offer telehealth services?</h2>
+            <p>Yes, telehealth services are available for consultations.</p>
+        </div>
+        
+        <div class="faq-item" onclick="this.classList.toggle('active')">
+            <h2>Is my data secure?</h2>
+            <p>Yes, we prioritize your privacy and data security.</p>
+        </div>
+    </div>
+
+</body>
+</html>

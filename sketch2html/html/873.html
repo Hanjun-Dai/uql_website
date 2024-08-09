@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 5em; /* Changed to larger font size */
+        }
+        .category {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .category-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: calc(33.333% - 20px);
+            margin: 0 10px 20px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+            position: relative;
+        }
+        .category-item:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .category-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px 5px 0 0;
+        }
+        .category-item h2 {
+            margin: 15px 0;
+            font-size: 0.8em; /* Changed to smaller font size */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5em; /* Changed to larger font size */
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            .category-item {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .category-item {
+                width: 100%;
+                margin: 0 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Automotive Categories</h1>
+    </div>
+
+    <div class="category">
+        <div class="category-item">
+            <img src="car1.jpg" alt="Sedans">
+            <h2>Sedans</h2>
+        </div>
+        <div class="category-item">
+            <img src="car2.jpg" alt="SUVs">
+            <h2>SUVs</h2>
+        </div>
+        <div class="category-item">
+            <img src="car3.jpg" alt="Trucks">
+            <h2>Trucks</h2>
+        </div>
+        <div class="category-item">
+            <img src="car4.jpg" alt="Sports Cars">
+            <h2>Sports Cars</h2>
+        </div>
+        <div class="category-item">
+            <img src="car5.jpg" alt="Convertibles">
+            <h2>Convertibles</h2>
+        </div>
+        <div class="category-item">
+            <img src="car6.jpg" alt="Electric Vehicles">
+            <h2>Electric Vehicles</h2>
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; 2023 Automotive Website
+    </div>
+</div>
+
+</body>
+</html>

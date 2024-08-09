@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            width: 1024px;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: calc(33.33% - 20px);
+            min-width: 250px;
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .category-icon {
+            font-size: 3em;
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.8em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Finance Categories</h1>
+            <p>Explore our wide range of finance topics.</p>
+        </div>
+        
+        <div class="category-list">
+            <div class="category-card">
+                <div class="category-icon">ð</div>
+                <div class="category-title">Budgeting</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">ð³</div>
+                <div class="category-title">Credit Cards</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">ðµ</div>
+                <div class="category-title">Investments</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">ð</div>
+                <div class="category-title">Stock Market</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">ð</div>
+                <div class="category-title">Financial Advice</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">ð¦</div>
+                <div class="category-title">Banking</div>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2023 Finance Hub. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

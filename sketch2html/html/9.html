@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic History Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4a2c2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            letter-spacing: 3px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #4a2c2a;
+            border-radius: 10px;
+            margin: 15px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-content h3 {
+            margin: 10px 0;
+            color: #4a2c2a;
+        }
+
+        footer {
+            background-color: #4a2c2a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <p>&copy; 2023 History Untold. All rights reserved.</p>
+    </footer>
+
+    <section>
+        <div class="card">
+            <img src="path/to/image3.jpg" alt="Historical Event 3">
+            <div class="card-content">
+                <h3>Renaissance Art</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="path/to/image4.jpg" alt="Historical Event 4">
+            <div class="card-content">
+                <h3>World War II</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="path/to/image1.jpg" alt="Historical Event 1">
+            <div class="card-content">
+                <h3>Ancient Civilizations</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="path/to/image2.jpg" alt="Historical Event 2">
+            <div class="card-content">
+                <h3>Medieval Times</h3>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <h1>History Unveiled</h1>
+    </header>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Finance Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #0056b3;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+        }
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">How can I track my investments?</div>
+        <div class="faq-answer">You can track your investments through your broker's platform or financial tracking apps.</div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">What is an investment account?</div>
+        <div class="faq-answer">An investment account allows you to buy and sell various investment products.</div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">What should I do if I need help?</div>
+        <div class="faq-answer">Contact customer support or consult with a financial advisor for personalized assistance.</div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">How do I start investing?</div>
+        <div class="faq-answer">Research, choose an investment account, and begin trading based on your strategy.</div>
+    </div>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">What are the risks of investing?</div>
+        <div class="faq-answer">Investing involves risks including loss of principal, market fluctuations, and economic factors.</div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

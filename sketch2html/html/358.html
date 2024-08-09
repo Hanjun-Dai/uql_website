@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #333;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info,
+        .contact-form {
+            margin: 20px 0;
+        }
+        .contact-info h2,
+        .contact-form h2 {
+            color: #f76c6c;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .contact-info p,
+        .contact-form p {
+            text-align: center;
+            color: #777;
+            margin: 0;
+            font-size: 16px;
+        }
+        .form-field {
+            margin: 10px 0;
+        }
+        .form-field input,
+        .form-field textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .form-field textarea {
+            resize: none;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #f76c6c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Email: support@entertainment.com</p>
+        <p>Phone: +123 456 7890</p>
+    </div>
+
+    <h1>Contact Us</h1>
+
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <div class="form-field">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-field">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-field">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button class="submit-btn">Submit</button>
+    </div>
+</div>
+
+</body>
+</html>

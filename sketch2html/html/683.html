@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Category</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f3e8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            border-bottom: 2px solid #ccc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #6D4C41;
+            margin: 10px 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6D4C41;
+        }
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .category-item {
+            background: #fef6e4;
+            border: 1px solid #d2c1a3;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        .category-item h2 {
+            font-size: 1.5em;
+            color: #4E342E;
+            margin-bottom: 10px;
+        }
+        .category-item p {
+            font-size: 0.9em;
+            color: #6D4C41;
+            margin: 0;
+        }
+        footer {
+            border-top: 2px solid #ccc;
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Physics</a>
+        <a href="#">Chemistry</a>
+        <a href="#">Biology</a>
+        <a href="#">Astronomy</a>
+        <a href="#">Geology</a>
+    </nav>
+    <header>
+        <h1>Science Categories</h1>
+    </header>
+    <div class="category-list">
+        <div class="category-item">
+            <h2>Geology</h2>
+            <p>The Earth’s physical structure and substances.</p>
+        </div>
+        <div class="category-item">
+            <h2>Biology</h2>
+            <p>Life sciences and the study of living organisms.</p>
+        </div>
+        <div class="category-item">
+            <h2>Astronomy</h2>
+            <p>Celestial objects and the universe.</p>
+        </div>
+        <div class="category-item">
+            <h2>Chemistry</h2>
+            <p>Study of substances and their reactions.</p>
+        </div>
+        <div class="category-item">
+            <h2>Physics</h2>
+            <p>Explore fundamental laws of nature.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Vintage Science Website</p>
+    </footer>
+</body>
+</html>

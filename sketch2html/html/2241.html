@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Lifestyle Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7f9; /* Changed background color of body */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #444; /* Changed text color for body */
+        }
+        .contact-container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Slightly adjusted shadow */
+            width: 80%;
+            max-width: 600px;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #D75B29; /* Changed header color */
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            color: #666; /* Darker gray for paragraph text */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        input:focus, 
+        textarea:focus {
+            border: 1px solid #D75B29; /* Changed focus border color */
+            outline: none;
+        }
+        button {
+            background-color: #D75B29; /* Changed button background color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #B25322; /* Adjusted hover color for button */
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #D75B29; /* Changed link color */
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you!</p>
+
+        <form>
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">ð</a>
+            <a href="#" aria-label="Instagram">ð¸</a>
+            <a href="#" aria-label="Twitter">ð¦</a>
+            <a href="#" aria-label="Pinterest">ð</a>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            flex: 1 1 calc(33% - 20px);
+            overflow: hidden;
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+        }
+        .category-title {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #444;
+            color: #fff;
+        }
+        .featured-games {
+            flex: 1 1 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .featured-game {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            overflow: hidden;
+            width: 90%;
+            max-width: 600px;
+        }
+        .featured-game img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game World</h1>
+</header>
+
+<div class="container">
+    <div class="category">
+        <img src="path/to/sports-game.jpg" alt="Sports Games">
+        <div class="category-title">Sports</div>
+    </div>
+    <div class="category">
+        <img src="path/to/rpg-game.jpg" alt="RPG Games">
+        <div class="category-title">RPG</div>
+    </div>
+    <div class="category">
+        <img src="path/to/adventure-game.jpg" alt="Adventure Games">
+        <div class="category-title">Adventure</div>
+    </div>
+    <div class="category">
+        <img src="path/to/simulation-game.jpg" alt="Simulation Games">
+        <div class="category-title">Simulation</div>
+    </div>
+    <div class="category">
+        <img src="path/to/strategy-game.jpg" alt="Strategy Games">
+        <div class="category-title">Strategy</div>
+    </div>
+    <div class="category">
+        <img src="path/to/action-game.jpg" alt="Action Games">
+        <div class="category-title">Action</div>
+    </div>
+</div>
+
+<div class="featured-games">
+    <h2>Featured Games</h2>
+    <div class="featured-game">
+        <img src="path/to/featured-game.jpg" alt="Featured Game">
+        <div class="category-title">Featured Game Title</div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Game World. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Food Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ff5722;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+        }
+
+        .info-item {
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .info-item i {
+            font-size: 3rem;
+            color: #ff5722;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-container {
+            margin-top: 2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 1rem;
+            border: 2px solid #ff5722;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 1rem;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="form-container">
+        <h2>Send Us a Message</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <h2>Email</h2>
+            <p>info@foodwebsite.com</p>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <h2>Phone</h2>
+            <p>(123) 456-7890</p>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h2>Location</h2>
+            <p>123 Food Lane,<br>Flavor Town, FT 45678</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Food Website. All rights reserved.
+</footer>
+
+</body>
+</html>

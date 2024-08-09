@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Entertainment Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .faq-item {
+            background: white;
+            margin: 15px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            background: #2980b9;
+            color: white;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            border-top: 1px solid #ddd;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2c3e50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="faq-answer">Yes, you can cancel your subscription anytime through your account settings.</div>
+        <div class="faq-question">Can I cancel my subscription at any time?</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-answer">We offer a wide variety of entertainment options including movies, music, games, and events.</div>
+        <div class="faq-question">What types of entertainment do you offer?</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-answer">You can contact customer support via email at support@example.com or call us at (123) 456-7890.</div>
+        <div class="faq-question">How can I contact customer support?</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-answer">Some content may have age restrictions. Please refer to our content guidelines for details.</div>
+        <div class="faq-question">Are there any age restrictions?</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-answer">Yes, we offer various subscription plans tailored to meet different entertainment needs.</div>
+        <div class="faq-question">Do you offer subscription plans?</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Website. All Rights Reserved.</p>
+</footer>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isDisplayed = answer.style.display === 'block';
+            answer.style.display = isDisplayed ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

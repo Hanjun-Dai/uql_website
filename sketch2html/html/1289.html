@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Travel Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0eae4;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #e5c9b5;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #bc8b5d;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #6c4a3e;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border: 1px solid transparent;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #bc8b5d;
+            color: white;
+            border: 1px solid #bc8b5d;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .resource {
+            background-color: #ffffff;
+            border: 1px solid #bc8b5d;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            margin: 15px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .resource img {
+            width: 100%;
+            height: auto;
+        }
+
+        .resource h3 {
+            background-color: #e5c9b5;
+            margin: 0;
+            padding: 15px 0;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .resource p {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 12px;
+            background-color: #e5c9b5;
+            border-top: 5px solid #bc8b5d;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Destinations</a>
+            <a href="#">Contact</a>
+            <a href="#">Guides</a>
+            <a href="#">Home</a>
+        </nav>
+        <h1>Vintage Travel Resources</h1>
+    </header>
+
+    <main>
+        <div class="resource">
+            <img src="https://via.placeholder.com/300x200" alt="Local Cuisine">
+            <h3>Local Cuisine</h3>
+            <p>Discover the best local foods around the world.</p>
+        </div>
+        <div class="resource">
+            <img src="https://via.placeholder.com/300x200" alt="Packing Tips">
+            <h3>Packing Tips</h3>
+            <p>Get the best packing tips for your travels.</p>
+        </div>
+        <div class="resource">
+            <img src="https://via.placeholder.com/300x200" alt="Travel Deals">
+            <h3>Travel Deals</h3>
+            <p>Find great travel deals and discounts here.</p>
+        </div>
+        <div class="resource">
+            <img src="https://via.placeholder.com/300x200" alt="Travel Guide">
+            <h3>Travel Guides</h3>
+            <p>Explore various travel guides for your next adventure.</p>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Vintage Travel. All rights reserved.
+    </footer>
+</body>
+</html>

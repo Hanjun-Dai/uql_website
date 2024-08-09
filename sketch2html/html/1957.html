@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f3e0;
+            color: #5b3e24;
+        }
+        header {
+            background-image: url('header-bg.jpg'); /* Rustic wood texture */
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .post {
+            background-color: white;
+            border: 1px solid #e0c9a1;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .post-title {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        .post-date {
+            font-size: 0.9em;
+            color: #8a6a4f;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #473d2b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rustic Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="post">
+            <img src="post3.jpg" alt="Post 3">
+            <h2 class="post-title">Crafting with Nature</h2>
+            <p class="post-date">October 4, 2023</p>
+            <p>Learn to create beautiful DIY projects...</p>
+        </div>
+        
+        <div class="post">
+            <img src="post1.jpg" alt="Post 1">
+            <h2 class="post-title">A Day in the Forest</h2>
+            <p class="post-date">October 10, 2023</p>
+            <p>Join us as we explore the beauty of nature...</p>
+        </div>
+        
+        <div class="post">
+            <img src="post2.jpg" alt="Post 2">
+            <h2 class="post-title">Harvest Season</h2>
+            <p class="post-date">October 7, 2023</p>
+            <p>Celebrate the bounty of the harvest...</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Rustic Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

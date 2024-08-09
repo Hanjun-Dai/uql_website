@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-around;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            width: calc(32% - 20px);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .card h3 {
+            padding: 10px;
+            font-size: 20px;
+        }
+        .card p {
+            padding: 0 10px 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Express</h1>
+        <nav>
+            <a href="#">Health</a>
+            <a href="#">World</a>
+            <a href="#">Home</a>
+            <a href="#">Sports</a>
+            <a href="#">Technology</a>
+            <a href="#">Politics</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="news4.jpg" alt="News Image 4">
+            <h3>Headline 4</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+        <div class="card">
+            <img src="news1.jpg" alt="News Image 1">
+            <h3>Headline 1</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+        <div class="card">
+            <img src="news6.jpg" alt="News Image 6">
+            <h3>Headline 6</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+        <div class="card">
+            <img src="news5.jpg" alt="News Image 5">
+            <h3>Headline 5</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+        <div class="card">
+            <img src="news3.jpg" alt="News Image 3">
+            <h3>Headline 3</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+        <div class="card">
+            <img src="news2.jpg" alt="News Image 2">
+            <h3>Headline 2</h3>
+            <p>Brief description of the news article goes here.</p>
+        </div>
+    </div>
+    <div class="hero">
+        <h1>Catch the Latest News</h1>
+        <p>Your source for the latest updates and insightful analysis</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 News Express. All rights reserved.</p>
+    </footer>
+</body>
+</html>

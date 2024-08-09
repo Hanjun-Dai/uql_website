@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Automotive Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px; /* Changed font size */
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            margin-bottom: 20px;
+            font-size: 36px; /* Increased font size */
+        }
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+            font-size: 18px; /* Increased font size */
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #0056b3;
+            font-size: 22px; /* Increased font size */
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 14px; /* Decreased font size */
+        }
+        .answer.visible {
+            display: block;
+        }
+        .toggle-icon {
+            float: right;
+            transition: transform 0.3s;
+            font-size: 24px; /* Increased font size */
+        }
+        .toggle-icon.rotate {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="question">
+            What are your business hours?
+            <span class="toggle-icon">🔄</span> <!-- Corrected the icon -->
+        </div>
+        <div class="answer">
+            Our business hours are Monday to Friday, from 9 AM to 5 PM.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            Do you offer financing options?
+            <span class="toggle-icon">🔄</span> <!-- Corrected the icon -->
+        </div>
+        <div class="answer">
+            Yes, we offer various financing options tailored to your needs.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            Can I schedule a test drive?
+            <span class="toggle-icon">🔄</span> <!-- Corrected the icon -->
+        </div>
+        <div class="answer">
+            Absolutely! You can schedule a test drive online or by contacting us.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            What warranty do you provide?
+            <span class="toggle-icon">🔄</span> <!-- Corrected the icon -->
+        </div>
+        <div class="answer">
+            We provide a 3-year/36,000-mile warranty on all new vehicles.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">
+            Where are you located?
+            <span class="toggle-icon">🔄</span> <!-- Corrected the icon -->
+        </div>
+        <div class="answer">
+            We are located at 123 Auto Lane, Car City, CA 12345.
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.question').forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const icon = question.querySelector('.toggle-icon');
+
+            answer.classList.toggle('visible');
+            icon.classList.toggle('rotate');
+        });
+    });
+</script>
+
+</body>
+</html>

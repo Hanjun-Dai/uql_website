@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Resource Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+        }
+        nav a {
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            background: #f9f9f9;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Finance Resources</h1>
+    </header>
+    <nav>
+        <a href="#articles">Articles</a>
+        <a href="#tools">Tools</a>
+        <a href="#faqs">FAQs</a>
+    </nav>
+    <div class="container">
+        <h2>Discover Our Resources</h2>
+        <div class="grid">
+            <div class="card" id="faqs">
+                <h3>FAQs</h3>
+                <p>Your finance questions answered.</p>
+                <a href="#">View FAQs</a>
+            </div>
+            <div class="card" id="articles">
+                <h3>Articles</h3>
+                <p>Explore insightful articles on finance.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="card" id="tools">
+                <h3>Tools</h3>
+                <p>Utilize our financial tools for better decision-making.</p>
+                <a href="#">Access Tools</a>
+            </div>
+            <div class="card">
+                <h3>Guides</h3>
+                <p>Step-by-step guides for financial literacy.</p>
+                <a href="#">Explore Guides</a>
+            </div>
+            <div class="card">
+                <h3>News</h3>
+                <p>Stay updated with the latest finance news.</p>
+                <a href="#">Read News</a>
+            </div>
+            <div class="card">
+                <h3>Webinars</h3>
+                <p>Upcoming live sessions on finance topics.</p>
+                <a href="#">Join Now</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Finance Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

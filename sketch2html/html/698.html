@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .product-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image img {
+            max-width: 80%;
+            border: 5px solid #000;
+        }
+
+        .product-info {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 24px;
+            color: #d9534f;
+        }
+
+        .buy-button {
+            margin-top: 20px;
+        }
+
+        .buy-button a {
+            text-decoration: none;
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button a:hover {
+            background-color: #218838;
+        }
+
+        .description {
+            border-top: 2px solid #ddd;
+            padding-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="product-info">
+            <h2 class="product-title">Amazing Product</h2>
+            <p class="product-price">$99.99</p>
+            <div class="buy-button">
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Our Product</h1>
+        </div>
+
+        <div class="description">
+            <h3>Description</h3>
+            <p>This product is designed to make your life easier!</p>
+        </div>
+
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+    </div>
+</body>
+</html>

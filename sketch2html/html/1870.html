@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Fashion Resources</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #fdf6e3;
+            color: #343d48;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 4px solid #dcb1c1;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #4a3c2a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            color: #b5726e;
+        }
+
+        .resources {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: #fff;
+            border: 1px solid #d1c4ba;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+
+        .resource-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .resource-card h3 {
+            font-size: 1.2em;
+            padding: 10px;
+            background: #eae2d7;
+            margin: 0;
+        }
+
+        .resource-card p {
+            padding: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #b5726e;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Vintage Fashion Resources</h1>
+    </header>
+
+    <main>
+
+        <div class="resources">
+            <div class="resource-card">
+                <img src="https://via.placeholder.com/200x150.png?text=Resource+3" alt="Resource 3">
+                <h3>DIY Vintage</h3>
+                <p>Craft your own vintage-inspired outfits.</p>
+            </div>
+            <div class="resource-card">
+                <img src="https://via.placeholder.com/200x150.png?text=Resource+1" alt="Resource 1">
+                <h3>Vintage Styles</h3>
+                <p>Learn about classic trends and styles.</p>
+            </div>
+            <div class="resource-card">
+                <img src="https://via.placeholder.com/200x150.png?text=Resource+2" alt="Resource 2">
+                <h3>Fashion Icons</h3>
+                <p>Discover the legends of vintage fashion.</p>
+            </div>
+            <div class="resource-card">
+                <img src="https://via.placeholder.com/200x150.png?text=Resource+4" alt="Resource 4">
+                <h3>History of Fashion</h3>
+                <p>A deep dive into fashion history.</p>
+            </div>
+        </div>
+        
+        <h2>Explore Our Picks</h2>
+
+    </main>
+
+    <footer>
+        Â© 2023 Vintage Fashion. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

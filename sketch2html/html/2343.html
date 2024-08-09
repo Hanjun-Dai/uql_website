@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lifestyle Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #2196F3; /* Changed header background color */
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #c0392b; /* Changed question color */
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #34495e; /* Changed answer text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Your questions answered</p>
+    </header>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">Q1: What is the purpose of this website?</div>
+            <div class="faq-answer">A1: This website aims to provide lifestyle tips and resources for a balanced life.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q2: How can I contact customer support?</div>
+            <div class="faq-answer">A2: You can reach customer support via the contact form on our website.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q3: Where do you source your content?</div>
+            <div class="faq-answer">A3: Our content is curated from expert authors and verified resources.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Q4: Can I contribute to the website?</div>
+            <div class="faq-answer">A4: Yes! You can submit articles through our contributor's page.</div>
+        </div>
+    </div>
+
+    <script>
+      // Toggle FAQ answers on click
+      const questions = document.querySelectorAll('.faq-question');
+      questions.forEach(question => {
+        question.addEventListener('click', () => {
+          const answer = question.nextElementSibling;
+          answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+      });
+    </script>
+</body>
+</html>

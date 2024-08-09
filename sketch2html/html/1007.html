@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lifestyle Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef; /* Changed background color */
+            color: #4a4a4a; /* Changed text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff; /* Changed title color */
+        }
+
+        .faq-section {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Changed shadow color */
+            padding: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #dcdcdc; /* Changed border color */
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            transition: background-color 0.3s;
+            background-color: #f8f9fa; /* Added background color */
+        }
+
+        .faq-question:hover {
+            background-color: #e2e6ea; /* Changed hover background color */
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f1f1f1; /* Changed answer background color */
+            border-left: 4px solid #28a745; /* Changed border color */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-section">
+        <div class="faq-item">
+            <div class="faq-question">What is the Lifestyle website about?</div>
+            <div class="faq-answer">We provide tips, articles, and resources on various aspects of living a balanced and fulfilling lifestyle.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I contact customer support?</div>
+            <div class="faq-answer">You can reach customer support via our Contact Us page or email us at support@lifestyle.com.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you offer newsletters?</div>
+            <div class="faq-answer">Yes! Subscribe to our newsletter to get the latest articles and updates.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Can I contribute to the website?</div>
+            <div class="faq-answer">Absolutely! We welcome guest posts. Please visit our Write for Us page for more information.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Where can I find your articles?</div>
+            <div class="faq-answer">Our articles can be found in the Articles section on the main navigation menu.</div>
+        </div>
+    </div>
+
+    <script>
+        const faqQuestions = document.querySelectorAll(".faq-question");
+
+        faqQuestions.forEach(question => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+
+</body>
+</html>

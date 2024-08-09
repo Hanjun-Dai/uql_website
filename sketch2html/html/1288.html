@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Rustic Health</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f3e7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: #8b5a3e;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff8f0;
+            border: 1px solid #d1c6b2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #d1c6b2;
+            padding: 15px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #8b5a3e;
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 1em;
+        }
+
+        .read-more {
+            color: #8b5a3e;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #8b5a3e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>FAQ</h1>
+    </header>
+
+    <div class="container">
+        <div class="faq-item">
+            <div class="faq-question">How can I manage stress effectively?</div>
+            <div class="faq-answer">
+                Managing stress can be achieved through mindfulness practices, exercise, and proper sleep.
+                <span class="read-more">Read more...</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What are the benefits of regular exercise?</div>
+            <div class="faq-answer">
+                Regular exercise can improve overall health, boost mood, and enhance fitness levels.
+                <span class="read-more">Read more...</span>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is holistic health?</div>
+            <div class="faq-answer">
+                Holistic health focuses on the whole person, integrating physical, emotional, social, and spiritual well-being.
+                <span class="read-more">Read more...</span>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">How do I choose a healthy diet?</div>
+            <div class="faq-answer">
+                A healthy diet includes a variety of foods, focusing on whole foods like fruits, vegetables, grains, and lean proteins.
+                <span class="read-more">Read more...</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rustic Health. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle FAQ answers
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #3a3a3a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+        }
+        .footer {
+            background-color: #3a3a3a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Music</a>
+        <a href="#">Celebrities</a>
+        <a href="#">Reviews</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Advertisements</h3>
+        <p>Sponsored Content Here</p>
+        <h3>Trending Topics</h3>
+        <ul>
+            <li>Oscars Highlights</li>
+            <li>Top Charts This Week</li>
+            <li>Fashion at the Met Gala</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>Upcoming TV Series</h2>
+            <p>Don't miss these exciting new shows coming soon...</p>
+        </div>
+        <div class="article">
+            <h2>Celebrity News</h2>
+            <p>Get the latest buzz around your favorite stars...</p>
+        </div>
+        <div class="article">
+            <h2>Latest Movie Releases</h2>
+            <p>Check out the top movies hitting theaters this week...</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Entertainment News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

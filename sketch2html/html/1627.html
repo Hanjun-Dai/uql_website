@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .resource-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+
+        .resource-card h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+
+        .resource-card p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Business Resource Hub
+</header>
+
+<div class="container">
+    <div class="resource-card">
+        <h3>Blogs</h3>
+        <p>Read our latest articles.</p>
+    </div>
+    <div class="resource-card">
+        <h3>Tools</h3>
+        <p>Check out useful tools.</p>
+    </div>
+    <div class="resource-card">
+        <h3>Guides</h3>
+        <p>Access our comprehensive guides.</p>
+    </div>
+    <div class="resource-card">
+        <h3>Case Studies</h3>
+        <p>Explore successful projects.</p>
+    </div>
+    <div class="resource-card">
+        <h3>Webinars</h3>
+        <p>Join our upcoming webinars.</p>
+    </div>
+    <div class="resource-card">
+        <h3>Whitepapers</h3>
+        <p>Download insightful whitepapers.</p>
+    </div>
+</div>
+
+<footer>
+    Â© 2023 Your Company Name
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with a relevant image */
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .cta-button {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .featured-collection {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .collection-item {
+            flex: 1;
+            margin: 0 10px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .collection-item img {
+            width: 100%;
+            height: auto;
+        }
+        .collection-item h3 {
+            padding: 10px;
+            font-size: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Boutique</h1>
+</header>
+
+<section class="featured-collection">
+    <div class="collection-item">
+        <img src="collection1.jpg" alt="Collection 1"> <!-- Replace with a relevant image -->
+        <h3>Summer Collection</h3>
+    </div>
+    <div class="collection-item">
+        <img src="collection3.jpg" alt="Collection 3"> <!-- Replace with a relevant image -->
+        <h3>Accessories</h3>
+    </div>
+    <div class="collection-item">
+        <img src="collection2.jpg" alt="Collection 2"> <!-- Replace with a relevant image -->
+        <h3>Winter Styles</h3>
+    </div>
+</section>
+
+<section class="hero">
+    <div>
+        <h1>Discover the Latest Trends</h1>
+        <p>Shop our exclusive collection now!</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Fashion Boutique. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

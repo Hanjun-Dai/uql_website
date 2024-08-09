@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .project {
+            background-color: white;
+            border: 2px solid #333;
+            border-radius: 5px;
+            margin: 15px;
+            width: calc(33% - 30px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project-title {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive Portfolio</h1>
+        <p>Your gateway to stunning automotive designs</p>
+    </header>
+    
+    <div class="container">
+        <div class="project">
+            <img src="car3.jpg" alt="Project 3">
+            <div class="project-title">Project 3</div>
+        </div>
+        <div class="project">
+            <img src="car5.jpg" alt="Project 5">
+            <div class="project-title">Project 5</div>
+        </div>
+        <div class="project">
+            <img src="car1.jpg" alt="Project 1">
+            <div class="project-title">Project 1</div>
+        </div>
+        <div class="project">
+            <img src="car4.jpg" alt="Project 4">
+            <div class="project-title">Project 4</div>
+        </div>
+        <div class="project">
+            <img src="car6.jpg" alt="Project 6">
+            <div class="project-title">Project 6</div>
+        </div>
+        <div class="project">
+            <img src="car2.jpg" alt="Project 2">
+            <div class="project-title">Project 2</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Automotive Designs. All rights reserved.</p>
+    </footer>
+</body>
+</html>

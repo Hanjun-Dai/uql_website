@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f7f9fc;
+        }
+        header {
+            background-color: #2e3a4a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 70%;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .featured-article {
+            margin-bottom: 20px;
+        }
+        .featured-article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .sidebar {
+            flex: 30%;
+            background-color: #e1e6ea;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #2e3a4a;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive News</h1>
+    <p>Your source for the latest in automotive trends</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Trending Now</h3>
+        <ul>
+            <li><a href="#">Hybrid Technology: The Future</a></li>
+            <li><a href="#">Best Cars for 2023</a></li>
+            <li><a href="#">EV Charging Stations: Where to Find Them</a></li>
+        </ul>
+        <h3>Latest Articles</h3>
+        <ul>
+            <li><a href="#">Top Speed Records Broken in 2023</a></li>
+            <li><a href="#">New Safety Standards Announced</a></li>
+            <li><a href="#">Classic Cars: A Timeless Investment</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="featured-article">
+            <img src="car-featured.jpg" alt="Featured Car">
+            <h2>Revolutionary Electric SUV Launches</h2>
+            <p>Experience the future of driving with the latest model packed with innovative features.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Automotive News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

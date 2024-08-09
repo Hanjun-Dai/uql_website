@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1024px;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #1e90ff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <footer>
+            <p>&copy; 2023 Education Website | All Rights Reserved</p>
+        </footer>
+        
+        <header>
+            <h1>About Us</h1>
+            <p>Empowering minds through education.</p>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="images/community.jpg" alt="Community">
+                <div class="card-content">
+                    <h2>Community Engagement</h2>
+                    <p>Building a strong learning community.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/mission.jpg" alt="Mission">
+                <div class="card-content">
+                    <h2>Our Mission</h2>
+                    <p>To provide quality education to everyone.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/values.jpg" alt="Values">
+                <div class="card-content">
+                    <h2>Our Values</h2>
+                    <p>Integrity, Inclusion, Innovation.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/vision.jpg" alt="Vision">
+                <div class="card-content">
+                    <h2>Our Vision</h2>
+                    <p>Transforming lives through learning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

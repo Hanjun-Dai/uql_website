@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #005b99;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(33.33% - 20px);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #005b99;
+        }
+        .card-content {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Categories</h1>
+    <p>Explore the wonders of science</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="geology.jpg" alt="Geology">
+        <div class="card-title">Geology</div>
+        <div class="card-content">Study the Earth, its materials, and the processes that shape our landscapes.</div>
+    </div>
+    <div class="card">
+        <img src="environment.jpg" alt="Environmental Science">
+        <div class="card-title">Environmental Science</div>
+        <div class="card-content">Investigate the interactions between humans and the environment.</div>
+    </div>
+    <div class="card">
+        <img src="chemistry.jpg" alt="Chemistry">
+        <div class="card-title">Chemistry</div>
+        <div class="card-content">Discover the elements and compounds that make up our world.</div>
+    </div>
+    <div class="card">
+        <img src="astronomy.jpg" alt="Astronomy">
+        <div class="card-title">Astronomy</div>
+        <div class="card-content">Explore the universe and the celestial objects beyond our atmosphere.</div>
+    </div>
+    <div class="card">
+        <img src="biology.jpg" alt="Biology">
+        <div class="card-title">Biology</div>
+        <div class="card-content">Learn about living organisms and the systems that sustain life.</div>
+    </div>
+    <div class="card">
+        <img src="physics.jpg" alt="Physics">
+        <div class="card-title">Physics</div>
+        <div class="card-content">Delve into the laws of nature and the behavior of matter and energy.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science World. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

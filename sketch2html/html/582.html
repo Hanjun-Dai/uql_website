@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+        }
+        .container {
+            width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #ffcc00;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            color: #333;
+            font-size: 2.5em;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card h2 {
+            margin: 10px 0;
+            padding: 0 10px;
+            font-size: 1.5em;
+            color: #444;
+        }
+        .service-card p {
+            padding: 0 10px 10px;
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Parenting Services</h1>
+    </header>
+    
+    <div class="container">
+        <div class="services">
+            <div class="service-card">
+                <img src="service5.jpg" alt="Service 5">
+                <h2>Events & Activities</h2>
+                <p>Fun and educational activities for families.</p>
+            </div>
+            <div class="service-card">
+                <img src="service3.jpg" alt="Service 3">
+                <h2>Online Resources</h2>
+                <p>Access a library of parenting tips and techniques.</p>
+            </div>
+            <div class="service-card">
+                <img src="service4.jpg" alt="Service 4">
+                <h2>Support Groups</h2>
+                <p>Connect with other parents and share experiences.</p>
+            </div>
+            <div class="service-card">
+                <img src="service2.jpg" alt="Service 2">
+                <h2>Consultation Services</h2>
+                <p>Personalized guidance for your family.</p>
+            </div>
+            <div class="service-card">
+                <img src="service1.jpg" alt="Service 1">
+                <h2>Parenting Workshops</h2>
+                <p>Engaging workshops for modern parenting.</p>
+            </div>
+            <div class="service-card">
+                <img src="service6.jpg" alt="Service 6">
+                <h2>Health & Wellness</h2>
+                <p>Focus on the well-being of you and your child.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Parenting Website | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Service Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #444; /* Slightly darker text color */
+        }
+        header {
+            background: linear-gradient(#ffab40, #ff9100); /* Changed header gradient */
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .service-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        .service-card {
+            background-color: #f0f4c3; /* Changed card background color */
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .service-card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #ff5722; /* Changed heading color */
+        }
+        .contact-form {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .contact-form h2 {
+            color: #f57f17; /* Changed contact form heading color */
+            text-align: center;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .submit-btn {
+            background-color: #ff7043; /* Changed submit button background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hover {
+            background-color: #ff5722; /* Changed hover color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Services</h1>
+        <p>Your style, our passion.</p>
+    </header>
+    <div class="container">
+        <div class="service-section">
+            <div class="service-card">
+                <img src="images/service1.jpg" alt="Styling Service">
+                <h3>Styling</h3>
+            </div>
+            <div class="service-card">
+                <img src="images/service2.jpg" alt="Personal Shopping">
+                <h3>Personal Shopping</h3>
+            </div>
+            <div class="service-card">
+                <img src="images/service3.jpg" alt="Wardrobe Consultation">
+                <h3>Wardrobe Consultation</h3>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

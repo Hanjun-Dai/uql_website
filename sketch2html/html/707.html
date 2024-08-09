@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e7ff; /* Changed background color */
+        }
+        header {
+            background-color: #1d4ed8; /* Changed header background color */
+            color: #f9fafb; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly changed shadow color */
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #1d4ed8; /* Changed heading color */
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            color: #374151; /* Changed contact info text color */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            color: #1e40af; /* Changed label color */
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #94a3b8; /* Changed input border color */
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px;
+            background-color: #ef4444; /* Changed button background color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c75353; /* Changed button hover color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d4ed8; /* Changed footer background color */
+            color: #f9fafb; /* Changed footer text color */
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="container">
+    <div class="contact-info">
+        <p>Email: contact@techwebsite.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Office Address: 123 Tech Lane, Silicon Valley, CA</p>
+    </div>
+    
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 Tech Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

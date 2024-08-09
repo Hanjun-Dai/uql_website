@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #007c92;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #005862;
+            padding: 10px 0;
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background: #008688;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .sidebar {
+            width: 200px;
+            background: #e0e0e0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            font-size: 18px;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .thread {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .thread:last-child {
+            border-bottom: none;
+        }
+        .thread h4 {
+            margin: 0 0 5px;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #e0e0e0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Forum</h1>
+</header>
+
+<div class="footer">
+    <p>&copy; 2023 Finance Forum. All rights reserved.</p>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Investing</a>
+    <a href="#">Cryptocurrency</a>
+    <a href="#">Personal Finance</a>
+    <a href="#">Market Trends</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Latest Discussions</h2>
+        <div class="thread">
+            <h4><a href="#">Tax strategies for 2023</a></h4>
+            <p>Started by <strong>FinanceGuru</strong> - 1 day ago</p>
+        </div>
+        <div class="thread">
+            <h4><a href="#">How to invest in stocks this year?</a></h4>
+            <p>Started by <strong>User123</strong> - 2 hours ago</p>
+        </div>
+        <div class="thread">
+            <h4><a href="#">Is cryptocurrency worth your investment?</a></h4>
+            <p>Started by <strong>CryptoFan</strong> - 5 hours ago</p>
+        </div>
+        <!-- More thread items can be added here -->
+    </div>
+
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Taxes</a></li>
+            <li><a href="#">Stocks</a></li>
+            <li><a href="#">Bonds</a></li>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Insurance</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

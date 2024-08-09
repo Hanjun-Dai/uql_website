@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('header-bg.jpg') center/cover no-repeat;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+        header p {
+            font-size: 24px;
+            margin: 10px 0 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+        }
+        .cta-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #ff4500;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: white;
+        }
+        .service {
+            text-align: center;
+            margin: 0 10px;
+            width: 250px;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service h3 {
+            margin: 15px 0 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<section class="services" id="services">
+    <div class="service">
+        <img src="financing.jpg" alt="Financing">
+        <h3>Financing Options</h3>
+    </div>
+    <div class="service">
+        <img src="car-parts.jpg" alt="Car Parts">
+        <h3>Genuine Parts</h3>
+    </div>
+    <div class="service">
+        <img src="car-service.jpg" alt="Car Services">
+        <h3>Car Services</h3>
+    </div>
+</section>
+
+<header>
+    <h1>Welcome to AutoWorld</h1>
+    <p>Your journey starts here</p>
+    <a href="#services" class="cta-button">Explore Now</a>
+</header>
+
+<footer>
+    <p>&copy; 2023 AutoWorld. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

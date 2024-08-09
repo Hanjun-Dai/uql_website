@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+        }
+
+        header {
+            background: #444; /* Changed header background color */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #f8f9fa; /* Changed header title color */
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #f8f9fa; /* Changed link color */
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            transition: background 0.3s, border-color 0.3s;
+        }
+
+        nav a:hover {
+            background: #f8f9fa; /* Changed hover background color */
+            color: #444; /* Changed hover text color */
+            border-color: #444; /* Changed hover border color */
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #f1f1f1; /* Added background color for section */
+        }
+
+        .feature {
+            background: #d3d3d3; /* Changed feature background color */
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .feature:hover {
+            transform: scale(1.05);
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #444; /* Changed footer background color */
+            color: #f8f9fa; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore History</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Discover</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="feature">
+            <img src="img/ancient-history.jpg" alt="Ancient History">
+            <h2>Ancient History</h2>
+            <p>Uncover the roots of civilization.</p>
+        </div>
+        <div class="feature">
+            <img src="img/middle-ages.jpg" alt="Middle Ages">
+            <h2>Middle Ages</h2>
+            <p>Discover the dark and enlightening times.</p>
+        </div>
+        <div class="feature">
+            <img src="img/modern-history.jpg" alt="Modern History">
+            <h2>Modern History</h2>
+            <p>Explore the events that shaped our world.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 History Website - All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

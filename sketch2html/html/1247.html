@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Entertainment Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f4ed;
+            color: #3b2e2e;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        .logo {
+            font-size: 3em;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #8b5e3c;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .cta-button {
+            background-color: #c8b09b;
+            color: #3b2e2e;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #b19b74;
+        }
+        footer {
+            background-color: #8b5e3c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <div class="logo">Rustic Entertainment</div>
+    </header>
+    <div class="content">
+        <h2>Welcome to the Rustic Experience</h2>
+        <img src="hero-image.jpg" alt="Entertainment Scene" class="hero-image">
+        <p>Join us for unforgettable events and entertainment in a cozy atmosphere.</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+    <footer>
+        &copy; 2023 Rustic Entertainment | Follow us on 
+        <a href="#" style="color: white;">Facebook</a>, 
+        <a href="#" style="color: white;">Instagram</a>, 
+        <a href="#" style="color: white;">Twitter</a>
+    </footer>
+</body>
+</html>

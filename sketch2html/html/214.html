@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Food Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e6f7f9; /* Changed background color of the body */
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 700;
+            color: #d63384; /* Changed heading color */
+        }
+        .accordion {
+            border: 1px solid #ffc107; /* Changed border color */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .accordion-item {
+            border-bottom: 1px solid #e3e3e3;
+        }
+        .accordion-header {
+            padding: 15px;
+            cursor: pointer;
+            background: #f8f9fa; /* Changed accordion header background color */
+            transition: background-color 0.3s ease;
+        }
+        .accordion-header:hover {
+            background: #ced4da; /* Changed hover background color */
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            background: #ffffff;
+        }
+        .active + .accordion-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">What is the delivery time?</div>
+                <div class="accordion-content">Delivery typically takes 30-45 minutes.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Do you offer vegetarian options?</div>
+                <div class="accordion-content">Yes, we have a variety of vegetarian dishes available.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">What payment methods do you accept?</div>
+                <div class="accordion-content">We accept all major credit cards and PayPal.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Can I track my order?</div>
+                <div class="accordion-content">Yes, you can track your order through our website.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">How can I contact customer support?</div>
+                <div class="accordion-content">You can reach out to us via email or our contact form.</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const content = this.nextElementSibling;
+                if (content.style.display === 'block') {
+                    content.style.display = 'none';
+                } else {
+                    content.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

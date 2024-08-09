@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Games Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #3a3f47; /* Changed color */
+            color: #ff8c00; /* Changed color */
+            padding: 20px;
+            font-size: 24px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .faq-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .faq-item {
+            background: #fffcf2; /* Changed background color */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            transition: transform 0.2s;
+        }
+        .faq-item:hover {
+            transform: scale(1.05);
+        }
+        .faq-item h3 {
+            color: #007acc; /* Changed header color */
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            color: #888; /* Changed paragraph color */
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .faq-item {
+                width: calc(45% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .faq-item {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Frequently Asked Questions
+    </div>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <h3>What is XYZ Game?</h3>
+            <p>XYZ Game is an immersive experience...</p>
+        </div>
+        <div class="faq-item">
+            <h3>System Requirements?</h3>
+            <p>Minimum requirements are...</p>
+        </div>
+        <div class="faq-item">
+            <h3>How to contact support?</h3>
+            <p>You can reach us at...</p>
+        </div>
+        <div class="faq-item">
+            <h3>Where to download?</h3>
+            <p>Download from our official site...</p>
+        </div>
+        <div class="faq-item">
+            <h3>Troubleshooting Issues?</h3>
+            <p>Common issues include...</p>
+        </div>
+        <div class="faq-item">
+            <h3>Community Guidelines?</h3>
+            <p>Please follow our code of conduct...</p>
+        </div>
+    </div>
+
+</body>
+</html>

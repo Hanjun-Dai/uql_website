@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Category</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            padding: 10px;
+            font-size: 1.2rem;
+            color: #444;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="footer">
+            &copy; 2023 Fashion Brand. All Rights Reserved.
+        </div>
+
+        <header>
+            <h1>Fashion Collection</h1>
+        </header>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="img4.jpg" alt="Fashion Item 4">
+                <div class="card-title">Elegant Blouse</div>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="Fashion Item 2">
+                <div class="card-title">Trendy Dress</div>
+            </div>
+            <div class="card">
+                <img src="img5.jpg" alt="Fashion Item 5">
+                <div class="card-title">Chic Pants</div>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="Fashion Item 3">
+                <div class="card-title">Casual Sneakers</div>
+            </div>
+            <div class="card">
+                <img src="img6.jpg" alt="Fashion Item 6">
+                <div class="card-title">Stylish Sunglasses</div>
+            </div>
+            <div class="card">
+                <img src="img1.jpg" alt="Fashion Item 1">
+                <div class="card-title">Stylish Jacket</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

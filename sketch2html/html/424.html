@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005c99;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 15px;
+            background: #e7f3fe;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .testimonials {
+            background: #f7f7f7;
+            padding: 20px;
+        }
+        .testimonial {
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #005c99;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005c99;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Services</h1>
+    <p>Providing quality healthcare for you and your loved ones.</p>
+</header>
+
+<section class="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<section class="testimonials">
+    <h2>What Our Patients Say</h2>
+    <div class="testimonial">"The care I received was outstanding!" - A satisfied patient</div>
+    <div class="testimonial">"I highly recommend their services." - Another happy patient</div>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="service">
+        <h3>Telehealth</h3>
+        <p>Consultations from the comfort of your home.</p>
+    </div>
+    <div class="service">
+        <h3>Specialist Consultations</h3>
+        <p>Access to top specialists in various fields.</p>
+    </div>
+    <div class="service">
+        <h3>General Check-ups</h3>
+        <p>Annual exams to ensure your health.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Health Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

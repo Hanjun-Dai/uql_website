@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel News</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            margin: 0;
+            color: #444; /* Changed body text color */
+        }
+        header {
+            background-color: #ff8c1a; /* Changed header background color */
+            color: #fff; /* Ensure header text remains white */
+            padding: 20px;
+            text-align: center;
+            font-size: 3em;
+        }
+        nav {
+            background-color: #d35400; /* Changed nav background color */
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff; /* Ensure nav link color remains white */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffeb3b; /* Keep hover color the same */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .news-item {
+            background: #fff; /* Keep news item background white */
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+            transform: scale(1.05);
+        }
+        .news-item img {
+            border-radius: 15px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .news-title {
+            font-size: 1.6em;
+            color: #27ae60; /* Changed news title color */
+            margin: 10px 0;
+        }
+        .news-date {
+            color: #7f8c8d; /* Changed news date color */
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #34495e; /* Changed footer background color */
+            color: #fff; /* Ensure footer text remains white */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Travel News
+</header>
+
+<nav>
+    <a href="#destinations">Destinations</a>
+    <a href="#tips">Travel Tips</a>
+    <a href="#deals">Deals</a>
+    <a href="#gallery">Gallery</a>
+</nav>
+
+<div class="container">
+    <div class="news-item">
+        <img src="beach.jpg" alt="Beach destination">
+        <div class="news-title">Sunny Beaches Await!</div>
+        <div class="news-date">Oct 1, 2023</div>
+        <p>Explore the top beach destinations for your next trip!</p>
+    </div>
+    <div class="news-item">
+        <img src="mountains.jpg" alt="Mountain adventure">
+        <div class="news-title">Mountain Adventures!</div>
+        <div class="news-date">Oct 2, 2023</div>
+        <p>Embrace the thrill of hiking the best trails!</p>
+    </div>
+    <div class="news-item">
+        <img src="city.jpg" alt="City exploration">
+        <div class="news-title">Urban Exploration</div>
+        <div class="news-date">Oct 3, 2023</div>
+        <p>Discover vibrant cities around the world!</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Travel Website | All Rights Reserved
+</footer>
+
+</body>
+</html>

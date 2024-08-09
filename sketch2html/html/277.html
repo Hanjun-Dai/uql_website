@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - History Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 60px; /* Increased font size */
+            margin: 0;
+            color: #4A90E2;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        header p {
+            font-size: 12px; /* Decreased font size */
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .mission {
+            background-color: #e9f5ff;
+            border-left: 5px solid #4A90E2;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .mission h2 {
+            font-size: 40px; /* Increased font size */
+            margin: 0;
+            color: #4A90E2;
+        }
+
+        .timeline {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .event {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            transition: transform 0.3s;
+        }
+
+        .event:hover {
+            transform: scale(1.05);
+            border-color: #4A90E2;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            font-size: 8px; /* Decreased font size */
+            color: #999;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+            .event {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+            <p>Exploring the tales of our past.</p>
+        </header>
+        
+        <div class="content">
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To illuminate the stories that shaped humanity.</p>
+            </div>
+
+            <div class="timeline">
+                <div class="event">
+                    <h3 style="font-size: 28px;">Established</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">1999</p> <!-- Decreased font size -->
+                </div>
+                <div class="event">
+                    <h3 style="font-size: 28px;">First Publication</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">2005</p> <!-- Decreased font size -->
+                </div>
+                <div class="event">
+                    <h3 style="font-size: 28px;">Going Digital</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">2010</p> <!-- Decreased font size -->
+                </div>
+                <div class="event">
+                    <h3 style="font-size: 28px;">Community Outreach</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">2015</p> <!-- Decreased font size -->
+                </div>
+                <div class="event">
+                    <h3 style="font-size: 28px;">International Expansion</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">2020</p> <!-- Decreased font size -->
+                </div>
+                <div class="event">
+                    <h3 style="font-size: 28px;">Future Initiatives</h3> <!-- Increased font size -->
+                    <p style="font-size: 12px;">Coming Soon!</p> <!-- Decreased font size -->
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 History Website. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

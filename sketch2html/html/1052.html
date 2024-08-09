@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .forum-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .forum-item {
+            border-bottom: 1px solid #eaeaea;
+            padding: 15px 0;
+        }
+
+        .forum-item:last-child {
+            border-bottom: none;
+        }
+
+        .forum-title {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .forum-info {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .reply-count {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>History Forum</h1>
+            <button class="btn">New Thread</button>
+        </header>
+
+        <ul class="forum-list">
+            <li class="forum-item">
+                <div class="forum-title">The Cold War: Conflicts and Resolutions</div>
+                <div class="forum-info">Started by PeaceKeeper | 12 replies <span class="reply-count">â­</span></div>
+            </li>
+            <li class="forum-item">
+                <div class="forum-title">The Renaissance Era</div>
+                <div class="forum-info">Started by ArtLover | 7 replies <span class="reply-count">â­</span></div>
+            </li>
+            <li class="forum-item">
+                <div class="forum-title">The Impact of World War II</div>
+                <div class="forum-info">Started by JohnDoe | 10 replies <span class="reply-count">â­</span></div>
+            </li>
+            <li class="forum-item">
+                <div class="forum-title">Ancient Civilizations: A Brief Overview</div>
+                <div class="forum-info">Started by HistoryBuff | 4 replies <span class="reply-count">â­</span></div>
+            </li>
+        </ul>
+
+        <footer>
+            &copy; 2023 History Forum
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background: #ff6363;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .forum-container {
+            display: flex;
+            width: 1024px;
+            margin: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #ffedd5;
+            border-radius: 0 10px 10px 0;
+            overflow: hidden;
+        }
+
+        .main-forum {
+            flex: 3;
+            padding: 20px;
+            border-right: 2px solid #ff6363;
+            background: #fff;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .post {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            transition: background-color 0.3s;
+        }
+
+        .post:hover {
+            background-color: #f1f1f1;
+        }
+
+        .sidebar h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            margin-bottom: 20px;
+        }
+
+        .search-bar input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .button {
+            background: #ff6363;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #ff3b3b;
+        }
+        
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Food Lovers Forum
+</header>
+
+<div class="forum-container">
+    <aside class="sidebar">
+        <div class="search-bar">
+            <input type="text" placeholder="Search the forum...">
+        </div>
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Cooking Techniques</a></li>
+            <li><a href="#">Kitchen Equipment</a></li>
+            <li><a href="#">Food Safety</a></li>
+        </ul>
+    </aside>
+
+    <section class="main-forum">
+        <div class="post">
+            <h4>Best Cooking Tips</h4>
+            <p>Share your top tips for cooking delicious meals.</p>
+            <div>
+                <button class="button">Reply</button>
+                <span class="date">Posted on Oct 11, 2023</span>
+            </div>
+        </div>
+        <div class="post">
+            <h4>What's Your Favorite Recipe?</h4>
+            <p>Share your go-to dishes or any secret recipes.</p>
+            <div>
+                <button class="button">Reply</button>
+                <span class="date">Posted on Oct 12, 2023</span>
+            </div>
+        </div>
+        <!-- Additional posts can be added here -->
+    </section>
+</div>
+
+<footer>
+    Â© 2023 Food Lovers Forum. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .product-header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .product-details {
+            display: flex;
+        }
+        .product-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-info {
+            flex: 2;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+
+        .size-selection {
+            margin: 15px 0;
+        }
+
+        .size-selection label {
+            margin-right: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .description {
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+
+        .related-products {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .related-products h2 {
+            margin-bottom: 20px;
+        }
+
+        .related-product-item {
+            display: inline-block;
+            width: 30%;
+            margin: 0 10px;
+        }
+
+        .related-product-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            border-top: 1px solid #e2e2e2;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-product-item">
+            <img src="related-product1.jpg" alt="Related Product 1">
+            <p>Chic Blouse</p>
+            <div class="price">$29.99</div>
+        </div>
+        <div class="related-product-item">
+            <img src="related-product2.jpg" alt="Related Product 2">
+            <p>Casual Pants</p>
+            <div class="price">$39.99</div>
+        </div>
+        <div class="related-product-item">
+            <img src="related-product3.jpg" alt="Related Product 3">
+            <p>Elegant Skirt</p>
+            <div class="price">$34.99</div>
+        </div>
+    </div>
+    
+    <div class="product-header">
+        <h1>Stylish Summer Dress</h1>
+    </div>
+    
+    <div class="product-details">
+        <div class="product-info">
+            <div class="price">$49.99</div>
+            <div class="size-selection">
+                <label for="sizes">Select Size:</label>
+                <select id="sizes">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                </select>
+            </div>
+            <button class="add-to-cart">Add to Cart</button>
+            <div class="description">
+                <h3>Description:</h3>
+                <p>This stylish summer dress is perfect for any occasion. Made from high-quality fabric, it is comfortable and trendy.</p>
+            </div>
+        </div>
+        <div class="product-image">
+            <img src="dress-image.jpg" alt="Stylish Summer Dress">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Fashion Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

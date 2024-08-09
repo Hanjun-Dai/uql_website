@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Bliss</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin: 15px;
+        }
+        .card p {
+            margin: 15px;
+            color: #666;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore the World</h1>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="https://example.com/destination4.jpg" alt="Destination 4">
+            <h2>Tokyo</h2>
+            <p>A blend of tradition and modernity!</p>
+        </div>
+        <div class="card">
+            <img src="https://example.com/destination1.jpg" alt="Destination 1">
+            <h2>Paris</h2>
+            <p>The City of Lights awaits you!</p>
+        </div>
+        <div class="card">
+            <img src="https://example.com/destination3.jpg" alt="Destination 3">
+            <h2>Maldives</h2>
+            <p>Paradise on earth!</p>
+        </div>
+        <div class="card">
+            <img src="https://example.com/destination2.jpg" alt="Destination 2">
+            <h2>New York</h2>
+            <p>Experience the hustle and bustle!</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Travel Bliss. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main {
+            flex: 3;
+            margin-right: 20px;
+            background-white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .featured-post, .post {
+            margin-bottom: 20px;
+        }
+        .featured-post img, .post img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a90e2;
+            color: white;
+            margin-top: 20px;
+        }
+        h2, h3 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lifestyle Blog</h1>
+        <p>Inspiration for a vibrant life.</p>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Wellness</a></li>
+                <li><a href="#">Fashion</a></li>
+            </ul>
+
+            <h3>About Me</h3>
+            <p>A brief intro about the blog author and their passions.</p>
+
+            <h3>Follow Me</h3>
+            <p>Links to social media profiles.</p>
+        </div>
+
+        <div class="main">
+            <div class="post">
+                <h3>Recent Post 2</h3>
+                <img src="recent-image2.jpg" alt="Recent Image 2">
+                <p>A short description of another recent post content.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="featured-post">
+                <h2>Featured Post Title</h2>
+                <img src="featured-image.jpg" alt="Featured Image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="post">
+                <h3>Recent Post 1</h3>
+                <img src="recent-image1.jpg" alt="Recent Image 1">
+                <p>A short description of the recent post content.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="post">
+                <h3>Recent Post 3</h3>
+                <img src="recent-image3.jpg" alt="Recent Image 3">
+                <p>Another brief description of the recent post content.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Lifestyle Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>

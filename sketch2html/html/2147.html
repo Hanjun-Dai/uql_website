@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #e63946;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-section {
+            margin-top: 20px;
+        }
+        .news-title {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+            text-align: left;
+            font-weight: bold;
+        }
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .article {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .article:hover {
+            transform: translateY(-5px);
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article h3 {
+            padding: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .article p {
+            padding: 0 10px 10px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foodie News</h1>
+        <p>Your daily dose of delicious news</p>
+    </header>
+    <div class="container">
+        <div class="news-section">
+            <div class="articles">
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x200" alt="Food 2">
+                    <h3>5 Quick Dinner Recipes</h3>
+                    <p>Simple and quick dinner recipes that you can whip up in 30 minutes or less!</p>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x200" alt="Food 3">
+                    <h3>Exotic Spices You Should Try</h3>
+                    <p>Add flavor to your meals with these exotic spices from around the world.</p>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x200" alt="Food 4">
+                    <h3>Vegan Desserts to Indulge In</h3>
+                    <p>Sweet treats that are completely plant-based and absolutely delicious!</p>
+                </div>
+                <div class="article">
+                    <img src="https://via.placeholder.com/300x200" alt="Food 1">
+                    <h3>10 Healthy Snacks for Weight Loss</h3>
+                    <p>Discover delicious and healthy snacks that will keep you satisfied without the extra calories.</p>
+                </div>
+            </div>
+            <h2 class="news-title">Latest Articles</h2>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Foodie News. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

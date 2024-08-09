@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Category Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #212121; /* Darker text color */
+        }
+        header {
+            background: #f44336; /* Changed header background color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .category-title {
+            text-align: center;
+            margin: 20px 0;
+            color: #007acc; /* Changed category title color */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff3e0; /* Changed card background color */
+            border: 1px solid #ffa000; /* Changed border color */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #d32f2f; /* Changed card title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3949ab; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Discoveries</h1>
+</header>
+
+<div class="container">
+    <h2 class="category-title">Explore Our Science Categories</h2>
+    
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Physics">
+            <div class="card-content">
+                <h3 class="card-title">Physics</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Biology">
+            <div class="card-content">
+                <h3 class="card-title">Biology</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Chemistry">
+            <div class="card-content">
+                <h3 class="card-title">Chemistry</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Astronomy">
+            <div class="card-content">
+                <h3 class="card-title">Astronomy</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Earth Science">
+            <div class="card-content">
+                <h3 class="card-title">Earth Science</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/220" alt="Environmental Science">
+            <div class="card-content">
+                <h3 class="card-title">Environmental Science</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science Website</p>
+</footer>
+
+</body>
+</html>

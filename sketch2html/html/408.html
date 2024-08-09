@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoVision</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Changed background color */
+        }
+        header {
+            background: #444; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffcc00; /* Changed link text color */
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #666; /* Changed hover background color */
+        }
+        .hero {
+            background-image: url('car-hero.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff; /* Unchanged */
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #ffcc00; /* Changed color */
+        }
+        .hero p {
+            font-size: 24px;
+            margin: 10px 0 0;
+            color: #ffffff; /* Unchanged */
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .feature {
+            background: #fff; /* Unchanged */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Changed shadow color */
+            text-align: center;
+            width: 200px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #444; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AutoVision</h1>
+    <nav>
+        <a href="#cars">Cars</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Drive Your Dream</h1>
+    <p>Explore the latest models</p>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h2>New Cars</h2>
+        <p>Latest arrivals</p>
+    </div>
+    <div class="feature">
+        <h2>Used Cars</h2>
+        <p>Great deals</p>
+    </div>
+    <div class="feature">
+        <h2>Services</h2>
+        <p>Maintenance & Repair</p>
+    </div>
+    <div class="feature">
+        <h2>Financing</h2>
+        <p>Flexible Options</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 AutoVision. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

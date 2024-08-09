@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .project {
+            background: #fff;
+            border-radius: 8px;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        .project p {
+            padding: 0 15px 15px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Automotive Portfolio</h1>
+    <p>Featuring My Best Work</p>
+</header>
+
+<footer>
+    <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+</footer>
+
+<section class="portfolio">
+    <div class="project">
+        <img src="car3.jpg" alt="Project Car 3">
+        <h3>Project Car 3</h3>
+        <p>Electric Vehicle Concept</p>
+    </div>
+    <div class="project">
+        <img src="car1.jpg" alt="Project Car 1">
+        <h3>Project Car 1</h3>
+        <p>Sporty and Futuristic Design</p>
+    </div>
+    <div class="project">
+        <img src="car4.jpg" alt="Project Car 4">
+        <h3>Project Car 4</h3>
+        <p>Luxury Sedan Model</p>
+    </div>
+    <div class="project">
+        <img src="car2.jpg" alt="Project Car 2">
+        <h3>Project Car 2</h3>
+        <p>Classic Look with Modern Touch</p>
+    </div>
+</section>
+
+</body>
+</html>

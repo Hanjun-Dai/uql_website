@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Resource Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f2; /* Changed body background color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #4a89dc; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border: 2px solid #c2c2c2; /* Changed card border color */
+            border-radius: 10px;
+            width: 300px;
+            margin: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .card h3 {
+            color: #d9534f; /* Changed card heading color */
+            margin: 10px 0;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            color: #333; /* Changed paragraph text color */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777; /* Changed footer text color */
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Health Resources</h1>
+        <p>Your guide to a healthier life</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="images/nutrition.jpg" alt="Nutrition Resources">
+            <h3>Nutrition</h3>
+            <p>Discover diets, recipes, and nutritional advice for a balanced life.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/fitness.jpg" alt="Fitness Resources">
+            <h3>Fitness</h3>
+            <p>Explore workouts and tips to stay active and fit.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/mental-health.jpg" alt="Mental Health Resources">
+            <h3>Mental Health</h3>
+            <p>Find resources for mindfulness, counseling, and stress management.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/preventive-care.jpg" alt="Preventive Care Resources">
+            <h3>Preventive Care</h3>
+            <p>Learn about screenings, vaccinations, and wellness.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/sleep.jpg" alt="Sleep Resources">
+            <h3>Sleep Hygiene</h3>
+            <p>Understand the importance of sleep and how to improve it.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/community-support.jpg" alt="Community Support Resources">
+            <h3>Community Support</h3>
+            <p>Join groups and find local support networks.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

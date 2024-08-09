@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Foodie Haven</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: #ff5722;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Increased font size */
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .description {
+            flex: 1;
+            padding: 20px;
+        }
+        .description h2 {
+            color: #ff5722;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            font-size: 3em; /* Increased font size */
+        }
+        .description p {
+            font-size: 0.8em; /* Decreased font size */
+            line-height: 1.6;
+        }
+        .image {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .image img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff5722;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em; /* Decreased font size */
+        }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+            .description, .image {
+                flex: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Haven</h1>
+</header>
+
+<div class="content">
+    <div class="description">
+        <h2>About Us</h2>
+        <p>At Foodie Haven, we celebrate the joy of cooking and sharing delicious meals.</p>
+        <p>Join us on a culinary journey filled with recipes, tips, and food culture!</p>
+    </div>
+    <div class="image">
+        <img src="https://example.com/path/to/your/image.jpg" alt="Delicious food">
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Foodie Haven. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

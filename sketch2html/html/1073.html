@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ff6f61;
+            padding: 20px 0;
+            color: white;
+            font-size: 2em;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 15px;
+            flex: 0 1 30%;
+            transition: transform 0.2s;
+            position: relative;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .card h3 {
+            color: #ff6f61;
+            margin: 10px 0 5px 0;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+        }
+        .footer-text {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Fashion News
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="path/to/image3.jpg" alt="Fashion Trend 3">
+        <h3>Street Style</h3>
+        <p>Get inspired by the chic looks on the streets!</p>
+    </div>
+    <div class="card">
+        <img src="path/to/image6.jpg" alt="Fashion Trend 6">
+        <h3>Fashion Events</h3>
+        <p>Join us for the biggest fashion events this month!</p>
+    </div>
+    <div class="card">
+        <img src="path/to/image4.jpg" alt="Fashion Trend 4">
+        <h3>Celebrity Looks</h3>
+        <p>Steal the style from your favorite stars!</p>
+    </div>
+    <div class="card">
+        <img src="path/to/image2.jpg" alt="Fashion Trend 2">
+        <h3>Sustainable Fashion</h3>
+        <p>Explore eco-friendly trends that make a statement!</p>
+    </div>
+    <div class="card">
+        <img src="path/to/image5.jpg" alt="Fashion Trend 5">
+        <h3>Seasonal Sales</h3>
+        <p>Don't miss out on amazing discounts!</p>
+    </div>
+    <div class="card">
+        <img src="path/to/image1.jpg" alt="Fashion Trend 1">
+        <h3>New Arrivals</h3>
+        <p>Discover the latest styles of the season!</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-text">&copy; 2023 Fashion News | All rights reserved</div>
+</footer>
+
+</body>
+</html>

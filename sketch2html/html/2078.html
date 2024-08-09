@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Parenting Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-size: 12px; /* Randomly changed to a smaller size */
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px; /* Randomly changed to a larger size */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .services, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .service, .testimonial {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 30%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            font-size: 16px; /* Randomly changed to a larger size */
+        }
+        .service:hover, .testimonial:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+            margin-top: 20px;
+            font-size: 14px; /* Randomly changed to a smaller size */
+        }
+        @media screen and (max-width: 768px) {
+            .service, .testimonial {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Services</h1>
+    <p>Your trusted partner in parenting</p>
+</header>
+
+<div class="container">
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Parenting Workshops</h3>
+            <p>Interactive workshops for all parenting stages.</p>
+        </div>
+        <div class="service">
+            <h3>Consultation</h3>
+            <p>Personalized consultations for your parenting needs.</p>
+        </div>
+        <div class="service">
+            <h3>Online Resources</h3>
+            <p>Access a wealth of online materials and guides.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Parents Say</h2>
+        <div class="testimonial">
+            <p>"The workshops changed our family dynamics for the better!"</p>
+            <p>- Sarah L.</p>
+        </div>
+        <div class="testimonial">
+            <p>"Invaluable support during the toughest times."</p>
+            <p>- Mark T.</p>
+        </div>
+        <div class="testimonial">
+            <p>"The resources are a lifesaver for new parents!"</p>
+            <p>- Jessica M.</p>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

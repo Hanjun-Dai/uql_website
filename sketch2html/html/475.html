@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health & Wellness</h1>
+    </header>
+    <div class="container">
+        <h2 class="category-title">Explore Categories</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="nutrition.jpg" alt="Nutrition">
+                <div class="card-title">Nutrition</div>
+                <div class="card-description">Eat healthy, live well.</div>
+            </div>
+            <div class="card">
+                <img src="laboratory.jpg" alt="Medical Tests">
+                <div class="card-title">Medical Tests</div>
+                <div class="card-description">Stay informed about your health.</div>
+            </div>
+            <div class="card">
+                <img src="fitness.jpg" alt="Fitness">
+                <div class="card-title">Fitness</div>
+                <div class="card-description">Get fit, stay active.</div>
+            </div>
+            <div class="card">
+                <img src="wellness.jpg" alt="Wellness">
+                <div class="card-title">Wellness</div>
+                <div class="card-description">Holistic approaches to health.</div>
+            </div>
+            <div class="card">
+                <img src="mental-health.jpg" alt="Mental Health">
+                <div class="card-title">Mental Health</div>
+                <div class="card-description">Prioritize your mental well-being.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

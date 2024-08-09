@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Articles</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+
+        header {
+            background-color: #3f51b5; /* Changed header background color */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            margin-right: 20px;
+            background-color: white; /* No change */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff; /* No change */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .category-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #c2185b; /* Changed category title color */
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .article-card {
+            background-color: #ffcdd2; /* Changed article card background color */
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .article-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .article-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #1976d2; /* Changed article title color */
+        }
+
+        .article-card p {
+            font-size: 0.9em;
+            color: #000; /* Changed paragraph text color */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Parenting Resources</h1>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2 class="category-title">Latest Articles</h2>
+            <div class="article-grid">
+                <div class="article-card">
+                    <img src="image1.jpg" alt="Article 1">
+                    <h3>Article Title 1</h3>
+                    <p>Short description of Article 1.</p>
+                </div>
+                <div class="article-card">
+                    <img src="image2.jpg" alt="Article 2">
+                    <h3>Article Title 2</h3>
+                    <p>Short description of Article 2.</p>
+                </div>
+                <div class="article-card">
+                    <img src="image3.jpg" alt="Article 3">
+                    <h3>Article Title 3</h3>
+                    <p>Short description of Article 3.</p>
+                </div>
+                <div class="article-card">
+                    <img src="image4.jpg" alt="Article 4">
+                    <h3>Article Title 4</h3>
+                    <p>Short description of Article 4.</p>
+                </div>
+                <div class="article-card">
+                    <img src="image5.jpg" alt="Article 5">
+                    <h3>Article Title 5</h3>
+                    <p>Short description of Article 5.</p>
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#" style="color: #43a047;">Pregnancy</a></li> <!-- Changed link color -->
+                <li><a href="#" style="color: #43a047;">Newborn Care</a></li>
+                <li><a href="#" style="color: #43a047;">Toddler Tips</a></li>
+                <li><a href="#" style="color: #43a047;">Parenting Techniques</a></li>
+                <li><a href="#" style="color: #43a047;">Health & Safety</a></li>
+            </ul>
+        </aside>
+    </div>
+</body>
+
+</html>

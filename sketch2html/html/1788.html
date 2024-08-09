@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            color: #4CAF50;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .info {
+            background-color: #fff;
+            border: 2px dashed #4CAF50;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #ff69b4;
+        }
+        .form-container {
+            background-color: #fff;
+            border: 2px dashed #ff69b4;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        input, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        @media (max-width: 768px) {
+            .info {
+                width: 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Contact Us
+</header>
+
+<div class="container">
+
+    <div class="form-container">
+        <h2>Drop Us a Line!</h2>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+
+    <div class="contact-info">
+        <div class="info">
+            <h2>Visit Us</h2>
+            <p>123 Healthy St.<br>Wellness City, HC 45678</p>
+        </div>
+        <div class="info">
+            <h2>Email Us</h2>
+            <p>info@healthwebsite.com</p>
+        </div>
+        <div class="info">
+            <h2>Call Us</h2>
+            <p>+1 (234) 567-8900</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

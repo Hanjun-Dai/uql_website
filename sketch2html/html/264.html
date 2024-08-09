@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7f3fe; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #555; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background-color: #fff; 
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: calc(30% - 20px);
+            margin: 10px;
+            transition: transform 0.3s;
+            overflow: hidden;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Slightly increased shadow on hover */
+        }
+        .service-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .service-card h2 {
+            font-size: 24px;
+            color: #d9534f; /* Changed card title color */
+            padding: 15px;
+            margin: 0;
+            text-align: center;
+        }
+        .service-card p {
+            padding: 0 15px 15px;
+            color: #333; /* Changed paragraph color */
+            text-align: center;
+        }
+        footer {
+            background-color: #555; /* Changed footer background color */
+            color: #ffc107; /* Changed footer text color */
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History Services</h1>
+</header>
+
+<div class="container">
+    <div class="service-card">
+        <img src="history-research.jpg" alt="Research Services">
+        <h2>Research Services</h2>
+        <p>Explore our expert research services to uncover historical truths.</p>
+    </div>
+    <div class="service-card">
+        <img src="archive-access.jpg" alt="Archive Access">
+        <h2>Archive Access</h2>
+        <p>Gain access to exclusive historical archives and documents.</p>
+    </div>
+    <div class="service-card">
+        <img src="consultation.jpg" alt="Consultation">
+        <h2>Consultation</h2>
+        <p>Get personalized consultations with history experts.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 History Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

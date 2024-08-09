@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sports Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://example.com/sport-background.png'); /* Replace with actual background */
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .contact-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ff4500; /* Playful color */
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff4500;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ff6347; /* Slightly lighter color on hover */
+        }
+        .social-media {
+            margin-top: 20px;
+        }
+        .social-media a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: #ff4500;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <div class="social-media">
+            <a href="#"><img src="https://example.com/facebook-icon.png" alt="Facebook" width="30"></a>
+            <a href="#"><img src="https://example.com/twitter-icon.png" alt="Twitter" width="30"></a>
+            <a href="#"><img src="https://example.com/instagram-icon.png" alt="Instagram" width="30"></a>
+        </div>
+        <h1>Get in Touch!</h1>
+        <form>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</body>
+</html>

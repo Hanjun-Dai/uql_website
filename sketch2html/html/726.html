@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Vintage Science</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f0e3;
+            color: #3e3e3e;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3.5em; /* Increased font size */
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #d0c8b4;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #d0c8b4;
+            padding-bottom: 10px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            color: #c14000;
+            cursor: pointer;
+            transition: color 0.3s;
+            font-size: 1.2em; /* Slightly increased font size */
+        }
+        .question:hover {
+            color: #a83600;
+        }
+        .answer {
+            display: none;
+            padding-top: 5px;
+            font-style: italic;
+            font-size: 0.8em; /* Decreased font size */
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What is this website about?</div>
+            <div class="answer">A portal to explore the wonders of science!</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I contribute to the website?</div>
+            <div class="answer">You can submit articles or participate in discussions.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Is there a cost to join?</div>
+            <div class="answer">No, all resources are free of charge!</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How do I subscribe to updates?</div>
+            <div class="answer">Enter your email in the subscription form on our homepage.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            let answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

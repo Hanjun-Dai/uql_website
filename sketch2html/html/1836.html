@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .portfolio-item {
+            background-color: #ffffff;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            margin: 15px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+        .item-image {
+            width: 100%;
+            border-radius: 5px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        p {
+            font-size: 0.9em;
+            color: #666666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Portfolio</h1>
+        <p>Your source for reliable news</p>
+    </header>
+
+    <div class="container">
+        <div class="portfolio-item">
+            <img src="image5.jpg" alt="News Feature 5" class="item-image">
+            <h2>News Article Title 5</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="image1.jpg" alt="News Feature 1" class="item-image">
+            <h2>News Article Title 1</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="image4.jpg" alt="News Feature 4" class="item-image">
+            <h2>News Article Title 4</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="image2.jpg" alt="News Feature 2" class="item-image">
+            <h2>News Article Title 2</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="image6.jpg" alt="News Feature 6" class="item-image">
+            <h2>News Article Title 6</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="image3.jpg" alt="News Feature 3" class="item-image">
+            <h2>News Article Title 3</h2>
+            <p>Short description of the news article or feature.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

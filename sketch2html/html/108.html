@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Changed background color */
+            color: #444; /* Modified text color */
+        }
+        header {
+            background: linear-gradient(to right, #ff6f00, #e65100); /* Changed header gradient colors */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffeb3b; /* Changed link color */
+            font-weight: 500;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,computer') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .card {
+            background: #fff9c4; /* Changed card background color */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h2 {
+            padding: 15px;
+            font-size: 18px;
+            color: #d32f2f; /* Changed heading color */
+        }
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #424242; /* Changed footer background color */
+            color: #ffeb3b; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TechZone</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Reviews</a>
+        <a href="#">Gadgets</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Explore the Future of Technology</h1>
+</div>
+
+<div class="grid">
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?software" alt="Software">
+        <h2>Latest Software Solutions</h2>
+        <p>Discover cutting-edge software tools that can enhance your productivity and creativity.</p>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?hardware" alt="Hardware">
+        <h2>Innovative Hardware</h2>
+        <p>Check out the latest advancements in hardware technology to stay ahead.</p>
+    </div>
+    <div class="card">
+        <img src="https://source.unsplash.com/300x200/?gadget" alt="Gadgets">
+        <h2>Trending Gadgets</h2>
+        <p>Find the hottest gadgets and gear that every tech enthusiast needs.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 TechZone. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

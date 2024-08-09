@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Food Category Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #eae0d5;
+            text-align: center;
+            padding: 20px;
+            border-bottom: 2px solid #ab8c6e;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #4e3b31;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4e3b31;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .category-card {
+            background-color: #fff;
+            border: 1px solid #ab8c6e;
+            border-radius: 10px;
+            width: 250px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .card-image {
+            width: 100%;
+            height: 150px;
+            background-position: center;
+            background-size: cover;
+        }
+        .card-title {
+            background-color: #4e3b31;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #eae0d5;
+            text-align: center;
+            padding: 15px;
+            border-top: 2px solid #ab8c6e;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage Delights</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Ingredients</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<footer>
+    &copy; 2023 Vintage Delights. All Rights Reserved.
+</footer>
+
+<div class="container">
+    <div class="category-card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/250x150?text=Desserts');"></div>
+        <div class="card-title">Desserts</div>
+    </div>
+    <div class="category-card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/250x150?text=Beverages');"></div>
+        <div class="card-title">Beverages</div>
+    </div>
+    <div class="category-card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/250x150?text=Appetizers');"></div>
+        <div class="card-title">Appetizers</div>
+    </div>
+    <div class="category-card">
+        <div class="card-image" style="background-image: url('https://via.placeholder.com/250x150?text=Main+Courses');"></div>
+        <div class="card-title">Main Courses</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Forum</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        .post {
+            border-bottom: 1px solid #e1e1e1;
+            padding: 10px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-header {
+            font-weight: bold;
+        }
+        .reply-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Contact Us</a>
+    <a href="#">Destinations</a>
+    <a href="#">Home</a>
+    <a href="#">Travel Tips</a>
+</nav>
+
+<div class="container">
+    <h2>Discussion Topics</h2>
+
+    <div class="post">
+        <div class="post-header">Best Beaches in the World</div>
+        <div class="post-content">What are your favorite beach destinations?</div>
+        <a href="#" class="reply-btn">Reply</a>
+    </div>
+
+    <div class="post">
+        <div class="post-header">Budget Traveling</div>
+        <div class="post-content">Discuss how to travel on a budget.</div>
+        <a href="#" class="reply-btn">Reply</a>
+    </div>
+
+    <div class="post">
+        <div class="post-header">Traveling to Europe - Tips & Tricks</div>
+        <div class="post-content">Share your experiences and ask your questions!</div>
+        <a href="#" class="reply-btn">Reply</a>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Travel Forum
+</footer>
+
+</body>
+</html>

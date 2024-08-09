@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f1f8; /* Changed background color */
+            color: #2c3e50; /* Changed text color */
+        }
+
+        header {
+            background: #2d3b36; /* Changed header background color */
+            color: #f1c40f; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1024px;
+            margin: auto;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            border: 2px solid #2980b9; /* Changed border color */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            margin: 15px;
+            transition: transform 0.3s;
+            width: calc(33% - 30px);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #2980b9; /* Changed image border color */
+        }
+
+        .portfolio-item h3 {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #3498db; /* Changed project title color */
+        }
+
+        .portfolio-item p {
+            padding: 0 10px 10px;
+            font-size: 0.9em;
+            color: #7f8c8d; /* Changed paragraph color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #2d3b36; /* Changed footer background color */
+            color: #f1c40f; /* Changed footer text color */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Technology Portfolio</h1>
+        <p>Innovative Solutions for Modern Challenges</p>
+    </header>
+
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project One">
+            <h3>Project One</h3>
+            <p>Web Application</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project Two">
+            <h3>Project Two</h3>
+            <p>Mobile App</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project Three">
+            <h3>Project Three</h3>
+            <p>AI Tool</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project Four">
+            <h3>Project Four</h3>
+            <p>Data Visualization</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project5.jpg" alt="Project Five">
+            <h3>Project Five</h3>
+            <p>eCommerce Solution</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project6.jpg" alt="Project Six">
+            <h3>Project Six</h3>
+            <p>Social Network</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f1f2; /* Changed background color */
+        }
+        header {
+            background-color: #444; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff; /* Kept link color white */
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #a646b4; /* Changed link background color */
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #892c8f; /* Changed hover color */
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with your image */
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f0e68c; /* Changed hero text color */
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increased shadow for more depth */
+            margin: 15px;
+            flex: 1 1 30%;
+            min-width: 280px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card h3 {
+            padding: 15px;
+            font-size: 20px;
+            text-align: center;
+            color: #2c3e50; /* Changed card title color */
+        }
+        .card p {
+            padding: 0 15px 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #777; /* Changed description text color */
+        }
+        footer {
+            background-color: #444; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Lifestyle Hub
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    Discover Your Lifestyle
+</div>
+
+<div class="container">
+    <div class="card">
+        <img src="image1.jpg" alt="Lifestyle Image 1"> <!-- Replace with your image -->
+        <h3>Travel Adventures</h3>
+        <p>Explore the world and find your dream destinations.</p>
+    </div>
+    <div class="card">
+        <img src="image2.jpg" alt="Lifestyle Image 2"> <!-- Replace with your image -->
+        <h3>Healthy Living</h3>
+        <p>Embrace a healthier lifestyle with tips and recipes.</p>
+    </div>
+    <div class="card">
+        <img src="image3.jpg" alt="Lifestyle Image 3"> <!-- Replace with your image -->
+        <h3>Fashion Trends</h3>
+        <p>Stay trendy with the latest fashion ideas.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Lifestyle Hub. All Rights Reserved.
+</footer>
+
+</body>
+</html>

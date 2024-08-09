@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed background color */
+            color: #444; /* Changed text color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #5A67D8; /* Changed header color */
+        }
+
+        .faq-item {
+            margin: 10px 0;
+            border: 1px solid #ccc; /* Changed border color */
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .faq-header {
+            background-color: #5A67D8; /* Changed header background color */
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-header:hover {
+            background-color: #4C51BF; /* Changed hover color */
+        }
+
+        .faq-content {
+            display: none;
+            padding: 15px;
+            background-color: #f0f0f0; /* Changed content background color */
+        }
+
+        .arrow {
+            transition: transform 0.2s;
+        }
+
+        .active .arrow {
+            transform: rotate(90deg);
+        }
+
+        .btn-toggle {
+            border: none;
+            background: none;
+            color: white;
+            cursor: pointer;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span>What is the process of buying a home?</span>
+                <button class="btn-toggle"><span class="arrow">â¶</span></button>
+            </div>
+            <div class="faq-content">
+                <p>The home buying process involves getting pre-approved, searching for a property, making an offer, and closing the sale.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span>How do I sell my property?</span>
+                <button class="btn-toggle"><span class="arrow">â¶</span></button>
+            </div>
+            <div class="faq-content">
+                <p>To sell your property, you need to prepare it for sale, list it with a real estate agent, and negotiate with potential buyers.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span>What are closing costs?</span>
+                <button class="btn-toggle"><span class="arrow">â¶</span></button>
+            </div>
+            <div class="faq-content">
+                <p>Closing costs include fees and expenses associated with buying or selling a property, such as loan origination fees, title insurance, and more.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-header">
+                <span>What is homeowners insurance?</span>
+                <button class="btn-toggle"><span class="arrow">â¶</span></button>
+            </div>
+            <div class="faq-content">
+                <p>Homeowners insurance provides financial protection against damages to your home and personal property, as well as liability protection.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const content = item.querySelector('.faq-content');
+                item.classList.toggle('active');
+                content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

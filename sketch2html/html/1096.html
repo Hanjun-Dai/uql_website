@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f3;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 1024px;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4A774D;
+        }
+
+        .artistic-elements {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .form-section,
+        .map-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #4A774D;
+            border-radius: 8px;
+        }
+
+        .form-section {
+            background: #e7f5e1;
+        }
+
+        .map-section {
+            background: #d0e6d8;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #4A774D;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .form-section button {
+            background-color: #4A774D;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #3d6340;
+        }
+
+        .map {
+            height: 200px; /* Example height for the map */
+            background-color: #aeecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="artistic-elements">
+            <!-- Background artistic elements can be added here -->
+            <svg width="500" height="500" style="position:absolute; top:-150px; left:-150px;">
+                <circle cx="100" cy="100" r="80" fill="#4A774D" />
+                <circle cx="400" cy="400" r="80" fill="#AEECEF" />
+                <circle cx="300" cy="100" r="80" fill="#C3D6D0" />
+            </svg>
+        </div>
+        
+        <div class="map-section">
+            <h2>Location</h2>
+            <div class="map">
+                <p>Map would be embedded here.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Send us a message</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Â© 2023 Educational Site. All rights reserved.</p>
+    </div>
+</body>
+
+</html>

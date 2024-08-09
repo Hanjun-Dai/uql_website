@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5e5;
+            color: #3a3a3a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('wood_texture.jpg'); /* Background rustic wood texture image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background for readability */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            color: #BF3C3C; /* Rusty red */
+        }
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #3a8d3b; /* Rustic green */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #2a6d2b; /* Darker green on hover */
+        }
+        .image-container {
+            margin-top: 30px;
+        }
+        .image-container img {
+            width: 200px; /* Artfully vintage image */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="rustic_game_image.png" alt="Rustic Game Art">
+        </div>
+        <h1>404</h1>
+        <p>Oops! Page not found.</p>
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+
+</body>
+</html>

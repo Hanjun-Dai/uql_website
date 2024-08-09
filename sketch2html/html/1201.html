@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Categories</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e9f3f7; /* Changed background color */
+            font-family: Arial, sans-serif;
+            color: #444; /* Slightly altered text color */
+        }
+        .header {
+            background-color: #495057; /* Changed header background color */
+            color: #f8f9fa; /* Kept the text color light */
+            padding: 20px;
+            text-align: center;
+        }
+        .category {
+            border: 1px solid #d3d3d3; /* Changed border color */
+            border-radius: 8px;
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Altered shadow effect */
+        }
+        .category img {
+            width: 100%;
+            border-bottom: 1px solid #d3d3d3; /* Changed border color */
+        }
+        .category-title {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.25em;
+            font-weight: bold;
+            background-color: #ffc107; /* Added background color to category title */
+            color: #212529; /* Changed text color */
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Entertainment Categories</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="movies.jpg" alt="Movies">
+                    <div class="category-title">Movies</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="music.jpg" alt="Music">
+                    <div class="category-title">Music</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="tvshows.jpg" alt="TV Shows">
+                    <div class="category-title">TV Shows</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="games.jpg" alt="Games">
+                    <div class="category-title">Games</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="celebrity.jpg" alt="Celebrities">
+                    <div class="category-title">Celebrities</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="category">
+                    <img src="theatre.jpg" alt="Theatre">
+                    <div class="category-title">Theatre</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

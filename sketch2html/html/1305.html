@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Sports Product Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #6b8e23;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            max-width: 1024px;
+            margin: auto;
+        }
+        .product-image {
+            flex: 1 1 40%;
+            padding: 10px;
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            border: 5px solid #8b4513;
+            border-radius: 10px;
+        }
+        .product-details {
+            flex: 1 1 50%;
+            padding: 10px;
+            background-color: #fff8dc;
+            border: 1px solid #8b4513;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .product-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .price {
+            font-size: 20px;
+            color: #d2691e;
+            margin-bottom: 15px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #8b4513;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #6b8e23;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vintage Sports Gear</h1>
+        <p>Classic Equipment for Every Athlete</p>
+    </header>
+
+    <div class="container">
+        <div class="product-details">
+            <h2 class="product-title">Classic Leather Football</h2>
+            <p class="price">$99.99</p>
+            <p>Handcrafted from premium leather for a timeless look. Perfect for collectors.</p>
+            <div class="action-buttons">
+                <button class="btn">Add to Cart</button>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product-image">
+            <img src="path/to/vintage-product.jpg" alt="Vintage Sports Equipment">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vintage Sports Gear. All rights reserved.</p>
+    </footer>
+</body>
+</html>

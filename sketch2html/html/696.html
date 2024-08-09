@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - News Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #444; /* Changed to a slightly darker shade */
+            line-height: 1.6;
+        }
+        header {
+            background: #ff5733; /* Randomly changed to a bright orange */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            background: #fff;
+            border-radius: 8px;
+        }
+        h1 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #28a745; /* Changed border color to green */
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+        .faq-top {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f0e68c; /* Randomly changed to a light khaki background */
+        }
+        .faq-top:hover {
+            background-color: #e0db62; /* Lightened the hover state */
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 15px;
+            background-color: #d0f0c0; /* Changed to a pale green for answers */
+            border-left: 3px solid #28a745; /* Border color matches the section border */
+            margin-top: 5px;
+        }
+        .icon {
+            font-size: 24px;
+            transition: transform 0.3s ease;
+        }
+        .faq-top.active .icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-section">
+        <div class="faq-top" onclick="toggleFAQ(this)">
+            <span>What is the purpose of this news website?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-top" onclick="toggleFAQ(this)">
+            <span>How do I subscribe to the newsletter?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Nullam non urna et quam maximus aliquet.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <div class="faq-top" onclick="toggleFAQ(this)">
+            <span>Can I submit an article?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Aenean suscipit arcu velit, vitae interdum eros vestibulum sit amet.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleFAQ(element) {
+        const answer = element.nextElementSibling;
+        const isActive = element.classList.toggle('active');
+        if (isActive) {
+            answer.style.display = 'block';
+        } else {
+            answer.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>

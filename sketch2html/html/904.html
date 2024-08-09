@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f0f2; /* changed the background color */
+            color: #444; /* changed font color */
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* increased shadow opacity */
+        }
+
+        .product-header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2980b9; /* changed title color */
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #c0392b; /* changed price color */
+            margin-bottom: 20px;
+        }
+
+        .product-description {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #7f8c8d; /* changed description color */
+        }
+
+        .buy-button {
+            background-color: #3498db; /* changed button color */
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #2980b9; /* changed hover color */
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 50px;
+            color: #2c3e50; /* changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product-header">
+        <h1>Product Title</h1>
+    </div>
+    <img src="product-image.jpg" alt="Product Image" class="product-image">
+    <div class="product-info">
+        <div class="product-title">Stylish Product</div>
+        <div class="product-price">$49.99</div>
+        <div class="product-description">A brief description of the stylish product.</div>
+        <a href="#" class="buy-button">Buy Now</a>
+    </div>
+    <div class="footer">
+        &copy; 2023 Your Lifestyle Website
+    </div>
+</div>
+
+</body>
+</html>

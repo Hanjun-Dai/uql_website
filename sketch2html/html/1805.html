@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .category-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-card h3 {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business Name</h1>
+    <nav>
+        <a href="#">Contact</a>
+        <a href="#">Categories</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<footer class="footer">
+    <p>&copy; 2023 Business Name. All rights reserved.</p>
+</footer>
+
+<div class="container">
+    <h2>Categories</h2>
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="category-image3.jpg" alt="Category 3">
+            <h3>Category 3</h3>
+        </div>
+        <div class="category-card">
+            <img src="category-image4.jpg" alt="Category 4">
+            <h3>Category 4</h3>
+        </div>
+        <div class="category-card">
+            <img src="category-image5.jpg" alt="Category 5">
+            <h3>Category 5</h3>
+        </div>
+        <div class="category-card">
+            <img src="category-image2.jpg" alt="Category 2">
+            <h3>Category 2</h3>
+        </div>
+        <div class="category-card">
+            <img src="category-image1.jpg" alt="Category 1">
+            <h3>Category 1</h3>
+        </div>
+        <div class="category-card">
+            <img src="category-image6.jpg" alt="Category 6">
+            <h3>Category 6</h3>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

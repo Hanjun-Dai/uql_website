@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic News</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background: #f2f2f2;
+            color: #333;
+        }
+        
+        header {
+            background: #8c6a44; /* Wood color */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            margin: 15px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 40px); /* Three columns */
+            max-width: calc(30% - 40px);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+            color: #8c6a44; /* Wood color */
+        }
+
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer {
+            background: #8c6a44;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Rustic News</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Local</a>
+            <a href="#">World</a>
+            <a href="#">Sports</a>
+            <a href="#">Entertainment</a>
+        </nav>
+    </header>
+
+    <footer>
+        <p>&copy; 2023 Rustic News | Privacy Policy</p>
+    </footer>
+
+    <div class="container">
+        <div class="card">
+            <h2>Headline 5</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+        <div class="card">
+            <h2>Headline 3</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+        <div class="card">
+            <h2>Headline 1</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+        <div class="card">
+            <h2>Headline 4</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+        <div class="card">
+            <h2>Headline 6</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+        <div class="card">
+            <h2>Headline 2</h2>
+            <p>Short summary of the news article...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

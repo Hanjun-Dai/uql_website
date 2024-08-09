@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4a4e69; /* Changed color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #f9fbdc; /* Changed color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .news-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex: 1 1 calc(33% - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .news-card .content {
+            padding: 15px;
+        }
+
+        .news-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #e85d04; /* Changed color */
+        }
+
+        .news-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4a4e69; /* Changed color */
+            color: #f9fbdc; /* Changed color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fashion News</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Latest Trends</a>
+            <a href="#">Style Tips</a>
+            <a href="#">Events</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="news-card">
+            <img src="fashion1.jpg" alt="Fashion Image 1">
+            <div class="content">
+                <h2>Trend Alert: 2023 Color Palette</h2>
+                <p>Discover the colors that are lighting up the runway this season.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="fashion2.jpg" alt="Fashion Image 2">
+            <div class="content">
+                <h2>Runway Recap: Paris Fashion Week</h2>
+                <p>A look back at the most stunning collections from PFW.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="fashion3.jpg" alt="Fashion Image 3">
+            <div class="content">
+                <h2>Celebrity Style: Who Wore It Best?</h2>
+                <p>Comparing the hottest looks from the stars of the week.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="fashion4.jpg" alt="Fashion Image 4">
+            <div class="content">
+                <h2>Eco-Friendly Fashion: Brands to Watch</h2>
+                <p>Explore sustainable brands making waves in fashion.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="fashion5.jpg" alt="Fashion Image 5">
+            <div class="content">
+                <h2>Street Style: Fall Essentials</h2>
+                <p>Must-have outfits for the autumn season.</p>
+            </div>
+        </div>
+
+        <div class="news-card">
+            <img src="fashion6.jpg" alt="Fashion Image 6">
+            <div class="content">
+                <h2>Accessorizing: The Final Touch</h2>
+                <p>Tips on how to elevate your outfit with accessories.</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Fashion News. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Real Estate Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em; /* Increased font size */
+            margin: 0;
+        }
+
+        header p {
+            font-size: 0.8em; /* Decreased font size */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 10px; /* Decreased margin */
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 1.5em; /* Increased font size */
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: calc(33% - 20px);
+            transition: transform 0.2s;
+            font-size: 1.1em; /* Slightly increased font size */
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .property-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            font-size: 0.7em; /* Decreased font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Dream Home</h1>
+    <p>Your perfect property awaits</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Properties</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="content">
+    <div class="property-card">
+        <img src="property1.jpg" alt="Property 1">
+        <h3 style="font-size: 2em;">Modern Family Home</h3> <!-- Increased font size -->
+        <p style="font-size: 1.7em;">$450,000</p> <!-- Increased font size -->
+    </div>
+    <div class="property-card">
+        <img src="property2.jpg" alt="Property 2">
+        <h3 style="font-size: 2em;">Luxury Apartment</h3> <!-- Increased font size -->
+        <p style="font-size: 1.7em;">$750,000</p> <!-- Increased font size -->
+    </div>
+    <div class="property-card">
+        <img src="property3.jpg" alt="Property 3">
+        <h3 style="font-size: 2em;">Cozy Cottage</h3> <!-- Increased font size -->
+        <p style="font-size: 1.7em;">$300,000</p> <!-- Increased font size -->
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Real Estate Company</p>
+</footer>
+
+</body>
+</html>

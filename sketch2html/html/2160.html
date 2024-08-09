@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Blog Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #ffd700; /* Changed color */
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            letter-spacing: 1px;
+            position: relative;
+        }
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background-color: #ff4500; /* Changed color */
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #ffffff; /* Keeping this color the same */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .post {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f0e68c; /* Changed color */
+            border: 2px dashed #adff2f; /* Changed color */
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.02);
+        }
+        .post h2 {
+            color: #800080; /* Changed color */
+        }
+        .post p {
+            font-size: 0.9em;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #ffd700; /* Changed color */
+            position: fixed;
+            bottom: 0;
+        }
+        footer a {
+            color: #000080; /* Changed color */
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Fun Business Blog!
+</header>
+
+<div class="container">
+    <div class="post">
+        <h2>Blog Post Title 1</h2>
+        <p>A brief glimpse into our latest updates!</p>
+    </div>
+    <div class="post">
+        <h2>Blog Post Title 2</h2>
+        <p>Discover exciting tips for your business.</p>
+    </div>
+    <div class="post">
+        <h2>Blog Post Title 3</h2>
+        <p>Join us in our latest adventure!</p>
+    </div>
+</div>
+
+<footer>
+    <a href="#">Home</a> | 
+    <a href="#">About</a> | 
+    <a href="#">Contact</a>
+</footer>
+
+</body>
+</html>

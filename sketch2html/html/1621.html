@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Blog</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        
+        nav {
+            margin: 1em 0;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .post {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .post:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            font-size: 1.6em;
+            color: #333;
+        }
+
+        .date {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .excerpt {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Archives</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <article class="post">
+        <h2>The Impact of War on Society</h2>
+        <div class="date">Published on June 5, 2023</div>
+        <div class="excerpt">Analyzing the socio-economic effects of major wars throughout history...</div>
+    </article>
+
+    <article class="post">
+        <h2>Lessons from History: What Can We Learn?</h2>
+        <div class="date">Published on July 10, 2023</div>
+        <div class="excerpt">A reflective piece on how historical events shape our understanding of the present...</div>
+    </article>
+
+    <article class="post">
+        <h2>Ancient Civilizations: A Comparative Study</h2>
+        <div class="date">Published on August 15, 2023</div>
+        <div class="excerpt">This post dives into the similarities and differences between ancient cultures...</div>
+    </article>
+
+    <article class="post">
+        <h2>The Rise and Fall of Empires</h2>
+        <div class="date">Published on September 20, 2023</div>
+        <div class="excerpt">An exploration of how various empires have risen to power and eventually fallen...</div>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2023 History Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

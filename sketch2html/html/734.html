@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Business Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+            color: #333;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .cta {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .hero {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        .hero h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .content {
+            padding: 40px;
+            text-align: center;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            width: calc(33% - 40px);
+            vertical-align: top;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elegant Designs</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <div class="card">
+        <h3>Contact Us</h3>
+        <p>Get in touch for more information.</p>
+    </div>
+    <div class="card">
+        <h3>Our Services</h3>
+        <p>Service 1 description.</p>
+    </div>
+    <div class="card">
+        <h3>Client Portfolio</h3>
+        <p>Showcase of our work.</p>
+    </div>
+</section>
+
+<section class="hero">
+    <h2>Transform Your Ideas into Reality</h2>
+    <a href="#" class="cta">Get Started</a>
+</section>
+
+<footer>
+    &copy; 2023 Elegant Designs. All Rights Reserved.
+</footer>
+
+</body>
+</html>

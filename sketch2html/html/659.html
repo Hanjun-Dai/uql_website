@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #ff6f61;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #cccccc;
+            padding-bottom: 10px;
+        }
+        .forum-header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .forum-header button {
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .forum-post {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .forum-post:last-child {
+            border-bottom: none;
+        }
+        .forum-post h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .forum-post p {
+            color: #666;
+            margin: 5px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Trends</a>
+    <a href="#">Style Tips</a>
+    <a href="#">Discussions</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="forum-post">
+        <h2>What’s trending this season?</h2>
+        <p>Share your thoughts on the latest styles.</p>
+    </div>
+    <div class="forum-post">
+        <h2>Ultimate guide to accessorizing</h2>
+        <p>How do you elevate your outfit with accessories?</p>
+    </div>
+    <div class="forum-header">
+        <h1>Latest Discussions</h1>
+        <button>New Post</button>
+    </div>
+    <div class="forum-post">
+        <h2>Favorite sustainable fashion brands?</h2>
+        <p>Let's discuss eco-friendly fashion.</p>
+    </div>
+    <div class="forum-post">
+        <h2>Best outfits for summer</h2>
+        <p>What are your go-to summer looks?</p>
+    </div>
+</div>
+
+</body>
+</html>

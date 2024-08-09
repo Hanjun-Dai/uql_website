@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            min-width: 280px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health & Wellness</h1>
+        <p>Your guide to a healthier life</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="image5.jpg" alt="Yoga & Mindfulness">
+            <h3>Yoga & Mindfulness</h3>
+            <p>Find your inner peace.</p>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Nutrition Advice">
+            <h3>Nutrition Advice</h3>
+            <p>Nutrition for every lifestyle.</p>
+        </div>
+        <div class="card">
+            <img src="image6.jpg" alt="Health News">
+            <h3>Health News</h3>
+            <p>Stay updated on the latest research.</p>
+        </div>
+        <div class="card">
+            <img src="image1.jpg" alt="Healthy Recipes">
+            <h3>Healthy Recipes</h3>
+            <p>Delicious meals for a balanced diet.</p>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Mental Health">
+            <h3>Mental Health</h3>
+            <p>Strategies for well-being.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Fitness Tips">
+            <h3>Fitness Tips</h3>
+            <p>Get fit and stay strong.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health & Wellness. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Real Estate Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f4f1e9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('rustic-wood-background.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .post {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .post img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #e8e1d4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .sidebar h3 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Real Estate Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Posts</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">1. The Best Properties for Nature Lovers</a></li>
+            <li><a href="#">2. Tips for Buying a Rustic Home</a></li>
+            <li><a href="#">3. How to Decorate with a Rustic Touch</a></li>
+        </ul>
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Cottages</a></li>
+            <li><a href="#">Farmhouses</a></li>
+            <li><a href="#">Land</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="post">
+            <h2>Historic Farmhouse for Sale</h2>
+            <img src="farmhouse.jpg" alt="Historic Farmhouse">
+            <p>This lovely farmhouse boasts original features and modern comforts.</p>
+            <a href="#" style="text-decoration: none; color: #074E60;">Read More...</a>
+        </div>
+        <div class="post">
+            <h2>Charming Cottage in the Woods</h2>
+            <img src="cottage.jpg" alt="Charming Cottage">
+            <p>Explore this beautiful rustic cottage surrounded by nature. Perfect for weekend getaways.</p>
+            <a href="#" style="text-decoration: none; color: #074E60;">Read More...</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Rustic Real Estate. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

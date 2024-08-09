@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Service Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdfdfd;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-icon {
+            font-size: 50px;
+            color: #ff5722;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            margin: 10px 0 5px 0;
+        }
+
+        .service-description {
+            font-size: 1em;
+            color: #555;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 10px;
+            background-color: #ff5722;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>News For You!</h1>
+    </header>
+
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <div class="service-title">Interactive Data</div>
+            <div class="service-description">Explore trending topics with our interactive graphics.</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📰</div>
+            <div class="service-title">Latest News</div>
+            <div class="service-description">Stay updated with real-time news!</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚨</div>
+            <div class="service-title">Breaking Alerts</div>
+            <div class="service-description">Get immediate notifications on urgent news.</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🗞️</div>
+            <div class="service-title">AI News Assistant</div>
+            <div class="service-description">Get personalized news recommendations.</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📺</div>
+            <div class="service-title">Live Coverage</div>
+            <div class="service-description">Watch live events and breaking news as it unfolds.</div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🗣️</div>
+            <div class="service-title">Opinion Corner</div>
+            <div class="service-description">Read and share your views on current issues.</div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 News For You! All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>

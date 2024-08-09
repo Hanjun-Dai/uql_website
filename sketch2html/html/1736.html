@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - TechyWorld</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff5722; /* Randomized color */
+            margin: 0;
+        }
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+        .avatar {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .name {
+            font-weight: bold;
+            color: #9c27b0; /* Randomized color */
+        }
+        .message {
+            color: #555; /* Randomized color */
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Users Say!</h1>
+</header>
+
+<div class="testimonial-container">
+    <div class="testimonial-card">
+        <img src="avatar1.png" alt="User Avatar" class="avatar">
+        <div class="name">Alice M.</div>
+        <div class="message">"TechyWorld changed my life!"</div>
+    </div>
+    <div class="testimonial-card">
+        <img src="avatar2.png" alt="User Avatar" class="avatar">
+        <div class="name">Bob L.</div>
+        <div class="message">"Incredible tech solutions!"</div>
+    </div>
+    <div class="testimonial-card">
+        <img src="avatar3.png" alt="User Avatar" class="avatar">
+        <div class="name">Cathy P.</div>
+        <div class="message">"I can't imagine my work without it!"</div>
+    </div>
+    <div class="testimonial-card">
+        <img src="avatar4.png" alt="User Avatar" class="avatar">
+        <div class="name">David S.</div>
+        <div class="message">"Simply the best tech site!"</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .main-content {
+            flex: 3;
+            background: #fff;
+            padding: 20px;
+            margin-right: 10px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .article p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gaming News</h1>
+        <nav>
+            <a href="#">Community</a>
+            <a href="#">Events</a>
+            <a href="#">Latest</a>
+            <a href="#">Reviews</a>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Event 1 - Date</li>
+                <li>Event 2 - Date</li>
+                <li>Event 3 - Date</li>
+            </ul>
+
+            <h2>Latest Reviews</h2>
+            <ul>
+                <li><a href="#">Game Title 5</a></li>
+                <li><a href="#">Game Title 2</a></li>
+                <li><a href="#">Game Title 1</a></li>
+                <li><a href="#">Game Title 4</a></li>
+                <li><a href="#">Game Title 3</a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="article">
+                <img src="image3.jpg" alt="Game News 3">
+                <h2>Esports Tournament Highlights</h2>
+                <p>Catch up on all the big moments from the live tournament!</p>
+            </div>
+
+            <div class="article">
+                <img src="image1.jpg" alt="Game News 1">
+                <h2>Exciting Game Release Coming Soon!</h2>
+                <p>Check out the latest release coming to your platform!</p>
+            </div>
+
+            <div class="article">
+                <img src="image2.jpg" alt="Game News 2">
+                <h2>New Update for Popular Game!</h2>
+                <p>The latest update introduces new features and fixes!</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Gaming News. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

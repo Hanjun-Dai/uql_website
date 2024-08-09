@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        header {
+            background-color: #1ABC9C; /* Changed header background color */
+            color: #fff; /* Keep text color white */
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .nav-link {
+            color: #ecf0f1; /* Changed nav link color */
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Slight change in shadow */
+        }
+        .properties {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .property-card {
+            background-color: #fefefe; /* Slightly brighter card background */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Changed shadow opacity */
+        }
+        .property-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .property-details {
+            padding: 15px;
+        }
+        .property-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #3498db; /* Changed property title color */
+        }
+        .footer {
+            background-color: #34495e; /* Changed footer background color */
+            color: #ecf0f1; /* Changed footer text color */
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bold Real Estate</h1>
+    <nav>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">Properties</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Dream Home Awaits</h2>
+</section>
+
+<main class="properties">
+    <div class="property-card">
+        <img src="property1.jpg" alt="Property 1">
+        <div class="property-details">
+            <h3 class="property-title">Luxury Villa</h3>
+            <p>$1,500,000</p>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="property2.jpg" alt="Property 2">
+        <div class="property-details">
+            <h3 class="property-title">Modern Apartment</h3>
+            <p>$850,000</p>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="property3.jpg" alt="Property 3">
+        <div class="property-details">
+            <h3 class="property-title">Cozy Cottage</h3>
+            <p>$450,000</p>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="property4.jpg" alt="Property 4">
+        <div class="property-details">
+            <h3 class="property-title">Beach House</h3>
+            <p>$2,200,000</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2023 Bold Real Estate. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

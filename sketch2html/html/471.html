@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1E1E1E;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            background-color: #2C2C2C;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #FF4081;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px auto;
+        }
+        input, textarea {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        input[type="text"], input[type="email"] {
+            background-color: #3C3C3C;
+            color: #FFFFFF;
+        }
+        textarea {
+            background-color: #3C3C3C;
+            color: #FFFFFF;
+            resize: vertical;
+        }
+        button {
+            background-color: #FF4081;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #D5006D;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">ð</a>
+        <a href="https://twitter.com" target="_blank">ð¦</a>
+        <a href="https://instagram.com" target="_blank">ð¸</a>
+        <a href="https://youtube.com" target="_blank">ð¥</a>
+    </div>
+
+    <h1>Get in Touch!</h1>
+    <p>We'd love to hear from you. Connect with us!</p>
+
+    <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>

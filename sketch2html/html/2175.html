@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #4a4a4a;
+            color: #fff;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            background-color: #e2e2e2;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            flex-basis: 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4a4a4a;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Art Services</h1>
+        <nav>
+            <a href="#consultations">Consultations</a>
+            <a href="#workshops">Workshops</a>
+            <a href="#exhibitions">Exhibitions</a>
+        </nav>
+    </header>
+
+    <footer>
+        &copy; 2023 Arts Website - All Rights Reserved
+    </footer>
+
+    <div class="container">
+        <section id="workshops" class="services">
+            <div class="service">
+                <h2>Consultations</h2>
+                <p>Get professional advice on art techniques and styles.</p>
+            </div>
+            <div class="service">
+                <h2>Art Workshops</h2>
+                <p>Explore your creativity with our expert-led workshops.</p>
+            </div>
+            <div class="service">
+                <h2>Exhibitions</h2>
+                <p>Showcase your work or enjoy local artists in our exhibitions.</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

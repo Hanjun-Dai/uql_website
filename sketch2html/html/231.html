@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            height: 200px;
+            color: white;
+            text-align: center;
+            padding-top: 70px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            margin-left: 20px;
+        }
+        .featured-article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .featured-article img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .sidebar h3 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            clear: both;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Forward</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Trends</a>
+        <a href="#">Style Tips</a>
+        <a href="#">Lookbooks</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <!-- Placeholder for additional articles -->
+        <div style="background-color: #fff; padding: 20px; border-radius: 5px; margin-bottom: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+            <h2>Additional Article Placeholder</h2>
+            <p>This section can include additional articles or information.</p>
+        </div>
+        
+        <div class="featured-article">
+            <img src="featured-fashion.jpg" alt="Featured Fashion Article">
+            <h2>Spring 2024 Trends</h2>
+            <p>Explore the latest colors, styles, and accessories that will dominate the fashion scene this spring.</p>
+            <a href="#" style="text-decoration: none; color: blue;">Read More</a>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">5 Must-Have Accessories This Season</a></li>
+            <li><a href="#">Dressing for Success: Office Fashion Tips</a></li>
+            <li><a href="#">How to Style a Statement Piece</a></li>
+        </ul>
+        
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Street Style</a></li>
+            <li><a href="#">Runway</a></li>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Fashion Forward | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

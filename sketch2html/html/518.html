@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Category Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        header {
+            background-color: #444;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .art-item {
+            position: relative;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .art-item img {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            transition: transform 0.2s;
+        }
+
+        .art-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .art-info {
+            padding: 15px;
+        }
+
+        .art-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: #333;
+        }
+
+        .art-artist {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .art-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Art Gallery</h1>
+    <p>Discover the beauty of art</p>
+</header>
+
+<div class="container">
+    <div class="art-item">
+        <img src="art4.jpg" alt="Art 4">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 4</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+    <div class="art-item">
+        <img src="art2.jpg" alt="Art 2">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 2</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+    <div class="art-item">
+        <img src="art5.jpg" alt="Art 5">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 5</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+    <div class="art-item">
+        <img src="art3.jpg" alt="Art 3">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 3</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+    <div class="art-item">
+        <img src="art1.jpg" alt="Art 1">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 1</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+    <div class="art-item">
+        <img src="art6.jpg" alt="Art 6">
+        <div class="art-info">
+            <p class="art-title">Artwork Title 6</p>
+            <p class="art-artist">Artist Name</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

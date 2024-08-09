@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Sports Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004080;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+        .main {
+            width: 75%;
+            padding: 20px;
+        }
+        .card {
+            background: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corporate Sports</h1>
+    <p>Your source for all sports news and updates</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#">Statistics</a></li>
+            <li><a href="#">Ticket Sales</a></li>
+            <li><a href="#">Latest Scores</a></li>
+            <li><a href="#">Standings</a></li>
+        </ul>
+    </aside>
+    
+    <main class="main">
+        <h2>Featured Articles</h2>
+        <div class="card">
+            <h3>Article Title 3</h3>
+            <p>Brief description of the article.</p>
+        </div>
+        <div class="card">
+            <h3>Article Title 1</h3>
+            <p>Brief description of the article.</p>
+        </div>
+        <div class="card">
+            <h3>Article Title 2</h3>
+            <p>Brief description of the article.</p>
+        </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Corporate Sports. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

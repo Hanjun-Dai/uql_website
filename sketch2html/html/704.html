@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel FAQs</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9f5ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center; /* replace with an actual URL */
+            background-size: cover;
+            text-align: center;
+            padding: 40px;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .faq-container {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2em;
+            position: relative;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+        .question:hover {
+            color: #007BFF;
+        }
+        .arrow {
+            position: absolute;
+            right: 0;
+            transform: rotate(90deg);
+            transition: transform 0.3s;
+        }
+        .expanded .arrow {
+            transform: rotate(-90deg);
+        }
+        @media (max-width: 768px) {
+            .faq-container {
+                width: 95%;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel FAQs</h1>
+    </header>
+
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                "Do you offer group discounts?"
+                <span class="arrow">â</span>
+            </div>
+            <div class="answer">
+                "Yes, group discounts are available for 10 or more people."
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                "Is travel insurance recommended?"
+                <span class="arrow">â</span>
+            </div>
+            <div class="answer">
+                "Yes, we highly recommend travel insurance for any unforeseen events."
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                "How do I change my booking?"
+                <span class="arrow">â</span>
+            </div>
+            <div class="answer">
+                "Changes can be made via your user account or by contacting customer service."
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                "What is your cancellation policy?"
+                <span class="arrow">â</span>
+            </div>
+            <div class="answer">
+                "You can cancel your booking up to 24 hours before your scheduled departure for a full refund."
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answer = questionElement.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+            questionElement.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

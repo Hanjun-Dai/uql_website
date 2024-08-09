@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4e4e4; /* Changed background color */
+        }
+        header {
+            background-color: #444; /* Changed header background color */
+            color: #f1f1f1; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #f1f1f1; /* Changed link color */
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #6c6c6c; /* Changed hover color */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .blog-post {
+            background: #fffaf0; /* Changed blog post background color */
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+        }
+        .blog-post h2 {
+            color: #5b5b5b; /* Changed blog post heading color */
+        }
+        .sidebar {
+            float: right;
+            width: 30%;
+            background: #f9f9f9; /* Changed sidebar background color */
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .main-content {
+            float: left;
+            width: 65%;
+        }
+        footer {
+            clear: both;
+            background-color: #444; /* Changed footer background color */
+            color: #f1f1f1; /* Changed footer text color */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech Insights</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">Reviews</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <h1>Latest Technology Trends</h1>
+    </div>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="blog-post">
+                <h2>Understanding AI in Modern Tech</h2>
+                <p>Explore the impact of artificial intelligence on various industries.</p>
+                <button>Read More</button>
+            </div>
+            <div class="blog-post">
+                <h2>The Rise of Quantum Computing</h2>
+                <p>Unraveling the future of computing technologies.</p>
+                <button>Read More</button>
+            </div>
+            <div class="blog-post">
+                <h2>5G: Revolutionizing Connectivity</h2>
+                <p>Discover how 5G is shaping the future of mobile communications.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Latest Updates</h3>
+            <ul>
+                <li>New Smartphone Launches</li>
+                <li>Upcoming Tech Conferences</li>
+                <li>Innovative Startups to Watch</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tech Insights. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

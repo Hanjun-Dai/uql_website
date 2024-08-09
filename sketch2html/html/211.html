@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #0056b3;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            padding: 20px;
+        }
+
+        section {
+            flex: 1;
+            margin-right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        aside {
+            flex: 3;
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .thread {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .thread:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Tips</a>
+    <a href="#">Destinations</a>
+</nav>
+
+<main>
+    <aside>
+        <h2>Popular Topics</h2>
+        <ul>
+            <li><a href="#">Culinary Experiences</a></li>
+            <li><a href="#">Adventure Travel</a></li>
+            <li><a href="#">Travel Gear</a></li>
+            <li><a href="#">Travel Safety</a></li>
+            <li><a href="#">Cultural Insights</a></li>
+        </ul>
+    </aside>
+
+    <section>
+        <h2>Recent Threads</h2>
+        <div class="thread">
+            <h3><a href="#">Solo travel experiences</a></h3>
+            <p>Started by User101 - 7 replies</p>
+        </div>
+        <div class="thread">
+            <h3><a href="#">Best places to visit in Europe</a></h3>
+            <p>Started by User123 - 5 replies</p>
+        </div>
+        <div class="thread">
+            <h3><a href="#">Family-friendly destinations</a></h3>
+            <p>Started by User112 - 2 replies</p>
+        </div>
+        <div class="thread">
+            <h3><a href="#">Top 10 beaches in the world</a></h3>
+            <p>Started by User789 - 4 replies</p>
+        </div>
+        <div class="thread">
+            <h3><a href="#">Traveling on a budget</a></h3>
+            <p>Started by User456 - 3 replies</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Travel Forum. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

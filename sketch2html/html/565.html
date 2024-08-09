@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4A90E2;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .service-card h3 {
+            padding: 20px 0;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .service-card p {
+            padding: 0 20px 20px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History Services</h1>
+</header>
+
+<div class="services">
+    <div class="service-card">
+        <img src="service1.jpg" alt="Research Services">
+        <h3>Research Services</h3>
+        <p>In-depth historical research conducted by experts.</p>
+    </div>
+    <div class="service-card">
+        <img src="service3.jpg" alt="Workshops">
+        <h3>Workshops &amp; Lectures</h3>
+        <p>Interactive workshops and engaging lectures.</p>
+    </div>
+    <div class="service-card">
+        <img src="service2.jpg" alt="Consultation">
+        <h3>Consultation</h3>
+        <p>Personalized consultations to guide your historical inquiries.</p>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Your Gateway to the Past</h1>
+</div>
+
+<footer>
+    <p>&copy; 2023 History Services. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

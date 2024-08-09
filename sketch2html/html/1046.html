@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Food Heaven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            max-width: 1024px;
+            padding: 2rem 0;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+            padding: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .testimonial-image {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 2rem;
+        }
+
+        .testimonial-content {
+            flex: 1;
+        }
+
+        .author {
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .testimonial-card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .testimonial-image {
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Customers Say</h1>
+</header>
+
+<div class="container">
+
+    <div class="testimonial-card">
+        <img src="customer2.jpg" alt="Customer 2" class="testimonial-image">
+        <div class="testimonial-content">
+            <p>"Amazing service and delicious meals. I can't get enough!"</p>
+            <p class="author">- Jane Smith</p>
+        </div>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="customer1.jpg" alt="Customer 1" class="testimonial-image">
+        <div class="testimonial-content">
+            <p>"The best food experience I've ever had! The flavors are out of this world."</p>
+            <p class="author">- John Doe</p>
+        </div>
+    </div>
+
+    <div class="testimonial-card">
+        <img src="customer3.jpg" alt="Customer 3" class="testimonial-image">
+        <div class="testimonial-content">
+            <p>"A culinary delight! Each dish is a masterpiece."</p>
+            <p class="author">- Olivia Brown</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Â© 2023 Food Heaven. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

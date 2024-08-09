@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ff5733; /* changed color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffd700; /* changed color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://via.placeholder.com/1024x300.png?text=Sports+Hero+Image');
+            height: 300px;
+            background-size: cover;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            color: #00ff7f; /* changed color */
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .card {
+            flex: 1;
+            margin: 0 10px;
+            background-color: #28a745; /* changed color */
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #555; /* changed color */
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sports Central</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Sports News</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Sports Central</h2>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h3>Latest News</h3>
+            <p>Get the latest sports news here.</p>
+        </div>
+        <div class="card">
+            <h3>Live Scores</h3>
+            <p>Check live scores of your favorite teams.</p>
+        </div>
+        <div class="card">
+            <h3>Highlights</h3>
+            <p>Watch the latest highlights from games.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Sports Central. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

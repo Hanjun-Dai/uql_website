@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Haven</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            width: 100%;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+        }
+
+        .hero {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://source.unsplash.com/1600x900/?art');
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .card-content p {
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 20px 0;
+            text-align: center;
+            color: #777;
+            background: #f1f1f1;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Artistic Haven
+    </header>
+
+    <section class="grid-container">
+        <div class="card">
+            <img src="https://source.unsplash.com/300x201/?sculpture" alt="Artwork 2">
+            <div class="card-content">
+                <h3>Sculpture</h3>
+                <p>Experience the beauty of 3D art forms.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x203/?digital-art" alt="Artwork 4">
+            <div class="card-content">
+                <h3>Digital Art</h3>
+                <p>Dive into the world of digital creativity.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x202/?photography" alt="Artwork 3">
+            <div class="card-content">
+                <h3>Photography</h3>
+                <p>Explore stunning photographic works.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?painting" alt="Artwork 1">
+            <div class="card-content">
+                <h3>Painting</h3>
+                <p>Discover breathtaking paintings that inspire.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero">
+        <h1>Explore Artistic Expressions</h1>
+    </div>
+
+    <footer>
+        &copy; 2023 Artistic Haven. All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>

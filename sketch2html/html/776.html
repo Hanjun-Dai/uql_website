@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initialScale=1.0">
+    <title>Games News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #101820; /* untouched */
+            color: #ffffff; /* untouched */
+        }
+        header {
+            background-color: #E67E22; /* changed */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px #444; /* changed */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #34495E; /* changed */
+            border: 1px solid #E74C3C; /* changed */
+            border-radius: 8px;
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05); /* untouched */
+        }
+        .card img {
+            width: 100%;
+            border-bottom: 1px solid #E74C3C; /* changed */
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h2 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #F39C12; /* changed */
+        }
+        .card-content p {
+            margin: 0;
+            font-size: 14px;
+            color: #BDC3C7; /* untouched */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495E; /* changed */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Games News</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="game1.jpg" alt="Game 1">
+        <div class="card-content">
+            <h2>New Adventure Awaits</h2>
+            <p>Discover the latest in gaming.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="game2.jpg" alt="Game 2">
+        <div class="card-content">
+            <h2>Battle Royale Season 3</h2>
+            <p>Get ready for epic battles.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="game3.jpg" alt="Game 3">
+        <div class="card-content">
+            <h2>Fantasy World Unleashed</h2>
+            <p>Enter the realm of magic.</p>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="game4.jpg" alt="Game 4">
+        <div class="card-content">
+            <h2>Racing Into 2023</h2>
+            <p>Speed and adrenaline awaits.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 GamesNews. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

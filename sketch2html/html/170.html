@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #eaeaea; /* Changed background color */
+            color: #444; /* Changed text color */
+        }
+        header {
+            background: #333; /* Changed header background */
+            color: #fffcf9; /* Changed header text color */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #ffffff; /* Changed nav background */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #0056b3; /* Changed link color */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .main-content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .forum-post {
+            background: #fff;
+            border: 1px solid #ccc; /* Changed border color */
+            border-radius: 5px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .forum-post img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .forum-post h2 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #ff5733; /* Changed heading color */
+        }
+        .forum-post p {
+            margin: 5px 0;
+            color: #555; /* Changed paragraph color */
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            border: 1px solid #bbb; /* Changed sidebar border color */
+            border-radius: 5px;
+            padding: 20px;
+            position: relative;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            color: #007bff; /* Changed sidebar heading color */
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333; /* Changed footer background */
+            color: #fffcf9; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Music</a>
+    <a href="#">Games</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <div class="forum-post">
+            <img src="https://via.placeholder.com/60" alt="Avatar">
+            <div>
+                <h2>The Next Blockbuster: What are you watching?</h2>
+                <p>Posted by <strong>User123</strong> - 4 comments</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="forum-post">
+            <img src="https://via.placeholder.com/60" alt="Avatar">
+            <div>
+                <h2>TV Series You Can't Miss!</h2>
+                <p>Posted by <strong>User456</strong> - 10 comments</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="forum-post">
+            <img src="https://via.placeholder.com/60" alt="Avatar">
+            <div>
+                <h2>Are 90s Cartoons Making a Comeback?</h2>
+                <p>Posted by <strong>User789</strong> - 8 comments</p>
+            </div>
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Popular Topics</h3>
+        <ul>
+            <li><a href="#">Marvel Movies</a></li>
+            <li><a href="#">Latest Album Releases</a></li>
+            <li><a href="#">Gaming News</a></li>
+            <li><a href="#">Upcoming Shows</a></li>
+            <li><a href="#">Iconic Movie Lines</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Forum | All rights reserved</p>
+</footer>
+
+</body>
+</html>

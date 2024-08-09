@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Politics Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a4a4a; /* Changed heading color */
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            border-top: 1px solid #ddd;
+            padding: 15px 0;
+        }
+
+        .faq-item:first-child {
+            border-top: none;
+        }
+
+        .question {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #c0392b; /* Changed question color */
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #777; /* Changed answer color */
+            line-height: 1.5;
+        }
+
+        .faq-item:hover .question {
+            color: #e67e22; /* Changed hover effect color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What is the mission of our organization?</div>
+            <div class="answer">We aim to promote transparency and engagement in political processes.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I get involved?</div>
+            <div class="answer">Join us through our volunteer programs or attend our events.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Where can I find more resources?</div>
+            <div class="answer">Visit our Resources page for research papers, articles, and guides.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How do I contact support?</div>
+            <div class="answer">You can reach out via our Contact Us page or email us directly.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Are there upcoming events?</div>
+            <div class="answer">Yes, check our Events calendar for the latest updates.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

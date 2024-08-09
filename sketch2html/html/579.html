@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-card {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            flex: 1 1 calc(30% - 30px);
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-card h3 {
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parenting News</h1>
+        <p>Your daily source for parenting tips and news</p>
+    </header>
+    
+    <div class="container">
+        <div class="news-card">
+            <h3>Managing Screen Time</h3>
+            <p>Guidelines for setting healthy limits.</p>
+        </div>
+        <div class="news-card">
+            <h3>Preparing for School</h3>
+            <p>Essential tips for a smooth transition.</p>
+        </div>
+        <div class="news-card">
+            <h3>Healthy Eating for Kids</h3>
+            <p>Strategies for making nutritious meals fun.</p>
+        </div>
+        <div class="news-card">
+            <h3>Fun Family Activities</h3>
+            <p>Ideas for bonding with your kids at home.</p>
+        </div>
+        <div class="news-card">
+            <h3>Parenting Workshops</h3>
+            <p>Find local workshops to support your journey.</p>
+        </div>
+        <div class="news-card">
+            <h3>Tips for New Parents</h3>
+            <p>Quick tips to help you navigate the first year.</p>
+        </div>
+    </div>
+    
+    <footer>
+        &copy; 2023 Parenting Website. All rights reserved.
+    </footer>
+</body>
+</html>

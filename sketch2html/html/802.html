@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tech Corp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container {
+            flex: 1;
+            margin-left: 20px; /* Adjusted margin to match new layout */
+        }
+        .form-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .info-container {
+            flex: 1;
+            margin-right: 20px; /* Adjusted margin to match new layout */
+        }
+        .info-container h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .info-container p {
+            margin: 10px 0;
+        }
+        .map {
+            margin-top: 10px;
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            border: 1px solid #ccc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Tech Corp</h1>
+    </header>
+
+    <div class="container">
+        <div class="info-container">
+            <h2>Our Office</h2>
+            <p><strong>Address:</strong> 123 Technology Lane, Tech City, TC 12345</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@techcorp.com</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345095147!2d144.95373531531876!3d-37.81627997975131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0e5f77ff%3A0x5045675218cd8b0!2sTech%20Corp!5e0!3m2!1sen!2sau!4v1633840074576!5m2!1sen!2sau" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tech Corp. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

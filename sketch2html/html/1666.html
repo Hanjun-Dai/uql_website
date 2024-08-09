@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e8eaf6; /* Changed to a light violet */
+        }
+
+        header {
+            background: #FF5733; /* Changed to a peach color */
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #2E7D32; /* Changed to a dark green */
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        main {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            width: 25%;
+            padding: 20px;
+            border-right: 1px solid #bbb; /* Darker border */
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .topic-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .topic-item {
+            padding: 10px;
+            border-bottom: 1px solid #bbbbbb; /* Slightly darker border */
+            transition: background 0.3s;
+        }
+
+        .topic-item:hover {
+            background: #d1c4e9; /* Changed hover color to lavender */
+        }
+
+        .footer {
+            background: #FF5733; /* Changed to match header */
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        a {
+            color: #FFEB3B; /* Changed link color to a bright yellow */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>News Forum</h1>
+        <p>Your space for discussion</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">World News</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Latest Topics</h2>
+            <ul class="topic-list">
+                <li class="topic-item">Discussion on Economic Policies</li>
+                <li class="topic-item">Technology Revolution in 2023</li>
+                <li class="topic-item">Health Trends of 2023</li>
+                <li class="topic-item">Impact of Sports on Mental Health</li>
+                <li class="topic-item">Global Politics: A 2023 Review</li>
+            </ul>
+            <button type="button" style="padding: 10px 20px; margin-top: 20px; cursor: pointer; background-color: #03A9F4; color: #ffffff;">Start New Topic</button> <!-- Changed button background -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Â© 2023 News Forum. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Sports Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007BFF;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .testimonial {
+            border: 2px solid #007BFF;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: scale(1.02);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial h3 {
+            margin: 10px 0 0;
+            color: #007BFF;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What Our Athletes Say</h1>
+        <div class="testimonials-grid">
+            <div class="testimonial">
+                <p>"I love the community support and tips shared here!"</p>
+                <h3>- Jamie T.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Professional and friendly service, highly recommend it!"</p>
+                <h3>- Casey W.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"An incredible resource for any athlete at any level!"</p>
+                <h3>- Morgan L.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"This website transformed my training routine. It's a game changer!"</p>
+                <h3>- Alex R.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"Their programs are designed perfectly for peak performance!"</p>
+                <h3>- Jordan K.</h3>
+            </div>
+            <div class="testimonial">
+                <p>"The coaching advice helped me win my last competition!"</p>
+                <h3>- Taylor J.</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 48px;
+            color: #333;
+        }
+        .service-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .service-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #0288D1;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .service-button:hover {
+            background: #0277BD;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive Services</h1>
+    </header>
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <div class="service-title">Battery Services</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔩</div>
+                <div class="service-title">Tire Rotation</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <div class="service-title">Oil Change</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <div class="service-title">Engine Repair</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <div class="service-title">Brake Inspection</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <div class="service-title">Transmission Service</div>
+                <a href="#" class="service-button">Learn More</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Automotive Service Center
+    </footer>
+</body>
+</html>

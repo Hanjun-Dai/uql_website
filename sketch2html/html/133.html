@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Today</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        #homepage {
+            display: flex;
+            justify-content: space-between;
+        }
+        #sidebar {
+            flex: 25%;
+            margin-left: 10px;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        #main-content {
+            flex: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .news-item {
+            padding: 15px;
+            margin-top: 10px;
+            background: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            margin-top: 20px;
+        }
+        .social {
+            margin: 10px 0;
+        }
+        .social a {
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Politics Today</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#analysis">Analysis</a>
+        <a href="#contact">Contact</a>
+        <a href="#news">News</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div id="homepage">
+        <aside id="sidebar">
+            <h2>Trending Topics</h2>
+            <ul>
+                <li><a href="#">Foreign Affairs</a></li>
+                <li><a href="#">Healthcare Reform</a></li>
+                <li><a href="#">Economic Policy</a></li>
+                <li><a href="#">Climate Change</a></li>
+            </ul>
+
+            <div class="social">
+                <h2>Connect with Us</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+        </aside>
+
+        <div id="main-content">
+            <h2>Latest News</h2>
+            <div class="news-item">
+                <h3>International Relations Update</h3>
+                <p>Recent talks between world leaders.</p>
+            </div>
+            <div class="news-item">
+                <h3>Election Results Announced</h3>
+                <p>Major updates in the latest election.</p>
+            </div>
+            <div class="news-item">
+                <h3>Policy Changes Ahead</h3>
+                <p>Government's new policy initiatives discussed.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Politics Today. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

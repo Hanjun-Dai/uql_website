@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Changed background color */
+        }
+        header {
+            background-color: #28a745; /* Changed header background color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444; /* Changed nav background color */
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffc107; /* Changed nav link color */
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #575757; /* Kept the hover color */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: #ffffff; /* Kept main content background color */
+            border-radius: 8px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #f8f9fa; /* Changed sidebar background color */
+            border-radius: 8px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #17a2b8; /* Changed article title color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #222; /* Changed footer background color */
+            color: #f1f1f1; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health News Today</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#latest">Latest News</a>
+    <a href="#categories">Categories</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <div class="article">
+            <h2>Breaking: New Study on Nutrition</h2>
+            <p>Researchers have discovered...</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="article">
+            <h2>Health Benefits of Regular Exercise</h2>
+            <p>Regular physical activity helps...</p>
+            <a href="#">Read more</a>
+        </div>
+        <div class="article">
+            <h2>Understanding Mental Health</h2>
+            <p>Mental health awareness is crucial...</p>
+            <a href="#">Read more</a>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Popular Topics</h3>
+        <ul>
+            <li><a href="#">Nutrition</a></li>
+            <li><a href="#">Fitness</a></li>
+            <li><a href="#">Mental Health</a></li>
+            <li><a href="#">Wellness</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Health News Today. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

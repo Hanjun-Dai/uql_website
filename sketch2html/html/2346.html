@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .post-title {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .post-meta {
+            color: #777;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gaming Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Games</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Newsletter</h2>
+        <form>
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <h2>Popular Tags</h2>
+        <ul>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">MMORPG</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Indie Games</a></li>
+            <li><a href="#">FPS</a></li>
+        </ul>
+    </aside>
+    
+    <div class="main-content">
+        <div class="post">
+            <h2 class="post-title">Top 10 Games of the Year</h2>
+            <p class="post-meta">Posted on March 15, 2023 by Author Name</p>
+            <p>Find out which games made the top list and why you should play them.</p>
+        </div>
+        <div class="post">
+            <h2 class="post-title">The Exciting World of Gaming</h2>
+            <p class="post-meta">Posted on April 1, 2023 by Author Name</p>
+            <p>Discover the latest trends in gaming and explore the stories behind your favorite games.</p>
+        </div>
+        <div class="post">
+            <h2 class="post-title">Gaming Events You Shouldn't Miss</h2>
+            <p class="post-meta">Posted on March 1, 2023 by Author Name</p>
+            <p>Get ready for upcoming gaming events and fan conventions.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Gaming Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: calc(33.333% - 30px);
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .card-content h2 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .card-content a {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .card-content a:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 30px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Category</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="images/basketball.jpg" alt="Basketball">
+        <div class="card-content">
+            <h2>Basketball</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/rugby.jpg" alt="Rugby">
+        <div class="card-content">
+            <h2>Rugby</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/soccer.jpg" alt="Soccer">
+        <div class="card-content">
+            <h2>Soccer</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/cricket.jpg" alt="Cricket">
+        <div class="card-content">
+            <h2>Cricket</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/tennis.jpg" alt="Tennis">
+        <div class="card-content">
+            <h2>Tennis</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/swimming.jpg" alt="Swimming">
+        <div class="card-content">
+            <h2>Swimming</h2>
+            <a href="#">View More</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

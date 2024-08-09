@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources | Education Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #004d7a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .resource-card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .resource-card h3 {
+            margin: 15px 0;
+        }
+
+        .resource-card a {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            background: #004d7a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .resource-card a:hover {
+            background: #003b5c;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #004d7a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <p>&copy; 2023 Education Website. All rights reserved.</p>
+    </footer>
+
+    <header>
+        <h1>Educational Resources</h1>
+        <p>Explore a collection of resources designed to enhance your learning.</p>
+    </header>
+
+    <main>
+        <div class="resource-card">
+            <img src="resource2.jpg" alt="Resource 2">
+            <h3>Resource Title 2</h3>
+            <p>Short description of the resource goes here.</p>
+            <a href="#">View Resource</a>
+        </div>
+
+        <div class="resource-card">
+            <img src="resource1.jpg" alt="Resource 1">
+            <h3>Resource Title 1</h3>
+            <p>Short description of the resource goes here.</p>
+            <a href="#">View Resource</a>
+        </div>
+
+        <div class="resource-card">
+            <img src="resource3.jpg" alt="Resource 3">
+            <h3>Resource Title 3</h3>
+            <p>Short description of the resource goes here.</p>
+            <a href="#">View Resource</a>
+        </div>
+
+        <div class="resource-card">
+            <img src="resource4.jpg" alt="Resource 4">
+            <h3>Resource Title 4</h3>
+            <p>Short description of the resource goes here.</p>
+            <a href="#">View Resource</a>
+        </div>
+        
+        <!-- Add more cards as needed -->
+    </main>
+
+</body>
+
+</html>

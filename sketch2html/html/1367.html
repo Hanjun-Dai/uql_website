@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #3E8EDE;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .category {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .category h3 {
+            margin-top: 0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Categories</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#resources">Resources</a>
+    <a href="#courses">Courses</a>
+</nav>
+
+<div class="container">
+    <div class="categories">
+        <div class="category">
+            <h3>Technology</h3>
+            <p>Stay updated with the latest in tech.</p>
+        </div>
+        <div class="category">
+            <h3>Science</h3>
+            <p>Dive into Biology, Chemistry, and Physics topics.</p>
+        </div>
+        <div class="category">
+            <h3>Art</h3>
+            <p>Discover courses in visual and performing arts.</p>
+        </div>
+        <div class="category">
+            <h3>Mathematics</h3>
+            <p>Explore our wide range of Math courses.</p>
+        </div>
+        <div class="category">
+            <h3>History</h3>
+            <p>Learn about ancient and modern civilizations.</p>
+        </div>
+        <div class="category">
+            <h3>Literature</h3>
+            <p>Enhance your knowledge in global literature.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Education Website</p>
+</footer>
+
+</body>
+</html>

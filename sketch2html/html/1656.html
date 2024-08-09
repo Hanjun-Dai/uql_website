@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #030303;
+            color: #f3f3f3;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .service-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-icon {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Game Services</h1>
+    </header>
+    
+    <div class="container">
+        <div class="service-card">
+            <div class="service-icon">🎮</div>
+            <h2>Art Design</h2>
+            <p>Artistry that enhances gameplay.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h2>Game Development</h2>
+            <p>Crafting unique game experiences.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔧</div>
+            <h2>Tech Support</h2>
+            <p>Solutions for gamers in need.</p>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h2>Game Marketing</h2>
+            <p>Bringing your game to the world.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 GameWorld Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

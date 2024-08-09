@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service-card {
+            background: #e7e7e7;
+            border-radius: 8px;
+            width: calc(33% - 20px);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+
+        .service-card h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .service-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #4A90E2;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Artistic Services</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="service-card">
+            <h2>Consulting</h2>
+            <p>Expert advice for artists and galleries.</p>
+        </div>
+        <div class="service-card">
+            <h2>Community Events</h2>
+            <p>Join us for art meet-ups and networking.</p>
+        </div>
+        <div class="service-card">
+            <h2>Art Classes</h2>
+            <p>Learn from experienced artists.</p>
+        </div>
+        <div class="service-card">
+            <h2>Exhibitions</h2>
+            <p>Showcasing diverse art forms and talents.</p>
+        </div>
+        <div class="service-card">
+            <h2>Custom Commissions</h2>
+            <p>Create your unique piece of art.</p>
+        </div>
+        <div class="service-card">
+            <h2>Workshops</h2>
+            <p>Interactive sessions to unleash creativity.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Arts Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

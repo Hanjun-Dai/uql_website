@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0ffff; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffa07a; /* Changed header background color */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #4b2e12; /* Changed header text color */
+            text-shadow: 1px 1px 2px #d2b000; /* Changed text shadow color */
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            color: #8b4513; /* Changed nav link color */
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d2691e; /* Changed hover color */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .news-item {
+            background-color: #fff;
+            border: 2px solid #8b4513; /* Changed border color */
+            border-radius: 10px;
+            width: 90%;
+            margin: 20px 0;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Changed box shadow */
+            transition: transform 0.3s;
+        }
+        .news-item:hover {
+            transform: translateY(-5px);
+        }
+        .news-title {
+            font-size: 24px;
+            color: #8b4513; /* Changed news title color */
+        }
+        .news-date {
+            font-size: 14px;
+            color: #b22222; /* Changed news date color */
+        }
+        .news-content {
+            color: #444; /* Changed news content color */
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            text-align: center;
+            background-color: #ffa07a; /* Changed footer background color */
+            color: #4b2e12; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Archives</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="news-item">
+        <div class="news-title">Amazing Discovery of Ancient Artifacts!</div>
+        <div class="news-date">October 1, 2023</div>
+        <div class="news-content">Exciting findings from a recent archaeological dig reveal forgotten treasures of the past.</div>
+    </div>
+
+    <div class="news-item">
+        <div class="news-title">The Mystery of the Lost Civilization</div>
+        <div class="news-date">September 25, 2023</div>
+        <div class="news-content">Researchers uncover new evidence about a civilization lost to time.</div>
+    </div>
+
+    <div class="news-item">
+        <div class="news-title">Unearthed: Secrets of the Pharaohs</div>
+        <div class="news-date">September 20, 2023</div>
+        <div class="news-content">New findings provide fresh insights into the lives of ancient Egyptian rulers.</div>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2023 History Website
+</footer>
+
+</body>
+</html>

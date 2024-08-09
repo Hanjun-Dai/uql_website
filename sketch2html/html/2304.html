@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        header {
+            background: #ff5722; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .navbar {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-around;
+            background: #424242; /* Changed navbar background color */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar a {
+            color: #ffeb3b; /* Changed navbar link color */
+            text-decoration: none;
+            padding: 10px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #d1c4e9; /* Changed hero heading color */
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+        .news-cards {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .card {
+            background: #ffffff; /* Card background remains */
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: calc(30% - 20px);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+            background-color: #f1f8e9; /* Changed card content background color */
+        }
+        .card-content h3 {
+            color: #388e3c; /* Changed card title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff5722; /* Changed footer background color */
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Politics Today</h1>
+        <p>Your source for the latest political news</p>
+    </header>
+
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">National</a>
+        <a href="#">Local</a>
+        <a href="#">International</a>
+        <a href="#">Opinion</a>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Breaking News</h1>
+        </div>
+
+        <div class="news-cards">
+            <div class="card">
+                <img src="news-image1.jpg" alt="News Image 1">
+                <div class="card-content">
+                    <h3>Title of the News 1</h3>
+                    <p>Snippet of news content goes here...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="news-image2.jpg" alt="News Image 2">
+                <div class="card-content">
+                    <h3>Title of the News 2</h3>
+                    <p>Snippet of news content goes here...</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="news-image3.jpg" alt="News Image 3">
+                <div class="card-content">
+                    <h3>Title of the News 3</h3>
+                    <p>Snippet of news content goes here...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Politics Today. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

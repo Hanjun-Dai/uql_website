@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Gaming Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #1E1E1E;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #00CFFF;
+            margin-bottom: 30px;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #303030;
+            padding: 15px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .question:hover {
+            color: #00CFFF;
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #B0B0B0;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .arrow {
+            float: right;
+            transition: transform 0.3s;
+        }
+
+        .arrow.rotate {
+            transform: rotate(90deg);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                Are there any upcoming events?
+                <span class="arrow">â¤</span>
+            </div>
+            <div class="answer">
+                Stay tuned for our newsletter for the latest updates on events and promotions.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                How do I report a bug?
+                <span class="arrow">â¤</span>
+            </div>
+            <div class="answer">
+                Use the bug report form available on our website.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                What platforms do you support?
+                <span class="arrow">â¤</span>
+            </div>
+            <div class="answer">
+                We support PC, Xbox, PlayStation, and Nintendo Switch.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                How can I contact support?
+                <span class="arrow">â¤</span>
+            </div>
+            <div class="answer">
+                You can contact us through our support page or via email at support@gamesite.com.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">
+                Do you offer refunds?
+                <span class="arrow">â¤</span>
+            </div>
+            <div class="answer">
+                Yes, within 30 days of purchase under certain conditions.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('.arrow');
+            answer.classList.toggle('show');
+            arrow.classList.toggle('rotate');
+        }
+    </script>
+
+</body>
+</html>

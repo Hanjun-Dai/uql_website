@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bold Food Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #e63946;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        .cta-button {
+            background-color: #f1faee;
+            color: #1d3557;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .hero {
+            width: 100%;
+            max-height: 600px;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+            filter: brightness(0.7);
+        }
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .content h2 {
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .card p {
+            padding: 0 10px 10px;
+        }
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <p>Your culinary adventure awaits!</p>
+    <h1>Delicious Delights</h1>
+    <a href="#menu" class="cta-button">Explore Menu</a>
+</header>
+
+<div class="hero">
+    <img src="https://source.unsplash.com/1600x600/?food" alt="Delicious Food">
+</div>
+
+<div class="content">
+    <h2>Our Specialties</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?sushi" alt="Sushi">
+            <h3>Sushi</h3>
+            <p>Freshly rolled, a taste of Japan.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?pizza" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Cheesy goodness topped with fresh ingredients.</p>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/200x200/?burger" alt="Burger">
+            <h3>Burger</h3>
+            <p>Juicy and flavorful, made to order.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 Delicious Delights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

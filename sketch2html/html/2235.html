@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Changed background color */
+        }
+        header {
+            background-color: #4a90e2; /* Changed header background color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #d35400; /* Changed nav link color */
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+        .resource-card {
+            background-color: #fff3e0; /* Changed resource card background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        .resource-card img {
+            max-width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .resource-content {
+            padding: 15px;
+        }
+        .resource-content h3 {
+            margin: 0 0 10px 0;
+            color: #1b5e20; /* Changed heading color */
+        }
+        .resource-content a {
+            text-decoration: none;
+            color: #c2185b; /* Changed link color in resource content */
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f4c3; /* Changed footer background color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Resource Center</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Nutrition</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="resource-card">
+        <img src="recipe-book.jpg" alt="Recipe Book">
+        <div class="resource-content">
+            <h3><a href="#">Ultimate Recipe Collection</a></h3>
+            <p>Explore our curated recipe book with a variety of dishes.</p>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img src="nutrition-guide.jpg" alt="Nutrition Guide">
+        <div class="resource-content">
+            <h3><a href="#">Nutrition Guide</a></h3>
+            <p>Get tips on healthy eating and meal planning.</p>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img src="meal-planner.jpg" alt="Meal Planner">
+        <div class="resource-content">
+            <h3><a href="#">Weekly Meal Planner</a></h3>
+            <p>Download our free meal planner to organize your meals.</p>
+        </div>
+    </div>
+
+    <div class="resource-card">
+        <img src="cooking-tips.jpg" alt="Cooking Tips">
+        <div class="resource-content">
+            <h3><a href="#">Cooking Tips for Beginners</a></h3>
+            <p>Learn essential cooking techniques for delicious meals.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Food Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

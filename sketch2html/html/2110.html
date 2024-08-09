@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background: #ff6347; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+        .property-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .property-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .property-details {
+            flex: 2;
+        }
+        .property-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        .property-price {
+            font-size: 20px;
+            color: #dc3545; /* Changed price text color */
+        }
+        .property-description {
+            margin: 10px 0;
+            color: #333; /* Changed description color */
+        }
+        .property-features {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+        .property-features li {
+            background: #d1ecf1; /* Changed background color for features */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #28a745; /* Changed call to action button color */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #50575d; /* Changed footer background color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Elegant Family Home</h1>
+        </header>
+
+        <div class="main-content">
+            <div class="property-image">
+                <img src="property-image.jpg" alt="Elegant Family Home">
+            </div>
+            <div class="property-details">
+                <h2 class="property-title">123 Main St, Springfield</h2>
+                <p class="property-price">$350,000</p>
+                <p class="property-description">
+                    A beautifully designed family home with modern amenities and a spacious yard.
+                </p>
+                <h3>Features</h3>
+                <ul class="property-features">
+                    <li>4 Bedrooms</li>
+                    <li>3 Bathrooms</li>
+                    <li>2 Car Garage</li>
+                    <li>Open Floor Plan</li>
+                    <li>Swimming Pool</li>
+                </ul>
+                <a href="#" class="cta-button">Contact Agent</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Real Estate Co. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 4em; /* Increased font size */
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.5em; /* Increased font size */
+        }
+        button {
+            padding: 15px; /* Increased padding */
+            border: none;
+            border-radius: 5px;
+            background-color: #2980b9;
+            color: white;
+            font-size: 2em; /* Increased font size */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #1a5987;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0; /* Increased padding */
+            color: #666;
+            font-size: 0.75em; /* Decreased font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <div class="container">
+        <div class="contact-info">
+            <div>
+                <h2 style="font-size: 3em;">Email</h2> <!-- Increased font size -->
+                <p style="font-size: 1.2em;">info@entertainmentwebsite.com</p> <!-- Increased font size -->
+            </div>
+            <div>
+                <h2 style="font-size: 3em;">Phone</h2> <!-- Increased font size -->
+                <p style="font-size: 1.2em;">(123) 456-7890</p> <!-- Increased font size -->
+            </div>
+            <div>
+                <h2 style="font-size: 3em;">Address</h2> <!-- Increased font size -->
+                <p style="font-size: 1.2em;">123 Entertainment St.<br>Anytown, AT 12345</p> <!-- Increased font size -->
+            </div>
+        </div>
+
+        <div class="form-container">
+            <h2 style="font-size: 2.5em;">Get in Touch</h2> <!-- Increased font size -->
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+    
+    <footer>
+        Â© 2023 Entertainment Website. All rights reserved.
+    </footer>
+</body>
+</html>

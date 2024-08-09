@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Travel Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-size: 18px; /* smaller font size */
+        }
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 10px 20px;
+            font-size: 24px; /* larger font size */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Placeholder for hero image */
+            height: 300px;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 6em; /* much larger font size */
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            font-size: 14px; /* smaller font size */
+        }
+
+        .service-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            font-size: 20px; /* larger font size */
+        }
+
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px; /* smaller font size */
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                grid-template-columns: 1fr;
+                font-size: 10px; /* smaller font size */
+            }
+
+            .hero {
+                height: 200px;
+                font-size: 3em; /* larger than the original */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" style="color:white; text-decoration:none;">Home</a></li>
+                <li><a href="#" style="color:white; text-decoration:none;">Destinations</a></li>
+                <li><a href="#" style="color:white; text-decoration:none;">Services</a></li>
+                <li><a href="#" style="color:white; text-decoration:none;">About Us</a></li>
+                <li><a href="#" style="color:white; text-decoration:none;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        Welcome to Corporate Travel
+    </div>
+
+    <section class="services">
+        <div class="service-item">
+            <h3>Business Travel</h3>
+            <p>Streamlined travel solutions for your company.</p>
+        </div>
+        <div class="service-item">
+            <h3>Group Travel</h3>
+            <p>Organized journeys for teams and groups.</p>
+        </div>
+        <div class="service-item">
+            <h3>Travel Management</h3>
+            <p>Comprehensive management of all your travel needs.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Corporate Travel. All rights reserved.
+    </footer>
+</body>
+
+</html>

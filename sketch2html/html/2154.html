@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Education Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #6c63ff;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .faq-item {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 15px;
+            width: 80%;
+            transition: transform 0.3s;
+        }
+        .faq-item:hover {
+            transform: scale(1.03);
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question">Is there a refund policy?</div>
+        <div class="faq-answer">Yes, we have a 30-day refund policy if you are not satisfied with the course.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What courses are offered?</div>
+        <div class="faq-answer">We offer a wide range of courses from science to arts and technology.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What are the payment options?</div>
+        <div class="faq-answer">We accept credit cards, PayPal, and bank transfers.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How to enroll in a course?</div>
+        <div class="faq-answer">Enrollment can be done through our website by filling out the registration form.</div>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Education Website - All rights reserved.
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const faqItem = item.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

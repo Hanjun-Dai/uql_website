@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            padding: 20px 0;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .faq-item h2 {
+            font-size: 18px;
+            color: #007bff;
+            margin: 0;
+            cursor: pointer;
+        }
+        .faq-item p {
+            display: none;
+            margin-top: 8px;
+            color: #555;
+        }
+        .faq-item.active p {
+            display: block;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <h2>What payment methods do you accept?</h2>
+        <p>We accept all major credit cards, PayPal, and bank transfers.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h2>How can I contact customer support?</h2>
+        <p>You can reach our customer support via email at support@travelwebsite.com or call us at (123) 456-7890.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>What is your cancellation policy?</h2>
+        <p>Our cancellation policy varies by booking. Please refer to your specific booking confirmation for details.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>Can I change my booking details?</h2>
+        <p>Changes can be made up to 48 hours before your departure date. Please contact customer support for assistance.</p>
+    </div>
+    
+    <div class="faq-item">
+        <h2>Do you offer travel insurance?</h2>
+        <p>Yes, we offer travel insurance options during the booking process for your peace of mind.</p>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; 2023 Travel Website - All Rights Reserved
+</div>
+
+<script>
+    const faqItems = document.querySelectorAll('.faq-item h2');
+
+    faqItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const faqItem = item.parentElement;
+            faqItem.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

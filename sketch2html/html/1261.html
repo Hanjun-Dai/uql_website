@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Automotive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav a {
+            padding: 14px 20px;
+            float: left;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card-title {
+            font-size: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #444;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<header>
+    <h1>Classic Automotive</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car 2">
+        <div class="card-title">Classic Car Model 2</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car 1">
+        <div class="card-title">Classic Car Model 1</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Car 3">
+        <div class="card-title">Classic Car Model 3</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Classic Automotive | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

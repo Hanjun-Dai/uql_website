@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background: #ff7043; /* Changed header background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background: #fff5e1; /* Changed card background */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .category-card h3 {
+            padding: 10px 0;
+            font-size: 1.5em;
+            color: #ff5722; /* Changed heading color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #ff7043; /* Changed footer background */
+            color: white;
+            position: relative;
+            clear: both;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Science Categories</h1>
+</header>
+
+<div class="container">
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Physics" alt="Physics">
+        <h3>Physics</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Biology" alt="Biology">
+        <h3>Biology</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Chemistry" alt="Chemistry">
+        <h3>Chemistry</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Astronomy" alt="Astronomy">
+        <h3>Astronomy</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Earth+Science" alt="Earth Science">
+        <h3>Earth Science</h3>
+    </div>
+    <div class="category-card">
+        <img src="https://via.placeholder.com/250x150?text=Environmental+Science" alt="Environmental Science">
+        <h3>Environmental Science</h3>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

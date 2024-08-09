@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Science website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            text-align: center; 
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: #333; 
+        }
+
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px; 
+            padding: 20px; 
+            max-width: 1200px; 
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+            padding: 20px; 
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote {
+            font-size: 1.2em; 
+            color: #555;
+            margin-bottom: 10px; 
+        }
+
+        .author {
+            text-align: right; 
+            font-weight: bold; 
+            color: #333;
+        }
+
+        footer {
+            text-align: center; 
+            margin-top: 40px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Users Say</h1>
+</header>
+
+<section class="testimonial-container">
+    <div class="testimonial-card">
+        <p class="quote">"Great content and easy to navigate!"</p>
+        <p class="author">- Michael Brown</p>
+    </div>
+    <div class="testimonial-card">
+        <p class="quote">"I learned so much from this website!"</p>
+        <p class="author">- Emily Johnson</p>
+    </div>
+    <div class="testimonial-card">
+        <p class="quote">"A fascinating resource for science enthusiasts!"</p>
+        <p class="author">- Jane Doe</p>
+    </div>
+    <div class="testimonial-card">
+        <p class="quote">"The articles are insightful and well-researched."</p>
+        <p class="author">- John Smith</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Science Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

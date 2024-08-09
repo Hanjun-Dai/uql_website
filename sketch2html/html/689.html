@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #008cba;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #005f7f;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 30%;
+            margin-left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .forum-content {
+            flex: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .forum-content h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .topic {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .topic:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #008cba;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Finance Forum</h1>
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#calculator">Financial Calculator</a></li>
+                <li><a href="#news">Latest News</a></li>
+                <li><a href="#articles">Articles</a></li>
+            </ul>
+        </aside>
+        <div class="forum-content">
+            <h2>Forum Topics</h2>
+            <div class="topic"><strong>Investing Tips</strong> - Discuss your strategies</div>
+            <div class="topic"><strong>Market Trends</strong> - Share the latest insights</div>
+            <div class="topic"><strong>Personal Finance</strong> - Budgeting and saving advice</div>
+            <div class="topic"><strong>Crypto Discussions</strong> - Talk about cryptocurrencies</div>
+            <div class="topic"><strong>Real Estate</strong> - Investing in properties</div>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+    <footer>
+        © 2023 Finance Forum. All rights reserved.
+    </footer>
+</body>
+
+</html>

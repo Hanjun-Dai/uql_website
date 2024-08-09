@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .service-description {
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Services</h1>
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+    </nav>
+</header>
+
+<footer>
+    &copy; 2023 Entertainment Inc. All rights reserved.
+</footer>
+
+<main>
+    <section class="service-container">
+        <article class="service-card">
+            <div class="service-title">Content Creation</div>
+            <div class="service-description">Produce engaging video content.</div>
+        </article>
+        <article class="service-card">
+            <div class="service-title">Event Management</div>
+            <div class="service-description">Plan and execute entertainment events.</div>
+        </article>
+        <article class="service-card">
+            <div class="service-title">Streaming Services</div>
+            <div class="service-description">Access to a library of movies and shows.</div>
+        </article>
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x400/?cinema,film') no-repeat center center/cover;
+            height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 60px; /* Increased size */
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+            padding: 20px;
+        }
+        .project {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+            transition: opacity 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
+        }
+        .project:hover img {
+            opacity: 0.8;
+        }
+        .project .info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px; /* Slightly increased padding */
+            background: rgba(0, 0, 0, 0.7);
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 16px; /* Adjusted size of info text */
+        }
+        .project:hover .info {
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            font-size: 12px; /* Decreased size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="overlay"></div>
+    <h1>My Entertainment Portfolio</h1>
+</header>
+
+<div class="portfolio">
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?movie" alt="Project 1">
+        <div class="info" style="font-size: 18px;">Movie Title 1</div>
+    </div>
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?music" alt="Project 2">
+        <div class="info" style="font-size: 18px;">Music Album 1</div>
+    </div>
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?theater" alt="Project 3">
+        <div class="info" style="font-size: 18px;">Theater Play 1</div>
+    </div>
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?concert" alt="Project 4">
+        <div class="info" style="font-size: 18px;">Concert Event 1</div>
+    </div>
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?film" alt="Project 5">
+        <div class="info" style="font-size: 18px;">Film Project 1</div>
+    </div>
+    <div class="project">
+        <img src="https://source.unsplash.com/250x250/?dance" alt="Project 6">
+        <div class="info" style="font-size: 18px;">Dance Show 1</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 My Entertainment Portfolio
+</footer>
+
+</body>
+</html>

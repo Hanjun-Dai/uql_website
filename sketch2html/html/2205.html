@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2C2C2C;
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #FF4081;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-info div {
+            background-color: #FF4081;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+        .form-container {
+            background-color: #444444;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #FF4081;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 1.1em;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF80AB;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+        <div class="contact-info">
+            <div>
+                <h2>Social</h2>
+                <p>@GamesWebsite</p>
+            </div>
+            <div>
+                <h2>Email</h2>
+                <p>support@gameswebsite.com</p>
+            </div>
+            <div>
+                <h2>Phone</h2>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 Games Website. All rights reserved.
+    </footer>
+</body>
+</html>

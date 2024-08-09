@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ff4500;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .forum-title {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .post {
+            border-bottom: 2px solid #eee;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+        .post-author {
+            font-size: 14px;
+            color: #777;
+            margin: 5px 0;
+        }
+        .post-content {
+            font-size: 16px;
+            color: #555;
+        }
+        .reply-button {
+            background-color: #ff6347;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .reply-button:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Discussions</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<header>
+    <h1>Food Lovers Forum</h1>
+</header>
+
+<div class="container">
+    <div class="forum-title">Latest Discussions</div>
+
+    <div class="post">
+        <div class="post-title">Vegan Meal Prep Ideas</div>
+        <div class="post-author">HealthNut on Sep 25, 2023</div>
+        <div class="post-content">Let's discuss meal prepping for a vegan diet!</div>
+        <button class="reply-button">Reply</button>
+    </div>
+
+    <div class="post">
+        <div class="post-title">How to Cook the Perfect Steak?</div>
+        <div class="post-author">ChefJohn on Oct 1, 2023</div>
+        <div class="post-content">Looking for tips on achieving the perfect sear and doneness.</div>
+        <button class="reply-button">Reply</button>
+    </div>
+
+    <div class="post">
+        <div class="post-title">Best Pasta Recipes</div>
+        <div class="post-author">CulinaryQueen on Sep 28, 2023</div>
+        <div class="post-content">Share your favorite pasta recipes here!</div>
+        <button class="reply-button">Reply</button>
+    </div>
+
+</div>
+
+</body>
+</html>

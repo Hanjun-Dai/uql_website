@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-right: 20px;
+        }
+
+        .content {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .article h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #007BFF;
+        }
+
+        .article p {
+            margin: 10px 0 0;
+            color: #555;
+        }
+
+        footer {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Sports Today</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Latest</a>
+            <a href="#">Teams</a>
+            <a href="#">Highlights</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="article">
+                <h2>Match Result: Team A vs Team B</h2>
+                <p>Details of the match will go here...</p>
+            </div>
+            <div class="article">
+                <h2>Upcoming Matches</h2>
+                <p>Schedule of the next matches...</p>
+            </div>
+            <div class="article">
+                <h2>Player of the Week: Star Player</h2>
+                <p>About the player and their performance...</p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>Top Highlights</h3>
+            <ul>
+                <li>Highlight 1</li>
+                <li>Highlight 2</li>
+                <li>Highlight 3</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023 Sports News. All rights reserved.
+    </footer>
+</body>
+
+</html>

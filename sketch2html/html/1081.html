@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Resources</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background: #2196f3; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 1em;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            padding: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x400/?realestate') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .resources {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .resource {
+            background: #fce4ec; /* Changed resource background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            width: calc(30% - 40px);
+        }
+        .resource img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .resource h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+            color: #d32f2f; /* Changed heading color */
+        }
+        footer {
+            background: #8e24aa; /* Changed footer background color */
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #ffeb3b; /* Changed footer link color */
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .resource {
+                width: calc(45% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .resource {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Resources</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Properties</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Dream Home Awaits</h2>
+</section>
+
+<section class="resources">
+    <div class="resource">
+        <img src="https://source.unsplash.com/400x300/?house" alt="Home Buying Guide">
+        <h3>Home Buying Guide</h3>
+    </div>
+    <div class="resource">
+        <img src="https://source.unsplash.com/400x300/?investment" alt="Investing Resources">
+        <h3>Investing Resources</h3>
+    </div>
+    <div class="resource">
+        <img src="https://source.unsplash.com/400x300/?mortgage" alt="Mortgage Tips">
+        <h3>Mortgage Tips</h3>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Real Estate Company | <a href="#">Privacy Policy</a></p>
+</footer>
+
+</body>
+</html>

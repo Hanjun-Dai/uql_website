@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33% - 20px);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+        .card h3 {
+            margin: 15px;
+        }
+        .card p {
+            margin: 0 15px 15px 15px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4A90E2;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Explorations</h1>
+    <p>Discover the wonders of science</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="image4.jpg" alt="Category 4">
+        <h3>Astronomy</h3>
+        <p>Exploring the universe beyond Earth.</p>
+    </div>
+    <div class="card">
+        <img src="image6.jpg" alt="Category 6">
+        <h3>Environmental Science</h3>
+        <p>Studying the environment and solutions.</p>
+    </div>
+    <div class="card">
+        <img src="image2.jpg" alt="Category 2">
+        <h3>Chemistry</h3>
+        <p>Understanding matter and its interactions.</p>
+    </div>
+    <div class="card">
+        <img src="image5.jpg" alt="Category 5">
+        <h3>Geology</h3>
+        <p>Understanding the history of our planet.</p>
+    </div>
+    <div class="card">
+        <img src="image3.jpg" alt="Category 3">
+        <h3>Biology</h3>
+        <p>Diving into the study of living organisms.</p>
+    </div>
+    <div class="card">
+        <img src="image1.jpg" alt="Category 1">
+        <h3>Physics</h3>
+        <p>Exploring the fundamental forces of nature.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science Website</p>
+</footer>
+
+</body>
+</html>

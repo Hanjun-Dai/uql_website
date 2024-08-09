@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #fff;
+        }
+        header {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .hero h2 {
+            font-size: 2em;
+        }
+        .game-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .game-card {
+            background: #333;
+            border-radius: 8px;
+            margin: 10px;
+            width: 200px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+        }
+        .game-card h3 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        footer {
+            background: #222;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Games Haven</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#games">Games</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="game-section" id="games">
+    <div class="game-card">
+        <img src="game3.jpg" alt="Game 3">
+        <h3>Puzzle Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="game1.jpg" alt="Game 1">
+        <h3>Action Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="game2.jpg" alt="Game 2">
+        <h3>Adventure Game</h3>
+    </div>
+    <div class="game-card">
+        <img src="game4.jpg" alt="Game 4">
+        <h3>Racing Game</h3>
+    </div>
+</section>
+
+<div class="hero">
+    <h2>Join the Adventure!</h2>
+</div>
+
+<footer>
+    &copy; 2023 Games Haven. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F9F5E7; /* Soft beige */
+            color: #4B3C36; /* Dark brown */
+        }
+
+        header {
+            background-color: #D2C1B6; /* Light brown */
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px solid #A28B7B; /* Darker brown */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .article {
+            background-color: white;
+            border: 1px solid #D9C8B5; /* Light border */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            width: calc(33% - 20px);
+            text-align: center;
+            padding: 10px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #E0D6C5;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .article p {
+            font-size: 0.9em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #D2C1B6;
+            margin-top: 20px;
+            border-top: 4px solid #A28B7B;
+        }
+
+        @media (max-width: 1024px) {
+            .article {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .article {
+                width: 100%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion News</h1>
+        <p>Your daily dose of rustic style.</p>
+    </header>
+
+    <div class="container">
+        <div class="article">
+            <img src="path-to-image-3.jpg" alt="Fashion Item 3">
+            <h2>Behind the Lens</h2>
+            <p>Exclusive shoots from the latest collection.</p>
+        </div>
+        <div class="article">
+            <img src="path-to-image-1.jpg" alt="Fashion Item 1">
+            <h2>Trending Styles</h2>
+            <p>Explore the latest trends this season.</p>
+        </div>
+        <div class="article">
+            <img src="path-to-image-2.jpg" alt="Fashion Item 2">
+            <h2>Rustic Inspirations</h2>
+            <p>Find inspiration from nature.</p>
+        </div>
+        <!-- Add more articles as needed -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Fashion Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

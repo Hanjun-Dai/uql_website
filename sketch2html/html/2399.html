@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Fashion Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-image {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin: 0 auto 15px;
+        }
+
+        .testimonial-name {
+            text-align: center;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .testimonial-text {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            .testimonial-card {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>What Our Customers Say</h1>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="path/to/image4.jpg" alt="Customer 4" class="testimonial-image">
+                <div class="testimonial-name">Michael W.</div>
+                <div class="testimonial-text">"Always on trend and comfortable!"</div>
+            </div>
+            <div class="testimonial-card">
+                <img src="path/to/image2.jpg" alt="Customer 2" class="testimonial-image">
+                <div class="testimonial-name">John D.</div>
+                <div class="testimonial-text">"I love the quality and designs!"</div>
+            </div>
+            <div class="testimonial-card">
+                <img src="path/to/image1.jpg" alt="Customer 1" class="testimonial-image">
+                <div class="testimonial-name">Emily R.</div>
+                <div class="testimonial-text">"Fashion that fits my style perfectly!"</div>
+            </div>
+            <div class="testimonial-card">
+                <img src="path/to/image3.jpg" alt="Customer 3" class="testimonial-image">
+                <div class="testimonial-name">Sarah L.</div>
+                <div class="testimonial-text">"Exceptional service and style!"</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

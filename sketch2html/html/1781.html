@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0;
+        }
+        .card-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technology Insights</h1>
+    </header>
+
+    <div class="container">
+        <h2>Latest Articles</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 4">
+                <div class="card-content">
+                    <h3 class="card-title">Smart Home Devices</h3>
+                    <p class="card-meta">By Maria Garcia | Sep 12, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 2">
+                <div class="card-content">
+                    <h3 class="card-title">5G Network Innovations</h3>
+                    <p class="card-meta">By Jane Smith | Sep 18, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 3">
+                <div class="card-content">
+                    <h3 class="card-title">Blockchain & Security</h3>
+                    <p class="card-meta">By Alex Johnson | Sep 15, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 1">
+                <div class="card-content">
+                    <h3 class="card-title">The Future of AI</h3>
+                    <p class="card-meta">By John Doe | Sep 20, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 5">
+                <div class="card-content">
+                    <h3 class="card-title">Augmented Reality Trends</h3>
+                    <p class="card-meta">By Sarah Lee | Sep 10, 2023</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/220x150" alt="Tech 6">
+                <div class="card-content">
+                    <h3 class="card-title">Gadgets of the Year</h3>
+                    <p class="card-meta">By David Brown | Sep 5, 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

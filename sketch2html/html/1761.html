@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Blog Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #444; /* Changed text color */
+        }
+        header {
+            background: #3e2723; /* Changed header background color */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('featured-image.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            color: #ffccbc; /* Changed hero text color */
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+        }
+        .hero h1 {
+            margin: 0;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff3e0; /* Changed container background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+            background-color: #ffe0b2; /* Changed post background color */
+        }
+        .post:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        }
+        .post img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .post h2 {
+            margin: 10px 0;
+            font-size: 1.8em;
+            color: #bf360c; /* Changed post title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3e2723; /* Used same color as header for continuity */
+            color: #ffeb3b; /* Used same color as header text for continuity */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Blog</h1>
+</header>
+
+<div class="hero">
+    <h1>Welcome to Our World</h1>
+</div>
+
+<div class="container">
+    <div class="post">
+        <img src="post1.jpg" alt="Post 1">
+        <h2>Exploring New Movies</h2>
+    </div>
+    <div class="post">
+        <img src="post2.jpg" alt="Post 2">
+        <h2>Top Music Hits of 2023</h2>
+    </div>
+    <div class="post">
+        <img src="post3.jpg" alt="Post 3">
+        <h2>Unforgettable TV Shows</h2>
+    </div>
+    <div class="post">
+        <img src="post4.jpg" alt="Post 4">
+        <h2>Behind the Scenes: Artistry in Film</h2>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

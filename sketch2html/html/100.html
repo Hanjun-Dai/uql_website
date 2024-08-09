@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61; /* Changed header background color */
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .main {
+            flex: 3;
+            padding: 20px;
+        }
+        .aside {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffe082; /* Changed aside background color */
+            border-left: 1px solid #ddd;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #c8e6c9; /* Changed post background color */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .post h2 {
+            margin-top: 0;
+            color: #2e7d32; /* Changed post title color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ff6f61; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Discoveries</h1>
+</header>
+
+<div class="container">
+    <main class="main">
+        <div class="post">
+            <h2>The Secrets of Quantum Physics</h2>
+            <p>Explore the mysteries behind quantum mechanics...</p>
+        </div>
+        <div class="post">
+            <h2>Climate Change: Myths & Facts</h2>
+            <p>Understanding the truth about climate change...</p>
+        </div>
+        <div class="post">
+            <h2>New Frontiers in Genetics</h2>
+            <p>Discover advancements in genetic research...</p>
+        </div>
+    </main>
+
+    <aside class="aside">
+        <h3>Related Articles</h3>
+        <ul>
+            <li>Understanding Relativity</li>
+            <li>Stem Cell Research Breakthroughs</li>
+            <li>The Physics of Black Holes</li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science Discoveries. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

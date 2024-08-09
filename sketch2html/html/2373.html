@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        /* Basic CSS for layout */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #444; /* Changed text color */
+        }
+        header {
+            background-color: #8e44ad; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ecf0f1; /* Changed link color in the navigation */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #bdc3c7; /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #16a085; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Posts</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div class="post">
+            <h2>The Rise and Fall of Empires</h2>
+            <p>Explore how empires rise, flourish, and eventually decline...</p>
+            <a href="#">Read more...</a>
+        </div>
+        <div class="post">
+            <h2>Ancient Civilizations</h2>
+            <p>A look into the lives of the ancient Egyptians, Greeks, and Romans...</p>
+            <a href="#">Read more...</a>
+        </div>
+        <div class="post">
+            <h2>World War II: A Global Conflict</h2>
+            <p>An overview of the causes and consequences of World War II...</p>
+            <a href="#">Read more...</a>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3 style="color: #2980b9;">About Me</h3> <!-- Changed color of About Me heading -->
+        <p>Welcome to my history blog! I am passionate about sharing the stories of our past.</p>
+        
+        <h3 style="color: #2980b9;">Categories</h3> <!-- Changed color of Categories heading -->
+        <ul>
+            <li><a href="#">Ancient History</a></li>
+            <li><a href="#">Medieval History</a></li>
+            <li><a href="#">Modern History</a></li>
+        </ul>
+
+        <h3 style="color: #2980b9;">Archives</h3> <!-- Changed color of Archives heading -->
+        <ul>
+            <li><a href="#">January 2023</a></li>
+            <li><a href="#">February 2023</a></li>
+            <li><a href="#">March 2023</a></li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>&copy; 2023 History Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

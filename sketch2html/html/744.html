@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0e7ff; /* Changed */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+        }
+        .header {
+            font-size: 2.5em;
+            color: #b25e3a; /* Changed */
+            margin-bottom: 20px;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+        }
+        .header::before, .header::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 50px;
+            height: 4px;
+            background: #b25e3a; /* Changed */
+            transform: translateY(-50%);
+        }
+        .header::before {
+            left: -60px;
+        }
+        .header::after {
+            right: -60px;
+        }
+        .content {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 30px 0;
+        }
+        .image-box {
+            flex: 1;
+            max-width: 200px;
+            border: 2px solid #b25e3a; /* Changed */
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .image-box:hover {
+            transform: scale(1.05);
+        }
+        .image-box img {
+            width: 100%;
+            display: block;
+        }
+        .quote {
+            font-style: italic;
+            color: #8f3679; /* Changed */
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">About Us</div>
+        <div class="content">
+            <p>Welcome to our artistic sanctuary, where creativity knows no bounds.</p>
+            <p>We're dedicated to fostering passion through art.</p>
+        </div>
+        <div class="images">
+            <div class="image-box">
+                <img src="art1.jpg" alt="Art Piece 1">
+            </div>
+            <div class="image-box">
+                <img src="art2.jpg" alt="Art Piece 2">
+            </div>
+            <div class="image-box">
+                <img src="art3.jpg" alt="Art Piece 3">
+            </div>
+        </div>
+        <div class="quote">"Art is not freedom from discipline, but disciplined freedom." - John F. Kennedy</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Food Website</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f4e3;
+            color: #4b3c30;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('rustic-header-background.jpg');
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .featured-recipes {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .recipe-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            overflow: hidden;
+            text-align: center;
+            width: 30%;
+            margin: 0 10px;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .recipe-card h2 {
+            padding: 10px;
+            font-size: 1.5em;
+            color: #4b3c30;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4b3c30;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Rustic Eats</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Recipes</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Featured Recipes</h2>
+        <div class="featured-recipes">
+            <div class="recipe-card">
+                <img src="recipe2.jpg" alt="Recipe 2">
+                <h2>Creamy Soup</h2>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe1.jpg" alt="Recipe 1">
+                <h2>Rustic Bread</h2>
+            </div>
+            <div class="recipe-card">
+                <img src="recipe3.jpg" alt="Recipe 3">
+                <h2>Homemade Pie</h2>
+            </div>
+        </div>
+        <img class="hero-image" src="rustic-food-hero.jpg" alt="Delicious Rustic Food">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rustic Eats. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

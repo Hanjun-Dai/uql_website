@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .article {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .article img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            color: #ff6f61;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #ff6f61;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Trends</a>
+        <a href="#">Designers</a>
+        <a href="#">Lifestyle</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Trending</h3>
+        <ul>
+            <li><a href="#">Street Style Inspiration</a></li>
+            <li><a href="#">Accessories to Watch</a></li>
+            <li><a href="#">Fashion Tips for Every Occasion</a></li>
+            <li><a href="#">Celebrity Fashion Moments</a></li>
+        </ul>
+    </aside>
+    <div class="main-content">
+        <div class="article">
+            <img src="fashion1.jpg" alt="Latest Fashion Trends">
+            <h2>Latest Trends for Fall 2023</h2>
+            <p>Discover what's in style this autumn...</p>
+        </div>
+        <div class="article">
+            <img src="fashion3.jpg" alt="Sustainable Fashion">
+            <h2>The Rise of Sustainable Fashion</h2>
+            <p>Why eco-conscious choices are essential...</p>
+        </div>
+        <div class="article">
+            <img src="fashion2.jpg" alt="Fashion Week Highlights">
+            <h2>Highlights from the Fashion Week</h2>
+            <p>A recap of the most stunning looks...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Fashion News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

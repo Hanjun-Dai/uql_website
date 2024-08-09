@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Games Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Changed background color */
+        }
+        header {
+            background-color: #444; /* Changed header background color */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: skyblue; /* Changed link color */
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .game-card {
+            background: #fff; /* Keeping game card background unchanged */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Changed shadow opacity */
+            margin: 10px;
+            overflow: hidden;
+            width: 200px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+        }
+        .game-title {
+            margin: 10px 0;
+            font-weight: bold;
+            color: #f44336; /* Changed game title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #555; /* Changed footer background color */
+            color: #ffffff; /* Keeping footer text color unchanged */
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Games Hub</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="game-card">
+        <img src="game1.jpg" alt="Game 1">
+        <div class="game-title">Game Title 1</div>
+    </div>
+    <div class="game-card">
+        <img src="game2.jpg" alt="Game 2">
+        <div class="game-title">Game Title 2</div>
+    </div>
+    <div class="game-card">
+        <img src="game3.jpg" alt="Game 3">
+        <div class="game-title">Game Title 3</div>
+    </div>
+    <div class="game-card">
+        <img src="game4.jpg" alt="Game 4">
+        <div class="game-title">Game Title 4</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Games Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

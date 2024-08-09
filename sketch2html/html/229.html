@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Forum</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background-color */
+        }
+        header {
+            background-color: #444; /* Changed background-color */
+            color: #ffcc00; /* Changed color */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            width: 80%;
+            background: #ffffff; /* Kept the same */
+            padding: 15px;
+            margin-left: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .forum-thread {
+            border-bottom: 1px solid #999; /* Changed border color */
+            padding: 10px 0;
+        }
+        .forum-thread:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #444; /* Changed background color */
+            color: #ffcc00; /* Changed color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #1a75ff; /* Changed link color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Forum</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Style Tips</a></li>
+            <li><a href="#">Trends</a></li>
+            <li><a href="#">Fashion News</a></li>
+            <li><a href="#">Sustainable Fashion</a></li>
+            <li><a href="#">DIY Fashion</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Latest Threads</h2>
+        
+        <div class="forum-thread">
+            <h4><a href="#">What are the latest trends in 2024?</a></h4>
+            <p>Posted by User123 on 10/01/2023</p>
+        </div>
+        
+        <div class="forum-thread">
+            <h4><a href="#">Sustainable fashion: What's your opinion?</a></h4>
+            <p>Posted by Fashionista on 09/25/2023</p>
+        </div>
+        
+        <div class="forum-thread">
+            <h4><a href="#">Best DIY Fashion Ideas of the Season</a></h4>
+            <p>Posted by CraftyGoddess on 09/20/2023</p>
+        </div>
+        
+        <div class="forum-thread">
+            <h4><a href="#">How to style a basic wardrobe?</a></h4>
+            <p>Posted by StyleGuru on 09/15/2023</p>
+        </div>
+        
+        <div class="forum-thread">
+            <h4><a href="#">Favorite Fashion Brands - Share yours!</a></h4>
+            <p>Posted by TrendSetter on 09/10/2023</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Fashion Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

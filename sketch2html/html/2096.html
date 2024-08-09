@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+        }
+        .header {
+            background-color: #444; /* Changed header background color */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .category-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: left;
+            color: #007bff; /* Changed category title color */
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background: #f8f9fa; /* Changed product card background */
+            border: 1px solid #ced4da; /* Changed product card border color */
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .product-name {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #dc3545; /* Changed product name color */
+        }
+        .product-price {
+            font-size: 16px;
+            color: #28a745; /* Changed product price color */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444; /* Changed footer background color */
+            color: #f8f9fa; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Fashion Category</h1>
+    </div>
+
+    <div class="container">
+        <div class="category-title">Latest Trends</div>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Stylish Jacket</div>
+                    <div class="product-price">$99.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Classic Jeans</div>
+                    <div class="product-price">$59.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Elegant Dress</div>
+                    <div class="product-price">$79.99</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="product4.jpg" alt="Product 4" class="product-image">
+                <div class="product-info">
+                    <div class="product-name">Casual Sneakers</div>
+                    <div class="product-price">$49.99</div>
+                </div>
+            </div>
+            <!-- More product cards can be added here -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Fashion Website. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

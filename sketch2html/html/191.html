@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Yummy Bites</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff9e6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 5em; /* Increased font size */
+            color: #ff5733;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 3.5em; /* Increased font size */
+            color: #ff8533;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .team-member {
+            background: #ffcc99;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            width: 250px;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+
+        .member-image {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .member-name {
+            font-size: 3em; /* Increased font size */
+            color: #3533ff;
+        }
+        
+        p {
+            font-size: 0.8em; /* Decreased font size */
+            color: #666;
+            padding: 0 10px;
+        }
+
+        .fun-facts {
+            background: #ffe7cc;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .fun-facts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .fun-facts li {
+            margin: 10px 0;
+            font-size: 0.8em; /* Decreased font size */
+            color: #d64e26;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Yummy Bites!</h1>
+        <h2>Our Delicious Journey</h2>
+        <p>Join us as we explore the delightful world of food!</p>
+
+        <div class="team-container">
+            <div class="team-member">
+                <img src="chef.jpg" alt="Chef" class="member-image">
+                <div class="member-name">Chef Emma</div>
+                <p>The flavor magician!</p>
+            </div>
+            <div class="team-member">
+                <img src="foodie.jpg" alt="Foodie" class="member-image">
+                <div class="member-name">Foodie Mike</div>
+                <p>The taste adventurer!</p>
+            </div>
+            <div class="team-member">
+                <img src="baker.jpg" alt="Baker" class="member-image">
+                <div class="member-name">Baker Lucy</div>
+                <p>The dessert queen!</p>
+            </div>
+        </div>
+
+        <div class="fun-facts">
+            <h2>Fun Facts!</h2>
+            <ul>
+                <li>We try over 100 recipes per month!</li>
+                <li>Our team loves pizza - it's the ultimate food!</li>
+                <li>Chocolate is our secret ingredient!</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

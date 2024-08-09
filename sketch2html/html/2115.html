@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Lifestyle</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            text-align: center;
+            color: white;
+            padding-top: 100px;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        nav {
+            background: rgba(50, 50, 50, 0.8);
+            padding: 20px 0;
+            position: relative;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 105px 20px;
+            margin-top: -30px;
+        }
+        .hero h2 {
+            font-size: 36px;
+        }
+        .content {
+            max-width: 960px;
+            margin: 40px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 45%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 10px;
+            font-size: 24px;
+        }
+        .card p {
+            margin: 10px;
+            color: #777;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Rustic Lifestyle</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Embrace Simplicity and Nature</h2>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <img src="image3.jpg" alt="Home Decor">
+            <h3>Farmhouse Decor</h3>
+            <p>Tips to add rustic charm to your home.</p>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Rustic Food">
+            <h3>Rustic Recipes</h3>
+            <p>Simple, wholesome recipes for every season.</p>
+        </div>
+        <div class="card">
+            <img src="image1.jpg" alt="Nature Retreat">
+            <h3>Nature Retreats</h3>
+            <p>Discover serene places to reconnect with nature.</p>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Crafting">
+            <h3>Handmade Crafts</h3>
+            <p>Explore your creative side with DIY projects.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Rustic Lifestyle. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

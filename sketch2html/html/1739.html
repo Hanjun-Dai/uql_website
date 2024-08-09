@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Foodie Delight</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #d9534f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .service-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            text-align: center;
+            width: 280px;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card img {
+            border-radius: 8px 8px 0 0;
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .service-card h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+        .icon {
+            font-size: 50px;
+            color: #d9534f;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Delight</h1>
+    <p>Your culinary adventure awaits!</p>
+</header>
+
+<div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service-card">
+            <img src="images/service3.jpg" alt="Meal Prep">
+            <div class="icon">🍳</div>
+            <h3>Meal Prep</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/service1.jpg" alt="Food Delivery">
+            <div class="icon">🍕</div>
+            <h3>Food Delivery</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/service4.jpg" alt="Cooking Classes">
+            <div class="icon">👨‍🍳</div>
+            <h3>Cooking Classes</h3>
+        </div>
+        <div class="service-card">
+            <img src="images/service2.jpg" alt="Catering">
+            <div class="icon">🍴</div>
+            <h3>Catering</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Foodie Delight. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

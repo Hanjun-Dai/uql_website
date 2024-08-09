@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #ff6a00, #ee0979);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        .categories, .threads {
+            width: 48%;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .category-item, .thread-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            transition: 0.3s;
+        }
+        .category-item:hover, .thread-item:hover {
+            background-color: #f9f9f9;
+        }
+        .category-item:last-child, .thread-item:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Forum</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="threads">
+        <h2>Recent Threads</h2>
+        <div class="thread-item">Understanding Quantum Mechanics</div>
+        <div class="thread-item">The Cell Theory Explained</div>
+        <div class="thread-item">Chemical Reactions in Everyday Life</div>
+        <div class="thread-item">The Universe: A Deep Dive</div>
+        <div class="thread-item">Life on Mars: Possibilities</div>
+    </div>
+    <div class="categories">
+        <h2>Categories</h2>
+        <div class="category-item">Physics</div>
+        <div class="category-item">Biology</div>
+        <div class="category-item">Chemistry</div>
+        <div class="category-item">Astronomy</div>
+        <div class="category-item">Geology</div>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 Science Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

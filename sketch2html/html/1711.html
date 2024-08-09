@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Changed background color */
+        }
+        header {
+            background: #004d00; /* Changed header background */
+            color: #ffffcc; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #e6e6e6; /* Changed nav background */
+            border-bottom: 1px solid #999; /* Changed border color */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #990000; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .main-content {
+            flex: 2;
+            padding: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #bbb; /* Changed sidebar border color */
+            margin-left: 20px;
+        }
+        .article {
+            background: #ffffff; /* Kept article background the same */
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #888; /* Changed article border color */
+        }
+        h2 {
+            color: #cc3300; /* Changed h2 color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #005c5c; /* Changed footer background */
+            color: #ffffff; /* Kept footer text color the same */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Classic News</h1>
+    <p>Your daily news source</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">World</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Entertainment</a>
+    <a href="#">Sports</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <div class="article">
+            <h2>Main Headline Article</h2>
+            <p>Brief content snippet or summary of the article.</p>
+        </div>
+        <div class="article">
+            <h2>Secondary Article Title</h2>
+            <p>Brief content snippet or summary of the article.</p>
+        </div>
+        <div class="article">
+            <h2>Another Article Title</h2>
+            <p>Brief content snippet or summary of the article.</p>
+        </div>
+    </div>
+    
+    <div class="sidebar">
+        <h2>Latest News</h2>
+        <ul>
+            <li>Latest news item 1</li>
+            <li>Latest news item 2</li>
+            <li>Latest news item 3</li>
+            <li>Latest news item 4</li>
+        </ul>
+        <h2>Trending Topics</h2>
+        <ul>
+            <li>Trending topic 1</li>
+            <li>Trending topic 2</li>
+            <li>Trending topic 3</li>
+            <li>Trending topic 4</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Classic News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

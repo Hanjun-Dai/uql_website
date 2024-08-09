@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #444; /* Slightly altered text color */
+            text-align: center;
+        }
+
+        .error-container {
+            background: linear-gradient(to bottom right, #ff7043, #ffab40); /* Changed gradient colors */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .error-container h1 {
+            font-size: 48px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .error-container p {
+            font-size: 18px;
+            margin: 20px 0 30px;
+            color: #ffffff; /* Made text color for paragraph clearer */
+        }
+
+        .car-image {
+            position: absolute;
+            bottom: -30px;
+            right: -50px;
+            width: 150px;
+            opacity: 0.8;
+        }
+
+        .home-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #00695c; /* Changed link text color */
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s;
+        }
+
+        .home-link:hover {
+            background-color: #ffd740; /* Changed hover background color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <h1>404</h1>
+        <p>Page Not Found</p>
+        <a href="/" class="home-link">Go to Homepage</a>
+        <img src="car-image.png" alt="Car" class="car-image"> <!-- Replace with an appropriate car image -->
+    </div>
+
+</body>
+</html>

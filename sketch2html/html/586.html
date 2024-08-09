@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3; /* Changed */
+            color: #444; /* Changed */
+        }
+
+        header {
+            background-color: #28a745; /* Changed */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #007bff; /* Changed */
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white; /* Keep the same */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #0056b3; /* Keep the same */
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff; /* Keep the same */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Changed */
+        }
+
+        .forum-post {
+            border-bottom: 1px solid #ccc; /* Changed */
+            padding: 10px 0;
+        }
+
+        .forum-post:last-child {
+            border-bottom: none; /* Keep the same */
+        }
+
+        .post-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007BFF; /* Changed */
+        }
+
+        .post-meta {
+            color: #666; /* Changed */
+            font-size: 14px;
+        }
+
+        .post-content {
+            margin: 5px 0;
+        }
+
+        .post-actions {
+            margin: 10px 0;
+        }
+
+        .post-button {
+            background-color: #ffc107; /* Changed */
+            color: black; /* Changed */
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .post-button:hover {
+            background-color: #e0a800; /* Changed */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40; /* Changed */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corporate News Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Discussion</a>
+    <a href="#">About Us</a>
+</nav>
+
+<div class="container">
+    <h2>Forum Discussions</h2>
+    
+    <div class="forum-post">
+        <div class="post-title">New Policy Announced</div>
+        <div class="post-meta">Posted by Admin on October 1, 2023</div>
+        <div class="post-content">A new policy to enhance workplace productivity has been announced. Join the discussion!</div>
+        <div class="post-actions">
+            <a class="post-button" href="#">Reply</a>
+            <a class="post-button" href="#">View</a>
+        </div>
+    </div>
+
+    <div class="forum-post">
+        <div class="post-title">Annual Corporate Retreat</div>
+        <div class="post-meta">Posted by Jane Doe on October 2, 2023</div>
+        <div class="post-content">Details about this year's corporate retreat are available. Let’s discuss!</div>
+        <div class="post-actions">
+            <a class="post-button" href="#">Reply</a>
+            <a class="post-button" href="#">View</a>
+        </div>
+    </div>
+
+    <div class="forum-post">
+        <div class="post-title">Employee Recognition Program</div>
+        <div class="post-meta">Posted by John Smith on October 3, 2023</div>
+        <div class="post-content">Join us to celebrate our employees' achievements this quarter!</div>
+        <div class="post-actions">
+            <a class="post-button" href="#">Reply</a>
+            <a class="post-button" href="#">View</a>
+        </div>
+    </div>
+
+    <div class="post-actions" style="margin-top: 20px;">
+        <a class="post-button" href="#">New Post</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Corporate News. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

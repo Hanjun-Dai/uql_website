@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            height: 300px;
+            background: url('https://source.unsplash.com/1600x900/?parenting') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            position: relative;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .cta {
+            margin: 20px;
+            padding: 15px 30px;
+            background: #E94E77;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #c0392b;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+        }
+        .feature {
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border-radius: 8px;
+            padding: 20px;
+            width: 200px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>Welcome to Parenting Hub</h1>
+    <button class="cta">Join Us</button>
+</section>
+
+<header>
+    <h1>Parenting Hub</h1>
+    <p>Your go-to resource for parenting tips, advice, and support.</p>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <h2>Community Support</h2>
+        <p>Connect with other parents, share your experiences.</p>
+    </div>
+    <div class="feature">
+        <h2>Resources</h2>
+        <p>Access articles, videos, and tools to help you.</p>
+    </div>
+    <div class="feature">
+        <h2>Expert Advice</h2>
+        <p>Learn from professionals on child development and parenting.</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Parenting Hub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

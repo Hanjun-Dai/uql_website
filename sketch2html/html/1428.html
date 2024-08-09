@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #444; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .category-card {
+            background-color: #fff;
+            border: 2px solid #555; /* Changed card border color */
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .category-card h3 {
+            font-size: 20px;
+            text-align: center;
+            color: #2c3e50; /* Changed category title color */
+            margin: 15px 0;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #444; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    History Categories
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="category-card">
+            <img src="images/ancient_history.jpg" alt="Ancient History">
+            <h3>Ancient History</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/middle_age.jpg" alt="Middle Ages">
+            <h3>Middle Ages</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/modern_history.jpg" alt="Modern History">
+            <h3>Modern History</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/world_wars.jpg" alt="World Wars">
+            <h3>World Wars</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/renaissance.jpg" alt="The Renaissance">
+            <h3>The Renaissance</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/industrial_age.jpg" alt="Industrial Age">
+            <h3>Industrial Age</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    Â© 2023 History Website
+</footer>
+
+</body>
+</html>

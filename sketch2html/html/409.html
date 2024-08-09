@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Education Website</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdf6e3; /* Vintage paper color */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #8b5a2b; /* Old wood color */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            margin: 20px 0;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #8b5a2b;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #8b5a2b;
+            border-radius: 10px;
+            width: 30%;
+            margin: 10px 0;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #8b5a2b;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <h1>Vintage Academy</h1>
+</header>
+
+<footer>
+    <p>&copy; 2023 Vintage Academy. All rights reserved.</p>
+</footer>
+
+<div class="container">
+    <div class="card">
+        <h2>Community</h2>
+        <p>Join discussions and learn from peers.</p>
+    </div>
+    <div class="card">
+        <h2>Resources</h2>
+        <p>Access valuable learning materials.</p>
+    </div>
+    <div class="card">
+        <h2>Courses</h2>
+        <p>Explore a wide range of subjects.</p>
+    </div>
+</div>
+
+</body>
+</html>

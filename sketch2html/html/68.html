@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Automotive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .testimonial {
+            border-left: 5px solid #007BFF;
+            padding-left: 20px;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .customer {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .client-image {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 15px;
+            border: 2px solid #007BFF;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .client-image {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What Our Customers Say</h1>
+        
+        <div class="image-container">
+            <img src="client1.jpg" alt="Client 1" class="client-image">
+            <img src="client2.jpg" alt="Client 2" class="client-image">
+            <img src="client3.jpg" alt="Client 3" class="client-image">
+        </div>
+
+        <div class="testimonial">
+            "A seamless buying experience with exceptional support! Highly recommend this dealership!"
+            <div class="customer">- Jane Smith</div>
+        </div>
+
+        <div class="testimonial">
+            "Absolutely love my new car! The performance is unmatched and the service was exceptional."
+            <div class="customer">- John Doe</div>
+        </div>
+
+        <div class="testimonial">
+            "Great selection of vehicles and wonderful staff. I couldn't be happier with my purchase!"
+            <div class="customer">- Sarah Lee</div>
+        </div>
+    </div>
+</body>
+</html>

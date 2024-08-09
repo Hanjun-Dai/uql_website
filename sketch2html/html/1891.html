@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            font-size: 14px; /* Changed to smaller font size */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #004d99;
+            color: white;
+            font-size: 32px; /* Changed to larger font size */
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            font-size: 28px; /* Changed to larger font size */
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            cursor: pointer;
+            color: #004d99;
+            font-weight: bold;
+            font-size: 24px; /* Changed to larger font size */
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+            font-size: 12px; /* Changed to smaller font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+        <div class="faq-question">What kind of news do you cover?</div>
+        <div class="faq-answer">We cover a wide range of topics including politics, sports, technology, and lifestyle.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How do I submit a news tip?</div>
+        <div class="faq-answer">You can submit your news tips through our contact form available on the website.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">Can I subscribe to your newsletter?</div>
+        <div class="faq-answer">Yes! You can subscribe to our daily newsletter at the bottom of our homepage.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How can I contact customer support?</div>
+        <div class="faq-answer">Customer support can be reached via email or through our contact page.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

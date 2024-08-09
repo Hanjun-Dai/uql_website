@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .resource-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.02);
+        }
+        .resource-title {
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        .resource-link {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .resource-link:hover {
+            text-decoration: underline;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Resource Center</h1>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="resource-card">
+            <div class="resource-title">Healthy Recipes</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+        <div class="resource-card">
+            <div class="resource-title">Mental Health Support</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+        <div class="resource-card">
+            <div class="resource-title">Nutrition Guidelines</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+        <div class="resource-card">
+            <div class="resource-title">Wellness Blogs</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+        <div class="resource-card">
+            <div class="resource-title">Health Screenings</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+        <div class="resource-card">
+            <div class="resource-title">Exercise Tips</div>
+            <a class="resource-link" href="#">View Resource</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

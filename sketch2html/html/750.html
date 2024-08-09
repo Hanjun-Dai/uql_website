@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            transition: transform 0.2s;
+        }
+
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+
+        .testimonial-card img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .role {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .quote {
+            margin: 10px 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>What Our Users Say</h1>
+    </header>
+
+    <div class="testimonials">
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/80" alt="User 4">
+            <div class="name">David Brown</div>
+            <div class="role">UX Designer</div>
+            <div class="quote">âI love how user-friendly this technology is!â</div>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/80" alt="User 1">
+            <div class="name">Alice Johnson</div>
+            <div class="role">Software Engineer</div>
+            <div class="quote">âThis technology changed the way I work!â</div>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/80" alt="User 2">
+            <div class="name">Bob Smith</div>
+            <div class="role">Product Manager</div>
+            <div class="quote">âA remarkable solution for our challenges!â</div>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="https://via.placeholder.com/80" alt="User 3">
+            <div class="name">Carol Williams</div>
+            <div class="role">CTO</div>
+            <div class="quote">âAbsolutely indispensable for our team!â</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+        }
+        nav {
+            background-color: #61dafb;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .featured-game {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Games Haven</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">Home</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Adventure</a></li>
+            <li><a href="#">Puzzle</a></li>
+            <li><a href="#">RPG</a></li>
+            <li><a href="#">Action</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <h2>Featured Games</h2>
+        <div class="featured-game">
+            <h3>Game Title 2</h3>
+            <p>Description of Game 2.</p>
+        </div>
+        <div class="featured-game">
+            <h3>Game Title 3</h3>
+            <p>Description of Game 3.</p>
+        </div>
+        <div class="featured-game">
+            <h3>Game Title 1</h3>
+            <p>Description of Game 1.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Games Haven. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: url('banner.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        header h1 {
+            font-size: 4em;  /* Randomly increased */
+            margin: 0;
+            padding: 80px 0 0 0; /* Adjusted padding */
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 25px;  /* Randomly increased */
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em;  /* Randomly increased */
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .article {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: calc(33.333% - 20px);
+            transition: transform 0.2s;
+        }
+        .article:hover {
+            transform: scale(1.05);
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+        .article h2 {
+            margin: 10px;
+            font-size: 2em;  /* Randomly increased */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2em;  /* Randomly increased */
+        }
+
+        @media (max-width: 768px) {
+            .article {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .article {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lifestyle News</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Food</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="article">
+            <img src="image1.jpg" alt="Article 1">
+            <h2>Article Title 1</h2>
+        </div>
+        <div class="article">
+            <img src="image2.jpg" alt="Article 2">
+            <h2>Article Title 2</h2>
+        </div>
+        <div class="article">
+            <img src="image3.jpg" alt="Article 3">
+            <h2>Article Title 3</h2>
+        </div>
+        <div class="article">
+            <img src="image4.jpg" alt="Article 4">
+            <h2>Article Title 4</h2>
+        </div>
+        <div class="article">
+            <img src="image5.jpg" alt="Article 5">
+            <h2>Article Title 5</h2>
+        </div>
+        <div class="article">
+            <img src="image6.jpg" alt="Article 6">
+            <h2>Article Title 6</h2>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Lifestyle News
+    </div>
+</body>
+</html>

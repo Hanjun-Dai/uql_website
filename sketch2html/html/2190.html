@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Technology Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background: #007acc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 20px;
+            transition: background 0.3s;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            color: #007acc;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            margin-top: 10px;
+            display: none;
+            font-size: 0.9em;
+        }
+
+        .toggle-icon {
+            transition: transform 0.3s;
+        }
+
+        .active .toggle-icon {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="container">
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                Do you offer any subscription plans?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">Yes, we offer various subscription plans that grant access to exclusive content.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                How can I submit a tech query?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">You can submit your queries using the contact form available on our website.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                Where can I find your social media links?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">Our social media links are available at the footer of every page on our website.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)">
+                What is the purpose of this website?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">Our website aims to provide insights into the latest technology trends and innovations.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            const faqItem = questionElement.parentElement;
+
+            if (answerElement.style.display === "block") {
+                answerElement.style.display = "none";
+                faqItem.classList.remove('active');
+            } else {
+                answerElement.style.display = "block";
+                faqItem.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+</html>

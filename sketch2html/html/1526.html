@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Automotive Resource Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f5f5dc; /* Beige background */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #4b0082; /* Indigo */
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: #4b0082;
+            margin: 20px 0 10px;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border: 2px solid white;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: white;
+            color: #4b0082;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #4b0082;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            max-width: 180px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #4b0082;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage Auto Resources</h1>
+    <nav>
+        <a href="#forum">Forum</a>
+        <a href="#articles">Articles</a>
+        <a href="#guides">Guides</a>
+    </nav>
+</header>
+
+<section class="content">
+    <div class="card" id="forum">
+        <h2>Forum</h2>
+        <p>Join the Community</p>
+        <p>Ask Questions</p>
+        <p>Share Your Builds</p>
+    </div>
+    <div class="card" id="articles">
+        <h2>Articles</h2>
+        <p>Classic Car Restoration</p>
+        <p>Automotive History</p>
+        <p>Engine Swaps</p>
+    </div>
+    <div class="card" id="guides">
+        <h2>Guides</h2>
+        <p>Maintenance Tips</p>
+        <p>Buying Vintage Cars</p>
+        <p>Parts Sourcing</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Vintage Automotive</p>
+</footer>
+
+</body>
+</html>

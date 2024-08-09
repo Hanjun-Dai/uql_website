@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #555; /* Changed text color */
+        }
+        header {
+            background-color: #1d1f21; /* Changed header background color */
+            color: #f5f5f5; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .card {
+            background-color: #ffffff; /* No change */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Changed shadow color */
+            margin: 10px;
+            width: 30%;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            font-size: 20px;
+            padding: 15px;
+            color: #00796b; /* Changed card title color */
+        }
+        .card-content {
+            padding: 0 15px 15px;
+            color: #333; /* No change */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1d1f21; /* Same as header */
+            color: #f5f5f5; /* Same as header */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Tech News Today
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 1">
+        <div class="card-title">Latest AI Breakthrough</div>
+        <div class="card-content">Discover the new advancements in artificial intelligence.</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 2">
+        <div class="card-title">5G Networks Expanding</div>
+        <div class="card-content">Learn about the expansion of 5G technology across the globe.</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 3">
+        <div class="card-title">The Future of Quantum Computing</div>
+        <div class="card-content">Explore predictions for the next decade in quantum computing.</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 4">
+        <div class="card-title">Revolution in Smartphone Design</div>
+        <div class="card-content">Find out how smartphone designs are set to change.</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 5">
+        <div class="card-title">Cybersecurity Trends</div>
+        <div class="card-content">Stay informed about the latest in cybersecurity.</div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 6">
+        <div class="card-title">AR and VR Innovations</div>
+        <div class="card-content">Get the latest updates on AR and VR technologies.</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Tech News. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Landing Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming a CSS file for styling -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #3a3f47; /* Changed header background color */
+            color: white;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #ff6f61; /* Changed link color */
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1024x400') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            margin-top: 20px;
+        }
+        
+        .hero h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #ffeb3b; /* Changed hero text color */
+            font-size: 2em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: calc(33% - 20px);
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .card h3 {
+            padding: 15px 0;
+            font-size: 1.5em;
+            color: #2e7d32; /* Changed card text color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3a3f47; /* Changed footer background color */
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Arts</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h2>Explore the Beauty of Art</h2>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Art Piece 1">
+                <h3>Art Piece 1</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Art Piece 2">
+                <h3>Art Piece 2</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="Art Piece 3">
+                <h3>Art Piece 3</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Arts Website</p>
+    </footer>
+
+</body>
+</html>

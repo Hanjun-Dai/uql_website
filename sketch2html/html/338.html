@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Sports Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .service {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+        }
+        .testimonials {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            border: none;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Services</h1>
+</header>
+
+<div class="container">
+
+    <section class="contact-form">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <section class="services">
+        <div class="service">
+            <h2>Nutrition Coaching</h2>
+            <p>Personalized meal plans to enhance performance.</p>
+        </div>
+        <div class="service">
+            <h2>Personal Training</h2>
+            <p>One-on-one training sessions tailored for you.</p>
+        </div>
+        <div class="service">
+            <h2>Group Classes</h2>
+            <p>Join our fun and exciting group workouts.</p>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"I love the personal attention I get during training!" - Jane D.</p>
+        <p>"The group classes are always fun and motivating!" - John S.</p>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports Website. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

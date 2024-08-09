@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #c0392b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-item h3 {
+            margin: 10px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Food Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <img src="food4.jpg" alt="Dish 4">
+            <h3>Dish Name 4</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="food2.jpg" alt="Dish 2">
+            <h3>Dish Name 2</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="food6.jpg" alt="Dish 6">
+            <h3>Dish Name 6</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="food3.jpg" alt="Dish 3">
+            <h3>Dish Name 3</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="food5.jpg" alt="Dish 5">
+            <h3>Dish Name 5</h3>
+        </div>
+        <div class="portfolio-item">
+            <img src="food1.jpg" alt="Dish 1">
+            <h3>Dish Name 1</h3>
+        </div>
+    </section>
+</main>
+
+<footer>
+    &copy; 2023 My Food Portfolio
+</footer>
+
+</body>
+</html>

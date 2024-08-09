@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Lifestyle Blog</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf6e3;
+            color: #3e3e3e;
+        }
+        header {
+            background: #8b5a2b; /* rustic brown */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 25%;
+            background: #e9c49c; /* light beige */
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .main {
+            width: 70%;
+        }
+        .post {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .post img {
+            width: 100%;
+            border-bottom: 2px solid #8b5a2b;
+        }
+        .post h2 {
+            padding: 10px;
+            margin: 0;
+            background: #eae1de; /* light gray */
+        }
+        .post p {
+            padding: 0 10px 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #8b5a2b;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Lifestyle</h1>
+    <nav>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Home</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="#">Food</a></li>
+            <li><a href="#">Living</a></li>
+            <li><a href="#">Nature</a></li>
+        </ul>
+        <h2>Latest Posts</h2>
+        <ul>
+            <li><a href="#">Mindfulness in Nature</a></li>
+            <li><a href="#">How to Start a Herb Garden</a></li>
+            <li><a href="#">DIY Rustic Decor</a></li>
+        </ul>
+    </aside>
+    
+    <div class="main">
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="Post Image">
+            <h2>Culinary Adventures</h2>
+            <p>Join us on a journey through rustic recipes and cooking tips.</p>
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="Post Image">
+            <h2>Simple Living</h2>
+            <p>Discover the beauty in simplicity and how to declutter your life.</p>
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/800x300" alt="Post Image">
+            <h2>Embracing Nature</h2>
+            <p>Explore how nature can rejuvenate your spirit and connection to the earth.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Rustic Lifestyle. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

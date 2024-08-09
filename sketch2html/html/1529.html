@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 80%;
+            max-width: 480px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: #FF5722;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #FF5722;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #FF8A65;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #FF8A65;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 30px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <h1>Say Hello!</h1>
+        <p>Weâd love to hear from you.</p>
+        <div class="footer">
+            <p>Follow us:</p>
+            <div class="social-icons">
+                <img src="twitter-icon.png" alt="Twitter">
+                <img src="facebook-icon.png" alt="Facebook">
+                <img src="instagram-icon.png" alt="Instagram">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

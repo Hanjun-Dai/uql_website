@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Parenting Categories</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4682b4; /* Changed from #ff6347 to #4682b4 */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+        .category-card {
+            background-color: #fff;
+            border: 2px solid #32cd32; /* Changed from #ff6347 to #32cd32 */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-card h2 {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 20px;
+            color: #9400d3; /* Changed from #4b0082 to #9400d3 */
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <h1>Playful Parenting Categories</h1>
+    <div class="container">
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Baby Care">
+            <h2>Baby Care</h2>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Toddler Activities">
+            <h2>Toddler Activities</h2>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Parenting Tips">
+            <h2>Parenting Tips</h2>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Nutrition and Feeding">
+            <h2 style="color: #ff4500;">Nutrition</h2> <!-- Inline style change -->
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Discipline Strategies">
+            <h2>Discipline</h2>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/150" alt="Family Health">
+            <h2 style="color: #1e90ff;">Family Health</h2> <!-- Inline style change -->
+        </div>
+    </div>
+</body>
+</html>

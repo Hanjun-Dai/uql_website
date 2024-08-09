@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4e73df;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcb05;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .sidebar h2 {
+            color: #4e73df;
+        }
+        .featured-section {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-left: 20px; /* Adjusted margin for the new layout */
+        }
+        .featured-section h2 {
+            color: #4e73df;
+        }
+        .footer {
+            background-color: #4e73df;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Politics Today</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Analysis</a>
+        <a href="#">Opinion</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<div class="main-content">
+    <div class="sidebar">
+        <h2>Latest News</h2>
+        <ul>
+            <li><a href="#">News Item One</a></li>
+            <li><a href="#">News Item Two</a></li>
+            <li><a href="#">News Item Three</a></li>
+            <li><a href="#">News Item Four</a></li>
+        </ul>
+    </div>
+
+    <div class="featured-section">
+        <h2>Featured Articles</h2>
+        <article>
+            <h3>Article Title One</h3>
+            <p>A brief description of the article content.</p>
+        </article>
+        <article>
+            <h3>Article Title Two</h3>
+            <p>A brief description of the article content.</p>
+        </article>
+        <article>
+            <h3>Article Title Three</h3>
+            <p>A brief description of the article content.</p>
+        </article>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Politics Today - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

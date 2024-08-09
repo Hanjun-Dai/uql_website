@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page - Automotive Corp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff; /* Changed background color */
+        }
+
+        header {
+            background-color: #005580; /* Changed header background color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .resource-section {
+            background-color: #ffffff;
+            border: 1px solid #cccccc; /* Changed border color */
+            border-radius: 8px;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+
+        .resource-section:hover {
+            transform: scale(1.02);
+        }
+
+        .resource-header {
+            background-color: #0099cc; /* Changed resource header background color */
+            color: #ffffff;
+            padding: 10px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            text-align: center;
+        }
+
+        .resource-list {
+            padding: 15px;
+            list-style: none;
+            margin: 0;
+        }
+
+        .resource-list li {
+            margin: 10px 0;
+        }
+
+        .resource-list a {
+            text-decoration: none;
+            color: #0077cc; /* Changed link color */
+        }
+
+        .resource-list a:hover {
+            text-decoration: underline;
+            color: #005580; /* Changed hover link color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #005580; /* Changed footer background color */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Automotive Corp - Resource Center</h1>
+        <p>Explore our resources to stay informed and empowered.</p>
+    </header>
+
+    <div class="container">
+        <div class="resource-section">
+            <div class="resource-header">Articles</div>
+            <ul class="resource-list">
+                <li><a href="#">Understanding Engine Types</a></li>
+                <li><a href="#">The Future of Electric Vehicles</a></li>
+                <li><a href="#">Maintenance Tips for Your Vehicle</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-section">
+            <div class="resource-header">News</div>
+            <ul class="resource-list">
+                <li><a href="#">New Hybrid Model Launch</a></li>
+                <li><a href="#">Automotive Safety Innovations</a></li>
+                <li><a href="#">Industry Trends 2023</a></li>
+            </ul>
+        </div>
+
+        <div class="resource-section">
+            <div class="resource-header">Manuals</div>
+            <ul class="resource-list">
+                <li><a href="#">User Manual for Model X</a></li>
+                <li><a href="#">Maintenance Manual for Model Y</a></li>
+                <li><a href="#">Quick Reference Guide</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Automotive Corp. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

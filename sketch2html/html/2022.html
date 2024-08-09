@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Travel Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f0e7d3; /* Changed background color */
+            color: #2c2c2c; /* Changed text color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('vintage-header-bg.jpg') no-repeat center center/cover;
+            height: 200px;
+            text-align: center;
+            color: #fff;
+            padding-top: 60px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Slightly darkened shadow */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #f0c95c; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Darker box shadow */
+        }
+        .portfolio-item {
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid #bbb; /* Changed border color */
+            border-radius: 8px;
+            position: relative;
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-bottom: 5px solid #b58c55; /* Changed border color */
+        }
+        .portfolio-item h2 {
+            background: #b58c55; /* Changed background color */
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444; /* Changed footer background color */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Diaries</h1>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container" id="portfolio">
+    <h2>My Adventures</h2>
+    
+    <div class="portfolio-item">
+        <img src="travel1.jpg" alt="Adventure in the Mountains">
+        <h2>Mountain Escape</h2>
+    </div>
+    
+    <div class="portfolio-item">
+        <img src="travel2.jpg" alt="Beach Getaway">
+        <h2>Beach Getaway</h2>
+    </div>
+    
+    <div class="portfolio-item">
+        <img src="travel3.jpg" alt="Urban Exploration">
+        <h2>Urban Exploration</h2>
+    </div>
+    
+    <div class="portfolio-item">
+        <img src="travel4.jpg" alt="Cultural Experience">
+        <h2>Cultural Experience</h2>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel Diaries. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

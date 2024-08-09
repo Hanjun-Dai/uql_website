@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #004b87;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            background: white;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 15px;
+        }
+        .faq-item h3 {
+            margin: 0;
+            cursor: pointer;
+        }
+        .faq-content {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+    </style>
+    <script>
+        function toggleFAQ(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('content4')">How can I contact customer support?</h3>
+        <div id="content4" class="faq-content">
+            <p>You can reach our support team via the contact form on our website.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('content2')">How often is the news updated?</h3>
+        <div id="content2" class="faq-content">
+            <p>News updates occur every few hours to keep you informed.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('content5')">Do you have a newsletter?</h3>
+        <div id="content5" class="faq-content">
+            <p>Yes, you can subscribe to our newsletter for updates.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('content1')">What is this news website about?</h3>
+        <div id="content1" class="faq-content">
+            <p>We provide the latest news on various topics.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <h3 onclick="toggleFAQ('content3')">Can I submit my own news tips?</h3>
+        <div id="content3" class="faq-content">
+            <p>Yes! We welcome news tips from our readers.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

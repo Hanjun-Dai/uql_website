@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Something Went Wrong</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #ffe6e6, #ffffff);
+            color: #555;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            background: white;
+            position: relative;
+        }
+        .error-code {
+            font-size: 100px;
+            font-weight: bold;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+        }
+        .message {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .illustration {
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 200px;
+            opacity: 0.1;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #e63939;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="illustration.png" alt="Illustration" class="illustration">
+        <div class="message">The page you are looking for does not exist.</div>
+        <div class="error-code">404</div>
+        <div class="message">Oops! Page not found.</div>
+        <a href="/" class="btn">Go Back Home</a>
+    </div>
+</body>
+</html>

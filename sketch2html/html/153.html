@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Parenting Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+            font-size: 18px; /* Increased base font size */
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 2rem; /* Increased padding */
+            text-align: center;
+            font-size: 3rem; /* Increased font size for header */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 1rem; /* Increased margin for h2 */
+        }
+        .hero {
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+            background-image: url('hero.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .hero-text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px; /* Increased padding for hero text */
+            border-radius: 5px;
+            font-size: 2.5rem; /* Increased font size for hero-text */
+        }
+        .mission {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px; /* Increased padding */
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 1.5rem; /* Increased font size for mission */
+        }
+        .team {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.2rem; /* Slightly increased font size for team members */
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4A90E2;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1rem; /* Standard font size for footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <h2>Empowering Parents Everywhere</h2>
+            </div>
+        </div>
+        
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>To support and empower parents through shared experiences, resources, and community.</p>
+        </div>
+
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="member1.jpg" alt="Member 1">
+                <h3>Jane Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="member2.jpg" alt="Member 2">
+                <h3>John Smith</h3>
+                <p>Co-Founder & Editor</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Community Manager</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Parenting Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

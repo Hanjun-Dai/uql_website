@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Forum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: #ecf0f1;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .forum-title {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .forum-list {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .forum-item {
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .forum-item:last-child {
+            border-bottom: none;
+        }
+        .forum-item h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .forum-item .meta {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #34495e;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Forum</h1>
+</header>
+
+<div class="container">
+    <h2 class="forum-title">Discussion Topics</h2>
+    <div class="forum-list">
+        <div class="forum-item">
+            <h3>Music Recommendations</h3>
+            <div class="meta">22 Replies | Last post: 5 hours ago</div>
+        </div>
+        <div class="forum-item">
+            <h3>TV Shows to Watch</h3>
+            <div class="meta">30 Replies | Last post: 1 day ago</div>
+        </div>
+        <div class="forum-item">
+            <h3>Upcoming Concerts</h3>
+            <div class="meta">15 Replies | Last post: 3 days ago</div>
+        </div>
+        <div class="forum-item">
+            <h3>Latest Movies Discussion</h3>
+            <div class="meta">45 Replies | Last post: 2 hours ago</div>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <div class="container">
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Topics</a>
+        <a href="#">Community</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<footer class="footer">
+    <p>&copy; 2023 Entertainment Forum. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

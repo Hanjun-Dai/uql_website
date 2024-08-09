@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 40px 20px; /* Changed from 15px to 40px */
+            text-align: center;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .thread-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .thread {
+            border-bottom: 1px solid #ddd;
+            padding: 40px; /* Changed from 15px to 40px */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .thread:last-child {
+            border-bottom: none;
+        }
+        .thread-title {
+            font-size: 32px; /* Changed from 18px to 32px */
+            font-weight: bold;
+        }
+        .thread-info {
+            font-size: 10px; /* Changed from 14px to 10px */
+            color: #666;
+        }
+        .create-thread {
+            margin: 40px 0; /* Changed from 20px to 40px */
+            text-align: right;
+        }
+        .create-thread button {
+            padding: 20px 30px; /* Changed from 10px to 20px */
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .create-thread button:hover {
+            background: #005fa3;
+        }
+        .reply-count {
+            font-size: 24px; /* Changed from default to 24px */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education Forum</h1>
+    </header>
+    
+    <div class="container">
+        <div class="create-thread">
+            <button>Create New Thread</button>
+        </div>
+        
+        <ul class="thread-list">
+            <li class="thread">
+                <div>
+                    <div class="thread-title">How to Study Effectively?</div>
+                    <div class="thread-info">Posted by User123 on Oct 20, 2023</div>
+                </div>
+                <div class="reply-count">5 replies</div>
+            </li>
+            <li class="thread">
+                <div>
+                    <div class="thread-title">Best Resources for Learning Math</div>
+                    <div class="thread-info">Posted by User456 on Oct 19, 2023</div>
+                </div>
+                <div class="reply-count">3 replies</div>
+            </li>
+            <li class="thread">
+                <div>
+                    <div class="thread-title">Tips for Online Learning</div>
+                    <div class="thread-info">Posted by User789 on Oct 18, 2023</div>
+                </div>
+                <div class="reply-count">8 replies</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

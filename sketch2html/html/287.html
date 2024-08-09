@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef; /* Changed background */
+            margin: 0;
+            padding: 0;
+            color: #444; /* Changed text color */
+        }
+        header {
+            background-color: #28a745; /* Changed header background */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Changed shadow */
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #17a2b8; /* Changed header text color */
+        }
+        .testimonial {
+            border-bottom: 1px solid #dee2e6; /* Changed border color */
+            padding: 20px 0;
+        }
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+        .testimonial-content {
+            display: flex;
+            align-items: center;
+        }
+        .testimonial-image {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .testimonial-text {
+            flex-grow: 1;
+        }
+        .testimonial-author {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #6c757d; /* Changed author text color */
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            .testimonial-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .testimonial-image {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Clients Say</h1>
+</header>
+
+<div class="container">
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <img src="client1.jpg" alt="Client 1" class="testimonial-image">
+            <div class="testimonial-text">
+                <p>"The team made buying our first home a seamless experience!"</p>
+                <div class="testimonial-author">- John Doe</div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <img src="client2.jpg" alt="Client 2" class="testimonial-image">
+            <div class="testimonial-text">
+                <p>"Professional, dedicated, and always available. Highly recommend!"</p>
+                <div class="testimonial-author">- Jane Smith</div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="testimonial-content">
+            <img src="client3.jpg" alt="Client 3" class="testimonial-image">
+            <div class="testimonial-text">
+                <p>"They really understood our needs and found us the perfect home."</p>
+                <div class="testimonial-author">- Alex Johnson</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

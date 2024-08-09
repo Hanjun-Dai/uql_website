@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category {
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin: 10px;
+            flex: 1 1 calc(33% - 20px);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .category-title {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Automotive Categories
+</header>
+
+<div class="container">
+    <div class="category">
+        <img src="images/electric.jpg" alt="Electric Vehicles">
+        <div class="category-title">Electric Vehicles</div>
+    </div>
+    <div class="category">
+        <img src="images/convertibles.jpg" alt="Convertibles">
+        <div class="category-title">Convertibles</div>
+    </div>
+    <div class="category">
+        <img src="images/trucks.jpg" alt="Trucks">
+        <div class="category-title">Trucks</div>
+    </div>
+    <div class="category">
+        <img src="images/suv.jpg" alt="SUVs">
+        <div class="category-title">SUVs</div>
+    </div>
+    <div class="category">
+        <img src="images/hatchbacks.jpg" alt="Hatchbacks">
+        <div class="category-title">Hatchbacks</div>
+    </div>
+    <div class="category">
+        <img src="images/sedans.jpg" alt="Sedans">
+        <div class="category-title">Sedans</div>
+    </div>
+</div>
+
+<footer>
+    Â© 2023 Automotive Website
+</footer>
+
+</body>
+</html>

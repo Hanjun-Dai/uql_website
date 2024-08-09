@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .form-section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .info {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            border-right: 1px solid #e0e0e0;
+        }
+        .info:last-child {
+            border-right: none;
+        }
+        .form {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form input, .form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form button {
+            padding: 10px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .form button:hover {
+            background-color: #1a6a8c;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="form-section">
+            <h2>Get in Touch</h2>
+            <form class="form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <div class="info">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="info">
+                <h3>Email</h3>
+                <p>info@realestate.com</p>
+            </div>
+            <div class="info">
+                <h3>Address</h3>
+                <p>123 Real Estate Ave,<br>City, State, Zip</p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Real Estate Website. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

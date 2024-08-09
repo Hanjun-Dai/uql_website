@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Automotive Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-image: url('wood-background.jpg'); /* rustic wood background */
+            height: 200px;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #8b5a2b;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #a0522d;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .blog-post {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #8b5a2b;
+        }
+        .blog-post-content {
+            padding: 20px;
+        }
+        .blog-post h2 {
+            font-size: 1.8em;
+            color: #8b5a2b;
+        }
+        .blog-post p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #8b5a2b;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Wheels</h1>
+    <p>Your source for automotive adventures</p>
+</header>
+
+<nav>
+    <a href="#">Blog</a>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+</nav>
+
+<div class="container">
+
+    <div class="blog-post">
+        <img src="car2.jpg" alt="Off-road Adventure">
+        <div class="blog-post-content">
+            <h2>Off-Roading Adventures</h2>
+            <p>Unleash the beast and take your car off the beaten path!</p>
+        </div>
+    </div>
+
+    <div class="blog-post">
+        <img src="car3.jpg" alt="Car Show">
+        <div class="blog-post-content">
+            <h2>Annual Car Show Recap</h2>
+            <p>Check out the highlights from this year's car show.</p>
+        </div>
+    </div>
+
+    <div class="blog-post">
+        <img src="car1.jpg" alt="Classic Car">
+        <div class="blog-post-content">
+            <h2>Exploring Classic Cars</h2>
+            <p>Dive into the world of classic car restoration and history.</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Rustic Wheels. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

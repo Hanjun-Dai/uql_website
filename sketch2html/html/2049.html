@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        header {
+            background-color: #4a148c; /* Changed header background color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-right: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-title {
+            font-size: 1.2em;
+            color: #d32f2f; /* Changed post title color */
+            margin-bottom: 5px;
+        }
+        .post-info {
+            font-size: 0.9em;
+            color: #555; /* Changed post info color */
+        }
+        .sidebar {
+            flex: 1;
+            background: #f1f8e9; /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            margin-top: 0;
+            color: #388e3c; /* Changed sidebar heading color */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4a148c; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Forum</h1>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Recent Posts</h2>
+        <div class="post">
+            <div class="post-title">How to Prepare for Exams</div>
+            <div class="post-info">Posted by User123 on Oct 1, 2023</div>
+            <p>Tips and strategies to excel in your exams...</p>
+        </div>
+        <div class="post">
+            <div class="post-title">Best Study Practices</div>
+            <div class="post-info">Posted by Student456 on Sep 28, 2023</div>
+            <p>Explore effective study methods...</p>
+        </div>
+        <div class="post">
+            <div class="post-title">Group Study Advantages</div>
+            <div class="post-info">Posted by Learner789 on Sep 25, 2023</div>
+            <p>Why studying in groups can be beneficial...</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Mathematics</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Literature</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Technology</a></li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Education Forum | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

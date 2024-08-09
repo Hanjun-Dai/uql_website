@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #FF5733; /* Changed color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #FFD700; /* Changed color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .main-content, .sidebar {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            font-size: 20px;
+            margin: 0;
+            color: #2E86C1; /* Changed color */
+        }
+        .article .date {
+            font-size: 12px;
+            color: #A52A2A; /* Changed color */
+        }
+        .article p {
+            margin: 5px 0 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #28B463; /* Changed color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Science News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Research</a>
+        <a href="#">Technology</a>
+        <a href="#">Health</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Latest Articles</h2>
+
+        <div class="article">
+            <h2><a href="#" style="color: #8E44AD;">Breakthrough in Quantum Computing</a></h2> <!-- Changed link color -->
+            <p class="date">Published on October 15, 2023</p>
+            <p>Scientists have achieved a new milestone in quantum computing...</p>
+        </div>
+        
+        <div class="article">
+            <h2><a href="#" style="color: #8E44AD;">New Discoveries in Space Exploration</a></h2> <!-- Changed link color -->
+            <p class="date">Published on October 14, 2023</p>
+            <p>A team of researchers has made significant findings about...</p>
+        </div>
+
+        <div class="article">
+            <h2><a href="#" style="color: #8E44AD;">Advancements in CRISPR Technology</a></h2> <!-- Changed link color -->
+            <p class="date">Published on October 13, 2023</p>
+            <p>This new technique promises to revolutionize genetic editing...</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h2 style="color: #C0392B;">Sidebar</h2> <!-- Changed color -->
+        <p>Upcoming Events</p>
+        <ul>
+            <li>Science Conference - Nov 2023</li>
+            <li>Webinar on Climate Change - Dec 2023</li>
+        </ul>
+
+        <h2>Newsletter</h2>
+        <p>Subscribe to our newsletter for the latest updates in science.</p>
+        <input type="email" placeholder="Enter your email" />
+        <button type="button" style="background-color: #3498DB; color: white;">Subscribe</button> <!-- Changed button color -->
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

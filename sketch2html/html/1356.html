@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - History Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eaeaea;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-title {
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            background: #f9f9f9;
+            transition: background 0.3s;
+        }
+        .faq-title:hover {
+            background: #eaeaea;
+        }
+        .faq-content {
+            padding: 15px;
+            display: none;
+            background: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Frequently Asked Questions</h1>
+
+<div class="faq-container">
+    
+    <div class="faq-item">
+        <div class="faq-title" onclick="toggleFAQ(this)">How can I contact support?</div>
+        <div class="faq-content">Please use the contact form on our website to reach out for any support inquiries.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-title" onclick="toggleFAQ(this)">Do you offer any educational resources?</div>
+        <div class="faq-content">Yes, we provide access to various educational materials for students and teachers.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-title" onclick="toggleFAQ(this)">Is there a newsletter?</div>
+        <div class="faq-content">Yes, you can subscribe to our newsletter to receive updates and articles.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-title" onclick="toggleFAQ(this)">How can I contribute?</div>
+        <div class="faq-content">You can share your knowledge by submitting articles or resources through the contact form.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-title" onclick="toggleFAQ(this)">What is the purpose of this website?</div>
+        <div class="faq-content">Our website aims to provide comprehensive information on historical events and figures.</div>
+    </div>
+    
+</div>
+
+<script>
+    function toggleFAQ(element) {
+        const content = element.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

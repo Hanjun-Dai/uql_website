@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Changed to a lighter gray */
+        }
+        header {
+            background-color: #ffa07a; /* Light Salmon color */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+        nav {
+            background-color: #444; /* Slightly lighter dark grey */
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: #e0e0e0; /* Light grey for links */
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #696969; /* Dim Gray */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            width: 70%;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+            margin-right: 10px;
+        }
+        .sidebar {
+            width: 25%;
+            background-color: #fafafa; /* Very Light Gray */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+        }
+        .forum-thread {
+            border-bottom: 1px solid #ccc; /* Lighter border */
+            padding: 10px 0;
+        }
+        .forum-thread:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #444; /* Slightly lighter dark grey */
+            color: #f0f0f0; /* Light grey for footer text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to the Food Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Recipes</a>
+    <a href="#">Discussions</a>
+    <a href="#">Tips & Tricks</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Latest Threads</h2>
+        <div class="forum-thread">
+            <h3><a href="#">Best Vegan Recipes in 2023</a></h3>
+            <p>Started by User123 - 5 replies</p>
+        </div>
+        <div class="forum-thread">
+            <h3><a href="#">How to Cook the Perfect Steak</a></h3>
+            <p>Started by ChefMaster - 15 replies</p>
+        </div>
+        <div class="forum-thread">
+            <h3><a href="#">Baking Tips for Beginners</a></h3>
+            <p>Started by BakeLover - 8 replies</p>
+        </div>
+        <div class="forum-thread">
+            <h3><a href="#">Spicy Recipes from Around the World</a></h3>
+            <p>Started by SpiceQueen - 3 replies</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Popular Topics</h2>
+        <ul>
+            <li><a href="#">Healthy Eating</a></li>
+            <li><a href="#">Meal Prep Ideas</a></li>
+            <li><a href="#">Food Photography</a></li>
+            <li><a href="#">Wine Pairing</a></li>
+        </ul>
+
+        <h2>Newest Members</h2>
+        <ul>
+            <li>User1</li>
+            <li>User2</li>
+            <li>User3</li>
+            <li>User4</li>
+        </ul>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Food Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .info p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="image3.jpg" alt="Project 3">
+            <div class="info">
+                <h3>Project Title 3</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="image5.jpg" alt="Project 5">
+            <div class="info">
+                <h3>Project Title 5</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="image1.jpg" alt="Project 1">
+            <div class="info">
+                <h3>Project Title 1</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="image6.jpg" alt="Project 6">
+            <div class="info">
+                <h3>Project Title 6</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="image2.jpg" alt="Project 2">
+            <div class="info">
+                <h3>Project Title 2</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="image4.jpg" alt="Project 4">
+            <div class="info">
+                <h3>Project Title 4</h3>
+                <p>Short description</p>
+            </div>
+        </div>
+        <!-- Add more portfolio items as needed -->
+    </section>
+</div>
+
+<header>
+    <h1>My Entertainment Portfolio</h1>
+    <p>Showcasing my work in film and media</p>
+</header>
+
+<footer>
+    <p>&copy; 2023 Your Name</p>
+</footer>
+
+</body>
+</html>

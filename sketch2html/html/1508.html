@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+            color: #212529; /* Changed text color */
+        }
+        header {
+            background-color: #a71c3b; /* Changed header background color */
+            color: #f8f9fa; /* Changed header text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #f8f9fa; /* Changed navigation link color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .portfolio-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Changed shadow color */
+            transition: transform 0.3s;
+            border: 2px solid #adb5bd; /* Added border to items */
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto; 
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Changed hover shadow */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #495057; /* Changed footer background color */
+            color: #f8f9fa; /* Changed footer text color */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Delicious Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="portfolio">
+    <div class="portfolio-item">
+        <img src="food1.jpg" alt="Dish 1">
+    </div>
+    <div class="portfolio-item">
+        <img src="food2.jpg" alt="Dish 2">
+    </div>
+    <div class="portfolio-item">
+        <img src="food3.jpg" alt="Dish 3">
+    </div>
+    <div class="portfolio-item">
+        <img src="food4.jpg" alt="Dish 4">
+    </div>
+    <div class="portfolio-item">
+        <img src="food5.jpg" alt="Dish 5">
+    </div>
+    <div class="portfolio-item">
+        <img src="food6.jpg" alt="Dish 6">
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2023 Delicious Cuisine. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

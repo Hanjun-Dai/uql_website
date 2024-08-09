@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #1e1e2f;
+            color: #eeffcc; /* Changed text color */
+        }
+        header {
+            background-color: #4a4a67; /* Changed header background */
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            color: #fad02e; /* Changed h1 color */
+        }
+        nav a {
+            margin: 0 15px;
+            color: #add8e6; /* Changed nav link color */
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .blog-posts {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .post {
+            background-color: #4b4b7f; /* Changed post background color */
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+        }
+        .post:hover {
+            transform: translateY(-5px);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #4a4a67; /* Changed sidebar background */
+            border-radius: 8px;
+            padding: 15px;
+        }
+        footer {
+            background-color: #333348; /* Changed footer background */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .post h2 {
+            margin: 0 0 10px 0;
+            color: #ffcc00; /* Changed post title color */
+        }
+        .post p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GameOn Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="blog-posts">
+        <div class="post">
+            <h2>Latest Game Releases</h2>
+            <p>Discover the hottest games released this month!</p>
+        </div>
+        <div class="post">
+            <h2>Top 10 Tips for Gamers</h2>
+            <p>Level up your gaming skills with these pro tips!</p>
+        </div>
+        <div class="post">
+            <h2>Upcoming Events</h2>
+            <p>Don't miss the exciting events happening this year!</p>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#" style="color: #add8e6;">Action</a></li>
+            <li><a href="#" style="color: #add8e6;">Adventure</a></li>
+            <li><a href="#" style="color: #add8e6;">Strategy</a></li>
+            <li><a href="#" style="color: #add8e6;">RPG</a></li>
+            <li><a href="#" style="color: #add8e6;">Multiplayer</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 GameOn. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

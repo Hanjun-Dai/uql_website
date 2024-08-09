@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 1rem;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .filter-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .filter-section select {
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        .card-price {
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Listings</h1>
+</header>
+
+<div class="container">
+
+    <div class="grid">
+        <div class="card">
+            <img src="property2.jpg" alt="Property 2">
+            <div class="card-content">
+                <h2 class="card-title">Cozy Cottage</h2>
+                <p class="card-price">$150,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property3.jpg" alt="Property 3">
+            <div class="card-content">
+                <h2 class="card-title">Luxury Villa</h2>
+                <p class="card-price">$1,200,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property4.jpg" alt="Property 4">
+            <div class="card-content">
+                <h2 class="card-title">Spacious Townhouse</h2>
+                <p class="card-price">$400,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property1.jpg" alt="Property 1">
+            <div class="card-content">
+                <h2 class="card-title">Modern Apartment</h2>
+                <p class="card-price">$250,000</p>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+
+    <div class="filter-section">
+        <select>
+            <option value="">Select Location</option>
+            <option value="location1">Location 1</option>
+            <option value="location2">Location 2</option>
+            <option value="location3">Location 3</option>
+        </select>
+
+        <select>
+            <option value="">Property Type</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="condo">Condo</option>
+        </select>
+
+        <select>
+            <option value="">Price Range</option>
+            <option value="0-100k">$0 - $100k</option>
+            <option value="100k-300k">$100k - $300k</option>
+            <option value="300k+">$300k+</option>
+        </select>
+    </div>
+
+</div>
+
+<footer>
+    <p>Â© 2023 Real Estate Company</p>
+</footer>
+
+</body>
+</html>

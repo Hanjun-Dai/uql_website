@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d32f2f; /* Changed header color */
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #b0bec5; /* Changed border color */
+            padding-bottom: 10px;
+        }
+
+        .faq-item h2 {
+            font-size: 18px;
+            cursor: pointer;
+            color: #3949ab; /* Changed question color */
+            margin: 0;
+        }
+
+        .faq-item p {
+            display: none; /* Hidden by default */
+            margin-top: 5px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #555; /* Changed paragraph text color */
+        }
+
+        /* Add hover effect for questions */
+        .faq-item h2:hover {
+            text-decoration: underline;
+            color: #f57c20; /* Changed hover color */
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const faqHeaders = document.querySelectorAll('.faq-item h2');
+            faqHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = header.nextElementSibling;
+                    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <h2>What type of news do you cover?</h2>
+            <p>We cover a wide range of topics including local, national, and international news, along with politics, sports, entertainment, and technology.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How can I subscribe to your newsletter?</h2>
+            <p>You can subscribe by entering your email address in the newsletter section at the bottom of any page on our website.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>How do I contact customer support?</h2>
+            <p>For any inquiries, you can reach out to our customer support team via the contact form on our website or email us directly at support@newswebsite.com.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>Can I contribute to your news articles?</h2>
+            <p>Yes! We welcome contributions from freelance writers. Please visit our 'Contribute' page for submission guidelines.</p>
+        </div>
+
+        <div class="faq-item">
+            <h2>Do you have a mobile app?</h2>
+            <p>Yes, our mobile app is available for both iOS and Android. You can download it from the App Store or Google Play Store.</p>
+        </div>
+    </div>
+</body>
+</html>

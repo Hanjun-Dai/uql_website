@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #00509e;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .category-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            transition: box-shadow 0.3s;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Portal</h1>
+    <p>Your gateway to knowledge</p>
+</header>
+
+<main>
+    <div class="category-card">
+        <h3>Arts</h3>
+        <p>Explore visual and performing arts.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>Technology</h3>
+        <p>Understand software, hardware, and more.</p>
+    </div>
+    
+    <div class="category-card">
+        <h3>Languages</h3>
+        <p>Become fluent in various languages.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>Science</h3>
+        <p>Dive into biology, chemistry, and physics.</p>
+    </div>
+    
+    <div class="category-card">
+        <h3>Mathematics</h3>
+        <p>Explore algebra, calculus, and more.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>History</h3>
+        <p>Learn about ancient and modern events.</p>
+    </div>
+</main>
+
+<nav>
+    <ul>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Resources</a></li>
+    </ul>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Education Portal. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

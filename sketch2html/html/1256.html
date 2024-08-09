@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Technology Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed to a light cyan */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        header {
+            background: #3f51b5; /* Changed to deep indigo */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            width: 30%;
+            padding: 10px;
+            background: #e8f5e9; /* Changed to a light green */
+            border-radius: 5px;
+            text-align: center;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ff7043; /* Changed to a coral color */
+            border-radius: 5px;
+        }
+        button {
+            background: #ff9800; /* Changed to amber */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #f57c00; /* Changed hover color to dark amber */
+        }
+        @media (max-width: 768px) {
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .contact-info div {
+                width: auto;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <div class="content">
+        <div class="contact-info">
+            <div>
+                <h3>Email</h3>
+                <p>info@technologywebsite.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div>
+                <h3>Address</h3>
+                <p>123 Main St,<br>City, Country</p>
+            </div>
+        </div>
+        
+        <form class="contact-form" action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

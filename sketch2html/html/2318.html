@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e8f5e9; /* Updated background color */
+            color: #444; /* Changed text color */
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15); /* Slightly increased shadow */
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #c0392b; /* Changed header color */
+        }
+        .info {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .info div {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .form {
+            flex: 0 0 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ffcc80; /* Changed border color */
+            border-radius: 5px;
+            background: #fbf9cc; /* Changed form background color */
+        }
+        .form input, .form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #99ccff; /* Changed input border color */
+            border-radius: 4px;
+        }
+        .form button {
+            background-color: #8e44ad; /* Changed button background color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background-color: #9b59b6; /* Changed hover color */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="info">
+        <div>
+            <h2>Email</h2>
+            <p>info@example.com</p>
+        </div>
+        <div>
+            <h2>Phone</h2>
+            <p>(555) 123-4567</p>
+        </div>
+        <div>
+            <h2>Location</h2>
+            <p>123 Art Street<br>Creativity City, CA 12345</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="form">
+            <h2>Get in Touch</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </div>
+
+    <footer>
+        Â© 2023 Your Business Name
+    </footer>
+</div>
+
+</body>
+</html>

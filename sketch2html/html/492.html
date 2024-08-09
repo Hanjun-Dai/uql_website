@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Finance Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e9ecef;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #007bff;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #495057;
+        }
+        
+        .faq-item:hover {
+            background-color: #f1f1f1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #868e96;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(1)">How can I open an account?</div>
+            <div class="answer" id="answer-1">You can open an account by visiting our website and filling out the online application form.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(4)">Do you provide financial advice?</div>
+            <div class="answer" id="answer-4">Yes, our certified financial advisors provide personalized advice tailored to your financial goals.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(2)">What are your fees?</div>
+            <div class="answer" id="answer-2">Our fees vary based on the services you choose. We provide a transparent fee structure detailed on our website.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(3)">How do you ensure my data is safe?</div>
+            <div class="answer" id="answer-3">We use industry-standard encryption and security protocols to protect your data.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(0)">What services do you offer?</div>
+            <div class="answer" id="answer-0">We offer a variety of financial services including investment management, tax planning, and retirement strategies.</div>
+        </div>
+
+        <footer>
+            &copy; 2023 Finance Website. All Rights Reserved.
+        </footer>
+    </div>
+
+    <script>
+        function toggleAnswer(index) {
+            const answer = document.getElementById(`answer-${index}`);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+
+</body>
+
+</html>

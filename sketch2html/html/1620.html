@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 0 auto;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .forum-header h1 {
+            margin: 0;
+            font-size: 48px; /* Increased size */
+        }
+        .new-post-button {
+            background: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 32px; /* Increased size */
+        }
+        .post {
+            border-bottom: 1px solid #e2e2e2;
+            padding: 15px 0;
+        }
+        .post:last-child {
+            border: none;
+        }
+        .post-title {
+            font-size: 40px; /* Increased size */
+            margin: 0;
+        }
+        .post-meta {
+            font-size: 10px; /* Decreased size */
+            color: #777;
+        }
+        .post-content {
+            margin: 10px 0;
+            font-size: 12px; /* Decreased size */
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Forum</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest News</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="forum-header">
+        <h1>Community Discussions</h1>
+        <button class="new-post-button">New Post</button>
+    </div>
+
+    <div class="post">
+        <h2 class="post-title">Exciting News in Technology!</h2>
+        <div class="post-meta">Posted by User123 on March 5, 2023</div>
+        <div class="post-content">Discover the latest advancements in AI and machine learning.</div>
+    </div>
+
+    <div class="post">
+        <h2 class="post-title">World Politics Update</h2>
+        <div class="post-meta">Posted by NewsFan on March 3, 2023</div>
+        <div class="post-content">Discussing the recent political developments across the globe.</div>
+    </div>
+
+    <div class="post">
+        <h2 class="post-title">Health & Wellness Tips</h2>
+        <div class="post-meta">Posted by HealthGuru on March 2, 2023</div>
+        <div class="post-content">Sharing top tips for a healthier lifestyle.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 News Forum | All rights reserved.</p>
+</footer>
+
+</body>
+</html>

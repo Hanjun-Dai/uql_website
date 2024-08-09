@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #002244;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: #ffffff;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .blog-post {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .blog-post h2 {
+            color: #003366;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corporate Sports Blog</h1>
+    <p>Your weekly update on sports news and events</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Event Coverage</a>
+    <a href="#">Interviews</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<div class="container">
+
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Football</a></li>
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Tennis</a></li>
+            <li><a href="#">Baseball</a></li>
+        </ul>
+        <h3>About Us</h3>
+        <p>We are dedicated to bringing you the latest in sports news.</p>
+    </aside>
+
+    <div class="main-content">
+        <div class="blog-post">
+            <h2>Post Title 1</h2>
+            <p>Short summary of the blog post content...</p>
+        </div>
+        <div class="blog-post">
+            <h2>Post Title 2</h2>
+            <p>Short summary of the blog post content...</p>
+        </div>
+        <div class="blog-post">
+            <h2>Post Title 3</h2>
+            <p>Short summary of the blog post content...</p>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>Â© 2023 Corporate Sports Blog | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

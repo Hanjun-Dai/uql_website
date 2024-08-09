@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Forward</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial Black', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 52px; /* Randomly changed from 36px */
+        }
+        .hero-section {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-section h1 {
+            font-size: 84px; /* Randomly changed from 54px */
+            margin-top: 100px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero-section .cta-button {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 40px; /* Randomly changed from 20px */
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        .latest-collections {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+        }
+        .collection-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 28%;
+            text-align: center;
+        }
+        .collection-item img {
+            width: 100%;
+            height: auto;
+        }
+        .collection-title {
+            font-size: 12px; /* Randomly changed from 24px */
+            padding: 10px 0;
+            color: #000;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 10px; /* Randomly changed from default size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fashion Forward
+    </header>
+    
+    <div class="hero-section">
+        <h1>Unleash Your Style</h1>
+        <a href="#collections" class="cta-button">Shop Now</a>
+    </div>
+
+    <section class="latest-collections" id="collections">
+        <div class="collection-item">
+            <img src="collection1.jpg" alt="Collection 1">
+            <div class="collection-title">Summer Vibes</div>
+        </div>
+        <div class="collection-item">
+            <img src="collection2.jpg" alt="Collection 2">
+            <div class="collection-title">Urban Chic</div>
+        </div>
+        <div class="collection-item">
+            <img src="collection3.jpg" alt="Collection 3">
+            <div class="collection-title">Elegant Evening</div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2023 Fashion Forward. All Rights Reserved.
+    </footer>
+</body>
+</html>

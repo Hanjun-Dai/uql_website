@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - News Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f9f9f9;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #007BFF;
+            font-size: 1.2em;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        .show-answer {
+            display: block;
+        }
+        .toggle-icon {
+            float: right;
+            transition: transform 0.3s ease;
+        }
+        .toggle-icon.rotate {
+            transform: rotate(90deg);
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+    
+    <footer>
+        Â© 2023 News Website. All rights reserved.
+    </footer>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">
+                How can I contribute?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">We welcome contributions; please visit our 'Contribute' section.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                Is there a newsletter?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">Yes, you can subscribe to our newsletter for updates.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                How can I contact support?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">You can contact support via the 'Contact Us' page.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">
+                What is the purpose of this website?
+                <span class="toggle-icon">â</span>
+            </div>
+            <div class="faq-answer">To provide the latest news updates and information.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.toggle-icon');
+                answer.classList.toggle('show-answer');
+                icon.classList.toggle('rotate');
+            });
+        });
+    </script>
+</body>
+</html>

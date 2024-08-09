@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Service Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 200px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background: #e7f3fe;
+            border: 1px solid #b3d7ff;
+            border-radius: 8px;
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Website</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="hero"></div>
+
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Tech Updates</h3>
+            <p>Innovations and trends in technology that matter.</p>
+        </div>
+        <div class="service">
+            <h3>Entertainment</h3>
+            <p>Latest news in the world of entertainment and celebrities.</p>
+        </div>
+        <div class="service">
+            <h3>Local News</h3>
+            <p>Updates and stories from your local area.</p>
+        </div>
+        <div class="service">
+            <h3>Breaking News</h3>
+            <p>Get real-time updates on breaking news events.</p>
+        </div>
+        <div class="service">
+            <h3>Sports Coverage</h3>
+            <p>Live updates and analysis on your favorite sports.</p>
+        </div>
+        <div class="service">
+            <h3>Political News</h3>
+            <p>Stay informed about the latest political developments.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 News Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

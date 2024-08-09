@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Auto Fun</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f1f1f1; /* Changed background color */
+            color: #444; /* Changed text color */
+        }
+        h1 {
+            text-align: center;
+            color: #3a9ad4; /* Changed header color */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .faq-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fff; /* Kept white for contrast */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .faq {
+            border-bottom: 1px solid #ddd; /* Changed border color */
+            padding: 15px 10px;
+            transition: background-color 0.3s;
+        }
+        .faq:hover {
+            background-color: #e6f3ff; /* Changed hover background color */
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq-title {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .faq-title h3 {
+            margin: 0;
+            font-size: 24px;
+            color: #2b3e50; /* Changed title color */
+            flex: 1;
+        }
+        .faq-icon {
+            font-size: 24px;
+            margin-left: 10px;
+            color: #5e4b8c; /* Changed icon color */
+        }
+        .faq-content {
+            display: none;
+            padding: 10px 0;
+            color: #666; /* Changed content text color */
+        }
+        .active .faq-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Auto Fun FAQ</h1>
+
+<div class="faq-section">
+    <div class="faq" onclick="toggleFAQ(this)">
+        <div class="faq-title">
+            <h3>🔧 What services do you offer?</h3>
+            <span class="faq-icon">📅</span>
+        </div>
+        <div class="faq-content">
+            <p>We offer car maintenance, repairs, and a variety of auto accessories!</p>
+        </div>
+    </div>
+    <div class="faq" onclick="toggleFAQ(this)">
+        <div class="faq-title">
+            <h3>📖 How can I book a service?</h3>
+            <span class="faq-icon">🖥️</span>
+        </div>
+        <div class="faq-content">
+            <p>Booking is easy! Just call us or visit our website and schedule an appointment!</p>
+        </div>
+    </div>
+    <div class="faq" onclick="toggleFAQ(this)">
+        <div class="faq-title">
+            <h3>🔍 Do you offer warranties on services?</h3>
+            <span class="faq-icon">🛠️</span>
+        </div>
+        <div class="faq-content">
+            <p>Yes! Most of our services come with a warranty for your peace of mind.</p>
+        </div>
+    </div>
+    <div class="faq" onclick="toggleFAQ(this)">
+        <div class="faq-title">
+            <h3>🌱 Are you eco-friendly?</h3>
+            <span class="faq-icon">♻️</span>
+        </div>
+        <div class="faq-content">
+            <p>Absolutely! We use eco-friendly products and practices.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleFAQ(faq) {
+        faq.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

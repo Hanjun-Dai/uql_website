@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            padding: 10px;
+            background-color: #e7f3fe;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            margin: 0;
+        }
+
+        .question:hover {
+            background-color: #d0eafc;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Parenting FAQ</h2>
+</header>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <h3 class="question">How often do you update your content?</h3>
+        <p class="answer">We strive to update our content regularly, at least once a month, to reflect the latest information.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Do you offer parenting resources?</h3>
+        <p class="answer">Yes, we provide a variety of articles, videos, and tools for parents on our website.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">What is your return policy?</h3>
+        <p class="answer">You can return any item within 30 days of purchase as long as it is in its original condition.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">Where can I find product recommendations?</h3>
+        <p class="answer">Our product recommendations can be found in the "Products" section of our website.</p>
+    </div>
+
+    <div class="faq-item">
+        <h3 class="question">How can I contact customer service?</h3>
+        <p class="answer">You can contact us via email at support@parentingwebsite.com or by calling (123) 456-7890.</p>
+    </div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

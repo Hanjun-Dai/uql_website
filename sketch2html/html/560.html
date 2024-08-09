@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff6f61, #de6d25);
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+        }
+
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            max-width: 1024px;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .service-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .service-info h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .service-info p {
+            font-size: 1em;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="services-container">
+    <div class="service-card">
+        <img src="https://via.placeholder.com/250x150?text=Event+Catering" alt="Event Catering">
+        <div class="service-info">
+            <h3>Event Catering</h3>
+            <p>Catering for your events.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <img src="https://via.placeholder.com/250x150?text=Restaurant+Service" alt="Restaurant Service">
+        <div class="service-info">
+            <h3>Restaurant Service</h3>
+            <p>Fine dining experience.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <img src="https://via.placeholder.com/250x150?text=Meal+Prep" alt="Meal Prep">
+        <div class="service-info">
+            <h3>Meal Prep</h3>
+            <p>Healthy meals prepared.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <img src="https://via.placeholder.com/250x150?text=Delivery+Service" alt="Delivery Service">
+        <div class="service-info">
+            <h3>Delivery Service</h3>
+            <p>Fast and fresh delivery.</p>
+        </div>
+    </div>
+</div>
+
+<header>
+    Our Delicious Services
+</header>
+
+<footer>
+    &copy; 2023 Delicious Food Co.
+</footer>
+
+</body>
+</html>

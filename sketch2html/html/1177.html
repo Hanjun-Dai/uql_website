@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Fashion Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background color */
+        }
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2b2b2b; /* Changed header color */
+        }
+        .info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info p {
+            margin: 5px 0;
+            color: #555; /* Changed text color in info section */
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #aaa; /* Changed border color */
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #6a79f5; /* Changed submit button background color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #5968e1; /* Changed hover color */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #666; /* Changed footer color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="info">
+            <p>For inquiries, please fill out the form below:</p>
+            <p>Email: contact@fashionwebsite.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 Fashion Website. All rights reserved.
+    </footer>
+</body>
+</html>

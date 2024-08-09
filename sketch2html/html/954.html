@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Service Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #ff4757;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .service h3 {
+            margin: 10px 0;
+        }
+        .service p {
+            font-size: 0.9em;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff4757;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Food Services</h1>
+    <nav>
+        <a href="#dine-in">Dine-In</a>
+        <a href="#catering">Catering</a>
+        <a href="#delivery">Delivery</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="service" id="delivery">
+            <img src="delivery.jpg" alt="Delivery Service">
+            <h3>Delivery</h3>
+            <p>Fresh meals delivered to your door.</p>
+        </div>
+        <div class="service" id="dine-in">
+            <img src="dinein.jpg" alt="Dine-In Service">
+            <h3>Dine-In</h3>
+            <p>Enjoy a delightful dining experience.</p>
+        </div>
+        <div class="service" id="catering">
+            <img src="catering.jpg" alt="Catering Service">
+            <h3>Catering</h3>
+            <p>Delicious catering options for every event.</p>
+        </div>
+    </div>
+    <h2>Explore Our Services</h2>
+</div>
+
+<footer>
+    <p>&copy; 2023 Our Food Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

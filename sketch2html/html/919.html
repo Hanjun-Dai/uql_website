@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate News Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8e8e8; /* Changed background color */
+        }
+        header {
+            background: #004080; /* Changed header background */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #0080ff; /* Changed nav background */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff; /* Changed nav link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .sidebar {
+            flex: 1 1 25%;
+            background: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 3 1 70%;
+            background: #ffffff;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .news-item {
+            margin-bottom: 20px;
+        }
+        .news-item h3 {
+            color: #a00000; /* Changed news item headline color */
+            margin: 0;
+        }
+        .news-item p {
+            color: #444444; /* Changed news item paragraph color */
+            margin-top: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #004080; /* Changed footer background */
+            color: #ffffff; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Corporate News Portal</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Latest Updates</h2>
+        <ul>
+            <li><a href="#">Update 1</a></li>
+            <li><a href="#">Update 2</a></li>
+            <li><a href="#">Update 3</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <h2>Latest News</h2>
+        
+        <div class="news-item">
+            <h3>News Headline 1</h3>
+            <p>Short description of the news article...</p>
+        </div>
+        
+        <div class="news-item">
+            <h3>News Headline 2</h3>
+            <p>Short description of the news article...</p>
+        </div>
+        
+        <div class="news-item">
+            <h3>News Headline 3</h3>
+            <p>Short description of the news article...</p>
+        </div>
+        
+        <div class="news-item">
+            <h3>News Headline 4</h3>
+            <p>Short description of the news article...</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Corporate News Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

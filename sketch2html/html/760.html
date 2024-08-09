@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .projects {
+            margin-bottom: 40px;
+        }
+        .projects h2 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .project {
+            background: #f8f8f8;
+            border: 1px solid #dadada;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .project h3 {
+            margin: 0;
+            font-size: 18px;
+            flex: 1;
+        }
+        .contact {
+            padding: 20px;
+            text-align: center;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+        .contact h2 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact input, 
+        .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+        }
+        .contact button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact button:hover {
+            background: #0056b3;
+        }
+        .portfolio-overview {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+        .portfolio-overview div {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+        }
+        .portfolio-overview h2 {
+            color: #007BFF;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Portfolio</h1>
+</header>
+
+<div class="container">
+    <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project">
+            <h3>Stock Analysis Tool</h3>
+            <span>Completed</span>
+        </div>
+        <div class="project">
+            <h3>Real Estate Investment</h3>
+            <span>In Progress</span>
+        </div>
+        <div class="project">
+            <h3>Portfolio Optimization</h3>
+            <span>Completed</span>
+        </div>
+    </section>
+
+    <section class="portfolio-overview">
+        <div>
+            <h2>Total Assets</h2>
+            <p>$1,000,000</p>
+        </div>
+        <div>
+            <h2>Investment Growth</h2>
+            <p>15% YoY</p>
+        </div>
+        <div>
+            <h2>Projects</h2>
+            <p>5 Active</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+</body>
+</html>

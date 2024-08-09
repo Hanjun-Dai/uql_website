@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+
+        header {
+            background-color: #8e44ad; /* Changed header background color */
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffcc00; /* Changed nav link color */
+            text-decoration: none;
+            padding: 0 15px;
+        }
+
+        main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .portfolio-description {
+            padding: 15px;
+            text-align: center;
+            background-color: #f39c12; /* Changed background color of portfolio description */
+            color: #ffffff; /* Changed text color in portfolio description */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #c0392b; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Portfolio</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Collections</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="portfolio-item">
+        <img src="path/to/image1.jpg" alt="Fashion Item 1">
+        <div class="portfolio-description">
+            <h2>Collection Name 1</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="path/to/image2.jpg" alt="Fashion Item 2">
+        <div class="portfolio-description">
+            <h2>Collection Name 2</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="path/to/image3.jpg" alt="Fashion Item 3">
+        <div class="portfolio-description">
+            <h2>Collection Name 3</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="path/to/image4.jpg" alt="Fashion Item 4">
+        <div class="portfolio-description">
+            <h2>Collection Name 4</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="path/to/image5.jpg" alt="Fashion Item 5">
+        <div class="portfolio-description">
+            <h2>Collection Name 5</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="path/to/image6.jpg" alt="Fashion Item 6">
+        <div class="portfolio-description">
+            <h2>Collection Name 6</h2>
+            <p>Brief Description</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Fashion Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

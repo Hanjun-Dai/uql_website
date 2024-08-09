@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Games Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        .question:hover {
+            color: #4CAF50;
+        }
+        .answer {
+            display: none;
+            padding: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="question">How can I contact customer support?</div>
+        <div class="answer">You can reach us via our 'Contact Us' page or email support@gameswebsite.com.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What payment methods are accepted?</div>
+        <div class="answer">We accept credit/debit cards and PayPal.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What is this games website about?</div>
+        <div class="answer">We provide a platform for gamers to find and enjoy various games, reviews, and news.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Do you offer refunds?</div>
+        <div class="answer">Refund requests are handled on a case-by-case basis. Please contact support for assistance.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">How can I create an account?</div>
+        <div class="answer">Click on 'Sign Up' in the top right corner and fill in the required information.</div>
+    </div>
+</div>
+
+<script>
+    // Simple script to toggle FAQ answers
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+        });
+    });
+</script>
+
+</body>
+</html>

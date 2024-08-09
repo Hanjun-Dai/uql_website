@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - History Website</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #3A3A3A;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 1rem;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 1rem 0;
+        }
+        .faq-item h2 {
+            cursor: pointer;
+            color: #0056b3;
+            margin: 0;
+        }
+        .faq-item p {
+            display: none;
+            margin: 0.5rem 0 0;
+            padding: 0;
+        }
+        footer {
+            padding: 1rem;
+            text-align: center;
+            background: #3A3A3A;
+            color: #fff;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    <p>&copy; 2023 History Website. All rights reserved.</p>
+</footer>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">How can I contact support?</h2>
+        <p>You can reach our support team through the 'Contact Us' page on the website.</p>
+    </div>
+    <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">What resources are available?</h2>
+        <p>We offer articles, timelines, and links to historical documents for research and educational purposes.</p>
+    </div>
+    <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">Is the content reliable?</h2>
+        <p>Yes, our content is researched and validated by historians and educators.</p>
+    </div>
+    <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">How can I contribute to the website?</h2>
+        <p>We welcome contributors! Please contact us via the contact form provided on the website.</p>
+    </div>
+    <div class="faq-item">
+        <h2 onclick="toggleAnswer(this)">What is the history of our website?</h2>
+        <p>This website was launched in 2023 with the aim of providing comprehensive historical resources.</p>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Travel Dreamers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 100px 20px 20px;
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: -100px; /* Pulls the content closer to header */
+        }
+
+        .about div {
+            flex: 1;
+            background: #fff;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Dreamers</h1>
+</header>
+
+<div class="container">
+    <div class="about">
+        <div>
+            <img src="community.jpg" alt="Community" class="about-image">
+            <h2>Join Us</h2>
+            <p>Become part of our traveling community.</p>
+        </div>
+        <div>
+            <img src="exploration.jpg" alt="Exploration" class="about-image">
+            <h2>Our Mission</h2>
+            <p>To inspire and help you travel the world.</p>
+        </div>
+        <div>
+            <img src="adventure.jpg" alt="Adventure" class="about-image">
+            <h2>Our Story</h2>
+            <p>Started with a passion for adventure.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel Dreamers. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

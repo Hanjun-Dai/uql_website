@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed background color */
+        }
+        header {
+            background: #2c2c2c; /* Slightly lighter header */
+            color: #ffcc00; /* Changed text color */
+            padding: 15px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            background: #555; /* Lighter nav background */
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffa500; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline; /* No change */
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            width: 70%;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            width: 30%;
+            background: #f9f9f9; /* Altered sidebar background */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-bottom: 1px solid #ccc; /* Lighter border */
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .post-title {
+            font-size: 18px;
+            color: #000; /* Changed post title color */
+            margin: 10px 0 5px;
+        }
+        .post-excerpt {
+            color: #555; /* Darker text color */
+            font-size: 14px;
+        }
+        .sidebar-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #444; /* Changed sidebar title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #444; /* Slightly lighter footer */
+            color: #ddd; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entertainment Hub</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Music</a>
+        <a href="#">Celebrities</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <div class="main-content">
+            <div class="post">
+                <img src="https://via.placeholder.com/600x300" alt="Post Thumbnail">
+                <div class="post-title">Exciting New Movie Releases!</div>
+                <div class="post-excerpt">Discover the latest films hitting theaters this month. Don’t miss out on the action!</div>
+            </div>
+            <div class="post">
+                <img src="https://via.placeholder.com/600x300" alt="Post Thumbnail">
+                <div class="post-title">Top 10 TV Shows to Binge Watch</div>
+                <div class="post-excerpt">Check our list of top-rated shows that you simply can’t miss this season.</div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebar-title">Popular Posts</div>
+            <ul>
+                <li><a href="#">The Rise of Streaming Services</a></li>
+                <li><a href="#">Best Movie Franchises of All Time</a></li>
+                <li><a href="#">Upcoming Concerts You Can't Miss</a></li>
+                <li><a href="#">Celebrity News Buzz</a></li>
+                <li><a href="#">Must-Watch Documentaries</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Entertainment Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

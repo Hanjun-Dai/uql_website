@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Blog</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Changed background color */
+        }
+        header {
+            background-color: #4caf50; /* Changed header background color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .blog-title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+        li a {
+            color: #ffeb3b; /* Changed link color */
+            text-decoration: none;
+        }
+        .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .article {
+            background: #ffffff;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 48%; /* Two articles per row */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+        .article-content {
+            padding: 15px;
+        }
+        .article-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #e91e63; /* Changed article title color */
+        }
+        .article-preview {
+            color: #757575; /* Changed article preview text color */
+            margin-bottom: 15px;
+        }
+        footer {
+            text-align: center;
+            background-color: #555; /* Changed footer background color */
+            color: white;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="blog-title">The Culinary Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Tips</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="articles">
+        <div class="article">
+            <img src="path/to/image1.jpg" alt="Delicious Dish 1">
+            <div class="article-content">
+                <h2 class="article-title">Delicious Dish 1</h2>
+                <p class="article-preview">A quick introduction to the recipe..</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="article">
+            <img src="path/to/image2.jpg" alt="Delicious Dish 2">
+            <div class="article-content">
+                <h2 class="article-title">Delicious Dish 2</h2>
+                <p class="article-preview">A brief description of the dish..</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="article">
+            <img src="path/to/image3.jpg" alt="Delicious Dish 3">
+            <div class="article-content">
+                <h2 class="article-title">Delicious Dish 3</h2>
+                <p class="article-preview">An exciting insight into the recipe..</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="article">
+            <img src="path/to/image4.jpg" alt="Delicious Dish 4">
+            <div class="article-content">
+                <h2 class="article-title">Delicious Dish 4</h2>
+                <p class="article-preview">A quick overview of the meal..</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 The Culinary Adventures. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

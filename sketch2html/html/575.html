@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background: #003d80;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center / cover;
+            height: 300px;
+            position: relative;
+        }
+        .hero h1 {
+            color: white;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(50% - 20px);
+            padding: 15px;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #003d80;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sports Mania</h1>
+        <p>Your daily dose of sports updates!</p>
+    </header>
+
+    <div class="hero">
+        <h1>Welcome to the Excitement!</h1>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Fixtures</a></li>
+            <li><a href="#">Highlights</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <img src="sport2.jpg" alt="Sport 2">
+            <h2>Player of the Week</h2>
+            <p>Celebrating outstanding performances in the league!</p>
+        </div>
+        <div class="card">
+            <img src="sport1.jpg" alt="Sport 1">
+            <h2>Latest Match Highlights</h2>
+            <p>Catch up on the amazing moments from the latest matches!</p>
+        </div>
+        <div class="card">
+            <img src="sport4.jpg" alt="Sport 4">
+            <h2>Shop Merchandise</h2>
+            <p>Get your favorite team gear here!</p>
+        </div>
+        <div class="card">
+            <img src="sport3.jpg" alt="Sport 3">
+            <h2>Upcoming Fixtures</h2>
+            <p>Don't miss the thrilling action coming up next!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Sports Mania. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

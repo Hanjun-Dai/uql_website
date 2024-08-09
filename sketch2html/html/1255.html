@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Technology Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            font-size: 1.2em; /* Made larger */
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #007bff;
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            font-size: 3em; /* Made larger */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Made larger */
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 1em; /* Returned to normal */
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-header {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            background: #f9f9f9;
+            transition: background 0.3s;
+            font-size: 1.8em; /* Made larger */
+        }
+
+        .faq-header:hover {
+            background: #e0e0e0;
+        }
+
+        .faq-content {
+            padding: 15px;
+            display: none;
+            background: #ffffff;
+            font-size: 0.9em; /* Made smaller */
+        }
+
+        .faq-header.active {
+            background: #007bff;
+            color: white;
+        }
+
+        .faq-header.active:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-header">What is your refund policy?</div>
+        <div class="faq-content">We offer a full refund within 30 days of purchase.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-header">How can I contact support?</div>
+        <div class="faq-content">You can reach us through our support page or email us directly.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-header">Do you offer discounts for students?</div>
+        <div class="faq-content">Yes, we provide a 20% discount for all enrolled students.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-header">What payment methods do you accept?</div>
+        <div class="faq-content">We accept all major credit cards and PayPal.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-header">Is my personal data safe?</div>
+        <div class="faq-content">Yes, we prioritize your privacy and security rigorously.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const faqContent = header.nextElementSibling;
+
+            // Toggle active class
+            header.classList.toggle('active');
+
+            // Toggle content visibility
+            if (faqContent.style.display === "block") {
+                faqContent.style.display = "none";
+            } else {
+                faqContent.style.display = "block";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

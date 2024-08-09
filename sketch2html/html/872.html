@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Arts Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            color: #3b2d1d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8b5a2b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 15px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            border: 2px solid #8b5a2b;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #8b5a2b;
+        }
+        .portfolio-item-title {
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: #f0e68c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8b5a2b;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Arts Portfolio</h1>
+</header>
+
+<main class="portfolio">
+    <div class="portfolio-item">
+        <img src="artwork3.jpg" alt="Artwork 3">
+        <div class="portfolio-item-title">Artwork Title 3</div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="artwork5.jpg" alt="Artwork 5">
+        <div class="portfolio-item-title">Artwork Title 5</div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="artwork1.jpg" alt="Artwork 1">
+        <div class="portfolio-item-title">Artwork Title 1</div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="artwork2.jpg" alt="Artwork 2">
+        <div class="portfolio-item-title">Artwork Title 2</div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="artwork4.jpg" alt="Artwork 4">
+        <div class="portfolio-item-title">Artwork Title 4</div>
+    </div>
+
+    <div class="portfolio-item">
+        <img src="artwork6.jpg" alt="Artwork 6">
+        <div class="portfolio-item-title">Artwork Title 6</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Rustic Arts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Today</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e2e2e2; /* Changed background color */
+        }
+
+        header {
+            background-color: #444; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffcc00; /* Changed nav link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .card {
+            background: #fff; /* Card background remains the same */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33% - 20px);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333; /* Changed card title color */
+        }
+
+        footer {
+            text-align: center;
+            background-color: #444; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>News Today</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">World</a>
+            <a href="#">Politics</a>
+            <a href="#">Technology</a>
+            <a href="#">Sports</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="image1.jpg" alt="News Image 1">
+            <div class="card-content">
+                <h3>Breaking News Title</h3>
+                <p>Short description of the news article.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="News Image 2">
+            <div class="card-content">
+                <h3>Latest Updates</h3>
+                <p>Short description of the latest updates.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="News Image 3">
+            <div class="card-content">
+                <h3>Sports Highlights</h3>
+                <p>Brief overview of sports highlights.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Today. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

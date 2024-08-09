@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .featured-game {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin: 10px;
+            background-color: #fff;
+            flex: 1 1 30%;
+            max-width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .featured-game:hover {
+            transform: scale(1.05);
+        }
+        .featured-game img {
+            max-width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .game-title {
+            font-size: 18px;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Game Hub</h1>
+    <p>Your ultimate source for all things gaming!</p>
+</header>
+
+<div class="container">
+    <div class="featured-game">
+        <img src="game3.jpg" alt="Game 3">
+        <div class="game-title">Game Title 3</div>
+    </div>
+    <div class="featured-game">
+        <img src="game1.jpg" alt="Game 1">
+        <div class="game-title">Game Title 1</div>
+    </div>
+    <div class="featured-game">
+        <img src="game6.jpg" alt="Game 6">
+        <div class="game-title">Game Title 6</div>
+    </div>
+    <div class="featured-game">
+        <img src="game5.jpg" alt="Game 5">
+        <div class="game-title">Game Title 5</div>
+    </div>
+    <div class="featured-game">
+        <img src="game2.jpg" alt="Game 2">
+        <div class="game-title">Game Title 2</div>
+    </div>
+    <div class="featured-game">
+        <img src="game4.jpg" alt="Game 4">
+        <div class="game-title">Game Title 4</div>
+    </div>
+</div>
+
+<nav>
+    <a href="#">Games</a>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">News</a>
+    <a href="#">Community</a>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Game Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

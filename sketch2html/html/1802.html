@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 15px 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        nav {
+            background-color: #005bb5;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .sidebar h4 {
+            margin-top: 0;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin-left: 20px;
+        }
+        .post {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Real Estate Forum
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Market Trends</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Listings</a></li>
+        <li><a href="#">Home</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h4>Profile</h4>
+        <p><i class="fas fa-user"></i> Username</p>
+        <p>Points: 120</p>
+        <p><a href="#">Logout</a></p>
+        <h4>Categories</h4>
+        <ul>
+            <li><a href="#">Renting</a></li>
+            <li><a href="#">Selling</a></li>
+            <li><a href="#">Investing</a></li>
+            <li><a href="#">Buying</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="post">
+            <h3>Understanding Real Estate Investment</h3>
+            <p>Discuss the essentials of investing...</p>
+        </div>
+        <div class="post">
+            <h3>How to Stage Your Home for Sale</h3>
+            <p>Share your tips for staging...</p>
+        </div>
+        <div class="post">
+            <h3>Tips for First-Time Home Buyers</h3>
+            <p>Join the discussion on the best practices...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Real Estate Forum. All rights reserved.
+</footer>
+
+</body>
+</html>

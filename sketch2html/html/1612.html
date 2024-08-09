@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .property-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            width: 30%;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+        .property-card img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .property-info {
+            padding: 15px;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate</h1>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#properties">Properties</a>
+    </nav>
+</header>
+
+<div class="content" id="properties">
+    <div class="property-card">
+        <img src="property2.jpg" alt="Property 2">
+        <div class="property-info">
+            <h3>Luxury Villa</h3>
+            <p>$1,200,000</p>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="property1.jpg" alt="Property 1">
+        <div class="property-info">
+            <h3>Beautiful House</h3>
+            <p>$500,000</p>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="property3.jpg" alt="Property 3">
+        <div class="property-info">
+            <h3>Modern Apartment</h3>
+            <p>$300,000</p>
+        </div>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Your Dream Home Awaits</h2>
+</div>
+
+<footer>
+    <p>&copy; 2023 Real Estate Company</p>
+</footer>
+
+</body>
+</html>

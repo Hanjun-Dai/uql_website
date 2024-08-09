@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic History Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: url('wood-background.jpg') repeat-x;
+            padding: 20px;
+            text-align: center;
+            color: #6B4423; /* Changed color */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #8B4513; /* Changed color */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6B4423; /* Changed color */
+            border-bottom: 1px solid #6B4423; /* Changed color */
+            padding: 5px;
+        }
+        nav a:hover {
+            color: #A0522D; /* Changed color */
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+        .side-panel {
+            width: 20%;
+            background-color: #dcdcdc; /* Changed background color */
+            padding: 10px;
+            border: 1px solid #6B4423; /* Changed color */
+            border-radius: 5px;
+        }
+        .forum-topics {
+            width: 75%;
+            margin-left: 20px;
+            background-color: #ffffff;
+            padding: 10px;
+            border: 1px solid #6B4423; /* Changed color */
+            border-radius: 5px;
+        }
+        .topic {
+            padding: 10px;
+            border-bottom: 1px solid #ccc; /* Changed color */
+        }
+        .topic:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #6B4423; /* Changed color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic History Forum</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="side-panel">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#ancient">Ancient History</a></li>
+            <li><a href="#medieval">Medieval Era</a></li>
+            <li><a href="#modern">Modern Era</a></li>
+            <li><a href="#military">Military History</a></li>
+            <li><a href="#cultural">Cultural History</a></li>
+        </ul>
+    </div>
+
+    <div class="forum-topics">
+        <h2>Recent Topics</h2>
+        <div class="topic">
+            <strong><a href="#topic1">The Rise and Fall of Empires</a></strong>
+            <p>Started by User123 | 5 Replies</p>
+        </div>
+        <div class="topic">
+            <strong><a href="#topic2">Ancient Civilizations: A Comparative Study</a></strong>
+            <p>Started by HistoryBuff | 10 Replies</p>
+        </div>
+        <div class="topic">
+            <strong><a href="#topic3">The Impact of WWII on Modern Society</a></strong>
+            <p>Started by Scholar456 | 8 Replies</p>
+        </div>
+        <div class="topic">
+            <strong><a href="#topic4">Women in the Middle Ages</a></strong>
+            <p>Started by Learner789 | 2 Replies</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2023 Rustic History Forum | All Rights Reserved
+</footer>
+
+</body>
+</html>

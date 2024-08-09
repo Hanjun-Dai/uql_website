@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+            color: #444; /* Slightly darker text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+        .faq-container {
+            width: 80%;
+            max-width: 800px;
+            background: #ffffff; /* Changed container background */
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Slightly darker shadow */
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1em;
+            color: #0056b3; /* Changed header color */
+        }
+        .faq {
+            margin: 20px 0;
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 0;
+            transition: color 0.3s;
+            color: #dc3545; /* Changed question color */
+        }
+        .question:hover {
+            color: #17a2b8; /* Changed hover color */
+        }
+        .answer {
+            display: none; /* Initially hide answers */
+            font-size: 0.9em;
+            margin: 5px 0 15px;
+            line-height: 1.5;
+            color: #555; /* Changed answer text color */
+        }
+    </style>
+</head>
+<body>
+    <div class="faq-container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">What is the best time to travel?</div>
+            <div class="answer">The best time to travel varies by destination, but generally spring and fall offer pleasant weather.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">How can I book my trip?</div>
+            <div class="answer">You can book your trip directly on our website or contact our customer service for assistance.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">What should I pack?</div>
+            <div class="answer">Pack according to your destination's climate and culture. Essentials include clothing, toiletries, and travel documents.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">What is your cancellation policy?</div>
+            <div class="answer">Our cancellation policy varies by booking. Please refer to the terms outlined during your reservation.</div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">Do you offer travel insurance?</div>
+            <div class="answer">Yes, we offer travel insurance options during the booking process for your peace of mind.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(questionElement) {
+            const answerElement = questionElement.nextElementSibling;
+            const isVisible = answerElement.style.display === "block";
+            answerElement.style.display = isVisible ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

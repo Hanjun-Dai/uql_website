@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #eaeaea;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 1;
+            margin-right: 20px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #003366;
+        }
+        .forum-topic {
+            padding: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .forum-topic:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Members</a>
+    <a href="#">Contact</a>
+    <a href="#">Topics</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Join Us</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+        
+        <h2>About Us</h2>
+        <p>Your go-to place for all sports discussions and updates!</p>
+    </div>
+
+    <div class="main-content">
+        <h2>Latest Discussions</h2>
+        <div class="forum-topic">
+            <strong>Football World Cup 2026</strong><br>
+            <small>Last updated: 10 mins ago</small>
+        </div>
+        <div class="forum-topic">
+            <strong>NBA Finals Predictions</strong><br>
+            <small>Last updated: 30 mins ago</small>
+        </div>
+        <div class="forum-topic">
+            <strong>Tennis Grand Slam Highlights</strong><br>
+            <small>Last updated: 1 hour ago</small>
+        </div>
+        <div class="forum-topic">
+            <strong>Local Soccer League Results</strong><br>
+            <small>Last updated: 2 hours ago</small>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Sports Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

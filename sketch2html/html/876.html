@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Automotive Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eAE5FF; /* changed background color */
+            color: #444; /* slightly darker text color */
+        }
+        header {
+            background-color: #d9534f; /* changed header background color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* increased shadow for more depth */
+            border-radius: 8px;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc; /* changed border color */
+            padding: 10px 0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .faq-item:hover {
+            background: #f4f9fa; /* changed hover background color */
+        }
+        .faq-question {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #31708f; /* changed question text color */
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #777; /* slightly lighter answer text color */
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="faq-question">1. What types of vehicles do you offer?</div>
+        <div class="faq-answer">We offer a wide range of cars, SUVs, and trucks from various manufacturers.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">2. How do I schedule a test drive?</div>
+        <div class="faq-answer">You can schedule a test drive by visiting our website or contacting us directly.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">3. Do you offer financing options?</div>
+        <div class="faq-answer">Yes, we provide various financing plans to suit your budget.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">4. What is your return policy?</div>
+        <div class="faq-answer">You can return the vehicle within 7 days if you're not satisfied.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">5. Where can I find service and maintenance information?</div>
+        <div class="faq-answer">Service information is available on our website or through our service department.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

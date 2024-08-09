@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #1c1c1c; /* Changed text color */
+        }
+        header {
+            background: #00695c; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .featured-article {
+            background: url('featured-image.jpg') no-repeat center center/cover;
+            border-radius: 8px;
+            padding: 20px;
+            color: #ffffff; /* Kept white for better contrast */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        .article-title {
+            font-size: 24px;
+            margin: 0;
+        }
+        .article-summary {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .article {
+            background: #f9fbe7; /* Changed article background color */
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #3e2723; /* Changed article title color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #424242; /* Changed footer background color */
+            color: #ffffff; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Hub</h1>
+    <p>Your daily dose of fun!</p>
+</header>
+
+<div class="container">
+
+    <div class="main-content">
+        <div class="featured-article">
+            <h2 class="article-title">Exciting Movie Releases of the Month</h2>
+            <p class="article-summary">Get ready for the blockbusters hitting theaters this month!</p>
+        </div>
+
+        <div class="article">
+            <h2>Top 10 TV Shows to Binge This Weekend</h2>
+            <p>Discover the hottest shows that everyone is talking about.</p>
+        </div>
+        <div class="article">
+            <h2>Behind the Scenes: Your Favorite Celebrities</h2>
+            <p>Exclusive insights on the lives of Hollywood's biggest stars.</p>
+        </div>
+        <div class="article">
+            <h2>Must-See Concerts This Summer</h2>
+            <p>Don’t miss these electrifying performances coming your way!</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Trending Topics</h2>
+        <ul>
+            <li><a href="#" style="color: #00838f;">Marvel Movies</a></li> <!-- Changed link color -->
+            <li><a href="#" style="color: #00838f;">Streaming Services</a></li> <!-- Changed link color -->
+            <li><a href="#" style="color: #00838f;">Celebrity Gossip</a></li> <!-- Changed link color -->
+            <li><a href="#" style="color: #00838f;">Award Shows</a></li> <!-- Changed link color -->
+            <li><a href="#" style="color: #00838f;">New Music Releases</a></li> <!-- Changed link color -->
+        </ul>
+
+        <h2>Newsletter Signup</h2>
+        <input type="text" placeholder="Your email" style="border: 1px solid #004d40;"> <!-- Changed input border color -->
+        <button style="background-color: #00796b; color: white;">Subscribe</button> <!-- Changed button colors -->
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

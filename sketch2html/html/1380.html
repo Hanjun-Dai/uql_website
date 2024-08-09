@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .product-title {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 20px 0;
+        }
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .price {
+            font-size: 1.8em;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1em;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .features {
+            margin: 20px 0;
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="product-title">Innovative Tech Gadget</h1>
+        </header>
+
+        <div class="features">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <img src="icon1.png" alt="Feature 1" class="icon">
+                <span>Feature One Description</span>
+            </div>
+            <div class="feature-item">
+                <img src="icon3.png" alt="Feature 3" class="icon">
+                <span>Feature Three Description</span>
+            </div>
+            <div class="feature-item">
+                <img src="icon2.png" alt="Feature 2" class="icon">
+                <span>Feature Two Description</span>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <img src="gadget-image.jpg" alt="Tech Gadget" class="product-image">
+            <div class="price">$199.99</div>
+            <div class="buttons">
+                <button class="btn">Add to Cart</button>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2023 Tech Co. - All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

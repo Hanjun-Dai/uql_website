@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Food Blog</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9fbe7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ff9900;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d81b60;
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #d81b60;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post {
+            margin-bottom: 20px;
+        }
+        .blog-post h2 {
+            color: #ff5722;
+        }
+        .blog-post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #ffedcc;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            color: #d81b60;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            border-top: 5px solid #ff9900;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yummy Delights!</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Subscribe!</h2>
+            <p>Get tasty updates sent straight to your inbox.</p>
+            <form>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <h2>Popular Posts</h2>
+            <ul>
+                <li><a href="#">Tasty Tacos</a></li>
+                <li><a href="#">Yummy Yogurt</a></li>
+                <li><a href="#">Fabulous Fries</a></li>
+            </ul>
+        </aside>
+        
+        <div class="main-content">
+            <div class="blog-post">
+                <h2>Sweet Treats to Try!</h2>
+                <img src="dessert.jpg" alt="Sweet Desserts">
+                <p>Indulge in the yummiest desserts.</p>
+            </div>
+            <div class="blog-post">
+                <h2>Delicious Pasta Recipe!</h2>
+                <img src="pasta.jpg" alt="Delicious Pasta">
+                <p>Join us for a fun cooking adventure!</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Yummy Delights. All rights reserved.</p>
+    </footer>
+</body>
+</html>

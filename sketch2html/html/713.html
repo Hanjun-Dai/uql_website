@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vintage Finance</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:700|Lora:400italic">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #6D4C41;
+        }
+
+        .vintage-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background: #8D6E63;
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .vintage-button:hover {
+            background: #6D4C41;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #8D6E63;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6D4C41;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="submit" value="Send Message">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </form>
+        <h1>Get in Touch</h1>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Email: info@vintagefinance.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <a href="mailto:info@vintagefinance.com" class="vintage-button">Email Us</a>
+        </div>
+    </div>
+</body>
+
+</html>

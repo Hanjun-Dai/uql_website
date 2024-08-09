@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 2.5em; /* Increased font size */
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 1.2em; /* Increased font size */
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        #container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+            background: white;
+        }
+        #main-content {
+            flex: 2;
+            padding: 20px;
+        }
+        #sidebar {
+            flex: 1;
+            background-color: #f9f9f9;
+            border-left: 1px solid #ddd;
+            padding: 20px;
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .post h2 {
+            margin: 0;
+            font-size: 3em; /* Increased font size */
+        }
+        .post p {
+            margin: 5px 0;
+            color: gray;
+            font-size: 0.8em; /* Smaller font size */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9em; /* Smaller font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arts Community Forum</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Events</a>
+        <a href="#">Members</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div id="container">
+        <div id="main-content">
+            <h2>Recent Discussions</h2>
+            <div class="post">
+                <h2>Exploring Abstract Art</h2>
+                <p>Started by <strong>User123</strong> - 2 hours ago</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="post">
+                <h2>Art Techniques 101</h2>
+                <p>Started by <strong>CreativeSoul</strong> - 4 hours ago</p>
+                <p>Quisque pretium metus vehicula, posuere mi ac, bibendum elit.</p>
+            </div>
+            <div class="post">
+                <h2>Upcoming Art Events</h2>
+                <p>Started by <strong>ArtLover</strong> - 6 hours ago</p>
+                <p>Nam sit amet arcu non massa dictum convallis.</p>
+            </div>
+        </div>
+        <aside id="sidebar">
+            <h3 style="font-size: 2em;">Sidebar</h3> <!-- Increased font size -->
+            <p style="font-size: 0.9em;">Latest News</p> <!-- Smaller font size -->
+            <ul>
+                <li><a href="#" style="font-size: 1em;">New exhibitions opening next week</a></li> <!-- Smaller font size -->
+                <li><a href="#" style="font-size: 1em;">Join our community workshops!</a></li> <!-- Smaller font size -->
+            </ul>
+            <h3 style="font-size: 2em;">Popular Tags</h3> <!-- Increased font size -->
+            <p style="font-size: 0.9em;">#Painting, #Sculpture, #Photography</p> <!-- Smaller font size -->
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2023 Arts Community Forum</p>
+    </footer>
+</body>
+</html>

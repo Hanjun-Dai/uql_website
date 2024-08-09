@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Automotive Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc;
+            margin: 0;
+            padding: 0;
+            color: #444; /* Changed text color slightly */
+        }
+
+        header {
+            background-color: #2c3e50; /* Changed header background color */
+            color: #ecf0f1; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            letter-spacing: 1.5px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .portfolio-item {
+            background-color: #fff;
+            border: 1px solid #bdc3c7; /* Changed border color */
+            border-radius: 10px;
+            margin: 15px;
+            width: calc(33% - 30px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Increased shadow intensity */
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+
+        .portfolio-image {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
+        }
+
+        .portfolio-image img {
+            width: 100%;
+            display: block;
+        }
+
+        .portfolio-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #2c3e50; /* Changed footer background color */
+            color: #ecf0f1; /* Changed footer text color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .portfolio-item {
+                width: calc(100% - 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Vintage Automotive Portfolio
+</header>
+
+<div class="container">
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car1.jpg" alt="Classic Car 1">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #2980b9;">Classic Car 1</h3> <!-- Changed color of title -->
+            <p style="color: #8e44ad;">1932 Ford Model B</p> <!-- Changed color of description -->
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car2.jpg" alt="Classic Car 2">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #e74c3c;">Classic Car 2</h3> <!-- Changed color of title -->
+            <p style="color: #d35400;">1967 Chevrolet Camaro</p> <!-- Changed color of description -->
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car3.jpg" alt="Classic Car 3">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #16a085;">Classic Car 3</h3> <!-- Changed color of title -->
+            <p style="color: #27ae60;">1957 Volkswagen Beetle</p> <!-- Changed color of description -->
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car4.jpg" alt="Classic Car 4">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #d35400;">Classic Car 4</h3> <!-- Changed color of title -->
+            <p style="color: #2980b9;">1965 Ford Mustang</p> <!-- Changed color of description -->
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car5.jpg" alt="Classic Car 5">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #8e44ad;">Classic Car 5</h3> <!-- Changed color of title -->
+            <p style="color: #34495e;">1970 Dodge Charger</p> <!-- Changed color of description -->
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <div class="portfolio-image">
+            <img src="car6.jpg" alt="Classic Car 6">
+        </div>
+        <div class="portfolio-content">
+            <h3 style="color: #34495e;">Classic Car 6</h3> <!-- Changed color of title -->
+            <p style="color: #16a085;">1949 Cadillac Series 62</p> <!-- Changed color of description -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Vintage Automobiles
+</footer>
+
+</body>
+</html>

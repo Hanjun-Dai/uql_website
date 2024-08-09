@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Politics Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #8e44ad; /* Changed from #2c3e50 to #8e44ad */
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .faq-item {
+            margin: 20px 0;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 15px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #e67e22; /* Changed from #2980b9 to #e67e22 */
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: #d35400; /* Changed from #3498db to #d35400 */
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.5;
+            color: #555; /* Changed this to a darker grey for better contrast */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+    <p>Your guide to understanding politics better.</p>
+</header>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            What is the purpose of this website?
+        </div>
+        <div class="faq-answer">
+            A resource for engaging with political topics and discussions.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            How can I get involved?
+        </div>
+        <div class="faq-answer">
+            Join discussions, participate in events, and share your insights.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            Where can I find resources?
+        </div>
+        <div class="faq-answer">
+            Check our 'Resources' section for articles, videos, and links.
+        </div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            Who runs this website?
+        </div>
+        <div class="faq-answer">
+            A dedicated team of volunteers and political enthusiasts.
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(questionElement) {
+        const answer = questionElement.nextElementSibling;
+        answer.style.display = (answer.style.display === "block") ? "none" : "block";
+    }
+</script>
+
+</body>
+</html>

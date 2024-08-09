@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .featured {
+            width: 30%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .featured h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 10px;
+        }
+        .category {
+            width: 60%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .category h3 {
+            font-size: 1.8em;
+            border-bottom: 2px solid #ff5722;
+            padding-bottom: 10px;
+        }
+        .post {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff5722;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food News</h1>
+    <nav>
+        <a href="#latest">Latest</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#tips">Tips</a>
+    </nav>
+</header>
+
+<div class="main-content">
+    <aside class="category">
+        <h3>Categories</h3>
+        <div class="post">Vegan</div>
+        <div class="post">Desserts</div>
+        <div class="post">Healthy</div>
+        <div class="post">Quick Meals</div>
+    </aside>
+    
+    <div class="featured">
+        <h2>Featured Post</h2>
+        <div class="post">Discover the Best Recipes of 2023!</div>
+        <div class="post">Top 10 Ingredients to Try This Season</div>
+        <div class="post">Healthy Eating Hacks You Need to Know</div>
+    </div>
+</div>
+
+<footer class="footer">
+    &copy; 2023 Food News - Stay hungry, stay foolish!
+</footer>
+
+</body>
+</html>

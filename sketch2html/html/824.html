@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Real Estate Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #ffafbd, #ffc3a0);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffa500;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ff6347;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        article {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            transition: transform 0.3s;
+        }
+        article:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #ff6347;
+        }
+        .blog-icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffafbd;
+            border-top: 5px solid #ffa500;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            article {
+                width: calc(45% - 40px);
+            }
+        }
+        @media (max-width: 500px) {
+            article {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Playful Real Estate Blog!</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">Properties</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <div class="blog-icon">ð</div>
+        <h2>Market Trends</h2>
+        <p>Stay updated with the latest market insights.</p>
+    </article>
+    <article>
+        <div class="blog-icon">ð</div>
+        <h2>Community Events</h2>
+        <p>Join us for fun in your neighborhood!</p>
+    </article>
+    <article>
+        <div class="blog-icon">ð¡</div>
+        <h2>Find Your Dream Home</h2>
+        <p>Explore the latest listings in your area!</p>
+    </article>
+    <article>
+        <div class="blog-icon">ð¼</div>
+        <h2>Investment Opportunities</h2>
+        <p>Discover the best real estate investments!</p>
+    </article>
+    <article>
+        <div class="blog-icon">ð</div>
+        <h2>Home Improvement Tips</h2>
+        <p>Transform your space with these simple tips.</p>
+    </article>
+    <article>
+        <div class="blog-icon">ð</div>
+        <h2>Buying Guide</h2>
+        <p>Your simple guide to buying a home.</p>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2023 Playful Real Estate. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

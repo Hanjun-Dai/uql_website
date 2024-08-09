@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+            font-size: 16px; /* Default font size */
+        }
+
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px; /* Changed font size for nav links */
+        }
+
+        .hero {
+            background-image: url('food-hero.jpg');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero h1 {
+            font-size: 72px; /* Increased font size significantly */
+            margin: 0;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h2 {
+            font-size: 12px; /* Decreased font size significantly */
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: white;
+            font-size: 14px; /* Slightly decreased footer font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Haven</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#recipes">Recipes</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Delicious Recipes Await!</h1>
+</div>
+
+<section class="cards">
+    <div class="card">
+        <img src="recipe1.jpg" alt="Recipe 1">
+        <h2>Pasta Primavera</h2>
+    </div>
+    <div class="card">
+        <img src="recipe2.jpg" alt="Recipe 2">
+        <h2>Chicken Curry</h2>
+    </div>
+    <div class="card">
+        <img src="recipe3.jpg" alt="Recipe 3">
+        <h2>Chocolate Cake</h2>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Foodie Haven</p>
+</footer>
+
+</body>
+</html>

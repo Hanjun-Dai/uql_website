@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6a5acd; /* Changed to Slate Blue */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #d2691e; /* Changed to Chocolate */
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #4682b4; /* Changed to Steel Blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        input[type="submit"]:hover {
+            background-color: #5f9ea0; /* Changed to Cadet Blue */
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #8b0000; /* Changed to Dark Red */
+        }
+        footer {
+            background-color: #6a5acd; /* Changed to Slate Blue */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Rustic Fashion Contact
+</header>
+
+<div class="container">
+    <h1>Get in Touch</h1>
+    
+    <div class="form-container">
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <p>Location: Rustic Street 123, Fashion Town</p>
+        <p>Email: contact@rusticfashion.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Rustic Fashion. All Rights Reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Finance Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #e9ecef; /* Changed from #f4f4f4 */
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+            color: #444; /* Changed from #333 */
+        }
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc; /* Changed from #ddd */
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            color: #007bff; /* Changed from #0056b3 */
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #757575; /* Changed from #666 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <div class="question">What services do you offer?</div>
+        <div class="answer">We provide investment advice, portfolio management, and financial planning.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <div class="question">How can I contact customer support?</div>
+        <div class="answer">You can reach us via email at support@financewebsite.com.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <div class="question">Are there any fees associated with your services?</div>
+        <div class="answer">Yes, we charge a small fee based on the services you choose.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <div class="question">How do I withdraw my funds?</div>
+        <div class="answer">You can withdraw your funds through our online portal.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <div class="question">Is my information secure?</div>
+        <div class="answer">Yes, we use secure encryption to protect your data.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(item) {
+        const answer = item.querySelector('.answer');
+        answer.style.display = answer.style.display === 'none' || !answer.style.display ? 'block' : 'none';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e3e3e3; /* Changed background color */
+        }
+        header {
+            background-color: #445; /* Changed header background color */
+            color: #ffcc00; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffcc00; /* Changed nav link color */
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            position: relative;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            background: rgba(0, 0, 0, 0.7); /* Changed hero text background */
+            padding: 15px; /* Changed padding */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .card {
+            background-color: #ffffff; /* Kept the card background */
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Changed shadow color */
+        }
+        .card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #222; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>News Today</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Technology</a>
+        <a href="#">Health</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Breaking News</h1>
+</div>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <img src="news1.jpg" alt="News 1">
+            <h2>Headline 1</h2>
+            <p>Short description of news item 1.</p>
+        </div>
+        <div class="card">
+            <img src="news2.jpg" alt="News 2">
+            <h2>Headline 2</h2>
+            <p>Short description of news item 2.</p>
+        </div>
+        <div class="card">
+            <img src="news3.jpg" alt="News 3">
+            <h2>Headline 3</h2>
+            <p>Short description of news item 3.</p>
+        </div>
+        <div class="card">
+            <img src="news4.jpg" alt="News 4">
+            <h2>Headline 4</h2>
+            <p>Short description of news item 4.</p>
+        </div>
+        <div class="card">
+            <img src="news5.jpg" alt="News 5">
+            <h2>Headline 5</h2>
+            <p>Short description of news item 5.</p>
+        </div>
+        <div class="card">
+            <img src="news6.jpg" alt="News 6">
+            <h2>Headline 6</h2>
+            <p>Short description of news item 6.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 News Today. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

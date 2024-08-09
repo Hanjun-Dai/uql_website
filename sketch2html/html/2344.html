@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e1f5fe; /* Changed background color */
+            color: #555; /* Changed text color */
+        }
+        header {
+            background: #1a237e; /* Changed header background color */
+            color: #f1f8e9; /* Changed header text color */
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .portfolio-title {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #c2185b; /* Changed title color */
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adjusted shadow color */
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(230, 0, 0, 0.7); /* Changed overlay color */
+            color: #f1f8e9; /* Changed overlay text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #37474f; /* Changed footer background color */
+            color: #b2ebf2; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<div class="container">
+    <h2 class="portfolio-title">Featured Works</h2>
+    <div class="grid">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <div class="overlay">Project 1 Title</div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <div class="overlay">Project 2 Title</div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="overlay">Project 3 Title</div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project 4">
+            <div class="overlay">Project 4 Title</div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project5.jpg" alt="Project 5">
+            <div class="overlay">Project 5 Title</div>
+        </div>
+        <div class="portfolio-item">
+            <img src="project6.jpg" alt="Project 6">
+            <div class="overlay">Project 6 Title</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Business Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

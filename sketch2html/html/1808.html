@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            flex: 1 1 300px; /* Shrink to fit, base size 300px */
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.02);
+        }
+        .service-image {
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+        .service-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Services</h1>
+    <p>Explore our offerings</p>
+</header>
+
+<div class="container">
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service4.jpg');"></div>
+        <div class="service-content">
+            <h2 class="service-title">In-game Purchases</h2>
+            <p>Enhance your gaming experience.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service1.jpg');"></div>
+        <div class="service-content">
+            <h2 class="service-title">Game Hosting</h2>
+            <p>Reliable and fast servers.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service3.jpg');"></div>
+        <div class="service-content">
+            <h2 class="service-title">Community Support</h2>
+            <p>Join our vibrant community.</p>
+        </div>
+    </div>
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service2.jpg');"></div>
+        <div class="service-content">
+            <h2 class="service-title">Game Development</h2>
+            <p>Custom-built games for you.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Game Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

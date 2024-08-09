@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Something Went Wrong</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f9fc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background: linear-gradient(to top right, #ffffff, #e6f7ff);
+        }
+
+        .error-code {
+            font-size: 96px;
+            font-weight: bold;
+            color: #ff6f61;
+            margin: 0;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .suggestion {
+            font-size: 16px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="https://via.placeholder.com/150" alt="Health Icon" class="hero-image">
+        <h1 class="error-code">404</h1>
+        <p class="suggestion">Sorry, we couldn't find the page you were looking for.</p>
+        <a href="/" class="button">Return Home</a>
+        <h2 class="error-message">Page Not Found</h2>
+    </div>
+
+</body>
+
+</html>

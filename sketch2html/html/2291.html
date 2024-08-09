@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .info-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .form-section {
+            width: 60%;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section input,
+        .form-section textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #dcdcdc;
+            border-radius: 4px;
+        }
+        .form-section button {
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #2980b9;
+        }
+        .contact-info {
+            width: 35%;
+        }
+        .contact-info h3 {
+            margin-bottom: 15px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .info-section {
+                flex-direction: column;
+            }
+            .form-section,
+            .contact-info {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <div class="info-section">
+        <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> info@realestate.com</p>
+            <p><strong>Address:</strong> 123 Realty St, City, State, ZIP</p>
+        </div>
+        <div class="form-section">
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

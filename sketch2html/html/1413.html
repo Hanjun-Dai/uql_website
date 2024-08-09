@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            font-size: 18px; /* Increased font size */
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 36px; /* Increased font size */
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eaeaea;
+            padding: 15px 0;
+            font-size: 20px; /* Increased font size */
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #007BFF;
+            cursor: pointer;
+            margin: 0;
+            font-size: 24px; /* Increased font size */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 18px; /* Increased font size */
+        }
+
+        .faq-item:hover .question {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.question');
+            questions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <h2 class="question">What age should I start parenting classes?</h2>
+            <div class="answer">It’s best to start as early as possible, particularly during pregnancy.</div>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">How can I manage parenting stress?</h2>
+            <div class="answer">Consider taking time for yourself, seeking support, or practicing mindfulness techniques.</div>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">What are effective discipline strategies?</h2>
+            <div class="answer">Positive reinforcement, setting clear boundaries, and using natural consequences are effective methods.</div>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">How can I support my child's education?</h2>
+            <div class="answer">Engage with their homework, communicate with teachers, and encourage a love of reading.</div>
+        </div>
+
+        <div class="faq-item">
+            <h2 class="question">What should I do if my child is struggling with friends?</h2>
+            <div class="answer">Talk to your child, encourage social initiatives, and consider speaking with a counselor.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

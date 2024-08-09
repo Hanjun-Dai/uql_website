@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .side-bar {
+            flex: 1;
+            padding: 10px;
+            margin-left: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .main-content {
+            flex: 3;
+            padding: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            color: #343a40;
+        }
+        .article p {
+            color: #666;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Buzz</h1>
+    <p>Your source for the latest in entertainment.</p>
+</header>
+
+<div class="container">
+    <div class="side-bar">
+        <h3>Popular News</h3>
+        <ul>
+            <li><a href="#">Upcoming Movies to Watch</a></li>
+            <li><a href="#">Celebrity Interviews</a></li>
+            <li><a href="#">Box Office Results</a></li>
+            <li><a href="#">Music Festivals 2023</a></li>
+            <li><a href="#">Fashion Trends</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="News Image">
+            <h2>New Music from Top Artists</h2>
+            <p>Check out the latest hits from chart-topping artists!</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="News Image">
+            <h2>Movie Premiere: Star Wars Returns</h2>
+            <p>The new Star Wars film hits theaters this Friday. Fans are excited...</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x400" alt="News Image">
+            <h2>Grammy Awards Recap</h2>
+            <p>Last night's Grammy Awards were filled with surprises and stunning...</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Entertainment Buzz. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

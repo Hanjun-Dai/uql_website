@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 4em; /* Changed from 2.5em to 4em */
+            margin: 0;
+        }
+
+        .mission {
+            background: #eaeaea;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .mission h2 {
+            color: #007BFF;
+            font-size: 2.5em; /* Changed from 1.8em to 2.5em */
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .team-member {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            flex: 0 0 calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 120px; /* Changed from 80px to 120px */
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 3em; /* Changed from default size to 3em */
+        }
+
+        .team-member p {
+            font-size: 1.5em; /* Changed from default size to 1.5em */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.2em; /* Changed from 0.9em to 1.2em */
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+            <p>Learn more about our mission and team</p>
+        </header>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To provide exceptional service and quality to our customers.</p>
+        </section>
+
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>CTO</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Lisa Johnson</h3>
+                <p>Marketing Head</p>
+            </div>
+            <!-- Add more team members as needed -->
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Your Business Name</p>
+        </footer>
+    </div>
+</body>
+</html>

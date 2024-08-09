@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6c63ff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .post {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post h2 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+        .post p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #6c63ff;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">Post Title 1</a></li>
+            <li><a href="#">Post Title 2</a></li>
+            <li><a href="#">Post Title 3</a></li>
+        </ul>
+        
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Education</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="post">
+            <h2>The Importance of Web Accessibility</h2>
+            <p>Making your website accessible to all users is crucial...</p>
+        </div>
+        <div class="post">
+            <h2>Understanding HTML and CSS</h2>
+            <p>Learn the basics of HTML and CSS to create your own website...</p>
+        </div>
+        <div class="post">
+            <h2>React vs. Vue: Which to Choose?</h2>
+            <p>A comparative analysis of React and Vue frameworks for web development...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Education Blog - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

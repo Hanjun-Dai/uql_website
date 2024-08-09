@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .forum-title {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .post {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .post-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        .post-meta {
+            font-size: 0.9rem;
+            color: #888;
+        }
+        .post-replies {
+            color: #28a745;
+        }
+        .create-post {
+            margin: 20px 0;
+            text-align: right;
+        }
+        .create-post button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .create-post button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Forum</h1>
+    <p>Discuss your favorite movies, shows, and games!</p>
+</header>
+
+<div class="container">
+    <div class="post">
+        <div class="post-header">
+            <span class="post-title">Why is everyone talking about this game?</span>
+            <span class="post-meta">Posted by User3 | <span class="post-replies">8 replies</span></span>
+        </div>
+        <p class="post-meta">Last updated on Jan 3, 2023</p>
+    </div>
+
+    <div class="create-post">
+        <button>Create New Post</button>
+    </div>
+
+    <div class="forum-title">
+        <h2>Latest Topics</h2>
+    </div>
+
+    <div class="post">
+        <div class="post-header">
+            <span class="post-title">Best TV Shows of 2023</span>
+            <span class="post-meta">Posted by User2 | <span class="post-replies">3 replies</span></span>
+        </div>
+        <p class="post-meta">Last updated on Jan 2, 2023</p>
+    </div>
+  
+    <div class="post">
+        <div class="post-header">
+            <span class="post-title">Upcoming Movie Releases!</span>
+            <span class="post-meta">Posted by User1 | <span class="post-replies">5 replies</span></span>
+        </div>
+        <p class="post-meta">Last updated on Jan 1, 2023</p>
+    </div>
+</div>
+
+</body>
+</html>

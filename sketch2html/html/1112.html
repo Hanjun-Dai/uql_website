@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #004080;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            background: #fafafa;
+            transition: transform 0.3s;
+        }
+        .testimonial:hover {
+            transform: scale(1.02);
+        }
+        .client-info {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .client-photo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .client-name {
+            font-weight: bold;
+            color: #004080;
+        }
+        .client-role {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Client Testimonials</h1>
+    <p>What our clients say about us</p>
+</header>
+
+<div class="container">
+    <div class="testimonial">
+        <p>"Their financial advice transformed my portfolio. Highly recommended!"</p>
+        <div class="client-info">
+            <img src="client3.jpg" alt="Client Photo" class="client-photo">
+            <div>
+                <span class="client-name">Emily Johnson</span><br>
+                <span class="client-role">Entrepreneur</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"Thanks to this finance team, I was able to secure my dream home. Their expertise was invaluable!"</p>
+        <div class="client-info">
+            <img src="client1.jpg" alt="Client Photo" class="client-photo">
+            <div>
+                <span class="client-name">John Doe</span><br>
+                <span class="client-role">Homeowner</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <p>"Excellent service and support. They guided me through the investment process step by step."</p>
+        <div class="client-info">
+            <img src="client2.jpg" alt="Client Photo" class="client-photo">
+            <div>
+                <span class="client-name">Jane Smith</span><br>
+                <span class="client-role">Investor</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Resource Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;  /* Changed background color */
+            color: #444;          /* Changed text color */
+        }
+        header {
+            background: #9c27b0; /* Changed header background color */
+            padding: 20px;
+            text-align: center;
+            color: #fff;         /* Changed header text color */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #f44336;      /* Changed card headings color */
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;         /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Resources</h1>
+        <p>Discover the best resources to elevate your style!</p>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Style Guide">
+                <h3>Style Guides</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Fashion Trends">
+                <h3>Latest Trends</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Lookbook">
+                <h3>Lookbooks</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Sustainable Brands">
+                <h3>Sustainable Brands</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Fashion Events">
+                <h3>Fashion Events</h3>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/150" alt="Personal Styling">
+                <h3>Personal Styling</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Fashion Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

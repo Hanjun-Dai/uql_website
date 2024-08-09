@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #005bb5;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #004b99;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        .article h2 {
+            color: #0073e6;
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #0073e6;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sports News</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Trending News</h3>
+            <ul>
+                <li><a href="#">Team Z wins championship</a></li>
+                <li><a href="#">Player A breaks record</a></li>
+                <li><a href="#">New training facility opens</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="article">
+                <h2>Exciting Match Last Night!</h2>
+                <p>Highlights from the thrilling match between teams X and Y.</p>
+            </div>
+            <div class="article">
+                <h2>Top Player Transfers of the Season</h2>
+                <p>A look at the most exciting player transfers this season.</p>
+            </div>
+            <div class="article">
+                <h2>Upcoming Matches You Can't Miss</h2>
+                <p>Check out the schedule for the upcoming matches.</p>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest</a>
+        <a href="#">Scores</a>
+        <a href="#">Teams</a>
+        <a href="#">Players</a>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Sports News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

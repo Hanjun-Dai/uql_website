@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('health-hero.jpg');
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            position: relative;
+        }
+        .hero h1 {
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .service-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .service-card h2 {
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+        .service-card p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Your Health, Our Priority</h1>
+</div>
+
+<header>
+    <h1>Health Services</h1>
+</header>
+
+<div class="services">
+    <div class="service-card">
+        <img src="service2.jpg" alt="Service 2">
+        <h2>Nutritional Counseling</h2>
+        <p>Personalized plans for a healthier lifestyle.</p>
+    </div>
+    <div class="service-card">
+        <img src="service1.jpg" alt="Service 1">
+        <h2>Wellness Checks</h2>
+        <p>Regular health screenings to keep you on track.</p>
+    </div>
+    <div class="service-card">
+        <img src="service3.jpg" alt="Service 3">
+        <h2>Physical Therapy</h2>
+        <p>Rehabilitation and recovery programs.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Healthy Living. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sports Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Changed background */
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Kept the same */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            color: #8e44ad; /* Changed header color */
+            font-size: 2.5em;
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            flex: 1 1 30%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .member-photo {
+            width: 100%;
+            border-radius: 50%;
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+
+        .member-name {
+            font-weight: bold;
+            color: #d35400; /* Changed member name color */
+        }
+
+        .mission {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 1.2em;
+            color: #7f8c8d; /* Changed mission text color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #c0392b; /* Changed footer background */
+            color: #ecf0f1; /* Changed footer text color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+
+        <div class="mission">
+            <p>Passion for Sports. Commitment to Excellence.</p>
+        </div>
+
+        <h2>Meet the Team</h2>
+        <div class="team-section">
+            <div class="team-member">
+                <img src="team1.jpg" alt="Team Member 1" class="member-photo">
+                <div class="member-name">Jane Doe</div>
+                <p>Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="team2.jpg" alt="Team Member 2" class="member-photo">
+                <div class="member-name">John Smith</div>
+                <p>Editor</p>
+            </div>
+            <div class="team-member">
+                <img src="team3.jpg" alt="Team Member 3" class="member-photo">
+                <div class="member-name">Emily Johnson</div>
+                <p>Contributor</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Sports Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

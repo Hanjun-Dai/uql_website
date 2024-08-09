@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Forum</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fce4ec; /* Changed background color */
+            margin: 0;
+            padding: 0;
+            color: #2e7d32; /* Changed text color */
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffff00; /* Changed header text color */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: rgba(240, 240, 240, 0.8); /* Changed nav background color */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ab47bc; /* Changed link color */
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #6a1b9a; /* Changed hover color */
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .topic {
+            background-color: #fafafa; /* Changed topic background color */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Made shadow slightly more pronounced */
+            margin: 15px 0;
+            padding: 15px;
+            width: 80%;
+            transition: transform 0.3s;
+        }
+        .topic:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            background-color: rgba(240, 240, 240, 0.9); /* Changed footer background color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Enthusiasts Forum</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Tips & Advice</a>
+        <a href="#">Travel Stories</a>
+        <a href="#">Contact Us</a>
+    </nav>
+
+    <main>
+        <div class="topic">
+            <h2 style="color: #d84315;">Explore the Wonders of Europe</h2> <!-- Changed heading color -->
+            <p>Join us to discuss the best destinations!</p>
+        </div>
+        <div class="topic">
+            <h2 style="color: #e91e63;">Planning Your Next Adventure</h2> <!-- Changed heading color -->
+            <p>Share your tips and itineraries!</p>
+        </div>
+        <div class="topic">
+            <h2 style="color: #1976d2;">Food & Culture Around the World</h2> <!-- Changed heading color -->
+            <p>Let's talk about the culinary experiences!</p>
+        </div>
+        <div class="topic">
+            <h2 style="color: #f57c00;">Traveling on a Budget</h2> <!-- Changed heading color -->
+            <p>Discuss ways to save money while traveling!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Forum. All rights reserved.</p>
+    </footer>
+</body>
+</html>

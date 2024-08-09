@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Education Landing Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: url('https://via.placeholder.com/1600x400/4a90e2/ffffff?text=Learning+is+Art') no-repeat center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+        }
+
+        .tagline {
+            font-size: 24px;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200/e94e77/ffffff?text=Course+2" alt="Course 2">
+            <h2>Art Fundamentals</h2>
+            <p>Explore your artistic side</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200/7ed321/ffffff?text=Course+1" alt="Course 1">
+            <h2>Creative Writing</h2>
+            <p>Unlock your imagination  </p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200/f5a623/ffffff?text=Course+3" alt="Course 3">
+            <h2>Photography Basics</h2>
+            <p>Capture the world around you</p>
+        </div>
+    </main>
+
+    <header>
+        <h1>Embrace the Joy of Learning</h1>
+        <p class="tagline">Where Education Meets Inspiration</p>
+        <nav>
+            <a href="#courses">Courses</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        <p>&copy; 2023 Artistic Education. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rustic Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e1d2; /* Light beige */
+            margin: 0;
+            padding: 0;
+            color: #4a3d2a; /* Dark brown */
+        }
+
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: url('rustic-background.jpg') no-repeat center center; /* Add your rustic background image */
+            background-size: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #3b2a1e; /* Darker brown */
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #c0b2a0; /* Light brown */
+            border-radius: 5px;
+            font-size: 1em;
+            width: calc(100% - 22px);
+        }
+
+        button {
+            background-color: #8c5f3e; /* Rustic orange */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #754c3a; /* Darker orange */
+        }
+
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .icon {
+            width: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <div class="contact-info">
+            <p><img src="icon-phone.png" alt="Phone" class="icon"> (555) 123-4567</p>
+            <p><img src="icon-email.png" alt="Email" class="icon"> contact@rusticgames.com</p>
+        </div>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>

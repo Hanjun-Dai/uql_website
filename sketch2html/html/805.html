@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .product-title {
+            font-size: 2em;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .product-description {
+            font-size: 1.1em;
+            margin: 10px 0;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #e57e00;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .add-to-cart {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .product-title {
+                font-size: 1.6em;
+            }
+            .product-price {
+                font-size: 1.3em;
+            }
+            .add-to-cart {
+                padding: 8px 16px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="product-title">Product Title</h1>
+        <div class="product-price">$29.99</div>
+        <img src="path/to/product-image.jpg" alt="Product Image" class="product-image">
+        <p class="product-description">Short description of the product. Highlight unique features and benefits.</p>
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
+</body>
+</html>

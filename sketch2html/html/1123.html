@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Service Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            margin: 0;
+        }
+        .service-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .service-item {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(30% - 20px);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+        .service-item h3 {
+            color: #333;
+        }
+        .service-item p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Engine Diagnostics</h3>
+                <p>Advanced diagnostics for your vehicle's needs.</p>
+            </div>
+            <div class="service-item">
+                <h3>Battery Check</h3>
+                <p>Check your battery health before it's too late.</p>
+            </div>
+            <div class="service-item">
+                <h3>Brake Inspection</h3>
+                <p>Ensure safety with our thorough brake inspection.</p>
+            </div>
+            <div class="service-item">
+                <h3>Oil Change</h3>
+                <p>Regular oil changes for optimal engine performance.</p>
+            </div>
+            <div class="service-item">
+                <h3>Tire Rotation</h3>
+                <p>Maintain even tire wear and improve handling.</p>
+            </div>
+            <div class="service-item">
+                <h3>Alignment Service</h3>
+                <p>Correct alignment for better tire longevity.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Automotive Services. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

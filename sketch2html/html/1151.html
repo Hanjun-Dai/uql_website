@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .faq-question:hover {
+            color: #0056b3;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            font-size: 12px;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<main>
+    <div class="faq-item">
+        <div class="faq-question">Are there any membership fees?</div>
+        <div class="faq-answer">No, there are no hidden fees or membership costs.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How can I contact support?</div>
+        <div class="faq-answer">You can reach out to our support team via email or phone.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What is your refund policy?</div>
+        <div class="faq-answer">We offer a 30-day money-back guarantee on all our services.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What services do you offer?</div>
+        <div class="faq-answer">We offer a variety of services tailored to your needs.</div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2023 Your Business Name | All rights reserved.
+</footer>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

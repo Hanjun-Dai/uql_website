@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #282c34;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 0 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<footer>
+    Â© 2023 Games Website. All rights reserved.
+</footer>
+
+<div class="container">
+    <div class="card">
+        <img src="game3.jpg" alt="Game 3">
+        <div class="card-title">Game Title 3</div>
+    </div>
+    <div class="card">
+        <img src="game5.jpg" alt="Game 5">
+        <div class="card-title">Game Title 5</div>
+    </div>
+    <div class="card">
+        <img src="game1.jpg" alt="Game 1">
+        <div class="card-title">Game Title 1</div>
+    </div>
+    <div class="card">
+        <img src="game4.jpg" alt="Game 4">
+        <div class="card-title">Game Title 4</div>
+    </div>
+    <div class="card">
+        <img src="game2.jpg" alt="Game 2">
+        <div class="card-title">Game Title 2</div>
+    </div>
+    <div class="card">
+        <img src="game6.jpg" alt="Game 6">
+        <div class="card-title">Game Title 6</div>
+    </div>
+</div>
+
+<header>
+    <h1>Game Categories</h1>
+</header>
+
+</body>
+</html>

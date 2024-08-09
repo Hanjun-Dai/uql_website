@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - News Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav {
+            margin: 1em 0;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .service {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .service:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Services</h1>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="services">
+            <div class="service">
+                <h2>Video Reports</h2>
+                <p>Engaging video content on current events.</p>
+            </div>
+            <div class="service">
+                <h2>Interviews</h2>
+                <p>Exclusive interviews with key figures.</p>
+            </div>
+            <div class="service">
+                <h2>Opinion Pieces</h2>
+                <p>Thought-provoking articles and insights.</p>
+            </div>
+            <div class="service">
+                <h2>News Coverage</h2>
+                <p>Stay updated with the latest news.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

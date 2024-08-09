@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6363;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.5em;
+            border-bottom: 5px solid #ff4500;
+        }
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background-color: #ffe4e1;
+            border: 2px dashed #ff4500;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px;
+            width: calc(33% - 40px);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+            background-color: #fff5f5;
+        }
+        .icon {
+            font-size: 4em;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #ff6363;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .service {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fun Services Just for You!
+    </header>
+    <div class="container">
+        <div class="service">
+            <div class="icon">🎨</div>
+            <h3>Art & Craft</h3>
+            <p>Unleash your creativity!</p>
+        </div>
+        <div class="service">
+            <div class="icon">🎤</div>
+            <h3>Karaoke Nights</h3>
+            <p>Sing your heart out!</p>
+        </div>
+        <div class="service">
+            <div class="icon">🎮</div>
+            <h3>Gamer Zone</h3>
+            <p>Play with friends!</p>
+        </div>
+        <div class="service">
+            <div class="icon">🍿</div>
+            <h3>Movie Marathons</h3>
+            <p>Watch classics all night!</p>
+        </div>
+        <div class="service">
+            <div class="icon">🎉</div>
+            <h3>Themed Parties</h3>
+            <p>Get dressed up!</p>
+        </div>
+        <div class="service">
+            <div class="icon">🎮</div>
+            <h3>Game Nights</h3>
+            <p>Bring your A-game!</p>
+        </div>
+    </div>
+    <footer>
+        Join Us for Endless Fun! 🎈
+    </footer>
+</body>
+</html>

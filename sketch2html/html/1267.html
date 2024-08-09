@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f8fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+        h1 {
+            margin: 0;
+        }
+        .hero {
+            background: url('science-hero.jpg') no-repeat center center / cover;
+            height: 300px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .cta {
+            background: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 30px 0;
+        }
+        .feature {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+        .footer {
+            background: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Science Hub</h1>
+    </header>
+    <section class="features">
+        <div class="feature">
+            <h3>Latest Research</h3>
+            <p>Stay updated with cutting-edge research.</p>
+        </div>
+        <div class="feature">
+            <h3>Interactive Articles</h3>
+            <p>Engage with science through interactive content.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Events</h3>
+            <p>Join our events and connect with fellow science lovers.</p>
+        </div>
+    </section>
+    <div class="hero">
+        <h2>Explore the Universe</h2>
+        <p>Your journey into the world of science begins here.</p>
+        <a href="#explore" class="cta">Discover More</a>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Science Hub. All rights reserved.
+    </footer>
+</body>
+</html>

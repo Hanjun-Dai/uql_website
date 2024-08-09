@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3; /* Changed background color */
+        }
+        header {
+            background: #28a745; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main {
+            flex: 3;
+            margin-right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff5e6; /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #dc3545; /* Changed article headings color */
+        }
+        footer {
+            background: #004085; /* Changed footer background color */
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #007bff; /* Kept the link color, can be changed randomly as well */
+            text-decoration: none;
+        }
+        a:hover {
+            color: #0056b3; /* Changed hover color for links */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Business News</h1>
+        <p>Latest Updates in the Business World</p>
+    </header>
+    <div class="container">
+        <div class="main">
+            <div class="article">
+                <h2>Breaking: Major Business Merger Announced</h2>
+                <p>In a surprising turn of events, Company A and Company B have decided to merge...</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="article">
+                <h2>Market Trends: 2023 Predictions</h2>
+                <p>Analysts predict significant changes in market trends as we enter the second quarter...</p>
+                <a href="#">Read more</a>
+            </div>
+            <div class="article">
+                <h2>Interview: CEO Insights on Future Growth</h2>
+                <p>We sit down with the CEO of Company C to discuss upcoming strategies and goals...</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Latest Articles</a></li>
+                <li><a href="#">Market Analysis</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Company News</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Business News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

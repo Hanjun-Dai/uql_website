@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #00509e;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .destination {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .destination:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Explore the World</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+        </nav>
+    </header>
+
+    <footer class="footer">
+        <p>&copy; 2023 Travel Site. All rights reserved.</p>
+    </footer>
+
+    <div class="main-content">
+        <div class="destination">
+            <h2>New York</h2>
+            <img src="newyork.jpg" alt="New York" style="width:100%; border-radius: 5px;">
+            <p>The concrete jungle.</p>
+        </div>
+        <div class="destination">
+            <h2>Tokyo</h2>
+            <img src="tokyo.jpg" alt="Tokyo" style="width:100%; border-radius: 5px;">
+            <p>A blend of tradition and modernity.</p>
+        </div>
+        <div class="destination">
+            <h2>Paris</h2>
+            <img src="paris.jpg" alt="Paris" style="width:100%; border-radius: 5px;">
+            <p>The city of lights awaits.</p>
+        </div>
+    </div>
+
+</body>
+</html>

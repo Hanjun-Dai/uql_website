@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa; /* Changed background color */
+        }
+
+        header {
+            background: #5b3c8a; /* Changed header background color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 3;
+            padding-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #d7e7e7; /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .post {
+            background: #e1f5fe; /* Changed post background color */
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #3e2723; /* Changed footer background color */
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Education Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Resources</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <div class="main">
+            <div class="post">
+                <h2>Blog Post Title 1</h2>
+                <p>Date: January 1, 2023</p>
+                <p>Short description of the blog post goes here. Engage the reader with a brief summary.</p>
+            </div>
+            <div class="post">
+                <h2>Blog Post Title 2</h2>
+                <p>Date: January 2, 2023</p>
+                <p>Short description of the blog post goes here. Engage the reader with a brief summary.</p>
+            </div>
+            <div class="post">
+                <h2>Blog Post Title 3</h2>
+                <p>Date: January 3, 2023</p>
+                <p>Short description of the blog post goes here. Engage the reader with a brief summary.</p>
+            </div>
+        </div>
+        
+        <div class="sidebar">
+            <h3>Additional Resources</h3>
+            <ul>
+                <li><a href="#">Study Guides</a></li>
+                <li><a href="#">Online Courses</a></li>
+                <li><a href="#">Academic Articles</a></li>
+                <li><a href="#">Tutoring Services</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Education Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

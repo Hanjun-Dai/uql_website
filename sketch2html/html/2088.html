@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Category</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #444; /* Changed body text color */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #5D6D7E; /* Changed title color */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Changed shadow opacity */
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card-title {
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2980B9; /* Changed card title color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delicious Categories</h1>
+        <div class="grid">
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Breakfast" alt="Breakfast">
+                <div class="card-title">Breakfast</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Lunch" alt="Lunch">
+                <div class="card-title">Lunch</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Dinner" alt="Dinner">
+                <div class="card-title">Dinner</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Desserts" alt="Desserts">
+                <div class="card-title">Desserts</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Appetizers" alt="Appetizers">
+                <div class="card-title">Appetizers</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250x150?text=Drinks" alt="Drinks">
+                <div class="card-title">Drinks</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

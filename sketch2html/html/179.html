@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Arts Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e1e1e1;
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #f0f8ff;
+        }
+        .faq-item h2 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #007BFF;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+            font-size: 1em;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <h2>Where are you located?</h2>
+        <div class="faq-answer">We are located in the heart of downtown, easily accessible by public transport.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <h2>Do you host art classes?</h2>
+        <div class="faq-answer">Yes! We offer a range of art classes for both beginners and advanced artists.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <h2>What types of art do you showcase?</h2>
+        <div class="faq-answer">We showcase a variety of art forms, including painting, sculpture, photography, and digital media.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <h2>How can I support your organization?</h2>
+        <div class="faq-answer">You can support us through donations, volunteering, or attending our events.</div>
+    </div>
+    <div class="faq-item" onclick="toggleAnswer(this)">
+        <h2>How can I submit my artwork?</h2>
+        <div class="faq-answer">You can submit your artwork through our submission portal on the website.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        element.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

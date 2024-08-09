@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Sports Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #ff5722, #ff9800);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('sports-hero.jpg');
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .category {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ff5722;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Playful Sports</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Teams</a>
+        <a href="#">Sports</a>
+        <a href="#">News</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Unleash Your Inner Champion!</h2>
+</div>
+
+<div class="categories">
+    <div class="category">
+        <h3>Cycling</h3>
+        <p>Pedal to the metal!</p>
+    </div>
+    <div class="category">
+        <h3>Tennis</h3>
+        <p>Serve up some fun!</p>
+    </div>
+    <div class="category">
+        <h3>Swimming</h3>
+        <p>Make a splash!</p>
+    </div>
+    <div class="category">
+        <h3>Basketball</h3>
+        <p>Dunk your way to victory!</p>
+    </div>
+    <div class="category">
+        <h3>Cricket</h3>
+        <p>Hit for six!</p>
+    </div>
+    <div class="category">
+        <h3>Football</h3>
+        <p>Kick-off the excitement!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Playful Sports. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0078d4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #005bb5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            margin-left: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0078d4;
+            color: white;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Technology News</h1>
+</header>
+
+<nav>
+    <a href="#">Gadgets</a>
+    <a href="#">Software</a>
+    <a href="#">Contact</a>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Reviews</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h2>Popular Topics</h2>
+        <ul>
+            <li><a href="#">Gadget Reviews</a></li>
+            <li><a href="#">Cybersecurity</a></li>
+            <li><a href="#">Blockchain</a></li>
+            <li><a href="#">AI</a></li>
+        </ul>
+    </aside>
+    
+    <div class="main-content">
+        <h2>Latest Articles</h2>
+        <article>
+            <h3>Title of the Third Article</h3>
+            <p>Brief description of the third article...</p>
+        </article>
+        <article>
+            <h3>Title of the First Article</h3>
+            <p>Brief description of the first article...</p>
+        </article>
+        <article>
+            <h3>Title of the Second Article</h3>
+            <p>Brief description of the second article...</p>
+        </article>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Technology News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

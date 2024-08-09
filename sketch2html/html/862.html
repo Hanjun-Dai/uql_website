@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef; /* Changed the background color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF; /* Changed the header background color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #FF5722; /* Changed h2 text color */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #adb5bd; /* Changed input border color */
+            border-radius: 5px;
+            font-size: 14px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #28A745; /* Changed submit button background color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838; /* Changed submit button hover color */
+        }
+        .contact-info {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="container">
+    <h2>We'd Love To Hear From You!</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <p>Email: info@parentingwebsite.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Parenting St, Family City, ST 12345</p>
+    </div>
+</div>
+
+</body>
+</html>

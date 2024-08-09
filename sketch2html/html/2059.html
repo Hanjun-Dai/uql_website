@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .testimonial-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-card h3 {
+            color: #333;
+            margin: 10px 0 5px;
+        }
+
+        .testimonial-card .client-title {
+            color: #777;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>What Our Clients Say</h1>
+
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>"Exceeded our expectations, fantastic results!"</p>
+            <h3>Michael Brown</h3>
+            <span class="client-title">Operations Manager, Big Company</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Amazing service! Highly recommended."</p>
+            <h3>John Doe</h3>
+            <span class="client-title">CEO, Example Corp</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"A game changer for our business!"</p>
+            <h3>Jane Smith</h3>
+            <span class="client-title">Marketing Director, Sample Inc</span>
+        </div>
+
+        <div class="testimonial-card">
+            <p>"Professional and efficient, a delight to work with."</p>
+            <h3>Emily White</h3>
+            <span class="client-title">Founder, Startup Co</span>
+        </div>
+    </div>
+
+</body>
+</html>

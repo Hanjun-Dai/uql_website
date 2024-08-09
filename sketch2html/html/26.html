@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #002147;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-item {
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .news-item:hover {
+            transform: translateY(-2px);
+        }
+        .news-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #002147;
+        }
+        .news-date {
+            font-size: 0.9em;
+            color: #999999;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #002147;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Business News</h1>
+    <p>Latest Insights & Updates</p>
+</header>
+
+<div class="container">
+    <article class="news-item">
+        <h2 class="news-title">Tech Innovations</h2>
+        <p class="news-date">March 8, 2023</p>
+        <p>How emerging technologies are shaping the business landscape.</p>
+    </article>
+
+    <article class="news-item">
+        <h2 class="news-title">Financial Insights</h2>
+        <p class="news-date">March 1, 2023</p>
+        <p>An overview of the financial strategies for small businesses.</p>
+    </article>
+
+    <article class="news-item">
+        <h2 class="news-title">Market Trends in 2023</h2>
+        <p class="news-date">March 15, 2023</p>
+        <p>Discover the latest trends in the market for the year 2023 that all businesses should be aware of.</p>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Business Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

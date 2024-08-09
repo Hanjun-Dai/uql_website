@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .category-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Hub</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Articles</a>
+        <a href="#">Resources</a>
+        <a href="#">Tips</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2 class="category-title">Explore Parenting Topics</h2>
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="health_and_nutrition.jpg" alt="Health and Nutrition">
+            <h3>Health & Nutrition</h3>
+        </div>
+        <div class="category-card">
+            <img src="education_resources.jpg" alt="Education Resources">
+            <h3>Education Resources</h3>
+        </div>
+        <div class="category-card">
+            <img src="toddler_development.jpg" alt="Toddler Development">
+            <h3>Toddler Development</h3>
+        </div>
+        <div class="category-card">
+            <img src="family_activities.jpg" alt="Family Activities">
+            <h3>Family Activities</h3>
+        </div>
+        <div class="category-card">
+            <img src="parenting_tips.jpg" alt="Parenting Tips">
+            <h3>Parenting Tips</h3>
+        </div>
+        <div class="category-card">
+            <img src="infant_care.jpg" alt="Infant Care">
+            <h3>Infant Care</h3>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Hub | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

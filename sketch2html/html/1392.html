@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Travel Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        header {
+            background: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #e63946;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #30336b;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d63031;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 15px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            border: 2px solid #e63946;
+            border-radius: 10px;
+            width: 300px;
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .portfolio-item h2 {
+            font-size: 1.5em;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            background-color: #ffcc00;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #30336b;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adventure Awaits!</h1>
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+    </nav>
+</header>
+
+<footer>
+    &copy; 2023 Travel Portfolio | <a href="#sitemap" style="color: #ffcc00;">Sitemap</a>
+</footer>
+
+<section class="portfolio" id="portfolio">
+    <div class="portfolio-item">
+        <img src="image3.jpg" alt="City Lights">
+        <h2>City Lights</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image1.jpg" alt="Beach Paradise">
+        <h2>Beach Paradise</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image4.jpg" alt="Cultural Wonders">
+        <h2>Cultural Wonders</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image2.jpg" alt="Mountain Escape">
+        <h2>Mountain Escape</h2>
+    </div>
+</section>
+
+</body>
+</html>

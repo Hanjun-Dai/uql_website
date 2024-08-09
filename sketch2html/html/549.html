@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful News Page</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f0f8ff;
+            color: #4b0082;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4b0082;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff8dc;
+            border: 3px dotted #4b0082;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Playful News</h1>
+    <nav>
+        <a href="#world">World</a>
+        <a href="#sports">Sports</a>
+        <a href="#entertainment">Entertainment</a>
+        <a href="#technology">Tech</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 4">
+        <h2>Exciting News 4</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 2">
+        <h2>Exciting News 2</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 1">
+        <h2>Exciting News 1</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 5">
+        <h2>Exciting News 5</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 6">
+        <h2>Exciting News 6</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/150" alt="News Image 3">
+        <h2>Exciting News 3</h2>
+        <p>Short summary of the news goes here!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Playful News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

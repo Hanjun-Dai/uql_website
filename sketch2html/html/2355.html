@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Resources</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #131313;
+            color: #E0E0E0; /* Changed this color */
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #FF4500; /* Changed this color */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid #32CD32; /* Changed this color */
+            border-radius: 15px;
+            width: calc(30% - 20px);
+            margin: 10px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.5);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #00CED1; /* Changed this color */
+        }
+        .card-content {
+            font-size: 0.9em;
+            line-height: 1.5em;
+            color: #FFFFFF; /* Changed this color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #2C2C2C; /* Changed this color */
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Resources</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="asset1.jpg" alt="Resource 1">
+        <div class="card-title">Game Guides</div>
+        <div class="card-content">Explore guides to master your favorite games.</div>
+    </div>
+    <div class="card">
+        <img src="asset2.jpg" alt="Resource 2">
+        <div class="card-title">Modifications</div>
+        <div class="card-content">Find the best mods to enhance your gaming experience.</div>
+    </div>
+    <div class="card">
+        <img src="asset3.jpg" alt="Resource 3">
+        <div class="card-title">Community Forums</div>
+        <div class="card-content">Join discussions with fellow gamers and share tips.</div>
+    </div>
+    <div class="card">
+        <img src="asset4.jpg" alt="Resource 4">
+        <div class="card-title">Game Trailers</div>
+        <div class="card-content">Watch the latest trailers for upcoming games.</div>
+    </div>
+    <div class="card">
+        <img src="asset5.jpg" alt="Resource 5">
+        <div class="card-title">Cheat Codes</div>
+        <div class="card-content">Unlock hidden features and cheats for your games.</div>
+    </div>
+    <div class="card">
+        <img src="asset6.jpg" alt="Resource 6">
+        <div class="card-title">Streaming Resources</div>
+        <div class="card-content">Guides for streaming your gameplay like a pro.</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 GameWorld - All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Automotive Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            background: white;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .faq-title {
+            padding: 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #e1e1e1;
+            transition: background 0.3s;
+        }
+        .faq-title:hover {
+            background: #f1f1f1;
+        }
+        .faq-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #e1e1e1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">What payment methods do you accept?</div>
+            <div class="faq-content">We accept cash, credit cards, and financing options.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">How can I schedule an appointment?</div>
+            <div class="faq-content">You can schedule an appointment via our website or by calling us.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">What warranty do you provide?</div>
+            <div class="faq-content">We provide a 12-month or 12,000-mile warranty on parts and labor.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">Do you offer free estimates?</div>
+            <div class="faq-content">Yes, we offer free estimates on all services.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">What services do you offer?</div>
+            <div class="faq-content">We offer full-service auto repairs, maintenance, and diagnostics.</div>
+        </div>
+    </div>
+    <script>
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

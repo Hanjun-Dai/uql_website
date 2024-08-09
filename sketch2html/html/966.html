@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Entertainment Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .resource-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            width: calc(33% - 20px);
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+        }
+        .resource-card img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .resource-card h3 {
+            margin: 15px 0;
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Hub</h1>
+    <p>Your go-to place for all entertainment resources</p>
+</header>
+
+<div class="container">
+    <div class="resource-card">
+        <img src="gaming-news.jpg" alt="Gaming News">
+        <h3>Gaming News</h3>
+        <p>Stay updated with the latest in gaming.</p>
+    </div>
+    <div class="resource-card">
+        <img src="tv-series.jpg" alt="TV Series">
+        <h3>Popular TV Series</h3>
+        <p>Check out trending TV series and schedules.</p>
+    </div>
+    <div class="resource-card">
+        <img src="events.jpg" alt="Events">
+        <h3>Upcoming Events</h3>
+        <p>Find out about upcoming entertainment events near you.</p>
+    </div>
+    <div class="resource-card">
+        <img src="movie-poster.jpg" alt="Latest Movies">
+        <h3>Latest Movies</h3>
+        <p>Explore the latest movie releases and reviews.</p>
+    </div>
+    <div class="resource-card">
+        <img src="celebrity-news.jpg" alt="Celebrity News">
+        <h3>Celebrity News</h3>
+        <p>Read the latest news about your favorite celebrities.</p>
+    </div>
+    <div class="resource-card">
+        <img src="music-albums.jpg" alt="New Music Albums">
+        <h3>New Music Albums</h3>
+        <p>Discover the latest music hits and albums.</p>
+    </div>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Movies</a>
+    <a href="#">TV Shows</a>
+    <a href="#">Music</a>
+    <a href="#">Games</a>
+    <a href="#">Contact</a>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Entertainment Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

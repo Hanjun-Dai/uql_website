@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-item h2 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Art Portfolio</h1>
+</header>
+
+<div class="portfolio">
+    <div class="portfolio-item">
+        <img src="artwork4.jpg" alt="Artwork 4">
+        <h2>Artwork Title 4</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="artwork2.jpg" alt="Artwork 2">
+        <h2>Artwork Title 2</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="artwork6.jpg" alt="Artwork 6">
+        <h2>Artwork Title 6</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="artwork1.jpg" alt="Artwork 1">
+        <h2>Artwork Title 1</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="artwork5.jpg" alt="Artwork 5">
+        <h2>Artwork Title 5</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="artwork3.jpg" alt="Artwork 3">
+        <h2>Artwork Title 3</h2>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Name</p>
+</footer>
+
+</body>
+</html>

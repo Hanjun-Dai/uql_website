@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background color */
+        }
+        header {
+            background: #444; /* Changed header background color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffcc00; /* Changed link color */
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #ff9900; /* Added hover effect for links */
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: #f0f0f0; /* Changed hero text color */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            color: #ffffff; /* Changed hero heading color */
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .section {
+            background: #ffffff; /* Section background color remains white */
+            width: 30%;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Changed shadow effect */
+            border-radius: 5px;
+            border: 1px solid #ccc; /* Added border to sections */
+        }
+        .section h2 {
+            color: #007acc; /* Changed section heading color */
+        }
+        .footer {
+            background: #222; /* Changed footer background color */
+            color: #cccccc; /* Changed footer text color */
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tech Haven</h1>
+        <nav>
+            <a href="#latest-news">Latest News</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#guides">Guides</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Innovate Your World</h1>
+        <p>Explore the latest in technology and innovation.</p>
+    </div>
+
+    <div class="sections">
+        <div class="section" id="latest-news">
+            <h2>Latest News</h2>
+            <p>Stay updated with the latest trends and updates in technology.</p>
+        </div>
+        <div class="section" id="reviews">
+            <h2>Product Reviews</h2>
+            <p>In-depth reviews of the latest gadgets and tech products.</p>
+        </div>
+        <div class="section" id="guides">
+            <h2>How-To Guides</h2>
+            <p>Comprehensive guides to help you navigate tech challenges.</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Tech Haven. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

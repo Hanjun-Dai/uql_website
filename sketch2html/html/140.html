@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background: #FF5722; /* Changed header background color */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #FFD600; /* Changed link color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .portfolio-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Increased shadow opacity */
+            text-align: center;
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #00796B; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Portfolio</h1>
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="portfolio-container">
+    <h2 style="color: #D50000;">Our Work</h2> <!-- Changed heading color -->
+    <div class="grid">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3 style="color: #388E3C;">Project Title 1</h3> <!-- Changed project title color -->
+            <p>Short description of Project 1.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3 style="color: #388E3C;">Project Title 2</h3>
+            <p>Short description of Project 2.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3 style="color: #388E3C;">Project Title 3</h3>
+            <p>Short description of Project 3.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project 4">
+            <h3 style="color: #388E3C;">Project Title 4</h3>
+            <p>Short description of Project 4.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project5.jpg" alt="Project 5">
+            <h3 style="color: #388E3C;">Project Title 5</h3>
+            <p>Short description of Project 5.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project6.jpg" alt="Project 6">
+            <h3 style="color: #388E3C;">Project Title 6</h3>
+            <p>Short description of Project 6.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Health Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

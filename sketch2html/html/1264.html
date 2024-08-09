@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 3em; /* Increased font size */
+        }
+
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .testimonial {
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            padding: 20px;
+            flex: 1 1 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote {
+            font-size: 0.8em; /* Decreased font size */
+            font-style: italic;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .author {
+            margin-top: 15px;
+            font-weight: bold;
+            color: #333;
+            font-size: 1.2em; /* Increased font size */
+        }
+
+        .image-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover .image-container img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>What Our Users Say</h1>
+    <div class="testimonials">
+        <div class="testimonial">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="User 1">
+            </div>
+            <div class="quote">"This site has changed the way I learn science!"</div>
+            <div class="author">â Jane Doe, Science Enthusiast</div>
+        </div>
+        <div class="testimonial">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="User 2">
+            </div>
+            <div class="quote">"Incredible resources and user-friendly!"</div>
+            <div class="author">â John Smith, Aspiring Chemist</div>
+        </div>
+        <div class="testimonial">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/300" alt="User 3">
+            </div>
+            <div class="quote">"A must-visit for anyone interested in science!"</div>
+            <div class="author">â Sarah Lee, Biologist</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

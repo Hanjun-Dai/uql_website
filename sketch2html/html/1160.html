@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        header {
+            background-color: #005f7f; /* Changed header background color */
+            color: #fdfd96; /* Changed header text color */
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 15px;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .hero {
+            width: 100%;
+            height: 300px;
+            background-image: url('hero-image.jpg'); /* Placeholder for hero image */
+            background-size: cover;
+            background-position: center;
+            color: #ffcc00; /* Changed hero text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.7); /* Darkened the background for hero */
+            padding: 10px;
+            color: #ffffff; /* Ensured hero text color is white */
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .card {
+            background: #ffffff; /* Keeping card background white */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Slightly stronger shadow */
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #009688; /* Added border to cards */
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            color: #f57c00; /* Changed card heading color */
+        }
+        footer {
+            background-color: #004d40; /* Changed footer background color */
+            color: #ffffff; /* Footer text color remains white */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Politics Today</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest News</a>
+        <a href="#">Elections</a>
+        <a href="#">Policies</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="hero">
+        <h2>Your Voice Matters</h2>
+    </div>
+    
+    <div class="card-container">
+        <div class="card">
+            <h3>Latest Updates</h3>
+            <p>Stay informed with the latest in politics.</p>
+        </div>
+        <div class="card">
+            <h3>Election Insights</h3>
+            <p>Get the latest insights into upcoming elections.</p>
+        </div>
+        <div class="card">
+            <h3>Policy Changes</h3>
+            <p>Understand the impact of recent policy changes.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2023 Politics Today. All Rights Reserved.
+</footer>
+
+</body>
+</html>

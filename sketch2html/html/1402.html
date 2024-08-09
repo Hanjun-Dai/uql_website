@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Science News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #333;
+            text-shadow: 1px 1px 2px #fff;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .article {
+            background-color: #ffffff;
+            border: 2px solid #ffcc00;
+            border-radius: 10px;
+            width: 300px;
+            margin: 15px;
+            transition: transform 0.2s;
+            text-align: center;
+        }
+
+        .article:hover {
+            transform: scale(1.05);
+        }
+
+        .article img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .article h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2266cc;
+            color: #fff;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .article {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Science Fun Zone!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Curiosities</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Discoveries</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Science Image 3">
+            <h2>Fun with Physics!</h2>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Science Image 1">
+            <h2>Exciting New Discoveries!</h2>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Science Image 4">
+            <h2>Biology Breakthroughs</h2>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/300x200" alt="Science Image 2">
+            <h2>The Wonders of the Universe</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Science Fun Zone. All Rights Reserved!</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e7f3fe; /* Changed background color */
+            color: #444; /* Changed text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .error-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Increased shadow effect */
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 0;
+            color: #ff7700; /* Changed error code color */
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #555; /* Changed error message color */
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Changed button background color */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .home-link:hover {
+            background-color: #45a049; /* Changed hover effect color */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! Page not found.</p>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/300.png?text=Oops!" alt="Error Image">
+        </div>
+        <a href="/" class="home-link">Go to Home</a>
+    </div>
+</body>
+</html>

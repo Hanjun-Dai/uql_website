@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #e7e7e7;
+            border-radius: 5px;
+            padding: 15px;
+            transition: transform 0.2s;
+            position: relative;
+            text-align: center;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .author {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials {
+                grid-template-columns: 1fr; /* Stack testimonials on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="testimonials">
+            <div class="testimonial">
+                <p class="quote">"Quick and comprehensive – my go-to news!"</p>
+                <p class="author">- Sarah Lee</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"I love the in-depth articles and analyses!"</p>
+                <p class="author">- John Smith</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"This is the most reliable news source I've found!"</p>
+                <p class="author">- Jane Doe</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"Always up-to-date and accurate!"</p>
+                <p class="author">- Michael Brown</p>
+            </div>
+        </div>
+        <h1>What Our Readers Say</h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scayle=1.0">
+    <title>Testimonials - Vintage Automotive</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #e0e0e0; /* Changed background color */
+            color: #444; /* Changed text color */
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #5C4033; /* Changed header background color */
+            color: #fff; /* Kept white but changed header context */
+            border-radius: 5px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .testimonial {
+            background: #fff;
+            border: 1px solid #d2d2d2; /* Changed border color */
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Increased shadow opacity */
+            position: relative;
+            overflow: hidden;
+        }
+        .testimonial::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #5C4033; /* Modified the top border color */
+        }
+        .testimonial p {
+            font-style: italic;
+            margin: 10px 0;
+            color: #333; /* Changed paragraph text color */
+        }
+        .testimonial cite {
+            display: block;
+            font-size: 0.9em;
+            color: #666; /* Changed cite text color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #5C4033; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Customers Say</h1>
+</header>
+
+<div class="testimonial-container">
+    <div class="testimonial">
+        <p>"Simply the best service I've ever had!"</p>
+        <cite>- John Doe, Vintage Car Collector</cite>
+    </div>
+    <div class="testimonial">
+        <p>"Their attention to detail is unmatched!"</p>
+        <cite>- Jane Smith, Classic Auto Enthusiast</cite>
+    </div>
+    <div class="testimonial">
+        <p>"I wouldn't go anywhere else for repairs!"</p>
+        <cite>- Mike Johnson, Car Aficionado</cite>
+    </div>
+    <div class="testimonial">
+        <p>"Restored my dream car to perfection!"</p>
+        <cite>- Sarah Taylor, Automotive Blogger</cite>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Vintage Automotive. All Rights Reserved.
+</footer>
+
+</body>
+</html>

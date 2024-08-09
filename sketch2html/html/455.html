@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header, .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007ACC;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .image-section {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 5px;
+        }
+        .info-section {
+            padding: 20px;
+        }
+        .property-title {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        .price {
+            font-size: 20px;
+            color: #007ACC;
+            margin: 10px 0;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .features li {
+            background: #007ACC;
+            color: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            flex: 1 1 calc(33% - 10px);
+            text-align: center;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .cta button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007ACC;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #005A99;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="footer">
+            Â© 2023 Luxury Real Estate
+        </div>
+
+        <div class="info-section">
+            <h2 class="property-title">Stunning 5 Bedroom House</h2>
+            <p class="price">$1,250,000</p>
+            <ul class="features">
+                <li>5 Bedrooms</li>
+                <li>4 Bathrooms</li>
+                <li>2 Car Garage</li>
+                <li>Swimming Pool</li>
+                <li>Garden Area</li>
+                <li>Modern Kitchen</li>
+            </ul>
+
+            <div class="cta">
+                <button>Contact Agent</button>
+            </div>
+        </div>
+
+        <div class="header">
+            <h1>Luxury Real Estate</h1>
+        </div>
+
+        <div class="image-section">
+            <img src="property-image.jpg" alt="Property Image">
+        </div>
+    </div>
+
+</body>
+</html>

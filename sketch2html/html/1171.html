@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0073e6, #005bb5);
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .resource-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .resource-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .resource-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .resource-card h3 {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .resource-card a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+            background-color: #0073e6;
+            color: white;
+            text-decoration: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .resource-card a:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background: #0073e6;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Political Resources</h1>
+        <p>Your guide to understanding politics.</p>
+    </header>
+
+    <main>
+        <div class="resource-container">
+            <div class="resource-card">
+                <img src="placeholder4.jpg" alt="Resource Image 4">
+                <h3>Resource Title 4</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="resource-card">
+                <img src="placeholder1.jpg" alt="Resource Image 1">
+                <h3>Resource Title 1</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="resource-card">
+                <img src="placeholder5.jpg" alt="Resource Image 5">
+                <h3>Resource Title 5</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="resource-card">
+                <img src="placeholder2.jpg" alt="Resource Image 2">
+                <h3>Resource Title 2</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="resource-card">
+                <img src="placeholder3.jpg" alt="Resource Image 3">
+                <h3>Resource Title 3</h3>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="resource-card">
+                <img src="placeholder6.jpg" alt="Resource Image 6">
+                <h3>Resource Title 6</h3>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Politics Resource Page</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background: #005bb5;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: scale(1.05);
+        }
+        .news-image {
+            width: 100%;
+            height: 200px;
+            background-color: #e2e2e2;
+            background-size: cover;
+            background-position: center;
+        }
+        .news-title {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px;
+            margin: 0;
+        }
+        .news-excerpt {
+            padding: 0 15px 15px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0073e6;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tech News Today</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gadgets</a>
+    <a href="#">Latest</a>
+    <a href="#">Contact</a>
+    <a href="#">Reviews</a>
+</nav>
+
+<div class="container">
+    <div class="news-card">
+        <div class="news-image" style="background-image: url('tech-3.jpg');"></div>
+        <h2 class="news-title">Future of Mobile Devices</h2>
+        <p class="news-excerpt">What can we expect from smartphones in the coming years?</p>
+    </div>
+    <div class="news-card">
+        <div class="news-image" style="background-image: url('tech-4.jpg');"></div>
+        <h2 class="news-title">Cybersecurity Trends</h2>
+        <p class="news-excerpt">Stay secure in an increasingly connected world.</p>
+    </div>
+    <div class="news-card">
+        <div class="news-image" style="background-image: url('tech-1.jpg');"></div>
+        <h2 class="news-title">Innovative Tech in 2023</h2>
+        <p class="news-excerpt">Explore the latest breakthroughs in technology.</p>
+    </div>
+    <div class="news-card">
+        <div class="news-image" style="background-image: url('tech-2.jpg');"></div>
+        <h2 class="news-title">The Rise of AI</h2>
+        <p class="news-excerpt">Artificial Intelligence continues to evolve and dominate.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Tech News</p>
+</footer>
+
+</body>
+</html>

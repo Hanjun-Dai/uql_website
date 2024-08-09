@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Arts Forum</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc; /* Light beige background */
+            color: #4b3c2c; /* Dark brown text */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8b5b29; /* Brown color */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #d2b48c; /* Tan color */
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #4b3c2c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .forum-topic {
+            background-color: #fff8dc; /* Cornsilk background */
+            border: 1px solid #8b5b29;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+        .forum-topic:hover {
+            background-color: #ffe4b5; /* Lemonchiffon hover */
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f5f5dc; /* Light beige for sidebar */
+            padding: 15px;
+            border: 1px solid #8b5b29;
+            border-radius: 5px;
+        }
+        .sidebar h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Arts Forum</h1>
+    <p>Your space to share and discuss art!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">Workshops</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="main-content">
+        <h2>Recent Topics</h2>
+        <div class="forum-topic">
+            <h3>Art Techniques: Watercolor Tips</h3>
+            <p>Posted by: Artist123</p>
+        </div>
+        <div class="forum-topic">
+            <h3>Creating Rustic Frames</h3>
+            <p>Posted by: CraftyGal</p>
+        </div>
+        <div class="forum-topic">
+            <h3>Exploring Abstract Art</h3>
+            <p>Posted by: AbstractFan</p>
+        </div>
+        <div class="forum-topic">
+            <h3>Photography in Nature</h3>
+            <p>Posted by: NatureLover</p>
+        </div>
+        <div class="forum-topic">
+            <h3>Sculpture Techniques</h3>
+            <p>Posted by: SculptorSmith</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Latest Posts</h3>
+        <ul>
+            <li><a href="#">Understanding Color Theory</a></li>
+            <li><a href="#">Top 10 Brushes</a></li>
+        </ul>
+
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Painting</a></li>
+            <li><a href="#">Sculpture</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Crafts</a></li>
+        </ul>
+    </aside>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea; /* Changed background color */
+        }
+
+        header {
+            background: #4A90E2; /* Changed header background */
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.8); /* Changed overlay background */
+            color: #333; /* Changed overlay text color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #4A90E2; /* Changed footer background */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Portfolio</h1>
+</header>
+
+<main class="portfolio">
+    <div class="portfolio-item">
+        <img src="fashion1.jpg" alt="Fashion Item 1">
+        <div class="overlay">Collection 1</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="fashion2.jpg" alt="Fashion Item 2">
+        <div class="overlay">Collection 2</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="fashion3.jpg" alt="Fashion Item 3">
+        <div class="overlay">Collection 3</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="fashion4.jpg" alt="Fashion Item 4">
+        <div class="overlay">Collection 4</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="fashion5.jpg" alt="Fashion Item 5">
+        <div class="overlay">Collection 5</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="fashion6.jpg" alt="Fashion Item 6">
+        <div class="overlay">Collection 6</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Fashion Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

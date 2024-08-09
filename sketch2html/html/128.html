@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Error - Automotive Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #34495e; /* Changed text color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px;
+            position: relative;
+        }
+        .car-icon {
+            font-size: 100px;
+            color: #d9534f; /* Changed icon color */
+        }
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            color: #6f42c1; /* Changed heading color */
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #495057; /* Changed paragraph color */
+        }
+        .btn {
+            background-color: #007bff; /* Changed button background color */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Changed button hover color */
+        }
+        .animation {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -50px;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(-10px); }
+            50% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animation">
+            <span class="car-icon">🚗</span>
+        </div>
+        <h1>404</h1>
+        <p>Oops! Page not found.</p>
+        <a href="/" class="btn">Go Home</a>
+    </div>
+</body>
+</html>

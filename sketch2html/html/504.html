@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Vintage Health Website</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f1e6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #7f5c4d;
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .testimonial-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px 0;
+            padding: 20px;
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: #f08a24;
+            border-radius: 50%;
+            z-index: -1;
+        }
+
+        .testimonial-card h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #5c3725;
+        }
+
+        .testimonial-card p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #7f5c4d;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Clients Say</h1>
+</header>
+
+<div class="container">
+    <div class="testimonial-card">
+        <h2>Michael Brown</h2>
+        <p>"The coaching is phenomenal! It really helped me achieve my goals."</p>
+    </div>
+
+    <div class="testimonial-card">
+        <h2>Jane Doe</h2>
+        <p>"This program changed my life! I feel healthier and more energetic than ever."</p>
+    </div>
+
+    <div class="testimonial-card">
+        <h2>Mary Johnson</h2>
+        <p>"I learned so much about nutrition – a game changer for my health!"</p>
+    </div>
+
+    <div class="testimonial-card">
+        <h2>John Smith</h2>
+        <p>"The supportive community helped me stay on track. Highly recommend!"</p>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Vintage Health. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

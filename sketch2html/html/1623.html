@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* changed background color */
+            color: #333;
+        }
+        header {
+            background-color: #ff7043; /* changed header background color */
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff; /* changed link color */
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* enhanced shadow effect */
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.03);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .item-description {
+            padding: 15px;
+            text-align: center;
+        }
+        .item-description h3 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #ab47bc; /* changed item title color */
+        }
+        .item-description p {
+            color: #555; /* changed paragraph color */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #263238; /* changed footer background color */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Portfolio</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2 style="text-align:center; color: #ffc107;">About Us</h2> <!-- changed color for section title -->
+    <p style="text-align:center; color: #00796b;">A brief introduction to our culinary journey.</p> <!-- changed color for paragraph -->
+</section>
+
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-item">
+        <img src="dish1.jpg" alt="Dish 1">
+        <div class="item-description">
+            <h3>Dish 1</h3>
+            <p>Short description of Dish 1.</p>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="dish2.jpg" alt="Dish 2">
+        <div class="item-description">
+            <h3>Dish 2</h3>
+            <p>Short description of Dish 2.</p>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="dish3.jpg" alt="Dish 3">
+        <div class="item-description">
+            <h3>Dish 3</h3>
+            <p>Short description of Dish 3.</p>
+        </div>
+    </div>
+    <div class="portfolio-item">
+        <img src="dish4.jpg" alt="Dish 4">
+        <div class="item-description">
+            <h3>Dish 4</h3>
+            <p>Short description of Dish 4.</p>
+        </div>
+    </div>
+    <!-- Add more portfolio items as needed -->
+</section>
+
+<footer>
+    <p>&copy; 2023 Food Portfolio | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Gaming Universe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101010;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 4.0em; /* Increased larger size */
+            color: #FF4500; /* Orange Red */
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 0.8em; /* Decreased smaller size */
+            line-height: 1.5;
+        }
+
+        .mission {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .mission h2 {
+            font-size: 2.0em; /* Increased larger size for mission heading */
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .team-member {
+            background: #333;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(33.333% - 20px);
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .team-member h3 {
+            font-size: 1.5em; /* Increased larger size for team member name */
+        }
+
+        .team-member p {
+            font-size: 0.9em; /* Decreased slightly smaller size for team member role */
+        }
+
+        .cta {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF4500;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .cta a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 2.0em; /* Increased larger size for CTA link */
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .team-member {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .team-member {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+            <p>Welcome to Gaming Universe, where adventure awaits!</p>
+        </header>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>To connect gamers through immersive experiences and unforgettable online adventures.</p>
+        </section>
+
+        <section class="team">
+            <h2>Meet the Team</h2>
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Chief Gamer & Founder</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Lead Developer</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3">
+                <h3>Rick Johnson</h3>
+                <p>Art Director</p>
+            </div>
+        </section>
+
+        <div class="cta">
+            <a href="/join">Join Our Community</a>
+        </div>
+    </div>
+
+</body>
+</html>

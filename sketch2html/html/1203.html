@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff; /* changed background color */
+            color: #444; /* changed text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #ff6347; /* changed header color */
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            color: #4682b4; /* changed question color */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 5px;
+            padding-left: 15px;
+            font-size: 1em;
+            color: #666; /* changed answer text color */
+        }
+
+        .faq-item.active .answer {
+            display: block;
+        }
+
+        .faq-item.active .question {
+            color: #b22222; /* changed active question color */
+        }
+
+        .toggle-button {
+            background: #32cd32; /* changed button background */
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .toggle-button:hover {
+            background: #228b22; /* changed hover color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item">
+            <div class="question">What is the cancellation policy?</div>
+            <div class="answer">You can cancel your booking up to 24 hours before departure for a full refund.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">What is included in the travel package?</div>
+            <div class="answer">Our packages typically include accommodation, meals, and transportation.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">How do I change my booking?</div>
+            <div class="answer">To change your booking, contact our customer service team.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Are flights included in the package?</div>
+            <div class="answer">Flights are not included unless specified in the package details.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question">Do you offer travel insurance?</div>
+            <div class="answer">Yes, travel insurance can be added during the booking process.</div>
+        </div>
+
+        <button class="toggle-button" id="toggle">Show All Answers</button>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggle');
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        let allVisible = false;
+
+        toggleButton.addEventListener('click', () => {
+            allVisible = !allVisible;
+            faqItems.forEach(item => {
+                if (allVisible) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+            toggleButton.textContent = allVisible ? 'Hide All Answers' : 'Show All Answers';
+        });
+    </script>
+</body>
+</html>

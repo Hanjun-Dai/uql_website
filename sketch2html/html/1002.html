@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Health Homepage</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #f2f1e6; /* Changed body background color */
+            color: #4d4d4d; /* Changed body text color */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #b06a4f; /* Changed header background color */
+            padding: 10px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fafafa; /* Changed header title color */
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #f0e68c; /* Changed nav link color */
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('https://example.com/vintage-background.jpg'); /* Placeholder URL */
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            font-size: 1.5em;
+            padding: 20px;
+            position: relative;
+        }
+
+        .hero:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(10, 10, 10, 0.5); /* Changed overlay color */
+        }
+
+        .hero h2 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background-color: #eaeaea; /* Changed card background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Modified shadow color */
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #b06a4f; /* Changed footer background color */
+            color: #ffffff; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vintage Health</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Your Health, Our Heritage</h2>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <h3>Nutrition</h3>
+            <p>Find out how to eat well.</p>
+        </div>
+        <div class="card">
+            <h3>Fitness</h3>
+            <p>Stay active with our tips.</p>
+        </div>
+        <div class="card">
+            <h3>Mental Wellness</h3>
+            <p>Prioritize your mind.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vintage Health</p>
+        <p>All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

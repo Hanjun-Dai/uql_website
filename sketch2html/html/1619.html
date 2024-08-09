@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border: 2px solid #343a40;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 15px;
+            flex: 1 1 calc(33% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h2 {
+            color: #343a40;
+            font-size: 1.5em;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Buzz</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Music</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Celebrities</a>
+    </nav>
+</header>
+
+<footer class="footer">
+    <p>&copy; 2023 Entertainment Buzz. All Rights Reserved.</p>
+</footer>
+
+<div class="container">
+    <div class="card">
+        <img src="movie-poster1.jpg" alt="Movie Poster 1">
+        <h2>Latest Movie Release</h2>
+        <p>Catch all the action in this blockbuster!</p>
+    </div>
+    <div class="card">
+        <img src="tv-show1.jpg" alt="TV Show 1">
+        <h2>Binge-Worthy Series</h2>
+        <p>Don’t miss out on this thrilling series!</p>
+    </div>
+    <div class="card">
+        <img src="music-album1.jpg" alt="Music Album 1">
+        <h2>Top Music Album</h2>
+        <p>Listen to the hits of the year!</p>
+    </div>
+    <div class="card">
+        <img src="celebrity1.jpg" alt="Celebrity 1">
+        <h2>Celebrity Spotlight</h2>
+        <p>Find out what your favorite star is up to!</p>
+    </div>
+    <div class="card">
+        <img src="movie-poster2.jpg" alt="Movie Poster 2">
+        <h2>Upcoming Releases</h2>
+        <p>Get ready for the big screen!</p>
+    </div>
+    <div class="card">
+        <img src="music-album2.jpg" alt="Music Album 2">
+        <h2>New Music Videos</h2>
+        <p>Watch the latest from your favorite artists!</p>
+    </div>
+</div>
+
+</body>
+</html>

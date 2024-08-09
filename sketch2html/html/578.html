@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            background-color: #5A9BD5; /* Changed */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #2E2E2E; /* Changed */
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            color: #FFFFFF; /* Changed */
+            padding: 14px 16px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #FFDD57; /* Changed */
+            color: black;
+        }
+        .sidebar {
+            width: 25%;
+            float: left;
+            padding: 20px;
+            background-color: #E7E7E7; /* Changed */
+            border-right: 1px solid #ddd;
+        }
+        .content {
+            width: 75%;
+            float: left;
+            padding: 20px;
+        }
+        .forum-topic {
+            background-color: #D9E3F0; /* Changed */
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 15px;
+            background-color: #5A9BD5; /* Changed */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 1024px) {
+            .container {
+                width: 100%;
+            }
+            .sidebar, .content {
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Health Forum</h1>
+            <p>Your community for health discussions</p>
+        </header>
+        
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#topics">Topics</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <li>Nutrition</li>
+                <li>Fitness</li>
+                <li>Mental Health</li>
+                <li>Medical Conditions</li>
+                <li>Wellness</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Recent Topics</h2>
+            <div class="forum-topic">
+                <h3>Healthy Eating Tips</h3>
+                <p>Posted by User123 on 22/03/2023</p>
+            </div>
+            <div class="forum-topic">
+                <h3>Best Workouts for Beginners</h3>
+                <p>Posted by HealthGuru on 21/03/2023</p>
+            </div>
+            <div class="forum-topic">
+                <h3>Managing Stress Effectively</h3>
+                <p>Posted by MindfulTalk on 20/03/2023</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Health Forum. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

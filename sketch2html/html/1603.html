@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Science Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .faq {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding: 15px 0;
+        }
+        .faq h2 {
+            font-size: 1.8em;
+            color: #2980b9;
+            cursor: pointer;
+            margin: 0;
+        }
+        .faq p {
+            display: none;
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            line-height: 1.5;
+        }
+        .faq.active p {
+            display: block;
+        }
+        .toggle {
+            font-weight: bold;
+            color: #e74c3c;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq" onclick="toggleFAQ(this)">
+            <h2>Can I join your community?</h2>
+            <p>Absolutely! You can join our community by signing up through the registration form.</p>
+        </div>
+
+        <div class="faq" onclick="toggleFAQ(this)">
+            <h2>How often is the content updated?</h2>
+            <p>We strive to update our content regularly to reflect the latest scientific discoveries.</p>
+        </div>
+
+        <div class="faq" onclick="toggleFAQ(this)">
+            <h2>What is the purpose of this website?</h2>
+            <p>Our website aims to provide accessible and in-depth knowledge about various scientific topics.</p>
+        </div>
+
+        <div class="faq" onclick="toggleFAQ(this)">
+            <h2>How can I contribute to the content?</h2>
+            <p>You can submit articles or research papers for review through our submission page.</p>
+        </div>
+
+        <div class="faq" onclick="toggleFAQ(this)">
+            <h2>Is there an option for scientific collaboration?</h2>
+            <p>Yes, we encourage collaborations and networking among scientists through our platform.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

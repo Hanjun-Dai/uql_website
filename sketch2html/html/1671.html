@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #28A745; /* Changed from #007BFF to #28A745 */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            background: #f9f9f9; /* Changed from #fff to #f9f9f9 */
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .article img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            margin-top: 10px;
+            color: #007BFF; /* Changed from default color to #007BFF */
+        }
+        .article p {
+            color: #555; /* Changed from #777 to #555 */
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #17A2B8; /* Changed from #007BFF to #17A2B8 */
+            color: #fff;
+            position: relative;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Daily</h1>
+    <p>Your daily fix of sports news</p>
+</header>
+
+<div class="container">
+    <div class="content">
+        <div class="article">
+            <img src="https://via.placeholder.com/800x450" alt="Article Image">
+            <h2>Exciting Match Highlights</h2>
+            <p>Catch up on the latest highlights from the games.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x450" alt="Article Image">
+            <h2>Player Spotlight: John Doe</h2>
+            <p>Discover the journey of your favorite player.</p>
+        </div>
+        <div class="article">
+            <img src="https://via.placeholder.com/800x450" alt="Article Image">
+            <h2>Tactical Analysis of the Week</h2>
+            <p>Understanding the tactics that changed the game.</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Latest News</h3>
+        <ul>
+            <li><a href="#">Team A confirms new coach</a></li>
+            <li><a href="#">Injury updates for top players</a></li>
+            <li><a href="#">Upcoming fixtures to look out for</a></li>
+        </ul>
+        <h3>Popular Tags</h3>
+        <div>
+            <span style="background: #FF5733; color: white; padding: 5px; margin: 5px; border-radius: 3px;">Football</span> <!-- Changed color -->
+            <span style="background: #FFD700; color: white; padding: 5px; margin: 5px; border-radius: 3px;">Basketball</span> <!-- Changed color -->
+            <span style="background: #28A745; color: white; padding: 5px; margin: 5px; border-radius: 3px;">Tennis</span> <!-- Changed color -->
+            <span style="background: #6F42C1; color: white; padding: 5px; margin: 5px; border-radius: 3px;">Cricket</span> <!-- Changed color -->
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports Daily - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

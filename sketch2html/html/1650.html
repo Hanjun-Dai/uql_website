@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .product-image {
+            float: left;
+            width: 40%;
+            margin-right: 20px;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product-details {
+            float: left;
+            width: 55%;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #8e44ad; /* Changed color */
+        }
+        .product-price {
+            font-size: 20px;
+            color: #e74c3c; /* Changed color */
+            margin: 0 0 10px;
+        }
+        .button {
+            display: inline-block;
+            background: #2ecc71; /* Changed color */
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .related-products {
+            clear: both;
+            margin-top: 30px;
+        }
+        .related-products h2 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #2980b9; /* Changed color */
+        }
+        .product-thumbnail {
+            display: inline-block;
+            width: 30%;
+            margin-right: 3.5%;
+            vertical-align: top;
+        }
+        .product-thumbnail img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .product-thumbnail-title {
+            text-align: center;
+            font-size: 16px;
+            margin-top: 5px;
+            color: #d35400; /* Changed color */
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="clearfix">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400" alt="Product Image">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Product Name</h1>
+                <p class="product-price">$99.99</p>
+                <p>Short description of the product highlighting key features.</p>
+                <a href="#" class="button">Add to Cart</a>
+            </div>
+        </div>
+        
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <div class="product-thumbnail">
+                <img src="https://via.placeholder.com/150" alt="Related Product 1">
+                <div class="product-thumbnail-title">Related Product 1</div>
+            </div>
+            <div class="product-thumbnail">
+                <img src="https://via.placeholder.com/150" alt="Related Product 2">
+                <div class="product-thumbnail-title">Related Product 2</div>
+            </div>
+            <div class="product-thumbnail">
+                <img src="https://via.placeholder.com/150" alt="Related Product 3">
+                <div class="product-thumbnail-title">Related Product 3</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

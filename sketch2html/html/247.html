@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2e2e2; /* Changed background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+        }
+        .error-code {
+            font-size: 80px;
+            font-weight: bold;
+            color: #c0392b; /* Changed error code color */
+            margin: 0;
+        }
+        .error-message {
+            font-size: 20px;
+            color: #444444; /* Changed error message color */
+            margin: 10px 0 20px;
+        }
+        .home-link {
+            text-decoration: none;
+            color: #1abc9c; /* Changed link color */
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #1abc9c; /* Changed border color */
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .home-link:hover {
+            background-color: #1abc9c; /* Changed hover background color */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p class="error-code">404</p>
+        <p class="error-message">Oops! Page not found.</p>
+        <a href="/" class="home-link">Go to Homepage</a>
+    </div>
+
+</body>
+</html>

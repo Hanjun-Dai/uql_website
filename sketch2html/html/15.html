@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Food Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #efefef; /* Changed from #f9f9f9 */
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #FF9800; /* Changed from #FFCC00 */
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #ffffff; /* Added color to header text */
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-section {
+            padding: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #bbbbbb; /* Changed from #ddd */
+            padding-bottom: 10px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #4A4A4A; /* Changed from #333 */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #666666; /* Changed from #555 */
+        }
+
+        .show {
+            display: block;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF9800; /* Changed from #FFCC00 */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            color: #ffffff; /* Added color to footer text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Food Website FAQ</h1>
+</header>
+
+<div class="container">
+    <div class="faq-section">
+        <h2 style="color: #303F9F;">Frequently Asked Questions</h2> <!-- Changed color -->
+        
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">1. What types of cuisines do you offer?</div>
+            <div class="answer">We offer a variety of cuisines including Italian, Chinese, Indian, and more.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">2. Do you have vegetarian options?</div>
+            <div class="answer">Yes! We have a wide selection of vegetarian dishes available.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">3. How can I place an order?</div>
+            <div class="answer">You can place an order directly through our website or call our customer service.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">4. What is your delivery policy?</div>
+            <div class="answer">We offer free delivery for orders over $50 within a 10-mile radius.</div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Food Website</p>
+</footer>
+
+<script>
+function toggleAnswer(questionElement) {
+    const answer = questionElement.nextElementSibling;
+    answer.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>

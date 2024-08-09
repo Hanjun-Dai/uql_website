@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+        header {
+            background-color: #002a5c;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f8f8f8;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #002a5c;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #eaeaea;
+            border-left: 1px solid #ccc;
+        }
+        .post {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #002a5c;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Insights</h1>
+    <p>Your source for the latest in the automotive world</p>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>About Us</h3>
+        <p>We provide insights and reviews for automotive enthusiasts.</p>
+        <h3>Popular Tags</h3>
+        <ul>
+            <li><a href="#">Electric</a></li>
+            <li><a href="#">Hybrid</a></li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Maintenance</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="post">
+            <h2>Top 10 Safety Features to Look For</h2>
+            <p>Safety is paramount. Here are the top features you shouldn't ignore...</p>
+        </div>
+        <div class="post">
+            <h2>New Electric Cars to Watch in 2024</h2>
+            <p>Explore the latest electric cars set to dominate the market...</p>
+        </div>
+        <div class="post">
+            <h2>Understanding Hybrid Technology</h2>
+            <p>What makes a car hybrid? A look into this innovative technology...</p>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Reviews</a>
+    <a href="#">Guides</a>
+    <a href="#">Contact</a>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Automotive Insights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

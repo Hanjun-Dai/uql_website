@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Education Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f9f9f9;
+        }
+        header {
+            background-color: #ff6f61;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .logo {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .tagline {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 0;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+        }
+        .cta-button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e65550;
+        }
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            background-color: #ff6f61;
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="tagline">Learn with Joy!</div>
+    <div class="logo">EduFun</div>
+</header>
+
+<main class="content">
+    <a href="#" class="cta-button">Join Us Now!</a>
+    <h2>Explore Our Courses</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Course 1">
+            <h3>Art & Creativity</h3>
+            <p>Unlock your imagination!</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Course 2">
+            <h3>Science Fun</h3>
+            <p>Discover the wonders!</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Course 3">
+            <h3>Math Adventures</h3>
+            <p>Count with excitement!</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Course 4">
+            <h3>Language Play</h3>
+            <p>Words can be fun!</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2023 EduFun. All rights reserved.
+</footer>
+
+</body>
+</html>

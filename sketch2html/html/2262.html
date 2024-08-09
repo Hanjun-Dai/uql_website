@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px; /* Changed to much smaller */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Increased padding for visual impact */
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            padding: 20px; /* Increased padding for visual impact */
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 25px; /* Increased margin for visual impact */
+            text-decoration: none;
+            font-size: 16px; /* Increased font size for nav links */
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 30px; /* Increased padding for visual impact */
+            border-radius: 10px; /* Increased corner radius */
+            margin-right: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 30px; /* Increased padding for visual impact */
+            border-radius: 10px; /* Increased corner radius */
+        }
+
+        h1 {
+            font-size: 36px; /* Changed to much larger */
+            color: #333;
+        }
+
+        h2 {
+            font-size: 28px; /* Changed to larger */
+            color: #333;
+        }
+
+        h3 {
+            font-size: 24px; /* Changed to larger */
+            color: #007BFF; /* Made it distinct */
+        }
+
+        .thread {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+            font-size: 16px; /* Slightly larger */
+        }
+
+        .thread:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Health Forum</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Topics</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Recent Discussions</h2>
+            <div class="thread">
+                <h3><a href="#">The Benefits of Regular Exercise</a></h3>
+                <p>Started by User123 - 5 replies</p>
+            </div>
+            <div class="thread">
+                <h3><a href="#">Nutrition Tips for a Healthy Diet</a></h3>
+                <p>Started by HealthGuru - 10 replies</p>
+            </div>
+            <div class="thread">
+                <h3><a href="#">Understanding Mental Health</a></h3>
+                <p>Started by MindfulUser - 2 replies</p>
+            </div>
+            <div class="thread">
+                <h3><a href="#">Managing Stress in Daily Life</a></h3>
+                <p>Started by RelaxationExpert - 4 replies</p>
+            </div>
+            <div class="thread">
+                <h3><a href="#">COVID-19 Updates and Discussion</a></h3>
+                <p>Started by CurrentEvents - 15 replies</p>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h2>Helpful Links</h2>
+            <ul>
+                <li><a href="#">Healthy Recipes</a></li>
+                <li><a href="#">Fitness Tips</a></li>
+                <li><a href="#">Mental Health Resources</a></li>
+                <li><a href="#">Wellness Blog</a></li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+</html>

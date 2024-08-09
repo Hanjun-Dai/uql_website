@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Portfolio</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #f8f0e3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #a57c5d;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 5px solid #672c1b;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .portfolio-item {
+            border: 1px solid #c2b094;
+            border-radius: 8px;
+            background: #fff;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #a57c5d;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vintage Portfolio</h1>
+        <nav>
+            <a href="#">Contact</a>
+            <a href="#">Projects</a>
+            <a href="#">About</a>
+            <a href="#">Home</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="portfolio-item">
+            <h2>Project Title 2</h2>
+            <img src="image2.jpg" alt="Project 2">
+            <p>Short description of the project.</p>
+        </section>
+
+        <section class="portfolio-item">
+            <h2>Project Title 3</h2>
+            <img src="image3.jpg" alt="Project 3">
+            <p>Short description of the project.</p>
+        </section>
+
+        <section class="portfolio-item">
+            <h2>Project Title 1</h2>
+            <img src="image1.jpg" alt="Project 1">
+            <p>Short description of the project.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vintage Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>

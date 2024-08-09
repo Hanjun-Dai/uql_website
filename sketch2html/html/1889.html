@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lifestyle Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #5D5D5D;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+
+        .faq-item:hover .question {
+            color: #3498db; /* Change color on hover */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="question">How do I contact support?</div>
+        <div class="answer">You can reach us via the 'Contact Us' page linked in the footer.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">What is the purpose of this website?</div>
+        <div class="answer">We provide tips and resources for a balanced and fulfilled lifestyle.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Can I contribute to the site?</div>
+        <div class="answer">Absolutely! Please check our 'Contribute' section for details.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Where can I find lifestyle content?</div>
+        <div class="answer">Browse our categories in the navigation menu for various topics.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">How can I subscribe to the newsletter?</div>
+        <div class="answer">You can subscribe via the form located on the homepage.</div>
+    </div>
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

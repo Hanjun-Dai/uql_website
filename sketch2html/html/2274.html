@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Paradise</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .cta {
+            background: #007BFF;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .cta:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #007BFF;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Paradise</h1>
+        <nav>
+            <a href="#destinations">Destinations</a>
+            <a href="#contact">Contact</a>
+            <a href="#offers">Offers</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="offers">
+            <h2>Latest Offers</h2>
+            <div class="offers-grid">
+                <div class="offer">30% Off Summer Trips!</div>
+                <div class="offer">Weekend Getaway Deals</div>
+                <div class="offer">Family Packages Available</div>
+            </div>
+        </section>
+
+        <section id="intro">
+            <h2>Discover Your Next Adventure</h2>
+            <p>Explore beautiful destinations.</p>
+            <a href="#explore" class="cta">Explore Now</a>
+        </section>
+
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <div class="destination">Paris</div>
+                <div class="destination">New York</div>
+                <div class="destination">Tokyo</div>
+                <div class="destination">Sydney</div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have questions? We're here to help!</p>
+            <a href="mailto:info@travelparadise.com" class="cta">Email Us</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Travel Paradise. All rights reserved.</p>
+    </footer>
+</body>
+</html>

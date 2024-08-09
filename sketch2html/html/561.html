@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Category Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #ff6347;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .category-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ff6347;
+        }
+
+        .category-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .category-info h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .category-info p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Delicious Categories</h1>
+    </div>
+
+    <div class="container">
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Mexican" alt="Mexican Cuisine">
+            <div class="category-info">
+                <h2>Mexican</h2>
+                <p>Tacos, Burritos, and More</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Vegetarian" alt="Vegetarian Cuisine">
+            <div class="category-info">
+                <h2>Vegetarian</h2>
+                <p>Healthy & Tasty Options</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Asian" alt="Asian Cuisine">
+            <div class="category-info">
+                <h2>Asian</h2>
+                <p>Sushi, Noodles, and More</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Desserts" alt="Desserts">
+            <div class="category-info">
+                <h2>Desserts</h2>
+                <p>Cakes, Pastries, and More</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Indian" alt="Indian Cuisine">
+            <div class="category-info">
+                <h2>Indian</h2>
+                <p>Curry, Biryani, and More</p>
+            </div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/300x200?text=Italian" alt="Italian Cuisine">
+            <div class="category-info">
+                <h2>Italian</h2>
+                <p>Pasta, Pizza, and More</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

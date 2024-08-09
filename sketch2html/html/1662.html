@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Education Site</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #007BFF;
+        }
+        header h1 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service-card {
+            background-color: #e9ecef;
+            border-radius: 5px;
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-card h3 {
+            margin: 10px 0;
+            color: #343a40;
+        }
+        .service-card p {
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            border-top: 2px solid #007BFF;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our Services</h1>
+            <p>Get advice and support tailored to your educational needs.</p> <!-- Moved paragraph -->
+        </header>
+
+        <section class="services">
+            <div class="service-card">
+                <h3>Consulting Services</h3>
+                <p>Get advice and support tailored to your educational needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Certification Programs</h3>
+                <p>Earn credentials to enhance your professional skills.</p>
+            </div>
+            <div class="service-card">
+                <h3>Mentorship</h3>
+                <p>Connect with mentors to guide your educational journey.</p>
+            </div>
+            <div class="service-card">
+                <h3>Resources</h3>
+                <p>Access a library of resources to aid your learning.</p>
+            </div>
+            <div class="service-card">
+                <h3>Online Courses</h3>
+                <p>Access a wide range of courses from industry experts.</p>
+            </div>
+            <div class="service-card">
+                <h3>Workshops</h3>
+                <p>Join our interactive workshops for hands-on learning.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Education Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

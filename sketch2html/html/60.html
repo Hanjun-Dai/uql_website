@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Political Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f9f9f9;
+        }
+        header {
+            background: #2a4d69;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .service-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2a4d69;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Political Services</h1>
+    <nav>
+        <a href="#consultation">Consultation</a>
+        <a href="#campaigns">Campaigns</a>
+        <a href="#analysis">Analysis</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="service-card" id="campaigns">
+        <div class="service-icon">ðï¸</div>
+        <h2>Campaign Strategy</h2>
+        <p>Create effective campaign strategies to win votes.</p>
+    </div>
+    <div class="service-card" id="analysis">
+        <div class="service-icon">ð</div>
+        <h2>Political Analysis</h2>
+        <p>In-depth analysis of political trends and public opinion.</p>
+    </div>
+    <div class="service-card" id="consultation">
+        <div class="service-icon">ð£ï¸</div>
+        <h2>Political Consultation</h2>
+        <p>Expert advice to help navigate political landscapes.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Political Services. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

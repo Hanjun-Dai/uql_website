@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Resources</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('https://example.com/your-header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 40px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .resource-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+        .resource-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .resource-card h2 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px;
+        }
+        .resource-card a {
+            display: block;
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 0 0 10px 10px;
+        }
+        .resource-card a:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Travel Resources</h1>
+        <p>Your gateway to unforgettable adventures.</p>
+    </header>
+
+    <div class="container">
+        <div class="resource-card">
+            <img src="https://example.com/image3.jpg" alt="Resource 3">
+            <h2>Transportation</h2>
+            <a href="#">Book Flights</a>
+        </div>
+        <div class="resource-card">
+            <img src="https://example.com/image5.jpg" alt="Resource 5">
+            <h2>Tips & Advice</h2>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="resource-card">
+            <img src="https://example.com/image1.jpg" alt="Resource 1">
+            <h2>Travel Guides</h2>
+            <a href="#">Explore Guides</a>
+        </div>
+        <div class="resource-card">
+            <img src="https://example.com/image4.jpg" alt="Resource 4">
+            <h2>Travel Insurance</h2>
+            <a href="#">Get Insured</a>
+        </div>
+        <div class="resource-card">
+            <img src="https://example.com/image2.jpg" alt="Resource 2">
+            <h2>Accommodation</h2>
+            <a href="#">Find Hotels</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Travel Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

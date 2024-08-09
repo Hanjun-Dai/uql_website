@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+        }
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-info h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .price {
+            font-size: 20px;
+            color: #4CAF50;
+            margin: 10px 0;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="product-image.jpg" alt="Health Product">
+            </div>
+            <div class="product-info">
+                <h1>Health Supplement</h1>
+                <p>Your daily dose of health.</p>
+                <div class="price">$29.99</div>
+                <div class="buttons">
+                    <button class="btn">Add to Cart</button>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2023 Health Website. All Rights Reserved.</p>
+        </footer>
+        
+        <div class="header">
+            <h1>Health Product Page</h1>
+        </div>
+    </div>
+</body>
+</html>

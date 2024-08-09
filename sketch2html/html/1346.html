@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Adventures</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Changed background color */
+            margin: 0;
+            padding: 20px;
+            color: #444; /* Slightly darker text color */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Changed header gradient */
+            color: white;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        .contact-info, .contact-form {
+            background-color: #ffffff; /* Keeping it white */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Darker shadow */
+            padding: 20px;
+            width: 45%;
+        }
+        .contact-info h2, .contact-form h2 {
+            color: #4caf50; /* Changed heading color */
+            font-size: 1.8em;
+        }
+        .icon {
+            font-size: 1.2em;
+            color: #ff5722; /* Changed icon color */
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .form-field {
+            margin: 15px 0;
+        }
+        .form-field label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-field input, .form-field textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #cccccc; /* Lighter border */
+        }
+        .form-field button {
+            background-color: #2196f3; /* Changed button background color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .form-field button:hover {
+            background-color: #64b5f6; /* Changed hover color */
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Get in Touch!</h1>
+    </header>
+    <main>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><span class="icon">📞</span> +1 (234) 567-8901</p>
+            <p><span class="icon">✉️</span> contact@traveladventures.com</p>
+            <p><span class="icon">🏠</span> 123 Travel Lane, Adventure City</p>
+        </div>
+        <div class="contact-form">
+            <h2>Drop Us a Message</h2>
+            <form>
+                <div class="form-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="form-field">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Adventures. All rights reserved.</p>
+    </footer>
+</body>
+</html>

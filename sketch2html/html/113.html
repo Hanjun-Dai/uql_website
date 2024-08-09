@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        .news-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .news-content {
+            padding: 15px;
+        }
+        .news-title {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .news-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .news-excerpt {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .read-more {
+            display: inline-block;
+            padding: 8px 15px;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .read-more:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Insights</h1>
+</header>
+
+<div class="container">
+    <div class="news-grid">
+        <div class="news-card">
+            <div class="news-image" style="background-image: url('image2.jpg');"></div>
+            <div class="news-content">
+                <h2 class="news-title">Tips for First-time Buyers</h2>
+                <div class="news-date">February 25, 2023</div>
+                <p class="news-excerpt">Essential advice to make your first home purchase a breeze.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image" style="background-image: url('image3.jpg');"></div>
+            <div class="news-content">
+                <h2 class="news-title">Renovation Ideas</h2>
+                <div class="news-date">January 15, 2023</div>
+                <p class="news-excerpt">Transform your property with these innovative renovation ideas.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <div class="news-card">
+            <div class="news-image" style="background-image: url('image1.jpg');"></div>
+            <div class="news-content">
+                <h2 class="news-title">Market Trends 2023</h2>
+                <div class="news-date">March 10, 2023</div>
+                <p class="news-excerpt">Discover the latest trends reshaping the real estate landscape.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+        <!-- Add more news cards as needed -->
+    </div>
+</div>
+
+</body>
+</html>

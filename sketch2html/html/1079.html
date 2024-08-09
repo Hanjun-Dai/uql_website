@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechArtistry</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        
+        header {
+            background: linear-gradient(to right, #ff6f61, #d83b4c); /* Changed header gradient */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffcc00; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Slightly darker shadow */
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            width: 300px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 10px solid #ff6f61; /* Changed image border color */
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3); /* Changed shadow on hover */
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6a1b9a; /* Changed footer background color */
+            color: white;
+            position: relative;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>TechArtistry</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="main-container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 1">
+        <div class="card-content">
+            <h3 style="color: #d83b4c;">Latest Innovations</h3> <!-- Changed text color -->
+            <p style="color: #424242;">Discover the cutting-edge technologies.</p> <!-- Changed text color -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 2">
+        <div class="card-content">
+            <h3 style="color: #d83b4c;">Gadgets Unleashed</h3> <!-- Changed text color -->
+            <p style="color: #424242;">Explore the newest gadgets in the market.</p> <!-- Changed text color -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 3">
+        <div class="card-content">
+            <h3 style="color: #d83b4c;">Tech Trends</h3> <!-- Changed text color -->
+            <p style="color: #424242;">Stay updated with the latest trends.</p> <!-- Changed text color -->
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Tech Image 4">
+        <div class="card-content">
+            <h3 style="color: #d83b4c;">AI Revolution</h3> <!-- Changed text color -->
+            <p style="color: #424242;">Understand the future of AI.</p> <!-- Changed text color -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 TechArtistry
+</footer>
+
+</body>
+</html>

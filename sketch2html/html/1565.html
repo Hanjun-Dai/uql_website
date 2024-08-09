@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Real Estate Homepage</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file for styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .hero {
+            height: 300px;
+            background-image: url('hero-image.jpg'); /* Placeholder for a hero image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .property-listings {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .property-card {
+            width: 300px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .property-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-card .description {
+            padding: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        Welcome Home
+    </div>
+
+    <header>
+        <div class="logo">Real Estate Co.</div>
+        <nav>
+            <a href="#properties">Properties</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="property-listings" id="properties">
+        <div class="property-card">
+            <img src="property2.jpg" alt="Property 2">
+            <div class="description">
+                <h3>Modern Apartment</h3>
+                <p>$350,000</p>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="property1.jpg" alt="Property 1">
+            <div class="description">
+                <h3>Beautiful Family Home</h3>
+                <p>$500,000</p>
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="property3.jpg" alt="Property 3">
+            <div class="description">
+                <h3>Luxury Villa</h3>
+                <p>$1,200,000</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Real Estate Co.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Reference to an external CSS for styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 30px 0; /* Changed padding to make header larger */
+            text-align: center;
+            font-size: 28px; /* Increased header font size */
+        }
+        nav {
+            margin: 30px 0; /* Increased margin for nav */
+        }
+        nav a {
+            color: white;
+            margin: 0 20px; /* Increased margin between links */
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px; /* Increased font size for navigation links */
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px; /* Increased height for hero section */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3em; /* Increased font size in hero section */
+            text-shadow: 1px 1px 3px black; /* Slightly increased shadow */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .featured-vehicles {
+            display: flex;
+            justify-content: space-between; /* Changed to space-between for vehicle layout */
+            margin: 30px 0; /* Increased margin for featured vehicles */
+        }
+        .vehicle {
+            background: white;
+            padding: 20px; /* Increased padding inside vehicle card */
+            border-radius: 10px; /* Increased border radius */
+            box-shadow: 0 0 15px #ccc; /* Increased shadow */
+            text-align: center;
+            width: 32%; /* Slightly increased width for vehicle cards */
+            font-size: 18px; /* Increased font size inside vehicle cards */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0; /* Increased padding for footer */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px; /* Increased footer font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Excellence</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#vehicles">Vehicles</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<div class="hero">
+    Welcome to Automotive Excellence
+</div>
+
+<div class="container">
+    <h2 style="font-size: 2.5em;">Featured Vehicles</h2> <!-- Increased font size for heading -->
+    <div class="featured-vehicles">
+        <div class="vehicle">
+            <h3 style="font-size: 1.5em;">Vehicle 1</h3> <!-- Increased font size for vehicle title -->
+            <p style="font-size: 1.2em;">$20,000</p> <!-- Increased font size for price -->
+            <button style="font-size: 1em;">View Details</button> <!-- Smaller font for button -->
+        </div>
+        <div class="vehicle">
+            <h3 style="font-size: 1.5em;">Vehicle 2</h3> <!-- Increased font size for vehicle title -->
+            <p style="font-size: 1.2em;">$25,000</p> <!-- Increased font size for price -->
+            <button style="font-size: 1em;">View Details</button> <!-- Smaller font for button -->
+        </div>
+        <div class="vehicle">
+            <h3 style="font-size: 1.5em;">Vehicle 3</h3> <!-- Increased font size for vehicle title -->
+            <p style="font-size: 1.2em;">$30,000</p> <!-- Increased font size for price -->
+            <button style="font-size: 1em;">View Details</button> <!-- Smaller font for button -->
+        </div>
+    </div>
+
+    <h2 style="font-size: 2.5em;">Our Services</h2> <!-- Increased font size for heading -->
+    <div class="services">
+        <ul style="font-size: 1.2em;"> <!-- Increased font size for services list -->
+            <li>Vehicle Sales</li>
+            <li>Financing Options</li>
+            <li>Maintenance & Repair</li>
+        </ul>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Automotive Excellence. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

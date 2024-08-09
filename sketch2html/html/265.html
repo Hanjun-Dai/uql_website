@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-img {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .product-details {
+            text-align: center;
+        }
+
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 20px;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .buy-button {
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .buy-button:hover {
+            background-color: #d76b1e;
+        }
+
+        .related-products {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .related-header {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .related-items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .related-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+        }
+
+        .related-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .related-item-title {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="related-products">
+            <h2 class="related-header">Related Products</h2>
+            <div class="related-items">
+                <div class="related-item">
+                    <img src="related1.jpg" alt="Related Product 1">
+                    <p class="related-item-title">Mini Bag</p>
+                    <p>$29.99</p>
+                </div>
+                <div class="related-item">
+                    <img src="related2.jpg" alt="Related Product 2">
+                    <p class="related-item-title">Backpack</p>
+                    <p>$39.99</p>
+                </div>
+                <div class="related-item">
+                    <img src="related3.jpg" alt="Related Product 3">
+                    <p class="related-item-title">Tote Bag</p>
+                    <p>$25.99</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="product-header">
+            <img src="product-image.jpg" alt="Product Image" class="product-img">
+            <h1 class="product-title">Stylish Lifestyle Bag</h1>
+            <p class="product-price">$49.99</p>
+        </div>
+
+        <div class="product-details">
+            <p class="product-description">
+                A premium quality bag, perfect for your daily adventures.
+            </p>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+    
+</body>
+</html>

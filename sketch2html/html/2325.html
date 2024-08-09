@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle Category Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #6a5acd;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .category-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-image {
+            width: 100%;
+            height: 150px;
+            background: #ccc; /* Placeholder for image background */
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .category-title {
+            padding: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Lifestyle Categories</h1>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image4.jpg');"></div>
+            <div class="category-title">Home Decor</div>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image1.jpg');"></div>
+            <div class="category-title">Travel</div>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image5.jpg');"></div>
+            <div class="category-title">Fashion</div>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image3.jpg');"></div>
+            <div class="category-title">Food & Recipes</div>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image6.jpg');"></div>
+            <div class="category-title">Lifestyle Tips</div>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('image2.jpg');"></div>
+            <div class="category-title">Health & Wellness</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

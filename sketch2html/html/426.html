@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1024x400') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .about, .courses {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .about h2, .courses h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .course {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EduWebsite</h1>
+        <nav>
+            <a href="#about" style="margin: 0 10px; color: white;">About</a>
+            <a href="#courses" style="margin: 0 10px; color: white;">Courses</a>
+            <a href="#contact" style="margin: 0 10px; color: white;">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We provide top-notch educational resources to help you succeed.</p>
+    </section>
+
+    <section class="hero">
+        <h1>Learn From The Best</h1>
+        <p>Unlock your potential with our courses</p>
+    </section>
+
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+        <div class="course">Course 1</div>
+        <div class="course">Course 2</div>
+        <div class="course">Course 3</div>
+        <div class="course">Course 4</div>
+    </section>
+
+    <footer>
+        Â© 2023 EduWebsite | All Rights Reserved
+    </footer>
+</body>
+</html>

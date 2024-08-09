@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center;
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 24px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .grid-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+        .grid-item h3 {
+            margin: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Boutique</h1>
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="#collections">Collections</a>
+    </nav>
+</header>
+
+<section class="grid-container">
+    <div class="grid-item">
+        <img src="item4.jpg" alt="Fashion Item 4">
+        <h3>Accessories</h3>
+    </div>
+    <div class="grid-item">
+        <img src="item1.jpg" alt="Fashion Item 1">
+        <h3>Spring Collection</h3>
+    </div>
+    <div class="grid-item">
+        <img src="item5.jpg" alt="Fashion Item 5">
+        <h3>Designer Collection</h3>
+    </div>
+    <div class="grid-item">
+        <img src="item3.jpg" alt="Fashion Item 3">
+        <h3>Winter Fashion</h3>
+    </div>
+    <div class="grid-item">
+        <img src="item2.jpg" alt="Fashion Item 2">
+        <h3>Summer Styles</h3>
+    </div>
+    <div class="grid-item">
+        <img src="item6.jpg" alt="Fashion Item 6">
+        <h3>Casual Wear</h3>
+    </div>
+</section>
+
+<section class="hero">
+    <h1>Discover Your Style</h1>
+    <p>Latest Trends Await</p>
+</section>
+
+<footer>
+    <p>&copy; 2023 Fashion Boutique</p>
+</footer>
+
+</body>
+</html>

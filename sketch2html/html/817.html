@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Category Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50; /* Changed */
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category-card {
+            background-color: #ffecb3; /* Changed */
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .category-title {
+            font-size: 20px;
+            margin: 15px 0;
+            color: #e74c3c; /* Changed */
+        }
+        .explore-button {
+            background-color: #3498db; /* Changed */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .explore-button:hover {
+            background-color: #2980b9; /* Changed */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Explore Our Categories!</h1>
+<div class="container">
+    <div class="category-card">
+        <img src="images/suv.jpg" alt="SUVs">
+        <div class="category-title">SUVs</div>
+        <button class="explore-button">Explore</button>
+    </div>
+    <div class="category-card">
+        <img src="images/sedans.jpg" alt="Sedans">
+        <div class="category-title">Sedans</div>
+        <button class="explore-button">Explore</button>
+    </div>
+    <div class="category-card">
+        <img src="images/trucks.jpg" alt="Trucks">
+        <div class="category-title">Trucks</div>
+        <button class="explore-button">Explore</button>
+    </div>
+    <div class="category-card">
+        <img src="images/coupes.jpg" alt="Coupes">
+        <div class="category-title">Coupes</div>
+        <button class="explore-button">Explore</button>
+    </div>
+    <div class="category-card">
+        <img src="images/electric.jpg" alt="Electric">
+        <div class="category-title">Electric</div>
+        <button class="explore-button">Explore</button>
+    </div>
+</div>
+
+</body>
+</html>

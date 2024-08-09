@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Awaits</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+        header {
+            background-color: #ff5722; /* Changed header background color */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #ffff00; /* Changed h1 color */
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ffe0b2; /* Changed link color */
+            font-weight: bold;
+            border: 1px solid #ffe0b2; /* Changed border color */
+            padding: 8px 15px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #ffffff; /* Changed hover background color */
+            color: #ff5722; /* Changed hover text color */
+        }
+        .hero {
+            background-image: url('https://example.com/hero-image.jpg');
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            color: #ffc107; /* Changed hero text color */
+        }
+        .hero h2 {
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid div {
+            background-color: #ffccbc; /* Changed grid item background color */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .grid div:hover {
+            transform: translateY(-5px);
+        }
+        .footer {
+            background-color: #1c1c1c; /* Changed footer background color */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adventure Awaits</h1>
+        <nav>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Explore the World!</h2>
+    </section>
+
+    <section class="grid" id="destinations">
+        <div>
+            <h3>Beach Getaways</h3>
+            <img src="https://example.com/beach.jpg" alt="Beach" style="width:100%;border-radius:10px;">
+        </div>
+        <div>
+            <h3>Mountain Adventures</h3>
+            <img src="https://example.com/mountain.jpg" alt="Mountain" style="width:100%;border-radius:10px;">
+        </div>
+        <div>
+            <h3>City Escapes</h3>
+            <img src="https://example.com/city.jpg" alt="City" style="width:100%;border-radius:10px;">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Adventure Awaits. All rights reserved.</p>
+    </footer>
+</body>
+</html>

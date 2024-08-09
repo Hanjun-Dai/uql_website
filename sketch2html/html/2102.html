@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Real Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff;
+            font-size: 36px; /* Increased font size */
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+
+        .faq-question {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .faq-question h2 {
+            margin: 0;
+            font-size: 28px; /* Increased font size */
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 16px; /* Increased font size */
+            line-height: 1.5;
+        }
+
+        .faq-question .icon {
+            font-size: 24px; /* Increased font size */
+            transition: transform 0.3s;
+        }
+
+        .open .icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h2>What are the steps to buy a house?</h2>
+            <i class="fas fa-chevron-down icon"></i>
+        </div>
+        <div class="faq-answer">
+            <p>1. Get pre-approved for a mortgage. <br>
+               2. Find a real estate agent. <br>
+               3. Start house hunting. <br>
+               4. Make an offer. <br>
+               5. Close the deal.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h2>How do I sell my home?</h2>
+            <i class="fas fa-chevron-down icon"></i>
+        </div>
+        <div class="faq-answer">
+            <p>1. Determine your home's value. <br>
+               2. Prepare your home for sale. <br>
+               3. List your home with an agent. <br>
+               4. Negotiate offers. <br>
+               5. Close the sale.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h2>What is a real estate agent?</h2>
+            <i class="fas fa-chevron-down icon"></i>
+        </div>
+        <div class="faq-answer">
+            <p>A real estate agent is a licensed professional who helps buyers and sellers navigate real estate transactions.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <h2>What is the importance of credit score?</h2>
+            <i class="fas fa-chevron-down icon"></i>
+        </div>
+        <div class="faq-answer">
+            <p>A credit score helps determine your eligibility for a mortgage and affects interest rates.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(question) {
+        const answer = question.nextElementSibling;
+        answer.style.display = answer.style.display === "none" || answer.style.display === "" ? "block" : "none";
+        question.classList.toggle('open');
+    }
+</script>
+
+</body>
+</html>

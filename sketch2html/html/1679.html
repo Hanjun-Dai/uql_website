@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Finance Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        .faq-question {
+            cursor: pointer;
+            font-size: 18px;
+            color: #003366;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: #0056b3;
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+
+        <div class="faq-item">
+            <div class="faq-question">How do I create a budget?</div>
+            <div class="faq-answer">List your income, categorize expenses, set limits, and track your spending to stay within your budget.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is the difference between a traditional and Roth IRA?</div>
+            <div class="faq-answer">Traditional IRAs may offer immediate tax benefits, while Roth IRAs allow for tax-free withdrawals in retirement.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">What is the best way to save for retirement?</div>
+            <div class="faq-answer">The most effective method is to start early, contribute regularly to a retirement account, and take advantage of employer matches.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I improve my credit score?</div>
+            <div class="faq-answer">Pay bills on time, reduce outstanding debt, and check your credit report for errors regularly.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

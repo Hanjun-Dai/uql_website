@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Delight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            font-size: 16px; /* Original 16px, changed to 12px for smaller text */
+        }
+        header {
+            background-color: #ff6347;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 3em; /* Original roughly 1.5em, changed to 3em for larger text */
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.5em; /* Original ~1em, changed to 1.5em for larger links */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .featured {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.2em; /* Original ~1em, changed to 1.2em for slightly larger text */
+        }
+        .featured img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .blog {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        .blog-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-size: 1.2em; /* Original ~1em, changed to 1.2em for slightly larger text */
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.8em; /* Original ~1em, changed to 0.8em for smaller text */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Foodie Delight</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Recipes</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    
+    <div class="featured">
+        <h2>Featured Recipe</h2>
+        <img src="featured-recipe.jpg" alt="Featured Recipe">
+        <p>Delicious Pasta Primavera - Quick and Easy!</p>
+        <a href="#" style="text-decoration: underline; color: #ff6347; font-size: 1.5em;">View Recipe</a> <!-- Larger link text -->
+    </div>
+
+    <h2>Latest Blog Posts</h2>
+    <div class="blog">
+        <div class="blog-item">
+            <img src="blog1.jpg" alt="Blog Post 1" style="max-width: 100%; border-radius: 10px;">
+            <h3 style="font-size: 2em;">5 Healthy Breakfast Ideas</h3> <!-- Larger title -->
+        </div>
+        <div class="blog-item">
+            <img src="blog2.jpg" alt="Blog Post 2" style="max-width: 100%; border-radius: 10px;">
+            <h3 style="font-size: 2em;">Meal Prep for Beginners</h3> <!-- Larger title -->
+        </div>
+        <div class="blog-item">
+            <img src="blog3.jpg" alt="Blog Post 3" style="max-width: 100%; border-radius: 10px;">
+            <h3 style="font-size: 2em;">Cooking Tips for Busy People</h3> <!-- Larger title -->
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Foodie Delight. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

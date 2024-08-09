@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://source.unsplash.com/featured/?art') no-repeat center center/cover;
+            height: 50vh;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            padding: 20px;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .post {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            padding: 20px;
+            width: 600px;
+            transition: transform 0.2s;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        .post img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+        .post h2 {
+            font-size: 2em;
+        }
+        .post p {
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <p>&copy; 2023 Inspiring Arts. All rights reserved.</p>
+        <p><i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
+    </div>
+    <header>
+        <h1>Inspiring Arts</h1>
+        <p>Your daily dose of creativity</p>
+    </header>
+    <div class="container">
+        <div class="post">
+            <img src="https://source.unsplash.com/600x400/?sculpture" alt="Art Post">
+            <h2>The Elegance of Sculptures</h2>
+            <p>Discover stunning sculptures that challenge the boundaries of creativity.</p>
+        </div>
+        <div class="post">
+            <img src="https://source.unsplash.com/600x400/?photography" alt="Art Post">
+            <h2>The Art of Photography</h2>
+            <p>Explore the breathtaking world of photography and its narrative power.</p>
+        </div>
+        <div class="post">
+            <img src="https://source.unsplash.com/600x400/?painting" alt="Art Post">
+            <h2>Exploring Abstract Art</h2>
+            <p>Uncover the beauty of abstraction and its impact on modern artistic expressions.</p>
+        </div>
+    </div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</body>
+</html>

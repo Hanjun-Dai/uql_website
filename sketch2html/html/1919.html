@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            font-size: 16px; /* Default size changed to 16px */
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 30px; /* Increased padding */
+            text-align: center;
+            font-size: 36px; /* Increased header font size */
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 10px;
+            font-size: 18px; /* Increased container font size */
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .portfolio-item {
+            flex: 1 1 calc(33% - 20px);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            font-size: 14px; /* Decreased portfolio item font size */
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+        }
+        .portfolio-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 30px; /* Increased font size of overlay */
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            font-size: 12px; /* Decreased footer font size */
+        }
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .portfolio-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion Portfolio</h1>
+</header>
+
+<div class="container">
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+1" alt="Fashion 1">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+2" alt="Fashion 2">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+3" alt="Fashion 3">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+4" alt="Fashion 4">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+5" alt="Fashion 5">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+        <div class="portfolio-item">
+            <img src="https://via.placeholder.com/300x200?text=Fashion+6" alt="Fashion 6">
+            <div class="overlay"><i class="fas fa-search-plus"></i></div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Fashion Portfolio</p>
+</footer>
+
+</body>
+</html>

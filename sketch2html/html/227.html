@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            width: 30%;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 10px;
+            font-size: 1.5em;
+            color: #34495e;
+        }
+
+        .card p {
+            margin: 10px;
+            color: #7f8c8d;
+        }
+
+        .button {
+            display: block;
+            background: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background: #c0392b;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Science Resources</h1>
+        <p>Your gateway to explore science!</p>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Earth Science">
+            <h3>Earth Science</h3>
+            <p>Understand the Earth, its resources, and how our climate works through various materials.</p>
+            <a href="#earth-science" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Biology">
+            <h3>Biology</h3>
+            <p>Dive into the study of life, genetics, and ecosystems through interactive materials and links.</p>
+            <a href="#biology" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Chemistry">
+            <h3>Chemistry</h3>
+            <p>Learn about chemical reactions, the periodic table, and laboratory practices with our resources.</p>
+            <a href="#chemistry" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Physics">
+            <h3>Physics</h3>
+            <p>Discover the laws of the universe with resources on quantum mechanics, relativity, and more.</p>
+            <a href="#physics" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Technology">
+            <h3>Technology</h3>
+            <p>Stay updated on the latest innovations and technologies that are shaping our future.</p>
+            <a href="#technology" class="button">Explore</a>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Astronomy">
+            <h3>Astronomy</h3>
+            <p>Explore the cosmos, the stars, and galaxies with curated articles and videos.</p>
+            <a href="#astronomy" class="button">Explore</a>
+        </div>
+    </div>
+</body>
+
+</html>

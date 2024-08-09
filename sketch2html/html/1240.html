@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Arts</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #f0e68c; /* Pale yellow background */
+            margin: 0;
+            color: #444;
+        }
+
+        header {
+            background-image: url('vintage-header-bg.jpg'); /* Vintage header background */
+            background-size: cover;
+            text-align: center;
+            padding: 50px 0;
+            color: #fff;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #b22222; /* FireBrick */
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 100%;
+            border: 5px solid #556b2f; /* DarkOliveGreen border */
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #b22222; /* FireBrick */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage Arts</h1>
+    <p>Celebrating Creativity</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Gallery</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <section class="gallery">
+        <img src="art1.jpg" alt="Art Piece 1">
+        <img src="art2.jpg" alt="Art Piece 2">
+        <img src="art3.jpg" alt="Art Piece 3">
+        <img src="art4.jpg" alt="Art Piece 4">
+        <img src="art5.jpg" alt="Art Piece 5">
+        <img src="art6.jpg" alt="Art Piece 6">
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Vintage Arts. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

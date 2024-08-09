@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-image {
+            width: 100%;
+            height: 150px;
+            background-color: #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+        .portfolio-content {
+            padding: 10px;
+            text-align: center;
+        }
+        .portfolio-title {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #222;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Game Portfolio</h1>
+    </header>
+
+    <footer>
+        <p>&copy; 2023 Game Portfolio</p>
+    </footer>
+
+    <div class="container">
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 2</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 2</h2>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 4</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 4</h2>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 6</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 6</h2>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 1</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 1</h2>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 5</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 5</h2>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="portfolio-image">Image 3</div>
+            <div class="portfolio-content">
+                <h2 class="portfolio-title">Game Title 3</h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

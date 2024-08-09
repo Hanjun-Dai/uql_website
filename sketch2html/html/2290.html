@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Tech Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #0056b3;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .faq-section {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+        }
+        .faq-section h2 {
+            font-size: 1.8em;
+            color: #333;
+            cursor: pointer;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+        .faq-section h2:hover {
+            color: #0056b3;
+        }
+        .faq-answer {
+            font-size: 1.2em;
+            line-height: 1.5;
+            display: none; /* Hidden by default */
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-section">
+        <h2 onclick="toggleAnswer('answer4')">Do we offer free trials?</h2>
+        <div class="faq-answer" id="answer4">
+            Yes, we offer a 14-day free trial for new users to explore our services.
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 onclick="toggleAnswer('answer5')">Where can I find the pricing details?</h2>
+        <div class="faq-answer" id="answer5">
+            Pricing details are available on our Pricing page, accessible from the main menu.
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 onclick="toggleAnswer('answer2')">How can I contact support?</h2>
+        <div class="faq-answer" id="answer2">
+            You can reach our support team via the contact form on our website.
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 onclick="toggleAnswer('answer3')">What technologies do we specialize in?</h2>
+        <div class="faq-answer" id="answer3">
+            We specialize in cloud computing, AI, and data analysis technologies.
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <h2 onclick="toggleAnswer('answer1')">What is our service?</h2>
+        <div class="faq-answer" id="answer1">
+            We provide cutting-edge technology solutions to enhance your business efficiency.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

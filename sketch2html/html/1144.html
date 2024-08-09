@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #444; /* Slightly darker text color */
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .error-container {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            padding: 40px;
+            max-width: 400px;
+        }
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            color: #FF5722; /* Changed error code color */
+            margin: 0;
+        }
+        .error-message {
+            font-size: 20px;
+            color: #666; /* Changed error message color */
+            margin: 20px 0;
+        }
+        .home-link {
+            text-decoration: none;
+            background-color: #4CAF50; /* Changed brand color to green */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .home-link:hover {
+            background-color: #388E3C; /* Darker green for hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Page Not Found</p>
+        <a href="/" class="home-link">Go to Home</a>
+    </div>
+</body>
+</html>

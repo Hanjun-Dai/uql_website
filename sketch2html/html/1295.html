@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 15px;
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-content h3 {
+            margin: 0 0 10px 0;
+            font-size: 1.5em;
+        }
+        .card-content p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        footer {
+            background: #35424a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History Portfolio</h1>
+        <p>Discover the Past</p>
+    </header>
+
+    <footer>
+        <p>&copy; 2023 History Portfolio</p>
+    </footer>
+
+    <div class="portfolio">
+        <div class="card">
+            <img src="image4.jpg" alt="Historical Event 4">
+            <div class="card-content">
+                <h3>Event Title 4</h3>
+                <p>Short description of the historical event.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image1.jpg" alt="Historical Event 1">
+            <div class="card-content">
+                <h3>Event Title 1</h3>
+                <p>Short description of the historical event.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Historical Event 3">
+            <div class="card-content">
+                <h3>Event Title 3</h3>
+                <p>Short description of the historical event.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Historical Event 2">
+            <div class="card-content">
+                <h3>Event Title 2</h3>
+                <p>Short description of the historical event.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Arts Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #222;
+        }
+
+        .divider {
+            width: 50px;
+            height: 4px;
+            background: #e54b4b;
+            margin: 10px auto;
+        }
+
+        .content {
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .team {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            width: 150px;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .team {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .team-member {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="team">
+            <div class="team-member">
+                <img src="member2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Co-Founder & Curator</p>
+            </div>
+            <div class="team-member">
+                <img src="member1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Founder & Artist</p>
+            </div>
+            <div class="team-member">
+                <img src="member3.jpg" alt="Team Member 3">
+                <h3>Emily Johnson</h3>
+                <p>Designer & Illustrator</p>
+            </div>
+        </section>
+
+        <header>
+            <h1>About Us</h1>
+            <div class="divider"></div>
+        </header>
+
+        <div class="content">
+            <p>Our mission is to foster a vibrant community of artists and art lovers.</p>
+            <p>Welcome to our artistic journey. We are dedicated to celebrating creativity and expression.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Arts Website. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

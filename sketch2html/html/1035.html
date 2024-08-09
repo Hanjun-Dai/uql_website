@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Automotive Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f4e3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background: #704c2a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .project {
+            background: #e2d2c7;
+            border: 1px solid #b68e73;
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            width: calc(33% - 40px);
+        }
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+        .project h2 {
+            font-size: 1.5em;
+            padding: 10px;
+            text-align: center;
+            background: #704c2a;
+            color: #fff;
+        }
+        footer {
+            background: #704c2a;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rustic Automotive Designs</h1>
+</header>
+
+<nav>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="portfolio">
+    <div class="portfolio">
+        <div class="project">
+            <img src="car4.jpg" alt="Project 4">
+            <h2>Luxury Sedan</h2>
+        </div>
+        <div class="project">
+            <img src="car1.jpg" alt="Project 1">
+            <h2>Classic Racer</h2>
+        </div>
+        <div class="project">
+            <img src="car5.jpg" alt="Project 5">
+            <h2>Off-Road Adventurer</h2>
+        </div>
+        <div class="project">
+            <img src="car2.jpg" alt="Project 2">
+            <h2>Vintage Truck</h2>
+        </div>
+        <div class="project">
+            <img src="car3.jpg" alt="Project 3">
+            <h2>Restored Coupe</h2>
+        </div>
+        <div class="project">
+            <img src="car6.jpg" alt="Project 6">
+            <h2>Rugged SUV</h2>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Rustic Automotive Designs</p>
+</footer>
+
+</body>
+</html>

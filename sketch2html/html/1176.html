@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #e6e9ed;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .blog-post {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .blog-post h2 {
+            color: #003366;
+            margin: 0;
+        }
+        .blog-post p {
+            color: #555555;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #003366;
+            color: white;
+            position: relative;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Education Blog</h1>
+    <p>Your source for the latest in education</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul>
+            <li><a href="#">Online Learning</a></li>
+            <li><a href="#">STEM</a></li>
+            <li><a href="#">Teaching Strategies</a></li>
+            <li><a href="#">Learning Styles</a></li>
+        </ul>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">Future of Education</a></li>
+            <li><a href="#">Adaptive Learning Technologies</a></li>
+            <li><a href="#">Student Engagement</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="blog-post">
+            <h2>Understanding Learning Styles</h2>
+            <p>Recognizing different learning styles is crucial for educators.</p>
+        </div>
+        <div class="blog-post">
+            <h2>The Future of Online Learning</h2>
+            <p>Online learning offers flexibility and access to quality education.</p>
+        </div>
+        <div class="blog-post">
+            <h2>Importance of STEM Education</h2>
+            <p>STEM education equips students with skills for the future.</p>
+        </div>
+        <div class="blog-post">
+            <h2>Effective Teaching Strategies</h2>
+            <p>Innovative strategies can enhance student learning outcomes.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Â© 2023 Education Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

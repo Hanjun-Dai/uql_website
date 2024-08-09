@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Education Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            font-size: 18px; /* Changed to larger font size */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding-top: 20px;
+            font-size: 36px; /* Changed to larger font size */
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ececec;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 20px; /* Changed to larger font size */
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 22px; /* Changed to larger font size */
+        }
+
+        .faq-answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 1.5em; /* Changed to much larger font size */
+            color: #666;
+        }
+
+        .expand-icon {
+            transition: transform 0.3s ease;
+            font-size: 22px; /* Changed to larger font size */
+        }
+
+        .active .expand-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="faq-question">
+                <span>What courses are offered?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                We offer a variety of courses in science, technology, humanities, and more.
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="faq-question">
+                <span>How to enroll in a course?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                Enrollment can be done online through our website.
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="faq-question">
+                <span>What is the duration of courses?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                Course durations vary, typically ranging from a few weeks to several months.
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="faq-question">
+                <span>Is there any certification?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                Yes, certificates are awarded upon course completion.
+            </div>
+        </div>
+
+        <div class="faq-item" onclick="toggleAnswer(this)">
+            <div class="faq-question">
+                <span>Contact support?</span>
+                <span class="expand-icon">▼</span>
+            </div>
+            <div class="faq-answer">
+                You can reach our support team via the contact form on our website.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(item) {
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

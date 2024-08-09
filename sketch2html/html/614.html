@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage News Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #e2cfc1;
+            color: #5a4e4f;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #8b5b4f;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #5a4e4f;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background: #eae4d4;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #e2cfc1;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Culture</a>
+        <a href="#">Sports</a>
+    </nav>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Latest Updates</h3>
+        <ul>
+            <li><a href="#">Update 2</a></li>
+            <li><a href="#">Update 1</a></li>
+            <li><a href="#">Update 3</a></li>
+            <li><a href="#">Update 4</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>Another News Article Title</h2>
+            <p>Brief description of the news article goes here...</p>
+        </div>
+        <div class="article">
+            <h2>More News Article Title</h2>
+            <p>Brief description of the news article goes here...</p>
+        </div>
+        <div class="article">
+            <h2>Headline News Article Title</h2>
+            <p>Brief description of the news article goes here...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Vintage News. All rights reserved.
+</footer>
+
+</body>
+</html>

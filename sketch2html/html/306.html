@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+            max-width: 1024px;
+        }
+        .content {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .article {
+            background: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .article h2 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science News</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest Articles</a>
+    <a href="#">Research</a>
+    <a href="#">Features</a>
+    <a href="#">Contact Us</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Upcoming Events</h3>
+        <ul>
+            <li>Science Conference 2023 - Oct 15</li>
+            <li>Webinar on AI - Oct 20</li>
+            <li>Workshop on Climate Change - Oct 25</li>
+        </ul>
+        <h3>Subscribe</h3>
+        <p>Join our newsletter for the latest updates.</p>
+        <input type="text" placeholder="Your Email" style="width: 100%; padding: 5px; margin-top: 5px;">
+        <button style="width: 100%; padding: 5px; margin-top: 5px;">Subscribe</button>
+    </aside>
+    <div class="content">
+        <div class="article">
+            <h2>New Vaccine Shows Promise in Combating Viruses</h2>
+            <p>The new vaccine developed by scientists shows a high level of efficacy in preliminary trials, offering hope for global health.</p>
+        </div>
+        <div class="article">
+            <h2>Latest Breakthrough in Quantum Computing</h2>
+            <p>Researchers have made significant advancements in quantum computing, promising a future of unprecedented processing power.</p>
+        </div>
+        <div class="article">
+            <h2>Exploring the Mysteries of Dark Matter</h2>
+            <p>Scientists are on a quest to understand the unknown forces that hold the universe together, focusing on dark matter research.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Science News. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

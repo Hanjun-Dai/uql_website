@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .service-description {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Hub</h1>
+    <nav>
+        <a href="#">Event</a>
+        <a href="#">Home</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Services</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Podcasts" alt="Podcasts">
+        <div class="service-info">
+            <div class="service-title">Podcasts</div>
+            <div class="service-description">Listen to your favorite podcasts.</div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Movie+Streaming" alt="Movie Streaming">
+        <div class="service-info">
+            <div class="service-title">Movie Streaming</div>
+            <div class="service-description">Watch the latest movies anytime.</div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Gaming+Zone" alt="Gaming Zone">
+        <div class="service-info">
+            <div class="service-title">Gaming Zone</div>
+            <div class="service-description">Play and compete with friends.</div>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <img src="https://via.placeholder.com/300x200?text=Live+Events" alt="Live Events">
+        <div class="service-info">
+            <div class="service-title">Live Events</div>
+            <div class="service-description">Join live concerts and shows!</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

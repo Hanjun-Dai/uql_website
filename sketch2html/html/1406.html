@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9; /* unchanged */
+        }
+        header {
+            background-color: #3f51b5; /* changed from #004d40 */
+            color: white; /* unchanged */
+            padding: 20px; /* unchanged */
+            text-align: center; /* unchanged */
+        }
+        .container {
+            width: 80%; /* unchanged */
+            max-width: 1024px; /* unchanged */
+            margin: 20px auto; /* unchanged */
+            background-color: #fff; /* unchanged */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* unchanged */
+            border-radius: 8px; /* unchanged */
+            padding: 20px; /* unchanged */
+        }
+        h1 {
+            margin-bottom: 20px; /* unchanged */
+            font-size: 24px; /* unchanged */
+            text-align: center; /* unchanged */
+        }
+        .form-group {
+            margin-bottom: 15px; /* unchanged */
+        }
+        label {
+            display: block; /* unchanged */
+            margin-bottom: 5px; /* unchanged */
+            font-weight: bold; /* unchanged */
+            color: #ff5722; /* changed from default */
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%; /* unchanged */
+            padding: 10px; /* unchanged */
+            border: 1px solid #ccc; /* unchanged */
+            border-radius: 4px; /* unchanged */
+        }
+        textarea {
+            resize: vertical; /* unchanged */
+        }
+        button {
+            background-color: #2196f3; /* changed from #00796b */
+            color: white; /* unchanged */
+            border: none; /* unchanged */
+            padding: 10px 20px; /* unchanged */
+            border-radius: 4px; /* unchanged */
+            cursor: pointer; /* unchanged */
+            font-weight: bold; /* unchanged */
+        }
+        button:hover {
+            background-color: #00796b; /* changed from #004d40 */
+        }
+        .contact-info {
+            text-align: center; /* unchanged */
+            margin-top: 40px; /* unchanged */
+        }
+        .contact-info h2 {
+            color: #9c27b0; /* changed color for contact info heading */
+        }
+        .contact-info p {
+            margin: 5px 0; /* unchanged */
+            color: #757575; /* changed default color */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>1234 Real Estate Lane</p>
+        <p>City, State, ZIP</p>
+        <p>Email: info@realestate.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #6f86d6, #48c6ef);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+        .form-section {
+            flex: 1;
+            margin-right: 20px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h2 {
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background: #48c6ef;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: #6f86d6;
+        }
+        .info-section {
+            flex: 1;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .info-section h2 {
+            margin-bottom: 10px;
+        }
+        .info {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you!</p>
+        </header>
+        <div class="content">
+            <div class="info-section"> <!-- Shuffled: Info section comes first -->
+                <h2>Contact Details</h2>
+                <div class="info">
+                    <strong>Email:</strong> info@realestate.com
+                </div>
+                <div class="info">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </div>
+                <div class="info">
+                    <strong>Address:</strong> 123 Main St, Anytown, AT 12345
+                </div>
+            </div>
+            <div class="form-section"> <!-- Shuffled: Form section comes second -->
+                <h2>Contact Form</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

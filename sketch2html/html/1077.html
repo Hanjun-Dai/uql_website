@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0e6f7; /* light lavender background */
+            margin: 0;
+            color: #444; /* slightly darker gray */
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #fff;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #4b2d1c; /* darker rustic brown */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-family: 'Georgia', serif;
+            font-size: 2.5em;
+            color: #5a3e20; /* muted dark color */
+            margin: 0;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .form, .info {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+            margin: 10px;
+            background: #e0d7c3; /* soft beige */
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .form h2, .info h2 {
+            color: #8a5a39; /* another shade of brown */
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #6d4c3c; /* darker brown border */
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background: #5a3e20; /* different shade of dark color */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background: #7b4c3a; /* darker brown on hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            color: #6d4c3c; /* consistent darker brown */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <div class="flex-container">
+            <div class="form">
+                <h2>Get in Touch</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea rows="4" placeholder="Your Message" required></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="info">
+                <h2>Our Location</h2>
+                <p>123 Rustic St.</p>
+                <p>Hometown, ST 12345</p>
+                <p>Email: info@rustictech.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <footer>
+            &copy; 2023 Rustic Tech. All Rights Reserved.
+        </footer>
+    </div>
+
+</body>
+</html>

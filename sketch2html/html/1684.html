@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Add your hero image */
+            height: 300px;
+            background-size: cover;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            margin-top: 100px;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .card-content p {
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #34495e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>Your Daily News</h1>
+    </div>
+
+    <header>
+        <h1>News Today</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">World</a>
+            <a href="#">Politics</a>
+            <a href="#">Technology</a>
+            <a href="#">Sports</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="news-image3.jpg" alt="News Image 3">
+            <div class="card-content">
+                <h3>Headline News 3</h3>
+                <p>Brief description of the news article goes here.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="news-image1.jpg" alt="News Image 1">
+            <div class="card-content">
+                <h3>Headline News 1</h3>
+                <p>Brief description of the news article goes here.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="news-image4.jpg" alt="News Image 4">
+            <div class="card-content">
+                <h3>Headline News 4</h3>
+                <p>Brief description of the news article goes here.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="news-image2.jpg" alt="News Image 2">
+            <div class="card-content">
+                <h3>Headline News 2</h3>
+                <p>Brief description of the news article goes here.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Today. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

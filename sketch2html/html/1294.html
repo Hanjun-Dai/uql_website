@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #b5651d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #f0f0f0;
+            padding: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #b5651d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            max-width: 1024px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-date {
+            color: #999;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .card-excerpt {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        History News
+    </header>
+    <nav>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Archives</a>
+        <a href="#">Home</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=War" alt="War">
+            <div class="card-content">
+                <div class="card-title">World War II</div>
+                <div class="card-date">September 8, 2023</div>
+                <div class="card-excerpt">Key battles and events that changed the course of history.</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Culture" alt="Culture">
+            <div class="card-content">
+                <div class="card-title">Ancient Civilizations</div>
+                <div class="card-date">September 12, 2023</div>
+                <div class="card-excerpt">An overview of the great empires of Mesopotamia, Egypt, and more.</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=History+Event" alt="History Event">
+            <div class="card-content">
+                <div class="card-title">The Renaissance Era</div>
+                <div class="card-date">September 15, 2023</div>
+                <div class="card-excerpt">Exploring the art and science that flourished during the Renaissance.</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/300x200?text=Revolution" alt="Revolution">
+            <div class="card-content">
+                <div class="card-title">Industrial Revolution</div>
+                <div class="card-date">September 10, 2023</div>
+                <div class="card-excerpt">The transformation of industry and society in the 18th century.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

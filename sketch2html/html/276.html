@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .article-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .article-card:hover {
+            transform: scale(1.02);
+        }
+        .article-image img {
+            width: 100%;
+            height: auto;
+        }
+        .article-content {
+            padding: 15px;
+        }
+        .article-content h2 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #333;
+        }
+        .article-content p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="footer">
+            &copy; 2023 News Website. All rights reserved.
+        </div>
+        
+        <div class="article-grid">
+
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="image3.jpg" alt="Article 3">
+                </div>
+                <div class="article-content">
+                    <h2>Article Title 3</h2>
+                    <p>Brief description of article 3.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="image1.jpg" alt="Article 1">
+                </div>
+                <div class="article-content">
+                    <h2>Article Title 1</h2>
+                    <p>Brief description of article 1.</p>
+                </div>
+            </div>
+
+            <div class="article-card">
+                <div class="article-image">
+                    <img src="image2.jpg" alt="Article 2">
+                </div>
+                <div class="article-content">
+                    <h2>Article Title 2</h2>
+                    <p>Brief description of article 2.</p>
+                </div>
+            </div>
+
+            <!-- Add more article cards as needed -->
+            
+        </div>
+
+        <div class="header">
+            <h1>Category Name</h1>
+        </div>
+    </div>
+</body>
+</html>

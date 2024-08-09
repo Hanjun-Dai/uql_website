@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Games Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            height: 400px;
+            background: url('https://images.unsplash.com/photo-1536336209983-4d0053e60e47') no-repeat center center/cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hero h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 0;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+        .feature i {
+            font-size: 4em;
+            margin-bottom: 10px;
+            color: #EAB543;
+        }
+        .categories {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .category {
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+        }
+        .category img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .category img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gamer's Paradise</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Games</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="features">
+    <div class="feature">
+        <i class="fas fa-users"></i>
+        <h3>Join Community</h3>
+        <p>Connect with gamers worldwide.</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-gamepad"></i>
+        <h3>Endless Games</h3>
+        <p>Explore a vast library of games.</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-trophy"></i>
+        <h3>Win Rewards</h3>
+        <p>Earn achievements and prizes!</p>
+    </div>
+</section>
+
+<section class="categories">
+    <h2>Game Categories</h2>
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1521747116042-5a810fda9664" alt="Action">
+        <h3>Action</h3>
+    </div>
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1583744124088-7187c2419a4f" alt="Strategy">
+        <h3>Strategy</h3>
+    </div>
+    <div class="category">
+        <img src="https://images.unsplash.com/photo-1571879062236-02db1973330e" alt="Adventure">
+        <h3>Adventure</h3>
+    </div>
+</section>
+
+<section class="hero">
+    <h2>Join the Adventure!</h2>
+</section>
+
+<footer>
+    <p>&copy; 2023 Gamer's Paradise. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

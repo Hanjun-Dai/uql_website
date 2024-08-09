@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+        }
+        header {
+            background: #34495e;
+            color: #fff;
+            padding: 20px 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .hero {
+            background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            position: relative;
+            font-size: 48px;
+            margin: 0;
+        }
+        section {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 0;
+        }
+        .category {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 20px;
+            width: 200px;
+        }
+        .category img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #34495e;
+            color: #fff;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Welcome to Sports Hub</h1>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports Hub. All Rights Reserved.</p>
+</footer>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sports</a>
+        <a href="#">News</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <div class="category">
+        <img src="https://example.com/soccer.jpg" alt="Soccer">
+        <h2>Soccer</h2>
+    </div>
+    <div class="category">
+        <img src="https://example.com/basketball.jpg" alt="Basketball">
+        <h2>Basketball</h2>
+    </div>
+    <div class="category">
+        <img src="https://example.com/baseball.jpg" alt="Baseball">
+        <h2>Baseball</h2>
+    </div>
+    <div class="category">
+        <img src="https://example.com/tennis.jpg" alt="Tennis">
+        <h2>Tennis</h2>
+    </div>
+</section>
+
+</body>
+</html>

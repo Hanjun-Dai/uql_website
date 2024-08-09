@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 100px;
+            color: #e74c3c;
+            margin: 0;
+        }
+        h2 {
+            font-size: 24px;
+            color: #666;
+            margin: 10px 0;
+        }
+        .artistic-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('background-abstract.jpg') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        a {
+            text-decoration: none;
+            color: #e74c3c;
+            font-weight: bold;
+            border: 2px solid #e74c3c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 20px;
+        }
+        a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2>Oops! Page Not Found</h2>
+    <div class="artistic-bg"></div>
+    <h1>404</h1>
+    <a href="/">Go Back to Home</a>
+</body>
+</html>

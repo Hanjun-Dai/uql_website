@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Uncovered</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #eaeaea; /* Changed the body background color */
+            color: #444; /* Adjusted body text color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: url('header-background.jpg') no-repeat center center/cover;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            color: #ffcc00; /* Changed header text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 5px 0 0 0;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: #ffffff; /* Kept the card background but added changes to text */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h2 {
+            color: #007acc; /* Changed card headings color */
+        }
+        .card p {
+            color: #555; /* Changed card paragraph text color */
+        }
+        footer {
+            background-color: #222; /* Changed footer background color */
+            color: #ffcc00; /* Changed footer text color */
+            text-align: center;
+            padding: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>History Uncovered</h1>
+        <p>Explore the Past, Shape the Future</p>
+    </header>
+    
+    <main>
+        <div class="card">
+            <img src="ancient-civilizations.jpg" alt="Ancient Civilizations">
+            <h2>Ancient Civilizations</h2>
+            <p>Discover the wonders of the world's first civilizations.</p>
+        </div>
+        
+        <div class="card">
+            <img src="wars-history.jpg" alt="Wars and Conflicts">
+            <h2>Wars & Conflicts</h2>
+            <p>Analyze the key battles that changed the course of history.</p>
+        </div>
+        
+        <div class="card">
+            <img src="historical-figures.jpg" alt="Historical Figures">
+            <h2>Historical Figures</h2>
+            <p>Meet the individuals who shaped our world.</p>
+        </div>
+        
+        <div class="card">
+            <img src="art-and-culture.jpg" alt="Art and Culture">
+            <h2>Art & Culture</h2>
+            <p>Explore the artistic expressions through the ages.</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 History Uncovered. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

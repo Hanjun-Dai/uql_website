@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h3 {
+            color: #35424a;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-left: 20px; /* Changed margin to the left instead of right */
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article h2 {
+            color: #35424a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest News</h1>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Trending Articles</h3>
+        <ul>
+            <li><a href="#">Trending Article 1</a></li>
+            <li><a href="#">Trending Article 2</a></li>
+            <li><a href="#">Trending Article 3</a></li>
+            <li><a href="#">Trending Article 4</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>Headline 1</h2>
+            <p>Short description of the news article. Stay tuned for more updates...</p>
+        </div>
+        <div class="article">
+            <h2>Headline 2</h2>
+            <p>Short description of the news article. Stay tuned for more updates...</p>
+        </div>
+        <div class="article">
+            <h2>Headline 3</h2>
+            <p>Short description of the news article. Stay tuned for more updates...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 NewsWebsite. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

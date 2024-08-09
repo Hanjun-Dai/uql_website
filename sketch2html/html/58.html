@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science FAQs</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #3c8dbc;
+            margin: 0.5em 0;
+        }
+        .faq-container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        .faq-item {
+            border: 2px dashed #3c8dbc;
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 20px;
+            background-color: #e7f3fe;
+            transition: background-color 0.3s;
+        }
+        .faq-item:hover {
+            background-color: #d0ebff;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+            padding: 10px 0;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
+        .toggle-icon {
+            position: absolute;
+            right: 0;
+            transition: transform 0.3s;
+        }
+        .faqs {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <h1>Curious Questions</h1>
+        <div class="faqs">
+            <div class="faq-item">
+                <div class="question">
+                    How do plants grow? 
+                    <span class="toggle-icon">ð½</span>
+                </div>
+                <div class="answer">Through photosynthesis using sunlight, water, and nutrients!</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">
+                    What is gravity? 
+                    <span class="toggle-icon">ð½</span>
+                </div>
+                <div class="answer">A force that pulls objects towards each other, keeping us grounded!</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">
+                    Why is the sky blue? 
+                    <span class="toggle-icon">ð½</span>
+                </div>
+                <div class="answer">It's due to the scattering of sunlight by the atmosphere!</div>
+            </div>
+            <div class="faq-item">
+                <div class="question">
+                    What is Science? 
+                    <span class="toggle-icon">ð½</span>
+                </div>
+                <div class="answer">A way to explore the world using observations and experiments!</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+        questions.forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                const icon = q.querySelector('.toggle-icon');
+                icon.style.transform = answer.style.display === 'block' ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+    </script>
+    
+</body>
+</html>

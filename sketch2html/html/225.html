@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            margin: 20px 0;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(33% - 40px);
+            box-sizing: border-box;
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Parenting Bliss</h1>
+    <nav>
+        <a href="#blog">Blog</a>
+        <a href="#resources">Resources</a>
+        <a href="#community">Community</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="images/resource3.jpg" alt="Resource 3">
+        <h3>Parenting Blog</h3>
+        <p>Read the latest articles and stories.</p>
+    </div>
+    <div class="card">
+        <img src="images/resource1.jpg" alt="Resource 1">
+        <h3>Helpful Tips</h3>
+        <p>Learn the best practices for parenting.</p>
+    </div>
+    <div class="card">
+        <img src="images/resource2.jpg" alt="Resource 2">
+        <h3>Parenting Community</h3>
+        <p>Join a community of supportive parents.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Bliss. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

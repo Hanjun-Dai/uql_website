@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            color: #333;
+            font-size: 18px; /* Changed previous size to 18px */
+        }
+        header {
+            background: #22a7f0;
+            color: white;
+            padding: 30px; /* Increased padding */
+            text-align: center;
+            font-size: 24px; /* Changed font size */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-size: 16px; /* Font size for cards changed */
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 30%;
+            overflow: hidden;
+            transition: transform 0.3s;
+            font-size: 18px; /* Made this larger than original */
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .card-header {
+            background: #e9ecef;
+            padding: 15px; /* Increased padding */
+            text-align: center;
+            font-size: 20px; /* Increased font size */
+        }
+        .card-header h3 {
+            margin: 0;
+            font-size: 2.5em; /* Made larger */
+        }
+        .card-body {
+            padding: 30px; /* Increased padding for cards */
+            text-align: center;
+            font-size: 18px; /* Adjusted size */
+        }
+        .card-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px; /* Increased padding */
+            background: #22a7f0;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 18px; /* Set footer font size */
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Sports Services</h1>
+    <p>Your gateway to athletic excellence!</p>
+</header>
+
+<div class="container">
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Coaching</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Coaching">
+            <p>Expert trainers for all ages.</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Fitness Classes</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Fitness Classes">
+            <p>Join our energetic classes!</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Nutrition Advice</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Nutrition Advice">
+            <p>Get tailored plans from experts.</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Sports Gear</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Sports Gear">
+            <p>Top-quality gear for all sports!</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Community Events</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Community Events">
+            <p>Join us and make new friends!</p>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <div class="card-header">
+            <h3>Personal Training</h3>
+        </div>
+        <div class="card-body">
+            <img src="https://via.placeholder.com/150" alt="Personal Training">
+            <p>Your fitness journey starts here.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports Website - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

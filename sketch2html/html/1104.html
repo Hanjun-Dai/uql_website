@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: #4A4E69;
+            color: #F9F7F7;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #F9F7F7;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background: url('hero-image.jpg') center/cover no-repeat;
+            color: #F9F7F7;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 5em; /* Increased from 3em to 5em */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background: #4A4E69;
+            color: #F9F7F7;
+            text-align: center;
+            padding: 10px;
+        }
+        footer p {
+            font-size: 0.8em; /* Decreased the font size for footer */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arts Haven</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Explore the Beauty of Art</h1>
+</section>
+
+<section class="gallery" id="gallery">
+    <img src="art1.jpg" alt="Art Piece 1">
+    <img src="art2.jpg" alt="Art Piece 2">
+    <img src="art3.jpg" alt="Art Piece 3">
+    <img src="art4.jpg" alt="Art Piece 4">
+    <img src="art5.jpg" alt="Art Piece 5">
+    <img src="art6.jpg" alt="Art Piece 6">
+</section>
+
+<footer>
+    <p>&copy; 2023 Arts Haven. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

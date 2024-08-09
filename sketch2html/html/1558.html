@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .testimonial {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .quote {
+            font-size: 1.2em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .author {
+            font-weight: bold;
+            color: #333;
+            text-align: right;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>What Our Clients Say</h1>
+            <p>Your satisfaction is our priority!</p>
+        </header>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <p class="quote">"I was impressed with their knowledge of the market."</p>
+                <p class="author">- Emily R.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"An amazing experience! They helped me find my dream home."</p>
+                <p class="author">- Sarah J.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"Fantastic service! I couldn't be happier."</p>
+                <p class="author">- Alex M.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"A wonderful team that goes above and beyond."</p>
+                <p class="author">- Lisa A.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"They made buying a home so easy. Thank you!"</p>
+                <p class="author">- Mark T.</p>
+            </div>
+            <div class="testimonial">
+                <p class="quote">"Professional and attentive. Highly recommend!"</p>
+                <p class="author">- John D.</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Your Real Estate Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

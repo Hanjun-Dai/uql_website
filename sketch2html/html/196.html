@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* Changed background color */
+        }
+
+        header {
+            background-color: #006600; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #00b300; /* Changed nav background color */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .category-card {
+            background: #f9f9f9; /* Changed card background color */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Increased shadow opacity */
+            margin: 10px;
+            width: 220px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        .category-card h3 {
+            margin: 10px 0;
+            color: #336600; /* Changed text color for headings */
+        }
+
+        footer {
+            background-color: #006600; /* Changed footer background color */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Finance Insights</h1>
+        <p>Your guide to financial success</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Investing</a></li>
+            <li><a href="#">Budgeting</a></li>
+            <li><a href="#">Taxes</a></li>
+            <li><a href="#">Retirement</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="category-card">
+            <img src="investing.jpg" alt="Investing">
+            <h3>Investing</h3>
+        </div>
+        <div class="category-card">
+            <img src="budgeting.jpg" alt="Budgeting">
+            <h3>Budgeting</h3>
+        </div>
+        <div class="category-card">
+            <img src="taxes.jpg" alt="Taxes">
+            <h3>Taxes</h3>
+        </div>
+        <div class="category-card">
+            <img src="retirement.jpg" alt="Retirement">
+            <h3>Retirement</h3>
+        </div>
+        <div class="category-card">
+            <img src="credit.jpg" alt="Credit Management">
+            <h3>Credit Management</h3>
+        </div>
+        <div class="category-card">
+            <img src="insurance.jpg" alt="Insurance">
+            <h3>Insurance</h3>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Finance Insights. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

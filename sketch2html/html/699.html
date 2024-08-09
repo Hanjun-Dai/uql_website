@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | NewsPlay</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e9ecef; /* Changed background color */
+            margin: 0;
+            padding: 0;
+            color: #444; /* Slightly darker text color */
+        }
+        
+        header {
+            background-color: #4a90e2; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        
+        .fun-facts {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        
+        .fact {
+            background-color: #fff;
+            border: 2px dashed #50b3a2; /* Changed border color */
+            border-radius: 8px;
+            padding: 20px;
+            width: calc(30% - 40px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        
+        .fact:hover {
+            transform: scale(1.05);
+            border-color: #4a90e2; /* Changed hover border color */
+        }
+        
+        footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            text-align: center;
+            color: #777; /* Changed footer text color */
+        }
+        
+        @media(max-width: 768px) {
+            .fun-facts {
+                flex-direction: column;
+            }
+
+            .fact {
+                width: 80%;
+                margin: 10px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to NewsPlay!</h1>
+</header>
+
+<div class="container">
+    <p>At NewsPlay, we bring you the latest and greatest news with a sprinkle of fun!</p>
+
+    <div class="fun-facts">
+        <div class="fact">
+            <h2>🌍 24/7 News</h2>
+            <p>We’re always on duty, bringing you breaking stories and updates.</p>
+        </div>
+        <div class="fact">
+            <h2>🎉 Fun & Engaging</h2>
+            <p>We believe news should be enjoyable, not boring!</p>
+        </div>
+        <div class="fact">
+            <h2>🌎 Global Reach</h2>
+            <p>From local news to international events, we cover it all!</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 NewsPlay. All Rights Reserved.
+</footer>
+
+</body>
+</html>

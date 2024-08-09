@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .product-img {
+            float: left;
+            width: 40%;
+            margin-right: 20px;
+        }
+        .product-details {
+            float: left;
+            width: 55%;
+        }
+        h1 {
+            font-size: 40px; /* Changed from 24px to 40px */
+            margin: 0;
+        }
+        .price {
+            font-size: 14px; /* Changed from 20px to 14px */
+            color: #E36E00;
+            margin: 10px 0;
+        }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 20px 30px; /* Increased padding */
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 18px; /* Added font size */
+        }
+        .description {
+            margin-top: 20px;
+        }
+        .description h2 {
+            font-size: 32px; /* Changed for the h2 inside description */
+            margin: 15px 0;
+        }
+        .description p {
+            font-size: 16px; /* Increased paragraph size */
+        }
+        .clear {
+            clear: both;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px; /* Changed from 12px to 20px */
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Game Title</h1>
+        </header>
+
+        <div class="product-img">
+            <img src="game-cover.jpg" alt="Game Cover" width="100%">
+        </div>
+
+        <div class="product-details">
+            <div class="price">$49.99</div>
+            <button class="btn">Add to Cart</button>
+            <div class="description">
+                <h2>Overview</h2>
+                <p>Short game description goes here.</p>
+            </div>
+            <div class="description">
+                <h2>Features</h2>
+                <ul>
+                    <li style="font-size: 18px;">Feature 1</li> <!-- Changed font size for list items -->
+                    <li style="font-size: 18px;">Feature 2</li>
+                    <li style="font-size: 18px;">Feature 3</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <footer>
+            <p>&copy; 2023 Game Company. All rights reserved.</p>
+        </footer>
+
+    </div>
+</body>
+</html>

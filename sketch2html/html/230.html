@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - History Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #555;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .info-section {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .info-section:last-child {
+            margin-right: 0;
+        }
+        .form-section {
+            background: #f8f8f8;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    
+    <div class="form-section">
+        <h2>Send Us a Message</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <div class="contact-info">
+        <div class="info-section">
+            <h2>Follow Us</h2>
+            <p>Facebook: /historywebsite</p>
+            <p>Twitter: @historywebsite</p>
+            <p>Instagram: @history_website</p>
+        </div>
+        <div class="info-section">
+            <h2>Get in Touch</h2>
+            <p>Email: contact@historywebsite.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 History Lane, History City, HC 12345</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 History Website | All Rights Reserved
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 30px; /* increased padding for larger spacing */
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            padding: 20px; /* increased padding for larger spacing */
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 25px; /* larger margins */
+            text-decoration: none;
+            font-size: 1.8em; /* increased font size */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 0; /* increased padding for larger spacing */
+        }
+        .main-content {
+            flex: 2;
+            padding: 20px; /* increased padding */
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-right: 30px; /* larger margin */
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px; /* increased padding */
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 30px; /* larger margin */
+        }
+        .article h2 {
+            font-size: 2.5em; /* significantly larger font size */
+            margin-bottom: 15px; /* increased bottom margin */
+        }
+        .article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .sidebar h3 {
+            font-size: 2em; /* increased font size */
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 30px; /* larger padding */
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.5em; /* increased font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive News</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest News</a>
+        <a href="#">Reviews</a>
+        <a href="#">Guides</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+            <div class="article">
+                <h2>New Electric Sedan Released</h2>
+                <img src="https://via.placeholder.com/800x400" alt="Electric Sedan">
+                <p style="font-size: 1.2em;">Short description about the new electric sedan.</p>
+            </div>
+            <div class="article">
+                <h2>2024 SUV Models Compared</h2>
+                <img src="https://via.placeholder.com/800x400" alt="SUV Comparison">
+                <p style="font-size: 1.2em;">Brief overview of the 2024 SUV models and their features.</p>
+            </div>
+            <div class="article">
+                <h2>Safety Features of Today's Cars</h2>
+                <img src="https://via.placeholder.com/800x400" alt="Safety Features">
+                <p style="font-size: 1.2em;">Overview of safety features in modern vehicles.</p>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>Popular News</h3>
+            <ul>
+                <li><a href="#" style="font-size: 1.5em;">Hybrid Cars: The Future</a></li>
+                <li><a href="#" style="font-size: 1.5em;">Top 10 Sports Cars of 2023</a></li>
+                <li><a href="#" style="font-size: 1.5em;">Understanding Car Maintenance</a></li>
+                <li><a href="#" style="font-size: 1.5em;">Electric Vs Gasoline: A Comprehensive Guide</a></li>
+                <li><a href="#" style="font-size: 1.5em;">Upcoming Auto Shows in 2023</a></li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Automotive News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

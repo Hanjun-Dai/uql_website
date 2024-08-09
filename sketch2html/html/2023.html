@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #eaeaea; /* Changed background to a lighter gray */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #444; /* Changed header background color to a softer dark gray */
+            color: #ffcc00; /* Changed text color in header to gold */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main {
+            flex: 3;
+            background: #ffffff; /* No change to background here */
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            border-bottom: 2px solid #ff6600; /* Changed border color to bright orange */
+            padding-bottom: 10px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #f1f1f1; /* Changed sidebar background to a light gray */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #444; /* Consistent with changed header background */
+            color: #ffcc00; /* Changed footer text color to match header */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Arts Blog</h1>
+    <p>Discover the beauty of art and creativity</p>
+</header>
+
+<div class="container">
+    <div class="main">
+        <div class="article">
+            <h2>Artistic Innovations in 2023</h2>
+            <p>Explore the latest trends and innovations in the art world this year.</p>
+        </div>
+        <div class="article">
+            <h2>Spotlight on Modern Artists</h2>
+            <p>Discover the works of emerging artists reshaping the scene.</p>
+        </div>
+        <div class="article">
+            <h2>The Future of Art Exhibitions</h2>
+            <p>What's next for art exhibitions in a post-pandemic world?</p>
+        </div>
+        <div class="article">
+            <h2>Understanding Art Movements</h2>
+            <p>A deep dive into various art movements and their impacts.</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h2>About Us</h2>
+        <p>We celebrate and share the vibrant art community.</p>
+        <h2>Recent Posts</h2>
+        <ul>
+            <li><a href="#">Art in the Digital Age</a></li>
+            <li><a href="#">10 Must-See Art Installations</a></li>
+            <li><a href="#">Cultural Diversity in Art</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Arts Blog. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

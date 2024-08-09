@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: #0073e6;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .services, .testimonials, .contact {
+            background: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .services .service-item {
+            margin-bottom: 15px;
+        }
+        .service-item-title {
+            font-weight: bold;
+        }
+        .testimonials p {
+            font-style: italic;
+            margin: 10px 0;
+        }
+        .contact form {
+            display: grid;
+            gap: 10px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact input[type="submit"] {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .contact input[type="submit"]:hover {
+            background: #005bb5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Services</h1>
+</header>
+
+<div class="container">
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <span class="service-item-title">Commercial Leasing</span>
+            <p>Helping you find the right commercial property.</p>
+        </div>
+        <div class="service-item">
+            <span class="service-item-title">Residential Sales</span>
+            <p>Assisting you in buying and selling homes.</p>
+        </div>
+        <div class="service-item">
+            <span class="service-item-title">Property Management</span>
+            <p>Managing your investment properties effectively.</p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <p>"Great experience from start to finish!" - Sarah K.</p>
+        <p>"The team was professional and attentive. Highly recommend!" - John D.</p>
+        <p>"They really know the market! Fantastic service!" - Mark T.</p>
+    </div>
+</div>
+
+</body>
+</html>

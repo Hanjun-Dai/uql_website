@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #eaeaea;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .news-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .article {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 10px;
+            flex: 1 1 30%;
+            min-width: 250px;
+        }
+        .article img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .news-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment News</h1>
+</header>
+
+<nav>
+    <a href="#trending">Trending</a>
+    <a href="#events">Events</a>
+    <a href="#celebrities">Celebrities</a>
+    <a href="#movies">Movies</a>
+    <a href="#music">Music</a>
+</nav>
+
+<div class="container">
+    <div class="news-section">
+        <div class="article">
+            <img src="image4.jpg" alt="News Image 4">
+            <h2>Upcoming Events</h2>
+            <p>Find out about exciting events happening near you.</p>
+        </div>
+        <div class="article">
+            <img src="image2.jpg" alt="News Image 2">
+            <h2>Music Album Launches</h2>
+            <p>Explore the latest albums from your favorite artists.</p>
+        </div>
+        <div class="article">
+            <img src="image3.jpg" alt="News Image 3">
+            <h2>Celebrity Interviews</h2>
+            <p>Read exclusive interviews with the industry's biggest stars.</p>
+        </div>
+        <div class="article">
+            <img src="image1.jpg" alt="News Image 1">
+            <h2>Latest Movie Releases</h2>
+            <p>Discover the hottest new movies hitting theaters this week.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment News. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

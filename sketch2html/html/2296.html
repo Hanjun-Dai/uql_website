@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Entertainment Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #ff4081, #ffab40);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        .faq-container {
+            width: 80%;
+            margin: 20px auto;
+            border-radius: 8px;
+            background: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .faq-item {
+            margin: 15px 0;
+            border-radius: 5px;
+            background-color: #272727;
+            overflow: hidden;
+            transition: background-color 0.3s;
+        }
+        .faq-item:hover {
+            background-color: #3c3c3c;
+        }
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            position: relative;
+            font-weight: bold;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            border-top: 1px solid #444444;
+        }
+        .icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: transform 0.3s;
+        }
+        .faq-item.active .icon {
+            transform: translateY(-50%) rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+
+    <div class="faq-item">
+        <div class="faq-question">
+            How can I contact support? 
+            <span class="icon">🔍</span>
+        </div>
+        <div class="faq-answer">
+            You can reach us via email at support@entertainment.com or use the contact form on our website.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            Is there a subscription option? 
+            <span class="icon">🔍</span>
+        </div>
+        <div class="faq-answer">
+            Yes, we offer monthly and yearly subscription options with exclusive benefits.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            What payment methods do we accept? 
+            <span class="icon">🔍</span>
+        </div>
+        <div class="faq-answer">
+            We accept major credit cards, PayPal, and cryptocurrency.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            What is our refund policy? 
+            <span class="icon">🔍</span>
+        </div>
+        <div class="faq-answer">
+            We offer a full refund within 30 days of purchase if you are not satisfied with our service.
+        </div>
+    </div>
+
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Minimalist Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+            color: #222; /* Changed default text color */
+        }
+
+        header {
+            background: #444; /* Changed header background color */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px 0;
+        }
+
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background: #dfe6e9; /* Changed sidebar background color */
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            background: #ffffff; /* Changed main content background */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Increased shadow opacity */
+        }
+
+        .card {
+            background: #ffffff; /* Changed card background */
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); /* Increased shadow opacity */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #444; /* Changed footer background color */
+            color: #ffeb3b; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Tech World</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">News</a>
+            <a href="#">Reviews</a>
+            <a href="#">Gadgets</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Latest Articles</h2>
+            <div class="card">AI Innovations 2023</div>
+            <div class="card">Top Gadgets of the Year</div>
+            <div class="card">Tech Trends You Should Know</div>
+        </aside>
+
+        <main class="main-content">
+            <h2>Welcome to Tech World</h2>
+            <div class="card">Explore the latest in technology, reviews, and news.</div>
+            <div class="card">Join our community for the best insights and discussions.</div>
+            <div class="card">Discover innovations that are shaping our future.</div>
+        </main>
+    </div>
+
+    <footer>
+        &copy; 2023 Tech World. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

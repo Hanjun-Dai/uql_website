@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7F7F7;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: auto;
+        }
+        .main {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #FFF;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        article {
+            background: white;
+            margin-bottom: 20px;
+            border: 1px solid #eaeaea;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        article h2 {
+            padding: 10px;
+            margin: 0;
+            font-size: 1.5em;
+        }
+        article p {
+            padding: 0 10px 10px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food News Today</h1>
+        <p>Your Daily Source for Culinary Updates</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Latest Recipes</h3>
+            <ul>
+                <li><a href="#">Chocolate Cake</a></li>
+                <li><a href="#">Vegan Tacos</a></li>
+                <li><a href="#">Classic Lasagna</a></li>
+                <li><a href="#">Chicken Curry</a></li>
+            </ul>
+
+            <h3>Upcoming Events</h3>
+            <p>Join our cooking classes every Saturday at 10 AM!</p>
+        </aside>
+
+        <div class="main">
+            <article>
+                <h2>Health Benefits of Plant-Based Diets</h2>
+                <p>Discover how a plant-based diet can enhance your well-being.</p>
+            </article>
+            <article>
+                <h2>New Culinary Trends in 2023</h2>
+                <p>Explore the latest trends that are shaping the culinary landscape this year.</p>
+            </article>
+            <article>
+                <h2>Top 10 Recipes to Try This Winter</h2>
+                <p>Cozy up with these enticing recipes perfect for the colder months.</p>
+            </article>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Food News Today | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

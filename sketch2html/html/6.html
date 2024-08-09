@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background: #0056b3;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .article-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .article-card:hover {
+            transform: scale(1.05);
+        }
+
+        .article-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-card h3 {
+            margin: 10px;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Technology Hub</h1>
+    </header>
+
+    <div class="container">
+        <h2>Latest Technology Articles</h2>
+        <div class="grid">
+            <div class="article-card">
+                <img src="tech4.jpg" alt="Tech Article 4">
+                <h3>Article Title 4</h3>
+            </div>
+            <div class="article-card">
+                <img src="tech1.jpg" alt="Tech Article 1">
+                <h3>Article Title 1</h3>
+            </div>
+            <div class="article-card">
+                <img src="tech6.jpg" alt="Tech Article 6">
+                <h3>Article Title 6</h3>
+            </div>
+            <div class="article-card">
+                <img src="tech3.jpg" alt="Tech Article 3">
+                <h3>Article Title 3</h3>
+            </div>
+            <div class="article-card">
+                <img src="tech5.jpg" alt="Tech Article 5">
+                <h3>Article Title 5</h3>
+            </div>
+            <div class="article-card">
+                <img src="tech2.jpg" alt="Tech Article 2">
+                <h3>Article Title 2</h3>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <footer class="footer">
+        <p>&copy; 2023 Technology Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

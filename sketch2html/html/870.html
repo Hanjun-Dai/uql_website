@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: url('header-image.jpg') center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover img {
+            transform: scale(1.1);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        .portfolio-item:hover .overlay {
+            opacity: 1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Destinations</a>
+    <a href="#">Contact</a>
+</nav>
+
+<header>
+    Travel Portfolio
+</header>
+
+<div class="portfolio">
+    <div class="portfolio-item">
+        <img src="destination3.jpg" alt="Destination 3">
+        <div class="overlay">Explore Destination 3</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="destination2.jpg" alt="Destination 2">
+        <div class="overlay">Explore Destination 2</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="destination4.jpg" alt="Destination 4">
+        <div class="overlay">Explore Destination 4</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="destination1.jpg" alt="Destination 1">
+        <div class="overlay">Explore Destination 1</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="destination5.jpg" alt="Destination 5">
+        <div class="overlay">Explore Destination 5</div>
+    </div>
+    <div class="portfolio-item">
+        <img src="destination6.jpg" alt="Destination 6">
+        <div class="overlay">Explore Destination 6</div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Travel Portfolio. All rights reserved.
+</footer>
+
+</body>
+</html>

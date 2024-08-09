@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Arts Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5; /* Changed the background color */
+            color: #444; /* Modified text color */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #2c3e50; /* Changed the header color */
+        }
+        .faq-item {
+            border: 1px solid #ccc; /* Slightly darker border */
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .faq-question {
+            background-color: #e2e8f0; /* Changed question background color */
+            padding: 15px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            background-color: #ffffff; /* Added background color to the answer */
+        }
+        .faq-question:hover {
+            background-color: #ced4da; /* Darker hover background */
+        }
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question">What types of art do you feature?</div>
+            <div class="faq-answer">We feature various forms of art including paintings, sculptures, and photography.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How can I submit my artwork?</div>
+            <div class="faq-answer">You can submit your artwork through our online submission form.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">Do you sell artwork?</div>
+            <div class="faq-answer">Yes, we have a selection of artwork available for purchase in our gallery.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">How do I contact you?</div>
+            <div class="faq-answer">You can contact us via our contact form or email us directly.</div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question">Are there any upcoming events?</div>
+            <div class="faq-answer">Yes, we frequently host exhibitions and workshops. Check our events page for details.</div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle the FAQ answer visibility
+        const questions = document.querySelectorAll('.faq-question');
+
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>

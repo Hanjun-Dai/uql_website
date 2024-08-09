@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vintage Parenting</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f4e8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: white;
+            border: 5px solid #c8b4a3;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 32px;
+            font-style: italic;
+            color: #9f6b47;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            font-family: inherit;
+            padding: 10px;
+            width: 90%;
+            max-width: 400px;
+            margin: 10px 0;
+            border: 1px solid #c8b4a3;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #9f6b47;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #7b4f3b;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="footer">
+        <p>Follow us on social media!</p>
+        <p>Instagram | Facebook | Twitter</p>
+    </div>
+    
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+
+    <form action="#" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+</body>
+</html>

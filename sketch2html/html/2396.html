@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Page - News Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0 0 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resource Center</h1>
+    </header>
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <h2>Podcasts</h2>
+                <p>Listen to in-depth discussions and interviews with experts.</p>
+            </div>
+            <div class="card">
+                <h2>Infographics</h2>
+                <p>Explore visual data representations on trending topics.</p>
+            </div>
+            <div class="card">
+                <h2>Latest Articles</h2>
+                <p>Stay updated with the latest news articles on various topics.</p>
+            </div>
+            <div class="card">
+                <h2>Subscribe Now</h2>
+                <p>Join our newsletter for weekly updates directly to your inbox.</p>
+            </div>
+            <div class="card">
+                <h2>Video Insights</h2>
+                <p>Watch our latest video reports covering current events.</p>
+            </div>
+            <div class="card">
+                <h2>Our Coverage</h2>
+                <p>Learn about our coverage areas and reporting standards.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 News Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

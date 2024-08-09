@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Science Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #007acc;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #333;
+        }
+        .faq-item:hover .question {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What is peer review?</div>
+            <div class="answer">Peer review is a process in which experts evaluate research before it is published to ensure quality and credibility.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Why is science important?</div>
+            <div class="answer">Science is crucial for advancing knowledge, driving innovation, and addressing challenges such as climate change and health issues.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What are the branches of science?</div>
+            <div class="answer">The main branches of science include physical sciences, biological sciences, and social sciences.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What is the scientific method?</div>
+            <div class="answer">The scientific method is a systematic approach to understanding the natural world through observation, experimentation, and analysis.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I contribute to science?</div>
+            <div class="answer">You can contribute by conducting research, participating in citizen science projects, or supporting scientific organizations.</div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+
+        // Initialize answers to be hidden
+        document.querySelectorAll('.answer').forEach((answer) => {
+            answer.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 20px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            padding: 20px;
+        }
+        .service {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .footer {
+            background: #0077cc;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: static;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Travel Explorer</h1>
+    <nav>
+        <a href="#">Packages</a>
+        <a href="#">Destinations</a>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="services">
+    <div class="service">
+        <img src="service2.jpg" alt="Hotel Booking">
+        <h2>Hotel Booking</h2>
+        <p>Stay in top-rated hotels worldwide.</p>
+    </div>
+    <div class="service">
+        <img src="service3.jpg" alt="Travel Guides">
+        <h2>Travel Guides</h2>
+        <p>Your companion for local adventures.</p>
+    </div>
+    <div class="service">
+        <img src="service1.jpg" alt="Air Tickets">
+        <h2>Air Tickets</h2>
+        <p>Book your flights at the best prices.</p>
+    </div>
+</section>
+
+<div class="hero">
+    <h1>Your Adventure Awaits</h1>
+    <p>Explore the World with Us</p>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Travel Explorer. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

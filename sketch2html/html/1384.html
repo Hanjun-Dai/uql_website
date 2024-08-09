@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Sports Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4f7f5; /* Changed background color */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #8e44ad; /* Changed header color */
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ccc;
+            padding: 15px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #c0392b; /* Changed question color */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            color: #7f8c8d; /* Changed answer color */
+        }
+
+        .question:hover {
+            text-decoration: underline;
+            color: #e74c3c; /* Changed hover color for question */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+        <div class="faq-item">
+            <div class="question">What sports do you cover?</div>
+            <div class="answer">We cover a variety of sports including football, basketball, tennis, and more.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How can I purchase tickets?</div>
+            <div class="answer">Tickets can be purchased through our website under the 'Tickets' section.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">What age groups do you cater to?</div>
+            <div class="answer">We cater to all age groups, with events for children, teens, and adults.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">How do I contact customer support?</div>
+            <div class="answer">Customer support can be reached via the 'Contact Us' page on our website.</div>
+        </div>
+        <div class="faq-item">
+            <div class="question">Where can I find recent news and updates?</div>
+            <div class="answer">Recent news and updates are available on our homepage and 'News' section.</div>
+        </div>
+    </div>
+
+    <script>
+        // Simple toggle for FAQ answers
+        const questions = document.querySelectorAll('.question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+
+</html>

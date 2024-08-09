@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #003366;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background: #00509e;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .forum-header {
+            padding: 15px;
+            background: #eeeeee;
+            border-bottom: 1px solid #cccccc;
+            text-align: left;
+        }
+        .forum-header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .post {
+            padding: 15px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2em;
+        }
+        .post p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555555;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #003366;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .btn {
+            margin: 20px;
+            display: block;
+            text-align: center;
+            background: #00509e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 100px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #003366;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Politics Forum</h1>
+    </header>
+    <div class="container">
+        <div class="forum-header">
+            <h1>Recent Discussions</h1>
+        </div>
+
+        <div class="post">
+            <h3>Post Title 3</h3>
+            <p>Posted by User3 | Date</p>
+            <p>Brief overview of the discussion...</p>
+        </div>
+        <div class="post">
+            <h3>Post Title 1</h3>
+            <p>Posted by User1 | Date</p>
+            <p>Brief overview of the discussion...</p>
+        </div>
+        <div class="post">
+            <h3>Post Title 2</h3>
+            <p>Posted by User2 | Date</p>
+            <p>Brief overview of the discussion...</p>
+        </div>
+
+        <a href="newpost.html" class="btn">New Post</a>
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Discussions</a>
+        <a href="#">Latest News</a>
+        <a href="#">About</a>
+    </nav>
+    <footer>
+        <p>&copy; 2023 Politics Forum | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

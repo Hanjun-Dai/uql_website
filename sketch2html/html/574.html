@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Health Portfolio</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: #fdf8e2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #5a3e29;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .portfolio-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .portfolio-item {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #5a3e29;
+            color: #fff;
+            position: relative;
+            clear: both;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-item {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vintage Health Portfolio</h1>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#services">Services</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="portfolio-section" id="about">
+            <div class="portfolio-item">
+                <h3>Mental Wellness</h3>
+                <p>Support for mental health through counseling and resources.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Nutrition Counseling</h3>
+                <p>A personalized approach to help you achieve your wellness goals.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Health Workshops</h3>
+                <p>Engaging workshops focusing on various health topics.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Online Resources</h3>
+                <p>Access a plethora of e-books and materials for health.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Community Support</h3>
+                <p>Find support groups and connect with others on similar journeys.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Fitness Coaching</h3>
+                <p>Tailored fitness plans designed to suit your lifestyle.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vintage Health. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

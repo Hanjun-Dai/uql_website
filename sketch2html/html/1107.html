@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful News Resources</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .hero-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            width: calc(33% - 30px);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            width: 75px;
+            height: 75px;
+            margin-top: 15px;
+        }
+        .card h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin: 15px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffcc00;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Resource Hub</h1>
+    <img src="hero-image.jpg" alt="Hero Image" class="hero-image">
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="icon4.png" alt="Icon 4" class="icon">
+        <h2>Events</h2>
+    </div>
+    <div class="card">
+        <img src="icon2.png" alt="Icon 2" class="icon">
+        <h2>Trending News</h2>
+    </div>
+    <div class="card">
+        <img src="icon6.png" alt="Icon 6" class="icon">
+        <h2>Feedback</h2>
+    </div>
+    <div class="card">
+        <img src="icon1.png" alt="Icon 1" class="icon">
+        <h2>Latest Articles</h2>
+    </div>
+    <div class="card">
+        <img src="icon3.png" alt="Icon 3" class="icon">
+        <h2>Resources</h2>
+    </div>
+    <div class="card">
+        <img src="icon5.png" alt="Icon 5" class="icon">
+        <h2>Contact Us</h2>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Playful News. All Rights Reserved.
+</footer>
+
+</body>
+</html>

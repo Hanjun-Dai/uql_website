@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background: #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            flex: 0 0 30%;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h2 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .service p {
+            color: #666;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            position: relative;
+        }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .service {
+                flex: 0 0 45%;
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Our Health Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="services">
+            <div class="service">
+                <h2>Nutrition Counseling</h2>
+                <p>Expert nutrition advice tailored to your lifestyle.</p>
+            </div>
+            <div class="service">
+                <h2>Fitness Coaching</h2>
+                <p>Personal fitness training sessions to reach your goals.</p>
+            </div>
+            <div class="service">
+                <h2>Mental Health</h2>
+                <p>Support for mental well-being and emotional health.</p>
+            </div>
+            <div class="service">
+                <h2>Consultation</h2>
+                <p>Personalized health consultations with our expert providers.</p>
+            </div>
+            <div class="service">
+                <h2>Follow-Up Care</h2>
+                <p>Comprehensive follow-up services for ongoing support.</p>
+            </div>
+            <div class="service">
+                <h2>Wellness Programs</h2>
+                <p>Structured wellness programs to enhance your health.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

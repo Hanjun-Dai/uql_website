@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .portfolio-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .portfolio-item h3 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin: 0;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        .portfolio-item:hover h3 {
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious Creations</h1>
+        <p>Your favorite food portfolio</p>
+    </header>
+    <div class="container">
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food6" alt="Food Item 6">
+                <h3>Berry Smoothie</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food3" alt="Food Item 3">
+                <h3>Sushi Platter</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food4" alt="Food Item 4">
+                <h3>Grilled Steak</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food1" alt="Food Item 1">
+                <h3>Pasta Primavera</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food5" alt="Food Item 5">
+                <h3>Chocolate Mousse</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://source.unsplash.com/200x200/?food2" alt="Food Item 2">
+                <h3>Caesar Salad</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

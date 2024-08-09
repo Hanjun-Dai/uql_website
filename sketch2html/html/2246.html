@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Category Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed to a lighter gray */
+        }
+
+        header {
+            background: #17a2b8; /* Changed to teal */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #0056b3;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        }
+
+        nav a {
+            color: #f8f9fa; /* Lighter text color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-card {
+            background: #ffffff; /* Remains white */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #28a745; /* Changed to green */
+        }
+
+        .category-card h3 {
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #495057; /* Changed to darker gray */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #343a40; /* Changed to dark gray */
+            color: #ffffff; /* Ensured text is white */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Our Courses</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Courses</a>
+    <a href="#">Contact</a>
+</nav>
+
+<main>
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="images/math.jpg" alt="Mathematics">
+            <h3>Mathematics</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/science.jpg" alt="Science">
+            <h3>Science</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/languages.jpg" alt="Languages">
+            <h3>Languages</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/computer-science.jpg" alt="Computer Science">
+            <h3>Computer Science</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/history.jpg" alt="History">
+            <h3>History</h3>
+        </div>
+        <div class="category-card">
+            <img src="images/art.jpg" alt="Art">
+            <h3>Art</h3>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Â© 2023 Education Website | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

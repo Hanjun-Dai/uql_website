@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Resource Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101010;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #202020;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: #282828;
+            border-radius: 10px;
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #aaaaaa;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #202020;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Game Resources</h1>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="images/resource3.png" alt="Resource 3">
+        <h3>Game Title 3</h3>
+        <p>Helpful tricks and guides</p>
+    </div>
+    <div class="card">
+        <img src="images/resource1.png" alt="Resource 1">
+        <h3>Game Title 1</h3>
+        <p>Quick description or essential guides</p>
+    </div>
+    <div class="card">
+        <img src="images/resource4.png" alt="Resource 4">
+        <h3>Game Title 4</h3>
+        <p>Latest updates and resources</p>
+    </div>
+    <div class="card">
+        <img src="images/resource5.png" alt="Resource 5">
+        <h3>Game Title 5</h3>
+        <p>FAQs and community links</p>
+    </div>
+    <div class="card">
+        <img src="images/resource2.png" alt="Resource 2">
+        <h3>Game Title 2</h3>
+        <p>Top strategies and tips</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Game Website | All rights reserved
+</footer>
+
+</body>
+</html>

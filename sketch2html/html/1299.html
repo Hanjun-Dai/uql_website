@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #28a745;  /* Changed to green */
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .category-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: calc(33% - 40px);
+            margin: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.03);
+        }
+        .category-img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .category-title {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #0069d9;  /* Changed to a blue shade */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #17a2b8;  /* Changed to a teal shade */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Categories</h1>
+</header>
+
+<main>
+    <div class="category-card">
+        <img src="path/to/category1.jpg" alt="Category 1" class="category-img">
+        <div class="category-title">Nutrition</div>
+    </div>
+    <div class="category-card">
+        <img src="path/to/category2.jpg" alt="Category 2" class="category-img">
+        <div class="category-title">Fitness</div>
+    </div>
+    <div class="category-card">
+        <img src="path/to/category3.jpg" alt="Category 3" class="category-img">
+        <div class="category-title">Mental Health</div>
+    </div>
+    <div class="category-card">
+        <img src="path/to/category4.jpg" alt="Category 4" class="category-img">
+        <div class="category-title">Wellness</div>
+    </div>
+    <div class="category-card">
+        <img src="path/to/category5.jpg" alt="Category 5" class="category-img">
+        <div class="category-title">Preventive Care</div>
+    </div>
+    <div class="category-card">
+        <img src="path/to/category6.jpg" alt="Category 6" class="category-img">
+        <div class="category-title">Chronic Conditions</div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2023 HealthCorp. All rights reserved.
+</footer>
+
+</body>
+</html>

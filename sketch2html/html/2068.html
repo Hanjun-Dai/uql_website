@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Health Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #009688;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #e0f7fa;
+            border-radius: 5px;
+        }
+        .faq-item h2 {
+            font-size: 18px;
+            margin: 0;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+        }
+        @media (min-width: 768px) {
+            .faq-item h2:hover {
+                color: #00796b;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const faqItems = document.querySelectorAll('.faq-item h2');
+            faqItems.forEach(item => {
+                item.addEventListener('click', function () {
+                    const answer = this.nextElementSibling;
+                    answer.style.display = answer.style.display === 'none' || answer.style.display === '' ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<main>
+    <div class="faq-item">
+        <h2>How can I contact support?</h2>
+        <div class="answer">You can contact support via our contact page or call our hotline.</div>
+    </div>
+    <div class="faq-item">
+        <h2>What are your consultation hours?</h2>
+        <div class="answer">Our consultation hours are Monday to Friday, 9 AM to 5 PM.</div>
+    </div>
+    <div class="faq-item">
+        <h2>Where can I find health resources?</h2>
+        <div class="answer">Health resources can be found in the 'Resources' section of our website.</div>
+    </div>
+    <div class="faq-item">
+        <h2>Do you offer personalized health plans?</h2>
+        <div class="answer">Yes, we offer personalized health plans tailored to your needs.</div>
+    </div>
+    <div class="faq-item">
+        <h2>What is our main service?</h2>
+        <div class="answer">We provide comprehensive health information and services for wellness.</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Health Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

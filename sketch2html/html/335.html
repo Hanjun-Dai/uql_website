@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            background: #009688;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .service {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .service h2 {
+            margin-bottom: 10px;
+        }
+        .testimonials {
+            background: #eeeeee;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .testimonial {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        .contact {
+            background: white;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .contact h2 {
+            margin-bottom: 15px;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background: #009688;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #00796b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Travel Services</h1>
+    </header>
+
+    <div class="container">
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="services">
+            <div class="service">
+                <h2>Transportation</h2>
+                <p>Flexible options for your travel needs.</p>
+            </div>
+            <div class="service">
+                <h2>Travel Insurance</h2>
+                <p>Secure your trip with comprehensive insurance.</p>
+            </div>
+            <div class="service">
+                <h2>Custom Tours</h2>
+                <p>Explore tour options tailored just for you.</p>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <h2>What Our Clients Say</h2>
+            <blockquote class="testimonial">âAmazing service! I had the best trip of my life.â - Jane D.</blockquote>
+            <blockquote class="testimonial">âHighly recommend! Everything was perfectly organized.â - John S.</blockquote>
+        </section>
+    </div>
+</body>
+</html>

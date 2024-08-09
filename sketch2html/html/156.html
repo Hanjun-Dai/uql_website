@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd; /* Changed background color */
+        }
+
+        header {
+            background-color: #1976d2; /* Changed header background color */
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        nav {
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #ffee58; /* Changed link color */
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            position: relative;
+            color: white;
+        }
+
+        .hero h1 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            font-size: 2.5em;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: #fff8e1; /* Changed card background color */
+            padding: 1rem;
+            margin: 1rem;
+            flex: 1;
+            min-width: calc(33% - 2rem);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Slightly darker shadow */
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #1976d2; /* Changed footer background color */
+            color: #ffe0b2; /* Changed footer text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Parenting Hub</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">Resources</a>
+            <a href="#">Community</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Welcome to Parenting Hub</h1>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <h2>Parenting Tips</h2>
+                <p>Short tips for everyday parenting challenges.</p>
+            </div>
+            <div class="card">
+                <h2>Nutrition Advice</h2>
+                <p>Healthy eating tips for your child's growth.</p>
+            </div>
+            <div class="card">
+                <h2>Community Support</h2>
+                <p>Join our community for shared experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Parenting Hub - All rights reserved</p>
+    </footer>
+</body>
+</html>

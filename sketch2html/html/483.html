@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Categories</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #5A5A5A; /* Changed from #333 to #5A5A5A */
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .category-card {
+            background: #FFF; /* No change */
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+        }
+        .category-name {
+            padding: 15px;
+            font-size: 1.2em;
+            color: #FF5733; /* Changed from #007BFF to #FF5733 */
+        }
+        .category-card:nth-child(2) .category-name {
+            color: #28a745; /* Changed from #007BFF to #28a745 */
+        }
+        .category-card:nth-child(3) .category-name {
+            color: #ffc107; /* Changed from #007BFF to #ffc107 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sports Categories</h1>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="football.jpg" alt="Football">
+                <div class="category-name">Football</div>
+            </div>
+            <div class="category-card">
+                <img src="basketball.jpg" alt="Basketball">
+                <div class="category-name">Basketball</div>
+            </div>
+            <div class="category-card">
+                <img src="baseball.jpg" alt="Baseball">
+                <div class="category-name">Baseball</div>
+            </div>
+            <div class="category-card">
+                <img src="tennis.jpg" alt="Tennis">
+                <div class="category-name">Tennis</div>
+            </div>
+            <div class="category-card">
+                <img src="hockey.jpg" alt="Hockey">
+                <div class="category-name">Hockey</div>
+            </div>
+            <div class="category-card">
+                <img src="golf.jpg" alt="Golf">
+                <div class="category-name">Golf</div>
+            </div>
+            <div class="category-card">
+                <img src="cricket.jpg" alt="Cricket">
+                <div class="category-name">Cricket</div>
+            </div>
+            <div class="category-card">
+                <img src="rugby.jpg" alt="Rugby">
+                <div class="category-name">Rugby</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

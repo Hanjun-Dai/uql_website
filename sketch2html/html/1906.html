@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page - Food Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .error-code {
+            font-size: 100px;
+            font-weight: bold;
+            color: #ff5722;
+        }
+
+        .message {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .suggestion {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .home-button {
+            background-color: #ff5722;
+            color: #ffffff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .home-button:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="suggestion">The page you are looking for might have been removed or is temporarily unavailable.</div>
+        <div class="error-code">404</div>
+        <a href="/" class="home-button">Back to Home</a>
+        <div class="message">Oops! Page Not Found</div>
+    </div>
+
+</body>
+</html>

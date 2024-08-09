@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0056b3;
+            padding: 10px 0;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: #003d80;
+        }
+        .faq-answer {
+            display: none;
+            padding-top: 5px;
+            margin: 0;
+        }
+        .toggle-btn {
+            cursor: pointer;
+            color: #0056b3;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this);">
+                How do I change my booking?
+                <span class="toggle-btn">â¼</span>
+            </div>
+            <div class="faq-answer">
+                You can change your booking by contacting our support team or through your user portal on our website.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this);">
+                Can I bring pets on my trip?
+                <span class="toggle-btn">â¼</span>
+            </div>
+            <div class="faq-answer">
+                Pet policies vary by destination. Please check the specific details for your trip.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this);">
+                What is the cancellation policy?
+                <span class="toggle-btn">â¼</span>
+            </div>
+            <div class="faq-answer">
+                Our cancellation policy allows for free cancellations up to 48 hours before your scheduled departure.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this);">
+                What are the payment options?
+                <span class="toggle-btn">â¼</span>
+            </div>
+            <div class="faq-answer">
+                We accept all major credit cards, PayPal, and bank transfers.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this);">
+                Is travel insurance recommended?
+                <span class="toggle-btn">â¼</span>
+            </div>
+            <div class="faq-answer">
+                Yes, we highly recommend obtaining travel insurance for unforeseen circumstances.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

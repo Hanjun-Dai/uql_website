@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fdf6e3;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #774936;
+        }
+        
+        .testimonial-container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .testimonial {
+            background-color: #fff3e0;
+            border: 1px solid #c3b091;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('quote-icon.png') no-repeat center center;
+            background-size: cover;
+            top: -25px;
+            left: 20px;
+        }
+
+        .author {
+            margin-top: 15px;
+            font-weight: bold;
+            text-align: right;
+            font-style: italic;
+            color: #774936;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>What People Are Saying</h1>
+    
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <p>"A magical experience that left us all laughing and crying!"</p>
+            <p class="author">- Emma L.</p>
+        </div>
+        
+        <div class="testimonial">
+            <p>"Truly a gem of a show! I can't wait to come back again."</p>
+            <p class="author">- Daniel K.</p>
+        </div>
+        
+        <div class="testimonial">
+            <p>"An unforgettable night! The talent was out of this world."</p>
+            <p class="author">- Tom S.</p>
+        </div>
+        
+        <div class="testimonial">
+            <p>"The performances were breathtaking and the atmosphere was electric!"</p>
+            <p class="author">- Lisa W.</p>
+        </div>
+        
+        <div class="testimonial">
+            <p>"A wonderfully entertaining show! Highly recommend to everyone!"</p>
+            <p class="author">- Mark T.</p>
+        </div>
+        
+        <div class="testimonial">
+            <p>"An incredible experience! I loved every minute of it."</p>
+            <p class="author">- Sarah J.</p>
+        </div>
+    </div>
+
+</body>
+</html>

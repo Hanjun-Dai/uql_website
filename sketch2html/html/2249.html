@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Forum</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #4a4a4a; /* Changed text color */
+            line-height: 1.6;
+            margin: 0;
+        }
+        header {
+            background: #006064; /* Changed header background color */
+            color: #ffffff; /* Kept header text color the same */
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        }
+        .main-content {
+            flex: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 30%;
+            padding: 20px;
+            background: #ffffff; /* Changed sidebar background color */
+            border-left: 1px solid #bbb; /* Changed border color */
+        }
+        h2 {
+            border-bottom: 2px solid #006064; /* Changed h2 border color */
+            padding-bottom: 5px;
+        }
+        .category {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #bbb; /* Changed category border color */
+            background-color: #fefefe; /* Changed category background color */
+        }
+        .category:hover {
+            background-color: #e0f2f1; /* Changed hover background color */
+        }
+        .recent-posts {
+            list-style-type: none;
+            padding: 0;
+        }
+        .recent-post {
+            border-bottom: 1px solid #bbb; /* Changed recent post border color */
+            padding: 10px 0;
+        }
+        .recent-post:last-child {
+            border: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #006064; /* Changed footer background color */
+            color: #ffffff; /* Kept footer text color the same */
+            position: relative;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Forum</h1>
+</header>
+
+<div class="container">
+
+    <div class="main-content">
+        <h2>Categories</h2>
+        <div class="category">
+            <h3>Movies</h3>
+            <p>Latest discussions and reviews.</p>
+        </div>
+        <div class="category">
+            <h3>TV Shows</h3>
+            <p>Talk about your favorite series.</p>
+        </div>
+        <div class="category">
+            <h3>Music</h3>
+            <p>Share your favorite tracks and artists.</p>
+        </div>
+        <div class="category">
+            <h3>Games</h3>
+            <p>Discuss the latest releases.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Recent Posts</h2>
+        <ul class="recent-posts">
+            <li class="recent-post"><strong>Post Title 1</strong> - User1</li>
+            <li class="recent-post"><strong>Post Title 2</strong> - User2</li>
+            <li class="recent-post"><strong>Post Title 3</strong> - User3</li>
+            <li class="recent-post"><strong>Post Title 4</strong> - User4</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

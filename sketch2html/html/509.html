@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background-color: #eaeaea;
+            border-radius: 5px;
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            color: #4CAF50;
+            margin: 0;
+        }
+        .article p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports News Today</h1>
+</header>
+
+<nav>
+    <a href="#contact">Contact</a>
+    <a href="#news">Home</a>
+    <a href="#tennis">Tennis</a>
+    <a href="#basketball">Basketball</a>
+    <a href="#football">Football</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Latest Headlines</h3>
+        <ul>
+            <li><a href="#">Star player injured in the last game</a></li>
+            <li><a href="#">New record set in the marathon</a></li>
+            <li><a href="#">Team A wins the championship!</a></li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="article">
+            <h2>Upcoming Events</h2>
+            <p>Don't miss the upcoming sports events this week...</p>
+        </div>
+        <div class="article">
+            <h2>Big Match Highlights</h2>
+            <p>Catch all the highlights from the big match last night...</p>
+        </div>
+        <div class="article">
+            <h2>Player Transfers</h2>
+            <p>Latest updates on player transfers in various leagues...</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports News Today - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

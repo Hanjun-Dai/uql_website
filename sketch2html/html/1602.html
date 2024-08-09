@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        #container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #sidebar {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 1px solid #ddd;
+        }
+        #sidebar h2 {
+            font-size: 1.2em;
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            padding: 10px 0;
+        }
+        #main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        article h2 {
+            color: #333;
+            font-size: 1.5em;
+        }
+        article p {
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automotive News</h1>
+    </header>
+    <div id="container">
+        <aside id="sidebar">
+            <h2>Navigation</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Car Reviews</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div id="main-content">
+            <article>
+                <h2>The Future of Autonomous Driving</h2>
+                <p>Exploring the advancements and challenges in self-driving vehicles.</p>
+            </article>
+            <article>
+                <h2>New Electric Vehicles Launching in 2023</h2>
+                <p>Exciting new electric vehicles set to hit the market this year.</p>
+            </article>
+            <article>
+                <h2>Innovations in Car Safety Technology</h2>
+                <p>A look at the latest advancements in automotive safety features.</p>
+            </article>
+            <article>
+                <h2>Top 10 Cars for Families in 2023</h2>
+                <p>Discover the best family cars available today.</p>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Automotive News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

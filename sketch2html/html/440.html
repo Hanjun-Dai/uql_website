@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful News Blog</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6ec1e4;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #ffeb93;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .main-content {
+            flex: 3;
+            margin-left: 20px;
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .article {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+        .article:last-child {
+            border-bottom: none;
+        }
+        .article h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .article p {
+            font-size: 14px;
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6ec1e4;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content {
+                margin-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Playful News Blog</h1>
+    <p>Your daily dose of fun and facts!</p>
+</header>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>More Fun Stuff</h3>
+        <ul>
+            <li><a href="#">Quizzes</a></li>
+            <li><a href="#">Puzzles</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Contests</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>Fun Facts of the Day</h2>
+            <p>Did you know? Cats have fewer toes on their back paws!</p>
+        </div>
+        <div class="article">
+            <h2>Adventures of a Tiny Explorer</h2>
+            <p>Join us as we follow the journey of a little ant!</p>
+        </div>
+        <div class="article">
+            <h2>Exciting News Update!</h2>
+            <p>Stay tuned for the latest updates in a playful way!</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Playful News Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

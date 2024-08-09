@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #353535;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #454545;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background-color: white;
+            padding: 20px;
+            margin-right: 20px;
+            border: 1px solid #ccc;
+        }
+        .sidebar {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        h2 {
+            border-bottom: 2px solid #353535;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .topic {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .topic:last-child {
+            border-bottom: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #353535;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tech Forum</h1>
+    <p>Your place for tech discussions!</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Help</a>
+    <a href="#">Topics</a>
+    <a href="#">Login</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Additional Links</h2>
+        <ul>
+            <li><a href="#">Community Guidelines</a></li>
+            <li><a href="#">Tech News</a></li>
+            <li><a href="#">Coding Tutorials</a></li>
+            <li><a href="#">Gadget Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Forum Topics</h2>
+        <div class="topic">
+            <h3><a href="#">Best Gadgets of 2023</a></h3>
+            <p>Posted by TechGuru on 2023-10-09</p>
+        </div>
+        <div class="topic">
+            <h3><a href="#">Programming Tips for Beginners</a></h3>
+            <p>Posted by CodeMaster on 2023-10-08</p>
+        </div>
+        <div class="topic">
+            <h3><a href="#">Latest Trends in Technology</a></h3>
+            <p>Posted by User123 on 2023-10-10</p>
+        </div>
+        <div class="topic">
+            <h3><a href="#">Cybersecurity Awareness</a></h3>
+            <p>Posted by SecExpert on 2023-10-07</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Tech Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

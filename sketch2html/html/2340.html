@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Product Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #8e44ad; /* Changed color */
+        }
+
+        .product {
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0;
+            align-items: flex-start;
+        }
+
+        .product-image {
+            flex: 1;
+            max-width: 400px;
+            margin-right: 20px;
+        }
+
+        .product-image img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-details {
+            flex: 2;
+            padding: 10px;
+        }
+
+        .product-details h2 {
+            font-size: 2em;
+            color: #c0392b; /* Changed color */
+        }
+
+        .product-details p {
+            color: #34495e; /* Changed color */
+        }
+
+        .product-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .product-meta .price {
+            font-size: 1.5em;
+            color: #27ae60; /* Changed color */
+        }
+
+        .action-buttons {
+            margin-top: 20px;
+        }
+
+        .action-buttons button {
+            background-color: #d35400; /* Changed color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .action-buttons button:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #34495e; /* Changed color */
+            color: #ecf0f1; /* Changed color */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Latest Products</h1>
+        </header>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/400" alt="Product Image">
+            </div>
+
+            <div class="product-details">
+                <h2>Product Title</h2>
+                <p>A brief description of the product highlighting its key features and benefits.</p>
+                
+                <div class="product-meta">
+                    <span class="price">$99.99</span>
+                    <span class="rating">âââââ</span>
+                </div>
+
+                <div class="action-buttons">
+                    <button>Add to Cart</button>
+                    <button>More Info</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        © 2023 News Website. All Rights Reserved.
+    </footer>
+
+</body>
+</html>

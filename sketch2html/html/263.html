@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Categories</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0077cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #dedede;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            width: calc(33% - 20px);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            padding: 10px;
+            background: #0077cc;
+            color: white;
+            margin: 0;
+        }
+        .card p {
+            padding: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Science Discovery</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">News</a>
+        <a href="#">Categories</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="card">
+        <img src="astronomy.jpg" alt="Astronomy">
+        <h3>Astronomy</h3>
+        <p>Study celestial bodies and the universe.</p>
+    </div>
+    <div class="card">
+        <img src="geology.jpg" alt="Geology">
+        <h3>Geology</h3>
+        <p>Learn about the Earth's structure and processes.</p>
+    </div>
+    <div class="card">
+        <img src="environment.jpg" alt="Environmental Science">
+        <h3>Environmental Science</h3>
+        <p>Analyze interactions between nature and humanity.</p>
+    </div>
+    <div class="card">
+        <img src="biology.jpg" alt="Biology">
+        <h3>Biology</h3>
+        <p>Explore the living world and its processes.</p>
+    </div>
+    <div class="card">
+        <img src="chemistry.jpg" alt="Chemistry">
+        <h3>Chemistry</h3>
+        <p>Discover the substances and their reactions.</p>
+    </div>
+    <div class="card">
+        <img src="physics.jpg" alt="Physics">
+        <h3>Physics</h3>
+        <p>Understand the fundamental forces of nature.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Science Discovery. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

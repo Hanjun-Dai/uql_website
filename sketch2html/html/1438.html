@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Food Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #db3d44;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            flex: 0 0 30%;
+            max-width: 30%;
+            transition: 0.3s;
+        }
+
+        .service-card img {
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+        }
+
+        .service-card h3 {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            margin: 0;
+            background-color: #f2f2f2;
+        }
+
+        .service-card p {
+            padding: 0 15px 15px 15px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .service-card {
+                flex: 0 0 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Culinary Offerings</h1>
+    <nav>
+        <a href="#">Contact</a>
+        <a href="#">About Us</a>
+        <a href="#">Menu</a>
+        <a href="#">Home</a>
+    </nav>
+</header>
+
+<footer>
+    <p>&copy; 2023 Food Website. All rights reserved.</p>
+</footer>
+
+<div class="container">
+    <div class="service-card">
+        <img src="images/service2.jpg" alt="Private Chef">
+        <h3>Private Chef</h3>
+        <p>Enjoy gourmet meals in the comfort of your home.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="images/service1.jpg" alt="Catering Service">
+        <h3>Catering Services</h3>
+        <p>Personalized food catering for any event.</p>
+    </div>
+
+    <div class="service-card">
+        <img src="images/service3.jpg" alt="Cooking Classes">
+        <h3>Cooking Classes</h3>
+        <p>Learn from our expert chefs in hands-on workshops.</p>
+    </div>
+</div>
+
+</body>
+</html>

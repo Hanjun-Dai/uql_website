@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Science Universe</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .faq-container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            width: 80%;
+            max-width: 800px;
+            overflow: hidden;
+        }
+        .faq-header {
+            background: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            border-bottom: 4px solid #357ABD;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: #f0f0f0;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+        }
+        .faq-answer {
+            display: none;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question">How can I get involved in scientific research?</div>
+        <div class="faq-answer">You can get involved by pursuing education in science, volunteering in labs, or joining citizen science projects.</div>
+    </div>
+    <div class="faq-header">Frequently Asked Questions</div>
+    <div class="faq-item">
+        <div class="faq-question">What is science?</div>
+        <div class="faq-answer">Science is the pursuit of knowledge about the natural world through observation and experimentation.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What careers are available in science?</div>
+        <div class="faq-answer">Careers in science include roles in research, education, healthcare, engineering, and many more.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What are the branches of science?</div>
+        <div class="faq-answer">The main branches of science include physics, chemistry, biology, earth science, and astronomy.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How can I stay updated with scientific discoveries?</div>
+        <div class="faq-answer">You can stay updated by following scientific journals, websites, and attending conferences.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-item').forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

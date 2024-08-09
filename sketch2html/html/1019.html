@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Forum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007BFF;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            margin: 0;
+            padding: 10px;
+            background-color: #0056b3;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .forum-header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .forum-list {
+            list-style: none;
+            padding: 0;
+        }
+        .forum-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .forum-item:last-child {
+            border-bottom: none;
+        }
+        .forum-item h2 {
+            margin: 0;
+            font-size: 22px;
+        }
+        .forum-item .meta {
+            font-size: 12px;
+            color: #888;
+        }
+        .forum-item .reply-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007BFF;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .forum-item .reply-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Finance Forum</h1>
+</header>
+
+<div class="container">
+    <div class="forum-header">
+        <a href="#create-topic" class="reply-button">+ New Topic</a>
+        <h1>Latest Discussions</h1>
+    </div>
+
+    <ul class="forum-list">
+        <li class="forum-item">
+            <h2><a href="#topic1">How to Invest in Stocks?</a></h2>
+            <p class="meta">Posted by User123 | 2 replies | 15 Jan 2023</p>
+            <a href="#reply1" class="reply-button">Reply</a>
+        </li>
+        <li class="forum-item">
+            <h2><a href="#topic2">Best Budgeting Apps</a></h2>
+            <p class="meta">Posted by User456 | 5 replies | 14 Jan 2023</p>
+            <a href="#reply2" class="reply-button">Reply</a>
+        </li>
+        <li class="forum-item">
+            <h2><a href="#topic3">Cryptocurrency Trends</a></h2>
+            <p class="meta">Posted by User789 | 10 replies | 13 Jan 2023</p>
+            <a href="#reply3" class="reply-button">Reply</a>
+        </li>
+    </ul>
+</div>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#discussions">Discussions</a>
+    <a href="#create">Create a Topic</a>
+    <a href="#about">About Us</a>
+</nav>
+
+</body>
+</html>

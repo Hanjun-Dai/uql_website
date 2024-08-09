@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Entertainment Forum</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f0e3;
+            color: #4a463d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #6b4f4f;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            border-bottom: 5px solid #3b2a2a;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6b4f4f;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            border-right: 5px dotted #8b765e;
+        }
+        .thread {
+            background-color: #eae6dc;
+            border: 1px solid #8b765e;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6b4f4f;
+            color: white;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Vintage Entertainment Forum
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#music">Music</a>
+        <a href="#tv">TV Shows</a>
+        <a href="#about">About</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Topics</h2>
+            <ul>
+                <li><a href="#action">Action</a></li>
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#comedy">Comedy</a></li>
+                <li><a href="#horror">Horror</a></li>
+            </ul>
+            <h2>Popular Members</h2>
+            <ul>
+                <li>User123</li>
+                <li>User456</li>
+                <li>User789</li>
+            </ul>
+        </aside>
+        <div class="main-content">
+            <h2>Recent Threads</h2>
+            <div class="thread">
+                <h3>Classic TV Series</h3>
+                <p>Let's discuss the best classic TV shows!</p>
+                <span>Posted by User789 on 01/03/2023</span>
+            </div>
+            <div class="thread">
+                <h3>The Golden Age of Cinema</h3>
+                <p>Exploring the iconic films from the 1920s to 1960s...</p>
+                <span>Posted by User123 on 01/01/2023</span>
+            </div>
+            <div class="thread">
+                <h3>Favorite Soundtracks</h3>
+                <p>What are your all-time favorite movie soundtracks?</p>
+                <span>Posted by User456 on 01/02/2023</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Â© 2023 Vintage Entertainment Forum | All rights reserved
+    </footer>
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            font-size: 18px; /* Increased font size */
+        }
+
+        header {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 2rem; /* Increased padding */
+        }
+
+        main {
+            display: flex;
+            margin: 30px; /* Increased margin */
+        }
+
+        .news-cards {
+            flex: 3;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px; /* Increased gap */
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Increased hover effect */
+        }
+
+        .card img {
+            max-width: 100%;
+            height: 300px; /* Increased height */
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px; /* Increased padding */
+            font-size: 16px; /* Increased font size */
+        }
+
+        .sidebar {
+            flex: 1;
+            margin-left: 30px; /* Increased margin */
+        }
+
+        .sidebar h3 {
+            color: #333;
+            font-size: 24px; /* Increased sidebar heading font size */
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px; /* Increased padding */
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px; /* Decreased font size */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 style="font-size: 36px;">Health News Today</h1> <!-- Increased font size -->
+    </header>
+
+    <main>
+        <div class="news-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 1">
+                <div class="card-content">
+                    <h2 style="font-size: 28px;">Latest Health Tips</h2> <!-- Increased font size -->
+                    <p style="font-size: 14px;">Stay healthy with these simple tips!</p> <!-- Decreased font size -->
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 2">
+                <div class="card-content">
+                    <h2 style="font-size: 28px;">Nutrition Awareness</h2> <!-- Increased font size -->
+                    <p style="font-size: 14px;">Understanding the importance of nutrition.</p> <!-- Decreased font size -->
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 3">
+                <div class="card-content">
+                    <h2 style="font-size: 28px;">Mental Wellness</h2> <!-- Increased font size -->
+                    <p style="font-size: 14px;">Tips for improving your mental health.</p> <!-- Decreased font size -->
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200" alt="News Image 4">
+                <div class="card-content">
+                    <h2 style="font-size: 28px;">Fitness Trends 2023</h2> <!-- Increased font size -->
+                    <p style="font-size: 14px;">The latest in fitness and exercise.</p> <!-- Decreased font size -->
+                </div>
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Popular Categories</h3>
+            <ul>
+                <li><a href="#" style="font-size: 16px;">Nutrition</a></li> <!-- Increased font size -->
+                <li><a href="#" style="font-size: 16px;">Exercise</a></li> <!-- Increased font size -->
+                <li><a href="#" style="font-size: 16px;">Mental Health</a></li> <!-- Increased font size -->
+                <li><a href="#" style="font-size: 16px;">Wellness</a></li> <!-- Increased font size -->
+                <li><a href="#" style="font-size: 16px;">Disease Prevention</a></li> <!-- Increased font size -->
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Health News Today | Designed by Health Team</p>
+    </footer>
+    
+</body>
+
+</html>

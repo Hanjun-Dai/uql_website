@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Travel Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f5f5dc; /* Light beige */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('images/rustic-wood-background.jpg');
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000;
+            font-size: 2.5em;
+        }
+
+        nav {
+            background-color: #c0c0c0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .services-container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #d1d1d1;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .service img {
+            max-width: 150px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .service-description {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #c0c0c0;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0; 
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <header>
+        Rustic Travel Services
+    </header>
+
+    <div class="services-container">
+        <h2>Our Services</h2>
+
+        <div class="service">
+            <img src="images/hiking.jpg" alt="Guided Hiking Tours">
+            <div class="service-description">
+                <h3>Guided Hiking Tours</h3>
+                <p>Explore stunning trails with our expert guides.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="images/cabin.jpg" alt="Cabin Escape">
+            <div class="service-description">
+                <h3>Cabin Escapes</h3>
+                <p>Reconnect with nature in our rustic cabins.</p>
+            </div>
+        </div>
+
+        <div class="service">
+            <img src="images/camping.jpg" alt="Camping Adventures">
+            <div class="service-description">
+                <h3>Camping Adventures</h3>
+                <p>Join us for a rustic camping experience under the stars.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Rustic Travel. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

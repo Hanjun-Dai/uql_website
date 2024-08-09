@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0e0e0; /* Changed background color */
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            position: relative;
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2); /* Changed shadow opacity */
+        }
+
+        h1 {
+            font-size: 4em;
+            margin-bottom: 0.5em;
+            color: #E67E22; /* Changed heading color */
+        }
+
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+            color: #666; /* Changed paragraph color */
+        }
+
+        .illustration {
+            margin-top: 20px;
+        }
+
+        .background {
+            background-image: url('https://example.com/background.jpg'); /* Substitute with an actual image URL */
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.4;
+            z-index: -1;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #ecf0f1; /* Changed link text color */
+            background-color: #8E44AD; /* Changed link background color */
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #732D91; /* Changed hover color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div class="container">
+        <h1>404</h1>
+        <p>Oops! Page Not Found</p>
+        <div class="illustration">
+            <!-- Placeholder for illustration, replace with actual image URL -->
+            <img src="https://example.com/illustration.svg" alt="Not Found Illustration" width="150" height="150">
+        </div>
+        <a href="/">Go to Homepage</a>
+    </div>
+
+</body>
+</html>

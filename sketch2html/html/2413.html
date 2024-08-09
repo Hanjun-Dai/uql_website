@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed body background color */
+            color: #333;
+        }
+        header {
+            background: #3e50b4; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed navigation link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .service-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service-card h3 {
+            font-size: 1.5em;
+            padding: 15px;
+            text-align: center;
+            color: #4caf50; /* Changed color of service card titles */
+        }
+        .service-card p {
+            padding: 0 15px 15px;
+            text-align: justify;
+        }
+        footer {
+            background: #3e50b4; /* Changed footer background color */
+            color: #fafafa; /* Changed footer text color */
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fashion Services</h1>
+        <nav>
+            <a href="#design">Design</a>
+            <a href="#styling">Styling</a>
+            <a href="#consulting">Consulting</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="service-card" id="design">
+            <img src="https://via.placeholder.com/300x200" alt="Design Services">
+            <h3>Design Services</h3>
+            <p>Innovative and fashionable design solutions tailored for your style.</p>
+        </div>
+        <div class="service-card" id="styling">
+            <img src="https://via.placeholder.com/300x200" alt="Styling Services">
+            <h3>Styling Services</h3>
+            <p>Personalized styling sessions to enhance your wardrobe and look.</p>
+        </div>
+        <div class="service-card" id="consulting">
+            <img src="https://via.placeholder.com/300x200" alt="Consulting Services">
+            <h3>Fashion Consulting</h3>
+            <p>Expert advice on trends, craftsmanship, and wardrobe management.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fashion Brand. All rights reserved.</p>
+    </footer>
+</body>
+</html>

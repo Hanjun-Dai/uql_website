@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Sports Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #2980b9;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            color: #555;
+        }
+
+        .faq-question:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq-item">
+        <div class="faq-question">Q4: How can I contact customer support?</div>
+        <div class="faq-answer">A4: You can reach our customer support via the 'Contact Us' page on our website.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q3: Do you offer any fitness programs?</div>
+        <div class="faq-answer">A3: Yes, we offer various fitness programs suited for different skill levels.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q1: What sports do you cover?</div>
+        <div class="faq-answer">A1: We cover a wide range of sports including football, basketball, tennis, and more.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q2: How can I buy tickets for events?</div>
+        <div class="faq-answer">A2: Tickets can be purchased directly from the events' pages on our website.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q5: Where can I find the latest sports news?</div>
+        <div class="faq-answer">A5: The latest sports news is available on our home page and news section.</div>
+    </div>
+
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', event => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Listing</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffece1; /* Changed the background color */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #d32f2f; /* Changed the header color */
+            font-size: 2.5em;
+        }
+        .property-card {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Slightly darker shadow */
+            margin: 20px 0;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .property-card:hover {
+            transform: translateY(-5px);
+        }
+        .property-image {
+            max-width: 100%;
+            border-bottom: 5px solid #ff5722; /* Changed border color */
+        }
+        .property-info {
+            padding: 15px;
+        }
+        .property-title {
+            font-size: 1.8em;
+            margin: 0;
+            color: #1976d2; /* Changed the title color */
+        }
+        .property-price {
+            font-size: 1.5em;
+            color: #388e3c; /* Changed the price color */
+            margin: 5px 0;
+        }
+        .property-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .button {
+            background-color: #ff9800; /* Changed button background color */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            flex-grow: 1;
+            margin: 0 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #f57c00; /* Changed hover color for buttons */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Dream Home Awaits!</h1>
+</header>
+
+<div class="property-card">
+    <img src="house.jpg" alt="Lovely House" class="property-image">
+    <div class="property-info">
+        <h2 class="property-title">Charming Bungalow</h2>
+        <p class="property-price">$350,000</p>
+        <p>🏡 3 Beds | 2 Baths | 1,500 sqft</p>
+        <div class="property-buttons">
+            <a href="#" class="button">View Details</a>
+            <a href="#" class="button">Schedule Tour</a>
+        </div>
+    </div>
+</div>
+
+<div class="property-card">
+    <img src="apartment.jpg" alt="Modern Apartment" class="property-image">
+    <div class="property-info">
+        <h2 class="property-title">Sleek City Apartment</h2>
+        <p class="property-price">$450,000</p>
+        <p>🏙️ 2 Beds | 1 Bath | 900 sqft</p>
+        <div class="property-buttons">
+            <a href="#" class="button">View Details</a>
+            <a href="#" class="button">Schedule Tour</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #28a745; /* Changed color */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #ffcc00; /* Changed color */
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about {
+            padding: 20px;
+            text-align: center;
+            background-color: #e2e3e5; /* Changed color */
+        }
+
+        .testimonials {
+            background-color: #17a2b8; /* Changed color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin: 15px;
+            font-style: italic;
+            color: #0056b3; /* Changed color */
+        }
+
+        footer {
+            background-color: #dc3545; /* Changed color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Health Portfolio</h1>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#testimonials">Testimonials</a>
+    </nav>
+</header>
+
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-item">
+        <img src="health_image1.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Short description of the project.</p>
+    </div>
+    <div class="portfolio-item">
+        <img src="health_image2.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Short description of the project.</p>
+    </div>
+    <div class="portfolio-item">
+        <img src="health_image3.jpg" alt="Project 3">
+        <h3>Project Title 3</h3>
+        <p>Short description of the project.</p>
+    </div>
+    <div class="portfolio-item">
+        <img src="health_image4.jpg" alt="Project 4">
+        <h3>Project Title 4</h3>
+        <p>Short description of the project.</p>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Brief overview of professional background.</p>
+</section>
+
+<section id="testimonials" class="testimonials">
+    <h2>What People Say</h2>
+    <div class="testimonial">
+        "This service changed my life!"
+    </div>
+    <div class="testimonial">
+        "Highly recommend for anyone looking for health improvement."
+    </div>
+    <div class="testimonial">
+        "Exceptional results and support."
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Health Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

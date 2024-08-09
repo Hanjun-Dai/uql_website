@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2f4f5;
+        }
+        
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #337ab7;
+            margin-bottom: 20px;
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+        
+        .method {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 200px;
+            transition: transform 0.3s;
+        }
+
+        .method:hover {
+            transform: scale(1.05);
+        }
+
+        .method h3 {
+            color: #5f5f5f;
+        }
+
+        .method p {
+            margin: 10px 0;
+            color: #666;
+        }
+
+        .form-container {
+            margin-top: 40px;
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-container button {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Send us a message</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <h1>Contact Us</h1>
+        
+        <div class="contact-methods">
+            <div class="method">
+                <h3>Email</h3>
+                <p>info@traveladventures.com</p>
+            </div>
+            <div class="method">
+                <h3>Phone</h3>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="method">
+                <h3>Social Media</h3>
+                <p>Follow us: @TravelAdventures</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

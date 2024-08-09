@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifestyle News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed body background color */
+            color: #444; /* Darker text color */
+        }
+
+        header {
+            background-color: #ff7043; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 20px auto;
+        }
+
+        main {
+            flex: 3;
+            padding: 20px;
+            background-color: #fff3e0; /* Changed main background color */
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        aside { /* Corrected 'sidebar' to 'aside' */
+            flex: 1;
+            padding: 20px;
+            background-color: #f1f8e9; /* Changed sidebar background color */
+            border-radius: 8px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h2 {
+            color: #42a5f5; /* Changed article heading color */
+            font-size: 24px;
+        }
+
+        article p {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff7043; /* Changed footer background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            main {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lifestyle News</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Embrace Minimalism: The Art of Living With Less</h2>
+                <p>Discover the joy of decluttering and simplifying your life...</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h2>The Rise of Plant-Based Diets: A Healthier Choice</h2>
+                <p>Learn how adopting a plant-based diet can benefit your health...</p>
+                <a href="#">Read more</a>
+            </article>
+            <article>
+                <h2>Travel Tips for the Modern Explorer</h2>
+                <p>Your ultimate guide to making the most of every adventure...</p>
+                <a href="#">Read more</a>
+            </article>
+        </main>
+        
+        <aside>
+            <h2 style="color: #ab47bc;">Latest Trends</h2> <!-- Changed sidebar heading color -->
+            <ul>
+                <li><a href="#" style="color: #f57f17;">Mindfulness and Meditation</a></li> <!-- Changed list link color -->
+                <li><a href="#" style="color: #f57f17;">Sustainable Fashion</a></li> <!-- Changed list link color -->
+                <li><a href="#" style="color: #f57f17;">Home Gardening Hacks</a></li> <!-- Changed list link color -->
+                <li><a href="#" style="color: #f57f17;">Gourmet Vegan Recipes</a></li> <!-- Changed list link color -->
+            </ul>
+
+            <h2 style="color: #ab47bc;">Follow Us</h2> <!-- Changed follow us heading color -->
+            <p>Stay connected on social media!</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Lifestyle News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

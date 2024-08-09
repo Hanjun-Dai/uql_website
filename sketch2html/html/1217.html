@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background: #ffcc00;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #003366;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #003366;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            margin-right: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .article {
+            margin-bottom: 20px;
+        }
+        .article h2 {
+            margin: 0 0 10px 0;
+        }
+        .sidebar {
+            flex: 1;
+            background: #e2e2e2;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive News</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest News</a>
+    <a href="#">Cars</a>
+    <a href="#">Reviews</a>
+    <a href="#">Features</a>
+</nav>
+
+<div class="container">
+    <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Advertise Here</a></li>
+        </ul>
+    </aside>
+
+    <div class="main-content">
+        <div class="article">
+            <h2>Safety Innovations in 2023</h2>
+            <p>Explore the latest technologies improving vehicle safety.</p>
+        </div>
+        <div class="article">
+            <h2>Electric Vehicles: The Future is Here</h2>
+            <p>Discover the impact of EVs on the traditional auto market.</p>
+        </div>
+        <div class="article">
+            <h2>Latest Car Models Revealed</h2>
+            <p>Experience the thrill of the newest releases in the automotive industry.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Automotive News. All rights reserved.
+</footer>
+
+</body>
+</html>

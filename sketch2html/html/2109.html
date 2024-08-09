@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Entertainment Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed to a lighter gray */
+            margin: 0;
+            color: #444; /* Slightly darker text */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* A bit darker shadow */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2; /* Changed to a blue shade */
+        }
+
+        .testimonial {
+            border-bottom: 1px solid #bbb; /* Changed border to a darker gray */
+            padding: 20px 0;
+        }
+
+        .testimonial:last-child {
+            border-bottom: none;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin: 0;
+            color: #555; /* Changed testimonial text to a mid gray */
+        }
+
+        .testimonial .author {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+            color: #d94e3c; /* Changed author name color to a reddish hue */
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>What Our Guests Say</h1>
+        
+        <div class="grid">
+            <div class="testimonial">
+                <p>"Absolutely loved the show! The atmosphere was electric!"</p>
+                <div class="author">- Jane Doe</div>
+            </div>
+            <div class="testimonial">
+                <p>"A mesmerizing experience that I will never forget."</p>
+                <div class="author">- John Smith</div>
+            </div>
+            <div class="testimonial">
+                <p>"The performances were stellar! Highly recommend!"</p>
+                <div class="author">- Emily Johnson</div>
+            </div>
+            <div class="testimonial">
+                <p>"An unforgettable night filled with amazing talent!"</p>
+                <div class="author">- Michael Brown</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

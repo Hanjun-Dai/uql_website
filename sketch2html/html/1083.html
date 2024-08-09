@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Health Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #343a40;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e9ecef;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.3em;
+            transition: color 0.3s;
+        }
+        .faq-question:hover {
+            color: #007bff;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            font-size: 1em;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Find answers to common health questions</p>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+
+    <div class="faq-container">
+        <div class="faq-item">
+            <h2 class="faq-question">How to contact support?</h2>
+            <div class="faq-answer">You can reach us through the contact form on our website.</div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">What services do we offer?</h2>
+            <div class="faq-answer">We provide a range of health services, including consultations and wellness programs.</div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">What is our privacy policy?</h2>
+            <div class="faq-answer">We value your privacy and adhere to data protection regulations.</div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">How do I book an appointment?</h2>
+            <div class="faq-answer">Booking can be done online via our scheduling portal.</div>
+        </div>
+        <div class="faq-item">
+            <h2 class="faq-question">Are there any subscription fees?</h2>
+            <div class="faq-answer">Our basic services are free, with premium features available via subscription.</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach((item) => {
+            item.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+</body>
+</html>

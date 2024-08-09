@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Talk Forum</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #03a9f4;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin: 10px 0;
+            padding: 10px 0;
+            background-color: #0288d1;
+            border-radius: 5px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .forum-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+            flex-wrap: wrap;
+        }
+        .thread {
+            background-color: white;
+            border: 2px solid #03a9f4;
+            border-radius: 10px;
+            width: 30%;
+            padding: 15px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        .thread:hover {
+            transform: scale(1.02);
+        }
+        .thread h3 {
+            color: #0288d1;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .thread p {
+            margin: 0;
+            font-size: 14px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #03a9f4;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tech Talk Forum</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">New Post</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="forum-container">
+    <div class="thread">
+        <h3>Cybersecurity Tips</h3>
+        <p>Learn how to protect yourself online.</p>
+    </div>
+    <div class="thread">
+        <h3>Gaming News</h3>
+        <p>Get the latest updates in the gaming world.</p>
+    </div>
+    <div class="thread">
+        <h3>Web Development Trends</h3>
+        <p>What’s new in the world of web development?</p>
+    </div>
+    <div class="thread">
+        <h3>Open Source Projects</h3>
+        <p>Collaborate and contribute to amazing projects!</p>
+    </div>
+    <div class="thread">
+        <h3>Latest in AI</h3>
+        <p>Join the conversation about advancements in Artificial Intelligence!</p>
+    </div>
+    <div class="thread">
+        <h3>Gadget Reviews</h3>
+        <p>Check out our latest reviews on the newest gadgets!</p>
+    </div>
+</div>
+
+<footer>
+    © 2023 Tech Talk Forum. All Rights Reserved.
+</footer>
+
+</body>
+</html>

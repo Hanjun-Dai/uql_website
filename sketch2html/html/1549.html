@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playful Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e6f7ff; /* Changed */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: #ff7f50; /* Changed */
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .product-image {
+            flex: 1;
+            max-width: 400px;
+            margin-right: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 2;
+            max-width: 500px;
+            background: #f8f8ff; /* Changed */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-title {
+            font-size: 1.5em;
+            color: #ffa500; /* Changed */
+            margin: 0;
+        }
+
+        .product-price {
+            font-size: 1.3em;
+            color: #dc143c; /* Changed */
+            margin: 10px 0;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .button {
+            background: #7b68ee; /* Changed */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .button:hover {
+            background: #9370db; /* Changed */
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #ff7f50; /* Changed */
+            color: white;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Playful Lifestyle Products
+    </header>
+    <div class="container">
+        <div class="product-image">
+            <img src="your-product-image.jpg" alt="Product Name">
+        </div>
+        <div class="product-details">
+            <h2 class="product-title">Awesome Lifestyle Product</h2>
+            <p class="product-price">$29.99</p>
+            <p>Elevate your daily life with our inspired product!</p>
+            <div class="buttons">
+                <button class="button">Add to Cart</button>
+                <button class="button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Â© 2023 Playful Lifestyle. All rights reserved.
+    </footer>
+</body>
+</html>

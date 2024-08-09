@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f2; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50; /* Changed color to a darker blue */
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .contact-info div {
+            text-align: center;
+        }
+        .contact-info h3 {
+            margin: 10px 0;
+            color: #8e44ad; /* Changed to a purple color */
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+            color: #2980b9; /* Bluer label color */
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #7f8c8d; /* Darker border color */
+            border-radius: 4px;
+            width: 100%;
+        }
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #27ae60; /* Changed button color to green */
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #1e8449; /* Darker green on hover */
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            color: #c0392b; /* Changed social media link color to red */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+        <div>
+            <h3>Email</h3>
+            <p>info@realestate.com</p>
+        </div>
+        <div>
+            <h3>Phone</h3>
+            <p>(123) 456-7890</p>
+        </div>
+        <div>
+            <h3>Location</h3>
+            <p>123 Main St,<br>Anytown, USA</p>
+        </div>
+    </div>
+
+    <form class="contact-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-media">
+        <h3>Follow Us</h3>
+        <a href="#" title="Facebook">F</a>
+        <a href="#" title="Twitter">T</a>
+        <a href="#" title="Instagram">I</a>
+    </div>
+</div>
+
+</body>
+</html>

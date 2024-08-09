@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: #007bff;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            flex: 1 1 calc(30% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+        }
+
+        .service img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .service h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .service p {
+            padding: 0 15px 15px;
+        }
+
+        footer {
+            background: #007bff;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+        }
+
+        @media(max-width: 768px) {
+            .service {
+                flex: 1 1 calc(45% - 20px);
+            }
+        }
+
+        @media(max-width: 480px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Technology Services
+    </header>
+
+    <div class="container">
+        <div class="service">
+            <img src="path/to/image4.jpg" alt="Service 4">
+            <h3>Mobile Apps</h3>
+            <p>Engaging apps for your mobile audience.</p>
+        </div>
+
+        <div class="service">
+            <img src="path/to/image3.jpg" alt="Service 3">
+            <h3>Cybersecurity</h3>
+            <p>Your data, our priority. Protect your digital assets.</p>
+        </div>
+
+        <div class="service">
+            <img src="path/to/image5.jpg" alt="Service 5">
+            <h3>AI Solutions</h3>
+            <p>Implement intelligent solutions for your business.</p>
+        </div>
+
+        <div class="service">
+            <img src="path/to/image1.jpg" alt="Service 1">
+            <h3>Cloud Solutions</h3>
+            <p>Seamlessly integrate and expand your infrastructure.</p>
+        </div>
+
+        <div class="service">
+            <img src="path/to/image2.jpg" alt="Service 2">
+            <h3>Web Development</h3>
+            <p>Innovative web solutions tailored to your needs.</p>
+        </div>
+
+        <div class="service">
+            <img src="path/to/image6.jpg" alt="Service 6">
+            <h3>IT Consulting</h3>
+            <p>Expert advice to navigate your IT landscape.</p>
+        </div>
+    </div>
+
+    <footer>
+        © 2023 Technology Website. All Rights Reserved.
+    </footer>
+</body>
+
+</html>

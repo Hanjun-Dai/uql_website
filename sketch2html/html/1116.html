@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gaming Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #181818;
+            color: #fff;
+        }
+
+        header {
+            background: #3b3b3b; /* Changed color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #e67e22; /* Changed color */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 50px 0;
+        }
+
+        .contact-form, .contact-info {
+            background: #363636; /* Changed color */
+            border-radius: 10px;
+            padding: 20px;
+            width: 45%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form h2, .contact-info h2 {
+            color: #1abc9c; /* Changed color */
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            background: #555; /* Changed color */
+            color: #fff;
+        }
+
+        button {
+            background: #3498db; /* Changed color */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #2980b9; /* Changed color */
+        }
+
+        .icon {
+            font-size: 2em;
+            color: #e67e22; /* Changed color */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
+        .social-icons a:hover {
+            color: #1abc9c; /* Changed color */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form, .contact-info {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <div class="container">
+        <div class="contact-form">
+            <h2>Get in Touch</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p><i class="fas fa-map-marker-alt icon"></i> 123 Gaming St, Game City, USA</p>
+            <p><i class="fas fa-phone-alt icon"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope icon"></i> support@gamingwebsite.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

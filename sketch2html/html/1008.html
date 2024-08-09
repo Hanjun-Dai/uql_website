@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Category Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #bda269;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        main {
+            padding: 20px;
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .category-card {
+            background: #fff2e6;
+            border: 1px solid #bda269;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+        .category-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .category-image {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #bda269;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore History</h1>
+    <p>Delve into the past...</p>
+</header>
+
+<main>
+    <div class="category-container">
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="World Wars" class="category-image">
+            <div class="category-title">World Wars</div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="Modern History" class="category-image">
+            <div class="category-title">Modern History</div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="Renaissance" class="category-image">
+            <div class="category-title">Renaissance</div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="Ancient Artifacts" class="category-image">
+            <div class="category-title">Ancient Artifacts</div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="Medieval History" class="category-image">
+            <div class="category-title">Medieval History</div>
+        </div>
+        <div class="category-card">
+            <img src="https://via.placeholder.com/250" alt="Ancient Civilizations" class="category-image">
+            <div class="category-title">Ancient Civilizations</div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Explore History</p>
+</footer>
+
+</body>
+</html>

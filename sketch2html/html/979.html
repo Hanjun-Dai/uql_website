@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #e0f7fa; /* Changed background color */
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5722; /* Changed header background color */
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #f57f17; /* Changed link color */
+        }
+
+        .forum-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #0d47a1; /* Changed forum title color */
+        }
+
+        .thread {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .thread:last-child {
+            border-bottom: none;
+        }
+
+        .thread-title {
+            font-size: 18px;
+            margin: 0 0 5px;
+            color: #6a1b9a; /* Changed thread title color */
+        }
+
+        .thread-info {
+            font-size: 14px;
+            color: #757575; /* Changed thread info color */
+        }
+
+        .new-thread {
+            margin: 20px 0;
+            text-align: right;
+        }
+
+        .new-thread button {
+            padding: 10px 20px;
+            background-color: #4caf50; /* Changed button background color */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .new-thread button:hover {
+            background-color: #388e3c; /* Changed button hover color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e0e0e0; /* Changed footer background color */
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tech Forum</h1>
+</header>
+
+<div class="container">
+    <nav>
+        <div><a href="#">Home</a> | <a href="#">Topics</a> | <a href="#">Contact</a></div>
+        <div><a href="#">Login</a> | <a href="#">Register</a></div>
+    </nav>
+
+    <div class="forum-title">Latest Discussions</div>
+
+    <div class="new-thread">
+        <button>Create New Thread</button>
+    </div>
+
+    <div class="thread">
+        <div class="thread-title">Discussion on AI advancements</div>
+        <div class="thread-info">Posted by User123 - 1 hour ago</div>
+    </div>
+
+    <div class="thread">
+        <div class="thread-title">Best Programming Languages to Learn in 2024</div>
+        <div class="thread-info">Posted by TechGuru - 2 hours ago</div>
+    </div>
+
+    <div class="thread">
+        <div class="thread-title">Gadgets You Can't Live Without</div>
+        <div class="thread-info">Posted by GadgetFan - 3 hours ago</div>
+    </div>
+
+    <footer>
+        &copy; 2024 Tech Forum. All Rights Reserved.
+    </footer>
+</div>
+
+</body>
+</html>

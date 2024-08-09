@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate News Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px; /* Reduced base font size */
+        }
+
+        .header, .footer {
+            background-color: #0056b3;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px; /* Larger header/footer font size */
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 48px; /* Increased h1 font size */
+        }
+
+        .nav {
+            background-color: #004494;
+            padding: 10px;
+            font-size: 26px; /* Larger nav font size */
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            margin: 0 15px;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px; /* Smaller link font size */
+        }
+
+        .main {
+            display: flex;
+            padding: 20px;
+        }
+
+        .main .left-column {
+            width: 70%;
+            padding-right: 20px;
+            font-size: 18px; /* Increased left column font size */
+        }
+
+        .main .right-column {
+            width: 30%;
+        }
+
+        .article {
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 22px; /* Increased article font size */
+        }
+
+        .article h2 {
+            margin: 0 0 10px;
+            font-size: 36px; /* Larger article headline font size */
+        }
+
+        .article p {
+            margin: 0;
+            font-size: 18px; /* Increased paragraph font size */
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 16px; /* Different sidebar font size */
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 24px; /* Slightly larger footer font size */
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Corporate News</h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#world">World</a></li>
+            <li><a href="#business">Business</a></li>
+            <li><a href="#technology">Technology</a></li>
+            <li><a href="#sports">Sports</a></li>
+            <li><a href="#entertainment">Entertainment</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <div class="left-column">
+            <div class="article">
+                <h2>Latest News Headline</h2>
+                <p>Summary of the news article goes here.</p>
+            </div>
+            <div class="article">
+                <h2>Another News Headline</h2>
+                <p>Summary of the news article goes here.</p>
+            </div>
+            <div class="article">
+                <h2>More News Headline</h2>
+                <p>Summary of the news article goes here.</p>
+            </div>
+        </div>
+        <aside class="right-column">
+            <div class="sidebar">
+                <h3>Trending Articles</h3>
+                <ul>
+                    <li><a href="#trending1">Trending Article 1</a></li>
+                    <li><a href="#trending2">Trending Article 2</a></li>
+                    <li><a href="#trending3">Trending Article 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Corporate News. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

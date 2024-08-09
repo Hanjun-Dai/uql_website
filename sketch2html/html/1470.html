@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            display: flex;
+        }
+
+        .topic-list {
+            width: 70%;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .topic-item {
+            border-bottom: 1px solid #e9ecef;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topic-item:last-child {
+            border-bottom: none;
+        }
+
+        .topic-title {
+            color: #007bff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .add-topic {
+            text-align: right;
+            margin-top: 20px;
+        }
+
+        .user-section {
+            width: 30%;
+            margin-left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-section h3 {
+            margin-top: 0;
+        }
+
+        .message-area {
+            border: 1px solid #e9ecef;
+            background: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #343a40;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive Discussion Forum</h1>
+</header>
+
+<div class="container">
+
+    <div class="user-section">
+        <h3>Recent Users</h3>
+        <ul>
+            <li>User1</li>
+            <li>User2</li>
+            <li>User3</li>
+            <li>User4</li>
+        </ul>
+
+        <h3>Message Area</h3>
+        <div class="message-area">
+            <p>Welcome to the automotive forum! Share your thoughts and connect with fellow car enthusiasts.</p>
+        </div>
+    </div>
+
+    <div class="topic-list">
+        <h2>Latest Topics</h2>
+
+        <div class="topic-item">
+            <a href="#" class="topic-title">Electric Vehicles: The Future?</a>
+            <span>8 replies</span>
+        </div>
+        <div class="topic-item">
+            <a href="#" class="topic-title">Best cars of 2023</a>
+            <span>5 replies</span>
+        </div>
+        <div class="topic-item">
+            <a href="#" class="topic-title">DIY Car Maintenance Tips</a>
+            <span>12 replies</span>
+        </div>
+        <div class="add-topic">
+            <a href="#" class="topic-title">+ Start a New Topic</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Automotive Forum | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 40px; /* Increased padding */
+            text-align: center;
+        }
+        nav {
+            margin: 40px 0; /* Increased margin */
+        }
+        nav a {
+            color: #fff;
+            margin: 0 25px; /* Increased margin */
+            text-decoration: none;
+            font-size: 1.8em; /* Increased font size */
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: auto;
+            padding: 40px; /* Increased padding */
+        }
+        .blog-posts {
+            flex: 3;
+            margin-right: 40px; /* Increased margin */
+        }
+        .post {
+            background: #fff;
+            margin-bottom: 40px; /* Increased margin */
+            padding: 30px; /* Increased padding */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post h2 {
+            font-size: 3em; /* Increased font size */
+        }
+        .post p {
+            color: #666;
+            line-height: 2em; /* Increased line height */
+            font-size: 1.2em; /* Increased font size */
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 30px; /* Increased padding */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h3 {
+            font-size: 2em; /* Increased font size */
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px; /* Increased padding */
+            background: #333;
+            color: #fff;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            font-size: 1.5em; /* Increased font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 4em;">Automotive Insights</h1> <!-- Increased font size -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="blog-posts">
+        <div class="post">
+            <h2>Latest Innovations in Electric Vehicles</h2>
+            <p>Discover the cutting-edge technology that is revolutionizing electric vehicles...</p>
+            <a href="#" style="display:inline-block; margin-top: 20px; font-size: 1.5em;">Read More</a> <!-- Increased font size -->
+        </div>
+        <div class="post">
+            <h2>Top 10 SUVs for 2024</h2>
+            <p>Check out our expert picks for the best SUVs coming this year...</p>
+            <a href="#" style="display:inline-block; margin-top: 20px; font-size: 1.5em;">Read More</a> <!-- Increased font size -->
+        </div>
+        <div class="post">
+            <h2>Maintain Your Vehicle Like a Pro</h2>
+            <p>Simple tips for keeping your car in peak condition through the seasons...</p>
+            <a href="#" style="display:inline-block; margin-top: 20px; font-size: 1.5em;">Read More</a> <!-- Increased font size -->
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Categories</h3>
+        <ul style="font-size: 1.2em;"> <!-- Increased font size -->
+            <li><a href="#">Electric Vehicles</a></li>
+            <li><a href="#">SUVs</a></li>
+            <li><a href="#">Maintenance</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Reviews</a></li>
+        </ul>
+        <h3>Popular Posts</h3>
+        <ul style="font-size: 1.2em;"> <!-- Increased font size -->
+            <li><a href="#">How to Choose the Right Tires</a></li>
+            <li><a href="#">5 Car Hacks Every Driver Should Know</a></li>
+            <li><a href="#">The Future of Autonomous Driving</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>Â© 2023 Automotive Insights. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

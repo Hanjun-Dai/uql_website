@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+
+        .main {
+            flex: 3;
+            margin-right: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .post h2 {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .sidebar h3 {
+            color: #4CAF50;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+       .footer {
+            text-align: center;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main {
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Artistic Finance Blog</h1>
+    <p>Your source for financial wisdom and creativity.</p>
+</header>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>About Us</h3>
+        <p>We are passionate about educating and empowering individuals in their financial journey.</p>
+        <h3>Categories</h3>
+        <ul>
+            <li>Investing</li>
+            <li>Personal Finance</li>
+            <li>Market Trends</li>
+            <li>Economics</li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="post">
+            <h2>Saving for Retirement</h2>
+            <p>Ensure a comfortable future with proper planning.</p>
+        </div>
+        <div class="post">
+            <h2>Understanding Cryptocurrencies</h2>
+            <p>Discover the digital revolution in finance.</p>
+        </div>
+        <div class="post">
+            <h2>Investment Strategies</h2>
+            <p>Maximize your portfolio with smart choices.</p>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Artistic Finance Blog</p>
+</footer>
+
+</body>
+</html>

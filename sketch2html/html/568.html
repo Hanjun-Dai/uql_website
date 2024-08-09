@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Website - Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #00274d;
+            color: #ffffff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056a1;
+            padding: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px; /* Increased font size */
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .category {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            font-size: 2.5em; /* Increased font size */
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px 20px;
+            background-color: #00274d;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px; /* Decreased font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 4em;">History Portal</h1> <!-- Increased font size -->
+    <h2>Your Gateway to the Past</h2>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Categories</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="category">
+        <h2>Ancient Civilizations</h2>
+        <p style="font-size: 0.8em;">Explore the wonders of Ancient Egypt, Greece, and Rome.</p> <!-- Decreased font size -->
+        <a href="#">View More</a>
+    </div>
+    <div class="category">
+        <h2>Middle Ages</h2>
+        <p style="font-size: 0.8em;">Dive into the era of castles, knights, and the dark age.</p> <!-- Decreased font size -->
+        <a href="#">View More</a>
+    </div>
+    <div class="category">
+        <h2>Modern History</h2>
+        <p style="font-size: 0.9em;">Understand the events that shaped the modern world.</p> <!-- Decreased font size -->
+        <a href="#">View More</a>
+    </div>
+    <div class="category">
+        <h2 style="font-size: 2em;">World Wars</h2> <!-- Increased font size -->
+        <p>Review the critical conflicts of the 20th century.</p>
+        <a href="#">View More</a>
+    </div>
+    <div class="category">
+        <h2>Historical Figures</h2>
+        <p style="font-size: 0.7em;">Learn about influential leaders and their impact.</p> <!-- Decreased font size -->
+        <a href="#">View More</a>
+    </div>
+    <div class="category">
+        <h2>Events and Movements</h2>
+        <p style="font-size: 0.9em;">Discover important events that changed nations.</p> <!-- Decreased font size -->
+        <a href="#">View More</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 History Portal. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

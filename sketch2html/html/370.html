@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Hub</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8e1; /* Changed body background color */
+        }
+        header {
+            background: #444; /* Changed header background color */
+            color: #ffeb3b; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed link color in nav */
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('banner-image.jpg') no-repeat center center;
+            background-size: cover;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 960px;
+        }
+        .sidebar {
+            width: 30%;
+            background: #e1f5fe; /* Changed sidebar background color */
+            padding: 15px;
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Slightly altered shadow */
+        }
+        .main {
+            width: 70%;
+            background: #e1bee7; /* Changed main content background color */
+            padding: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Slightly altered shadow */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #444; /* Changed footer background color */
+            color: #ffeb3b; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #8e24aa; /* Added new link color for other links */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entertainment Hub</h1>
+        <nav>
+            <a href="#movies">Movies</a>
+            <a href="#music">Music</a>
+            <a href="#games">Games</a>
+            <a href="#events">Events</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="banner"></div>
+        
+        <div class="content">
+            <div class="sidebar">
+                <h2>Latest News</h2>
+                <ul>
+                    <li><a href="#">Movie Releases</a></li>
+                    <li><a href="#">Concert Announcements</a></li>
+                    <li><a href="#">Game Launches</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <h2>Featured Entertainment</h2>
+                <p>Check out what's trending in movies, music, and games!</p>
+                <h3>Top Movies</h3>
+                <p>Discover the latest blockbuster hits and hidden gems.</p>
+                <h3>New Music</h3>
+                <p>Listen to the hottest tracks and album releases.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Entertainment Hub. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

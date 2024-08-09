@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Travel Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e2e2; /* Changed background color */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #28A745; /* Changed header background color */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .testimonial-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .testimonial-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card h3 {
+            margin: 0;
+            font-size: 1.2em;
+            color: #007BFF; /* Changed heading color */
+        }
+
+        .testimonial-card p {
+            color: #333; /* Changed paragraph color */
+            font-style: italic;
+        }
+
+        .author {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: right;
+            color: #FFA500; /* Changed author color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #444; /* Changed footer background color */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>What Our Travelers Say</h1>
+        <p>Your adventure awaits!</p>
+    </header>
+
+    <div class="container">
+        <div class="testimonial-section">
+            <div class="testimonial-card">
+                <h3>Amazing experience!</h3>
+                <p>"The trip was well organized and absolutely breathtaking. Would recommend to anyone!"</p>
+                <div class="author">- Sarah L.</div>
+            </div>
+
+            <div class="testimonial-card">
+                <h3>Absolutely loved it!</h3>
+                <p>"Every detail was perfect, from the accommodations to the activities."</p>
+                <div class="author">- John D.</div>
+            </div>
+            
+            <div class="testimonial-card">
+                <h3>Highly recommend!</h3>
+                <p>"The tour guides were knowledgeable and friendly. A very enjoyable trip!"</p>
+                <div class="author">- Emily R.</div>
+            </div>
+            
+            <div class="testimonial-card">
+                <h3>Will book again!</h3>
+                <p>"Fabulous experiences that I will cherish forever. Thank you for an amazing journey!"</p>
+                <div class="author">- Mike T.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Travel Company. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

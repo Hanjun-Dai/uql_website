@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Category Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #e5e5e5;
+        }
+        .categories {
+            flex: 3;
+            padding: 20px;
+        }
+        .category {
+            display: inline-block;
+            width: calc(33.333% - 20px);
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            height: auto;
+        }
+        .category-title {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Hub</h1>
+    <p>Your go-to resource for parenting tips and support.</p>
+</header>
+
+<div class="container">
+
+    <div class="categories">
+        <h2>Explore Categories</h2>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Education" alt="Education Tips">
+            <div class="category-title">Education Tips</div>
+        </div>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Child+Development" alt="Child Development">
+            <div class="category-title">Child Development</div>
+        </div>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Newborn+Care" alt="Newborn Care">
+            <div class="category-title">Newborn Care</div>
+        </div>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Parenting+Advice" alt="Parenting Advice">
+            <div class="category-title">Parenting Advice</div>
+        </div>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Discipline" alt="Discipline Strategies">
+            <div class="category-title">Discipline Strategies</div>
+        </div>
+
+        <div class="category">
+            <img src="https://via.placeholder.com/300x200?text=Feeding+%26+Nutrition" alt="Feeding & Nutrition">
+            <div class="category-title">Feeding & Nutrition</div>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h3>Popular Topics</h3>
+        <ul>
+            <li><a href="#education">Education Tips</a></li>
+            <li><a href="#feeding">Feeding & Nutrition</a></li>
+            <li><a href="#development">Child Development</a></li>
+            <li><a href="#newborn-care">Newborn Care</a></li>
+            <li><a href="#discipline">Discipline Strategies</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Hub. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

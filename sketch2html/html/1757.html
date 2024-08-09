@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Haven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('https://www.example.com/hero-image.jpg');
+            height: 300px;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Haven</h1>
+    <nav>
+        <a href="#community">Community</a>
+        <a href="#resources">Resources</a>
+        <a href="#advice">Advice</a>
+        <a href="#activities">Activities</a>
+    </nav>
+</header>
+
+<div class="hero">
+    Welcome to Parenting Haven
+</div>
+
+<div class="content">
+    <div class="card" id="resources">
+        <h2>Helpful Resources</h2>
+        <p>Access articles, videos, and guides.</p>
+    </div>
+    <div class="card" id="community">
+        <h2>Join the Community</h2>
+        <p>Connect with other parents and share experiences.</p>
+    </div>
+    <div class="card" id="advice">
+        <h2>Expert Advice</h2>
+        <p>Get tips and insights from parenting experts.</p>
+    </div>
+    <div class="card" id="activities">
+        <h2>Fun Activities</h2>
+        <p>Discover engaging activities for your children.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Parenting Haven. All rights reserved.
+</footer>
+
+</body>
+</html>

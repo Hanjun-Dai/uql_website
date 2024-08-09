@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Service Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #FF5722;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            margin: 15px 0;
+            color: #FF5722;
+        }
+
+        .service-description {
+            padding: 0 15px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #FF5722;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Our Delicious Services</h1>
+    </header>
+
+    <div class="container">
+        <div class="grid">
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service3.jpg');"></div>
+                <h2 class="service-title">Custom Orders</h2>
+                <p class="service-description">Tailored meals for your needs.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service5.jpg');"></div>
+                <h2 class="service-title">Baking Classes</h2>
+                <p class="service-description">Learn to bake delicious treats.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service1.jpg');"></div>
+                <h2 class="service-title">Catering</h2>
+                <p class="service-description">Delicious food for your events.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service2.jpg');"></div>
+                <h2 class="service-title">Delivery</h2>
+                <p class="service-description">Fresh meals delivered to your door.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service6.jpg');"></div>
+                <h2 class="service-title">Vegan Options</h2>
+                <p class="service-description">Delightful vegan meals available.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-image" style="background-image: url('images/service4.jpg');"></div>
+                <h2 class="service-title">Meal Prep</h2>
+                <p class="service-description">Healthy meals prepared for the week.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Foodie Heaven | Deliciousness Delivered</p>
+    </footer>
+</body>
+
+</html>

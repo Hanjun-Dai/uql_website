@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Lifestyle Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .portfolio-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 10px;
+        }
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .portfolio-item h2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            margin: 0;
+            text-align: center;
+            font-size: 1.5em;
+            transition: transform 0.3s;
+        }
+        .portfolio-item:hover h2 {
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Lifestyle Portfolio</h1>
+    <p>Capturing Moments of Life</p>
+</header>
+
+<div class="portfolio-container">
+    <div class="portfolio-item">
+        <img src="image3.jpg" alt="Lifestyle Image 3">
+        <h2>Moments & Memories</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image1.jpg" alt="Lifestyle Image 1">
+        <h2>Adventure Awaits</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image4.jpg" alt="Lifestyle Image 4">
+        <h2>Chasing Sunsets</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image5.jpg" alt="Lifestyle Image 5">
+        <h2>Nature's Beauty</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image2.jpg" alt="Lifestyle Image 2">
+        <h2>&nbsp;Living in Color</h2>
+    </div>
+    <div class="portfolio-item">
+        <img src="image6.jpg" alt="Lifestyle Image 6">
+        <h2>Serene Escapes</h2>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Lifestyle Website</p>
+</footer>
+
+</body>
+</html>

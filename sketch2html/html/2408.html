@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px; /* Increased padding */
+            text-align: center;
+        }
+        nav {
+            margin: 30px 0; /* Increased margin */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 20px 30px; /* Increased padding */
+            background-color: #444;
+            border-radius: 5px;
+            margin: 0 10px; /* Increased margin */
+            font-size: 1.2em; /* Larger font size */
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .news-section, .sidebar {
+            float: left;
+            width: 70%;
+            padding-right: 20px;
+        }
+        .sidebar {
+            width: 30%;
+        }
+        .news-article {
+            background: #fff;
+            margin: 20px 0;
+            padding: 25px; /* Increased padding */
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .news-article h2 {
+            font-size: 3.0em; /* Much larger font size */
+            margin: 0;
+            color: #333;
+        }
+        .news-article p {
+            color: #666;
+            font-size: 1.2em; /* Slightly larger font size */
+        }
+        .sidebar h3 {
+            background: #333;
+            color: #fff;
+            padding: 20px; /* Increased padding */
+            margin: 0 0 10px;
+            font-size: 2.0em; /* Larger font size */
+        }
+        .sidebar-item {
+            background: #fff;
+            margin-bottom: 15px;
+            padding: 15px; /* Increased padding */
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar-item h4 {
+            font-size: 2.0em; /* Larger font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Automotive News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Latest News</a>
+        <a href="#">Reviews</a>
+        <a href="#">Trending</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="news-section">
+        <div class="news-article">
+            <h2>New Electric Vehicle Launch</h2>
+            <p>Discover the latest advancements in electric vehicles, featuring innovative technology and design.</p>
+        </div>
+        <div class="news-article">
+            <h2>Car Safety Features: What to Look For</h2>
+            <p>Stay informed about must-have safety features in modern cars.</p>
+        </div>
+        <div class="news-article">
+            <h2>Car Maintenance Tips for Winter</h2>
+            <p>Prepare your vehicle for the harsh winter conditions with these essential maintenance tips.</p>
+        </div>
+    </div>
+
+    <aside class="sidebar">
+        <h3>Top Stories</h3>
+        <div class="sidebar-item">
+            <h4>Hybrid Cars: A Growing Trend</h4>
+            <p>A look at the rising popularity of hybrid vehicles.</p>
+        </div>
+        <div class="sidebar-item">
+            <h4>Automotive Tech Innovations</h4>
+            <p>Exploring the cutting-edge technology transforming the car industry.</p>
+        </div>
+        <div class="sidebar-item">
+            <h4>Tips for First-Time Car Buyers</h4>
+            <p>Essential advice for choosing your first car.</p>
+        </div>
+    </aside>
+</div>
+
+<footer>
+    <p style="text-align:center; padding: 30px; font-size: 1.5em;">&copy; 2023 Automotive News</p> <!-- Slightly larger footer font size -->
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Automotive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+        }
+        .container {
+            width: 960px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        header {
+            background: #28a745; /* Changed header background color */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('car-hero.jpg'); /* Placeholder for a car image */
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .about-info {
+            display: flex;
+            gap: 20px;
+        }
+        .about-text {
+            flex: 1;
+        }
+        .team {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .team-member {
+            flex: 0 0 30%;
+            background: #ffc107; /* Changed team member background color */
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #dc3545; /* Changed footer background color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <div class="hero"></div>
+        <div class="content">
+            <div class="about-info">
+                <div class="about-text">
+                    <h2>Who We Are</h2>
+                    <p>Passionate about cars, driven by innovation.</p>
+                    <h2>Our Mission</h2>
+                    <p>To deliver the best automotive experiences and solutions.</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="team-member">
+                    <h3>John Doe</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="team-member">
+                    <h3>Jane Smith</h3>
+                    <p>Lead Engineer</p>
+                </div>
+                <div class="team-member">
+                    <h3>Tom Brown</h3>
+                    <p>Marketing Head</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>&copy; 2023 Automotive Website. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

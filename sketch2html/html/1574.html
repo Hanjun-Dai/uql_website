@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Entertainment Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f7f4e1;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('header-bg.jpg') no-repeat center center/cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+        }
+        nav {
+            background-color: #8b5a2b;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .post {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        .post img {
+            width: 100%;
+            height: auto;
+        }
+        .post-content {
+            padding: 15px;
+        }
+        .post-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #8b5a2b;
+        }
+        .post-excerpt {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        footer {
+            background-color: #8b5a2b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Rustic Entertainment Blog
+</header>
+
+<div class="container">
+    <div class="post">
+        <img src="post2.jpg" alt="Post 2">
+        <div class="post-content">
+            <h2 class="post-title">Top 10 Indie Bands</h2>
+            <p class="post-excerpt">Discover the latest indie bands to follow...</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+    <div class="post">
+        <img src="post3.jpg" alt="Post 3">
+        <div class="post-content">
+            <h2 class="post-title">Behind the Scenes of Filmmaking</h2>
+            <p class="post-excerpt">A look into the art of filmmaking...</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+    <div class="post">
+        <img src="post1.jpg" alt="Post 1">
+        <div class="post-content">
+            <h2 class="post-title">The Charm of Classic Cinema</h2>
+            <p class="post-excerpt">Exploring the timeless appeal of classic films...</p>
+            <a href="#" class="read-more">Read more</a>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Latest</a>
+    <a href="#">Reviews</a>
+    <a href="#">Interviews</a>
+    <a href="#">Contact</a>
+</nav>
+
+<footer>
+    &copy; 2023 Rustic Entertainment Blog
+</footer>
+
+</body>
+</html>

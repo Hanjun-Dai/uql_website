@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vintage News</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9f8f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            max-width: 1024px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        .contact-section {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-element {
+            margin-bottom: 15px;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        textarea {
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            font-size: 1em;
+            background-color: #8b5a2b;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #6f4b3d;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you!</p>
+</header>
+
+<div class="contact-section">
+    <form class="contact-form">
+        <div class="form-element">
+            <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-element">
+            <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-element">
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>Email: contact@vintagenews.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Vintage News. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

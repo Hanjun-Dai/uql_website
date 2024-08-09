@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+        }
+        .forum-list {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .forum-list h2 {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        .forum-item {
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .forum-item:hover {
+            transform: scale(1.02);
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .sidebar h3 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Forum</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Topics</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h3>Join Us</h3>
+        <p>Become a member to participate!</p>
+        <button style="padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Sign Up</button>
+        <h3>Popular Topics</h3>
+        <ul>
+            <li><a href="#">Potty Training</a></li>
+            <li><a href="#">Discipline Strategies</a></li>
+            <li><a href="#">Family Vacations</a></li>
+            <li><a href="#">Choosing a Pediatrician</a></li>
+        </ul>
+    </div>
+
+    <div class="forum-list">
+        <h2>Latest Discussions</h2>
+        <div class="forum-item">
+            <h3>Fun Activities for Kids</h3>
+            <p>What are your favorite games?</p>
+        </div>
+        <div class="forum-item">
+            <h3>Managing Sleep Schedules</h3>
+            <p>Share your experiences.</p>
+        </div>
+        <div class="forum-item">
+            <h3>Tips for New Parents</h3>
+            <p>Join the discussion on best practices.</p>
+        </div>
+        <div class="forum-item">
+            <h3>Nutrition for Toddlers</h3>
+            <p>Healthy meal ideas and tips.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Parenting Forum. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

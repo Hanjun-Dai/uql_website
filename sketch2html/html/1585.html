@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff; /* Changed to a lighter blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #002b5c; /* Darker blue for differentiation */
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #ffcc00; /* Changed link color to a bright yellow */
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .service {
+            background-color: #e9ecef; /* Lighter gray for service cards */
+            border: 1px solid #ced4da; /* Slightly darker border */
+            border-radius: 5px;
+            width: 30%;
+            margin: 10px 0;
+            padding: 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15); /* Increased shadow opacity */
+        }
+        .service h3 {
+            color: #007bff; /* Changed to match the header */
+        }
+        footer {
+            background-color: #002b5c; /* Same as the nav for consistency */
+            color: #ffcc00; /* Changed footer text to yellow */
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Real Estate Services</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#buy">Buy</a></li>
+        <li><a href="#sell">Sell</a></li>
+        <li><a href="#rent">Rent</a></li>
+        <li><a href="#consulting">Consulting</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service" id="buy">
+            <h3>Buying a Home</h3>
+            <p>Find your dream home with our expert agents.</p>
+        </div>
+        <div class="service" id="sell">
+            <h3>Selling Your Property</h3>
+            <p>Maximize your profit with our effective strategies.</p>
+        </div>
+        <div class="service" id="rent">
+            <h3>Renting</h3>
+            <p>Explore rental options that fit your needs.</p>
+        </div>
+        <div class="service" id="consulting">
+            <h3>Real Estate Consulting</h3>
+            <p>Get expert advice to make informed decisions.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Real Estate Company | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

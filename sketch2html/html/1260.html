@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Lifestyle Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #f4f4f4;
+        }
+        header {
+            background: #4A90E2; /* Changed header color */
+            color: #fff;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+        .service-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .service-title {
+            padding: 15px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #D32F2F; /* Changed service title color */
+        }
+        .service-description {
+            padding: 0 15px 15px;
+            text-align: center;
+            color: #7B7B7B; /* Changed service description color */
+        }
+        footer {
+            background: #4A90E2; /* Changed footer color */
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Services</h1>
+</header>
+
+<main class="container">
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service1.jpg');"></div>
+        <div class="service-title">Personal Styling</div>
+        <div class="service-description">Curated outfits for every occasion.</div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service2.jpg');"></div>
+        <div class="service-title">Wellness Coaching</div>
+        <div class="service-description">Guidance for a healthier lifestyle.</div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service3.jpg');"></div>
+        <div class="service-title">Home Organization</div>
+        <div class="service-description">Transform your home into a haven.</div>
+    </div>
+
+    <div class="service-card">
+        <div class="service-image" style="background-image: url('service4.jpg');"></div>
+        <div class="service-title">Fitness Training</div>
+        <div class="service-description">Personalized training plans for you.</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2023 Lifestyle Website</p>
+</footer>
+
+</body>
+</html>

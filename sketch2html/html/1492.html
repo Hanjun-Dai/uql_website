@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background: url('header-bg.jpg') no-repeat center center;
+            height: 300px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .navbar a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 15px;
+        }
+        .content h2 {
+            font-size: 1.5rem;
+            margin: 10px 0 5px;
+        }
+        .content p {
+            color: #555;
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Real Estate Insights</h1>
+        <p>Your guide to property trends and insights</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <img src="property3.jpg" alt="Property 3">
+            <div class="content">
+                <h2>Tips for First-Time Buyers</h2>
+                <p>Essential tips for navigating the property market as a first-time buyer.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property1.jpg" alt="Property 1">
+            <div class="content">
+                <h2>Exploring Luxury Estates</h2>
+                <p>Discover the beauty of luxury estates. From sprawling gardens to architectural masterpieces.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property4.jpg" alt="Property 4">
+            <div class="content">
+                <h2>Investing in Real Estate</h2>
+                <p>Learn the fundamentals of real estate investing and make your money work for you.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="property2.jpg" alt="Property 2">
+            <div class="content">
+                <h2>Market Trends 2023</h2>
+                <p>Stay updated with the latest market trends that are shaping the real estate industry.</p>
+            </div>
+        </div>
+    </main>
+
+    <nav class="navbar">
+        <a href="#">Blog</a>
+        <a href="#">Properties</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Home</a>
+    </nav>
+
+    <footer>
+        <p>&copy; 2023 Real Estate Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

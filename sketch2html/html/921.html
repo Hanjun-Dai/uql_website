@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Politics Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e68c; /* Changed background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0056b3; /* Changed header color */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #666; /* Changed border color */
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px;
+            background-color: #ff5733; /* Changed submit button color */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #c70039; /* Changed hover color */
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #5a5a5a; /* Changed link color */
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+            color: #d63384; /* Changed hover color for links */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="social-links">
+            <p>Follow us on:</p>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://facebook.com">Facebook</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Forum</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f0;
+            color: #4b3d30;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: url('rustic-wood.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #634a3d;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .forum-list {
+            width: 70%;
+            background: white;
+            border: 1px solid #d3b493;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .forum-post {
+            border-bottom: 1px solid #d3b493;
+            padding: 15px;
+        }
+
+        .forum-post:last-child {
+            border-bottom: none;
+        }
+
+        .post-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .post-meta {
+            color: #8c6e59;
+            font-size: 12px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background: #f2e8d8;
+            border: 1px solid #d3b493;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .sidebar h3 {
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #634a3d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Parenting Forum</h1>
+    <nav>
+        <a href="#">Topics</a>
+        <a href="#">Contact</a>
+        <a href="#">Join Us</a>
+        <a href="#">Home</a>
+    </nav>
+</header>
+
+<section>
+    <div class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+        <h3>About Us</h3>
+        <p>We are a community of parents sharing experiences.</p>
+    </div>
+    
+    <div class="forum-list">
+        <div class="forum-post">
+            <h2 class="post-title">School Readiness</h2>
+            <p class="post-meta">Posted by MomOfThree on October 8, 2023</p>
+        </div>
+        <div class="forum-post">
+            <h2 class="post-title">Healthy Snack Ideas</h2>
+            <p class="post-meta">Posted by DadLife on October 9, 2023</p>
+        </div>
+        <div class="forum-post">
+            <h2 class="post-title">Potty Training Tips</h2>
+            <p class="post-meta">Posted by JaneDoe on October 10, 2023</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Parenting Forum. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

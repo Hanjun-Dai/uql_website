@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Resource Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f6f9fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #3e8e41;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        h2 {
+            margin: 1em 0;
+            color: #4CAF50;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .resource-card {
+            background: white;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 15px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+        .icon {
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        footer {
+            background: #eee;
+            border-top: 5px solid #3e8e41;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer-text {
+            color: #666;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health & Happiness</h1>
+        <p>Your go-to resource for a healthy lifestyle!</p>
+    </header>
+
+    <div class="container">
+        <div class="resource-card">
+            <div class="icon">🍽️</div>
+            <h2>Hydration</h2>
+            <p>Stay refreshed!</p>
+        </div>
+        <div class="resource-card">
+            <div class="icon">💪🏻</div>
+            <h2>Sleep</h2>
+            <p>Rest well, live well!</p>
+        </div>
+        <div class="resource-card">
+            <div class="icon">🧠</div>
+            <h2>Nutrition</h2>
+            <p>Eat well, live well!</p>
+        </div>
+        <div class="resource-card">
+            <div class="icon">🏃‍♂️</div>
+            <h2>Mental Health</h2>
+            <p>Your peace matters!</p>
+        </div>
+        <div class="resource-card">
+            <div class="icon">😴</div>
+            <h2>Fitness</h2>
+            <p>Get moving!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">© 2023 Health & Happiness | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

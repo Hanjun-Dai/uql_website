@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef; /* Changed background color */
+        }
+
+        header {
+            background-color: #0056b3; /* Changed header background color */
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2); /* Increased shadow intensity */
+        }
+
+        .portfolio-title {
+            text-align: center;
+            margin: 20px 0;
+            color: #343a40; /* Changed title color */
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            background-color: #f8f9fa; /* Changed item background color */
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.2s;
+            border: 1px solid #dee2e6; /* Added border to items */
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); /* Added shadow on hover */
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #007bff; /* Added border to images */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #0056b3; /* Changed footer background color */
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Finance Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <h2 class="portfolio-title">Featured Projects</h2>
+        <div class="portfolio-grid">
+
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Investment Analysis Tool</h3>
+                <p>Leveraging data for smarter decisions.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Budget Tracker App</h3>
+                <p>Manage your finances effortlessly.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Stock Market Visualization</h3>
+                <p>Visualize trends and insights.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="project4.jpg" alt="Project 4">
+                <h3>Financial Planning Guide</h3>
+                <p>Strategy for future growth.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Finance Portfolio. All rights reserved.
+    </footer>
+
+</body>
+</html>

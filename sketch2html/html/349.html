@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .news-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33% - 20px);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: scale(1.02);
+        }
+        .news-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .news-card h3 {
+            margin: 10px;
+            font-size: 18px;
+        }
+        .news-card p {
+            margin: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0077cc;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Latest Game News</h1>
+</header>
+
+<div class="container">
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 4">
+        <h3>Game Title 4</h3>
+        <p>Short description of news about Game 4.</p>
+    </div>
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 1">
+        <h3>Game Title 1</h3>
+        <p>Short description of news about Game 1.</p>
+    </div>
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 5">
+        <h3>Game Title 5</h3>
+        <p>Short description of news about Game 5.</p>
+    </div>
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 2">
+        <h3>Game Title 2</h3>
+        <p>Short description of news about Game 2.</p>
+    </div>
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 6">
+        <h3>Game Title 6</h3>
+        <p>Short description of news about Game 6.</p>
+    </div>
+    <div class="news-card">
+        <img src="https://via.placeholder.com/300x150" alt="News 3">
+        <h3>Game Title 3</h3>
+        <p>Short description of news about Game 3.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Games Website</p>
+</footer>
+
+</body>
+</html>

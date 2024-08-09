@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Product Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .property-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .details {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .price {
+            font-size: 24px;
+            color: #2c3e50;
+        }
+        .stats {
+            display: flex;
+            align-items: center;
+        }
+        .stat {
+            margin-right: 20px;
+        }
+        .description {
+            margin: 20px 0;
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button-primary {
+            background-color: #3498db;
+            color: white;
+        }
+        .button-secondary {
+            background-color: #ecf0f1;
+            color: #2c3e50;
+        }
+        .button-primary:hover {
+            background-color: #2980b9;
+        }
+        .button-secondary:hover {
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Modern Family Home</h1>
+        </div>
+        <div class="action-buttons">
+            <button class="button button-primary">Contact Agent</button>
+            <button class="button button-secondary">Schedule a Visit</button>
+        </div>
+        <img class="property-image" src="https://via.placeholder.com/900x400" alt="Modern Family Home">
+        <div class="description">
+            <p>Beautifully designed home with spacious interiors and a lovely backyard.</p>
+        </div>
+        <div class="details">
+            <div class="price">$589,000</div>
+            <div class="stats">
+                <div class="stat">3 Beds</div>
+                <div class="stat">2 Baths</div>
+                <div class="stat">1500 sq ft</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

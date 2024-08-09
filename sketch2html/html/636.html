@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Real Estate Landing Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f1d8;
+            color: #3d3d3d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('your-header-image-url.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 0;
+            position: relative;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #3d3d3d;
+            margin: 0 15px;
+            padding: 10px;
+            border: 2px solid #3d3d3d;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #3d3d3d;
+            color: #ffffff;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #c0b8a0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            margin: 20px 0;
+            color: #704a2e;
+        }
+        .property-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .property-item {
+            border: 1px solid #e3d8c6;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .property-item:hover {
+            transform: scale(1.05);
+        }
+        .property-image {
+            width: 100%;
+            height: 180px;
+            background-color: #eae2d5;
+            position: relative;
+        }
+        .property-title {
+            padding: 10px;
+            font-weight: bold;
+            background-color: #f3e8c7;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #704a2e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vintage Homes Realty</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Properties</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <footer>
+        &copy; 2023 Vintage Homes Realty. All Rights Reserved.
+    </footer>
+    <div class="content">
+        <div class="subtitle">Find your dream home with us</div>
+        <h2>Featured Properties</h2>
+        <div class="property-list">
+            <div class="property-item">
+                <div class="property-image" style="background-image: url('property1.jpg');"></div>
+                <div class="property-title">Charming Cottage</div>
+            </div>
+            <div class="property-item">
+                <div class="property-image" style="background-image: url('property2.jpg');"></div>
+                <div class="property-title">Elegant Victorian</div>
+            </div>
+            <div class="property-item">
+                <div class="property-image" style="background-image: url('property3.jpg');"></div>
+                <div class="property-title">Spacious Family Home</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

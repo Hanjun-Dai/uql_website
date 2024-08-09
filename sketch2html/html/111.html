@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Finance Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .error-container {
+            text-align: center;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .error-code {
+            font-size: 60px;
+            font-weight: bold;
+            margin: 0;
+            color: #e74c3c;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 10px 0 20px;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .error-code {
+                font-size: 40px;
+            }
+
+            .error-message {
+                font-size: 18px;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <a href="/" class="btn">Go Back Home</a>
+        <div class="error-message">Oops! Page not found.</div>
+        <div class="error-code">404</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #e0f7fa; /* Changed background to a light teal */
+        }
+        header {
+            background: url('header-image.jpg') no-repeat center center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff; /* Kept color white */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            font-size: 2.5em;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.9); /* Increased opacity for nav background */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Darker shadow */
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00796b; /* Changed link color to a teal shade */
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #004d40; /* Darker teal on hover */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .portfolio-item {
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            width: calc(33.333% - 20px); /* Three items per row */
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Heightened shadow effect */
+        }
+        footer {
+            background: #455a64; /* Changed footer background to a dark shade */
+            color: #ffffff; /* Kept footer text color white */
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Travel Portfolio
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Destinations</a>
+    <a href="#">Gallery</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="portfolio-item">
+        <img src="destination1.jpg" alt="Destination 1">
+    </div>
+    <div class="portfolio-item">
+        <img src="destination2.jpg" alt="Destination 2">
+    </div>
+    <div class="portfolio-item">
+        <img src="destination3.jpg" alt="Destination 3">
+    </div>
+    <div class="portfolio-item">
+        <img src="destination4.jpg" alt="Destination 4">
+    </div>
+    <div class="portfolio-item">
+        <img src="destination5.jpg" alt="Destination 5">
+    </div>
+    <div class="portfolio-item">
+        <img src="destination6.jpg" alt="Destination 6">
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Travel Portfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>

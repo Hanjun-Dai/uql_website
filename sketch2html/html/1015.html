@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Lifestyle Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .faq-question:hover {
+            color: #4CAF50;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 4px;
+            margin-top: 5px;
+        }
+
+        .faq-question.active + .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="faq-item">
+        <div class="faq-question">Can I contribute to the blog?</div>
+        <div class="faq-answer">Yes! We welcome guest posts. Please contact us through the contact form.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What is Lifestyle?</div>
+        <div class="faq-answer">Lifestyle is a way of living, encompassing habits, behaviors, and attitudes.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How can I contact customer support?</div>
+        <div class="faq-answer">You can reach out through our contact page for any inquiries.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">What topics do you cover?</div>
+        <div class="faq-answer">We cover a variety of lifestyle topics, including health, fashion, travel, and wellness.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question">How do I subscribe to the newsletter?</div>
+        <div class="faq-answer">You can subscribe by entering your email at the bottom of any page.</div>
+    </div>
+</div>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<script>
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            question.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

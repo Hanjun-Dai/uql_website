@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Resource Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #e2dedb; /* Changed background color */
+            color: #5b3e2d;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('https://example.com/rustic-header.jpg') no-repeat center center;
+            background-size: cover;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7); /* Adjusted text shadow */
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #8b5b29; /* Changed header text color */
+        }
+        nav {
+            background-color: #5a5e3e; /* Changed nav background color */
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fce8d5; /* Changed link color */
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #3e5b2d; /* Changed hover background color */
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #d2c2bc; /* Changed card background color */
+            border: 1px solid #8b5b29; /* Changed card border color */
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Adjusted shadow */
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-title {
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            background-color: #5a5e3e; /* Changed card title background color */
+            color: #f8f4e3; /* Changed card title text color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Entertainment Resources</h1>
+    </header>
+    <nav>
+        <a href="#movies">Movies</a>
+        <a href="#music">Music</a>
+        <a href="#games">Games</a>
+        <a href="#books">Books</a>
+    </nav>
+    <div class="container">
+        <div class="card" id="movies">
+            <img src="https://example.com/movies.jpg" alt="Movies">
+            <div class="card-title">Movies</div>
+        </div>
+        <div class="card" id="music">
+            <img src="https://example.com/music.jpg" alt="Music">
+            <div class="card-title">Music</div>
+        </div>
+        <div class="card" id="games">
+            <img src="https://example.com/games.jpg" alt="Games">
+            <div class="card-title">Games</div>
+        </div>
+        <div class="card" id="books">
+            <img src="https://example.com/books.jpg" alt="Books">
+            <div class="card-title">Books</div>
+        </div>
+    </div>
+</body>
+</html>

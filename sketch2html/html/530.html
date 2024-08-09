@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Resource Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #2c3e50;
+            color: white;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            width: 260px;
+            margin: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+        .card p {
+            margin: 0 15px 15px;
+            color: #7f8c8d;
+        }
+        .card a {
+            display: inline-block;
+            text-decoration: none;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+        .card a:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Resource Hub</h1>
+    <p>Your ultimate source for sports resources</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Health & Wellness">
+        <h2>Health & Wellness</h2>
+        <p>Tips for mental and emotional well-being.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Nutrition Tips">
+        <h2>Nutrition Tips</h2>
+        <p>Find out how to fuel your body for peak performance.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Events & Competitions">
+        <h2>Events & Competitions</h2>
+        <p>Stay updated on upcoming sports events.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Expert Articles">
+        <h2>Expert Articles</h2>
+        <p>Read insights from sports professionals.</p>
+        <a href="#">Learn More</a>
+    </div>
+    
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Fitness Gear">
+        <h2>Fitness Gear</h2>
+        <p>Discover the latest sports gear and equipment.</p>
+        <a href="#">Learn More</a>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/260x140" alt="Training Resources">
+        <h2>Training Resources</h2>
+        <p>Explore guides, drills, and training plans.</p>
+        <a href="#">Learn More</a>
+    </div>
+</div>
+
+</body>
+</html>

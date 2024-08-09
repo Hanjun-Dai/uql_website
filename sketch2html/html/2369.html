@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa; /* Changed background color */
+        }
+        header {
+            background-color: #1e88e5; /* Changed header background color */
+            color: #ffffff; /* Changed header text color */
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffeb3b; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            max-width: 1024px;
+            margin: auto;
+        }
+        .content {
+            flex: 3;
+            padding: 20px;
+            background-color: #ffffff; /* Kept background color same */
+            margin-right: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        }
+        .sidebar {
+            flex: 1;
+            padding: 20px;
+            background-color: #f3e5f5; /* Changed sidebar background color */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #4a148c; /* Changed footer background color */
+            color: white;
+            margin-top: 20px;
+        }
+        .article {
+            border-bottom: 1px solid #bbb; /* Changed border color */
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .article h2 {
+            color: #d32f2f; /* Changed article titles color */
+        }
+        .article p {
+            color: #424242; /* Changed article paragraph color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Game News</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Latest News</a>
+            <a href="#">Reviews</a>
+            <a href="#">Features</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="article">
+                <h2>Exciting New Game Release!</h2>
+                <p>The latest game is hitting the shelves this Friday. Get ready for adventure!</p>
+            </div>
+            <div class="article">
+                <h2>Game Update: New Features</h2>
+                <p>Check out the amazing new features added in the latest update!</p>
+            </div>
+            <div class="article">
+                <h2>Top 10 Games of the Year</h2>
+                <p>Find out which games made our top 10 list this year!</p>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <h3>Most Popular</h3>
+            <ul>
+                <li><a href="#">Game 1</a></li>
+                <li><a href="#">Game 2</a></li>
+                <li><a href="#">Game 3</a></li>
+                <li><a href="#">Game 4</a></li>
+                <li><a href="#">Game 5</a></li>
+            </ul>
+            <h3>Upcoming Releases</h3>
+            <ul>
+                <li><a href="#">Game A</a></li>
+                <li><a href="#">Game B</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2023 Game News | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #004080;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #004080;
+            padding-bottom: 10px;
+        }
+        .forum-list {
+            margin: 20px 0;
+        }
+        .forum-item {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .forum-item:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sports Forum</h1>
+    <nav>
+        <a href="#">Profile</a>
+        <a href="#">Home</a>
+        <a href="#">Topics</a>
+        <a href="#">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="forum-list">
+        <div class="forum-item">
+            <h3>General Sports Talk</h3>
+            <p>Last reply: 1 week ago</p>
+        </div>
+        <div class="forum-item">
+            <h3>Team Discussions</h3>
+            <p>Last reply: 1 day ago</p>
+        </div>
+        <div class="forum-item">
+            <h3>Latest Sports News</h3>
+            <p>Last reply: 2 hours ago</p>
+        </div>
+        <div class="forum-item">
+            <h3>Upcoming Events</h3>
+            <p>Last reply: 5 hours ago</p>
+        </div>
+        <div class="forum-item">
+            <h3>Player Highlights</h3>
+            <p>Last reply: 3 days ago</p>
+        </div>
+    </div>
+
+    <div class="forum-header">
+        <h2>Discussion Topics</h2>
+        <button>Create New Topic</button>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2023 Sports Forum. All rights reserved.</p>
+</div>
+
+</body>
+</html>

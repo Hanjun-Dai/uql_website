@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Real Estate Category</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://example.com/wood-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #4e4e4e;
+            font-size: 0.8em; /* Smaller body font size */
+        }
+        header {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d6d6d6;
+        }
+        h1 {
+            font-size: 4em; /* Much larger font size for the header */
+            color: #5d3a1d;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .property-card {
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            flex: 1 1 calc(30% - 40px);
+            min-width: 250px;
+            max-width: 300px;
+        }
+        .property-img {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-info {
+            padding: 15px;
+        }
+        .property-title {
+            font-weight: bold;
+            font-size: 0.8em; /* Smaller property title size */
+            color: #5d3a1d;
+        }
+        .property-price {
+            font-size: 0.6em; /* Much smaller price font size */
+            color: #c67a54;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer p {
+            font-size: 1.5em; /* Larger footer text size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Rustic Dream Home</h1>
+</header>
+
+<div class="container">
+    <div class="property-card">
+        <img src="https://example.com/property1.jpg" alt="Property 1" class="property-img">
+        <div class="property-info">
+            <div class="property-title">Charming Cabin</div>
+            <div class="property-price">$150,000</div>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="https://example.com/property2.jpg" alt="Property 2" class="property-img">
+        <div class="property-info">
+            <div class="property-title">Countryside Cottage</div>
+            <div class="property-price">$245,000</div>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="https://example.com/property3.jpg" alt="Property 3" class="property-img">
+        <div class="property-info">
+            <div class="property-title">Luxury Villa</div>
+            <div class="property-price">$1,200,000</div>
+        </div>
+    </div>
+    <div class="property-card">
+        <img src="https://example.com/property4.jpg" alt="Property 4" class="property-img">
+        <div class="property-info">
+            <div class="property-title">Historic Farmhouse</div>
+            <div class="property-price">$380,000</div>
+        </div>
+    </div>
+    <!-- Add more properties as needed -->
+</div>
+
+<footer>
+    <p>Â© 2023 Rustic Real Estate. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

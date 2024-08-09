@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops! Page Not Found</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9fce5;
+            color: #5b5b5b;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff8e1;
+            border: 2px dashed #ffd54f;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 500px;
+        }
+        .error-code {
+            font-size: 120px; /* Increased font size */
+            font-weight: bold;
+            color: #f44336;
+        }
+        .food-img {
+            width: 100px;
+            margin: 20px 0;
+        }
+        .message {
+            font-size: 10px; /* Decreased font size */
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #ffd54f;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #ffca28;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="error-code">404</div>
+        <img src="https://via.placeholder.com/100" alt="Food item" class="food-img">
+        <div class="message">Oops! Food not found.</div>
+        <button class="btn" onclick="window.location.href='/'">Go To Menu</button>
+    </div>
+</body>
+</html>

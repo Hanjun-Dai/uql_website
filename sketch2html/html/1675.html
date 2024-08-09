@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Arts Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-bottom: 2px solid #ccc;
+        }
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin: 0;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .faq-item {
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            background: #e74c3c;
+            color: white;
+            font-size: 1.5em;
+            padding: 15px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #c0392b;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            font-size: 1.2em;
+            background: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">Do you offer workshops?</div>
+        <div class="faq-answer">Yes, we offer a range of workshops throughout the year. Check our events page for updates.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">How can I contact customer support?</div>
+        <div class="faq-answer">You can contact customer support via our contact form or by emailing support@artswebsite.com.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">How can I submit my artwork?</div>
+        <div class="faq-answer">You can submit your artwork through our submission portal located on the homepage.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">What is the mission of the arts website?</div>
+        <div class="faq-answer">Our mission is to promote art and culture through various projects and collaborations.</div>
+    </div>
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">Is there a membership program?</div>
+        <div class="faq-answer">Yes, we have a membership program that provides exclusive benefits. Visit the membership page for details.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

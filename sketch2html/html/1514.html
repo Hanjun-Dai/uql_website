@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Automotive Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            cursor: pointer;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0;
+            color: #666;
+        }
+        .question:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="question">Do you offer warranties on your services?</div>
+        <div class="answer">Yes, we provide warranties on our services to ensure your peace of mind.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What payment methods do you accept?</div>
+        <div class="answer">We accept all major credit cards, cash, and financing options.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">How do I contact customer support?</div>
+        <div class="answer">You can reach our customer support team via email or through the contact form on our website.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What types of vehicles do you service?</div>
+        <div class="answer">We service all makes and models of cars, trucks, and SUVs.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What services do you offer?</div>
+        <div class="answer">We offer a full range of automotive services including repairs, maintenance, and diagnostics.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">How can I schedule an appointment?</div>
+        <div class="answer">You can schedule an appointment online through our website or by calling our service center.</div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.question').forEach(item => {
+        item.addEventListener('click', event => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>

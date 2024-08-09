@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page Not Found</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e8f5e9; /* Changed background color */
+            color: #444; /* Changed font color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Changed shadow opacity */
+            border-radius: 8px;
+        }
+        .error-code {
+            font-size: 72px;
+            font-weight: 700;
+            color: #e67e22; /* Changed error code color */
+            margin: 0;
+        }
+        .error-message {
+            font-size: 18px;
+            margin: 10px 0 20px;
+            color: #555; /* Changed error message color */
+        }
+        .back-home {
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: 700;
+            color: #fff;
+            background-color: #8e44ad; /* Changed button background color */
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .back-home:hover {
+            background-color: #732d91; /* Changed button hover color */
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="path/to/your/logo.png" alt="Company Logo" />
+        </div>
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! Page Not Found.</p>
+        <a href="/" class="back-home">Go Back Home</a>
+    </div>
+</body>
+</html>

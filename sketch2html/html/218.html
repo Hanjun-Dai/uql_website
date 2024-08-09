@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            font-size: 12px; /* Smaller body font size */
+        }
+        header {
+            background-color: #ff6347;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-size: 30px; /* Larger header font size */
+        }
+        nav {
+            margin: 20px 0;
+            font-size: 20px; /* Larger nav font size */
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .post {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.2s;
+            font-size: 16px; /* Slightly larger post font size */
+        }
+        .post:hover {
+            transform: scale(1.05);
+        }
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .post h3 {
+            color: #ff6347;
+            font-size: 28px; /* Larger post title font size */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6347;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px; /* Slightly larger footer font size */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vroom Vroom Blog!</h1>
+    <nav>
+        <a href="#news">News</a>
+        <a href="#reviews">Car Reviews</a>
+        <a href="#tips">Driving Tips</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="post">
+        <img src="car_blog_1.jpg" alt="Car post image">
+        <h3>Top 10 Cars of 2023</h3>
+        <p>Discover the best rides this year!</p>
+    </div>
+
+    <div class="post">
+        <img src="car_blog_2.jpg" alt="Car post image">
+        <h3>Electric Dreams</h3>
+        <p>Why EVs are taking over the roads.</p>
+    </div>
+
+    <div class="post">
+        <img src="car_blog_3.jpg" alt="Car post image">
+        <h3>Maintenance Tips 101</h3>
+        <p>Keep your ride in top shape!</p>
+    </div>
+
+    <div class="post">
+        <img src="car_blog_4.jpg" alt="Car post image">
+        <h3>Adventurous Road Trips</h3>
+        <p>Pack the bag and hit the road!</p>
+    </div>
+
+    <div class="post">
+        <img src="car_blog_5.jpg" alt="Car post image">
+        <h3>Classic Cars Revival</h3>
+        <p>Explore timeless beauties!</p>
+    </div>
+
+    <div class="post">
+        <img src="car_blog_6.jpg" alt="Car post image">
+        <h3>Car Tech Innovations</h3>
+        <p>Future tech in today's cars!</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Vroom Vroom Blog. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

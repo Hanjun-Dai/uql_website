@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arts Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5em; /* Changed larger */
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .sidebar {
+            width: 20%;
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .main {
+            width: 75%;
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .thread {
+            border-bottom: 1px solid #eaeaea;
+            padding: 10px 0;
+        }
+        .thread:last-child {
+            border-bottom: none;
+        }
+        .thread-title {
+            font-size: 2.4em; /* Changed larger */
+            font-weight: bold;
+            color: #333;
+        }
+        .thread-info {
+            color: #999;
+            font-size: 1.1em; /* Changed larger */
+        }
+        .post-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 1.5em; /* Changed larger */
+            text-decoration: none;
+        }
+        .post-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="font-size: 2.5em;">Arts Forum</h1> <!-- Changed larger -->
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Categories</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2 style="font-size: 2em;">Categories</h2> <!-- Changed larger -->
+        <ul>
+            <li><a href="#" style="font-size: 1.7em;">Visual Arts</a></li> <!-- Changed larger -->
+            <li><a href="#" style="font-size: 1.7em;">Performing Arts</a></li> <!-- Changed larger -->
+            <li><a href="#" style="font-size: 1.7em;">Literature</a></li> <!-- Changed larger -->
+            <li><a href="#" style="font-size: 1.7em;">Music</a></li> <!-- Changed larger -->
+            <li><a href="#" style="font-size: 1.7em;">Film</a></li> <!-- Changed larger -->
+        </ul>
+    </div>
+
+    <div class="main">
+        <h2 style="font-size: 2em;">Latest Threads</h2> <!-- Changed larger -->
+        <div class="thread">
+            <a href="#" class="thread-title">Exploring Abstract Art</a>
+            <p class="thread-info">Posted by User123 on Oct 10, 2023</p>
+        </div>
+        <div class="thread">
+            <a href="#" class="thread-title">The Future of Theatre</a>
+            <p class="thread-info">Posted by Artist456 on Oct 9, 2023</p>
+        </div>
+        <div class="thread">
+            <a href="#" class="thread-title">Music in Contemporary Films</a>
+            <p class="thread-info">Posted by Composer789 on Oct 8, 2023</p>
+        </div>
+        <a href="#" class="post-button">Start a New Thread</a>
+    </div>
+</div>
+
+</body>
+</html>

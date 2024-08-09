@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 2em;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background: #fff;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .sidebar {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .news-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .news-item img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .news-title {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .news-excerpt {
+            color: #666;
+        }
+        .sidebar h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .sidebar-item {
+            margin-bottom: 15px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .main-content {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Fashion News Today
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300" alt="Style Tips">
+                <div class="news-title">5 Style Tips for Every Occasion</div>
+                <div class="news-excerpt">Find out how to style your outfits effortlessly...</div>
+            </div>
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300" alt="Designer Spotlight">
+                <div class="news-title">Designer Spotlight: Jane Doe</div>
+                <div class="news-excerpt">An exclusive look into her innovative collection...</div>
+            </div>
+            <div class="news-item">
+                <img src="https://via.placeholder.com/300" alt="Fashion Trend 1">
+                <div class="news-title">Fashion Trend 2023: Whatâs In</div>
+                <div class="news-excerpt">Explore the top trends dominating 2023...</div>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <h2>Latest Videos</h2>
+            <div class="sidebar-item">DIY Fashion Hacks</div>
+            <div class="sidebar-item">Runway Highlights</div>
+            <h2>Trending</h2>
+            <div class="sidebar-item">Street Style 2023</div>
+            <div class="sidebar-item">Red Carpet Styles</div>
+            <div class="sidebar-item">Sustainable Fashion</div>
+        </aside>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Foodie Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f7ff; /* Light blue */
+            color: #444; /* Darker gray */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2); /* Slightly darker shadow */
+        }
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #FF4500; /* OrangeRed */
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd; /* Softer gray for border */
+            padding: 10px 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            padding: 10px;
+            transition: background 0.3s;
+            color: #006400; /* DarkGreen */
+        }
+        .faq-question:hover {
+            background: #f7f7f7; /* Very light gray */
+        }
+        .faq-answer {
+            display: none;
+            padding: 10px 0;
+            line-height: 1.4;
+            color: #333; /* Default color */
+        }
+        .toggle-icon {
+            float: right;
+            transition: transform 0.3s;
+            color: #007bff; /* Bootstrap primary color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            What types of food do you offer?
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+            We offer a variety of cuisines including Italian, Chinese, and Indian dishes.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            How do I place an order?
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+            You can place an order directly via our website or mobile app.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            Do you offer delivery?
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+            Yes, we provide delivery services in select areas. Check your zip code upon checkout.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            What payment methods do you accept?
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+            We accept all major credit cards, PayPal, and more.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">
+            Can I modify my order?
+            <i class="fas fa-chevron-down toggle-icon"></i>
+        </div>
+        <div class="faq-answer">
+            Yes, you can modify your order within a limited timeframe before it is processed.
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const answer = item.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            const icon = item.querySelector('.toggle-icon');
+            icon.style.transform = icon.style.transform === 'rotate(180deg)' ? 'rotate(0deg)' : 'rotate(180deg)';
+        });
+    });
+</script>
+
+</body>
+</html>

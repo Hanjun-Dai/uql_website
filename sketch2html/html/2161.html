@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Health Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #28a745; /* Changed color */
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .testimonial {
+            border-left: 5px solid #17a2b8; /* Changed color */
+            padding-left: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            position: relative;
+        }
+        .testimonial::before {
+            content: '“'; /* Fixed character */
+            font-size: 3em;
+            color: #17a2b8; /* Changed color */
+            position: absolute;
+            left: -15px;
+            top: -20px;
+        }
+        .author {
+            font-weight: bold;
+            text-align: right;
+            margin-top: 10px;
+            color: #6c757d; /* Changed color */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #6c757d; /* Changed color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>What Our Clients Say</h1>
+    
+    <div class="testimonial">
+        <p>"Thanks to the amazing support, I feel healthier than ever!"</p>
+        <div class="author">- Jane D.</div>
+    </div>
+
+    <div class="testimonial">
+        <p>"The advice and resources provided have transformed my life."</p>
+        <div class="author">- John S.</div>
+    </div>
+
+    <div class="testimonial">
+        <p>"A wonderful experience with friendly staff and expert guidance."</p>
+        <div class="author">- Emily R.</div>
+    </div>
+
+    <div class="testimonial">
+        <p>"I highly recommend their services for anyone looking to improve their health."</p>
+        <div class="author">- Robert T.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Health Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

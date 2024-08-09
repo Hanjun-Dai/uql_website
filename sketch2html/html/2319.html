@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #444; /* Changed text color */
+            background-color: #f0f9ff; /* Changed background color */
+        }
+        header {
+            background-color: #2980b9; /* Changed header background color */
+            color: #ecf0f1; /* Changed header text color */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ecf0f1; /* Changed link color */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .main {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #d7dbd3; /* Changed sidebar background color */
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .post {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #ffffff; /* Retained original post background for readability */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Increased shadow opacity */
+        }
+        .post img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #2980b9; /* Changed footer background color */
+            color: #ecf0f1; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Entertainment Buzz</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Music</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Celebrities</a>
+    </nav>
+</header>
+
+<div class="container">
+    <main class="main">
+        <div class="post">
+            <img src="movie-poster.jpg" alt="Movie Poster">
+            <h2>Latest Movie Release: Blockbuster Hit</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="music-album.jpg" alt="Music Album">
+            <h2>New Music Album Drops: Chart Topper</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="post">
+            <img src="tv-show.jpg" alt="TV Show">
+            <h2>Must-Watch TV Shows This Month</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <h3>Latest Updates</h3>
+        <ul>
+            <li><a href="#">Celebrity Scandal!</a></li>
+            <li><a href="#">Top 10 Movies to Watch</a></li>
+            <li><a href="#">Breaking News in Music</a></li>
+            <li><a href="#">What to Expect: Upcoming Shows</a></li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2023 Entertainment Buzz. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

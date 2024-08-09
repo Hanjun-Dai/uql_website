@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Entertainment Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .faq-item {
+            margin: 15px 0;
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .faq-item:hover {
+            background: #f9f9f9;
+        }
+        .faq-question {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer {
+            padding: 15px;
+            display: none;
+            background: #f9f9f9;
+            border-radius: 0 0 8px 8px;
+        }
+        .icon {
+            font-size: 20px;
+            transition: transform 0.3s;
+        }
+        .active .icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+    
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>How can I subscribe?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>You can subscribe through our website or mobile app.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>What devices can I use to watch?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>You can use smart TVs, smartphones, tablets, and computers.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>Can I cancel my subscription anytime?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>Yes, you can cancel your subscription anytime in the settings.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>What is our streaming service about?</span>
+            <span class="icon">â¼</span>
+        </div>
+        <div class="faq-answer">
+            <p>We offer a wide range of movies and shows for your entertainment.</p>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        element.parentNode.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Travel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('https://example.com/hero-image.jpg'); /* Add your travel image here */
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero h2 {
+            font-size: 2em;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: calc(33% - 20px);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            padding: 10px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #004080;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elegant Travel</h1>
+    <nav>
+        <a href="#">Applications</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Destinations</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://example.com/destination3.jpg" alt="Destination 3">
+        <h3>Cultural Explorations</h3>
+    </div>
+    <div class="card">
+        <img src="https://example.com/destination1.jpg" alt="Destination 1">
+        <h3>Beautiful Beaches</h3>
+    </div>
+    <div class="card">
+        <img src="https://example.com/destination2.jpg" alt="Destination 2">
+        <h3>Mountain Escapes</h3>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Discover Your Next Adventure</h2>
+</div>
+
+<footer>
+    &copy; 2023 Elegant Travel. All Rights Reserved.
+</footer>
+
+</body>
+</html>

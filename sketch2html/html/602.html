@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #3c8dbc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #3c8dbc;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+        .service {
+            background: #eef;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            flex: 1 1 calc(30% - 20px);
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service img {
+            max-width: 100%;
+            border-radius: 5px;
+            height: 120px; /* Fixed height for uniformity */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Real Estate Services</h1>
+</header>
+
+<div class="container">
+    <div class="services">
+        <div class="service">
+            <img src="images/marketing.jpg" alt="Marketing">
+            <h3>Marketing</h3>
+            <p>Proven strategies to market your property.</p>
+        </div>
+        <div class="service">
+            <img src="images/management.jpg" alt="Management">
+            <h3>Property Management</h3>
+            <p>Comprehensive management for your investments.</p>
+        </div>
+        <div class="service">
+            <img src="images/consultation.jpg" alt="Consultation">
+            <h3>Consultation</h3>
+            <p>Expert advice on buying and selling properties.</p>
+        </div>
+    </div>
+    <h2>Why Choose Us?</h2>
+</div>
+
+<footer>
+    <p>&copy; 2023 Realty Company. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

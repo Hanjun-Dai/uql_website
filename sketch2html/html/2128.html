@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Forum</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 48px; /* Changed from 24px to 48px */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px; /* Increased font size */
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .forum-header h1 {
+            margin: 0;
+            font-size: 32px; /* Changed from default to 32px */
+        }
+
+        .forum-post {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+        }
+
+        .forum-post:last-child {
+            border-bottom: none;
+        }
+
+        .post-title {
+            font-size: 36px; /* Changed from 18px to 36px */
+            margin: 0;
+            color: #4CAF50;
+        }
+
+        .post-info {
+            font-size: 8px; /* Decreased from 12px to 8px */
+            color: #777;
+        }
+
+        .post-content {
+            margin: 5px 0;
+            font-size: 16px; /* Increased size */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 14px; /* Increased size from default */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Game Forum
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#latest">Latest</a>
+        <a href="#popular">Popular</a>
+        <a href="#forum">Forum</a>
+    </nav>
+
+    <div class="container">
+        <div class="forum-header">
+            <h1>Discussions</h1>
+            <a href="#new_post" style="background-color: #4CAF50; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; font-size: 20px;">New Post</a> <!-- Also increased font size -->
+        </div>
+
+        <div class="forum-post">
+            <h2 class="post-title">Game Release Discussion</h2>
+            <p class="post-info">Posted by User123 on Oct 1, 2023</p>
+            <p class="post-content">Discuss the latest game releases here!</p>
+        </div>
+
+        <div class="forum-post">
+            <h2 class="post-title">Best Strategies in RPGs</h2>
+            <p class="post-info">Posted by GamerGal on Sep 28, 2023</p>
+            <p class="post-content">Share your tips and strategies for RPG games.</p>
+        </div>
+
+        <div class="forum-post">
+            <h2 class="post-title">Upcoming Events</h2>
+            <p class="post-info">Posted by EventMaster on Sep 20, 2023</p>
+            <p class="post-content">Don't miss our upcoming gaming events!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Â© 2023 Game Forum - All Rights Reserved
+    </footer>
+
+</body>
+
+</html>

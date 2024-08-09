@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #0073e6;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .post h2 {
+            font-size: 2rem;
+            margin: 0;
+        }
+        .post p {
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #0073e6;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Business Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Welcome to Our Blog</h1>
+</section>
+
+<div class="container">
+    <article class="post">
+        <h2>Blog Post Title 2</h2>
+        <p>Short summary of the blog post goes here. Engage your readers with a catchy description.</p>
+    </article>
+    <article class="post">
+        <h2>Blog Post Title 3</h2>
+        <p>Short summary of the blog post goes here. Engage your readers with a catchy description.</p>
+    </article>
+    <article class="post">
+        <h2>Blog Post Title 1</h2>
+        <p>Short summary of the blog post goes here. Engage your readers with a catchy description.</p>
+    </article>
+    <article class="post">
+        <h2>Blog Post Title 4</h2>
+        <p>Short summary of the blog post goes here. Engage your readers with a catchy description.</p>
+    </article>
+</div>
+
+<footer>
+    <p>&copy; 2023 My Business. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

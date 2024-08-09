@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Website Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            font-size: 18px; /* Larger base font size */
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px; /* Increased font size for header */
+        }
+        nav {
+            margin: 20px 0;
+            font-size: 20px; /* Slightly larger for nav */
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 20px; /* Larger font size for nav links */
+        }
+        .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            font-size: 16px; /* Set default size for items */
+        }
+        .portfolio-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+            font-size: 18px; /* Increased font size for portfolio items */
+        }
+        .portfolio-item:hover {
+            transform: scale(1.05);
+        }
+        .portfolio-item img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            width: 100%;
+        }
+        .portfolio-item h3 {
+            margin: 15px 0 5px;
+            font-size: 24px; /* Larger title font size */
+        }
+        .portfolio-item p {
+            color: #666;
+            padding: 0 15px 20px;
+            font-size: 16px; /* Slightly smaller for description text */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-size: 16px; /* Maintain footer font size */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health Portfolio</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="portfolio-container">
+        <div class="portfolio-item">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project Title 1</h3>
+            <p>Short description of the project or service offered.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project Title 2</h3>
+            <p>Short description of the project or service offered.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project3.jpg" alt="Project 3">
+            <h3>Project Title 3</h3>
+            <p>Short description of the project or service offered.</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="project4.jpg" alt="Project 4">
+            <h3>Project Title 4</h3>
+            <p>Short description of the project or service offered.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

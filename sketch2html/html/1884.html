@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Travel Service</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #e1f5f0; /* Changed background color */
+            color: #4a3b2a; /* Changed text color */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a3b2a; /* Changed header background color */
+            color: #f0e1d5; /* Changed header text color */
+        }
+        h1 {
+            font-size: 36px;
+            margin: 0;
+            text-shadow: 1px 1px 0px #f0e1d5; /* Updated shadow color */
+        }
+        .nav {
+            margin: 10px 0;
+        }
+        .nav a {
+            color: #f0e1d5; /* Updated color for nav links */
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service {
+            background-color: #f2e2b6; /* Changed service background color */
+            border: 1px solid #4a3b2a; /* Updated border color */
+            border-radius: 10px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            padding: 15px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* Slightly darker shadow */
+            transition: transform 0.2s;
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4a3b2a; /* Changed footer background color */
+            color: #f0e1d5; /* Changed footer text color */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Vintage Travel Co.</h1>
+        <nav class="nav">
+            <a href="#destinations">Destinations</a>
+            <a href="#tours">Tours</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="service" id="destinations">
+            <img src="images/destination.jpg" alt="Beautiful Destination">
+            <h2>Explore Destinations</h2>
+            <p>Your adventure begins here!</p>
+        </div>
+        <div class="service" id="tours">
+            <img src="images/tour.jpg" alt="Guided Tours">
+            <h2>Guided Tours</h2>
+            <p>Experience the best with our expert guides.</p>
+        </div>
+        <div class="service" id="packages">
+            <img src="images/package.jpg" alt="Travel Packages">
+            <h2>Travel Packages</h2>
+            <p>Custom packages that suit your needs.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Vintage Travel Co. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

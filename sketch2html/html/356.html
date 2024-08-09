@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1024x300') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .property-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .property {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            width: calc(33% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .property img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .property-info {
+            padding: 15px;
+        }
+        .property-info h2 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .property-info .price {
+            color: #e74c3c;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .property {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .property {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Find Your Dream Home</h1>
+</header>
+
+<div class="container">
+    <h2>Featured Listings</h2>
+    <div class="property-list">
+        <div class="property">
+            <img src="https://via.placeholder.com/300x200" alt="Property 3">
+            <div class="property-info">
+                <h2>Luxurious Villa</h2>
+                <p class="price">$900,000</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="https://via.placeholder.com/300x200" alt="Property 1">
+            <div class="property-info">
+                <h2>Modern Apartment</h2>
+                <p class="price">$350,000</p>
+            </div>
+        </div>
+        <div class="property">
+            <img src="https://via.placeholder.com/300x200" alt="Property 2">
+            <div class="property-info">
+                <h2>Spacious House</h2>
+                <p class="price">$450,000</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="hero">
+    <h1>Your Reliable Real Estate Partner</h1>
+</div>
+
+<footer>
+    <p>&copy; 2023 Your Realty Company. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

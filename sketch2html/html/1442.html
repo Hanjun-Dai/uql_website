@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials | History Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .testimonial {
+            border-left: 4px solid #007BFF;
+            padding-left: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .testimonial::before {
+            content: "â";
+            font-size: 50px;
+            color: #007BFF;
+            position: absolute;
+            top: -20px;
+            left: -30px;
+        }
+        .author {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .author img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .author h4 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .author p {
+            margin: 0;
+            font-size: 14px;
+            color: #777;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 20px;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Testimonials</h1>
+        <div class="testimonial">
+            <p>"Incredible resource! I found information that helped me with my research projects."</p>
+            <div class="author">
+                <img src="https://via.placeholder.com/50" alt="Author">
+                <div>
+                    <h4>John Smith</h4>
+                    <p>College Student</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"The history website enriched my understanding of world events. A must-visit for history enthusiasts!"</p>
+            <div class="author">
+                <img src="https://via.placeholder.com/50" alt="Author">
+                <div>
+                    <h4>Jane Doe</h4>
+                    <p>History Teacher</p>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial">
+            <p>"A fantastic website that presents history in an engaging way. Highly recommend!"</p>
+            <div class="author">
+                <img src="https://via.placeholder.com/50" alt="Author">
+                <div>
+                    <h4>Alice Williams</h4>
+                    <p>Freelance Historian</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

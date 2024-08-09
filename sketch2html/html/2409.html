@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4A90E2; /* changed */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav {
+            background-color: #007ACC; /* changed */
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #FFFFCC; /* changed */
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .service-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+            color: #007ACC; /* changed */
+        }
+        .service-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            background-color: #d0e8f2; /* changed */
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 30%; /* This allows responsive behavior */
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .service-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4A90E2; /* changed */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Travel Services</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#flights">Flights</a></li>
+        <li><a href="#hotels">Hotels</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#car-rental">Car Rental</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h2 class="service-title">Explore Our Services</h2>
+    <div class="service-grid">
+        <div class="service-item" id="flights">
+            <img src="flight-icon.png" alt="Flights">
+            <h3>Book Flights</h3>
+            <p>Find the best air fare for your trip.</p>
+        </div>
+        <div class="service-item" id="hotels">
+            <img src="hotel-icon.png" alt="Hotels">
+            <h3>Hotel Reservations</h3>
+            <p>Secure your stay with great deals.</p>
+        </div>
+        <div class="service-item" id="tours">
+            <img src="tours-icon.png" alt="Tours">
+            <h3>Custom Tours</h3>
+            <p>Plan tailored tours for unique experiences.</p>
+        </div>
+        <div class="service-item" id="car-rental">
+            <img src="car-icon.png" alt="Car Rental">
+            <h3>Car Rentals</h3>
+            <p>Rent a car for your convenience.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Travel Agency. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

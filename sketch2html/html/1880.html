@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Arts Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2c3e50; /* Changed color */
+            color: #ecf0f1; /* Changed color */
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #e74c3c; /* Changed color */
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffd700; /* Changed color */
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            width: calc(33% - 20px);
+            margin-bottom: 20px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Changed shadow opacity */
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            background: #2980b9; /* Changed color */
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Artistry</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <h1>Explore the World of Art</h1>
+    </div>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="art1.jpg" alt="Artwork 1"> <!-- Replace with your image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="art2.jpg" alt="Artwork 2"> <!-- Replace with your image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="art3.jpg" alt="Artwork 3"> <!-- Replace with your image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="art4.jpg" alt="Artwork 4"> <!-- Replace with your image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="art5.jpg" alt="Artwork 5"> <!-- Replace with your image path -->
+        </div>
+        <div class="gallery-item">
+            <img src="art6.jpg" alt="Artwork 6"> <!-- Replace with your image path -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Artistry. All rights reserved.</p>
+    </footer>
+</body>
+</html>

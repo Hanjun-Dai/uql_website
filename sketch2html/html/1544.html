@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Travel Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Changed body background color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #007acc; /* Changed header background color */
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .faq-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .faq-item {
+            background-color: #ffffff; /* Kept as is */
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin: 15px 0;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .faq-item h2 {
+            background-color: #5e6d90; /* Changed h2 background color */
+            color: #ffcc00; /* Changed h2 text color */
+            margin: 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 24px;
+        }
+
+        .faq-item p {
+            padding: 15px;
+            margin: 0;
+            display: none; /* Hide answer initially */
+        }
+
+        .faq-item.active p {
+            display: block; /* Show answer when active */
+            background-color: #f7f7f7; /* Added background color for active state */
+        }
+
+        /* Icon styles */
+        .icon {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-left: 10px;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .icon {
+            transform: rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Frequently Asked Questions</h1>
+</header>
+
+<div class="faq-container">
+    <div class="faq-item">
+        <h2>
+            What are the cancellation policies?
+            <img class="icon" src="arrow-icon.png" alt="Toggle Icon">
+        </h2>
+        <p>Cancellation policies vary by service. Please review the terms during booking or contact support.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>
+            How do I change my booking?
+            <img class="icon" src="arrow-icon.png" alt="Toggle Icon">
+        </h2>
+        <p>You can change your booking via the 'Manage Booking' section on our website or app.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>
+            What payment methods are accepted?
+            <img class="icon" src="arrow-icon.png" alt="Toggle Icon">
+        </h2>
+        <p>We accept major credit cards, debit cards, and PayPal. More details during checkout.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>
+            Is travel insurance recommended?
+            <img class="icon" src="arrow-icon.png" alt="Toggle Icon">
+        </h2>
+        <p>Yes, travel insurance is highly recommended to cover unexpected events and emergencies.</p>
+    </div>
+
+    <div class="faq-item">
+        <h2>
+            Do I need a visa to travel?
+            <img class="icon" src="arrow-icon.png" alt="Toggle Icon">
+        </h2>
+        <p>Visa requirements depend on your nationality and destination. Please check government websites.</p>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq-item h2').forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

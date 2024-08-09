@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fashion Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('header-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .intro, .team {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .intro p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .team h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .team-member {
+            display: inline-block;
+            width: 30%;
+            margin: 1%;
+            background: #eee;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+        .team-member img {
+            width: 80%;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #f4f4f4;
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    
+    <div class="container">
+        <div class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <img src="team-member2.jpg" alt="Team Member 2">
+                <h3>John Smith</h3>
+                <p>Stylist</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member1.jpg" alt="Team Member 1">
+                <h3>Jane Doe</h3>
+                <p>Fashion Designer</p>
+            </div>
+            <div class="team-member">
+                <img src="team-member3.jpg" alt="Team Member 3">
+                <h3>Alice Johnson</h3>
+                <p>Creative Director</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <p>Welcome to our world of fashion!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Fashion Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

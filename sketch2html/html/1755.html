@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Education Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; /* Changed from #f4f4f4 to a lighter blue */
+            margin: 0;
+            padding: 20px;
+            color: #444; /* Changed from #333 to #444 */
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #ff6600; /* Changed from #0066cc to orange */
+            margin-bottom: 30px;
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: white;
+            border: 2px solid #ff6600; /* Changed from #0066cc to match h1 color */
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+        }
+        .faq-question {
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background 0.3s;
+        }
+        .faq-question:hover {
+            background: #ff6600; /* Changed background on hover from #0066cc to orange */
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f9ff; /* Added light background to answers */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">What subjects do you offer?</div>
+            <div class="faq-answer">We offer a variety of subjects including Math, Science, Literature, and Arts.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I enroll?</div>
+            <div class="faq-answer">You can enroll through our website's registration page.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Are there any prerequisites?</div>
+            <div class="faq-answer">Most courses do not have prerequisites, but some advanced courses may require prior knowledge.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What are the timings of the classes?</div>
+            <div class="faq-answer">Classes are available in the morning and evening to accommodate various schedules.</div>
+        </div>
+    </div>
+
+    <script>
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>

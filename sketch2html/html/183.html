@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+            font-size: 0.8rem; /* Smaller font size for body text */
+        }
+
+        header {
+            background: #005f73; /* Deep teal header */
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 3rem; /* Larger font size for header */
+        }
+
+        nav {
+            margin: 10px 0;
+            font-size: 1.5rem; /* Larger font size for nav */
+        }
+        
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 4rem; /* Much larger font size for hero text */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 1200px;
+            padding: 20px;
+            font-size: 1rem; /* Changing container font size */
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 1.2rem; /* Larger font size for sections */
+        }
+
+        .featured-articles, .resources {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background: #e9d8a6; /* Soft beige */
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 30%; /* Flexbox for card layout */
+            min-width: 250px; /* Ensures they don't shrink too much */
+            font-size: 1rem; /* Smaller font size for card content */
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #666;
+            font-size: 0.9rem; /* Smaller font size for footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Science Hub</h1>
+        <nav>
+            <a href="#articles">Articles</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Explore the Wonders of Science</h2>
+    </div>
+
+    <div class="container">
+        <section id="articles" class="section">
+            <h3>Featured Articles</h3>
+            <div class="featured-articles">
+                <div class="card">
+                    <h4>Article Title 1</h4>
+                    <p>Abstract of the article goes here.</p>
+                </div>
+                <div class="card">
+                    <h4>Article Title 2</h4>
+                    <p>Abstract of the article goes here.</p>
+                </div>
+                <div class="card">
+                    <h4>Article Title 3</h4>
+                    <p>Abstract of the article goes here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="section">
+            <h3>Useful Resources</h3>
+            <div class="resources">
+                <div class="card">
+                    <h4>Resource 1</h4>
+                    <p>Short description.</p>
+                </div>
+                <div class="card">
+                    <h4>Resource 2</h4>
+                    <p>Short description.</p>
+                </div>
+                <div class="card">
+                    <h4>Resource 3</h4>
+                    <p>Short description.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Science Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>

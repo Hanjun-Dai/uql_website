@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustic Science Homepage</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f7f4e9;
+            margin: 0;
+            padding: 0;
+            color: #4b3c26;
+        }
+
+        header {
+            background: url('header-bg.jpg') no-repeat center center;
+            background-size: cover;
+            height: 200px;
+            text-align: center;
+            color: white;
+            padding: 60px 0;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #855E42;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .section {
+            background-color: #ffffff;
+            border: 2px solid #d6c5ab;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 calc(30% - 20px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #855E42;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exploratorium</h1>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Space Wonders</h2>
+        <img src="space.jpg" alt="Space Wonders">
+        <p>Discover the mysteries of the universe.</p>
+    </div>
+
+    <div class="section">
+        <h2>Nature Insights</h2>
+        <img src="nature.jpg" alt="Nature Insights">
+        <p>Explore the science behind nature.</p>
+    </div>
+
+    <div class="section">
+        <h2>Biology Breakthroughs</h2>
+        <img src="biology.jpg" alt="Biology Breakthroughs">
+        <p>Understand life's intricate processes.</p>
+    </div>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#research">Research</a></li>
+    </ul>
+</nav>
+
+<footer>
+    <p>&copy; 2023 Exploratorium. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

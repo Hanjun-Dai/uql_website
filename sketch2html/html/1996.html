@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - SportsZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            font-size: 18px; /* Increased base font size */
+        }
+        header {
+            text-align: center;
+            background: #3cba54;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 2.5em; /* Increased header size */
+        }
+        h1 {
+            margin: 0;
+            font-size: 4em; /* Significantly increased H1 size */
+        }
+        .faq-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        .faq {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0; /* Increased padding for FAQ items */
+            transition: background 0.3s;
+            font-size: 1.2em; /* Slightly larger font for FAQ items */
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq:hover {
+            background: #e7f3fe;
+            cursor: pointer;
+        }
+        .faq-title {
+            font-size: 3em; /* Significantly increased font size */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-icon {
+            font-size: 2em; /* Increased icon size */
+            transition: transform 0.3s;
+        }
+        .faq-content {
+            display: none;
+            padding: 20px 0; /* Increased padding for content */
+            font-size: 0.8em; /* Decreased FAQ content font size */
+        }
+        .faq.active .faq-content {
+            display: block;
+        }
+        .faq.active .faq-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SportsZone FAQ</h1>
+    <p>Your questions, answered!</p>
+</header>
+
+<div class="faq-container">
+    <div class="faq">
+        <div class="faq-title">
+            <span>What sports do you cover?</span>
+            <i class="faq-icon fas fa-angle-down"></i>
+        </div>
+        <div class="faq-content">
+            <p>We cover a variety of sports including football, basketball, tennis, and more!</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-title">
+            <span>How can I join the community?</span>
+            <i class="faq-icon fas fa-angle-down"></i>
+        </div>
+        <div class="faq-content">
+            <p>Join our community by signing up for a free account and participating in discussions!</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-title">
+            <span>Do you have events?</span>
+            <i class="faq-icon fas fa-angle-down"></i>
+        </div>
+        <div class="faq-content">
+            <p>Yes! We organize various sports events throughout the year. Check our events page for details.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-title">
+            <span>Can I submit my sports news?</span>
+            <i class="faq-icon fas fa-angle-down"></i>
+        </div>
+        <div class="faq-content">
+            <p>Absolutely! Just head over to our 'Submit News' page and share your updates!</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-title">
+            <span>Contact Us</span>
+            <i class="faq-icon fas fa-angle-down"></i>
+        </div>
+        <div class="faq-content">
+            <p>You can reach us at contact@sportszone.com!</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.faq').forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Resources</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #ff6347; /* Tomato color */
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .resource-card {
+            background-color: #ffffff;
+            border: 2px solid #ff6347; /* Tomato color */
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .resource-card:hover {
+            transform: scale(1.05);
+        }
+        .resource-card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .resource-card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .resource-card p {
+            color: #777;
+            padding: 0 10px;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Food Resources
+</header>
+
+<div class="container">
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 4">
+        <h3>Food Safety</h3>
+        <p>Learn how to keep your food safe and fresh.</p>
+    </div>
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 3">
+        <h3>Cooking Tips</h3>
+        <p>Enhance your culinary skills with our tips.</p>
+    </div>
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 6">
+        <h3>Cooking Classes</h3>
+        <p>Join our live cooking classes and master new dishes.</p>
+    </div>
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 2">
+        <h3>Nutrition Facts</h3>
+        <p>Find out more about the foods you eat.</p>
+    </div>
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 5">
+        <h3>Seasonal Foods</h3>
+        <p>Discover what’s in season and when.</p>
+    </div>
+    <div class="resource-card">
+        <img src="https://via.placeholder.com/200" alt="Resource 1">
+        <h3>Recipe Guides</h3>
+        <p>Explore our extensive collection of recipes.</p>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Food Website. All rights reserved.
+</footer>
+
+</body>
+</html>

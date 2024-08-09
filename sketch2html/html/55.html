@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - History Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #e5e5e5;
+        }
+        header h1 {
+            font-size: 48px; /* Increased size significantly */
+            margin: 0;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .contact-info div {
+            flex-basis: 30%;
+            padding: 10px;
+            background: #f9f9f9;
+            border: 1px solid #e5e5e5;
+            border-radius: 5px;
+        }
+        .contact-info h3 {
+            font-size: 32px; /* Increased size */
+            margin: 0 0 10px 0;
+        }
+        .contact-info p {
+            font-size: 20px; /* Increased size */
+            margin: 0;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-size: 18px; /* Increased size */
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 18px; /* Increased size */
+        }
+        button {
+            padding: 10px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 4px;
+            font-size: 22px; /* Increased size */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 2px solid #e5e5e5;
+            margin-top: 20px;
+            font-size: 14px; /* Decreased size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <div class="contact-info">
+        <div>
+            <h3>Address</h3>
+            <p>123 History Lane<br>Cityville, ST 12345</p>
+        </div>
+        <div>
+            <h3>Phone</h3>
+            <p>(123) 456-7890</p>
+        </div>
+        <div>
+            <h3>Email</h3>
+            <p>info@historywebsite.com</p>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <h2 style="font-size: 36px;">Get in Touch</h2> <!-- Increased size -->
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 History Website</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business News</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .news-item:last-child {
+            border-bottom: none;
+        }
+
+        .news-image {
+            flex: 0 0 30%;
+            margin-right: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .news-content {
+            flex: 1;
+        }
+
+        .news-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff;
+            margin: 0;
+        }
+
+        .news-description {
+            margin: 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #007bff;
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Business News
+    </header>
+
+    <div class="container">
+        <div class="news-item">
+            <div class="news-image">
+                <img src="example-image-2.jpg" alt="News Thumbnail 2">
+            </div>
+            <div class="news-content">
+                <h2 class="news-title">Innovative Strategies for Modern Marketing</h2>
+                <p class="news-description">Learn about the innovative marketing strategies that businesses are adopting.</p>
+            </div>
+        </div>
+        
+        <div class="news-item">
+            <div class="news-image">
+                <img src="example-image-3.jpg" alt="News Thumbnail 3">
+            </div>
+            <div class="news-content">
+                <h2 class="news-title">Financial Insights: What to Expect Next Quarter</h2>
+                <p class="news-description">Explore expert financial insights and predictions for the coming quarter.</p>
+            </div>
+        </div>
+        
+        <div class="news-item">
+            <div class="news-image">
+                <img src="example-image-1.jpg" alt="News Thumbnail 1">
+            </div>
+            <div class="news-content">
+                <h2 class="news-title">Exciting Business Growth Trends in 2023</h2>
+                <p class="news-description">Discover the emerging trends that are shaping business growth this year.</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer>
+        Â© 2023 Business News. All rights reserved.
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automotive Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0e0e0; /* changed from #f0f0f0 */
+        }
+        header {
+            background: #444; /* changed from #333 */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1024px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .category-card {
+            background-color: #ffffff; /* unchanged */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: center;
+        }
+        .category-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .category-card h2 {
+            margin: 15px 0;
+            font-size: 1.2em;
+            color: #555; /* changed from #333 */
+        }
+        .category-card .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6); /* changed from rgba(0, 0, 0, 0.5) */
+            opacity: 0;
+            color: #ffcc00; /* changed from white */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.3s;
+        }
+        .category-card:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore Automotive Categories</h1>
+</header>
+
+<div class="container">
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=Sedans" alt="Sedans">
+        <h2>Sedans</h2>
+        <div class="overlay">Explore Sedans</div>
+    </div>
+    
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=SUVs" alt="SUVs">
+        <h2>SUVs</h2>
+        <div class="overlay">Explore SUVs</div>
+    </div>
+
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=Trucks" alt="Trucks">
+        <h2>Trucks</h2>
+        <div class="overlay">Explore Trucks</div>
+    </div>
+
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=Electric" alt="Electric Cars">
+        <h2>Electric</h2>
+        <div class="overlay">Explore Electric Cars</div>
+    </div>
+
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=Sports Cars" alt="Sports Cars">
+        <h2>Sports Cars</h2>
+        <div class="overlay">Explore Sports Cars</div>
+    </div>
+
+    <div class="category-card">
+        <img src="https://via.placeholder.com/400x200?text=Luxury" alt="Luxury Cars">
+        <h2>Luxury</h2>
+        <div class="overlay">Explore Luxury Cars</div>
+    </div>
+</div>
+
+</body>
+</html>

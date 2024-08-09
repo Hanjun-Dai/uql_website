@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Fashion Not Found</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .error-container {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 40px;
+            position: relative;
+        }
+
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            color: #e63946;
+            margin: 0;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 10px 0 20px;
+            color: #6a0572;
+        }
+
+        .model-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6a0572;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #e63946;
+        }
+
+        .fashion-icon {
+            position: absolute;
+            top: -60px;
+            left: -20px;
+            font-size: 120px;
+            color: rgba(200, 0, 150, 0.1);
+            transform: rotate(-10deg);
+        }
+
+        @media (max-width: 600px) {
+            .error-code {
+                font-size: 48px;
+            }
+
+            .error-message {
+                font-size: 20px;
+            }
+
+            .back-button {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <div class="fashion-icon">ð</div>
+        <img src="https://via.placeholder.com/400x250.png?text=Fashion+Image" alt="Fashion Model" class="model-img">
+        <p class="error-message">Oops! Fashion Not Found.</p>
+        <a href="/" class="back-button">Go Back to Trends</a>
+    </div>
+
+</body>
+
+</html>

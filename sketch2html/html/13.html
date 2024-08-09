@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politics News</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex: 1 1 30%;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .card p {
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0044cc;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Politics News</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">World</a>
+        <a href="#">Nation</a>
+        <a href="#">Opinion</a>
+        <a href="#">About Us</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="politics4.jpg" alt="News Image 4">
+        <h2>Grassroots Movements on the Rise</h2>
+        <p>More citizens are getting involved in political activism.</p>
+    </div>
+    <div class="card">
+        <img src="politics2.jpg" alt="News Image 2">
+        <h2>New Policy Changes Coming</h2>
+        <p>Government proposes new policies to improve public services.</p>
+    </div>
+    <div class="card">
+        <img src="politics5.jpg" alt="News Image 5">
+        <h2>Economic Challenges Ahead</h2>
+        <p>Experts warn of upcoming economic challenges.</p>
+    </div>
+    <div class="card">
+        <img src="politics1.jpg" alt="News Image 1">
+        <h2>Election Results Announced</h2>
+        <p>The results of the latest elections have been made public.</p>
+    </div>
+    <div class="card">
+        <img src="politics6.jpg" alt="News Image 6">
+        <h2>Change in Political Landscape</h2>
+        <p>The landscape of politics is shifting rapidly this year.</p>
+    </div>
+    <div class="card">
+        <img src="politics3.jpg" alt="News Image 3">
+        <h2>Major Diplomatic Summit</h2>
+        <p>World leaders meet to discuss global issues.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Politics News. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

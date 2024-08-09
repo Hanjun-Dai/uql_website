@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 10px;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .main-content {
+            float: left;
+            width: 70%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            float: right;
+            width: 28%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-left: 2%;
+        }
+
+        .post {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .post h2 {
+            color: #333;
+        }
+
+        .post p {
+            color: #666;
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>News Blog</h1>
+    </header>
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Sports</a>
+        <a href="#">Technology</a>
+        <a href="#">Health</a>
+        <a href="#">World</a>
+        <a href="#">Politics</a>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">World</a></li>
+                <li><a href="#">Politics</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Sports</a></li>
+            </ul>
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#">Popular Post 1</a></li>
+                <li><a href="#">Popular Post 2</a></li>
+                <li><a href="#">Popular Post 3</a></li>
+                <li><a href="#">Popular Post 4</a></li>
+            </ul>
+        </aside>
+
+        <div class="main-content">
+            <div class="post">
+                <h2>Latest News Title 2</h2>
+                <p>Summary of another important news article. Engage the audience with relevant information.</p>
+                <a href="#">Read more...</a>
+            </div>
+            <div class="post">
+                <h2>Latest News Title 3</h2>
+                <p>Brief summary of yet another news topic. Keep it concise and engaging.</p>
+                <a href="#">Read more...</a>
+            </div>
+            <div class="post">
+                <h2>Latest News Title 1</h2>
+                <p>Summary of the latest news article goes here. Catch the reader's interest with a brief overview.</p>
+                <a href="#">Read more...</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 News Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Entertainment</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS for styling -->
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f1e1;
+            color: #3b3b3b;
+        }
+        header {
+            background-color: #dbb48d;
+            padding: 20px 10%;
+            text-align: center;
+            border-bottom: 5px solid #8a5b3f;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 1px 1px 3px #f1e5d8; 
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: #3b3b3b;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('vintage-bg.jpg') no-repeat center center; /* Use a vintage image */
+            background-size: cover;
+            height: 400px;
+            position: relative;
+        }
+        .hero h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            font-size: 2em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            padding: 20px 10%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #8a5b3f;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            text-align: center;
+            padding: 10px;
+        }
+        footer {
+            background-color: #dbb48d;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Vintage Entertainment</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Movies</a>
+        <a href="#">Music</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<div class="content">
+    <div class="card">
+        <img src="music3.jpg" alt="Music Album">
+        <h3>Vintage Music 3</h3>
+    </div>
+    <div class="card">
+        <img src="movie2.jpg" alt="Movie Poster">
+        <h3>Classic Movie 2</h3>
+    </div>
+    <div class="card">
+        <img src="music1.jpg" alt="Music Album">
+        <h3>Vintage Music 1</h3>
+    </div>
+    <div class="card">
+        <img src="movie1.jpg" alt="Movie Poster">
+        <h3>Classic Movie 1</h3>
+    </div>
+    <div class="card">
+        <img src="movie3.jpg" alt="Movie Poster">
+        <h3>Classic Movie 3</h3>
+    </div>
+    <div class="card">
+        <img src="music2.jpg" alt="Music Album">
+        <h3>Vintage Music 2</h3>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>Step Back in Time</h2>
+</div>
+
+<footer>
+    <p>&copy; 2023 Vintage Entertainment. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | Your Business Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            font-size: 16px; /* Changed to a smaller size */
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 4em; /* Increased size significantly */
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 15px 0;
+            font-size: 1.5em; /* Increased size */
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+            font-size: 2.5em; /* Increased size */
+        }
+        .question:hover {
+            color: #007BFF;
+        }
+        .answer {
+            display: none;
+            padding-top: 10px;
+            font-size: 1em; /* Slightly increased size */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">What services do you offer?</div>
+        <div class="answer">We provide a range of services including web design, SEO, and digital marketing.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">How can I contact customer support?</div>
+        <div class="answer">You can reach our support team via email at support@example.com.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Do you offer a money-back guarantee?</div>
+        <div class="answer">Yes, we offer a 30-day money-back guarantee for our services.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">How long does delivery take?</div>
+        <div class="answer">Delivery typically takes 2-4 weeks, depending on the project scope.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question" onclick="toggleAnswer(this)">Where can I find testimonials?</div>
+        <div class="answer">Testimonials are available on our homepage and dedicated testimonials page.</div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
+
+</body>
+</html>

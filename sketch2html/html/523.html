@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion News</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            margin: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Grid container */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 0 20px;
+        }
+
+        /* Individual news card */
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2em;
+            margin: 0;
+            color: #333;
+        }
+
+        .card-excerpt {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8em;
+            background: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fashion News</h1>
+    <nav>
+        <a href="#">Trends</a>
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Designers</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+5" alt="Fashion News 5">
+        <div class="card-content">
+            <h2 class="card-title">Celebrity Styles</h2>
+            <p class="card-excerpt">What your favorite stars are wearing.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+1" alt="Fashion News 1">
+        <div class="card-content">
+            <h2 class="card-title">Trendy Styles for Fall</h2>
+            <p class="card-excerpt">Explore the hottest styles this autumn.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+4" alt="Fashion News 4">
+        <div class="card-content">
+            <h2 class="card-title">Accessories to Watch</h2>
+            <p class="card-excerpt">Must-have pieces for your wardrobe.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+6" alt="Fashion News 6">
+        <div class="card-content">
+            <h2 class="card-title">Fashion Innovations</h2>
+            <p class="card-excerpt">The future of fashion technology.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+2" alt="Fashion News 2">
+        <div class="card-content">
+            <h2 class="card-title">Sustainable Fashion</h2>
+            <p class="card-excerpt">The rise of eco-friendly brands.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200.png?text=Fashion+3" alt="Fashion News 3">
+        <div class="card-content">
+            <h2 class="card-title">Runway Highlights</h2>
+            <p class="card-excerpt">Key looks from the latest fashion week.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2023 Fashion Website. All rights reserved.
+</footer>
+
+</body>
+</html>

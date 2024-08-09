@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: #ffffff;
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .error-code {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .error-message {
+            font-size: 24px;
+            margin: 10px 0 20px;
+        }
+
+        .button {
+            background-color: #ff4081;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff79b0;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="https://example.com/error-image.png" alt="Error Image">
+        </div>
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Oops! Page Not Found</p>
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

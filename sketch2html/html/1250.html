@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Forum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .forum-thread {
+            border-bottom: 2px solid #e2e2e2;
+            padding: 15px 0;
+        }
+        .forum-thread:last-child {
+            border-bottom: none;
+        }
+        .thread-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007BFF;
+        }
+        .thread-meta {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .post-button {
+            display: block;
+            width: 100%;
+            background: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .post-button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Health Forum
+    </header>
+    <div class="container">
+        <button class="post-button">Post a New Thread</button>
+        <div class="forum-thread">
+            <div class="thread-title">Workout Routines</div>
+            <div class="thread-meta">Posted by JohnSmith - 5 hours ago</div>
+        </div>
+        <div class="forum-thread">
+            <div class="thread-title">Mental Health Awareness</div>
+            <div class="thread-meta">Posted by HealthGuru - 1 day ago</div>
+        </div>
+        <div class="forum-thread">
+            <div class="thread-title">Alternative Medicine</div>
+            <div class="thread-meta">Posted by NatureLover - 3 days ago</div>
+        </div>
+        <div class="forum-thread">
+            <div class="thread-title">Healthy Eating Tips</div>
+            <div class="thread-meta">Posted by JaneDoe - 2 hours ago</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Parenting Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f7f9; /* Changed background color */
+            color: #444; /* Slightly changed text color */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #FF5722; /* Changed header color */
+        }
+        .faq-item {
+            margin: 15px 0;
+            border: 1px solid #bbb; /* Changed border color */
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .faq-title {
+            background: #2196F3; /* Changed title background color */
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+        }
+        .faq-content {
+            padding: 15px;
+            display: none;
+            background: #f9f9f9; /* Changed content background color */
+        }
+        .faq-title:hover {
+            background: #1976D2; /* Changed hover color */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">What are the best parenting practices?</div>
+            <div class="faq-content">
+                <p>Balanced feeding, regular check-ups, and nurturing playtime.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">How to manage screen time for kids?</div>
+            <div class="faq-content">
+                <p>Set limits and encourage other activities.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">What to do during a toddler tantrum?</div>
+            <div class="faq-content">
+                <p>Stay calm, validate their feelings, and distract them.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-title" onclick="toggleFAQ(this)">How to encourage reading habits?</div>
+            <div class="faq-content">
+                <p>Make reading fun, and read together regularly.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleFAQ(element) {
+            const content = element.nextElementSibling;
+            content.style.display = content.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

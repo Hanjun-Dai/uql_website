@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            padding: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .property-card {
+            background: white;
+            border-radius: 8px;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px); /* 3 cards per row */
+            transition: transform 0.3s;
+        }
+
+        .property-card:hover {
+            transform: scale(1.02);
+        }
+
+        .property-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .property-info {
+            padding: 15px;
+        }
+
+        .property-title {
+            font-size: 1.2em;
+            margin: 0 0 5px;
+        }
+
+        .property-price {
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .property-card {
+                width: calc(50% - 20px); /* 2 cards per row */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .property-card {
+                width: 100%; /* 1 card per row */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Real Estate Portfolio</h1>
+    </header>
+
+    <div class="container">
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property5.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Charming Bungalow</h3>
+                <p class="property-price">$350,000</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property4.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Spacious Townhouse</h3>
+                <p class="property-price">$700,000</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property6.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Elegant Mansion</h3>
+                <p class="property-price">$2,500,000</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property1.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Modern Villa</h3>
+                <p class="property-price">$1,200,000</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property2.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Luxurious Apartment</h3>
+                <p class="property-price">$850,000</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <div class="property-image" style="background-image: url('property3.jpg');"></div>
+            <div class="property-info">
+                <h3 class="property-title">Cozy Cottage</h3>
+                <p class="property-price">$450,000</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9f5f5; /* Changed background color */
+        }
+
+        header {
+            background-color: #FF4500; /* Changed header background color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .category-card {
+            background-color: #ffffff; /* No change */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow */
+            margin: 10px;
+            text-align: center;
+            width: calc(33% - 20px); /* 3 items in a row with space */
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-image {
+            height: 200px;
+            background-size: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .category-title {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+            color: #2E8B57; /* Changed category title color */
+        }
+
+        .category-description {
+            padding: 0 10px 20px;
+            color: #555555; /* Changed description text color */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #888888; /* Changed footer text color */
+        }
+
+        @media (max-width: 768px) {
+            .category-card {
+                width: calc(50% - 20px); /* 2 items in a row for smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .category-card {
+                width: 100%; /* 1 item in a row for mobile screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Travel Categories</h1>
+    </header>
+
+    <div class="container">
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('beaches.jpg');"></div>
+            <h2 class="category-title">Beaches</h2>
+            <p class="category-description">Relax and unwind on the best beaches.</p>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('mountains.jpg');"></div>
+            <h2 class="category-title">Mountains</h2>
+            <p class="category-description">Adventure awaits in the great outdoors.</p>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('cities.jpg');"></div>
+            <h2 class="category-title">Cities</h2>
+            <p class="category-description">Explore vibrant city life and culture.</p>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('forests.jpg');"></div>
+            <h2 class="category-title">Forests</h2>
+            <p class="category-description">Discover nature's tranquility in the woods.</p>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('historical.jpg');"></div>
+            <h2 class="category-title">Historical</h2>
+            <p class="category-description">Step back in time to explore history.</p>
+        </div>
+        <div class="category-card">
+            <div class="category-image" style="background-image: url('adventure.jpg');"></div>
+            <h2 class="category-title">Adventure</h2>
+            <p class="category-description">Thrilling activities for adventure seekers.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Travel Website
+    </footer>
+
+</body>
+
+</html>

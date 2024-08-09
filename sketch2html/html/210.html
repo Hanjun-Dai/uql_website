@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            font-size: 36px; /* Larger font size */
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .testimonial {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: calc(30% - 20px);
+            padding: 30px; /* Increased padding */
+            position: relative;
+            font-size: 24px; /* Larger font size */
+        }
+        .testimonial:before {
+            content: '“';
+            font-size: 80px; /* Larger quote size */
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #4CAF50;
+        }
+        .testimonial:after {
+            content: '”';
+            font-size: 80px; /* Larger quote size */
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: #4CAF50;
+        }
+        .author {
+            margin-top: 10px;
+            text-align: right;
+            font-weight: bold;
+            color: #333;
+            font-size: 20px; /* Smaller font size */
+        }
+        @media (max-width: 768px) {
+            .testimonial {
+                width: calc(45% - 20px);
+                font-size: 20px; /* Adjusted for smaller screen */
+            }
+        }
+        @media (max-width: 500px) {
+            .testimonial {
+                width: 100%;
+                font-size: 18px; /* Smaller font size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>What Our Clients Say</h1>
+</header>
+
+<div class="container">
+    <div class="testimonial">
+        <p>“This service changed my life! I highly recommend it to everyone.”</p>
+        <div class="author">- John Doe</div>
+    </div>
+
+    <div class="testimonial">
+        <p>“Outstanding experience, I can't imagine going back to how things were before.”</p>
+        <div class="author">- Jane Smith</div>
+    </div>
+
+    <div class="testimonial">
+        <p>“A remarkable team who delivered beyond my expectations.”</p>
+        <div class="author">- Alex Johnson</div>
+    </div>
+
+    <div class="testimonial">
+        <p>“The best decision I ever made, truly.”</p>
+        <div class="author">- Emily Davis</div>
+    </div>
+    
+    <div class="testimonial">
+        <p>“Their support is top-notch and very responsive!”</p>
+        <div class="author">- Michael Brown</div>
+    </div>
+
+    <div class="testimonial">
+        <p>“I was amazed at the quick results. Highly satisfied!”</p>
+        <div class="author">- Sarah Wilson</div>
+    </div>
+</div>
+
+</body>
+</html>

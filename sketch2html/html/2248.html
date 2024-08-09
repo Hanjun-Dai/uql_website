@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f5e7;
+            color: #444; /* Changed text color */
+            margin: 0;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #6A4F4B; /* Changed header background color */
+            color: #ffffff; /* Ensured header text remains visible */
+            padding: 10px 0;
+            text-align: center;
+            font-size: 2em;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fefefe; /* Changed container background color */
+            border: 1px solid #ddd; /* Changed border color */
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+        }
+
+        .faq {
+            border-bottom: 1px solid #ddd; /* Changed border color */
+            padding: 15px 0;
+        }
+
+        .question {
+            font-weight: bold;
+            color: #A0522D; /* Changed question text color */
+            cursor: pointer;
+        }
+
+        .answer {
+            display: none;
+            padding-top: 10px;
+            text-align: left;
+            line-height: 1.5;
+            color: #555; /* Changed answer text color */
+        }
+
+        .show {
+            display: block;
+        }
+
+        .toggle {
+            padding: 5px;
+            color: #6A4F4B; /* Changed toggle text color */
+            text-decoration: none;
+            border: 1px solid #6A4F4B; /* Changed border color */
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .toggle:hover {
+            background: #6A4F4B; /* Changed hover background color */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Frequently Asked Questions
+</header>
+
+<div class="container">
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer1')">
+            What is your return policy?
+        </div>
+        <div id="answer1" class="answer">
+            We offer a 30-day return policy on all purchases.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer2')">
+            Do you ship internationally?
+        </div>
+        <div id="answer2" class="answer">
+            Yes, we ship to select countries. Please check our shipping policy.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer3')">
+            How can I contact customer service?
+        </div>
+        <div id="answer3" class="answer">
+            You can reach us via our contact form or at support@example.com.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer4')">
+            What payment methods do you accept?
+        </div>
+        <div id="answer4" class="answer">
+            We accept all major credit cards and PayPal.
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer5')">
+            Where are you located?
+        </div>
+        <div id="answer5" class="answer">
+            We are located in the heart of our quaint town.
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleAnswer(id) {
+        var answer = document.getElementById(id);
+        answer.classList.toggle('show');
+    }
+</script>
+
+</body>
+</html>

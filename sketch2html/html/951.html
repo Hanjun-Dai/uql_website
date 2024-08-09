@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Sports Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .faq {
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .faq:last-child {
+            border-bottom: none;
+        }
+        .faq h2 {
+            cursor: pointer;
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .answer {
+            display: none;
+            padding: 10px 0 0;
+            font-size: 0.9em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function toggleAnswer(event) {
+            const answer = event.target.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Sports Website FAQ</h1>
+    <nav>
+        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+        <a href="#home">Home</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="faq">
+        <h2 onclick="toggleAnswer(event)">How do I register for an event?</h2>
+        <div class="answer">You can register through our events page. Just follow the instructions provided on each event.</div>
+    </div>
+
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(event)">What sports do you cover?</h2>
+        <div class="answer">We cover a wide range of sports including football, basketball, and more.</div>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(event)">Where can I find the latest scores?</h2>
+        <div class="answer">Latest scores are updated live on our homepage. Check back frequently for real-time updates!</div>
+    </div>
+
+    <div class="faq">
+        <h2 onclick="toggleAnswer(event)">Can I get a refund for my ticket?</h2>
+        <div class="answer">Refunds are available within 30 days of purchase. Please refer to our refund policy for details.</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Sports Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

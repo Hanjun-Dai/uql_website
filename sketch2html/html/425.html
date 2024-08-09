@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistic Category Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eaeaea; /* Changed background color */
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #8e44ad; /* Changed title color */
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Changed shadow color */
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Changed hover shadow */
+        }
+        .image {
+            height: 150px;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-title {
+            padding: 15px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #16a085; /* Changed card title color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Categories</h1>
+    <div class="container">
+        <div class="card">
+            <div class="image" style="background-image: url('category1.jpg');"></div>
+            <div class="card-title">Category 1</div>
+        </div>
+        <div class="card">
+            <div class="image" style="background-image: url('category2.jpg');"></div>
+            <div class="card-title">Category 2</div>
+        </div>
+        <div class="card">
+            <div class="image" style="background-image: url('category3.jpg');"></div>
+            <div class="card-title">Category 3</div>
+        </div>
+        <div class="card">
+            <div class="image" style="background-image: url('category4.jpg');"></div>
+            <div class="card-title">Category 4</div>
+        </div>
+        <div class="card">
+            <div class="image" style="background-image: url('category5.jpg');"></div>
+            <div class="card-title">Category 5</div>
+        </div>
+        <div class="card">
+            <div class="image" style="background-image: url('category6.jpg');"></div>
+            <div class="card-title">Category 6</div>
+        </div>
+    </div>
+</body>
+</html>

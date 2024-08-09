@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parenting Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
+        }
+        
+        header {
+            background: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #493b0e;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #493b0e;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            margin-right: 20px;
+        }
+
+        .post {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .post:hover {
+            transform: translateY(-5px);
+        }
+
+        .post h2 {
+            font-size: 1.8em;
+            margin-top: 0;
+            color: #ff6600;
+        }
+
+        .post p {
+            color: #555;
+        }
+
+        aside {
+            flex: 1;
+            background: #e9e9e9;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            color: #ffcc00;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #493b0e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Parenting Adventures</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Tips</a>
+            <a href="#">Community</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+
+            <div class="post">
+                <h2>Healthy Meals for Kids</h2>
+                <p>Learn how to prepare quick and nutritious meals your kids will love!</p>
+            </div>
+
+            <div class="post">
+                <h2>Fun Activities to Do at Home</h2>
+                <p>Ideas to keep your children engaged and active without leaving home.</p>
+            </div>
+
+            <div class="post">
+                <h2>Tip for New Parents</h2>
+                <p>Discover the essential tips for your new journey into parenthood.</p>
+            </div>
+
+        </div>
+
+        <aside>
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Health</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Advice</a></li>
+                <li><a href="#">Activities</a></li>
+            </ul>
+
+            <h3>Popular Posts</h3>
+            <ul>
+                <li><a href="#">Traveling with Toddlers</a></li>
+                <li><a href="#">Sustainable Parenting</a></li>
+                <li><a href="#">Creating a Play Schedule</a></li>
+                <li><a href="#">Balancing Work and Family</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Parenting Adventures. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

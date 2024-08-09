@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - History Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaeaea; /* Changed the background color */
+            margin: 0;
+            padding: 0;
+            color: #444; /* Slightly darker text color */
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff; /* Kept the same */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly heavier shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c; /* Changed title color */
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd; /* Slightly lighter border */
+            padding: 15px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .question {
+            font-weight: bold;
+            cursor: pointer;
+            color: #8e44ad; /* Changed question color */
+        }
+
+        .answer {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .faq-item:hover .question {
+            text-decoration: underline; /* Kept the same */
+        }
+
+        /* For mobile view */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">What is the purpose of this website?</div>
+            <div class="answer">This website is dedicated to preserving and presenting historical information.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">How can I contribute?</div>
+            <div class="answer">You can contribute by sharing your insights and historical documents with us.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">Is there a membership fee?</div>
+            <div class="answer">No, our website is free to use for all visitors.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this);">How do I contact you?</div>
+            <div class="answer">You can contact us via the contact form on our website.</div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(el) {
+            const answer = el.nextElementSibling;
+            answer.style.display = answer.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+
+</html>

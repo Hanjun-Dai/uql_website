@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Website - Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0056b3;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #004494;
+        }
+        .container {
+            width: 1024px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .category {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            width: calc(30% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .category h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health Website</h1>
+        <p>Your trusted source for health information</p>
+    </header>
+
+    <nav>
+        <a href="#exercise">Exercise</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#wellness">Wellness</a>
+        <a href="#mental-health">Mental Health</a>
+        <a href="#disease">Disease Prevention</a>
+    </nav>
+
+    <div class="container">
+        <div class="category" id="wellness">
+            <h2>Wellness</h2>
+            <p>Learn about holistic health!</p>
+        </div>
+        <div class="category" id="exercise">
+            <h2>Exercise</h2>
+            <p>Find workout tips and routines!</p>
+        </div>
+        <div class="category" id="disease">
+            <h2>Disease Prevention</h2>
+            <p>Stay informed about health risks!</p>
+        </div>
+        <div class="category" id="mental-health">
+            <h2>Mental Health</h2>
+            <p>Explore resources for mental wellness!</p>
+        </div>
+        <div class="category" id="nutrition">
+            <h2>Nutrition</h2>
+            <p>Discover healthy eating habits!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Health Website | All rights reserved.</p>
+    </footer>
+</body>
+</html>

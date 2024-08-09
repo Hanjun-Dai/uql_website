@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Testimonials</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #f9f3e7;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #6b4f4f;
+            text-decoration: underline;
+        }
+        .testimonial-container {
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #d1c6b3;
+            border-radius: 8px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .testimonial {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-left: 5px solid #d1c6b3;
+            position: relative;
+            font-style: italic;
+        }
+        .testimonial:after {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 10px;
+            width: 30px;
+            height: 30px;
+            background: url('quote-icon.png') no-repeat center center;
+            background-size: contain;
+        }
+        .author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="testimonial-container">
+    <div class="testimonial">
+        "I've found my tribe. The support is unparalleled!"
+        <div class="author">- Emily White</div>
+    </div>
+
+    <div class="testimonial">
+        "This platform has given me the exposure I needed to blossom as an artist."
+        <div class="author">- Jane Doe</div>
+    </div>
+
+    <div class="testimonial">
+        "A wonderful community of creatives! I'm grateful to be a part of it."
+        <div class="author">- John Smith</div>
+    </div>
+</div>
+
+<header>
+    <h1>What Our Artists Say</h1>
+</header>
+
+</body>
+</html>
